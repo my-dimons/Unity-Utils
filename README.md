@@ -27,5 +27,5 @@ In Unity Hub "Add project from disk" and select the "Examples" folder inside of 
 
 
 
-# placeholder
+# Other
 Feel free to use any of these scripts in any projects, and if you want to contribute to this project GO FOR IT!
