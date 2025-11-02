@@ -7,10 +7,10 @@ using UnityEngine;
 public static class AudioManager
 {
     // To add more volume types, add more properties to this array and then update GetVolumeBasedOnType()
-    public enum VolumeTypes
+    public enum AudioType
     {
-        music,
         sfx,
+        music,
         global
     }
 
@@ -32,17 +32,17 @@ public static class AudioManager
     /// Does multiplication to certain volume types (To get right audio levels)
     /// </summary>
     /// <param name="baseVolume">Volume to convert</param>
-    /// <param name="type">Type of audio, use VolumeTypes.global to just multiply by global volume</param>
+    /// <param name="type">Type of audio, use AudioType.global to just multiply by global volume</param>
     /// <returns></returns>
-    public static float GetVolumeBasedOnType(float baseVolume, VolumeTypes type)
+    public static float GetVolumeBasedOnType(float baseVolume, AudioType type)
     {
         float baseVolumeMutliplied = baseVolume * globalVolume;
 
         switch (type)
-        { 
-            case VolumeTypes.music: return baseVolumeMutliplied * musicVolume;
-            case VolumeTypes.sfx: return baseVolumeMutliplied * musicVolume;
-            case VolumeTypes.global: return baseVolumeMutliplied;
+        {
+            case AudioType.sfx: return baseVolumeMutliplied * sfxVolume;
+            case AudioType.music: return baseVolumeMutliplied * musicVolume;
+            case AudioType.global: return baseVolumeMutliplied;
 
             default: return baseVolumeMutliplied;
         }
