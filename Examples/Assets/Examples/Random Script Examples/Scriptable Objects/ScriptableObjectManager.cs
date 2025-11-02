@@ -16,7 +16,7 @@ public static class ScriptableObjectManager
             Debug.LogWarning("No commands found in Resources/" + path + " folder.");
             return default;
         }
-
+        
         foreach (T obj in loadedObjects)
         {
             Debug.Log("Loaded ScriptableObject: " + obj.name);

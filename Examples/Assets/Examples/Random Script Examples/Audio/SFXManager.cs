@@ -55,7 +55,7 @@ public class SFXManager : MonoBehaviour
     {
         if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
 
-        CreateAndPlayAudioClip(clip, volume , pitchVariance, position, type: AudioManager.AudioType.sfx);
+        CreateAndPlayAudioClip(clip, volume, pitchVariance, position, type: AudioManager.AudioType.sfx);
     }
 
     /// <summary>
@@ -79,22 +79,21 @@ public class SFXManager : MonoBehaviour
     {
         if (type == default) type = AudioManager.AudioType.sfx;
 
-        GameObject temporaryGameObject = new("Audio Clip (Temporary)");
+        GameObject temporaryGameObject = new GameObject("Audio Clip (Temporary)");
+        AudioSource audioSource = temporaryGameObject.AddComponent<AudioSource>();
 
         Transform temporaryGameObjectParent = temporaryGameObject.transform.parent;
-        if (parent == default) 
+        if (parent == default)
             temporaryGameObjectParent = null;
-        else                   
+        else
             temporaryGameObjectParent = parent;
-
-        AudioSource audioSource = temporaryGameObject.AddComponent<AudioSource>();
 
         // set to global or spacial audio
         if (position == default)
         {
             temporaryGameObject.transform.position = Camera.main.transform.position;
             audioSource.spatialBlend = 0f; // 2D sound
-        } 
+        }
         else
         {
             temporaryGameObject.transform.position = position;
