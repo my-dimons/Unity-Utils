@@ -31,13 +31,5 @@ public class SingletonExample : MonoBehaviour
         if (Instance == null) Instance = this; else Destroy(gameObject);
 
         #endregion
-
-        #region Singleton Pattern Example 2 - Null Coalescing Assignment Singleton
-
-        // Singleton Pattern (Null Coalescing Assignment)
-        Instance ??= this; 
-        if (Instance != this) Destroy(gameObject);
-
-        #endregion
     }
 }

@@ -28,7 +28,7 @@ public class SfxManager : MonoBehaviour
     /// <param name="volume">Playback volume</param>
     /// <param name="pitchVariance">
     /// Random variance to make sound feel less repetative. 
-    /// randoml modifies the pitch of the music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value)
+    /// randomly modifies the pitch of the music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value)
     /// </param>
     public void PlaySfxAudioClip(AudioClip clip, float volume = 1, float pitchVariance = default)
     {
@@ -45,7 +45,7 @@ public class SfxManager : MonoBehaviour
     /// <param name="volume">Playback volume</param>
     /// <param name="pitchVariance">
     /// Random variance to make sound feel less repetative. 
-    /// randoml modifies the pitch of the music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value)
+    /// randomly modifies the pitch of the music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value)
     /// </param>
     public void PlaySpacialSfxAudioClip(AudioClip clip, Vector3 position, float volume = 1, float pitchVariance = default)
     {
@@ -61,7 +61,7 @@ public class SfxManager : MonoBehaviour
     /// <param name="audioType">used to get the proper volume, see <see cref="AudioManager.CalculateVolumeBasedOnType(float, AudioManager.AudioType)"/> to get more info</param>
     /// <param name="pitchVariance"> 
     /// Random variance to make sound feel less repetative. 
-    /// randoml modifies the pitch of the music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value)
+    /// randomly modifies the pitch of the music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value)
     /// </param>
     public void PlayClipOnSource(AudioClip clip, AudioSource source, float volume = 1, float pitchVariance = default, AudioManager.AudioType audioType = AudioManager.AudioType.sfx)
     {
