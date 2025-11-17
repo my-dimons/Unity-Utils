@@ -131,9 +131,6 @@ public class BackgroundMusicManager : MonoBehaviour
         Instance.PlayMusicTrack(clip);
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     /// <returns>Random music track within the <see cref="musicTracks"/> array</returns>
     private AudioClip GetRandomSong()
     {
