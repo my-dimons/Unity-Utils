@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\AudioManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\SingletonExample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectExample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Particles\\ParticleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\SFXManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\BackgroundMusicManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Examples\\Assets\\Examples\\Random Script Examples\\Audio\\AudioManager.cs",
+              "ToolTip": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\AudioManager.cs",
+              "RelativeToolTip": "Examples\\Assets\\Examples\\Random Script Examples\\Audio\\AudioManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:01:10.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SingletonExample.cs",
+              "DocumentMoniker": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\SingletonExample.cs",
+              "RelativeDocumentMoniker": "Examples\\Assets\\Examples\\Random Script Examples\\SingletonExample.cs",
+              "ToolTip": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\SingletonExample.cs",
+              "RelativeToolTip": "Examples\\Assets\\Examples\\Random Script Examples\\SingletonExample.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:00:59.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScriptableObjectExample.cs",
+              "DocumentMoniker": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectExample.cs",
+              "RelativeDocumentMoniker": "Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectExample.cs",
+              "ToolTip": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectExample.cs",
+              "RelativeToolTip": "Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectExample.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:00:58.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ParticleManager.cs",
+              "DocumentMoniker": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Particles\\ParticleManager.cs",
+              "RelativeDocumentMoniker": "Examples\\Assets\\Examples\\Random Script Examples\\Particles\\ParticleManager.cs",
+              "ToolTip": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Particles\\ParticleManager.cs",
+              "RelativeToolTip": "Examples\\Assets\\Examples\\Random Script Examples\\Particles\\ParticleManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:00:56.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScriptableObjectManager.cs",
+              "DocumentMoniker": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectManager.cs",
+              "RelativeDocumentMoniker": "Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectManager.cs",
+              "ToolTip": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectManager.cs",
+              "RelativeToolTip": "Examples\\Assets\\Examples\\Random Script Examples\\Scriptable Objects\\ScriptableObjectManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T19:00:38.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SFXManager.cs",
+              "DocumentMoniker": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\SFXManager.cs",
+              "RelativeDocumentMoniker": "Examples\\Assets\\Examples\\Random Script Examples\\Audio\\SFXManager.cs",
+              "ToolTip": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\SFXManager.cs",
+              "RelativeToolTip": "Examples\\Assets\\Examples\\Random Script Examples\\Audio\\SFXManager.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T18:17:42.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BackgroundMusicManager.cs",
+              "DocumentMoniker": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\BackgroundMusicManager.cs",
+              "RelativeDocumentMoniker": "Examples\\Assets\\Examples\\Random Script Examples\\Audio\\BackgroundMusicManager.cs",
+              "ToolTip": "\\\\S48FS\\StudentHome$\\1546178\\Documents\\GitHub\\Unity-Examples\\Examples\\Assets\\Examples\\Random Script Examples\\Audio\\BackgroundMusicManager.cs",
+              "RelativeToolTip": "Examples\\Assets\\Examples\\Random Script Examples\\Audio\\BackgroundMusicManager.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T18:17:39.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -25,7 +25,7 @@ public class BackgroundMusicManager : MonoBehaviour
 
     public float fadeTime;
     [Tooltip("If you want a single value cooldown, just set the values to the same value")]
-    public Vector2 randomMilisecondCooldownBetweenSongs;
+    public Vector2 randomMillisecondCooldownBetweenSongs;
 
     public static BackgroundMusicManager Instance { get; private set; }
 
@@ -64,7 +64,7 @@ public class BackgroundMusicManager : MonoBehaviour
 
             Debug.Log("Finished Music Clip");
 
-            float waitTimeUntillNextSong = Random.Range(randomMilisecondCooldownBetweenSongs.x, randomMilisecondCooldownBetweenSongs.y);
+            float waitTimeUntillNextSong = Random.Range(randomMillisecondCooldownBetweenSongs.x, randomMillisecondCooldownBetweenSongs.y);
             yield return new WaitForSecondsRealtime(waitTimeUntillNextSong);
         }
     }
@@ -91,7 +91,8 @@ public class BackgroundMusicManager : MonoBehaviour
     /// </summary>
     public void StartContinuousMusic()
     {
-        if (!Instance.musicSource.isPlaying && musicTracks.Length > 0)
+        bool canPlayMusic = !Instance.musicSource.isPlaying && musicTracks.Length > 0;
+        if (canPlayMusic)
             playingMusicCoroutine = StartCoroutine(PlayMusicContinuously());
         else if (musicTracks.Length > 0)
             Debug.LogWarning("No music tracks in MusicManager.cs");
