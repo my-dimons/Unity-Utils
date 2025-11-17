@@ -19,10 +19,13 @@ In Unity Hub "Add project from disk" and select the "Examples" folder inside of 
 
 ## [Script Examples](https://github.com/my-dimons/Unity-Examples/tree/main/Examples/Assets/Examples/Random%20Script%20Examples)
 
-### [Audio Examples:](https://github.com/my-dimons/Unity-Examples/tree/main/Examples/Assets/Examples/Random%20Script%20Examples/Audio])
-- [MusicManager.cs](https://github.com/my-dimons/Unity-Examples/blob/main/Examples/Assets/Examples/Random%20Script%20Examples/Audio/MusicManager.cs) | Takes an array of sound files and plays them randomly in a loop, has many customizable actions
+### [Audio Utilities:](https://github.com/my-dimons/Unity-Examples/tree/main/Examples/Assets/Examples/Random%20Script%20Examples/Audio])
+- [MusicManager.cs](https://github.com/my-dimons/Unity-Examples/blob/main/Examples/Assets/Examples/Random%20Script%20Examples/Audio/BackgroundMusicManager.cs) | Takes an array of sound files and plays them randomly in a loop, has many customizable actions
 - [SFXManager.cs](https://github.com/my-dimons/Unity-Examples/blob/main/Examples/Assets/Examples/Random%20Script%20Examples/Audio/SFXManager.cs) | Has functions to easily play SFX with things like pitch variance and volume
 - [AudioManager](https://github.com/my-dimons/Unity-Examples/blob/main/Examples/Assets/Examples/Random%20Script%20Examples/Audio/AudioManager.cs) | Is referenced in other audio scripts, has volume controls for audio (REQUIRED FOR OTHER AUDIO SCRIPTS TO WORK)
+
+### [Particle Utilities:](https://github.com/my-dimons/Unity-Examples/tree/main/Examples/Assets/Examples/Random%20Script%20Examples/Particles)
+- [ParticleManager](https://github.com/my-dimons/Unity-Examples/blob/main/Examples/Assets/Examples/Random%20Script%20Examples/Particles/ParticleManager.cs) | Can spawn in particle prefabs with some adjustable properties
 
 
 
