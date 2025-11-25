@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a760fe95b27f347b3a5df30a13aa7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestingScript
-  clip: {fileID: 8300000, guid: 33a509b9243a6ec458be09f5bb8cbb54, type: 3}
+  clip: {fileID: 8300000, guid: d73b6ef34fd908b4c9cce03fdd1843b6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

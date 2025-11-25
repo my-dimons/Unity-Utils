@@ -47,7 +47,7 @@ public class SfxManager : MonoBehaviour
     /// Plays an <see cref="AudioClip"/> globally (non-spacialy) at a certain volume for a set amount of time
     /// </summary>
     /// <param name="clip"><see cref="AudioClip"/> to play</param>
-    /// <param name="time">Specified time for <see cref="AudioClip"/> to play for</param>
+    /// <param name="time">Specified time for <see cref="AudioClip"/> to play for in seconds</param>
     /// <param name="volume">Playback volume</param>
     public void PlayTimedSFXAudioClip(AudioClip clip, float time, float volume = 1)
     {
@@ -127,7 +127,7 @@ public class SfxManager : MonoBehaviour
         audioSource.clip = audioClip;
         audioSource.volume = AudioManager.CalculateVolumeBasedOnType(volume, audioType);
 
-        float randomPitch = Random.Range(1 - pitchVariance, 1 + pitchVariance);
+        float randomPitch = AudioManager.CalculatePitchVariance(pitchVariance);
         float usedPitch = pitch == default ? randomPitch : pitch;
         audioSource.pitch = usedPitch;
 

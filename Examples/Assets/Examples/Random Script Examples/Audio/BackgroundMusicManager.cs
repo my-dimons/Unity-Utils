@@ -51,7 +51,6 @@ public class BackgroundMusicManager : MonoBehaviour
     /// <summary>
     /// Loops through random songs in <see cref="musicTracks"/> constantly
     /// </summary>
-    /// <returns></returns>
     private IEnumerator PlayMusicContinuously()
     {
         while (true)

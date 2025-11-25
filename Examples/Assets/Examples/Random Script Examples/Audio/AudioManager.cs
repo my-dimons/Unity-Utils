@@ -65,10 +65,18 @@ public static class AudioManager
     /// <summary>
     /// Calculates the effective playback duration of an audio clip after adjusting for pitch
     /// </summary>
+    /// <returns>Adjusted clip length based on pitch (clipLength / pitch)</returns>
     public static float CalculateClipLength(float clipLength, float pitch) => clipLength / Math.Abs(pitch);
 
     /// <summary>
     /// Calculates the pitch adjustment factor needed to play an audio clip at a specified duration
     /// </summary>
+    /// <returns>Pitch factor to achieve the desired playback time (clipLength * time)</returns>
     public static float CalculateClipPitchWithLength(float clipLength, float time) => clipLength * time;
+
+    /// <summary>
+    /// Calculates the pitch variance to add randomness to playback
+    /// </summary>
+    /// <returns>Random number between 1 - pitchVariance and 1 + pitchVariance</returns>
+    public static float CalculatePitchVariance(float pitchVariance) => UnityEngine.Random.Range(1 - pitchVariance, 1 + pitchVariance);
 }
