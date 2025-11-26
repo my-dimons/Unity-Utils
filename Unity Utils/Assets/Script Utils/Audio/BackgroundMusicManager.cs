@@ -13,127 +13,129 @@ using System.Collections;
  *
  */
 
-public class BackgroundMusicManager : MonoBehaviour
-{
-    public AudioSource musicSource;
-    public AudioClip[] musicTracks;
-    [Space(4)]
-    public AudioClip currentPlayingTrack;
-    [Space(8)]
-    [Tooltip("Immedietely start playing music when this object loads in")]
-    public bool playOnAwake = true;
-
-    public float fadeTime;
-    [Tooltip("If you want a single value cooldown, just set the values to the same value")]
-    public Vector2 randomMillisecondCooldownBetweenSongs;
-
-    public static BackgroundMusicManager Instance { get; private set; }
-
-    public Coroutine playingMusicCoroutine;
-
-    void Awake()
+namespace UnityUtils.ScriptUtils.Audio {
+    public class BackgroundMusicManager : MonoBehaviour
     {
-        if (Instance == null) Instance = this; else Destroy(gameObject);
+        public AudioSource musicSource;
+        public AudioClip[] musicTracks;
+        [Space(4)]
+        public AudioClip currentPlayingTrack;
+        [Space(8)]
+        [Tooltip("Immedietely start playing music when this object loads in")]
+        public bool playOnAwake = true;
 
-        DontDestroyOnLoad(gameObject);
+        public float fadeTime;
+        [Tooltip("If you want a single value cooldown, just set the values to the same value")]
+        public Vector2 randomMillisecondCooldownBetweenSongs;
 
-        if (playOnAwake)
-            StartContinuousMusic();
-            
-    }
+        public static BackgroundMusicManager Instance { get; private set; }
 
-    private void Update()
-    {
-        if (musicSource != null)
-            musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.AudioType.music);
-    }
+        public Coroutine playingMusicCoroutine;
 
-    /// <summary>
-    /// Loops through random songs in <see cref="musicTracks"/> constantly
-    /// </summary>
-    private IEnumerator PlayMusicContinuously()
-    {
-        while (true)
+        void Awake()
         {
-            PlaySingleRandomMusicTrack();
+            if (Instance == null) Instance = this; else Destroy(gameObject);
 
-            Debug.Log("Clip Started");
-            yield return new WaitWhile(() => musicSource.isPlaying);
-            Debug.Log("Clip Ended");
+            DontDestroyOnLoad(gameObject);
 
-            Debug.Log("Finished Music Clip");
+            if (playOnAwake)
+                StartContinuousMusic();
 
-            float waitTimeUntillNextSong = Random.Range(randomMillisecondCooldownBetweenSongs.x, randomMillisecondCooldownBetweenSongs.y);
-            yield return new WaitForSecondsRealtime(waitTimeUntillNextSong);
         }
-    }
 
-    /// <summary>
-    /// Stops the <see cref="musicSource"/> from playing music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
-    /// </summary>
-    public void StopMusic()
-    {
-        if (Instance.musicSource.isPlaying)
+        private void Update()
         {
-            Instance.musicSource.Stop();
+            if (musicSource != null)
+                musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.AudioType.music);
+        }
 
-            if (Instance.playingMusicCoroutine != null)
+        /// <summary>
+        /// Loops through random songs in <see cref="musicTracks"/> constantly
+        /// </summary>
+        private IEnumerator PlayMusicContinuously()
+        {
+            while (true)
             {
-                Instance.StopCoroutine(Instance.playingMusicCoroutine);
-                Instance.playingMusicCoroutine = null;
+                PlaySingleRandomMusicTrack();
+
+                Debug.Log("Clip Started");
+                yield return new WaitWhile(() => musicSource.isPlaying);
+                Debug.Log("Clip Ended");
+
+                Debug.Log("Finished Music Clip");
+
+                float waitTimeUntillNextSong = Random.Range(randomMillisecondCooldownBetweenSongs.x, randomMillisecondCooldownBetweenSongs.y);
+                yield return new WaitForSecondsRealtime(waitTimeUntillNextSong);
             }
         }
-    }
 
-    /// <summary>
-    /// Starts to <see cref="PlayMusicContinuously"/> until stopped
-    /// </summary>
-    public void StartContinuousMusic()
-    {
-        bool canPlayMusic = !Instance.musicSource.isPlaying && musicTracks.Length > 0;
-        if (canPlayMusic)
-            playingMusicCoroutine = StartCoroutine(PlayMusicContinuously());
-        else if (musicTracks.Length > 0)
-            Debug.LogWarning("No music tracks in MusicManager.cs");
-        else if (!Instance.musicSource.isPlaying)
-            Debug.LogWarning("Tried starting continuous music but music source is already playing!");
-    }
+        /// <summary>
+        /// Stops the <see cref="musicSource"/> from playing music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
+        /// </summary>
+        public void StopMusic()
+        {
+            if (Instance.musicSource.isPlaying)
+            {
+                Instance.musicSource.Stop();
 
-    /// <summary>
-    /// Plays a music track on the <see cref="musicSource"/>
-    /// </summary>
-    /// <param name="clip<see cref="AudioClip"/> too play"></param>
-    private void PlayMusicTrack(AudioClip clip)
-    {
-        musicSource.clip = clip;
-        currentPlayingTrack = clip;
+                if (Instance.playingMusicCoroutine != null)
+                {
+                    Instance.StopCoroutine(Instance.playingMusicCoroutine);
+                    Instance.playingMusicCoroutine = null;
+                }
+            }
+        }
 
-        musicSource.Play();
+        /// <summary>
+        /// Starts to <see cref="PlayMusicContinuously"/> until stopped
+        /// </summary>
+        public void StartContinuousMusic()
+        {
+            bool canPlayMusic = !Instance.musicSource.isPlaying && musicTracks.Length > 0;
+            if (canPlayMusic)
+                playingMusicCoroutine = StartCoroutine(PlayMusicContinuously());
+            else if (musicTracks.Length > 0)
+                Debug.LogWarning("No music tracks in MusicManager.cs");
+            else if (!Instance.musicSource.isPlaying)
+                Debug.LogWarning("Tried starting continuous music but music source is already playing!");
+        }
 
-        Debug.Log($"Playing: {clip.name}");
-    }
+        /// <summary>
+        /// Plays a music track on the <see cref="musicSource"/>
+        /// </summary>
+        /// <param name="clip<see cref="AudioClip"/> too play"></param>
+        private void PlayMusicTrack(AudioClip clip)
+        {
+            musicSource.clip = clip;
+            currentPlayingTrack = clip;
 
-    /// <summary>
-    /// Plays a random music track once
-    /// </summary>
-    public void PlaySingleRandomMusicTrack()
-    {
-        PlayMusicTrack(GetRandomSong());
-    }
+            musicSource.Play();
 
-    /// <summary>
-    /// Plays a specific music track once
-    /// </summary>
-    /// <param name="clip"><see cref="AudioClip"/> to play</param>
-    public void PlaySpecificMusicTrack(AudioClip clip)
-    {
-        Instance.PlayMusicTrack(clip);
-    }
+            Debug.Log($"Playing: {clip.name}");
+        }
 
-    /// <returns>Random music track within the <see cref="musicTracks"/> array</returns>
-    private AudioClip GetRandomSong()
-    {
-        int randomSongTrackIndex = Random.Range(0, musicTracks.Length);
-        return musicTracks[randomSongTrackIndex];
+        /// <summary>
+        /// Plays a random music track once
+        /// </summary>
+        public void PlaySingleRandomMusicTrack()
+        {
+            PlayMusicTrack(GetRandomSong());
+        }
+
+        /// <summary>
+        /// Plays a specific music track once
+        /// </summary>
+        /// <param name="clip"><see cref="AudioClip"/> to play</param>
+        public void PlaySpecificMusicTrack(AudioClip clip)
+        {
+            Instance.PlayMusicTrack(clip);
+        }
+
+        /// <returns>Random music track within the <see cref="musicTracks"/> array</returns>
+        private AudioClip GetRandomSong()
+        {
+            int randomSongTrackIndex = Random.Range(0, musicTracks.Length);
+            return musicTracks[randomSongTrackIndex];
+        }
     }
 }

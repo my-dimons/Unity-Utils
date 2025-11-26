@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityUtils.ScriptUtils.Audio;
 
 public class TestingScript : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class TestingScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SfxManager.Instance.PlayTimedSFXAudioClip(clip, 1);
+        SfxManager.PlayTimedSFXAudioClip(clip, 1);
         StartCoroutine(TestCoroutine());
     }
 
@@ -21,5 +22,10 @@ public class TestingScript : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         Debug.Log("Should stop playing audio now");
+    }
+
+    public void Test()
+    {
+        Debug.Log("Test");
     }
 }
