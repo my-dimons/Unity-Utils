@@ -16,7 +16,4 @@ Contents
 .. toctree::
 
    usage
-   BackgroundMusicManager
-   AudioManager
-   	SFXManager
    api
