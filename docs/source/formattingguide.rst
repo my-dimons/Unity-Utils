@@ -1,6 +1,12 @@
 Formatting Guide
 ================
 
-Formatting code documentation
+General Rules
+-------------
+
+- end lines with periods (Unless it's code)
+
+
+Formatting Code documentation
 -----------------------------
 
