@@ -4,7 +4,7 @@ Formatting Guide
 General Rules
 -------------
 
-- end lines with periods (Unless it's code)
+- Basic grammar
 
 
 Formatting Code documentation
