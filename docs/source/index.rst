@@ -13,13 +13,19 @@ how to :ref:`installation` the project.
 Contents
 --------
 
+Usage
+~~~~~
+
 .. toctree::
    
    usage
    api
+
+Audio
+~~~~~
+
+.. toctree::
+   
    script_utils/sfxmanager
-   	script_utils/backgroundmusicmanager
-   	script_utils/audiomanager
-
-
-Test
+   script_utils/backgroundmusicmanager
+   script_utils/audiomanager
