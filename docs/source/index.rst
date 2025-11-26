@@ -6,14 +6,18 @@ Welcome to Unity Utils documentation!
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
-.. note::
+.. warning::
 
-   This project is under active development.
+   This project is under heavy active development.
 
 Contents
 --------
 
-.. toctree::
+Usage
+~~~~~
 
+.. toctree::
+   
    usage
    api
+   script_utils/scriptutils

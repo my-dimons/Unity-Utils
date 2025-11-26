@@ -6,8 +6,9 @@ Usage
 Installation
 ------------
 .. warning::
-	This page is yet to be updated 
 
+   THIS FILE HAS NOT BEEN UPDATED FOR INSTALL INFO YET.
+   
 To use Lumache, first install it using pip:
 
 .. code-block:: console
