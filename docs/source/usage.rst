@@ -6,6 +6,7 @@ Usage
 Installation
 ------------
 .. warning::
+
 	This page is yet to be updated 
 
 To use Lumache, first install it using pip:
