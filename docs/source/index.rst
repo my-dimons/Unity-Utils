@@ -17,4 +17,5 @@ Contents
 
    usage
    api
-   SFXManager
+   sfxmanager
+   audiomanager
