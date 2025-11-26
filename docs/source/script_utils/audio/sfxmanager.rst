@@ -2,7 +2,7 @@ SFXManager
 ==========
 
 NAMESPACE
-~~~~~~~~~
+
 .. code:: csharp
 
    UnityUtils.ScriptUtils.Audio
