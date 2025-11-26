@@ -1,12 +1,14 @@
 SFXManager
 ==========
 
-NAMESPACE:
+NAMESPACE
+---------
 .. code::
 
    UnityUtils.ScriptUtils.Audio
    
-Example Usage:
+Example Usage
+-------------
 .. code::
   
    using UnityEngine;
