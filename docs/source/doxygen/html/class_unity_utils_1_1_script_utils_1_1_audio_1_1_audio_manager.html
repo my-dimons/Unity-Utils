@@ -97,46 +97,51 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8b0be65be75229a1050bc1f4bef8315f" id="r_a8b0be65be75229a1050bc1f4bef8315f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b0be65be75229a1050bc1f4bef8315f">AudioType</a> { <a class="el" href="#a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48">sfx</a>
-, <a class="el" href="#a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0">music</a>
-, <a class="el" href="#a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765">global</a>
+<tr class="memitem:a0a7bc22fea904cdde6b310b8beb97b41" id="r_a0a7bc22fea904cdde6b310b8beb97b41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> { <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48">sfx</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0">music</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765">global</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127">custom</a>
  }</td></tr>
+<tr class="memdesc:a0a7bc22fea904cdde6b310b8beb97b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds different audio types for volume calculations.  <a href="#a0a7bc22fea904cdde6b310b8beb97b41">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a205abe25f4f82da9901e6306cc2475f2" id="r_a205abe25f4f82da9901e6306cc2475f2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a205abe25f4f82da9901e6306cc2475f2">CalculateVolumeBasedOnType</a> (float volume, <a class="el" href="#a8b0be65be75229a1050bc1f4bef8315f">AudioType</a> audioType)</td></tr>
-<tr class="memdesc:a205abe25f4f82da9901e6306cc2475f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does multiplication to volume types to the get right audio levels.  <br /></td></tr>
+<tr class="memitem:a36656b98992ea5778e3ca6f2b1316516" id="r_a36656b98992ea5778e3ca6f2b1316516"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36656b98992ea5778e3ca6f2b1316516">GetVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType)</td></tr>
+<tr class="memdesc:a36656b98992ea5778e3ca6f2b1316516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current volume level for the specified audio type.  <br /></td></tr>
+<tr class="memitem:a938dc9ab15c02a784ecb8921812f88f4" id="r_a938dc9ab15c02a784ecb8921812f88f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a938dc9ab15c02a784ecb8921812f88f4">ModifyVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType, float volume)</td></tr>
+<tr class="memdesc:a938dc9ab15c02a784ecb8921812f88f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the volume for the specified audio type by adding the given value to its current volume.  <br /></td></tr>
+<tr class="memitem:a096134c5684b1ef0d8f46d9c0cf9a6a6" id="r_a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a096134c5684b1ef0d8f46d9c0cf9a6a6">SetVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType, float volume)</td></tr>
+<tr class="memdesc:a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-1 inclusive.  <br /></td></tr>
+<tr class="memitem:a6842171f65007a880eac46610f5676b5" id="r_a6842171f65007a880eac46610f5676b5"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6842171f65007a880eac46610f5676b5">CalculateVolumeBasedOnType</a> (float volume, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType)</td></tr>
+<tr class="memdesc:a6842171f65007a880eac46610f5676b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does multiplication to volume types to the get right audio levels.  <br /></td></tr>
 <tr class="memitem:a0498ca8ec7582e9aa3607f534a7dc5f0" id="r_a0498ca8ec7582e9aa3607f534a7dc5f0"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0498ca8ec7582e9aa3607f534a7dc5f0">CalculateClipLength</a> (float clipLength, float pitch)</td></tr>
 <tr class="memdesc:a0498ca8ec7582e9aa3607f534a7dc5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the effective playback duration of an audio clip after adjusting for pitch.  <br /></td></tr>
 <tr class="memitem:a41eadf3c8d28dae43bd9058ff3ecf4ae" id="r_a41eadf3c8d28dae43bd9058ff3ecf4ae"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41eadf3c8d28dae43bd9058ff3ecf4ae">CalculateClipPitchWithLength</a> (float clipLength, float time)</td></tr>
 <tr class="memdesc:a41eadf3c8d28dae43bd9058ff3ecf4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the pitch adjustment factor needed to play an audio clip at a specified duration.  <br /></td></tr>
 <tr class="memitem:a3f7535559b788c3fdd18b161f7310774" id="r_a3f7535559b788c3fdd18b161f7310774"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7535559b788c3fdd18b161f7310774">CalculatePitchVariance</a> (float pitchVariance)</td></tr>
 <tr class="memdesc:a3f7535559b788c3fdd18b161f7310774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the pitch variance to add randomness to playback.  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a68d497c095f241b4ab3ecc26670d57a2" id="r_a68d497c095f241b4ab3ecc26670d57a2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68d497c095f241b4ab3ecc26670d57a2">globalVolume</a> = 1</td></tr>
-<tr class="memitem:a708603925a534e985814cfacfc31ac15" id="r_a708603925a534e985814cfacfc31ac15"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a708603925a534e985814cfacfc31ac15">musicVolume</a> = 1</td></tr>
-<tr class="memitem:a6de561cb74f1e58163479ba7f3803e95" id="r_a6de561cb74f1e58163479ba7f3803e95"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6de561cb74f1e58163479ba7f3803e95">sfxVolume</a> = 1</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds variables/functions for other audio scripts (Such as global volume). </p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
-<a id="a8b0be65be75229a1050bc1f4bef8315f" name="a8b0be65be75229a1050bc1f4bef8315f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b0be65be75229a1050bc1f4bef8315f">&#9670;&#160;</a></span>AudioType</h2>
+<a id="a0a7bc22fea904cdde6b310b8beb97b41" name="a0a7bc22fea904cdde6b310b8beb97b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7bc22fea904cdde6b310b8beb97b41">&#9670;&#160;</a></span>VolumeType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="#a8b0be65be75229a1050bc1f4bef8315f">UnityUtils.ScriptUtils.Audio.AudioManager.AudioType</a></td>
+          <td class="memname">enum <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">UnityUtils.ScriptUtils.Audio.AudioManager.VolumeType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Holds different audio types for volume calculations. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48" name="a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48"></a>sfx&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0" name="a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0"></a>music&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765" name="a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765"></a>global&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48" name="a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48"></a>sfx&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0" name="a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0"></a>music&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765" name="a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765"></a>global&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127" name="a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127"></a>custom&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -170,7 +175,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the effective playback duration of an audio clip after adjusting for pitch. </p>
-<dl class="section return"><dt>Returns</dt><dd>Adjusted clip length based on pitch (clipLength / pitch)</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Adjusted clip length based on pitch (clipLength / pitch).</dd></dl>
 
 </div>
 </div>
@@ -202,7 +207,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the pitch adjustment factor needed to play an audio clip at a specified duration. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pitch factor to achieve the desired playback time (clipLength * time)</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pitch factor to achieve the desired playback time (clipLength * time).</dd></dl>
 
 </div>
 </div>
@@ -230,12 +235,12 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the pitch variance to add randomness to playback. </p>
-<dl class="section return"><dt>Returns</dt><dd>Random number between 1 - pitchVariance and 1 + pitchVariance</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Random number between 1 - pitchVariance and 1 + pitchVariance.</dd></dl>
 
 </div>
 </div>
-<a id="a205abe25f4f82da9901e6306cc2475f2" name="a205abe25f4f82da9901e6306cc2475f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a205abe25f4f82da9901e6306cc2475f2">&#9670;&#160;</a></span>CalculateVolumeBasedOnType()</h2>
+<a id="a6842171f65007a880eac46610f5676b5" name="a6842171f65007a880eac46610f5676b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6842171f65007a880eac46610f5676b5">&#9670;&#160;</a></span>CalculateVolumeBasedOnType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +256,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#a8b0be65be75229a1050bc1f4bef8315f">AudioType</a></td>          <td class="paramname"><span class="paramname"><em>audioType</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a></td>          <td class="paramname"><span class="paramname"><em>volumeType</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -262,34 +267,12 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Does multiplication to volume types to the get right audio levels. </p>
+<dl class="section return"><dt>Returns</dt><dd>Proper volume level based on audio type. </dd></dl>
 
 </div>
 </div>
-<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a68d497c095f241b4ab3ecc26670d57a2" name="a68d497c095f241b4ab3ecc26670d57a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68d497c095f241b4ab3ecc26670d57a2">&#9670;&#160;</a></span>globalVolume</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float UnityUtils.ScriptUtils.Audio.AudioManager.globalVolume = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a708603925a534e985814cfacfc31ac15" name="a708603925a534e985814cfacfc31ac15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a708603925a534e985814cfacfc31ac15">&#9670;&#160;</a></span>musicVolume</h2>
+<a id="a36656b98992ea5778e3ca6f2b1316516" name="a36656b98992ea5778e3ca6f2b1316516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36656b98992ea5778e3ca6f2b1316516">&#9670;&#160;</a></span>GetVolume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,20 +281,26 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtils.ScriptUtils.Audio.AudioManager.musicVolume = 1</td>
+          <td class="memname">float UnityUtils.ScriptUtils.Audio.AudioManager.GetVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a></td>          <td class="paramname"><span class="paramname"><em>volumeType</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the current volume level for the specified audio type. </p>
+<dl class="section return"><dt>Returns</dt><dd>The volume level for the specified audio type, as a value between 0.0 (silent) and 1.0 (maximum volume).</dd></dl>
+
 </div>
 </div>
-<a id="a6de561cb74f1e58163479ba7f3803e95" name="a6de561cb74f1e58163479ba7f3803e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6de561cb74f1e58163479ba7f3803e95">&#9670;&#160;</a></span>sfxVolume</h2>
+<a id="a938dc9ab15c02a784ecb8921812f88f4" name="a938dc9ab15c02a784ecb8921812f88f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938dc9ab15c02a784ecb8921812f88f4">&#9670;&#160;</a></span>ModifyVolume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,15 +309,55 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float UnityUtils.ScriptUtils.Audio.AudioManager.sfxVolume = 1</td>
+          <td class="memname">void UnityUtils.ScriptUtils.Audio.AudioManager.ModifyVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a></td>          <td class="paramname"><span class="paramname"><em>volumeType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Adjusts the volume for the specified audio type by adding the given value to its current volume. </p>
+
+</div>
+</div>
+<a id="a096134c5684b1ef0d8f46d9c0cf9a6a6" name="a096134c5684b1ef0d8f46d9c0cf9a6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096134c5684b1ef0d8f46d9c0cf9a6a6">&#9670;&#160;</a></span>SetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.Audio.AudioManager.SetVolume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a></td>          <td class="paramname"><span class="paramname"><em>volumeType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-1 inclusive. </p>
 
 </div>
 </div>

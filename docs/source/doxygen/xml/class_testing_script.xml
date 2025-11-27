@@ -18,6 +18,20 @@
         </inbodydescription>
         <location file="Assets/TestingScript.cs" line="7" column="22" bodyfile="Assets/TestingScript.cs" bodystart="7" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="class_testing_script_1aa27a822a92396a4155e2b3ab047d5726" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
+        <definition>AudioManager.VolumeType TestingScript.audioType</definition>
+        <argsstring></argsstring>
+        <name>audioType</name>
+        <qualifiedname>TestingScript.audioType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript.cs" line="8" column="35" bodyfile="Assets/TestingScript.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -32,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="9" column="10" bodyfile="Assets/TestingScript.cs" bodystart="9" bodyend="13"/>
+        <location file="Assets/TestingScript.cs" line="10" column="10" bodyfile="Assets/TestingScript.cs" bodystart="10" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="class_testing_script_1adef3dacd956c752af52dbda30774055d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -46,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="16" column="10" bodyfile="Assets/TestingScript.cs" bodystart="16" bodyend="19"/>
+        <location file="Assets/TestingScript.cs" line="18" column="10" bodyfile="Assets/TestingScript.cs" bodystart="18" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -60,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="21" column="17" bodyfile="Assets/TestingScript.cs" bodystart="21" bodyend="25"/>
+        <location file="Assets/TestingScript.cs" line="23" column="17" bodyfile="Assets/TestingScript.cs" bodystart="23" bodyend="27"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -76,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="27" column="17" bodyfile="Assets/TestingScript.cs" bodystart="27" bodyend="30"/>
+        <location file="Assets/TestingScript.cs" line="29" column="17" bodyfile="Assets/TestingScript.cs" bodystart="29" bodyend="32"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -103,10 +117,18 @@
         <link refid="class_testing_script"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>audioType</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
       </node>
     </collaborationgraph>
-    <location file="Assets/TestingScript.cs" line="5" column="7" bodyfile="Assets/TestingScript.cs" bodystart="6" bodyend="31"/>
+    <location file="Assets/TestingScript.cs" line="5" column="7" bodyfile="Assets/TestingScript.cs" bodystart="6" bodyend="33"/>
     <listofallmembers>
+      <member refid="class_testing_script_1aa27a822a92396a4155e2b3ab047d5726" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>audioType</name></member>
       <member refid="class_testing_script_1a5f922c6f3bdc0731b453534dc90568fd" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>clip</name></member>
       <member refid="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" prot="private" virt="non-virtual"><scope>TestingScript</scope><name>Start</name></member>
       <member refid="class_testing_script_1acb711b373799913aec61b781aa4adfdb" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>Test</name></member>

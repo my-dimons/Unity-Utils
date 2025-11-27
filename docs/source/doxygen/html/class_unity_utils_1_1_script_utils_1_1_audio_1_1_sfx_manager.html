@@ -100,12 +100,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab20744db1797729ee6a448b4b0021868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays an AudioClip globally (non-spacialy) at a certain volume for a set amount of time.  <br /></td></tr>
 <tr class="memitem:af0b8555ddcdcdc2a455a0ff84f340fbf" id="r_af0b8555ddcdcdc2a455a0ff84f340fbf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0b8555ddcdcdc2a455a0ff84f340fbf">PlaySpacialSfxAudioClip</a> (AudioClip clip, Vector3 position, float volume=1, float pitchVariance=default)</td></tr>
 <tr class="memdesc:af0b8555ddcdcdc2a455a0ff84f340fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays an AudioClip spacially (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative).  <br /></td></tr>
-<tr class="memitem:ac8bc5a830465fc6e212dd54c7ec79724" id="r_ac8bc5a830465fc6e212dd54c7ec79724"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8bc5a830465fc6e212dd54c7ec79724">PlayClipOnSource</a> (AudioClip clip, AudioSource source, float volume=1, float pitchVariance=default, <a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a8b0be65be75229a1050bc1f4bef8315f">AudioManager.AudioType</a> audioType=<a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48">AudioManager.AudioType.sfx</a>)</td></tr>
-<tr class="memdesc:ac8bc5a830465fc6e212dd54c7ec79724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays an AudioClip on an already existing AudioSource at a certain volume with a pitch variance (to feel less repetative).  <br /></td></tr>
+<tr class="memitem:af432351c16120d8d6e5dd116c1bea7d3" id="r_af432351c16120d8d6e5dd116c1bea7d3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af432351c16120d8d6e5dd116c1bea7d3">PlayClipOnSource</a> (AudioClip clip, AudioSource source, float volume=1, float pitchVariance=default, <a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41">AudioManager.VolumeType</a> audioType=<a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48">AudioManager.VolumeType.sfx</a>)</td></tr>
+<tr class="memdesc:af432351c16120d8d6e5dd116c1bea7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays an AudioClip on an already existing AudioSource at a certain volume with a pitch variance (to feel less repetative).  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ac8bc5a830465fc6e212dd54c7ec79724" name="ac8bc5a830465fc6e212dd54c7ec79724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8bc5a830465fc6e212dd54c7ec79724">&#9670;&#160;</a></span>PlayClipOnSource()</h2>
+<a id="af432351c16120d8d6e5dd116c1bea7d3" name="af432351c16120d8d6e5dd116c1bea7d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af432351c16120d8d6e5dd116c1bea7d3">&#9670;&#160;</a></span>PlayClipOnSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a8b0be65be75229a1050bc1f4bef8315f">AudioManager.AudioType</a></td>          <td class="paramname"><span class="paramname"><em>audioType</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48">AudioManager::AudioType::sfx</a></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41">AudioManager.VolumeType</a></td>          <td class="paramname"><span class="paramname"><em>audioType</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48">AudioManager::VolumeType::sfx</a></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -149,9 +149,9 @@ Static Public Member Functions</h2></td></tr>
 <p>Plays an AudioClip on an already existing AudioSource at a certain volume with a pitch variance (to feel less repetative). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">volume</td><td>Playback volume</td></tr>
-    <tr><td class="paramname">audioType</td><td>used to get the proper volume, see AudioManager.CalculateVolumeBasedOnType(float, AudioManager.AudioType) to get more info</td></tr>
-    <tr><td class="paramname">pitchVariance</td><td>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value) </td></tr>
+    <tr><td class="paramname">volume</td><td>Playback volume.</td></tr>
+    <tr><td class="paramname">audioType</td><td>used to get the proper volume, see AudioManager.CalculateVolumeBasedOnType(float, AudioManager.VolumeType) to get more info.</td></tr>
+    <tr><td class="paramname">pitchVariance</td><td>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value). </td></tr>
   </table>
   </dd>
 </dl>
@@ -193,9 +193,9 @@ Static Public Member Functions</h2></td></tr>
 <p>Plays an AudioClip globally (non-spacialy) at a certain volume with a pitch variance (to feel less repetative). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clip</td><td>AudioClip to play</td></tr>
-    <tr><td class="paramname">volume</td><td>Playback volume</td></tr>
-    <tr><td class="paramname">pitchVariance</td><td>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value) </td></tr>
+    <tr><td class="paramname">clip</td><td>AudioClip to play.</td></tr>
+    <tr><td class="paramname">volume</td><td>Playback volume.</td></tr>
+    <tr><td class="paramname">pitchVariance</td><td>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value). </td></tr>
   </table>
   </dd>
 </dl>
@@ -242,10 +242,10 @@ Static Public Member Functions</h2></td></tr>
 <p>Plays an AudioClip spacially (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clip</td><td>AudioClip to play</td></tr>
-    <tr><td class="paramname">position</td><td>Position to play AudioClip at</td></tr>
-    <tr><td class="paramname">volume</td><td>Playback volume</td></tr>
-    <tr><td class="paramname">pitchVariance</td><td>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value) </td></tr>
+    <tr><td class="paramname">clip</td><td>AudioClip to play.</td></tr>
+    <tr><td class="paramname">position</td><td>Position to play AudioClip at.</td></tr>
+    <tr><td class="paramname">volume</td><td>Playback volume.</td></tr>
+    <tr><td class="paramname">pitchVariance</td><td>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value). </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,8 +288,8 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clip</td><td>AudioClip to play</td></tr>
-    <tr><td class="paramname">time</td><td>Specified time for AudioClip to play for in seconds</td></tr>
-    <tr><td class="paramname">volume</td><td>Playback volume</td></tr>
+    <tr><td class="paramname">time</td><td>Specified time for AudioClip to play for in seconds.</td></tr>
+    <tr><td class="paramname">volume</td><td>Playback volume.</td></tr>
   </table>
   </dd>
 </dl>

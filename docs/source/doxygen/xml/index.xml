@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::AudioManager</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315f" kind="enum"><name>AudioType</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48" kind="enumvalue"><name>sfx</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0" kind="enumvalue"><name>music</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765" kind="enumvalue"><name>global</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a68d497c095f241b4ab3ecc26670d57a2" kind="variable"><name>globalVolume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a708603925a534e985814cfacfc31ac15" kind="variable"><name>musicVolume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6de561cb74f1e58163479ba7f3803e95" kind="variable"><name>sfxVolume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a205abe25f4f82da9901e6306cc2475f2" kind="function"><name>CalculateVolumeBasedOnType</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kind="enum"><name>VolumeType</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48" kind="enumvalue"><name>sfx</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0" kind="enumvalue"><name>music</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765" kind="enumvalue"><name>global</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127" kind="enumvalue"><name>custom</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8e14a2e931430793b59f2adab937cca2" kind="variable"><name>audioVolumes</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a36656b98992ea5778e3ca6f2b1316516" kind="function"><name>GetVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a938dc9ab15c02a784ecb8921812f88f4" kind="function"><name>ModifyVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a096134c5684b1ef0d8f46d9c0cf9a6a6" kind="function"><name>SetVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6842171f65007a880eac46610f5676b5" kind="function"><name>CalculateVolumeBasedOnType</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" kind="function"><name>CalculateClipLength</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a41eadf3c8d28dae43bd9058ff3ecf4ae" kind="function"><name>CalculateClipPitchWithLength</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3f7535559b788c3fdd18b161f7310774" kind="function"><name>CalculatePitchVariance</name></member>
@@ -47,9 +49,9 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1aeb6bdb0b7451dba9f7fee3d9dd16343a" kind="function"><name>PlaySfxAudioClip</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ab20744db1797729ee6a448b4b0021868" kind="function"><name>PlayTimedSFXAudioClip</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1af0b8555ddcdcdc2a455a0ff84f340fbf" kind="function"><name>PlaySpacialSfxAudioClip</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ac8bc5a830465fc6e212dd54c7ec79724" kind="function"><name>PlayClipOnSource</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1aed6592168c3fcc66f1dcbd74b25fb312" kind="function"><name>CreateAndPlayAudioClip</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae842d447b522f7faabb4b2212271f530" kind="function"><name>PlayAudioClipOnSource</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1af432351c16120d8d6e5dd116c1bea7d3" kind="function"><name>PlayClipOnSource</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ab6916d1418b99a899f1a31770aa99b36" kind="function"><name>CreateAndPlayAudioClip</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae50ce8281ceb9f309adf3b51716b4382" kind="function"><name>PlayAudioClipOnSource</name></member>
   </compound>
   <compound refid="class_singleton_example" kind="class"><name>SingletonExample</name>
     <member refid="class_singleton_example_1a3ec2e0be8caa360684f1d04b5ec0491c" kind="property"><name>Instance</name></member>
@@ -58,6 +60,7 @@
   </compound>
   <compound refid="class_testing_script" kind="class"><name>TestingScript</name>
     <member refid="class_testing_script_1a5f922c6f3bdc0731b453534dc90568fd" kind="variable"><name>clip</name></member>
+    <member refid="class_testing_script_1aa27a822a92396a4155e2b3ab047d5726" kind="variable"><name>audioType</name></member>
     <member refid="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" kind="function"><name>Start</name></member>
     <member refid="class_testing_script_1adef3dacd956c752af52dbda30774055d" kind="function"><name>Update</name></member>
     <member refid="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" kind="function"><name>TestCoroutine</name></member>
@@ -67,7 +70,11 @@
   </compound>
   <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
   </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
   <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_windows_1_1_speech" kind="namespace"><name>UnityEngine::Windows::Speech</name>
   </compound>
   <compound refid="namespace_unity_utils" kind="namespace"><name>UnityUtils</name>
   </compound>

@@ -8,15 +8,22 @@ Holds variables/functions for other audio scripts (Such as global volume).
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f}{Audio\+Type}} \{ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48}{sfx}}
-, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0}{music}}
-, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765}{global}}
+enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} \{ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48}{sfx}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0}{music}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765}{global}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127}{custom}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Holds different audio types for volume calculations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a205abe25f4f82da9901e6306cc2475f2}{Calculate\+Volume\+Based\+On\+Type}} (float volume, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f}{Audio\+Type}} audio\+Type)
+static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a36656b98992ea5778e3ca6f2b1316516}{Get\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type)
+\begin{DoxyCompactList}\small\item\em Gets the current volume level for the specified audio type. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a938dc9ab15c02a784ecb8921812f88f4}{Modify\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type, float volume)
+\begin{DoxyCompactList}\small\item\em Adjusts the volume for the specified audio type by adding the given value to its current volume. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a096134c5684b1ef0d8f46d9c0cf9a6a6}{Set\+Volume}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type, float volume)
+\begin{DoxyCompactList}\small\item\em Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-\/1 inclusive. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6842171f65007a880eac46610f5676b5}{Calculate\+Volume\+Based\+On\+Type}} (float volume, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} volume\+Type)
 \begin{DoxyCompactList}\small\item\em Does multiplication to volume types to the get right audio levels. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0498ca8ec7582e9aa3607f534a7dc5f0}{Calculate\+Clip\+Length}} (float clip\+Length, float pitch)
 \begin{DoxyCompactList}\small\item\em Calculates the effective playback duration of an audio clip after adjusting for pitch. \end{DoxyCompactList}\item 
@@ -24,15 +31,6 @@ static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_a
 \begin{DoxyCompactList}\small\item\em Calculates the pitch adjustment factor needed to play an audio clip at a specified duration. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3f7535559b788c3fdd18b161f7310774}{Calculate\+Pitch\+Variance}} (float pitch\+Variance)
 \begin{DoxyCompactList}\small\item\em Calculates the pitch variance to add randomness to playback. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Static Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a68d497c095f241b4ab3ecc26670d57a2}{global\+Volume}} = 1
-\item 
-static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a708603925a534e985814cfacfc31ac15}{music\+Volume}} = 1
-\item 
-static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6de561cb74f1e58163479ba7f3803e95}{sfx\+Volume}} = 1
-\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -41,23 +39,31 @@ Holds variables/functions for other audio scripts (Such as global volume).
 \label{doc-enum-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_doc-enum-members}
 \doxysubsection{Member Enumeration Documentation}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!AudioType@{AudioType}}
-\index{AudioType@{AudioType}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
-\doxysubsubsection{\texorpdfstring{AudioType}{AudioType}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f} 
-enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f}{Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Audio\+Type}}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!VolumeType@{VolumeType}}
+\index{VolumeType@{VolumeType}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
+\doxysubsubsection{\texorpdfstring{VolumeType}{VolumeType}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41} 
+enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Volume\+Type}}}
+
+
+
+Holds different audio types for volume calculations. 
 
 \begin{DoxyEnumFields}[2]{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{sfx@{sfx}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!sfx@{sfx}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{sfx@{sfx}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!sfx@{sfx}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a07df0d82d1a0accbc1e35392109bfd48} 
 sfx&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{music@{music}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!music@{music}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{music@{music}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!music@{music}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a18d6769919266cd0bd6cd78aa405d5d0} 
 music&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{global@{global}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!global@{global}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{global@{global}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!global@{global}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a9c70933aff6b2a6d08c687a6cbb6b765} 
 global&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{custom@{custom}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!custom@{custom}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8b9035807842a4e4dbe009f3f1478127} 
+custom&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -77,7 +83,7 @@ float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Clip\+L
 Calculates the effective playback duration of an audio clip after adjusting for pitch. 
 
 \begin{DoxyReturn}{Returns}
-Adjusted clip length based on pitch (clip\+Length / pitch)
+Adjusted clip length based on pitch (clip\+Length / pitch).
 \end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a41eadf3c8d28dae43bd9058ff3ecf4ae}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!CalculateClipPitchWithLength@{CalculateClipPitchWithLength}}
 \index{CalculateClipPitchWithLength@{CalculateClipPitchWithLength}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
@@ -90,7 +96,7 @@ float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Clip\+P
 Calculates the pitch adjustment factor needed to play an audio clip at a specified duration. 
 
 \begin{DoxyReturn}{Returns}
-Pitch factor to achieve the desired playback time (clip\+Length \texorpdfstring{$\ast$}{*} time)
+Pitch factor to achieve the desired playback time (clip\+Length \texorpdfstring{$\ast$}{*} time).
 \end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3f7535559b788c3fdd18b161f7310774}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!CalculatePitchVariance@{CalculatePitchVariance}}
 \index{CalculatePitchVariance@{CalculatePitchVariance}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
@@ -103,40 +109,53 @@ float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Pitch\+
 Calculates the pitch variance to add randomness to playback. 
 
 \begin{DoxyReturn}{Returns}
-Random number between 1 -\/ pitch\+Variance and 1 + pitch\+Variance
+Random number between 1 -\/ pitch\+Variance and 1 + pitch\+Variance.
 \end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a205abe25f4f82da9901e6306cc2475f2}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!CalculateVolumeBasedOnType@{CalculateVolumeBasedOnType}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6842171f65007a880eac46610f5676b5}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!CalculateVolumeBasedOnType@{CalculateVolumeBasedOnType}}
 \index{CalculateVolumeBasedOnType@{CalculateVolumeBasedOnType}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
 \doxysubsubsection{\texorpdfstring{CalculateVolumeBasedOnType()}{CalculateVolumeBasedOnType()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a205abe25f4f82da9901e6306cc2475f2} 
-float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Volume\+Based\+On\+Type (\begin{DoxyParamCaption}\item[{float}]{volume}{, }\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f}{Audio\+Type}}}]{audio\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6842171f65007a880eac46610f5676b5} 
+float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Volume\+Based\+On\+Type (\begin{DoxyParamCaption}\item[{float}]{volume}{, }\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}}}]{volume\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Does multiplication to volume types to the get right audio levels. 
 
+\begin{DoxyReturn}{Returns}
+Proper volume level based on audio type. 
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a36656b98992ea5778e3ca6f2b1316516}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!GetVolume@{GetVolume}}
+\index{GetVolume@{GetVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
+\doxysubsubsection{\texorpdfstring{GetVolume()}{GetVolume()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a36656b98992ea5778e3ca6f2b1316516} 
+float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Get\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}}}]{volume\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
-\label{doc-variable-members}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_doc-variable-members}
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a68d497c095f241b4ab3ecc26670d57a2}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!globalVolume@{globalVolume}}
-\index{globalVolume@{globalVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
-\doxysubsubsection{\texorpdfstring{globalVolume}{globalVolume}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a68d497c095f241b4ab3ecc26670d57a2} 
-float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+global\+Volume = 1\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a708603925a534e985814cfacfc31ac15}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!musicVolume@{musicVolume}}
-\index{musicVolume@{musicVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
-\doxysubsubsection{\texorpdfstring{musicVolume}{musicVolume}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a708603925a534e985814cfacfc31ac15} 
-float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+music\+Volume = 1\hspace{0.3cm}{\ttfamily [static]}}
+Gets the current volume level for the specified audio type. 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6de561cb74f1e58163479ba7f3803e95}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!sfxVolume@{sfxVolume}}
-\index{sfxVolume@{sfxVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
-\doxysubsubsection{\texorpdfstring{sfxVolume}{sfxVolume}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a6de561cb74f1e58163479ba7f3803e95} 
-float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+sfx\+Volume = 1\hspace{0.3cm}{\ttfamily [static]}}
+\begin{DoxyReturn}{Returns}
+The volume level for the specified audio type, as a value between 0.\+0 (silent) and 1.\+0 (maximum volume).
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a938dc9ab15c02a784ecb8921812f88f4}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!ModifyVolume@{ModifyVolume}}
+\index{ModifyVolume@{ModifyVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
+\doxysubsubsection{\texorpdfstring{ModifyVolume()}{ModifyVolume()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a938dc9ab15c02a784ecb8921812f88f4} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Modify\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}}}]{volume\+Type}{, }\item[{float}]{volume}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Adjusts the volume for the specified audio type by adding the given value to its current volume. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a096134c5684b1ef0d8f46d9c0cf9a6a6}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!SetVolume@{SetVolume}}
+\index{SetVolume@{SetVolume}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
+\doxysubsubsection{\texorpdfstring{SetVolume()}{SetVolume()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a096134c5684b1ef0d8f46d9c0cf9a6a6} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Set\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}}}]{volume\+Type}{, }\item[{float}]{volume}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-\/1 inclusive. 
 
 
 

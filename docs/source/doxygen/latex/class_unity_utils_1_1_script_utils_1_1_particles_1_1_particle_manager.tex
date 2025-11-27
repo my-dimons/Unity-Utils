@@ -4,12 +4,48 @@
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a9c686ddb9044958c4c695304c23fa602}{Spawn\+Burst\+Particle}} (Game\+Object particle\+Prefab, Vector3 position, Color color=default, Gradient gradient=default)
-\begin{DoxyCompactList}\small\item\em Spawns a burst particle prefab at the given position Has adjustable color or gradient, but doesn\textquotesingle{}t need to be inputted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Spawns a burst particle prefab at the given position. Has adjustable color or gradient, but doesn\textquotesingle{}t need to be inputted. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_afe98bf9e10d104bd4006f180a711d525}{Set\+Particle\+System\+Color}} (Game\+Object particle\+System, Color color)
+\begin{DoxyCompactList}\small\item\em Sets the start color of the specified particle system. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_ae7048d2ac5b8d75ed5d49e8608d47aac}{Set\+Particle\+System\+Gradient\+Color}} (Game\+Object particle\+System, Gradient gradient)
+\begin{DoxyCompactList}\small\item\em Sets the start color of the specified particle system to use the provided gradient. \end{DoxyCompactList}\item 
+static Particle\+System \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a6fd1f7c5645bba7f225c6da90295242a}{Get\+Particle\+System}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Tries to get the particle system on the given object, prints a warning message if it doesn\textquotesingle{}t exist and returns null. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a6fd1f7c5645bba7f225c6da90295242a}\index{UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}!GetParticleSystem@{GetParticleSystem}}
+\index{GetParticleSystem@{GetParticleSystem}!UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}}
+\doxysubsubsection{\texorpdfstring{GetParticleSystem()}{GetParticleSystem()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a6fd1f7c5645bba7f225c6da90295242a} 
+Particle\+System Unity\+Utils.\+Script\+Utils.\+Particles.\+Particle\+Manager.\+Get\+Particle\+System (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Tries to get the particle system on the given object, prints a warning message if it doesn\textquotesingle{}t exist and returns null. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_afe98bf9e10d104bd4006f180a711d525}\index{UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}!SetParticleSystemColor@{SetParticleSystemColor}}
+\index{SetParticleSystemColor@{SetParticleSystemColor}!UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}}
+\doxysubsubsection{\texorpdfstring{SetParticleSystemColor()}{SetParticleSystemColor()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_afe98bf9e10d104bd4006f180a711d525} 
+void Unity\+Utils.\+Script\+Utils.\+Particles.\+Particle\+Manager.\+Set\+Particle\+System\+Color (\begin{DoxyParamCaption}\item[{Game\+Object}]{particle\+System}{, }\item[{Color}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets the start color of the specified particle system. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_ae7048d2ac5b8d75ed5d49e8608d47aac}\index{UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}!SetParticleSystemGradientColor@{SetParticleSystemGradientColor}}
+\index{SetParticleSystemGradientColor@{SetParticleSystemGradientColor}!UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}}
+\doxysubsubsection{\texorpdfstring{SetParticleSystemGradientColor()}{SetParticleSystemGradientColor()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_ae7048d2ac5b8d75ed5d49e8608d47aac} 
+void Unity\+Utils.\+Script\+Utils.\+Particles.\+Particle\+Manager.\+Set\+Particle\+System\+Gradient\+Color (\begin{DoxyParamCaption}\item[{Game\+Object}]{particle\+System}{, }\item[{Gradient}]{gradient}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Sets the start color of the specified particle system to use the provided gradient. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a9c686ddb9044958c4c695304c23fa602}\index{UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}!SpawnBurstParticle@{SpawnBurstParticle}}
 \index{SpawnBurstParticle@{SpawnBurstParticle}!UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}}
 \doxysubsubsection{\texorpdfstring{SpawnBurstParticle()}{SpawnBurstParticle()}}
@@ -18,15 +54,15 @@ void Unity\+Utils.\+Script\+Utils.\+Particles.\+Particle\+Manager.\+Spawn\+Burst
 
 
 
-Spawns a burst particle prefab at the given position Has adjustable color or gradient, but doesn\textquotesingle{}t need to be inputted. 
+Spawns a burst particle prefab at the given position. Has adjustable color or gradient, but doesn\textquotesingle{}t need to be inputted. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em particle\+Prefab} & Particle system to spawn (Gameobject with particle system applied)\\
+{\em particle\+Prefab} & Particle system to spawn (Gameobject with particle system applied).\\
 \hline
-{\em position} & Position to spawn the particle\+Prefab at\\
+{\em position} & Position to spawn the particle\+Prefab at.\\
 \hline
-{\em color} & Color to set the particle\+Prefab to\\
+{\em color} & Color to set the particle\+Prefab to.\\
 \hline
 {\em gradient} & Gradient to set the particle\+Prefab to\\
 \hline

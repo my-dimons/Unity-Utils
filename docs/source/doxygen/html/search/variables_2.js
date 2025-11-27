@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fadetime_0',['fadeTime',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#aa0656ccefce385481e6057ebfbbc6bff',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
+  ['dontdestroyonload_0',['dontDestroyOnLoad',['../class_singleton_example.html#a4c1e5d0cf929a0683eb3306b85af63b0',1,'SingletonExample']]]
 ];
