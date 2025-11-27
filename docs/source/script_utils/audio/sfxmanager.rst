@@ -28,5 +28,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils.ScriptUtils.Audio.SFXManager
+.. doxygenclass:: UnityUtils.ScriptUtils.Audio.SfxManager
    :members:
