@@ -16,21 +16,17 @@ using System.Collections;
 namespace UnityUtils.ScriptUtils.Audio {
     public class BackgroundMusicManager : MonoBehaviour
     {
-        /// Represents the audio source used for playing music tracks.
         public AudioSource musicSource;
         public AudioClip[] musicTracks;
         [Space(4)]
         public AudioClip currentPlayingTrack;
         [Space(8)]
 
-        /// If true, music will start playing as soon as this object loads in
         [Tooltip("Immedietely start playing music when this object loads in")]
         public bool playOnAwake = true;
 
-        /// The duration, in seconds, over which the fade effect occurs.
         public float fadeTime;
 
-        /// Vector2 representing the range of cooldown time (in seconds) between songs.
         [Tooltip("If you want a single value cooldown, just set the values to the same value")]
         public Vector2 randomMillisecondCooldownBetweenSongs;
 

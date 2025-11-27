@@ -29,4 +29,3 @@ Functions
 
 .. doxygenclass:: UnityUtils::ScriptUtils::Audio::BackgroundMusicManager
    :members:
-   :undoc-members:
