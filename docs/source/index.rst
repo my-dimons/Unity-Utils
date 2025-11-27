@@ -18,6 +18,7 @@ Usage
 
 .. toctree::
    :maxdepth: 2
+   
    usage
    api
    script_utils/scriptutils
