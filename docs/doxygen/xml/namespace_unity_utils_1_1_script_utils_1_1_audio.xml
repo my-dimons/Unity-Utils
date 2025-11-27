@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_audio" kind="namespace" language="C#">
+    <compoundname>UnityUtils::ScriptUtils::Audio</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" prot="public">UnityUtils::ScriptUtils::Audio::AudioManager</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" prot="public">UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager" prot="public">UnityUtils::ScriptUtils::Audio::SfxManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Script Utils/Audio/AudioManager.cs" line="17" column="1"/>
+  </compounddef>
+</doxygen>

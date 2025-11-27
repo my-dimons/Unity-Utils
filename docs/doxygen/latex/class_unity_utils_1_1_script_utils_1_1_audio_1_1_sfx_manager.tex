@@ -1,0 +1,101 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Audio.\+Sfx\+Manager Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager}{}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager}\index{UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_aeb6bdb0b7451dba9f7fee3d9dd16343a}{Play\+Sfx\+Audio\+Clip}} (Audio\+Clip clip, float volume=1, float pitch\+Variance=default)
+\begin{DoxyCompactList}\small\item\em Plays an Audio\+Clip globally (non-\/spacialy) at a certain volume with a pitch variance (to feel less repetative). \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_ab20744db1797729ee6a448b4b0021868}{Play\+Timed\+SFXAudio\+Clip}} (Audio\+Clip clip, float time, float volume=1)
+\begin{DoxyCompactList}\small\item\em Plays an Audio\+Clip globally (non-\/spacialy) at a certain volume for a set amount of time. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_af0b8555ddcdcdc2a455a0ff84f340fbf}{Play\+Spacial\+Sfx\+Audio\+Clip}} (Audio\+Clip clip, Vector3 position, float volume=1, float pitch\+Variance=default)
+\begin{DoxyCompactList}\small\item\em Plays an Audio\+Clip spacially (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative). \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_ac8bc5a830465fc6e212dd54c7ec79724}{Play\+Clip\+On\+Source}} (Audio\+Clip clip, Audio\+Source source, float volume=1, float pitch\+Variance=default, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f}{Audio\+Manager.\+Audio\+Type}} audio\+Type=\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48}{Audio\+Manager.\+Audio\+Type.\+sfx}})
+\begin{DoxyCompactList}\small\item\em Plays an Audio\+Clip on an already existing Audio\+Source at a certain volume with a pitch variance (to feel less repetative). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_ac8bc5a830465fc6e212dd54c7ec79724}\index{UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}!PlayClipOnSource@{PlayClipOnSource}}
+\index{PlayClipOnSource@{PlayClipOnSource}!UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}}
+\doxysubsubsection{\texorpdfstring{PlayClipOnSource()}{PlayClipOnSource()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_ac8bc5a830465fc6e212dd54c7ec79724} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Sfx\+Manager.\+Play\+Clip\+On\+Source (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip}{, }\item[{Audio\+Source}]{source}{, }\item[{float}]{volume}{ = {\ttfamily 1}, }\item[{float}]{pitch\+Variance}{ = {\ttfamily default}, }\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315f}{Audio\+Manager.\+Audio\+Type}}}]{audio\+Type}{ = {\ttfamily \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48}{Audio\+Manager\+::\+Audio\+Type\+::sfx}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Plays an Audio\+Clip on an already existing Audio\+Source at a certain volume with a pitch variance (to feel less repetative). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Playback volume\\
+\hline
+{\em audio\+Type} & used to get the proper volume, see Audio\+Manager.\+Calculate\+Volume\+Based\+On\+Type(float, Audio\+Manager.\+Audio\+Type) to get more info\\
+\hline
+{\em pitch\+Variance} & Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudio\+Source in a random of 1 -\/ pitch\+Variance, and 1 + pitch\+Variance (DEFAULT\+\_\+\+PITCH\+\_\+\+VARIANCE is the default value) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_aeb6bdb0b7451dba9f7fee3d9dd16343a}\index{UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}!PlaySfxAudioClip@{PlaySfxAudioClip}}
+\index{PlaySfxAudioClip@{PlaySfxAudioClip}!UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}}
+\doxysubsubsection{\texorpdfstring{PlaySfxAudioClip()}{PlaySfxAudioClip()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_aeb6bdb0b7451dba9f7fee3d9dd16343a} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Sfx\+Manager.\+Play\+Sfx\+Audio\+Clip (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip}{, }\item[{float}]{volume}{ = {\ttfamily 1}, }\item[{float}]{pitch\+Variance}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Plays an Audio\+Clip globally (non-\/spacialy) at a certain volume with a pitch variance (to feel less repetative). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Audio\+Clip to play\\
+\hline
+{\em volume} & Playback volume\\
+\hline
+{\em pitch\+Variance} & Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudio\+Source in a random of 1 -\/ pitch\+Variance, and 1 + pitch\+Variance (DEFAULT\+\_\+\+PITCH\+\_\+\+VARIANCE is the default value) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_af0b8555ddcdcdc2a455a0ff84f340fbf}\index{UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}!PlaySpacialSfxAudioClip@{PlaySpacialSfxAudioClip}}
+\index{PlaySpacialSfxAudioClip@{PlaySpacialSfxAudioClip}!UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}}
+\doxysubsubsection{\texorpdfstring{PlaySpacialSfxAudioClip()}{PlaySpacialSfxAudioClip()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_af0b8555ddcdcdc2a455a0ff84f340fbf} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Sfx\+Manager.\+Play\+Spacial\+Sfx\+Audio\+Clip (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip}{, }\item[{Vector3}]{position}{, }\item[{float}]{volume}{ = {\ttfamily 1}, }\item[{float}]{pitch\+Variance}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Plays an Audio\+Clip spacially (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Audio\+Clip to play\\
+\hline
+{\em position} & Position to play Audio\+Clip at\\
+\hline
+{\em volume} & Playback volume\\
+\hline
+{\em pitch\+Variance} & Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudio\+Source in a random of 1 -\/ pitch\+Variance, and 1 + pitch\+Variance (DEFAULT\+\_\+\+PITCH\+\_\+\+VARIANCE is the default value) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_ab20744db1797729ee6a448b4b0021868}\index{UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}!PlayTimedSFXAudioClip@{PlayTimedSFXAudioClip}}
+\index{PlayTimedSFXAudioClip@{PlayTimedSFXAudioClip}!UnityUtils.ScriptUtils.Audio.SfxManager@{UnityUtils.ScriptUtils.Audio.SfxManager}}
+\doxysubsubsection{\texorpdfstring{PlayTimedSFXAudioClip()}{PlayTimedSFXAudioClip()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_ab20744db1797729ee6a448b4b0021868} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Sfx\+Manager.\+Play\+Timed\+SFXAudio\+Clip (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip}{, }\item[{float}]{time}{, }\item[{float}]{volume}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Plays an Audio\+Clip globally (non-\/spacialy) at a certain volume for a set amount of time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Audio\+Clip to play\\
+\hline
+{\em time} & Specified time for Audio\+Clip to play for in seconds\\
+\hline
+{\em volume} & Playback volume\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Script Utils/\+Audio/\mbox{\hyperlink{_s_f_x_manager_8cs}{SFXManager.\+cs}}\end{DoxyCompactItemize}

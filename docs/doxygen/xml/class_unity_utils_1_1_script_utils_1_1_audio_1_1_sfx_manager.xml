@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::SfxManager</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a92fa5e3be797bbd9354ea22ef9dc036d" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float UnityUtils.ScriptUtils.Audio.SfxManager.DEFAULT_PITCH_VARIANCE</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_PITCH_VARIANCE</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SfxManager.DEFAULT_PITCH_VARIANCE</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/SFXManager.cs" line="16" column="29" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1aeb6bdb0b7451dba9f7fee3d9dd16343a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SfxManager.PlaySfxAudioClip</definition>
+        <argsstring>(AudioClip clip, float volume=1, float pitchVariance=default)</argsstring>
+        <name>PlaySfxAudioClip</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SfxManager.PlaySfxAudioClip</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitchVariance</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Plays an AudioClip globally (non-spacialy) at a certain volume with a pitch variance (to feel less repetative). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AudioClip to play</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitchVariance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/SFXManager.cs" line="27" column="28" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ab20744db1797729ee6a448b4b0021868" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SfxManager.PlayTimedSFXAudioClip</definition>
+        <argsstring>(AudioClip clip, float time, float volume=1)</argsstring>
+        <name>PlayTimedSFXAudioClip</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SfxManager.PlayTimedSFXAudioClip</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Plays an AudioClip globally (non-spacialy) at a certain volume for a set amount of time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AudioClip to play</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specified time for AudioClip to play for in seconds</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/SFXManager.cs" line="40" column="28" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1af0b8555ddcdcdc2a455a0ff84f340fbf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SfxManager.PlaySpacialSfxAudioClip</definition>
+        <argsstring>(AudioClip clip, Vector3 position, float volume=1, float pitchVariance=default)</argsstring>
+        <name>PlaySpacialSfxAudioClip</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SfxManager.PlaySpacialSfxAudioClip</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitchVariance</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Plays an AudioClip spacially (Changes volume and L/R volume channel based on location) at a certain volume with a pitch variance (to feel less repetative). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AudioClip to play</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to play AudioClip at</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitchVariance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/SFXManager.cs" line="57" column="28" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ac8bc5a830465fc6e212dd54c7ec79724" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SfxManager.PlayClipOnSource</definition>
+        <argsstring>(AudioClip clip, AudioSource source, float volume=1, float pitchVariance=default, AudioManager.AudioType audioType=AudioManager.AudioType.sfx)</argsstring>
+        <name>PlayClipOnSource</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SfxManager.PlayClipOnSource</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <param>
+          <type>AudioSource</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitchVariance</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315f" kindref="member">AudioManager.AudioType</ref></type>
+          <declname>audioType</declname>
+          <defval><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48" kindref="member">AudioManager.AudioType.sfx</ref></defval>
+        </param>
+        <briefdescription>
+<para>Plays an AudioClip on an already existing AudioSource at a certain volume with a pitch variance (to feel less repetative). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Playback volume</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>audioType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>used to get the proper volume, see AudioManager.CalculateVolumeBasedOnType(float, AudioManager.AudioType) to get more info</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitchVariance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random variance to make sound feel less repetative. randomly modifies the pitch of the musicAudioSource in a random of 1 - pitchVariance, and 1 + pitchVariance (DEFAULT_PITCH_VARIANCE is the default value) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/SFXManager.cs" line="73" column="28" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="73" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1aed6592168c3fcc66f1dcbd74b25fb312" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SfxManager.CreateAndPlayAudioClip</definition>
+        <argsstring>(AudioClip clip, float volume=1, float pitchVariance=0, float pitch=default, Vector3 position=default, Transform parent=default, AudioManager.AudioType type=AudioManager.AudioType.sfx)</argsstring>
+        <name>CreateAndPlayAudioClip</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SfxManager.CreateAndPlayAudioClip</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitchVariance</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitch</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>position</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>Transform</type>
+          <declname>parent</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315f" kindref="member">AudioManager.AudioType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48" kindref="member">AudioManager.AudioType.sfx</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/SFXManager.cs" line="80" column="29" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="80" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae842d447b522f7faabb4b2212271f530" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SfxManager.PlayAudioClipOnSource</definition>
+        <argsstring>(AudioClip audioClip, AudioSource audioSource, float volume, float pitchVariance=default, AudioManager.AudioType audioType=AudioManager.AudioType.sfx, float pitch=default)</argsstring>
+        <name>PlayAudioClipOnSource</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SfxManager.PlayAudioClipOnSource</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>audioClip</declname>
+        </param>
+        <param>
+          <type>AudioSource</type>
+          <declname>audioSource</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitchVariance</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315f" kindref="member">AudioManager.AudioType</ref></type>
+          <declname>audioType</declname>
+          <defval><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48" kindref="member">AudioManager.AudioType.sfx</ref></defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitch</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/SFXManager.cs" line="113" column="29" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="113" bodyend="123"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Script Utils/Audio/SFXManager.cs" line="14" column="19" bodyfile="Assets/Script Utils/Audio/SFXManager.cs" bodystart="15" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1aed6592168c3fcc66f1dcbd74b25fb312" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>CreateAndPlayAudioClip</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a92fa5e3be797bbd9354ea22ef9dc036d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>DEFAULT_PITCH_VARIANCE</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae842d447b522f7faabb4b2212271f530" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>PlayAudioClipOnSource</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ac8bc5a830465fc6e212dd54c7ec79724" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>PlayClipOnSource</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1aeb6bdb0b7451dba9f7fee3d9dd16343a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>PlaySfxAudioClip</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1af0b8555ddcdcdc2a455a0ff84f340fbf" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>PlaySpacialSfxAudioClip</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ab20744db1797729ee6a448b4b0021868" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SfxManager</scope><name>PlayTimedSFXAudioClip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

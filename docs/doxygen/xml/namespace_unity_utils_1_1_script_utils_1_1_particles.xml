@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_particles" kind="namespace" language="C#">
+    <compoundname>UnityUtils::ScriptUtils::Particles</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" prot="public">UnityUtils::ScriptUtils::Particles::ParticleManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Script Utils/Particles/ParticleManager.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

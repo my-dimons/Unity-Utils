@@ -30,7 +30,7 @@ namespace UnityUtils.ScriptUtils.Audio {
 
             CreateAndPlayAudioClip(clip, volume, pitchVariance, type: AudioManager.AudioType.sfx);
         }
-
+         
         /// <summary>
         /// Plays an <see cref="AudioClip"/> globally (non-spacialy) at a certain volume for a set amount of time
         /// </summary>

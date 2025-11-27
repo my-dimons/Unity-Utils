@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicSource</definition>
+        <argsstring></argsstring>
+        <name>musicSource</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="19" column="28" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" prot="public" static="no" mutable="no">
+        <type>AudioClip[]</type>
+        <definition>AudioClip [] UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicTracks</definition>
+        <argsstring></argsstring>
+        <name>musicTracks</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicTracks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="20" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a8516d30b183420e61f6d3d6117311740" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.currentPlayingTrack</definition>
+        <argsstring></argsstring>
+        <name>currentPlayingTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.currentPlayingTrack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="22" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a848c527693d5daa4b2f091434d7d3e68" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.playOnAwake</definition>
+        <argsstring></argsstring>
+        <name>playOnAwake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.playOnAwake</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="25" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0656ccefce385481e6057ebfbbc6bff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.fadeTime</definition>
+        <argsstring></argsstring>
+        <name>fadeTime</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.fadeTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="27" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a49c63e55a37e3711101180af223d4954" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.randomMillisecondCooldownBetweenSongs</definition>
+        <argsstring></argsstring>
+        <name>randomMillisecondCooldownBetweenSongs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.randomMillisecondCooldownBetweenSongs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="29" column="24" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1acc76051508dd5d6bfb0e45bdc8e0dc78" prot="public" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.playingMusicCoroutine</definition>
+        <argsstring></argsstring>
+        <name>playingMusicCoroutine</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.playingMusicCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="33" column="26" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0d3dfa0ef5fc811c9ac426ef808f397" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" kindref="compound">BackgroundMusicManager</ref></type>
+        <definition>BackgroundMusicManager UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="31" column="46" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a598e1bdd4226b117a07a7a8d6ee29e2e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="35" column="14" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="35" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ba8af91b478bed6d5076c57601e8e4c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="46" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1af5207aed4c35c06f1a54c2c1ceffadd0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlayMusicContinuously</definition>
+        <argsstring>()</argsstring>
+        <name>PlayMusicContinuously</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlayMusicContinuously</qualifiedname>
+        <briefdescription>
+<para>Loops through random songs in <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" kindref="member">musicTracks</ref> constantly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="55" column="29" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="55" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ca4c7180757cf91bea35dcdcc6adae3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlayMusicTrack</definition>
+        <argsstring>(AudioClip clip)</argsstring>
+        <name>PlayMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlayMusicTrack</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+<para>Plays a music track on the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kindref="member">musicSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;param name=&quot;clip&lt;see cref=&quot;AudioClip&quot;/&gt; too play&quot;&gt;</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="107" column="22" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="107" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>AudioClip</type>
+        <definition>AudioClip UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.GetRandomSong</definition>
+        <argsstring>()</argsstring>
+        <name>GetRandomSong</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.GetRandomSong</qualifiedname>
+        <briefdescription>
+<para><simplesect kind="return"><para>Random music track within the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" kindref="member">musicTracks</ref> array</para>
+</simplesect>
+</para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="135" column="27" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="135" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a82e502951ecdb1a090d31f684b3a5cd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StopMusic</definition>
+        <argsstring>()</argsstring>
+        <name>StopMusic</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StopMusic</qualifiedname>
+        <briefdescription>
+<para>Stops the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kindref="member">musicSource</ref> from playing music and looping until PlayMusicContinuously is called again (to start looping). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="75" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="75" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a04ced0973b67e3cc4830767edfacb606" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StartContinuousMusic</definition>
+        <argsstring>()</argsstring>
+        <name>StartContinuousMusic</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StartContinuousMusic</qualifiedname>
+        <briefdescription>
+<para>Starts to PlayMusicContinuously until stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="92" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a79053ee109f1122d6530632b6ed21fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlaySingleRandomMusicTrack</definition>
+        <argsstring>()</argsstring>
+        <name>PlaySingleRandomMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlaySingleRandomMusicTrack</qualifiedname>
+        <briefdescription>
+<para>Plays a random music track once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="120" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlaySpecificMusicTrack</definition>
+        <argsstring>(AudioClip clip)</argsstring>
+        <name>PlaySpecificMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlaySpecificMusicTrack</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+<para>Plays a specific music track once. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AudioClip to play</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="129" column="21" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="129" bodyend="132"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs" line="17" column="11" bodyfile="Assets/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="18" bodyend="140"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a598e1bdd4226b117a07a7a8d6ee29e2e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>Awake</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a8516d30b183420e61f6d3d6117311740" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>currentPlayingTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0656ccefce385481e6057ebfbbc6bff" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>fadeTime</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>GetRandomSong</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0d3dfa0ef5fc811c9ac426ef808f397" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>Instance</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>musicSource</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>musicTracks</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1acc76051508dd5d6bfb0e45bdc8e0dc78" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>playingMusicCoroutine</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1af5207aed4c35c06f1a54c2c1ceffadd0" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>PlayMusicContinuously</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ca4c7180757cf91bea35dcdcc6adae3" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>PlayMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a848c527693d5daa4b2f091434d7d3e68" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>playOnAwake</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a79053ee109f1122d6530632b6ed21fe2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>PlaySingleRandomMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>PlaySpecificMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a49c63e55a37e3711101180af223d4954" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>randomMillisecondCooldownBetweenSongs</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a04ced0973b67e3cc4830767edfacb606" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>StartContinuousMusic</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a82e502951ecdb1a090d31f684b3a5cd8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>StopMusic</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ba8af91b478bed6d5076c57601e8e4c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

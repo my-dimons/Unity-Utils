@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_audio_manager_8cs" kind="file" language="C#">
+    <compoundname>AudioManager.cs</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" prot="public">UnityUtils::ScriptUtils::Audio::AudioManager</innerclass>
+    <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_audio">UnityUtils::ScriptUtils::Audio</innernamespace>
+    <innernamespace refid="namespace_system">System</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>a<sp/>static<sp/>class,<sp/>do<sp/>not<sp/>add<sp/>it<sp/>to<sp/>any<sp/>objects<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>TO<sp/>CREATE<sp/>MORE<sp/>AUDIO<sp/>TYPES</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>---</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>1.<sp/>Add<sp/>a<sp/>new<sp/>properaty<sp/>to<sp/>the<sp/>&apos;AudioType&apos;<sp/>enum<sp/>below</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>2.<sp/>Add<sp/>a<sp/>new<sp/>custom<sp/>volume<sp/>variable<sp/>like<sp/>the<sp/>ones<sp/>below</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>3.<sp/>Add<sp/>another<sp/>condition<sp/>to<sp/>the<sp/>&apos;CalculateVolumeBasedOnType(float<sp/>volume,<sp/>AudioType<sp/>audioType)&apos;<sp/>switch<sp/>function</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>Requires<sp/>the<sp/>BackgroundMusicManager.cs<sp/>and<sp/>SfxManager.cs<sp/>scripts<sp/>to<sp/>work<sp/>properly</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespace_unity_utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kindref="compound">UnityUtils.ScriptUtils.Audio</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kindref="compound">AudioManager</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>To<sp/>add<sp/>more<sp/>volume<sp/>types,<sp/>add<sp/>more<sp/>properties<sp/>to<sp/>this<sp/>array<sp/>and<sp/>then<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315f" kindref="member">AudioType</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48" kindref="member">sfx</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0" kindref="member">music</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765" kindref="member">global</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Header(</highlight><highlight class="stringliteral">&quot;Audio<sp/>Volumes&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Range(0f,<sp/>1f)]</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Tooltip(</highlight><highlight class="stringliteral">&quot;All<sp/>volume<sp/>is<sp/>multiplied<sp/>by<sp/>this<sp/>value&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a68d497c095f241b4ab3ecc26670d57a2" kindref="member">globalVolume</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Space(8)]</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Range(0f,<sp/>1f)]</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Tooltip(</highlight><highlight class="stringliteral">&quot;Music<sp/>volume<sp/>is<sp/>multiplied<sp/>by<sp/>this<sp/>value&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a708603925a534e985814cfacfc31ac15" kindref="member">musicVolume</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Range(0f,<sp/>1f)]</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Tooltip(</highlight><highlight class="stringliteral">&quot;SFX<sp/>volume<sp/>is<sp/>multiplied<sp/>by<sp/>this<sp/>value&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6de561cb74f1e58163479ba7f3803e95" kindref="member">sfxVolume</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//[Space(8)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Custom<sp/>volumes<sp/>here!</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a205abe25f4f82da9901e6306cc2475f2" kindref="member">CalculateVolumeBasedOnType</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>volume,<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315f" kindref="member">AudioType</ref><sp/>audioType)<sp/>=&gt;<sp/>audioType<sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa07df0d82d1a0accbc1e35392109bfd48" kindref="member">AudioType.sfx</ref><sp/>=&gt;<sp/>MultiplyByGlobalVolume(volume)<sp/>*<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6de561cb74f1e58163479ba7f3803e95" kindref="member">sfxVolume</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa18d6769919266cd0bd6cd78aa405d5d0" kindref="member">AudioType.music</ref><sp/>=&gt;<sp/>MultiplyByGlobalVolume(volume)<sp/>*<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a708603925a534e985814cfacfc31ac15" kindref="member">musicVolume</ref>,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a8b0be65be75229a1050bc1f4bef8315fa9c70933aff6b2a6d08c687a6cbb6b765" kindref="member">AudioType.global</ref><sp/>=&gt;<sp/>MultiplyByGlobalVolume(volume),</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_<sp/>=&gt;<sp/>MultiplyByGlobalVolume(volume),</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>MultiplyByGlobalVolume(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>volume)<sp/>=&gt;<sp/>volume<sp/>*<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a68d497c095f241b4ab3ecc26670d57a2" kindref="member">globalVolume</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" kindref="member">CalculateClipLength</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>clipLength,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pitch)<sp/>=&gt;<sp/>clipLength<sp/>/<sp/>Math.Abs(pitch);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a41eadf3c8d28dae43bd9058ff3ecf4ae" kindref="member">CalculateClipPitchWithLength</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>clipLength,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>time)<sp/>=&gt;<sp/>clipLength<sp/>*<sp/>time;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3f7535559b788c3fdd18b161f7310774" kindref="member">CalculatePitchVariance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pitchVariance)<sp/>=&gt;<sp/>UnityEngine.Random.Range(1<sp/>-<sp/>pitchVariance,<sp/>1<sp/>+<sp/>pitchVariance);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Assets/Script Utils/Audio/AudioManager.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager}{}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a82e502951ecdb1a090d31f684b3a5cd8}{Stop\+Music}} ()
+\begin{DoxyCompactList}\small\item\em Stops the \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa1877f5498b9668610fcc15140a990c5}{music\+Source} from playing music and looping until Play\+Music\+Continuously is called again (to start looping). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a04ced0973b67e3cc4830767edfacb606}{Start\+Continuous\+Music}} ()
+\begin{DoxyCompactList}\small\item\em Starts to Play\+Music\+Continuously until stopped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a79053ee109f1122d6530632b6ed21fe2}{Play\+Single\+Random\+Music\+Track}} ()
+\begin{DoxyCompactList}\small\item\em Plays a random music track once. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a4164aeed2aa479da81a8eb2aa2209868}{Play\+Specific\+Music\+Track}} (Audio\+Clip clip)
+\begin{DoxyCompactList}\small\item\em Plays a specific music track once. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Source \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa1877f5498b9668610fcc15140a990c5}{music\+Source}}
+\item 
+Audio\+Clip\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a7122a46cd1682d4a54d9d944e3fcba47}{music\+Tracks}}
+\item 
+Audio\+Clip \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a8516d30b183420e61f6d3d6117311740}{current\+Playing\+Track}}
+\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a848c527693d5daa4b2f091434d7d3e68}{play\+On\+Awake}} = true
+\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa0656ccefce385481e6057ebfbbc6bff}{fade\+Time}}
+\item 
+Vector2 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a49c63e55a37e3711101180af223d4954}{random\+Millisecond\+Cooldown\+Between\+Songs}}
+\item 
+Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_acc76051508dd5d6bfb0e45bdc8e0dc78}{playing\+Music\+Coroutine}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager}{Background\+Music\+Manager}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa0d3dfa0ef5fc811c9ac426ef808f397}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a79053ee109f1122d6530632b6ed21fe2}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!PlaySingleRandomMusicTrack@{PlaySingleRandomMusicTrack}}
+\index{PlaySingleRandomMusicTrack@{PlaySingleRandomMusicTrack}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{PlaySingleRandomMusicTrack()}{PlaySingleRandomMusicTrack()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a79053ee109f1122d6530632b6ed21fe2} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+Play\+Single\+Random\+Music\+Track (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plays a random music track once. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a4164aeed2aa479da81a8eb2aa2209868}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!PlaySpecificMusicTrack@{PlaySpecificMusicTrack}}
+\index{PlaySpecificMusicTrack@{PlaySpecificMusicTrack}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{PlaySpecificMusicTrack()}{PlaySpecificMusicTrack()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a4164aeed2aa479da81a8eb2aa2209868} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+Play\+Specific\+Music\+Track (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plays a specific music track once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Audio\+Clip to play\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a04ced0973b67e3cc4830767edfacb606}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!StartContinuousMusic@{StartContinuousMusic}}
+\index{StartContinuousMusic@{StartContinuousMusic}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{StartContinuousMusic()}{StartContinuousMusic()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a04ced0973b67e3cc4830767edfacb606} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+Start\+Continuous\+Music (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Starts to Play\+Music\+Continuously until stopped. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a82e502951ecdb1a090d31f684b3a5cd8}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!StopMusic@{StopMusic}}
+\index{StopMusic@{StopMusic}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{StopMusic()}{StopMusic()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a82e502951ecdb1a090d31f684b3a5cd8} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+Stop\+Music (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stops the \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa1877f5498b9668610fcc15140a990c5}{music\+Source} from playing music and looping until Play\+Music\+Continuously is called again (to start looping). 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a8516d30b183420e61f6d3d6117311740}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!currentPlayingTrack@{currentPlayingTrack}}
+\index{currentPlayingTrack@{currentPlayingTrack}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{currentPlayingTrack}{currentPlayingTrack}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a8516d30b183420e61f6d3d6117311740} 
+Audio\+Clip Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+current\+Playing\+Track}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa0656ccefce385481e6057ebfbbc6bff}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!fadeTime@{fadeTime}}
+\index{fadeTime@{fadeTime}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{fadeTime}{fadeTime}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa0656ccefce385481e6057ebfbbc6bff} 
+float Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+fade\+Time}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa1877f5498b9668610fcc15140a990c5}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!musicSource@{musicSource}}
+\index{musicSource@{musicSource}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{musicSource}{musicSource}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa1877f5498b9668610fcc15140a990c5} 
+Audio\+Source Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+music\+Source}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a7122a46cd1682d4a54d9d944e3fcba47}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!musicTracks@{musicTracks}}
+\index{musicTracks@{musicTracks}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{musicTracks}{musicTracks}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a7122a46cd1682d4a54d9d944e3fcba47} 
+Audio\+Clip \mbox{[}$\,$\mbox{]} Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+music\+Tracks}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_acc76051508dd5d6bfb0e45bdc8e0dc78}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!playingMusicCoroutine@{playingMusicCoroutine}}
+\index{playingMusicCoroutine@{playingMusicCoroutine}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{playingMusicCoroutine}{playingMusicCoroutine}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_acc76051508dd5d6bfb0e45bdc8e0dc78} 
+Coroutine Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+playing\+Music\+Coroutine}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a848c527693d5daa4b2f091434d7d3e68}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!playOnAwake@{playOnAwake}}
+\index{playOnAwake@{playOnAwake}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{playOnAwake}{playOnAwake}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a848c527693d5daa4b2f091434d7d3e68} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+play\+On\+Awake = true}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a49c63e55a37e3711101180af223d4954}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!randomMillisecondCooldownBetweenSongs@{randomMillisecondCooldownBetweenSongs}}
+\index{randomMillisecondCooldownBetweenSongs@{randomMillisecondCooldownBetweenSongs}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{randomMillisecondCooldownBetweenSongs}{randomMillisecondCooldownBetweenSongs}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a49c63e55a37e3711101180af223d4954} 
+Vector2 Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+random\+Millisecond\+Cooldown\+Between\+Songs}
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa0d3dfa0ef5fc811c9ac426ef808f397}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!Instance@{Instance}}
+\index{Instance@{Instance}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_aa0d3dfa0ef5fc811c9ac426ef808f397} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager}{Background\+Music\+Manager}} Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Script Utils/\+Audio/\mbox{\hyperlink{_background_music_manager_8cs}{Background\+Music\+Manager.\+cs}}\end{DoxyCompactItemize}

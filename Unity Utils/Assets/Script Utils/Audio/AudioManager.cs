@@ -27,7 +27,7 @@ namespace UnityUtils.ScriptUtils.Audio {
             music,
             global
         }
-
+         
         [Header("Audio Volumes")]
 
         [Range(0f, 1f)]

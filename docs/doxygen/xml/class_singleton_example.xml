@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_singleton_example" kind="class" language="C#" prot="public">
+    <compoundname>SingletonExample</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_singleton_example_1a3ec2e0be8caa360684f1d04b5ec0491c" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_singleton_example" kindref="compound">SingletonExample</ref></type>
+        <definition>SingletonExample SingletonExample.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>SingletonExample.Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Examples/SingletonExample.cs" line="5" column="36" bodyfile="Assets/Examples/SingletonExample.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_singleton_example_1a4c1e5d0cf929a0683eb3306b85af63b0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SingletonExample.dontDestroyOnLoad</definition>
+        <argsstring></argsstring>
+        <name>dontDestroyOnLoad</name>
+        <qualifiedname>SingletonExample.dontDestroyOnLoad</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Examples/SingletonExample.cs" line="8" column="17" bodyfile="Assets/Examples/SingletonExample.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_singleton_example_1ac555684307507dd98240e64cebf9a79a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingletonExample.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>SingletonExample.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Examples/SingletonExample.cs" line="10" column="18" bodyfile="Assets/Examples/SingletonExample.cs" bodystart="10" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SingletonExample</label>
+        <link refid="class_singleton_example"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>SingletonExample</label>
+        <link refid="class_singleton_example"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Examples/SingletonExample.cs" line="3" column="7" bodyfile="Assets/Examples/SingletonExample.cs" bodystart="4" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_singleton_example_1ac555684307507dd98240e64cebf9a79a" prot="private" virt="non-virtual"><scope>SingletonExample</scope><name>Awake</name></member>
+      <member refid="class_singleton_example_1a4c1e5d0cf929a0683eb3306b85af63b0" prot="public" virt="non-virtual"><scope>SingletonExample</scope><name>dontDestroyOnLoad</name></member>
+      <member refid="class_singleton_example_1a3ec2e0be8caa360684f1d04b5ec0491c" prot="public" virt="non-virtual"><scope>SingletonExample</scope><name>Instance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

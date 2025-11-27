@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_9f2b6e6d1de89151db6681cf7ae9d1b8" kind="dir">
+    <compoundname>Assets/Script Utils/Scriptable Objects</compoundname>
+    <innerfile refid="_scriptable_object_manager_8cs">ScriptableObjectManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Script Utils/Scriptable Objects/"/>
+  </compounddef>
+</doxygen>

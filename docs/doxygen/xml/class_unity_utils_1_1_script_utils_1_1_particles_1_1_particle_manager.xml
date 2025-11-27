@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Particles::ParticleManager</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Particles.ParticleManager.SpawnBurstParticle</definition>
+        <argsstring>(GameObject particlePrefab, Vector3 position, Color color=default, Gradient gradient=default)</argsstring>
+        <name>SpawnBurstParticle</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleManager.SpawnBurstParticle</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>particlePrefab</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>Gradient</type>
+          <declname>gradient</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Spawns a burst particle prefab at the given position Has adjustable color or gradient, but doesn&apos;t need to be inputted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particlePrefab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Particle system to spawn (Gameobject with particle system applied)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position to spawn the particlePrefab at</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color to set the particlePrefab to</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gradient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gradient to set the particlePrefab to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Particles/ParticleManager.cs" line="14" column="28" bodyfile="Assets/Script Utils/Particles/ParticleManager.cs" bodystart="14" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1afe98bf9e10d104bd4006f180a711d525" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Particles.ParticleManager.SetParticleSystemColor</definition>
+        <argsstring>(GameObject particleSystem, Color color)</argsstring>
+        <name>SetParticleSystemColor</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleManager.SetParticleSystemColor</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>particleSystem</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Particles/ParticleManager.cs" line="28" column="29" bodyfile="Assets/Script Utils/Particles/ParticleManager.cs" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1ae7048d2ac5b8d75ed5d49e8608d47aac" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Particles.ParticleManager.SetParticleSystemGradientColor</definition>
+        <argsstring>(GameObject particleSystem, Gradient gradient)</argsstring>
+        <name>SetParticleSystemGradientColor</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleManager.SetParticleSystemGradientColor</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>particleSystem</declname>
+        </param>
+        <param>
+          <type>Gradient</type>
+          <declname>gradient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Particles/ParticleManager.cs" line="34" column="29" bodyfile="Assets/Script Utils/Particles/ParticleManager.cs" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a6fd1f7c5645bba7f225c6da90295242a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ParticleSystem</type>
+        <definition>static ParticleSystem UnityUtils.ScriptUtils.Particles.ParticleManager.GetParticleSystem</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>GetParticleSystem</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleManager.GetParticleSystem</qualifiedname>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Tries to get the particle system on the given object, prints a warning message if it doesn&apos;t exist and returns null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Particles/ParticleManager.cs" line="43" column="39" bodyfile="Assets/Script Utils/Particles/ParticleManager.cs" bodystart="43" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Assets/Script Utils/Particles/ParticleManager.cs" line="4" column="19" bodyfile="Assets/Script Utils/Particles/ParticleManager.cs" bodystart="5" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a6fd1f7c5645bba7f225c6da90295242a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>GetParticleSystem</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1afe98bf9e10d104bd4006f180a711d525" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>SetParticleSystemColor</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1ae7048d2ac5b8d75ed5d49e8608d47aac" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>SetParticleSystemGradientColor</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>SpawnBurstParticle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

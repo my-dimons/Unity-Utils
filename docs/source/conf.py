@@ -17,7 +17,14 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'breathe'
 ]
+
+breathe_projects = {
+    "UnityUtils": "./doxygen/xml"
+}
+
+breathe_default_project = "UnityUtils"
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),

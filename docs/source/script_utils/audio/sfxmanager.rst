@@ -23,3 +23,10 @@ Example Usage
    	   // play sfx clip for set amount of time
    	   SfxManager.PlayTimedSFXAudioClip(clip, 1);
    	}
+   }
+   
+Functions
+---------
+
+.. doxygenclass:: UnityUtils.ScriptUtils.Audio.SFXManager
+   :members:

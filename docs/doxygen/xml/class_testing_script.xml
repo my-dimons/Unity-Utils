@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_testing_script" kind="class" language="C#" prot="public">
+    <compoundname>TestingScript</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_testing_script_1a5f922c6f3bdc0731b453534dc90568fd" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip TestingScript.clip</definition>
+        <argsstring></argsstring>
+        <name>clip</name>
+        <qualifiedname>TestingScript.clip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript.cs" line="7" column="22" bodyfile="Assets/TestingScript.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestingScript.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>TestingScript.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript.cs" line="9" column="10" bodyfile="Assets/TestingScript.cs" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_testing_script_1adef3dacd956c752af52dbda30774055d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestingScript.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>TestingScript.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript.cs" line="16" column="10" bodyfile="Assets/TestingScript.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator TestingScript.TestCoroutine</definition>
+        <argsstring>()</argsstring>
+        <name>TestCoroutine</name>
+        <qualifiedname>TestingScript.TestCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript.cs" line="21" column="17" bodyfile="Assets/TestingScript.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_testing_script_1acb711b373799913aec61b781aa4adfdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestingScript.Test</definition>
+        <argsstring>()</argsstring>
+        <name>Test</name>
+        <qualifiedname>TestingScript.Test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript.cs" line="27" column="17" bodyfile="Assets/TestingScript.cs" bodystart="27" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TestingScript</label>
+        <link refid="class_testing_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TestingScript</label>
+        <link refid="class_testing_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/TestingScript.cs" line="5" column="7" bodyfile="Assets/TestingScript.cs" bodystart="6" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_testing_script_1a5f922c6f3bdc0731b453534dc90568fd" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>clip</name></member>
+      <member refid="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" prot="private" virt="non-virtual"><scope>TestingScript</scope><name>Start</name></member>
+      <member refid="class_testing_script_1acb711b373799913aec61b781aa4adfdb" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>Test</name></member>
+      <member refid="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" prot="private" virt="non-virtual"><scope>TestingScript</scope><name>TestCoroutine</name></member>
+      <member refid="class_testing_script_1adef3dacd956c752af52dbda30774055d" prot="private" virt="non-virtual"><scope>TestingScript</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
