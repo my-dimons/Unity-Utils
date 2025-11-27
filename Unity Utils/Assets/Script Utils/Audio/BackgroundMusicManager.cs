@@ -6,7 +6,7 @@ using System.Collections;
  * This script should be created in the main scene, and it will persist through all scenes
  * 
  * This script is designed to keep a set of predefined music tracks playing randomly in the background. 
- * It does not support dynamic soundtracks, such as changing music based on the player’s location or game events.
+ * It does not support dynamic soundtracks, such as changing music based on the player's location or game events.
  * But this script does have a few functions to stop and start music
  * 
  * Sometimes this script will bug out if you don't have run in background enabled in Unity (https://discussions.unity.com/t/how-do-you-keep-your-game-running-even-when-you-switch-out-of-it/928)

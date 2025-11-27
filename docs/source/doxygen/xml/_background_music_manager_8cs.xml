@@ -20,7 +20,7 @@
 <codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>script<sp/>should<sp/>be<sp/>created<sp/>in<sp/>the<sp/>main<sp/>scene,<sp/>and<sp/>it<sp/>will<sp/>persist<sp/>through<sp/>all<sp/>scenes</highlight></codeline>
 <codeline lineno="7"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
 <codeline lineno="8"><highlight class="comment"><sp/>*<sp/>This<sp/>script<sp/>is<sp/>designed<sp/>to<sp/>keep<sp/>a<sp/>set<sp/>of<sp/>predefined<sp/>music<sp/>tracks<sp/>playing<sp/>randomly<sp/>in<sp/>the<sp/>background.<sp/></highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>It<sp/>does<sp/>not<sp/>support<sp/>dynamic<sp/>soundtracks,<sp/>such<sp/>as<sp/>changing<sp/>music<sp/>based<sp/>on<sp/>the<sp/>player’s<sp/>location<sp/>or<sp/>game<sp/>events.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>It<sp/>does<sp/>not<sp/>support<sp/>dynamic<sp/>soundtracks,<sp/>such<sp/>as<sp/>changing<sp/>music<sp/>based<sp/>on<sp/>the<sp/>player&apos;s<sp/>location<sp/>or<sp/>game<sp/>events.</highlight></codeline>
 <codeline lineno="10"><highlight class="comment"><sp/>*<sp/>But<sp/>this<sp/>script<sp/>does<sp/>have<sp/>a<sp/>few<sp/>functions<sp/>to<sp/>stop<sp/>and<sp/>start<sp/>music</highlight></codeline>
 <codeline lineno="11"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
 <codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Sometimes<sp/>this<sp/>script<sp/>will<sp/>bug<sp/>out<sp/>if<sp/>you<sp/>don&apos;t<sp/>have<sp/>run<sp/>in<sp/>background<sp/>enabled<sp/>in<sp/>Unity<sp/>(https://discussions.unity.com/t/how-do-you-keep-your-game-running-even-when-you-switch-out-of-it/928)</highlight></codeline>
