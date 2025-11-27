@@ -3,8 +3,13 @@ Particles
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Particles`
-   
-These scripts have things relating to easily playing and modifying 
+
+Here are the Particles docs!
+
+These scripts have things relating to easily playing and modifying particle systems
+
+Scripts
+-------
 
 .. toctree::
    :maxdepth: 2

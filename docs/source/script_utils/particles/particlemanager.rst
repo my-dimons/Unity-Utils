@@ -3,11 +3,7 @@ ParticleManager
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Particles`
-  
-.. warning::
-
-   This page is still under development.
-   
+     
 The **ParticleManager** is used to easily play and edit particle systems.
 
 Example Usage

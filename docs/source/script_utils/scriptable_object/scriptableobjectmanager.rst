@@ -4,11 +4,11 @@ ScriptableObjectManager
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.ScriptableObjects`
   
-.. warning::
+.. note::
 
-   This page is still under development.
+   Make sure your Scriptable Objects are somewhere withing the 'Resources' folder in 'Assets' (If you don't have a 'Resources folder, create one).
    
-The **ScriptableObjectManager** is used to easily grab scriptable objects from a location in the Unity file system. Make a folder named 'Resources' in your 'Assets' folder and put your scriptable objects in it
+The **ScriptableObjectManager** is used to easily grab scriptable objects from a location in the Unity file system.
 
 Example Usage
 -------------

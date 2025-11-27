@@ -10,6 +10,9 @@ If you want to play SFX easily with a random pitch variance, see :doc:`sfxmanage
 
 If you want to have a simple background music script, see :doc:`backgroundmusicmanager`.
 
+Scripts
+-------
+
 .. toctree::
    :maxdepth: 1
    

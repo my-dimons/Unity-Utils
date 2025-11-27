@@ -6,6 +6,9 @@ UI
    
 Here are the UI docs! 
 
+Scripts
+-------
+
 .. toctree::
    :maxdepth: 1
    

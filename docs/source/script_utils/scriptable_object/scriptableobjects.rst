@@ -6,6 +6,9 @@ Scriptable Objects
    
 Here are the Scriptable Object docs! 
 
+Scripts
+-------
+
 .. toctree::
    :maxdepth: 1
    
