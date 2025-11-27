@@ -3,7 +3,13 @@ BackgroundMusicManager
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Audio`
+
+.. note::
+
+   This script requires :doc:`AudioManager` to function properly.
    
+The **BackgroundMusicManager** is used for quickly adding music to your games. It allows you to cycle through random songs with some adjustable properties for fading songs and have random delay between songs.
+
 Example Usage
 -------------
 .. code:: csharp
@@ -16,10 +22,10 @@ Example Usage
      public BackgroundMusicManager manager;
      void Start()
      {
-   	   // start playing music
+   	   // Start playing music.
    	   manager.StartContinuousMusic();
    	      	   
-   	   // stop playing music
+   	   // Stop playing music.
    	   manager.StopMusic();
    	}
    }

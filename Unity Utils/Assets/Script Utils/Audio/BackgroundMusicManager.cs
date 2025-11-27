@@ -54,7 +54,7 @@ namespace UnityUtils.ScriptUtils.Audio {
         private void Update()
         {
             if (musicSource != null)
-                musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.AudioType.music);
+                musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.VolumeType.music);
         }
 
         /// <summary>

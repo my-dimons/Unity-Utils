@@ -7,3 +7,5 @@ This is where you will find useful scripts for quick unity development!
    :maxdepth: 2
    
    audio/audio
+   particles/particles
+   ui/ui

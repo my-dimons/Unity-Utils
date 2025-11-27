@@ -10,7 +10,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     public static class AudioManager
     {
         /// Holds different audio types for volume calculations
-        public enum AudioType
+        public enum VolumeType
         {
             sfx,
             music,
@@ -18,37 +18,37 @@ namespace UnityUtils.ScriptUtils.Audio {
             custom
         }
 
-        static Dictionary<AudioType, float> audioVolumes = new Dictionary<AudioType, float>()
+        static Dictionary<VolumeType, float> audioVolumes = new Dictionary<VolumeType, float>()
         {
-            { AudioType.sfx,    1f },
-            { AudioType.music,  1f },
-            { AudioType.global, 1f },
-            { AudioType.custom, 1f },
+            { VolumeType.sfx,    1f },
+            { VolumeType.music,  1f },
+            { VolumeType.global, 1f },
+            { VolumeType.custom, 1f },
         };
 
         /// <summary>
         /// Gets the current volume level for the specified audio type.
         /// </summary>
         /// <returns>The volume level for the specified audio type, as a value between 0.0 (silent) and 1.0 (maximum volume).</returns>
-        public static float GetVolume(AudioType audioType)
+        public static float GetVolume(VolumeType volumeType)
         {
-            return audioVolumes[audioType];
+            return audioVolumes[volumeType];
         }
 
         /// <summary>
         /// Adjusts the volume for the specified audio type by adding the given value to its current volume.
         /// </summary>
-        public static void ModifyVolume(AudioType audioType, float volume)
+        public static void ModifyVolume(VolumeType volumeType, float volume)
         {
-            SetVolume(audioType, GetVolume(audioType) + volume);
+            SetVolume(volumeType, GetVolume(volumeType) + volume);
         }
 
         /// <summary>
         /// Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-1 inclusive
         /// </summary>
-        public static void SetVolume(AudioType audioType, float volume)
+        public static void SetVolume(VolumeType volumeType, float volume)
         {
-            audioVolumes[audioType] = Mathf.Clamp01(volume);
+            audioVolumes[volumeType] = Mathf.Clamp01(volume);
         }
 
         /// <summary>
@@ -57,16 +57,16 @@ namespace UnityUtils.ScriptUtils.Audio {
         /// <returns>
         /// Proper volume level based on audio type.
         /// </returns>
-        public static float CalculateVolumeBasedOnType(float volume, AudioType audioType) => audioType switch
+        public static float CalculateVolumeBasedOnType(float volume, VolumeType volumeType) => volumeType switch
         {
-            AudioType.sfx    => MultiplyByGlobalVolume(volume) * GetVolume(AudioType.sfx),
-            AudioType.music  => MultiplyByGlobalVolume(volume) * GetVolume(AudioType.music),
-            AudioType.global => MultiplyByGlobalVolume(volume),
-            AudioType.custom => MultiplyByGlobalVolume(volume) * GetVolume(AudioType.custom),
-            _                => MultiplyByGlobalVolume(volume),
+            VolumeType.sfx    => MultiplyByGlobalVolume(volume) * GetVolume(VolumeType.sfx),
+            VolumeType.music  => MultiplyByGlobalVolume(volume) * GetVolume(VolumeType.music),
+            VolumeType.global => MultiplyByGlobalVolume(volume),
+            VolumeType.custom => MultiplyByGlobalVolume(volume) * GetVolume(VolumeType.custom),
+            _                 => MultiplyByGlobalVolume(volume),
         };
 
-        private static float MultiplyByGlobalVolume(float volume) => volume * GetVolume(AudioType.global);
+        private static float MultiplyByGlobalVolume(float volume) => volume * GetVolume(VolumeType.global);
 
         /// <summary>
         /// Calculates the effective playback duration of an audio clip after adjusting for pitch.

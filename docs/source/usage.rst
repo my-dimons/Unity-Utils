@@ -12,6 +12,10 @@ Installation
 Installing Unity Utils
 ~~~~~~~~~~~~~~~~~~~~
 
+.. note::
+
+   If you want to only install specific :doc:`scriptutils` follow :ref:`Downloading Script Utils`.
+   
 1. To install Unity Utils, first go to the `Unity Utils GitHub <https://github.com/my-dimons/Unity-Utils/tree/main>`_.
 2. Click the green button and download the project as a .zip.
 3. Unzip the downloaded file.
@@ -20,5 +24,9 @@ Installing Unity Utils
 Downloading Script Utils
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. note::
+   
+   Don't do this step if you have followed the above steps, only do these if you don't want to install the whole project.
+   
 1. Find the specific `Script Utils <https://github.com/my-dimons/Unity-Utils/tree/main/Unity%20Utils/Assets/Script%20Utils>`_ you want to import into your game.
 2. Download these scripts, then drag them into your unity project.

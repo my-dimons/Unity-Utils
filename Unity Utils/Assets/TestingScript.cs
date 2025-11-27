@@ -5,10 +5,12 @@ using UnityUtils.ScriptUtils.Audio;
 public class TestingScript : MonoBehaviour
 {
     public AudioClip clip;
+    public AudioManager.VolumeType audioType;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SfxManager.PlayTimedSFXAudioClip(clip, 1);
+        AudioManager.SetVolume(audioType, 1);
         StartCoroutine(TestCoroutine());
     }
 
