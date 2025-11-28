@@ -13,7 +13,7 @@ The **BackgroundMusicManager** is used for quickly adding music to your games. I
 .. tip::
    
    * Use .wav format audio for better audio quality.
-   * Turn on "Run in Background" in the "Unity settings <https://discussions.unity.com/t/how-do-you-keep-your-game-running-even-when-you-switch-out-of-it/928>"_, if you don't the script may bug out when tabbing out and into the game.
+   * Turn on "Run in Background" in the `Unity settings <https://discussions.unity.com/t/how-do-you-keep-your-game-running-even-when-you-switch-out-of-it/928>`_, if you don't the script may bug out when tabbing out and into the game.
    
 Example Usage
 -------------

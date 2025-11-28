@@ -17,5 +17,5 @@ You can also edit the volume for each type of sound effect and set the volume ty
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::UI::UIButtonSfx
+.. doxygenclass:: UnityUtils::ScriptUtils::UI::UIButtonSFX
    :members:
