@@ -131,8 +131,8 @@ GameObject:
   - component: {fileID: 330572092}
   - component: {fileID: 330572091}
   - component: {fileID: 330572090}
-  - component: {fileID: 330572089}
   - component: {fileID: 330572093}
+  - component: {fileID: 330572094}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -160,46 +160,6 @@ RectTransform:
   m_AnchoredPosition: {x: -9, y: -9.75}
   m_SizeDelta: {x: 291.5191, y: 54.6598}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &330572089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330572087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a31f557759d1e9d4a82f4d262fadd54c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIButtonHoverExpand
-  hoverSize: 1.3
-  sizeAnimationSeconds: 0.2
-  useRealtime: 0
-  SizingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  hoveringOverButton: 0
 --- !u!114 &330572090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +263,49 @@ MonoBehaviour:
   pitchVariance: 0.2
   volumeType: 1
   emptySfxErrorMessages: 0
+--- !u!114 &330572094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330572087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43bcbe38c2aea0428781ce40b15cdf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityUtils.ScriptUtils.UI.UIButtonHoverRotate
+  hoverRotation: 8
+  rotationAnimationSeconds: 0.2
+  rotateBackAfterHover: 1
+  useRealtime: 0
+  SizingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useRandomRotation: 0
+  randomRotation: {x: -5, y: 5}
+  hoveringOverButton: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,6 +42,7 @@ namespace UnityUtils.ScriptUtils.UI
         {
             hoverSizeVector = new Vector3(hoverSize, hoverSize, hoverSize);
 
+            // Stops choppy animation when spam hovering the button
             if (!hoveringOverButton && transform.localScale == hoverSizeVector)
             {
                 ExitHoverAnimation();
