@@ -69,8 +69,7 @@ namespace UnityUtils.ScriptUtils.UI
         /// </summary>
         void EnterHoverAnimation()
         {
-            //ObjectAnimations.AnimateTransformScale(transform, originalSize, hoverSizeVector, UIUtilsManager.CalculateAnimationSpeed(sizeAnimationSeconds), SizingCurve);
-            StartCoroutine(UIUtilsManager.AnimateButtonSize(this.gameObject, originalSize, hoverSizeVector, SizingCurve, UIUtilsManager.CalculateAnimationSpeed(sizeAnimationSeconds)));
+            ObjectAnimations.AnimateTransformScale(transform, originalSize, hoverSizeVector, sizeAnimationSeconds, useRealtime, SizingCurve);
         }
 
         /// <summary>
@@ -78,7 +77,7 @@ namespace UnityUtils.ScriptUtils.UI
         /// </summary>
         void ExitHoverAnimation()
         {
-            StartCoroutine(UIUtilsManager.AnimateButtonSize(this.gameObject, hoverSizeVector, originalSize, SizingCurve, UIUtilsManager.CalculateAnimationSpeed(sizeAnimationSeconds)));
+            ObjectAnimations.AnimateTransformScale(transform, hoverSizeVector, originalSize, sizeAnimationSeconds, useRealtime, SizingCurve);
         }
     }
 }

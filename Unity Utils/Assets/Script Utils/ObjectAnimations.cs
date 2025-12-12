@@ -65,6 +65,18 @@ namespace UnityUtils.ScriptUtils
         }
 
         /// <summary>
+        /// Animates an objects RectTransform component position from a starting value to an ending value over a specified duration.
+        /// </summary>
+        public static void AnimateRectTransformPosition(Transform transform, Vector3 startRotation, Vector3 endRotation, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
+        {
+            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+
+            AnimateVector3Value(startRotation, endRotation, duration,
+                value => transform.localRotation = Quaternion.Euler(value),
+                useRealtime, animationCurve);
+        }
+
+        /// <summary>
         /// Animates a Vector3 value from a starting value to an ending value over a specified duration.
         /// </summary>
         /// <param name="onValueChanged">A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</param>

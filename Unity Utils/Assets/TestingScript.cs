@@ -6,6 +6,8 @@ using UnityUtils.ScriptUtils.Audio;
 
 public class TestingScript : MonoBehaviour
 {
+    public float testingValue;
+    public Vector3 testingVector3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
