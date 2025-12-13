@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,9 +35,7 @@ namespace UnityUtils.ScriptUtils
         {
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
-            AnimateVector3Value(startScale, endScale, duration,
-                value => transform.localScale = value,
-                useRealtime, animationCurve);
+            AnimateValue<Vector3>(startScale, endScale, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.localScale = value, useRealtime, animationCurve);
         }
 
         /// <summary>
@@ -46,9 +45,7 @@ namespace UnityUtils.ScriptUtils
         {
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
-            AnimateVector3Value(startPos, endPos, duration,
-                value => transform.position = value,
-                useRealtime, animationCurve);
+            AnimateValue<Vector3>(startPos, endPos, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.position = value, useRealtime, animationCurve);
         }
 
         /// <summary>
@@ -58,9 +55,7 @@ namespace UnityUtils.ScriptUtils
         {
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
-            AnimateVector3Value(startRotation, endRotation, duration,
-                value => transform.localRotation = Quaternion.Euler(value),
-                useRealtime, animationCurve);
+            AnimateValue<Vector3>(startRotation, endRotation, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.localRotation = Quaternion.Euler(value), useRealtime, animationCurve);
         }
 
         /// <summary>
@@ -72,9 +67,7 @@ namespace UnityUtils.ScriptUtils
 
             Color color = spriteRenderer.color;
 
-            AnimateValue(startOpacity, endOpacity, duration,
-                value => spriteRenderer.color = new Color(color.r, color.g, color.b, value),
-                useRealtime, animationCurve);
+            AnimateValue<float>(startOpacity, endOpacity, duration, (a, b, t) => Mathf.Lerp(a, b, t), value => spriteRenderer.color = new Color(color.r, color.g, color.b, value), useRealtime, animationCurve);
         }
 
         /// <summary>
@@ -86,36 +79,22 @@ namespace UnityUtils.ScriptUtils
 
             Color color = image.color;
 
-            AnimateValue(startOpacity, endOpacity, duration,
-                value => image.color = new Color(color.r, color.g, color.b, value),
-                useRealtime, animationCurve);
+            AnimateValue<float>(startOpacity, endOpacity, duration, (a, b, t) => Mathf.Lerp(a, b, t), value => image.color = new Color(color.r, color.g, color.b, value), useRealtime, animationCurve);
         }
 
         /// <summary>
-        /// Animates a <see cref="Vector3"/> value from a starting value to an ending value over a specified duration.
-        /// </summary>
-        /// <param name="onValueChanged">A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</param>
-        /// <param name="useRealtime">true to use unscaled real time for the animation (ignoring time scale).</param>
-        /// <param name="animationCurve">Default is a linear curve.</param>
-        public static void AnimateVector3Value(Vector3 startValue, Vector3 endValue, float duration, Action<Vector3> onValueChanged, bool useRealtime = false, AnimationCurve animationCurve = default)
-        {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
-            CoroutineStarter.StartCoroutine(AnimateVector3ValueCoroutine(startValue, endValue, duration, animationCurve, onValueChanged, useRealtime));
-        }
-
-        /// <summary>
-        /// Animates a float value from a starting value to an ending value over a specified duration
+        /// Animates a value from a starting value to an ending value over a specified duration
         /// </summary>
         /// <param name="onValueChanged">A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</param>
         /// <param name="useRealtime">true to use unscaled real time for the animation (ignoring time scale)</param>
         /// <param name="animationCurve">Default is a linear curve</param>
-        public static void AnimateValue(float startValue, float endValue, float duration, Action<float> onValueChanged, bool useRealtime = false, AnimationCurve animationCurve = default)
+        public static void AnimateValue<T>(T start, T end, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false, AnimationCurve curve = default)
         {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
-            CoroutineStarter.StartCoroutine(AnimateValueCoroutine(startValue, endValue, duration, animationCurve, onValueChanged, useRealtime));
+            if (curve == default) curve = AnimationCurve.Linear(0, 0, 1, 1);
+            CoroutineStarter.StartCoroutine(AnimateValueCoroutine(start, end, curve, duration, lerpFunction, onValueChanged, useRealtime));
         }
 
-        private static IEnumerator AnimateValueCoroutine(float start, float end, float duration, AnimationCurve curve, Action<float> onValueChanged, bool useRealtime = false)
+        private static IEnumerator AnimateValueCoroutine<T>(T start, T end, AnimationCurve curve, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false)
         {
             float elapsed = 0f;
 
@@ -124,32 +103,10 @@ namespace UnityUtils.ScriptUtils
                 elapsed += useRealtime ? Time.unscaledDeltaTime : Time.deltaTime;
 
                 float time = Mathf.Clamp01(elapsed / duration);
-                float value = Mathf.Lerp(start, end, curve.Evaluate(time));
+
+                T value = lerpFunction(start, end, curve.Evaluate(time));
 
                 onValueChanged?.Invoke(value);
-
-                yield return null;
-            }
-
-            // Ensure final value
-            onValueChanged?.Invoke(end);
-        }
-
-
-        private static IEnumerator AnimateVector3ValueCoroutine(Vector3 start, Vector3 end, float duration, AnimationCurve curve, Action<Vector3> onValueChanged, bool useRealtime = false)
-        {
-            float elapsed = 0f;
-
-            while (elapsed < duration)
-            {
-                elapsed += useRealtime ? Time.unscaledDeltaTime : Time.deltaTime;
-
-                float time = Mathf.Clamp01(elapsed / duration);
-                float x = Mathf.Lerp(start.x, end.x, curve.Evaluate(time));
-                float y = Mathf.Lerp(start.y, end.y, curve.Evaluate(time));
-                float z = Mathf.Lerp(start.z, end.z, curve.Evaluate(time));
-
-                onValueChanged?.Invoke(new Vector3(x, y, z));
 
                 yield return null;
             }

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="13" column="57" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="13" bodyend="-1"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="14" column="57" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="14" column="57" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="15" bodyend="27"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="15" column="57" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="16" bodyend="28"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="33" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="33" bodyend="40"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="34" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="34" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="45" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="45" bodyend="52"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="44" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="44" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="57" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="57" bodyend="64"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="54" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="54" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="69" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="69" bodyend="78"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="64" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="64" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -239,28 +239,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="83" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="83" bodyend="92"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="76" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="76" bodyend="83"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1afd924d2da967332d549a5af2e8830142" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.AnimateVector3Value</definition>
-        <argsstring>(Vector3 startValue, Vector3 endValue, float duration, Action&lt; Vector3 &gt; onValueChanged, bool useRealtime=false, AnimationCurve animationCurve=default)</argsstring>
-        <name>AnimateVector3Value</name>
-        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.AnimateVector3Value</qualifiedname>
+        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.AnimateValue&lt; T &gt;</definition>
+        <argsstring>(T start, T end, float duration, Func&lt; T, T, float, T &gt; lerpFunction, Action&lt; T &gt; onValueChanged, bool useRealtime=false, AnimationCurve curve=default)</argsstring>
+        <name>AnimateValue&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.AnimateValue&lt; T &gt;</qualifiedname>
         <param>
-          <type>Vector3</type>
-          <declname>startValue</declname>
+          <type>T</type>
+          <declname>start</declname>
         </param>
         <param>
-          <type>Vector3</type>
-          <declname>endValue</declname>
+          <type>T</type>
+          <declname>end</declname>
         </param>
         <param>
           <type>float</type>
           <declname>duration</declname>
         </param>
         <param>
-          <type>Action&lt; Vector3 &gt;</type>
+          <type>Func&lt; T, T, float, T &gt;</type>
+          <declname>lerpFunction</declname>
+        </param>
+        <param>
+          <type>Action&lt; T &gt;</type>
           <declname>onValueChanged</declname>
         </param>
         <param>
@@ -270,78 +274,11 @@
         </param>
         <param>
           <type>AnimationCurve</type>
-          <declname>animationCurve</declname>
+          <declname>curve</declname>
           <defval>default</defval>
         </param>
         <briefdescription>
-<para>Animates a Vector3 value from a starting value to an ending value over a specified duration. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>onValueChanged</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>useRealtime</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>true to use unscaled real time for the animation (ignoring time scale).</para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>animationCurve</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Default is a linear curve.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="100" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="100" bodyend="104"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1eb44094a2be7b69d370913d66298e22" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.AnimateValue</definition>
-        <argsstring>(float startValue, float endValue, float duration, Action&lt; float &gt; onValueChanged, bool useRealtime=false, AnimationCurve animationCurve=default)</argsstring>
-        <name>AnimateValue</name>
-        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.AnimateValue</qualifiedname>
-        <param>
-          <type>float</type>
-          <declname>startValue</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>endValue</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>duration</declname>
-        </param>
-        <param>
-          <type>Action&lt; float &gt;</type>
-          <declname>onValueChanged</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>useRealtime</declname>
-          <defval>false</defval>
-        </param>
-        <param>
-          <type>AnimationCurve</type>
-          <declname>animationCurve</declname>
-          <defval>default</defval>
-        </param>
-        <briefdescription>
-<para>Animates a float value from a starting value to an ending value over a specified duration. </para>
+<para>Animates a value from a starting value to an ending value over a specified duration. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -373,34 +310,38 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="112" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="112" bodyend="116"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="91" column="23" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="91" bodyend="95"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9763ce9a5be026aac755aef2347d1ecd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
-        <definition>static IEnumerator UnityUtils.ScriptUtils.ObjectAnimations.AnimateValueCoroutine</definition>
-        <argsstring>(float start, float end, float duration, AnimationCurve curve, Action&lt; float &gt; onValueChanged, bool useRealtime=false)</argsstring>
-        <name>AnimateValueCoroutine</name>
-        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.AnimateValueCoroutine</qualifiedname>
+        <definition>static IEnumerator UnityUtils.ScriptUtils.ObjectAnimations.AnimateValueCoroutine&lt; T &gt;</definition>
+        <argsstring>(T start, T end, AnimationCurve curve, float duration, Func&lt; T, T, float, T &gt; lerpFunction, Action&lt; T &gt; onValueChanged, bool useRealtime=false)</argsstring>
+        <name>AnimateValueCoroutine&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.AnimateValueCoroutine&lt; T &gt;</qualifiedname>
         <param>
-          <type>float</type>
+          <type>T</type>
           <declname>start</declname>
         </param>
         <param>
-          <type>float</type>
+          <type>T</type>
           <declname>end</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>duration</declname>
         </param>
         <param>
           <type>AnimationCurve</type>
           <declname>curve</declname>
         </param>
         <param>
-          <type>Action&lt; float &gt;</type>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>Func&lt; T, T, float, T &gt;</type>
+          <declname>lerpFunction</declname>
+        </param>
+        <param>
+          <type>Action&lt; T &gt;</type>
           <declname>onValueChanged</declname>
         </param>
         <param>
@@ -414,63 +355,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="118" column="36" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="118" bodyend="136"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9098568c1e299ab0d9a72292b3c68f7e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>IEnumerator</type>
-        <definition>static IEnumerator UnityUtils.ScriptUtils.ObjectAnimations.AnimateVector3ValueCoroutine</definition>
-        <argsstring>(Vector3 start, Vector3 end, float duration, AnimationCurve curve, Action&lt; Vector3 &gt; onValueChanged, bool useRealtime=false)</argsstring>
-        <name>AnimateVector3ValueCoroutine</name>
-        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.AnimateVector3ValueCoroutine</qualifiedname>
-        <param>
-          <type>Vector3</type>
-          <declname>start</declname>
-        </param>
-        <param>
-          <type>Vector3</type>
-          <declname>end</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>duration</declname>
-        </param>
-        <param>
-          <type>AnimationCurve</type>
-          <declname>curve</declname>
-        </param>
-        <param>
-          <type>Action&lt; Vector3 &gt;</type>
-          <declname>onValueChanged</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>useRealtime</declname>
-          <defval>false</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="139" column="36" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="139" bodyend="159"/>
+        <location file="Assets/Script Utils/ObjectAnimations.cs" line="97" column="24" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="97" bodyend="116"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Assets/Script Utils/ObjectAnimations.cs" line="8" column="19" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="9" bodyend="160"/>
+    <location file="Assets/Script Utils/ObjectAnimations.cs" line="9" column="19" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="10" bodyend="117"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateImageOpacity</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateSpriteRendererOpacity</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateTransformPosition</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateTransformRotation</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateTransformScale</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1eb44094a2be7b69d370913d66298e22" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValue</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9763ce9a5be026aac755aef2347d1ecd" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValueCoroutine</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1afd924d2da967332d549a5af2e8830142" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateVector3Value</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9098568c1e299ab0d9a72292b3c68f7e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateVector3ValueCoroutine</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValue&lt; T &gt;</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValueCoroutine&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a4833b2df85821bdae8bf3af5d150fa3d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>CoroutineStarter</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a0008088bcac9ff950d313400b03b4beb" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>coroutineStarter</name></member>
     </listofallmembers>

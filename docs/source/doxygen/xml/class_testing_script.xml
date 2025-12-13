@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="8" column="18" bodyfile="Assets/TestingScript.cs" bodystart="8" bodyend="-1"/>
+        <location file="Assets/TestingScript.cs" line="6" column="18" bodyfile="Assets/TestingScript.cs" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_testing_script_1a4573d3cb16b06801b598339062f28170" prot="public" static="no" mutable="no">
         <type>Vector3</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="9" column="20" bodyfile="Assets/TestingScript.cs" bodystart="9" bodyend="-1"/>
+        <location file="Assets/TestingScript.cs" line="7" column="20" bodyfile="Assets/TestingScript.cs" bodystart="7" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -46,51 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="11" column="10" bodyfile="Assets/TestingScript.cs" bodystart="11" bodyend="17"/>
-      </memberdef>
-      <memberdef kind="function" id="class_testing_script_1adef3dacd956c752af52dbda30774055d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void TestingScript.Update</definition>
-        <argsstring>()</argsstring>
-        <name>Update</name>
-        <qualifiedname>TestingScript.Update</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="20" column="10" bodyfile="Assets/TestingScript.cs" bodystart="20" bodyend="23"/>
-      </memberdef>
-      <memberdef kind="function" id="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>IEnumerator</type>
-        <definition>IEnumerator TestingScript.TestCoroutine</definition>
-        <argsstring>()</argsstring>
-        <name>TestCoroutine</name>
-        <qualifiedname>TestingScript.TestCoroutine</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="25" column="17" bodyfile="Assets/TestingScript.cs" bodystart="25" bodyend="29"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_testing_script_1acb711b373799913aec61b781aa4adfdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void TestingScript.Test</definition>
-        <argsstring>()</argsstring>
-        <name>Test</name>
-        <qualifiedname>TestingScript.Test</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Assets/TestingScript.cs" line="31" column="17" bodyfile="Assets/TestingScript.cs" bodystart="31" bodyend="34"/>
+        <location file="Assets/TestingScript.cs" line="9" column="10" bodyfile="Assets/TestingScript.cs" bodystart="9" bodyend="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -119,14 +75,11 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Assets/TestingScript.cs" line="6" column="7" bodyfile="Assets/TestingScript.cs" bodystart="7" bodyend="35"/>
+    <location file="Assets/TestingScript.cs" line="4" column="7" bodyfile="Assets/TestingScript.cs" bodystart="5" bodyend="17"/>
     <listofallmembers>
       <member refid="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" prot="private" virt="non-virtual"><scope>TestingScript</scope><name>Start</name></member>
-      <member refid="class_testing_script_1acb711b373799913aec61b781aa4adfdb" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>Test</name></member>
-      <member refid="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" prot="private" virt="non-virtual"><scope>TestingScript</scope><name>TestCoroutine</name></member>
       <member refid="class_testing_script_1aa8858ecc3fa4898a96e3256d86164208" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>testingValue</name></member>
       <member refid="class_testing_script_1a4573d3cb16b06801b598339062f28170" prot="public" virt="non-virtual"><scope>TestingScript</scope><name>testingVector3</name></member>
-      <member refid="class_testing_script_1adef3dacd956c752af52dbda30774055d" prot="private" virt="non-virtual"><scope>TestingScript</scope><name>Update</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

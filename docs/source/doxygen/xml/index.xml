@@ -44,10 +44,8 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" kind="function"><name>AnimateTransformRotation</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" kind="function"><name>AnimateSpriteRendererOpacity</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" kind="function"><name>AnimateImageOpacity</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1afd924d2da967332d549a5af2e8830142" kind="function"><name>AnimateVector3Value</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1eb44094a2be7b69d370913d66298e22" kind="function"><name>AnimateValue</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9763ce9a5be026aac755aef2347d1ecd" kind="function"><name>AnimateValueCoroutine</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9098568c1e299ab0d9a72292b3c68f7e" kind="function"><name>AnimateVector3ValueCoroutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" kind="function"><name>AnimateValue&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1_1_object_animations_coroutine_starter" kind="class"><name>UnityUtils::ScriptUtils::ObjectAnimations::ObjectAnimationsCoroutineStarter</name>
   </compound>
@@ -78,17 +76,11 @@
     <member refid="class_testing_script_1aa8858ecc3fa4898a96e3256d86164208" kind="variable"><name>testingValue</name></member>
     <member refid="class_testing_script_1a4573d3cb16b06801b598339062f28170" kind="variable"><name>testingVector3</name></member>
     <member refid="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" kind="function"><name>Start</name></member>
-    <member refid="class_testing_script_1adef3dacd956c752af52dbda30774055d" kind="function"><name>Update</name></member>
-    <member refid="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" kind="function"><name>TestCoroutine</name></member>
-    <member refid="class_testing_script_1acb711b373799913aec61b781aa4adfdb" kind="function"><name>Test</name></member>
   </compound>
   <compound refid="class_testing_script1" kind="class"><name>TestingScript1</name>
     <member refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" kind="variable"><name>testingValue</name></member>
     <member refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" kind="variable"><name>testingVector3</name></member>
     <member refid="class_testing_script1_1a18a6b4c18f146bfcc9d56cd5275eef9a" kind="function"><name>Start</name></member>
-    <member refid="class_testing_script1_1ae19dee7a036919bcf4caa084d7a15678" kind="function"><name>Update</name></member>
-    <member refid="class_testing_script1_1a775531aaa9c771a9b849f7de7144a291" kind="function"><name>TestCoroutine</name></member>
-    <member refid="class_testing_script1_1a79914202da9b4fb729911f60db7a28b2" kind="function"><name>Test</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a99f701861368f017f25c429f58fbfa0f" kind="variable"><name>hoverSize</name></member>

@@ -104,10 +104,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a68915ad8cec2e239fc2f5d6ea90993d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animates an objects SpriteRenderer component alpha from a starting value to an ending value over a specified duration.  <br /></td></tr>
 <tr class="memitem:a8b8b04515553f6c46f15b8884f2b135f" id="r_a8b8b04515553f6c46f15b8884f2b135f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b8b04515553f6c46f15b8884f2b135f">AnimateImageOpacity</a> (Image image, float startOpacity, float endOpacity, float duration, bool useRealtime=false, AnimationCurve animationCurve=default)</td></tr>
 <tr class="memdesc:a8b8b04515553f6c46f15b8884f2b135f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animates an objects Image component alpha from a starting value to an ending value over a specified duration.  <br /></td></tr>
-<tr class="memitem:afd924d2da967332d549a5af2e8830142" id="r_afd924d2da967332d549a5af2e8830142"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd924d2da967332d549a5af2e8830142">AnimateVector3Value</a> (Vector3 startValue, Vector3 endValue, float duration, Action&lt; Vector3 &gt; onValueChanged, bool useRealtime=false, AnimationCurve animationCurve=default)</td></tr>
-<tr class="memdesc:afd924d2da967332d549a5af2e8830142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animates a Vector3 value from a starting value to an ending value over a specified duration.  <br /></td></tr>
-<tr class="memitem:a1eb44094a2be7b69d370913d66298e22" id="r_a1eb44094a2be7b69d370913d66298e22"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eb44094a2be7b69d370913d66298e22">AnimateValue</a> (float startValue, float endValue, float duration, Action&lt; float &gt; onValueChanged, bool useRealtime=false, AnimationCurve animationCurve=default)</td></tr>
-<tr class="memdesc:a1eb44094a2be7b69d370913d66298e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animates a float value from a starting value to an ending value over a specified duration.  <br /></td></tr>
+<tr class="memitem:ac2af637b137136ceca3584d4995956a8" id="r_ac2af637b137136ceca3584d4995956a8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2af637b137136ceca3584d4995956a8">AnimateValue&lt; T &gt;</a> (T start, T end, float duration, Func&lt; T, T, float, T &gt; lerpFunction, Action&lt; T &gt; onValueChanged, bool useRealtime=false, AnimationCurve curve=default)</td></tr>
+<tr class="memdesc:ac2af637b137136ceca3584d4995956a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animates a value from a starting value to an ending value over a specified duration.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a8b8b04515553f6c46f15b8884f2b135f" name="a8b8b04515553f6c46f15b8884f2b135f"></a>
@@ -365,8 +363,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1eb44094a2be7b69d370913d66298e22" name="a1eb44094a2be7b69d370913d66298e22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eb44094a2be7b69d370913d66298e22">&#9670;&#160;</a></span>AnimateValue()</h2>
+<a id="ac2af637b137136ceca3584d4995956a8" name="ac2af637b137136ceca3584d4995956a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2af637b137136ceca3584d4995956a8">&#9670;&#160;</a></span>AnimateValue&lt; T &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,14 +373,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UnityUtils.ScriptUtils.ObjectAnimations.AnimateValue </td>
+          <td class="memname">void UnityUtils.ScriptUtils.ObjectAnimations.AnimateValue&lt; T &gt; </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>startValue</em></span>, </td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>endValue</em></span>, </td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -392,7 +390,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Action&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>onValueChanged</em></span>, </td>
+          <td class="paramtype">Func&lt; T, T, float, T &gt;</td>          <td class="paramname"><span class="paramname"><em>lerpFunction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>onValueChanged</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -402,7 +405,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">AnimationCurve</td>          <td class="paramname"><span class="paramname"><em>animationCurve</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
+          <td class="paramtype">AnimationCurve</td>          <td class="paramname"><span class="paramname"><em>curve</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -412,71 +415,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Animates a float value from a starting value to an ending value over a specified duration. </p>
+<p>Animates a value from a starting value to an ending value over a specified duration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">onValueChanged</td><td>A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</td></tr>
     <tr><td class="paramname">useRealtime</td><td>true to use unscaled real time for the animation (ignoring time scale)</td></tr>
     <tr><td class="paramname">animationCurve</td><td>Default is a linear curve</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afd924d2da967332d549a5af2e8830142" name="afd924d2da967332d549a5af2e8830142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd924d2da967332d549a5af2e8830142">&#9670;&#160;</a></span>AnimateVector3Value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UnityUtils.ScriptUtils.ObjectAnimations.AnimateVector3Value </td>
-          <td>(</td>
-          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>startValue</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>endValue</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Action&lt; Vector3 &gt;</td>          <td class="paramname"><span class="paramname"><em>onValueChanged</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useRealtime</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AnimationCurve</td>          <td class="paramname"><span class="paramname"><em>animationCurve</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Animates a Vector3 value from a starting value to an ending value over a specified duration. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">onValueChanged</td><td>A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</td></tr>
-    <tr><td class="paramname">useRealtime</td><td>true to use unscaled real time for the animation (ignoring time scale).</td></tr>
-    <tr><td class="paramname">animationCurve</td><td>Default is a linear curve.</td></tr>
   </table>
   </dd>
 </dl>

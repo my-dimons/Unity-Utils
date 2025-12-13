@@ -13,10 +13,8 @@ static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_anima
 \begin{DoxyCompactList}\small\item\em Animates an objects Sprite\+Renderer component alpha from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a8b8b04515553f6c46f15b8884f2b135f}{Animate\+Image\+Opacity}} (Image image, float start\+Opacity, float end\+Opacity, float duration, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
 \begin{DoxyCompactList}\small\item\em Animates an objects Image component alpha from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_afd924d2da967332d549a5af2e8830142}{Animate\+Vector3\+Value}} (Vector3 start\+Value, Vector3 end\+Value, float duration, Action$<$ Vector3 $>$ on\+Value\+Changed, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
-\begin{DoxyCompactList}\small\item\em Animates a Vector3 value from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a1eb44094a2be7b69d370913d66298e22}{Animate\+Value}} (float start\+Value, float end\+Value, float duration, Action$<$ float $>$ on\+Value\+Changed, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
-\begin{DoxyCompactList}\small\item\em Animates a float value from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_ac2af637b137136ceca3584d4995956a8}{Animate\+Value$<$ T $>$}} (T start, T end, float duration, Func$<$ T, T, float, T $>$ lerp\+Function, Action$<$ T $>$ on\+Value\+Changed, bool use\+Realtime=false, Animation\+Curve curve=default)
+\begin{DoxyCompactList}\small\item\em Animates a value from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -72,15 +70,15 @@ void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Animate\+Transform\+Sca
 
 Animates an objects Transform components scale from a starting value to an ending value over a specified duration. 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_a1eb44094a2be7b69d370913d66298e22}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!AnimateValue@{AnimateValue}}
-\index{AnimateValue@{AnimateValue}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
-\doxysubsubsection{\texorpdfstring{AnimateValue()}{AnimateValue()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_object_animations_a1eb44094a2be7b69d370913d66298e22} 
-void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Animate\+Value (\begin{DoxyParamCaption}\item[{float}]{start\+Value}{, }\item[{float}]{end\+Value}{, }\item[{float}]{duration}{, }\item[{Action$<$ float $>$}]{on\+Value\+Changed}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{animation\+Curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_ac2af637b137136ceca3584d4995956a8}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!AnimateValue$<$ T $>$@{AnimateValue$<$ T $>$}}
+\index{AnimateValue$<$ T $>$@{AnimateValue$<$ T $>$}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateValue$<$ T $>$()}{AnimateValue< T >()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_object_animations_ac2af637b137136ceca3584d4995956a8} 
+void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Animate\+Value$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{start}{, }\item[{T}]{end}{, }\item[{float}]{duration}{, }\item[{Func$<$ T, T, float, T $>$}]{lerp\+Function}{, }\item[{Action$<$ T $>$}]{on\+Value\+Changed}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
-Animates a float value from a starting value to an ending value over a specified duration. 
+Animates a value from a starting value to an ending value over a specified duration. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -89,25 +87,6 @@ Animates a float value from a starting value to an ending value over a specified
 {\em use\+Realtime} & true to use unscaled real time for the animation (ignoring time scale)\\
 \hline
 {\em animation\+Curve} & Default is a linear curve\\
-\hline
-\end{DoxyParams}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_afd924d2da967332d549a5af2e8830142}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!AnimateVector3Value@{AnimateVector3Value}}
-\index{AnimateVector3Value@{AnimateVector3Value}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
-\doxysubsubsection{\texorpdfstring{AnimateVector3Value()}{AnimateVector3Value()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_object_animations_afd924d2da967332d549a5af2e8830142} 
-void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Animate\+Vector3\+Value (\begin{DoxyParamCaption}\item[{Vector3}]{start\+Value}{, }\item[{Vector3}]{end\+Value}{, }\item[{float}]{duration}{, }\item[{Action$<$ Vector3 $>$}]{on\+Value\+Changed}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{animation\+Curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
-
-
-
-Animates a Vector3 value from a starting value to an ending value over a specified duration. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em on\+Value\+Changed} & A callback that is invoked with the current interpolated Vector3 value as the animation progresses.\\
-\hline
-{\em use\+Realtime} & true to use unscaled real time for the animation (ignoring time scale).\\
-\hline
-{\em animation\+Curve} & Default is a linear curve.\\
 \hline
 \end{DoxyParams}
 
