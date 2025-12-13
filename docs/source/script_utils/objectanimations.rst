@@ -38,7 +38,7 @@ Example Usage
         ObjectAnimations.AnimateValue(0, 1, 2, value => testingValue = value, useRealtime, animationCurve);
         
         // Animates the testingVector3 variable's value from (0, 0, 0) to (0, 1, 4) in 2 seconds.
-        ObjectAnimations.AnimateVector3Value(Vector3.zero, new Vector3(0, 1, 4), 2, value => testingVector3= value, useRealtime, animationCurve);
+        ObjectAnimations.AnimateVector3Value(Vector3.zero, new Vector3(0, 1, 4), 2, value => testingVector3 = value, useRealtime, animationCurve);
      }
   }
 Functions

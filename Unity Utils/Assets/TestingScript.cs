@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityUtils.ScriptUtils;
 
@@ -14,22 +12,5 @@ public class TestingScript : MonoBehaviour
         ObjectAnimations.AnimateTransformScale(transform, transform.localScale, new Vector3(3, 4, 5), 2);
         ObjectAnimations.AnimateTransformPosition(transform, transform.position, new Vector3(0, 5, 0), 2);
         ObjectAnimations.AnimateSpriteRendererOpacity(GetComponent<SpriteRenderer>(), 0.5f, 1, 2);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    IEnumerator TestCoroutine()
-    {
-        yield return new WaitForSeconds(1);
-
-    }
-
-    public void Test()
-    {
-        Debug.Log("Test");
     }
 }

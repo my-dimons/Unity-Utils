@@ -1,5 +1,3 @@
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -69,7 +67,7 @@ namespace UnityUtils.ScriptUtils.UI
         {
             if (transform.localRotation == Quaternion.Euler(originalRotation))
                 EnterHoverAnimation();
-            
+
             hoveringOverButton = true;
         }
 

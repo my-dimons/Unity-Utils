@@ -1,5 +1,3 @@
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -28,6 +26,7 @@ namespace UnityUtils.ScriptUtils.UI
 
         /// Sound to play when the mouse clicks on the button.
         public AudioClip clickSfx;
+
         /// Volume to play <see cref="clickSfx"/> at.
         public float clickVolume = 1f;
 
@@ -40,7 +39,7 @@ namespace UnityUtils.ScriptUtils.UI
         public AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx;
 
         [Header("Debug")]
-        
+
         /// If true this will log errors when trying to play sound effects but they become empty
         public bool emptySfxErrorMessages;
 

@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
 /*
  *
@@ -13,7 +13,7 @@ using System.Collections;
  *
  */
 
-namespace UnityUtils.ScriptUtils.Audio 
+namespace UnityUtils.ScriptUtils.Audio
 {
     public class BackgroundMusicManager : MonoBehaviour
     {
