@@ -5,6 +5,7 @@
     <innerdir refid="dir_8fa023a4df0672439912bf54906042c8">Assets/Examples</innerdir>
     <innerdir refid="dir_4c0bcb34cf396b337f3d616f488cbca9">Assets/Script Utils</innerdir>
     <innerfile refid="_testing_script_8cs">TestingScript.cs</innerfile>
+    <innerfile refid="_testing_script1_8cs">TestingScript1.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

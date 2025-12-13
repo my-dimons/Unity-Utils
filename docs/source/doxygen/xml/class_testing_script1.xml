@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_testing_script1" kind="class" language="C#" prot="public">
+    <compoundname>TestingScript1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TestingScript1.testingValue</definition>
+        <argsstring></argsstring>
+        <name>testingValue</name>
+        <qualifiedname>TestingScript1.testingValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript1.cs" line="9" column="18" bodyfile="Assets/TestingScript1.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 TestingScript1.testingVector3</definition>
+        <argsstring></argsstring>
+        <name>testingVector3</name>
+        <qualifiedname>TestingScript1.testingVector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript1.cs" line="10" column="20" bodyfile="Assets/TestingScript1.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_testing_script1_1a18a6b4c18f146bfcc9d56cd5275eef9a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestingScript1.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>TestingScript1.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript1.cs" line="12" column="10" bodyfile="Assets/TestingScript1.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_testing_script1_1ae19dee7a036919bcf4caa084d7a15678" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestingScript1.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>TestingScript1.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript1.cs" line="18" column="10" bodyfile="Assets/TestingScript1.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_testing_script1_1a775531aaa9c771a9b849f7de7144a291" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator TestingScript1.TestCoroutine</definition>
+        <argsstring>()</argsstring>
+        <name>TestCoroutine</name>
+        <qualifiedname>TestingScript1.TestCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript1.cs" line="23" column="17" bodyfile="Assets/TestingScript1.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_testing_script1_1a79914202da9b4fb729911f60db7a28b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestingScript1.Test</definition>
+        <argsstring>()</argsstring>
+        <name>Test</name>
+        <qualifiedname>TestingScript1.Test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/TestingScript1.cs" line="29" column="17" bodyfile="Assets/TestingScript1.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TestingScript1</label>
+        <link refid="class_testing_script1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TestingScript1</label>
+        <link refid="class_testing_script1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/TestingScript1.cs" line="7" column="7" bodyfile="Assets/TestingScript1.cs" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_testing_script1_1a18a6b4c18f146bfcc9d56cd5275eef9a" prot="private" virt="non-virtual"><scope>TestingScript1</scope><name>Start</name></member>
+      <member refid="class_testing_script1_1a79914202da9b4fb729911f60db7a28b2" prot="public" virt="non-virtual"><scope>TestingScript1</scope><name>Test</name></member>
+      <member refid="class_testing_script1_1a775531aaa9c771a9b849f7de7144a291" prot="private" virt="non-virtual"><scope>TestingScript1</scope><name>TestCoroutine</name></member>
+      <member refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" prot="public" virt="non-virtual"><scope>TestingScript1</scope><name>testingValue</name></member>
+      <member refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" prot="public" virt="non-virtual"><scope>TestingScript1</scope><name>testingVector3</name></member>
+      <member refid="class_testing_script1_1ae19dee7a036919bcf4caa084d7a15678" prot="private" virt="non-virtual"><scope>TestingScript1</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -19,9 +19,10 @@ namespace UnityUtils.ScriptUtils.UI
         /// If true the button will rotate to the set position, the rotate back on hover. If false the buton will rotate to the set position, then only rotate back when unhovering.
         public bool rotateBackAfterHover = true;
 
+        [Space(8)]
+
         /// true to use unscaled real time for the animation (ignoring time scale).
         public bool useRealtime;
-        [Space(8)]
 
         /// The <see cref="AnimationCurve"/> that the button will follow.
         public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
@@ -56,8 +57,8 @@ namespace UnityUtils.ScriptUtils.UI
 
             // Stops choppy animation when spam hovering the button
             bool stopChoppyAnimation = !hoveringOverButton && transform.localRotation == Quaternion.Euler(hoverRotationVector);
-
             bool rotateBackAfterHoverCondition = transform.localRotation == Quaternion.Euler(hoverRotationVector) && rotateBackAfterHover;
+
             if (stopChoppyAnimation || rotateBackAfterHoverCondition)
             {
                 ExitHoverAnimation();

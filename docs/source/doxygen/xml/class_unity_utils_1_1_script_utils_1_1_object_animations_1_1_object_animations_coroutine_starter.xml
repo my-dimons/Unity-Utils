@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_object_animations_1_1_object_animations_coroutine_starter" kind="class" language="C#" prot="private">
+    <compoundname>UnityUtils::ScriptUtils::ObjectAnimations::ObjectAnimationsCoroutineStarter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.ObjectAnimations.ObjectAnimationsCoroutineStarter</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.ObjectAnimations.ObjectAnimationsCoroutineStarter</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Script Utils/ObjectAnimations.cs" line="12" column="16" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="12" bodyend="12"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

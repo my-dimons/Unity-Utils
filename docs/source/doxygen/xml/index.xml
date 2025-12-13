@@ -36,6 +36,21 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" kind="function"><name>PlaySpecificMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" kind="function"><name>GetRandomSong</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::ObjectAnimations</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a0008088bcac9ff950d313400b03b4beb" kind="variable"><name>coroutineStarter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a4833b2df85821bdae8bf3af5d150fa3d" kind="property"><name>CoroutineStarter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" kind="function"><name>AnimateTransformScale</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" kind="function"><name>AnimateTransformPosition</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" kind="function"><name>AnimateTransformRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" kind="function"><name>AnimateSpriteRendererOpacity</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" kind="function"><name>AnimateImageOpacity</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1afd924d2da967332d549a5af2e8830142" kind="function"><name>AnimateVector3Value</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1eb44094a2be7b69d370913d66298e22" kind="function"><name>AnimateValue</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9763ce9a5be026aac755aef2347d1ecd" kind="function"><name>AnimateValueCoroutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9098568c1e299ab0d9a72292b3c68f7e" kind="function"><name>AnimateVector3ValueCoroutine</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1_1_object_animations_coroutine_starter" kind="class"><name>UnityUtils::ScriptUtils::ObjectAnimations::ObjectAnimationsCoroutineStarter</name>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" kind="function"><name>SpawnBurstParticle</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1afe98bf9e10d104bd4006f180a711d525" kind="function"><name>SetParticleSystemColor</name></member>
@@ -60,16 +75,25 @@
     <member refid="class_singleton_example_1ac555684307507dd98240e64cebf9a79a" kind="function"><name>Awake</name></member>
   </compound>
   <compound refid="class_testing_script" kind="class"><name>TestingScript</name>
-    <member refid="class_testing_script_1a5f922c6f3bdc0731b453534dc90568fd" kind="variable"><name>clip</name></member>
-    <member refid="class_testing_script_1aa27a822a92396a4155e2b3ab047d5726" kind="variable"><name>audioType</name></member>
+    <member refid="class_testing_script_1aa8858ecc3fa4898a96e3256d86164208" kind="variable"><name>testingValue</name></member>
+    <member refid="class_testing_script_1a4573d3cb16b06801b598339062f28170" kind="variable"><name>testingVector3</name></member>
     <member refid="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" kind="function"><name>Start</name></member>
     <member refid="class_testing_script_1adef3dacd956c752af52dbda30774055d" kind="function"><name>Update</name></member>
     <member refid="class_testing_script_1a697d3231e3fcc1426dc3da87416f0711" kind="function"><name>TestCoroutine</name></member>
     <member refid="class_testing_script_1acb711b373799913aec61b781aa4adfdb" kind="function"><name>Test</name></member>
   </compound>
+  <compound refid="class_testing_script1" kind="class"><name>TestingScript1</name>
+    <member refid="class_testing_script1_1af4b9b63029e9a28a5274888ff028ddf0" kind="variable"><name>testingValue</name></member>
+    <member refid="class_testing_script1_1a52ec93d5765f7f19cc26810b9716d7b6" kind="variable"><name>testingVector3</name></member>
+    <member refid="class_testing_script1_1a18a6b4c18f146bfcc9d56cd5275eef9a" kind="function"><name>Start</name></member>
+    <member refid="class_testing_script1_1ae19dee7a036919bcf4caa084d7a15678" kind="function"><name>Update</name></member>
+    <member refid="class_testing_script1_1a775531aaa9c771a9b849f7de7144a291" kind="function"><name>TestCoroutine</name></member>
+    <member refid="class_testing_script1_1a79914202da9b4fb729911f60db7a28b2" kind="function"><name>Test</name></member>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a99f701861368f017f25c429f58fbfa0f" kind="variable"><name>hoverSize</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a88c3046734a3645154c58778039f6c65" kind="variable"><name>sizeAnimationSeconds</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ae66b9552eaf5de139dc578d6585ac328" kind="variable"><name>useRealtime</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a93de5dda2256a7f3a9282d78120183b4" kind="variable"><name>SizingCurve</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a3342c4a93c9ff16cb38f8b1c978a0853" kind="variable"><name>hoveringOverButton</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1abd41aa46bb92276a2d8987981a63aed0" kind="variable"><name>originalSize</name></member>
@@ -81,12 +105,31 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a87f3aa32d0069c9e275ac82e5804fb9d" kind="function"><name>OnPointerEnter</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" kind="function"><name>OnPointerExit</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a58b696f4d89343633bdcdbdd2531d772" kind="variable"><name>hoverRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a5e39b92b4fce792a762e67c87cc99596" kind="variable"><name>rotationAnimationSeconds</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a6380c66f4b1db51868e6660b9ffb9acf" kind="variable"><name>rotateBackAfterHover</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a32d81331ce7b568fe3df5ff9a034d640" kind="variable"><name>useRealtime</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a006c0dd78261c3866dbb0e173bb9447f" kind="variable"><name>SizingCurve</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a2794301f3b82197a637bb8d9e18a44fd" kind="variable"><name>useRandomRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1ae0432b8b05ca7db427bdefad702351fc" kind="variable"><name>randomRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9c137b234bad7ea9c658a4374086d96f" kind="variable"><name>hoveringOverButton</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a3c8f8d3e00f1521683c6365ecc13370a" kind="variable"><name>currentRandomRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9177d65132d79213bd06c63eeca5db8c" kind="variable"><name>originalRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a756de23399fbc6d623c38749b3885d32" kind="variable"><name>hoverRotationVector</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a808d705721f77167587ea51934068b76" kind="function"><name>Start</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a69a0f2deca3b24b4f5b775993cc3bb7d" kind="function"><name>Update</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a609e2f7595b2ecfc3fba10ef71d5568e" kind="function"><name>EnterHoverAnimation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1aa1883edded88346244e1744fe8d844af" kind="function"><name>ExitHoverAnimation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9659493dd310e72215a17de4676f2587" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a628c4f403336feee5dc4f9ea955eaa67" kind="function"><name>OnPointerExit</name></member>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonSFX</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae952e6b7f589bc3b221416e0d417c313" kind="variable"><name>hoverEnterSfx</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ac3dca7053abf536976fd9a7323cef821" kind="variable"><name>hoverExitSfx</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" kind="variable"><name>clickSfx</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ab8317c7209a24bf98f21bdead3fa32ad" kind="variable"><name>hoverEnterVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ac3dca7053abf536976fd9a7323cef821" kind="variable"><name>hoverExitSfx</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a66204a7a0a5c21f1dff4d2a37d3f1f38" kind="variable"><name>hoverExitVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" kind="variable"><name>clickSfx</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae1337199f502e7ea75e6627ca1e0f3a2" kind="variable"><name>clickVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a134326d73212920ba4bebbaed6b7da80" kind="variable"><name>pitchVariance</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a899a8ade8749b3068571cb65622cf49a" kind="variable"><name>volumeType</name></member>
@@ -94,10 +137,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a098921ae8917b2ab59d8e2449319c486" kind="function"><name>OnPointerEnter</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aba00af17f744dac7f08360605fb2d914" kind="function"><name>OnPointerExit</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a4097c5e00c6d00f209b2718449c3710d" kind="function"><name>OnPointerClick</name></member>
-  </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager" kind="class"><name>UnityUtils::ScriptUtils::UI::UIUtilsManager</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a4395e3954ec15f25e32d0da6a67c5499" kind="function"><name>AnimateButtonSize</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager_1a505f82896fc0863ed46d7562cfec1ff7" kind="function"><name>CalculateAnimationSpeed</name></member>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
@@ -107,15 +146,11 @@
   </compound>
   <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
   </compound>
-  <compound refid="namespace_unity_editor" kind="namespace"><name>UnityEditor</name>
-  </compound>
   <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
   </compound>
   <compound refid="namespace_unity_engine_1_1_event_systems" kind="namespace"><name>UnityEngine::EventSystems</name>
   </compound>
   <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
-  </compound>
-  <compound refid="namespace_unity_engine_1_1_windows_1_1_speech" kind="namespace"><name>UnityEngine::Windows::Speech</name>
   </compound>
   <compound refid="namespace_unity_utils" kind="namespace"><name>UnityUtils</name>
   </compound>
@@ -137,17 +172,21 @@
   </compound>
   <compound refid="_s_f_x_manager_8cs" kind="file"><name>SFXManager.cs</name>
   </compound>
+  <compound refid="_object_animations_8cs" kind="file"><name>ObjectAnimations.cs</name>
+  </compound>
   <compound refid="_particle_manager_8cs" kind="file"><name>ParticleManager.cs</name>
   </compound>
   <compound refid="_scriptable_object_manager_8cs" kind="file"><name>ScriptableObjectManager.cs</name>
   </compound>
   <compound refid="_u_i_button_hover_expand_8cs" kind="file"><name>UIButtonHoverExpand.cs</name>
   </compound>
+  <compound refid="_u_i_button_hover_rotate_8cs" kind="file"><name>UIButtonHoverRotate.cs</name>
+  </compound>
   <compound refid="_u_i_button_sfx_8cs" kind="file"><name>UIButtonSfx.cs</name>
   </compound>
-  <compound refid="_u_i_utils_manager_8cs" kind="file"><name>UIUtilsManager.cs</name>
-  </compound>
   <compound refid="_testing_script_8cs" kind="file"><name>TestingScript.cs</name>
+  </compound>
+  <compound refid="_testing_script1_8cs" kind="file"><name>TestingScript1.cs</name>
   </compound>
   <compound refid="dir_84bbf7b3c7f28a5a18725745e1505219" kind="dir"><name>Assets</name>
   </compound>

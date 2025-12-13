@@ -16,9 +16,10 @@ namespace UnityUtils.ScriptUtils.UI
         /// The amount of seconds that the button will size up or down in.
         public float sizeAnimationSeconds = 0.2f;
 
+        [Space(8)]
+
         /// true to use unscaled real time for the animation (ignoring time scale)
         public bool useRealtime;
-        [Space(8)]
 
         /// The <see cref="AnimationCurve"/> that the button will follow.
         public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);

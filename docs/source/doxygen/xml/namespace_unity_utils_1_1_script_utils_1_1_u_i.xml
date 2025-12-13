@@ -3,8 +3,8 @@
   <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_u_i" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils::UI</compoundname>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" prot="public">UnityUtils::ScriptUtils::UI::UIButtonSFX</innerclass>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager" prot="public">UnityUtils::ScriptUtils::UI::UIUtilsManager</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

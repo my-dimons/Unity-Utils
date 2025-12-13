@@ -3,8 +3,8 @@
   <compounddef id="dir_13bff5dd63580ebd994eec581358b383" kind="dir">
     <compoundname>Assets/Script Utils/UI</compoundname>
     <innerfile refid="_u_i_button_hover_expand_8cs">UIButtonHoverExpand.cs</innerfile>
+    <innerfile refid="_u_i_button_hover_rotate_8cs">UIButtonHoverRotate.cs</innerfile>
     <innerfile refid="_u_i_button_sfx_8cs">UIButtonSfx.cs</innerfile>
-    <innerfile refid="_u_i_utils_manager_8cs">UIUtilsManager.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

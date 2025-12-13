@@ -1,6 +1,6 @@
 var class_testing_script =
 [
     [ "Test", "class_testing_script.html#acb711b373799913aec61b781aa4adfdb", null ],
-    [ "audioType", "class_testing_script.html#aa27a822a92396a4155e2b3ab047d5726", null ],
-    [ "clip", "class_testing_script.html#a5f922c6f3bdc0731b453534dc90568fd", null ]
+    [ "testingValue", "class_testing_script.html#aa8858ecc3fa4898a96e3256d86164208", null ],
+    [ "testingVector3", "class_testing_script.html#a4573d3cb16b06801b598339062f28170", null ]
 ];

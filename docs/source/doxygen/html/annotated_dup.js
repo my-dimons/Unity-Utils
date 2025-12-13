@@ -15,11 +15,13 @@ var annotated_dup =
         ] ],
         [ "UI", "namespace_unity_utils_1_1_script_utils_1_1_u_i.html", [
           [ "UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" ],
-          [ "UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" ],
-          [ "UIUtilsManager", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_utils_manager" ]
-        ] ]
+          [ "UIButtonHoverRotate", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" ],
+          [ "UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" ]
+        ] ],
+        [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_object_animations" ]
       ] ]
     ] ],
     [ "SingletonExample", "class_singleton_example.html", "class_singleton_example" ],
-    [ "TestingScript", "class_testing_script.html", "class_testing_script" ]
+    [ "TestingScript", "class_testing_script.html", "class_testing_script" ],
+    [ "TestingScript1", "class_testing_script1.html", "class_testing_script1" ]
 ];

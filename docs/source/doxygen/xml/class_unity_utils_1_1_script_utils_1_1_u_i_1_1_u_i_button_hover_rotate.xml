@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a58b696f4d89343633bdcdbdd2531d772" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.hoverRotation</definition>
+        <argsstring></argsstring>
+        <name>hoverRotation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.hoverRotation</qualifiedname>
+        <initializer>= 8f</initializer>
+        <briefdescription>
+<para>When hovered this is the rotation the button will be set to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="14" column="22" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a5e39b92b4fce792a762e67c87cc99596" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.rotationAnimationSeconds</definition>
+        <argsstring></argsstring>
+        <name>rotationAnimationSeconds</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.rotationAnimationSeconds</qualifiedname>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+<para>The amount of seconds that the button will rotate in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="17" column="22" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a6380c66f4b1db51868e6660b9ffb9acf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.rotateBackAfterHover</definition>
+        <argsstring></argsstring>
+        <name>rotateBackAfterHover</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.rotateBackAfterHover</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If true the button will rotate to the set position, the rotate back on hover. If false the buton will rotate to the set position, then only rotate back when unhovering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="20" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a32d81331ce7b568fe3df5ff9a034d640" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.useRealtime</definition>
+        <argsstring></argsstring>
+        <name>useRealtime</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.useRealtime</qualifiedname>
+        <briefdescription>
+<para>true to use unscaled real time for the animation (ignoring time scale). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="25" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a006c0dd78261c3866dbb0e173bb9447f" prot="public" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.SizingCurve</definition>
+        <argsstring></argsstring>
+        <name>SizingCurve</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.SizingCurve</qualifiedname>
+        <initializer>= AnimationCurve.EaseInOut(0, 0, 1, 1)</initializer>
+        <briefdescription>
+<para>The AnimationCurve that the button will follow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="28" column="31" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a2794301f3b82197a637bb8d9e18a44fd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.useRandomRotation</definition>
+        <argsstring></argsstring>
+        <name>useRandomRotation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.useRandomRotation</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Not required, but if true rotation will use random rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="32" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1ae0432b8b05ca7db427bdefad702351fc" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.randomRotation</definition>
+        <argsstring></argsstring>
+        <name>randomRotation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.randomRotation</qualifiedname>
+        <initializer>= new Vector2(-5f, 5f)</initializer>
+        <briefdescription>
+<para>The min/max values to use in random rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="35" column="24" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9c137b234bad7ea9c658a4374086d96f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.hoveringOverButton</definition>
+        <argsstring></argsstring>
+        <name>hoveringOverButton</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.hoveringOverButton</qualifiedname>
+        <briefdescription>
+<para>True if the button is being hovered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="42" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a3c8f8d3e00f1521683c6365ecc13370a" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.currentRandomRotation</definition>
+        <argsstring></argsstring>
+        <name>currentRandomRotation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.currentRandomRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="36" column="25" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9177d65132d79213bd06c63eeca5db8c" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.originalRotation</definition>
+        <argsstring></argsstring>
+        <name>originalRotation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.originalRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="44" column="17" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a756de23399fbc6d623c38749b3885d32" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.hoverRotationVector</definition>
+        <argsstring></argsstring>
+        <name>hoverRotationVector</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.hoverRotationVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="45" column="17" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a808d705721f77167587ea51934068b76" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="48" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a69a0f2deca3b24b4f5b775993cc3bb7d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="54" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="54" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a609e2f7595b2ecfc3fba10ef71d5568e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.EnterHoverAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>EnterHoverAnimation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.EnterHoverAnimation</qualifiedname>
+        <briefdescription>
+<para>Grows the button to the original size (hoverRotationVector). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="87" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="87" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1aa1883edded88346244e1744fe8d844af" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.ExitHoverAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>ExitHoverAnimation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.ExitHoverAnimation</qualifiedname>
+        <briefdescription>
+<para>Shrinks the button to its original size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="97" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="97" bodyend="100"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9659493dd310e72215a17de4676f2587" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerEnter</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerEnter</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerEnter</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="68" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a628c4f403336feee5dc4f9ea955eaa67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerExit</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerExit</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerExit</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="76" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="76" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonHoverRotate</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="10" column="11" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="11" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a3c8f8d3e00f1521683c6365ecc13370a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>currentRandomRotation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a609e2f7595b2ecfc3fba10ef71d5568e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>EnterHoverAnimation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1aa1883edded88346244e1744fe8d844af" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>ExitHoverAnimation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9c137b234bad7ea9c658a4374086d96f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>hoveringOverButton</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a58b696f4d89343633bdcdbdd2531d772" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>hoverRotation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a756de23399fbc6d623c38749b3885d32" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>hoverRotationVector</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9659493dd310e72215a17de4676f2587" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>OnPointerEnter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a628c4f403336feee5dc4f9ea955eaa67" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>OnPointerExit</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9177d65132d79213bd06c63eeca5db8c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>originalRotation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1ae0432b8b05ca7db427bdefad702351fc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>randomRotation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a6380c66f4b1db51868e6660b9ffb9acf" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>rotateBackAfterHover</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a5e39b92b4fce792a762e67c87cc99596" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>rotationAnimationSeconds</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a006c0dd78261c3866dbb0e173bb9447f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>SizingCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a808d705721f77167587ea51934068b76" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>Start</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a69a0f2deca3b24b4f5b775993cc3bb7d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>Update</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a2794301f3b82197a637bb8d9e18a44fd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>useRandomRotation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a32d81331ce7b568fe3df5ff9a034d640" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>useRealtime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

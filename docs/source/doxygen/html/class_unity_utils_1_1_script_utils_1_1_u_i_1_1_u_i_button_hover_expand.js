@@ -5,5 +5,6 @@ var class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand =
     [ "hoveringOverButton", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a3342c4a93c9ff16cb38f8b1c978a0853", null ],
     [ "hoverSize", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a99f701861368f017f25c429f58fbfa0f", null ],
     [ "sizeAnimationSeconds", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a88c3046734a3645154c58778039f6c65", null ],
-    [ "SizingCurve", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a93de5dda2256a7f3a9282d78120183b4", null ]
+    [ "SizingCurve", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a93de5dda2256a7f3a9282d78120183b4", null ],
+    [ "useRealtime", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#ae66b9552eaf5de139dc578d6585ac328", null ]
 ];

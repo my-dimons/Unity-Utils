@@ -1,0 +1,141 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate}{}\label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.403509cm]{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a9659493dd310e72215a17de4676f2587}{On\+Pointer\+Enter}} (Pointer\+Event\+Data event\+Data)
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a628c4f403336feee5dc4f9ea955eaa67}{On\+Pointer\+Exit}} (Pointer\+Event\+Data event\+Data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a58b696f4d89343633bdcdbdd2531d772}{hover\+Rotation}} = 8f
+\begin{DoxyCompactList}\small\item\em When hovered this is the rotation the button will be set to. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a5e39b92b4fce792a762e67c87cc99596}{rotation\+Animation\+Seconds}} = 0.\+2f
+\begin{DoxyCompactList}\small\item\em The amount of seconds that the button will rotate in. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a6380c66f4b1db51868e6660b9ffb9acf}{rotate\+Back\+After\+Hover}} = true
+\begin{DoxyCompactList}\small\item\em If true the button will rotate to the set position, the rotate back on hover. If false the buton will rotate to the set position, then only rotate back when unhovering. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a32d81331ce7b568fe3df5ff9a034d640}{use\+Realtime}}
+\begin{DoxyCompactList}\small\item\em true to use unscaled real time for the animation (ignoring time scale). \end{DoxyCompactList}\item 
+Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a006c0dd78261c3866dbb0e173bb9447f}{Sizing\+Curve}} = Animation\+Curve.\+Ease\+In\+Out(0, 0, 1, 1)
+\begin{DoxyCompactList}\small\item\em The Animation\+Curve that the button will follow. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a2794301f3b82197a637bb8d9e18a44fd}{use\+Random\+Rotation}} = false
+\begin{DoxyCompactList}\small\item\em Not required, but if true rotation will use random rotation. \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_ae0432b8b05ca7db427bdefad702351fc}{random\+Rotation}} = new Vector2(-\/5f, 5f)
+\begin{DoxyCompactList}\small\item\em The min/max values to use in random rotation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a9c137b234bad7ea9c658a4374086d96f}{hovering\+Over\+Button}}
+\begin{DoxyCompactList}\small\item\em True if the button is being hovered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a9659493dd310e72215a17de4676f2587}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!OnPointerEnter@{OnPointerEnter}}
+\index{OnPointerEnter@{OnPointerEnter}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{OnPointerEnter()}{OnPointerEnter()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a9659493dd310e72215a17de4676f2587} 
+void Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+On\+Pointer\+Enter (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Data}]{event\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a628c4f403336feee5dc4f9ea955eaa67}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!OnPointerExit@{OnPointerExit}}
+\index{OnPointerExit@{OnPointerExit}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{OnPointerExit()}{OnPointerExit()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a628c4f403336feee5dc4f9ea955eaa67} 
+void Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+On\+Pointer\+Exit (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Data}]{event\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a9c137b234bad7ea9c658a4374086d96f}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!hoveringOverButton@{hoveringOverButton}}
+\index{hoveringOverButton@{hoveringOverButton}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{hoveringOverButton}{hoveringOverButton}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a9c137b234bad7ea9c658a4374086d96f} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+hovering\+Over\+Button}
+
+
+
+True if the button is being hovered. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a58b696f4d89343633bdcdbdd2531d772}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!hoverRotation@{hoverRotation}}
+\index{hoverRotation@{hoverRotation}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{hoverRotation}{hoverRotation}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a58b696f4d89343633bdcdbdd2531d772} 
+float Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+hover\+Rotation = 8f}
+
+
+
+When hovered this is the rotation the button will be set to. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_ae0432b8b05ca7db427bdefad702351fc}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!randomRotation@{randomRotation}}
+\index{randomRotation@{randomRotation}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{randomRotation}{randomRotation}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_ae0432b8b05ca7db427bdefad702351fc} 
+Vector2 Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+random\+Rotation = new Vector2(-\/5f, 5f)}
+
+
+
+The min/max values to use in random rotation. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a6380c66f4b1db51868e6660b9ffb9acf}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!rotateBackAfterHover@{rotateBackAfterHover}}
+\index{rotateBackAfterHover@{rotateBackAfterHover}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{rotateBackAfterHover}{rotateBackAfterHover}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a6380c66f4b1db51868e6660b9ffb9acf} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+rotate\+Back\+After\+Hover = true}
+
+
+
+If true the button will rotate to the set position, the rotate back on hover. If false the buton will rotate to the set position, then only rotate back when unhovering. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a5e39b92b4fce792a762e67c87cc99596}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!rotationAnimationSeconds@{rotationAnimationSeconds}}
+\index{rotationAnimationSeconds@{rotationAnimationSeconds}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{rotationAnimationSeconds}{rotationAnimationSeconds}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a5e39b92b4fce792a762e67c87cc99596} 
+float Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+rotation\+Animation\+Seconds = 0.\+2f}
+
+
+
+The amount of seconds that the button will rotate in. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a006c0dd78261c3866dbb0e173bb9447f}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!SizingCurve@{SizingCurve}}
+\index{SizingCurve@{SizingCurve}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{SizingCurve}{SizingCurve}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a006c0dd78261c3866dbb0e173bb9447f} 
+Animation\+Curve Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+Sizing\+Curve = Animation\+Curve.\+Ease\+In\+Out(0, 0, 1, 1)}
+
+
+
+The Animation\+Curve that the button will follow. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a2794301f3b82197a637bb8d9e18a44fd}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!useRandomRotation@{useRandomRotation}}
+\index{useRandomRotation@{useRandomRotation}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{useRandomRotation}{useRandomRotation}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a2794301f3b82197a637bb8d9e18a44fd} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+use\+Random\+Rotation = false}
+
+
+
+Not required, but if true rotation will use random rotation. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a32d81331ce7b568fe3df5ff9a034d640}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}!useRealtime@{useRealtime}}
+\index{useRealtime@{useRealtime}!UnityUtils.ScriptUtils.UI.UIButtonHoverRotate@{UnityUtils.ScriptUtils.UI.UIButtonHoverRotate}}
+\doxysubsubsection{\texorpdfstring{useRealtime}{useRealtime}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_a32d81331ce7b568fe3df5ff9a034d640} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Rotate.\+use\+Realtime}
+
+
+
+true to use unscaled real time for the animation (ignoring time scale). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Script Utils/\+UI/\mbox{\hyperlink{_u_i_button_hover_rotate_8cs}{UIButton\+Hover\+Rotate.\+cs}}\end{DoxyCompactItemize}

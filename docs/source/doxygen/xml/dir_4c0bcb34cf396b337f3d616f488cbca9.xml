@@ -6,6 +6,7 @@
     <innerdir refid="dir_2f6f0b2b9cd08071bd61fd32b8064f3b">Assets/Script Utils/Particles</innerdir>
     <innerdir refid="dir_9f2b6e6d1de89151db6681cf7ae9d1b8">Assets/Script Utils/Scriptable Objects</innerdir>
     <innerdir refid="dir_13bff5dd63580ebd994eec581358b383">Assets/Script Utils/UI</innerdir>
+    <innerfile refid="_object_animations_8cs">ObjectAnimations.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

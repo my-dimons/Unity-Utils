@@ -17,3 +17,4 @@ Scripts
    uiutilsmanager
    uibuttonhoverexpand
    uibuttonsfx
+   uibuttonhoverrotate

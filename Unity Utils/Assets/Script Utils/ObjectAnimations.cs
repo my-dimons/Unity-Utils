@@ -17,7 +17,7 @@ namespace UnityUtils.ScriptUtils
             {
                 if (coroutineStarter == null)
                 {
-                    GameObject starter = new GameObject("ObjectAnimations CoroutineStarter");
+                    GameObject starter = new GameObject("Unity Utils - Coroutine Starter");
                     coroutineStarter = starter.AddComponent<ObjectAnimationsCoroutineStarter>();
                     UnityEngine.Object.DontDestroyOnLoad(starter);
                 }
