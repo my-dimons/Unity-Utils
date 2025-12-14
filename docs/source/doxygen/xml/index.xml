@@ -19,6 +19,7 @@
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider" kind="class"><name>UnityUtils::ScriptUtils::Audio::AudioSlider</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" kind="variable"><name>volumeType</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" kind="variable"><name>debugLogs</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a83a056228d7e8d67f2dc5f96b0b21d66" kind="function"><name>Start</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1adfa58fe07a2daa25b8f787a9d72f5092" kind="function"><name>OnSliderValueChanged</name></member>
   </compound>

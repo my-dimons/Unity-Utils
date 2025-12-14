@@ -11,12 +11,29 @@
         <name>volumeType</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioSlider.volumeType</qualifiedname>
         <briefdescription>
+<para>Type of audio volume to modify on update. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="9" column="39" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="9" bodyend="-1"/>
+        <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="10" column="39" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.AudioSlider.debugLogs</definition>
+        <argsstring></argsstring>
+        <name>debugLogs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioSlider.debugLogs</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If true, this will print a debug log of the updated volume on update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="15" column="21" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -32,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="11" column="14" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="11" bodyend="14"/>
+        <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="17" column="14" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="17" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1adfa58fe07a2daa25b8f787a9d72f5092" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -50,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="16" column="22" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="16" bodyend="19"/>
+        <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="25" column="22" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="25" bodyend="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -86,8 +103,9 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
       </node>
     </collaborationgraph>
-    <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="7" column="11" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="8" bodyend="20"/>
+    <location file="Assets/Script Utils/Audio/AudioSlider.cs" line="7" column="11" bodyfile="Assets/Script Utils/Audio/AudioSlider.cs" bodystart="8" bodyend="30"/>
     <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>debugLogs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1adfa58fe07a2daa25b8f787a9d72f5092" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>OnSliderValueChanged</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a83a056228d7e8d67f2dc5f96b0b21d66" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>Start</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>volumeType</name></member>
