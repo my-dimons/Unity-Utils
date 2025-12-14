@@ -55,6 +55,6 @@
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="60"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Assets/Script Utils/Particles/ParticleManager.cs"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs"/>
   </compounddef>
 </doxygen>

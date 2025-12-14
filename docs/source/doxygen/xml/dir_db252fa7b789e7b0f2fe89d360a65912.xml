@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_db252fa7b789e7b0f2fe89d360a65912" kind="dir">
+    <compoundname>Packages/UnityUtils/Runtime/Script Utils/Audio</compoundname>
+    <innerfile refid="_audio_manager_8cs">AudioManager.cs</innerfile>
+    <innerfile refid="_audio_slider_8cs">AudioSlider.cs</innerfile>
+    <innerfile refid="_background_music_manager_8cs">BackgroundMusicManager.cs</innerfile>
+    <innerfile refid="_s_f_x_manager_8cs">SFXManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/"/>
+  </compounddef>
+</doxygen>

@@ -27,7 +27,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Assets/Script Utils/ObjectAnimations.cs" line="13" column="16" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="13" bodyend="13"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="13" column="16" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="13" bodyend="13"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

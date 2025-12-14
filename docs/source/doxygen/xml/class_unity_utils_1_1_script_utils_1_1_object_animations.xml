@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="14" column="57" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="14" column="57" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="15" column="57" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="16" bodyend="28"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="15" column="57" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="16" bodyend="28"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="34" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="34" bodyend="39"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="34" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="34" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="44" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="44" bodyend="49"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="44" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="44" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="54" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="54" bodyend="59"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="54" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="54" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="64" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="64" bodyend="71"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="64" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="64" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="76" column="28" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="76" bodyend="83"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="76" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="76" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -318,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="92" column="23" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="92" bodyend="96"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="92" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="92" bodyend="96"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -363,14 +363,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/ObjectAnimations.cs" line="98" column="24" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="98" bodyend="117"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="98" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="98" bodyend="117"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Assets/Script Utils/ObjectAnimations.cs" line="9" column="19" bodyfile="Assets/Script Utils/ObjectAnimations.cs" bodystart="10" bodyend="118"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="9" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="10" bodyend="118"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateImageOpacity</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateSpriteRendererOpacity</name></member>

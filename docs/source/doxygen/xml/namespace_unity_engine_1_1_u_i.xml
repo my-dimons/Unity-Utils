@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Assets/TestingScript1.cs" line="2" column="21"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="2" column="21"/>
   </compounddef>
 </doxygen>

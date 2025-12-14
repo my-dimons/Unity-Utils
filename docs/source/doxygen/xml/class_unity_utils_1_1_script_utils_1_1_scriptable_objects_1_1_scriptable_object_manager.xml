@@ -32,14 +32,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="12" column="23" bodyfile="Assets/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="12" bodyend="28"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="12" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="12" bodyend="28"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Assets/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="5" column="19" bodyfile="Assets/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="6" bodyend="29"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" line="5" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects/ScriptableObjectManager.cs" bodystart="6" bodyend="29"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager_1ad376e448c4e3b09d4545ac4ccd881653" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ScriptableObjects::ScriptableObjectManager</scope><name>GetScriptableObjects&lt; T &gt;</name></member>
     </listofallmembers>

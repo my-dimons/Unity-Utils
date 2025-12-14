@@ -136,6 +136,6 @@
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="148"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Assets/Script Utils/Audio/BackgroundMusicManager.cs"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs"/>
   </compounddef>
 </doxygen>

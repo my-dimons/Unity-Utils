@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['instance_0',['Instance',['../class_singleton_example.html#a3ec2e0be8caa360684f1d04b5ec0491c',1,'SingletonExample']]]
+  ['calculatecliplength_0',['CalculateClipLength',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0498ca8ec7582e9aa3607f534a7dc5f0',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculateclippitchwithlength_1',['CalculateClipPitchWithLength',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a41eadf3c8d28dae43bd9058ff3ecf4ae',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculatepitchvariance_2',['CalculatePitchVariance',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a3f7535559b788c3fdd18b161f7310774',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculatevolumebasedontype_3',['CalculateVolumeBasedOnType',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a6842171f65007a880eac46610f5676b5',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['clicksfx_4',['clickSfx',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#adc89b9acd4f48169e335c470ea3214b0',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
+  ['clickvolume_5',['clickVolume',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ae1337199f502e7ea75e6627ca1e0f3a2',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
+  ['currentplayingtrack_6',['currentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a8516d30b183420e61f6d3d6117311740',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
+  ['custom_7',['Custom',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];

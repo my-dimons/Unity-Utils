@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="12" column="22" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="12" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="12" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a5e39b92b4fce792a762e67c87cc99596" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="15" column="22" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="15" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a6380c66f4b1db51868e6660b9ffb9acf" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="18" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="18" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="18" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a32d81331ce7b568fe3df5ff9a034d640" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="23" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="23" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="23" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a006c0dd78261c3866dbb0e173bb9447f" prot="public" static="no" mutable="no">
         <type>AnimationCurve</type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="26" column="31" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="26" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="26" column="31" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a2794301f3b82197a637bb8d9e18a44fd" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="30" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="30" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="30" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1ae0432b8b05ca7db427bdefad702351fc" prot="public" static="no" mutable="no">
         <type>Vector2</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="33" column="24" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="33" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="33" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9c137b234bad7ea9c658a4374086d96f" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="40" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="40" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="40" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="34" column="25" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="34" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="34" column="25" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a9177d65132d79213bd06c63eeca5db8c" prot="private" static="no" mutable="no">
         <type>Vector3</type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="42" column="17" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="42" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="42" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a756de23399fbc6d623c38749b3885d32" prot="private" static="no" mutable="no">
         <type>Vector3</type>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="43" column="17" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="43" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="43" column="17" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="43" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -190,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="46" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="46" bodyend="49"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="46" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="46" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a69a0f2deca3b24b4f5b775993cc3bb7d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="52" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="52" bodyend="64"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="52" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="52" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a609e2f7595b2ecfc3fba10ef71d5568e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -219,7 +219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="85" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="85" bodyend="90"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="85" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="85" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1aa1883edded88346244e1744fe8d844af" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="95" column="14" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="95" bodyend="98"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="95" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="95" bodyend="98"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="66" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="66" bodyend="72"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="66" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="66" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a628c4f403336feee5dc4f9ea955eaa67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -272,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="74" column="21" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="74" bodyend="80"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="74" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="74" bodyend="80"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -321,7 +321,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Assets/Script Utils/UI/UIButtonHoverRotate.cs" line="8" column="11" bodyfile="Assets/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="9" bodyend="99"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" line="8" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonHoverRotate.cs" bodystart="9" bodyend="99"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a3c8f8d3e00f1521683c6365ecc13370a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>currentRandomRotation</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a609e2f7595b2ecfc3fba10ef71d5568e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</scope><name>EnterHoverAnimation</name></member>

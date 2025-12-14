@@ -8,6 +8,7 @@
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_audio">UnityUtils::ScriptUtils::Audio</innernamespace>
     <innernamespace refid="namespace_system">System</innernamespace>
     <innernamespace refid="namespace_system_1_1_collections_1_1_generic">System::Collections::Generic</innernamespace>
+    <innernamespace refid="namespace_unity_engine">UnityEngine</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -74,6 +75,6 @@
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="96"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Assets/Script Utils/Audio/AudioManager.cs"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs"/>
   </compounddef>
 </doxygen>

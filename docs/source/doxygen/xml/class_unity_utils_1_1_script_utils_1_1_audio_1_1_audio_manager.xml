@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="13" column="15" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="14" bodyend="20"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="13" column="15" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="14" bodyend="20"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-attrib">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="22" column="36" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="22" bodyend="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="22" column="36" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="22" bodyend="29"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="35" column="29" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="35" bodyend="38"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="35" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="35" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a938dc9ab15c02a784ecb8921812f88f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="43" column="28" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="43" bodyend="46"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="43" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="43" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a096134c5684b1ef0d8f46d9c0cf9a6a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="51" column="28" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="51" bodyend="54"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="51" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="51" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6842171f65007a880eac46610f5676b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="63" column="29" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="63" bodyend="71"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="63" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="63" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0b0a5e413f1f381a80658aaae7256203" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="76" column="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="76" column="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="82" column="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="82" column="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a41eadf3c8d28dae43bd9058ff3ecf4ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="88" column="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="88" column="29"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3f7535559b788c3fdd18b161f7310774" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -262,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Assets/Script Utils/Audio/AudioManager.cs" line="94" column="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="94" column="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -270,7 +270,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Assets/Script Utils/Audio/AudioManager.cs" line="10" column="19" bodyfile="Assets/Script Utils/Audio/AudioManager.cs" bodystart="11" bodyend="95"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="11" bodyend="95"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a97ad4c4a1cf0f888a121cfe61d1d895a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>audioVolumes</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>CalculateClipLength</name></member>
