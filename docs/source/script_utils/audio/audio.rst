@@ -19,4 +19,5 @@ Scripts
    audiomanager
    sfxmanager
    backgroundmusicmanager
+   audioslider
 

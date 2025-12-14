@@ -7,7 +7,6 @@
     <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
     <innernamespace refid="namespace_unity_1_1_visual_scripting">Unity::VisualScripting</innernamespace>
-    <innernamespace refid="namespace_unity_engine_1_1_u_i">UnityEngine::UI</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

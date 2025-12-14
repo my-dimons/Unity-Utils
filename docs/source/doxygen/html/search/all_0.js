@@ -7,5 +7,7 @@ var searchData=
   ['animatetransformscale_4',['AnimateTransformScale',['../class_unity_utils_1_1_script_utils_1_1_object_animations.html#ad07f6eeb910f6a50e35746cf4ce66314',1,'UnityUtils::ScriptUtils::ObjectAnimations']]],
   ['animatevalue_3c_20t_20_3e_5',['AnimateValue&lt; T &gt;',['../class_unity_utils_1_1_script_utils_1_1_object_animations.html#ac2af637b137136ceca3584d4995956a8',1,'UnityUtils::ScriptUtils::ObjectAnimations']]],
   ['audiomanager_6',['AudioManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
-  ['audiomanager_2ecs_7',['AudioManager.cs',['../_audio_manager_8cs.html',1,'']]]
+  ['audiomanager_2ecs_7',['AudioManager.cs',['../_audio_manager_8cs.html',1,'']]],
+  ['audioslider_8',['AudioSlider',['../class_audio_slider.html',1,'']]],
+  ['audioslider_2ecs_9',['AudioSlider.cs',['../_audio_slider_8cs.html',1,'']]]
 ];

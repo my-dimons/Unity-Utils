@@ -17,6 +17,11 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a41eadf3c8d28dae43bd9058ff3ecf4ae" kind="function"><name>CalculateClipPitchWithLength</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3f7535559b788c3fdd18b161f7310774" kind="function"><name>CalculatePitchVariance</name></member>
   </compound>
+  <compound refid="class_audio_slider" kind="class"><name>AudioSlider</name>
+    <member refid="class_audio_slider_1af9f71ab49a58eabc96bd105f6543b464" kind="variable"><name>volumeType</name></member>
+    <member refid="class_audio_slider_1af0e4295e6575ccdbfb589de2de9d477e" kind="function"><name>Start</name></member>
+    <member refid="class_audio_slider_1a8012e883cfe172ad7c041c847a0494c3" kind="function"><name>OnSliderValueChanged</name></member>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kind="variable"><name>musicSource</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" kind="variable"><name>musicTracks</name></member>
@@ -73,6 +78,7 @@
     <member refid="class_singleton_example_1ac555684307507dd98240e64cebf9a79a" kind="function"><name>Awake</name></member>
   </compound>
   <compound refid="class_testing_script" kind="class"><name>TestingScript</name>
+    <member refid="class_testing_script_1af44cbed896480e7804e92fde1c923794" kind="variable"><name>curve</name></member>
     <member refid="class_testing_script_1aa8858ecc3fa4898a96e3256d86164208" kind="variable"><name>testingValue</name></member>
     <member refid="class_testing_script_1a4573d3cb16b06801b598339062f28170" kind="variable"><name>testingVector3</name></member>
     <member refid="class_testing_script_1a410e0e5f75788b4b4c633b6c70bce7f7" kind="function"><name>Start</name></member>
@@ -159,6 +165,8 @@
   <compound refid="_singleton_example_8cs" kind="file"><name>SingletonExample.cs</name>
   </compound>
   <compound refid="_audio_manager_8cs" kind="file"><name>AudioManager.cs</name>
+  </compound>
+  <compound refid="_audio_slider_8cs" kind="file"><name>AudioSlider.cs</name>
   </compound>
   <compound refid="_background_music_manager_8cs" kind="file"><name>BackgroundMusicManager.cs</name>
   </compound>

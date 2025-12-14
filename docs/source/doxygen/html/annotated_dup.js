@@ -21,6 +21,7 @@ var annotated_dup =
         [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_object_animations" ]
       ] ]
     ] ],
+    [ "AudioSlider", "class_audio_slider.html", "class_audio_slider" ],
     [ "SingletonExample", "class_singleton_example.html", "class_singleton_example" ],
     [ "TestingScript", "class_testing_script.html", "class_testing_script" ],
     [ "TestingScript1", "class_testing_script1.html", "class_testing_script1" ]
