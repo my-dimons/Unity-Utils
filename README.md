@@ -1,4 +1,4 @@
-Unity Utils is a Open-Source Unity (C#) library helps with the early development of games.
+Unity Utils is a Open-Source Unity (C#) library helps with quick development of games.
  
 # Download
 Download instructions here: https://mydimons-unity-utils.readthedocs.io/en/latest/usage.html#installation
