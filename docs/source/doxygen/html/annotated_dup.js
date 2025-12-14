@@ -4,6 +4,7 @@ var annotated_dup =
       [ "ScriptUtils", "namespace_unity_utils_1_1_script_utils.html", [
         [ "Audio", "namespace_unity_utils_1_1_script_utils_1_1_audio.html", [
           [ "AudioManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" ],
+          [ "AudioSlider", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider" ],
           [ "BackgroundMusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" ],
           [ "SfxManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager" ]
         ] ],
@@ -21,7 +22,6 @@ var annotated_dup =
         [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_object_animations" ]
       ] ]
     ] ],
-    [ "AudioSlider", "class_audio_slider.html", "class_audio_slider" ],
     [ "SingletonExample", "class_singleton_example.html", "class_singleton_example" ],
     [ "TestingScript", "class_testing_script.html", "class_testing_script" ],
     [ "TestingScript1", "class_testing_script1.html", "class_testing_script1" ]

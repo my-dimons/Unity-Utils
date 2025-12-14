@@ -3,6 +3,7 @@
   <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_audio" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils::Audio</compoundname>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" prot="public">UnityUtils::ScriptUtils::Audio::AudioManager</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider" prot="public">UnityUtils::ScriptUtils::Audio::AudioSlider</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" prot="public">UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager" prot="public">UnityUtils::ScriptUtils::Audio::SfxManager</innerclass>
     <briefdescription>

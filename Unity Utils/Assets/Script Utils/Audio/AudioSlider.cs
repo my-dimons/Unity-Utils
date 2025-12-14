@@ -2,17 +2,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityUtils.ScriptUtils.Audio;
 
-public class AudioSlider : MonoBehaviour
+namespace UnityUtils.ScriptUtils.Audio
 {
-    public AudioManager.VolumeType volumeType;
-
-    void Start()
+    public class AudioSlider : MonoBehaviour
     {
-        this.GetComponent<Slider>().onValueChanged.AddListener(OnSliderValueChanged);
-    }
+        public AudioManager.VolumeType volumeType;
 
-    private void OnSliderValueChanged(float volume)
-    {
-        AudioManager.SetVolume(volumeType, volume);
+        void Start()
+        {
+            this.GetComponent<Slider>().onValueChanged.AddListener(OnSliderValueChanged);
+        }
+
+        private void OnSliderValueChanged(float volume)
+        {
+            AudioManager.SetVolume(volumeType, volume);
+        }
     }
 }

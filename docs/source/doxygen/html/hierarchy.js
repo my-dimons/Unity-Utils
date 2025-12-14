@@ -15,10 +15,10 @@ var hierarchy =
       [ "UnityUtils.ScriptUtils.UI.UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", null ]
     ] ],
     [ "MonoBehaviour", null, [
-      [ "AudioSlider", "class_audio_slider.html", null ],
       [ "SingletonExample", "class_singleton_example.html", null ],
       [ "TestingScript", "class_testing_script.html", null ],
       [ "TestingScript1", "class_testing_script1.html", null ],
+      [ "UnityUtils.ScriptUtils.Audio.AudioSlider", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html", null ],
       [ "UnityUtils.ScriptUtils.Audio.BackgroundMusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverRotate", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html", null ],
