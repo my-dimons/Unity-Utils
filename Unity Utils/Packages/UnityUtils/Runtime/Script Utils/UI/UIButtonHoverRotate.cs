@@ -42,7 +42,7 @@ namespace UnityUtils.ScriptUtils.UI
         Vector3 originalRotation;
         Vector3 hoverRotationVector;
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        // Starter is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             originalRotation = new Vector3(transform.localRotation.x, transform.localRotation.y, transform.localRotation.z);

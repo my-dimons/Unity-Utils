@@ -42,18 +42,23 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" kind="function"><name>PlaySpecificMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" kind="function"><name>GetRandomSong</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter" kind="class"><name>UnityUtils::ScriptUtils::CoroutineStarter</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1ac95a5a621f7eed1cfff222aa4979bffd" kind="variable"><name>starter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0c17b9ec26d2390740c27c0e79d5fd83" kind="property"><name>Starter</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1_1_coroutine_starter_object" kind="class"><name>UnityUtils::ScriptUtils::CoroutineStarter::CoroutineStarterObject</name>
+  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::ObjectAnimations</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a0008088bcac9ff950d313400b03b4beb" kind="variable"><name>coroutineStarter</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a4833b2df85821bdae8bf3af5d150fa3d" kind="property"><name>CoroutineStarter</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" kind="function"><name>AnimateTransformScale</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" kind="function"><name>AnimateTransformPosition</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" kind="function"><name>AnimateTransformRotation</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" kind="function"><name>AnimateSpriteRendererOpacity</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" kind="function"><name>AnimateImageOpacity</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a5cb151f2a3c177fa976224b9f08f2bb2" kind="function"><name>AnimateAudioVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a3bf7565a4542712b0dd782c669cbfcb5" kind="function"><name>FadeOutAudio</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9ed246ebd23970d228ad4364e4e41c4a" kind="function"><name>FadeInAudio</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" kind="function"><name>AnimateValue&lt; T &gt;</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
-  </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1_1_object_animations_coroutine_starter" kind="class"><name>UnityUtils::ScriptUtils::ObjectAnimations::ObjectAnimationsCoroutineStarter</name>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" kind="function"><name>SpawnBurstParticle</name></member>
@@ -154,6 +159,8 @@
   <compound refid="_background_music_manager_8cs" kind="file"><name>BackgroundMusicManager.cs</name>
   </compound>
   <compound refid="_s_f_x_manager_8cs" kind="file"><name>SFXManager.cs</name>
+  </compound>
+  <compound refid="_coroutine_starter_8cs" kind="file"><name>CoroutineStarter.cs</name>
   </compound>
   <compound refid="_object_animations_8cs" kind="file"><name>ObjectAnimations.cs</name>
   </compound>

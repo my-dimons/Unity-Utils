@@ -6,6 +6,7 @@
     <innerdir refid="dir_bfcc3fef8087e40b6de73f7c3da76010">Packages/UnityUtils/Runtime/Script Utils/Particles</innerdir>
     <innerdir refid="dir_36ed9bde031f6096a92cd6d1e38d0be1">Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects</innerdir>
     <innerdir refid="dir_b2eb90027e5128786193b5cba0b4dc25">Packages/UnityUtils/Runtime/Script Utils/UI</innerdir>
+    <innerfile refid="_coroutine_starter_8cs">CoroutineStarter.cs</innerfile>
     <innerfile refid="_object_animations_8cs">ObjectAnimations.cs</innerfile>
     <briefdescription>
     </briefdescription>

@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "UnityUtils.ScriptUtils.Audio.AudioManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html", null ],
+    [ "UnityUtils.ScriptUtils.CoroutineStarter", "class_unity_utils_1_1_script_utils_1_1_coroutine_starter.html", null ],
     [ "IPointerClickHandler", null, [
       [ "UnityUtils.ScriptUtils.UI.UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", null ]
     ] ],
@@ -17,6 +18,7 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "UnityUtils.ScriptUtils.Audio.AudioSlider", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html", null ],
       [ "UnityUtils.ScriptUtils.Audio.BackgroundMusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html", null ],
+      [ "UnityUtils.ScriptUtils.CoroutineStarter.CoroutineStarterObject", "class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1_1_coroutine_starter_object.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverRotate", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", null ]

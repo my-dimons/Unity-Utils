@@ -30,7 +30,7 @@ namespace UnityUtils.ScriptUtils.UI
         Vector3 originalSize;
         Vector3 hoverSizeVector;
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        // Starter is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             originalSize = transform.localScale;

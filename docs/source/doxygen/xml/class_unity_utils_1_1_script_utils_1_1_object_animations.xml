@@ -2,39 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_object_animations" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::ObjectAnimations</compoundname>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1_1_object_animations_coroutine_starter" prot="private">UnityUtils::ScriptUtils::ObjectAnimations::ObjectAnimationsCoroutineStarter</innerclass>
-    <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a0008088bcac9ff950d313400b03b4beb" prot="private" static="yes" mutable="no">
-        <type>ObjectAnimationsCoroutineStarter</type>
-        <definition>ObjectAnimationsCoroutineStarter UnityUtils.ScriptUtils.ObjectAnimations.coroutineStarter</definition>
-        <argsstring></argsstring>
-        <name>coroutineStarter</name>
-        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.coroutineStarter</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="14" column="57" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="14" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="property">
-      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a4833b2df85821bdae8bf3af5d150fa3d" prot="private" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
-        <type>ObjectAnimationsCoroutineStarter</type>
-        <definition>ObjectAnimationsCoroutineStarter UnityUtils.ScriptUtils.ObjectAnimations.CoroutineStarter</definition>
-        <argsstring></argsstring>
-        <name>CoroutineStarter</name>
-        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.CoroutineStarter</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="15" column="57" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="16" bodyend="28"/>
-      </memberdef>
-    </sectiondef>
     <sectiondef kind="public-static-func">
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -75,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="34" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="34" bodyend="39"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="16" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="16" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -116,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="44" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="44" bodyend="49"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="26" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="26" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -157,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="54" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="54" bodyend="59"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="36" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="36" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -198,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="64" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="64" bodyend="71"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="48" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="48" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -239,7 +206,104 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="76" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="76" bodyend="83"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="60" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="60" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a5cb151f2a3c177fa976224b9f08f2bb2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.AnimateAudioVolume</definition>
+        <argsstring>(AudioSource audioSource, float startVolume, float endVolume, float duration, bool useRealtime=true)</argsstring>
+        <name>AnimateAudioVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.AnimateAudioVolume</qualifiedname>
+        <param>
+          <type>AudioSource</type>
+          <declname>audioSource</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startVolume</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>endVolume</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects AudioSource component volume from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="74" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a3bf7565a4542712b0dd782c669cbfcb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.FadeOutAudio</definition>
+        <argsstring>(AudioSource audioSource, float duration, bool useRealtime=true)</argsstring>
+        <name>FadeOutAudio</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.FadeOutAudio</qualifiedname>
+        <param>
+          <type>AudioSource</type>
+          <declname>audioSource</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects AudioSource component volume from its current volume to 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="82" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9ed246ebd23970d228ad4364e4e41c4a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.FadeInAudio</definition>
+        <argsstring>(AudioSource audioSource, float duration, float endVolume=1, bool useRealtime=true)</argsstring>
+        <name>FadeInAudio</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.FadeInAudio</qualifiedname>
+        <param>
+          <type>AudioSource</type>
+          <declname>audioSource</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>endVolume</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects AudioSource component volume from 0 to a specified volume. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="90" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="90" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -318,7 +382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="92" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="92" bodyend="96"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="103" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="103" bodyend="107"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -363,15 +427,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="98" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="98" bodyend="117"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="109" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="109" bodyend="128"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="9" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="10" bodyend="118"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="11" bodyend="129"/>
     <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a5cb151f2a3c177fa976224b9f08f2bb2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateAudioVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateImageOpacity</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateSpriteRendererOpacity</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateTransformPosition</name></member>
@@ -379,8 +444,8 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateTransformScale</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValue&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValueCoroutine&lt; T &gt;</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a4833b2df85821bdae8bf3af5d150fa3d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>CoroutineStarter</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a0008088bcac9ff950d313400b03b4beb" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>coroutineStarter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9ed246ebd23970d228ad4364e4e41c4a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>FadeInAudio</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a3bf7565a4542712b0dd782c669cbfcb5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>FadeOutAudio</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

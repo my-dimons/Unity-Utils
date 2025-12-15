@@ -3,31 +3,13 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityUtils.ScriptUtils;
 
 namespace UnityUtils.ScriptUtils
 {
     public static class ObjectAnimations
     {
-        #region This region is assisted by ChatGPT
-        // Had to somehow have it start coroutines without someone manually assigning a script
-        private class ObjectAnimationsCoroutineStarter : MonoBehaviour { }
-        private static ObjectAnimationsCoroutineStarter coroutineStarter;
-        private static ObjectAnimationsCoroutineStarter CoroutineStarter
-        {
-            get
-            {
-                if (coroutineStarter == null)
-                {
-                    GameObject starter = new GameObject("Unity Utils - Coroutine Starter");
-                    coroutineStarter = starter.AddComponent<ObjectAnimationsCoroutineStarter>();
-                    UnityEngine.Object.DontDestroyOnLoad(starter);
-                }
-
-                return coroutineStarter;
-            }
-        }
-        #endregion
-
+        #region Transforms
         /// <summary>
         /// Animates an objects <see cref="Transform"/> components scale from a starting value to an ending value over a specified duration.
         /// </summary>
@@ -57,7 +39,9 @@ namespace UnityUtils.ScriptUtils
 
             AnimateValue<Vector3>(startRotation, endRotation, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.localRotation = Quaternion.Euler(value), useRealtime, animationCurve);
         }
+        #endregion
 
+        #region Opacity
         /// <summary>
         /// Animates an objects <see cref="SpriteRenderer"/> component alpha from a starting value to an ending value over a specified duration.
         /// </summary>
@@ -81,6 +65,33 @@ namespace UnityUtils.ScriptUtils
 
             AnimateValue<float>(startOpacity, endOpacity, duration, (a, b, t) => Mathf.Lerp(a, b, t), value => image.color = new Color(color.r, color.g, color.b, value), useRealtime, animationCurve);
         }
+        #endregion
+
+        #region Audio
+        /// <summary>
+        /// Animates an objects <see cref="AudioSource"/> component volume from a starting value to an ending value over a specified duration.
+        /// </summary>
+        public static void AnimateAudioVolume(AudioSource audioSource, float startVolume, float endVolume, float duration, bool useRealtime = true)
+        {
+            AnimateValue<float>(startVolume, endVolume, duration, (a, b, t) => Mathf.Lerp(a, b, t), value => audioSource.volume = value, useRealtime, AnimationCurve.Linear(0, 0, 1, 1));
+        }
+
+        /// <summary>
+        /// Animates an objects <see cref="AudioSource"/> component volume from its current volume to 0.
+        /// </summary>
+        public static void FadeOutAudio(AudioSource audioSource, float duration, bool useRealtime = true)
+        {
+            AnimateAudioVolume(audioSource, audioSource.volume, 0, duration, useRealtime);
+        }
+
+        /// <summary>
+        /// Animates an objects <see cref="AudioSource"/> component volume from 0 to a specified volume.
+        /// </summary>
+        public static void FadeInAudio(AudioSource audioSource, float duration, float endVolume = 1, bool useRealtime = true)
+        {
+            AnimateAudioVolume(audioSource, 0, endVolume, duration, useRealtime);
+        }
+        #endregion
 
         /// <summary>
         /// Animates a value from a starting value to an ending value over a specified duration
@@ -92,7 +103,7 @@ namespace UnityUtils.ScriptUtils
         public static void AnimateValue<T>(T start, T end, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false, AnimationCurve curve = default)
         {
             if (curve == default) curve = AnimationCurve.Linear(0, 0, 1, 1);
-            CoroutineStarter.StartCoroutine(AnimateValueCoroutine(start, end, curve, duration, lerpFunction, onValueChanged, useRealtime));
+            CoroutineStarter.Starter.StartCoroutine(AnimateValueCoroutine(start, end, curve, duration, lerpFunction, onValueChanged, useRealtime));
         }
 
         private static IEnumerator AnimateValueCoroutine<T>(T start, T end, AnimationCurve curve, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false)

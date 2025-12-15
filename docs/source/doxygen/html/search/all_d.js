@@ -12,5 +12,6 @@ var searchData=
   ['sizingcurve_9',['SizingCurve',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a93de5dda2256a7f3a9282d78120183b4',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.SizingCurve'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a006c0dd78261c3866dbb0e173bb9447f',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.SizingCurve']]],
   ['spawnburstparticle_10',['SpawnBurstParticle',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html#a9c686ddb9044958c4c695304c23fa602',1,'UnityUtils::ScriptUtils::Particles::ParticleManager']]],
   ['startcontinuousmusic_11',['StartContinuousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a04ced0973b67e3cc4830767edfacb606',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
-  ['stopmusic_12',['StopMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a82e502951ecdb1a090d31f684b3a5cd8',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
+  ['starter_12',['Starter',['../class_unity_utils_1_1_script_utils_1_1_coroutine_starter.html#a0c17b9ec26d2390740c27c0e79d5fd83',1,'UnityUtils::ScriptUtils::CoroutineStarter']]],
+  ['stopmusic_13',['StopMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a82e502951ecdb1a090d31f684b3a5cd8',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
 ];

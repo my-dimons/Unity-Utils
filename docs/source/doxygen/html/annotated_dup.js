@@ -19,6 +19,7 @@ var annotated_dup =
           [ "UIButtonHoverRotate", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" ],
           [ "UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" ]
         ] ],
+        [ "CoroutineStarter", "class_unity_utils_1_1_script_utils_1_1_coroutine_starter.html", "class_unity_utils_1_1_script_utils_1_1_coroutine_starter" ],
         [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_object_animations" ]
       ] ]
     ] ]

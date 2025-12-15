@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespace_unity_utils_1_1_script_utils" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter" prot="public">UnityUtils::ScriptUtils::CoroutineStarter</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_object_animations" prot="public">UnityUtils::ScriptUtils::ObjectAnimations</innerclass>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_audio">UnityUtils::ScriptUtils::Audio</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_particles">UnityUtils::ScriptUtils::Particles</innernamespace>
