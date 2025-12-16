@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['modifyvolume_0',['ModifyVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a938dc9ab15c02a784ecb8921812f88f4',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['multiplybyglobalvolume_1',['MultiplyByGlobalVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0b0a5e413f1f381a80658aaae7256203',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['music_2',['Music',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['musicsource_3',['musicSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#aa1877f5498b9668610fcc15140a990c5',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
-  ['musictracks_4',['musicTracks',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a7122a46cd1682d4a54d9d944e3fcba47',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
+  ['logonsongplay_0',['logOnSongPlay',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#ac0029d165ad5cb28edfd7c6e14cb1aef',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
+  ['logonsongstop_1',['logOnSongStop',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a1f43cf5a1e0acdf1f859e1bc792c7af1',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
+  ['lograndomsongcooldown_2',['logRandomSongCooldown',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a4e5941be49e0ea462bb1bbe2d5d635bd',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
+  ['logsongprogesseverypercent_3',['logSongProgessEveryPercent',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#afdfff0f0dc8da146bb840764b5d880c9',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
+  ['logsongprogress_4',['logSongProgress',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#afe32685a8c0cd704aba2e86c6a6e274a',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
 ];

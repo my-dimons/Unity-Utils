@@ -100,10 +100,11 @@ Inheritance diagram for UnityUtils.ScriptUtils.Audio.BackgroundMusicManager:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82e502951ecdb1a090d31f684b3a5cd8" id="r_a82e502951ecdb1a090d31f684b3a5cd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82e502951ecdb1a090d31f684b3a5cd8">StopMusic</a> ()</td></tr>
-<tr class="memdesc:a82e502951ecdb1a090d31f684b3a5cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the <a class="el" href="#aa1877f5498b9668610fcc15140a990c5" title="The audio source component used to play the background Music.">musicSource</a> from playing Music and looping until PlayMusicContinuously is called again (to start looping).  <br /></td></tr>
-<tr class="memitem:a04ced0973b67e3cc4830767edfacb606" id="r_a04ced0973b67e3cc4830767edfacb606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04ced0973b67e3cc4830767edfacb606">StartContinuousMusic</a> ()</td></tr>
-<tr class="memdesc:a04ced0973b67e3cc4830767edfacb606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts to PlayMusicContinuously until stopped.  <br /></td></tr>
+<tr class="memitem:ac2ffa08c9f5f23517ab6a1780eb3f305" id="r_ac2ffa08c9f5f23517ab6a1780eb3f305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2ffa08c9f5f23517ab6a1780eb3f305">StopContinousMusic</a> ()</td></tr>
+<tr class="memdesc:ac2ffa08c9f5f23517ab6a1780eb3f305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the musicSource from playing Music and looping until PlayMusicContinuously is called again (to start looping).  <br /></td></tr>
+<tr class="memitem:a2e48f59f18fe948b07aa02dea0c3ce91" id="r_a2e48f59f18fe948b07aa02dea0c3ce91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e48f59f18fe948b07aa02dea0c3ce91">StopMusicSource</a> ()</td></tr>
+<tr class="memitem:a75710a6645efc6673314d61de12d6e0c" id="r_a75710a6645efc6673314d61de12d6e0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75710a6645efc6673314d61de12d6e0c">PlayContinuousMusic</a> ()</td></tr>
+<tr class="memdesc:a75710a6645efc6673314d61de12d6e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts to PlayMusicContinuously until stopped.  <br /></td></tr>
 <tr class="memitem:a79053ee109f1122d6530632b6ed21fe2" id="r_a79053ee109f1122d6530632b6ed21fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79053ee109f1122d6530632b6ed21fe2">PlaySingleRandomMusicTrack</a> ()</td></tr>
 <tr class="memdesc:a79053ee109f1122d6530632b6ed21fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a random song in <a class="el" href="#a7122a46cd1682d4a54d9d944e3fcba47" title="An array of audio clips representing the available Music tracks.">musicTracks</a> once.  <br /></td></tr>
 <tr class="memitem:a4164aeed2aa479da81a8eb2aa2209868" id="r_a4164aeed2aa479da81a8eb2aa2209868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4164aeed2aa479da81a8eb2aa2209868">PlaySpecificMusicTrack</a> (AudioClip clip)</td></tr>
@@ -114,8 +115,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa1877f5498b9668610fcc15140a990c5" id="r_aa1877f5498b9668610fcc15140a990c5"><td class="memItemLeft" align="right" valign="top">AudioSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1877f5498b9668610fcc15140a990c5">musicSource</a></td></tr>
-<tr class="memdesc:aa1877f5498b9668610fcc15140a990c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The audio source component used to play the background Music.  <br /></td></tr>
 <tr class="memitem:a7122a46cd1682d4a54d9d944e3fcba47" id="r_a7122a46cd1682d4a54d9d944e3fcba47"><td class="memItemLeft" align="right" valign="top">AudioClip[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7122a46cd1682d4a54d9d944e3fcba47">musicTracks</a></td></tr>
 <tr class="memdesc:a7122a46cd1682d4a54d9d944e3fcba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of audio clips representing the available Music tracks.  <br /></td></tr>
 <tr class="memitem:a8516d30b183420e61f6d3d6117311740" id="r_a8516d30b183420e61f6d3d6117311740"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8516d30b183420e61f6d3d6117311740">currentPlayingTrack</a></td></tr>
@@ -124,8 +123,18 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a848c527693d5daa4b2f091434d7d3e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to start playing Music as soon as this object awakes.  <br /></td></tr>
 <tr class="memitem:aa0656ccefce385481e6057ebfbbc6bff" id="r_aa0656ccefce385481e6057ebfbbc6bff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0656ccefce385481e6057ebfbbc6bff">fadeTime</a></td></tr>
 <tr class="memdesc:aa0656ccefce385481e6057ebfbbc6bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration, in seconds, over which the fade in/out effect occurs.  <br /></td></tr>
-<tr class="memitem:a49c63e55a37e3711101180af223d4954" id="r_a49c63e55a37e3711101180af223d4954"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49c63e55a37e3711101180af223d4954">randomMillisecondCooldownBetweenSongs</a></td></tr>
-<tr class="memdesc:a49c63e55a37e3711101180af223d4954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random cooldown time between songs in milliseconds.  <br /></td></tr>
+<tr class="memitem:a45162e8caa0d8edb8b164aef38ca129d" id="r_a45162e8caa0d8edb8b164aef38ca129d"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45162e8caa0d8edb8b164aef38ca129d">randomSecondCooldownBetweenSongs</a></td></tr>
+<tr class="memdesc:a45162e8caa0d8edb8b164aef38ca129d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random cooldown time between songs in milliseconds.  <br /></td></tr>
+<tr class="memitem:ac0029d165ad5cb28edfd7c6e14cb1aef" id="r_ac0029d165ad5cb28edfd7c6e14cb1aef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0029d165ad5cb28edfd7c6e14cb1aef">logOnSongPlay</a></td></tr>
+<tr class="memdesc:ac0029d165ad5cb28edfd7c6e14cb1aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log when a new track starts playing.  <br /></td></tr>
+<tr class="memitem:a1f43cf5a1e0acdf1f859e1bc792c7af1" id="r_a1f43cf5a1e0acdf1f859e1bc792c7af1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f43cf5a1e0acdf1f859e1bc792c7af1">logOnSongStop</a></td></tr>
+<tr class="memdesc:a1f43cf5a1e0acdf1f859e1bc792c7af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log when a track stops playing.  <br /></td></tr>
+<tr class="memitem:a4e5941be49e0ea462bb1bbe2d5d635bd" id="r_a4e5941be49e0ea462bb1bbe2d5d635bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e5941be49e0ea462bb1bbe2d5d635bd">logRandomSongCooldown</a></td></tr>
+<tr class="memdesc:a4e5941be49e0ea462bb1bbe2d5d635bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log the <a class="el" href="#a45162e8caa0d8edb8b164aef38ca129d" title="Random cooldown time between songs in milliseconds.">randomSecondCooldownBetweenSongs</a> when calculated.  <br /></td></tr>
+<tr class="memitem:afe32685a8c0cd704aba2e86c6a6e274a" id="r_afe32685a8c0cd704aba2e86c6a6e274a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe32685a8c0cd704aba2e86c6a6e274a">logSongProgress</a></td></tr>
+<tr class="memdesc:afe32685a8c0cd704aba2e86c6a6e274a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log every frame, detailing how much of the current song has been played.  <br /></td></tr>
+<tr class="memitem:afdfff0f0dc8da146bb840764b5d880c9" id="r_afdfff0f0dc8da146bb840764b5d880c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdfff0f0dc8da146bb840764b5d880c9">logSongProgessEveryPercent</a> = 1</td></tr>
+<tr class="memdesc:afdfff0f0dc8da146bb840764b5d880c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will only log song progerss every logSongProgessEveryPercent percent.  <br /></td></tr>
 <tr class="memitem:acc76051508dd5d6bfb0e45bdc8e0dc78" id="r_acc76051508dd5d6bfb0e45bdc8e0dc78"><td class="memItemLeft" align="right" valign="top">Coroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc76051508dd5d6bfb0e45bdc8e0dc78">playingMusicCoroutine</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
@@ -158,6 +167,33 @@ Properties</h2></td></tr>
 
 <p><dl class="section return"><dt>Returns</dt><dd>Random Music track within <a class="el" href="#a7122a46cd1682d4a54d9d944e3fcba47" title="An array of audio clips representing the available Music tracks.">musicTracks</a></dd></dl>
 </p>
+
+</div>
+</div>
+<a id="a75710a6645efc6673314d61de12d6e0c" name="a75710a6645efc6673314d61de12d6e0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75710a6645efc6673314d61de12d6e0c">&#9670;&#160;</a></span>PlayContinuousMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.PlayContinuousMusic </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts to PlayMusicContinuously until stopped. </p>
 
 </div>
 </div>
@@ -215,8 +251,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a04ced0973b67e3cc4830767edfacb606" name="a04ced0973b67e3cc4830767edfacb606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04ced0973b67e3cc4830767edfacb606">&#9670;&#160;</a></span>StartContinuousMusic()</h2>
+<a id="ac2ffa08c9f5f23517ab6a1780eb3f305" name="ac2ffa08c9f5f23517ab6a1780eb3f305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ffa08c9f5f23517ab6a1780eb3f305">&#9670;&#160;</a></span>StopContinousMusic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +261,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StartContinuousMusic </td>
+          <td class="memname">void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StopContinousMusic </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -238,12 +274,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Starts to PlayMusicContinuously until stopped. </p>
+<p>Stops the musicSource from playing Music and looping until PlayMusicContinuously is called again (to start looping). </p>
 
 </div>
 </div>
-<a id="a82e502951ecdb1a090d31f684b3a5cd8" name="a82e502951ecdb1a090d31f684b3a5cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82e502951ecdb1a090d31f684b3a5cd8">&#9670;&#160;</a></span>StopMusic()</h2>
+<a id="a2e48f59f18fe948b07aa02dea0c3ce91" name="a2e48f59f18fe948b07aa02dea0c3ce91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e48f59f18fe948b07aa02dea0c3ce91">&#9670;&#160;</a></span>StopMusicSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +288,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StopMusic </td>
+          <td class="memname">void UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.StopMusicSource </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -264,8 +300,6 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Stops the <a class="el" href="#aa1877f5498b9668610fcc15140a990c5" title="The audio source component used to play the background Music.">musicSource</a> from playing Music and looping until PlayMusicContinuously is called again (to start looping). </p>
 
 </div>
 </div>
@@ -302,19 +336,83 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="aa1877f5498b9668610fcc15140a990c5" name="aa1877f5498b9668610fcc15140a990c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1877f5498b9668610fcc15140a990c5">&#9670;&#160;</a></span>musicSource</h2>
+<a id="ac0029d165ad5cb28edfd7c6e14cb1aef" name="ac0029d165ad5cb28edfd7c6e14cb1aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0029d165ad5cb28edfd7c6e14cb1aef">&#9670;&#160;</a></span>logOnSongPlay</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AudioSource UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.musicSource</td>
+          <td class="memname">bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logOnSongPlay</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The audio source component used to play the background Music. </p>
+<p>If true, will output a Debug.Log when a new track starts playing. </p>
+
+</div>
+</div>
+<a id="a1f43cf5a1e0acdf1f859e1bc792c7af1" name="a1f43cf5a1e0acdf1f859e1bc792c7af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f43cf5a1e0acdf1f859e1bc792c7af1">&#9670;&#160;</a></span>logOnSongStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logOnSongStop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, will output a Debug.Log when a track stops playing. </p>
+
+</div>
+</div>
+<a id="a4e5941be49e0ea462bb1bbe2d5d635bd" name="a4e5941be49e0ea462bb1bbe2d5d635bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5941be49e0ea462bb1bbe2d5d635bd">&#9670;&#160;</a></span>logRandomSongCooldown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logRandomSongCooldown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, will output a Debug.Log the <a class="el" href="#a45162e8caa0d8edb8b164aef38ca129d" title="Random cooldown time between songs in milliseconds.">randomSecondCooldownBetweenSongs</a> when calculated. </p>
+
+</div>
+</div>
+<a id="afdfff0f0dc8da146bb840764b5d880c9" name="afdfff0f0dc8da146bb840764b5d880c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdfff0f0dc8da146bb840764b5d880c9">&#9670;&#160;</a></span>logSongProgessEveryPercent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logSongProgessEveryPercent = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Will only log song progerss every logSongProgessEveryPercent percent. </p>
+
+</div>
+</div>
+<a id="afe32685a8c0cd704aba2e86c6a6e274a" name="afe32685a8c0cd704aba2e86c6a6e274a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe32685a8c0cd704aba2e86c6a6e274a">&#9670;&#160;</a></span>logSongProgress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logSongProgress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, will output a Debug.Log every frame, detailing how much of the current song has been played. </p>
 
 </div>
 </div>
@@ -364,14 +462,14 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a49c63e55a37e3711101180af223d4954" name="a49c63e55a37e3711101180af223d4954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49c63e55a37e3711101180af223d4954">&#9670;&#160;</a></span>randomMillisecondCooldownBetweenSongs</h2>
+<a id="a45162e8caa0d8edb8b164aef38ca129d" name="a45162e8caa0d8edb8b164aef38ca129d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45162e8caa0d8edb8b164aef38ca129d">&#9670;&#160;</a></span>randomSecondCooldownBetweenSongs</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Vector2 UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.randomMillisecondCooldownBetweenSongs</td>
+          <td class="memname">Vector2 UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.randomSecondCooldownBetweenSongs</td>
         </tr>
       </table>
 </div><div class="memdoc">

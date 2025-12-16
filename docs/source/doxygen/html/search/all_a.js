@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['objectanimations_0',['ObjectAnimations',['../class_unity_utils_1_1_script_utils_1_1_object_animations.html',1,'UnityUtils::ScriptUtils']]],
-  ['objectanimations_2ecs_1',['ObjectAnimations.cs',['../_object_animations_8cs.html',1,'']]],
-  ['onpointerclick_2',['OnPointerClick',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a4097c5e00c6d00f209b2718449c3710d',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
-  ['onpointerenter_3',['OnPointerEnter',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a87f3aa32d0069c9e275ac82e5804fb9d',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerEnter()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a9659493dd310e72215a17de4676f2587',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerEnter()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a098921ae8917b2ab59d8e2449319c486',1,'UnityUtils.ScriptUtils.UI.UIButtonSFX.OnPointerEnter()']]],
-  ['onpointerexit_4',['OnPointerExit',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a137b177c8790a2a8c539277d2c634dfb',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.OnPointerExit()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a628c4f403336feee5dc4f9ea955eaa67',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.OnPointerExit()'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#aba00af17f744dac7f08360605fb2d914',1,'UnityUtils.ScriptUtils.UI.UIButtonSFX.OnPointerExit()']]]
+  ['modifyvolume_0',['ModifyVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a938dc9ab15c02a784ecb8921812f88f4',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['multiplybyglobalvolume_1',['MultiplyByGlobalVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0b0a5e413f1f381a80658aaae7256203',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['music_2',['Music',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['musictracks_3',['musicTracks',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a7122a46cd1682d4a54d9d944e3fcba47',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
 ];

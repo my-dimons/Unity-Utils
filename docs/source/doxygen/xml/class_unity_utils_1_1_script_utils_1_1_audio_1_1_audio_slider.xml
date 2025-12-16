@@ -27,7 +27,7 @@
         <qualifiedname>UnityUtils.ScriptUtils.Audio.AudioSlider.debugLogs</qualifiedname>
         <initializer>= true</initializer>
         <briefdescription>
-<para>If true, this will print a debug log of the updated volume on update. </para>
+<para>If true, this will print a debug log of the updated volume on update. Warning: While being used, this will output lots of Debug.Logs. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="25" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" bodystart="25" bodyend="29"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="25" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" bodystart="25" bodyend="31"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -103,7 +103,7 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="7" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" bodystart="8" bodyend="30"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" line="7" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs" bodystart="8" bodyend="32"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>debugLogs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1adfa58fe07a2daa25b8f787a9d72f5092" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioSlider</scope><name>OnSliderValueChanged</name></member>

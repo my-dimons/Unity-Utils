@@ -11,7 +11,7 @@ namespace UnityUtils.ScriptUtils.Audio
 
         [Space(10)]
 
-        /// If true, this will print a debug log of the updated volume on update.
+        /// If true, this will print a debug log of the updated volume on update. Warning: While being used, this will output lots of Debug.Logs.
         public bool debugLogs = true;
 
         void Start()
@@ -25,7 +25,9 @@ namespace UnityUtils.ScriptUtils.Audio
         private void OnSliderValueChanged(float volume)
         {
             AudioManager.SetVolume(volumeType, volume);
-            Debug.Log("Set " + volumeType + " Volume to: " + volume);
+
+            if (debugLogs)
+                Debug.Log("Set " + volumeType + " Volume to: " + volume);
         }
     }
 }

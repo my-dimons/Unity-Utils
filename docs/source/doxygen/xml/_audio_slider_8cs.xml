@@ -37,10 +37,12 @@
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSliderValueChanged(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>volume)</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kindref="compound">AudioManager</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a096134c5684b1ef0d8f46d9c0cf9a6a6" kindref="member">SetVolume</ref>(<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" kindref="member">volumeType</ref>,<sp/>volume);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;Set<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" kindref="member">volumeType</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Volume<sp/>to:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>volume);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1afff0763872c0932a90bbdb0a807d38c6" kindref="member">debugLogs</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;Set<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider_1a26abf25150736fc46126d99c808ee364" kindref="member">volumeType</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Volume<sp/>to:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>volume);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/AudioSlider.cs"/>
   </compounddef>

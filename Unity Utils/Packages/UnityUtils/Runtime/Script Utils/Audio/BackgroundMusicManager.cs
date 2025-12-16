@@ -1,3 +1,5 @@
+using NUnit;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -15,27 +17,49 @@ using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.Audio
 {
+    [RequireComponent(typeof(AudioSource))]
     public class BackgroundMusicManager : MonoBehaviour
     {
-        /// The audio source component used to play the background Music.
-        public AudioSource musicSource;
+        private AudioSource musicSource;
+
+        [Header("Music")]
 
         /// An array of audio clips representing the available Music tracks.
         public AudioClip[] musicTracks;
-        [Space(4)]
 
-        /// The current playing track
+        /// The current playing track.
         public AudioClip currentPlayingTrack;
-        [Space(8)]
 
-        /// Whether to start playing Music as soon as this object awakes
+        [Header("Variables")]
+
+        /// Whether to start playing Music as soon as this object awakes.
         public bool playOnAwake = true;
 
         /// The duration, in seconds, over which the fade in/out effect occurs.
         public float fadeTime;
 
+        [Range(0, 1)]
+        private float fadeVolume;
+
         /// Random cooldown time between songs in milliseconds
-        public Vector2 randomMillisecondCooldownBetweenSongs;
+        public Vector2 randomSecondCooldownBetweenSongs;
+
+        [Header("Debug")]
+
+        /// If true, will output a Debug.Log when a new track starts playing.
+        public bool logOnSongPlay;
+
+        /// If true, will output a Debug.Log when a track stops playing.
+        public bool logOnSongStop;
+
+        /// If true, will output a Debug.Log the <see cref="randomSecondCooldownBetweenSongs"/> when calculated.
+        public bool logRandomSongCooldown;
+
+        /// If true, will output a Debug.Log every frame, detailing how much of the current song has been played.
+        public bool logSongProgress;
+        /// Will only log song progerss every logSongProgessEveryPercent percent.
+        public float logSongProgessEveryPercent = 1;
+        private float lastLoggedPercent;
 
         public static BackgroundMusicManager Instance { get; private set; }
 
@@ -43,19 +67,40 @@ namespace UnityUtils.ScriptUtils.Audio
 
         void Awake()
         {
-            if (Instance == null) Instance = this; else Destroy(gameObject);
+            musicSource = GetComponent<AudioSource>();
 
+            if (Instance == null) Instance = this; else Destroy(gameObject);
             DontDestroyOnLoad(gameObject);
 
-            if (playOnAwake)
-                StartContinuousMusic();
+            if (fadeTime <= 0)
+            {
+                fadeVolume = 1;
+            }
+        }
 
+        private void Start()
+        {
+            if (playOnAwake)
+            {
+                StopContinousMusic();
+                PlayContinuousMusic();
+            }
         }
 
         private void Update()
         {
-            if (musicSource != null)
-                musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.VolumeType.Music);
+            CalculateMusicVolume();
+
+            if (playingMusicCoroutine != null && musicSource.isPlaying && logSongProgress)
+            {
+                DebugSongProgress();
+            }
+            //Debug.Log("Fade Volume: " + fadeVolume);
+        }
+
+        private void CalculateMusicVolume()
+        {
+            musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1 * fadeVolume, AudioManager.VolumeType.Music);
         }
 
         /// <summary>
@@ -67,45 +112,65 @@ namespace UnityUtils.ScriptUtils.Audio
             {
                 PlaySingleRandomMusicTrack();
 
-                Debug.Log("Clip Started");
-                yield return new WaitWhile(() => musicSource.isPlaying);
-                Debug.Log("Clip Ended");
+                TweenVolume(0, 1);
 
-                Debug.Log("Finished Music Clip");
+                yield return new WaitForSecondsRealtime(currentPlayingTrack.length - fadeTime);
 
-                float waitTimeUntillNextSong = Random.Range(randomMillisecondCooldownBetweenSongs.x, randomMillisecondCooldownBetweenSongs.y);
-                yield return new WaitForSecondsRealtime(waitTimeUntillNextSong);
+                TweenVolume(1, 0);
+
+                yield return new WaitForSecondsRealtime(fadeTime);
+
+                StopMusicSource();
+
+                float waitTimeUntilNextSong = UnityEngine.Random.Range(randomSecondCooldownBetweenSongs.x, randomSecondCooldownBetweenSongs.y);
+                if (logRandomSongCooldown)
+                    Debug.Log("Time until next song: " + waitTimeUntilNextSong + "s");
+                yield return new WaitForSecondsRealtime(waitTimeUntilNextSong);
             }
         }
 
         /// <summary>
         /// Stops the <see cref="musicSource"/> from playing Music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
         /// </summary>
-        public void StopMusic()
+        public void StopContinousMusic()
         {
-            if (Instance.musicSource.isPlaying)
+            if (musicSource.isPlaying)
             {
-                Instance.musicSource.Stop();
+                StopMusicSource();
 
-                if (Instance.playingMusicCoroutine != null)
+                if (playingMusicCoroutine != null)
                 {
-                    Instance.StopCoroutine(Instance.playingMusicCoroutine);
-                    Instance.playingMusicCoroutine = null;
+                    StopCoroutine(playingMusicCoroutine);
+                    playingMusicCoroutine = null;
                 }
             }
+        }
+
+        public void StopMusicSource()
+        {
+            musicSource.Stop();
+            currentPlayingTrack = null;
+
+            lastLoggedPercent = 0;
+
+            if (logOnSongStop)
+                Debug.Log("Stopped playing music");
         }
 
         /// <summary>
         /// Starts to <see cref="PlayMusicContinuously"/> until stopped
         /// </summary>
-        public void StartContinuousMusic()
+        public void PlayContinuousMusic()
         {
-            bool canPlayMusic = !Instance.musicSource.isPlaying && musicTracks.Length > 0;
-            if (canPlayMusic)
+            bool enoughMusicTracks = musicTracks.Length > 0;
+            bool musicAlreadyPlaying = !musicSource.isPlaying;
+
+            if (musicAlreadyPlaying && enoughMusicTracks)
                 playingMusicCoroutine = StartCoroutine(PlayMusicContinuously());
-            else if (musicTracks.Length > 0)
-                Debug.LogWarning("No music tracks in MusicManager.cs");
-            else if (!Instance.musicSource.isPlaying)
+
+            else if (!enoughMusicTracks)
+                Debug.LogWarning("No music tracks found!");
+            else if (musicAlreadyPlaying)
                 Debug.LogWarning("Tried starting continuous music but music source is already playing!");
         }
 
@@ -119,7 +184,8 @@ namespace UnityUtils.ScriptUtils.Audio
 
             musicSource.Play();
 
-            Debug.Log($"Playing: {clip.name}");
+            if (logOnSongPlay)
+                Debug.Log($"Playing music track: {clip.name}");
         }
 
         /// <summary>
@@ -141,8 +207,31 @@ namespace UnityUtils.ScriptUtils.Audio
         /// <returns>Random Music track within <see cref="musicTracks"/></returns>
         public AudioClip GetRandomSong()
         {
-            int randomSongTrackIndex = Random.Range(0, musicTracks.Length);
+            int randomSongTrackIndex = UnityEngine.Random.Range(0, musicTracks.Length);
             return musicTracks[randomSongTrackIndex];
+        }
+
+        private void TweenVolume(float start, float end)
+        {
+            ObjectAnimations.AnimateValue<float>(start, end, fadeTime, (a, b, t) => Mathf.Lerp(a, b, t), value => fadeVolume = value, true);
+        }
+
+        private void DebugSongProgress()
+        {
+            int decimalRounding = 2;
+            float progressPercent = (musicSource.time / currentPlayingTrack.length) * 100;
+
+            bool logPercent = progressPercent > lastLoggedPercent + logSongProgessEveryPercent;
+
+            if (logPercent)
+            {
+                Debug.Log("Current song progress: "
+                    + Math.Round(progressPercent, decimalRounding) + "% ("
+                    + Math.Round(musicSource.time, decimalRounding) + "s / "
+                    + Math.Round(currentPlayingTrack.length, decimalRounding) + "s)");
+
+                lastLoggedPercent = progressPercent;
+            }
         }
     }
 }

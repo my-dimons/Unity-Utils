@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['userandomrotation_0',['useRandomRotation',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a2794301f3b82197a637bb8d9e18a44fd',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
-  ['userealtime_1',['useRealtime',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#ae66b9552eaf5de139dc578d6585ac328',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.useRealtime'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a32d81331ce7b568fe3df5ff9a034d640',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.useRealtime']]]
+  ['sizeanimationseconds_0',['sizeAnimationSeconds',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a88c3046734a3645154c58778039f6c65',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverExpand']]],
+  ['sizingcurve_1',['SizingCurve',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a93de5dda2256a7f3a9282d78120183b4',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.SizingCurve'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a006c0dd78261c3866dbb0e173bb9447f',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.SizingCurve']]]
 ];

@@ -25,19 +25,31 @@
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa1877f5498b9668610fcc15140a990c5" kind="variable"><name>musicSource</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aaba6764d8566d715a95b493cf3abf286" kind="variable"><name>fadeVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad668bbad9ffadb784c413af32f65026c" kind="variable"><name>lastLoggedPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a7122a46cd1682d4a54d9d944e3fcba47" kind="variable"><name>musicTracks</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a8516d30b183420e61f6d3d6117311740" kind="variable"><name>currentPlayingTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a848c527693d5daa4b2f091434d7d3e68" kind="variable"><name>playOnAwake</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0656ccefce385481e6057ebfbbc6bff" kind="variable"><name>fadeTime</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a49c63e55a37e3711101180af223d4954" kind="variable"><name>randomMillisecondCooldownBetweenSongs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a45162e8caa0d8edb8b164aef38ca129d" kind="variable"><name>randomSecondCooldownBetweenSongs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ac0029d165ad5cb28edfd7c6e14cb1aef" kind="variable"><name>logOnSongPlay</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a1f43cf5a1e0acdf1f859e1bc792c7af1" kind="variable"><name>logOnSongStop</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4e5941be49e0ea462bb1bbe2d5d635bd" kind="variable"><name>logRandomSongCooldown</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afe32685a8c0cd704aba2e86c6a6e274a" kind="variable"><name>logSongProgress</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afdfff0f0dc8da146bb840764b5d880c9" kind="variable"><name>logSongProgessEveryPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1acc76051508dd5d6bfb0e45bdc8e0dc78" kind="variable"><name>playingMusicCoroutine</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0d3dfa0ef5fc811c9ac426ef808f397" kind="property"><name>Instance</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a598e1bdd4226b117a07a7a8d6ee29e2e" kind="function"><name>Awake</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a32ffe0ef816a034d7e924dcde71577dc" kind="function"><name>Start</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ba8af91b478bed6d5076c57601e8e4c" kind="function"><name>Update</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aaa813d63aee151489afb82204c2c5c44" kind="function"><name>CalculateMusicVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1af5207aed4c35c06f1a54c2c1ceffadd0" kind="function"><name>PlayMusicContinuously</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ca4c7180757cf91bea35dcdcc6adae3" kind="function"><name>PlayMusicTrack</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a82e502951ecdb1a090d31f684b3a5cd8" kind="function"><name>StopMusic</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a04ced0973b67e3cc4830767edfacb606" kind="function"><name>StartContinuousMusic</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a0ee4983488bd465e99a43c8c368cd2be" kind="function"><name>TweenVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a974c04706b7560e69c4895975a180490" kind="function"><name>DebugSongProgress</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ac2ffa08c9f5f23517ab6a1780eb3f305" kind="function"><name>StopContinousMusic</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a2e48f59f18fe948b07aa02dea0c3ce91" kind="function"><name>StopMusicSource</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a75710a6645efc6673314d61de12d6e0c" kind="function"><name>PlayContinuousMusic</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a79053ee109f1122d6530632b6ed21fe2" kind="function"><name>PlaySingleRandomMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" kind="function"><name>PlaySpecificMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" kind="function"><name>GetRandomSong</name></member>
@@ -125,6 +137,8 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a098921ae8917b2ab59d8e2449319c486" kind="function"><name>OnPointerEnter</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aba00af17f744dac7f08360605fb2d914" kind="function"><name>OnPointerExit</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a4097c5e00c6d00f209b2718449c3710d" kind="function"><name>OnPointerClick</name></member>
+  </compound>
+  <compound refid="namespace_n_unit" kind="namespace"><name>NUnit</name>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
