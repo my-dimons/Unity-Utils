@@ -16,7 +16,8 @@ namespace UnityUtils.ScriptUtils
         public static void AnimateTransformScale(Transform transform, Vector3 startScale, Vector3 endScale, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
-            AnimateValue<Vector3>(startScale, endScale, duration, (a, b, t) => Vector3.Lerp(a, b, t), ModifyTransform(transform, value => transform.localScale = value), useRealtime, animationCurve);
+
+            AnimateValue<Vector3>(startScale, endScale, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.localScale = value, useRealtime, animationCurve);
         }
 
         /// <summary>
@@ -37,16 +38,6 @@ namespace UnityUtils.ScriptUtils
             if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
             AnimateValue<Vector3>(startRotation, endRotation, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.localRotation = Quaternion.Euler(value), useRealtime, animationCurve);
-        }
-
-        private static Action<Vector3> ModifyTransform(Transform transform, Action<Vector3> onValueChanged)
-        {
-            if (transform != null)
-            {
-                return onValueChanged;
-            }
-
-            return null;
         }
         #endregion
 
