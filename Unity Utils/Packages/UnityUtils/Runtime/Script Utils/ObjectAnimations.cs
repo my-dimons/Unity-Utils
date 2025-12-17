@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Reflection.Metadata;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -124,7 +123,7 @@ namespace UnityUtils.ScriptUtils
         /// <param name="useRealtime">true to use unscaled real time for the value (ignoring time scale)</param>
         public static void ChangeValueAfterTime<T>(T updatedValue, float time, Action<T> onValueChange, bool useRealtime = false)
         {
-            CoroutineStarter.Starter.StartCoroutine(ChangeValueAfterTimeCoroutine(updatedValue, time, onValueChange, useRealtime));
+            CoroutineStarter.Starter.StartCoroutine(ChangeValueAfterTimeCoroutine(onValueChange, updatedValue, time, useRealtime));
         }
 
         private static IEnumerator AnimateValueCoroutine<T>(T start, T end, AnimationCurve curve, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false)
@@ -150,7 +149,7 @@ namespace UnityUtils.ScriptUtils
 
         private static IEnumerator ChangeValueAfterTimeCoroutine<T>(Action<T> onValueChange, T updatedValue, float time, bool useRealtime)
         {
-            yield return new waitForSeconds(useRealtime ? Time.unscaledDeltaTime : Time.deltaTime);
+            yield return new WaitForSeconds(useRealtime ? Time.unscaledDeltaTime : Time.deltaTime);
             onValueChange?.Invoke(updatedValue);
         }
     }
