@@ -1,0 +1,7 @@
+Plans
+=====
+
+Future plans for Unity-Utils:
+
+1. ???
+2. ???
