@@ -213,7 +213,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 0 (3)
+          m_StringArgument: Scene Swapper
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &330572091
@@ -274,6 +274,7 @@ MonoBehaviour:
   clickVolume: 1
   pitchVariance: 0.2
   volumeType: 1
+  sceneSwitcherButton: 1
   emptySfxErrorMessages: 0
 --- !u!114 &330572094
 MonoBehaviour:
@@ -570,9 +571,9 @@ MonoBehaviour:
   playOnAwake: 1
   fadeTime: 2.42
   randomSecondCooldownBetweenSongs: {x: 0.85, y: 2.64}
-  logOnSongPlay: 1
-  logOnSongStop: 1
-  logRandomSongCooldown: 1
+  logOnSongPlay: 0
+  logOnSongStop: 0
+  logRandomSongCooldown: 0
   logFadeVolume: 0
   logSongProgress: 0
   logSongProgessEveryPercent: 0.66

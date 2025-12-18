@@ -40,6 +40,7 @@ namespace UnityUtils.ScriptUtils.UI
 
         /// If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors
         public bool sceneSwitcherButton;
+        private bool sceneLoadTriggered;
 
         [Header("Debug")]
 
@@ -56,6 +57,9 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerExit(PointerEventData eventData)
         {
+            if (sceneLoadTriggered)
+                return;
+
             if (hoverExitSfx != null)
                 SfxManager.PlaySfxAudioClip(hoverExitSfx, hoverExitVolume, pitchVariance, volumeType);
             else if (emptySfxErrorMessages)
@@ -64,7 +68,13 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (clickSfx != null && !sceneSwitcherButton)
+            if (sceneSwitcherButton)
+            {
+                sceneLoadTriggered = true;
+                return;
+            }
+
+            if (clickSfx != null)
                 SfxManager.PlaySfxAudioClip(clickSfx, clickVolume, pitchVariance, volumeType);
             else if (emptySfxErrorMessages)
                 Debug.LogWarning("No click SFX on button!");

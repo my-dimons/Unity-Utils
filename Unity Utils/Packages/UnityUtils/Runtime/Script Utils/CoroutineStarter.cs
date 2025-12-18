@@ -1,43 +1,50 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace UnityUtils.ScriptUtils
 {
-    public static class CoroutineStarter
+    public class CoroutineStarter : MonoBehaviour
     {
-        public class CoroutineStarterObject : MonoBehaviour { }
-
-        private static CoroutineStarterObject starter;
-
-        /// Starter for normal coroutines.
-        public static CoroutineStarterObject Starter { 
-            get 
-            { 
-                if (starter == null)
-                {
-                    GameObject obj = new GameObject("Coroutine Starter [UnityUtils]");
-                    starter = obj.AddComponent<CoroutineStarterObject>();
-                }
-
-                return starter;
-            } 
-        }
-
-        private static CoroutineStarterObject persistantStarter;
+        private static CoroutineStarter starter;
 
         /// Starter for coroutines that don't stop on loading a new scene.
-        public static CoroutineStarterObject PersistantStarter
+        public static CoroutineStarter Starter
         {
             get
             {
-                if (persistantStarter == null)
+                if (starter == null)
                 {
                     GameObject obj = new GameObject("Persistant Coroutine Starter [UnityUtils]");
-                    persistantStarter = obj.AddComponent<CoroutineStarterObject>();
-                    Object.DontDestroyOnLoad(obj);
+                    starter = obj.AddComponent<CoroutineStarter>();
+                    DontDestroyOnLoad(obj);
                 }
 
-                return persistantStarter;
+                return starter;
             }
+        }
+
+        private void Awake()
+        {
+            if (starter != null && starter != this)
+            {
+                Destroy(this);
+                return;
+            }
+
+            starter = this;
+            DontDestroyOnLoad(this);
+
+            SceneManager.sceneUnloaded += OnSceneUnloaded;
+        }
+
+        private void OnSceneUnloaded(Scene scene)
+        {
+            StopAllCoroutines();
+        }
+
+        private void OnDestroy()
+        {
+            SceneManager.sceneUnloaded -= OnSceneUnloaded;
         }
     }
 }

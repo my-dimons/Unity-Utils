@@ -82,7 +82,7 @@ namespace UnityUtils.ScriptUtils.Audio
         {
             if (type == default) type = AudioManager.VolumeType.Sfx;
 
-            GameObject temporaryGameObject = new GameObject("Audio Clip (Temporary)");
+            GameObject temporaryGameObject = new GameObject("Temporary Audio Clip [UnityUtils]");
             AudioSource audioSource = temporaryGameObject.AddComponent<AudioSource>();
 
             if (parent == default)
