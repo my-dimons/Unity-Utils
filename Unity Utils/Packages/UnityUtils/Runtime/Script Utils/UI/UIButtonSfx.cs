@@ -38,6 +38,9 @@ namespace UnityUtils.ScriptUtils.UI
         /// Type of audio to use to get proper audio levels.
         public AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx;
 
+        /// If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors
+        public bool sceneSwitcherButton;
+
         [Header("Debug")]
 
         /// If true this will log errors when trying to play sound effects but they become empty
@@ -61,7 +64,7 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (clickSfx != null)
+            if (clickSfx != null && !sceneSwitcherButton)
                 SfxManager.PlaySfxAudioClip(clickSfx, clickVolume, pitchVariance, volumeType);
             else if (emptySfxErrorMessages)
                 Debug.LogWarning("No click SFX on button!");

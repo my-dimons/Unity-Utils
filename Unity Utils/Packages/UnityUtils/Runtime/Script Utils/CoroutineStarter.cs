@@ -13,7 +13,6 @@ namespace UnityUtils.ScriptUtils
                 {
                     GameObject obj = new GameObject("Coroutine Starter (UnityUtils)");
                     starter = obj.AddComponent<CoroutineStarterObject>();
-                    Object.DontDestroyOnLoad(obj);
                 }
 
                 return starter;

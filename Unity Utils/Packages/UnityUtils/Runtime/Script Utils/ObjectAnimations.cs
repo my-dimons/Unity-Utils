@@ -91,7 +91,7 @@ namespace UnityUtils.ScriptUtils
         {
             AnimateAudioVolume(audioSource, 0, endVolume, duration, useRealtime);
         }
-        #endregion
+        #endregion  
 
         /// <summary>
         /// Flips the <see cref="inputBool"/> after the specified amount of time

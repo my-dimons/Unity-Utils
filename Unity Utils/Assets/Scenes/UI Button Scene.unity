@@ -203,7 +203,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 330572091}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 912077195}
+        m_TargetAssemblyTypeName: TestingScript2, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0 (3)
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &330572091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,7 +573,8 @@ MonoBehaviour:
   logOnSongPlay: 1
   logOnSongStop: 1
   logRandomSongCooldown: 1
-  logSongProgress: 1
+  logFadeVolume: 0
+  logSongProgress: 0
   logSongProgessEveryPercent: 0.66
 --- !u!4 &616624808
 Transform:
@@ -942,6 +955,7 @@ GameObject:
   - component: {fileID: 912077194}
   - component: {fileID: 912077193}
   - component: {fileID: 912077192}
+  - component: {fileID: 912077195}
   m_Layer: 0
   m_Name: test
   m_TagString: Untagged
@@ -1060,6 +1074,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912077195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912077191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367c7423aa2008fba8df621a892d76bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TestingScript2
 --- !u!1 &1251111284
 GameObject:
   m_ObjectHideFlags: 0
