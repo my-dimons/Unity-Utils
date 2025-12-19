@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityUtils.ScriptUtils.Objects;
 
 namespace UnityUtils.ScriptUtils.Particles
 {
@@ -24,7 +25,7 @@ namespace UnityUtils.ScriptUtils.Particles
             ps.Play();
 
             float particleLife = ps.main.duration + ps.main.startLifetime.constantMax;
-            ObjectAnimations.DestroyUnscaledtime(particleInstance, particleLife);
+            ObjectDelays.DestroyUnscaledtime(particleInstance, particleLife);
         }
 
         /// <summary>

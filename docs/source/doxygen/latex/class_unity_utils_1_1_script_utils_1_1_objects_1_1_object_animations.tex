@@ -1,0 +1,134 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations}{}\label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a9a2ff84f56bd60da378ded5dd42c44a3}{Animate\+Transform\+Scale}} (Transform transform, Vector3 start\+Scale, Vector3 end\+Scale, float duration, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
+\begin{DoxyCompactList}\small\item\em Animates an objects Transform components scale from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a3dda9891e9cd6c372083add7518a2d2e}{Animate\+Transform\+Position}} (Transform transform, Vector3 start\+Pos, Vector3 end\+Pos, float duration, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
+\begin{DoxyCompactList}\small\item\em Animates an objects Transform components position from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a344d3c7a2922a75ed499cfa9ea8df0c3}{Animate\+Transform\+Rotation}} (Transform transform, Vector3 start\+Rotation, Vector3 end\+Rotation, float duration, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
+\begin{DoxyCompactList}\small\item\em Animates an objects Transform components rotation from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a07c0bc09840985348b0ab5a3544bf624}{Animate\+Sprite\+Renderer\+Opacity}} (Sprite\+Renderer sprite\+Renderer, float start\+Opacity, float end\+Opacity, float duration, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
+\begin{DoxyCompactList}\small\item\em Animates an objects Sprite\+Renderer component alpha from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_af920f3b90483071cba43c2ada4b442dc}{Animate\+Image\+Opacity}} (Image image, float start\+Opacity, float end\+Opacity, float duration, bool use\+Realtime=false, Animation\+Curve animation\+Curve=default)
+\begin{DoxyCompactList}\small\item\em Animates an objects Image component alpha from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a1148e7dac20e76f0608bcdef0f8496cd}{Animate\+Audio\+Volume}} (Audio\+Source audio\+Source, float start\+Volume, float end\+Volume, float duration, bool use\+Realtime=true)
+\begin{DoxyCompactList}\small\item\em Animates an objects Audio\+Source component volume from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_ad69193b5f38d27d69ba12fee3594bf86}{Fade\+Out\+Audio}} (Audio\+Source audio\+Source, float duration, bool use\+Realtime=true)
+\begin{DoxyCompactList}\small\item\em Animates an objects Audio\+Source component volume from its current volume to 0. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_aff1b70dd806db24eebfb5342b29d230c}{Fade\+In\+Audio}} (Audio\+Source audio\+Source, float duration, float end\+Volume=1, bool use\+Realtime=true)
+\begin{DoxyCompactList}\small\item\em Animates an objects Audio\+Source component volume from 0 to a specified volume. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a4d6f9195d4e1e4e744be05acec4ce836}{Animate\+Value$<$ T $>$}} (T start, T end, float duration, Func$<$ T, T, float, T $>$ lerp\+Function, Action$<$ T $>$ on\+Value\+Changed, bool use\+Realtime=false, Animation\+Curve curve=default)
+\begin{DoxyCompactList}\small\item\em Animates a value from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a1148e7dac20e76f0608bcdef0f8496cd}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!AnimateAudioVolume@{AnimateAudioVolume}}
+\index{AnimateAudioVolume@{AnimateAudioVolume}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateAudioVolume()}{AnimateAudioVolume()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a1148e7dac20e76f0608bcdef0f8496cd} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Animate\+Audio\+Volume (\begin{DoxyParamCaption}\item[{Audio\+Source}]{audio\+Source}{, }\item[{float}]{start\+Volume}{, }\item[{float}]{end\+Volume}{, }\item[{float}]{duration}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Audio\+Source component volume from a starting value to an ending value over a specified duration. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_af920f3b90483071cba43c2ada4b442dc}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!AnimateImageOpacity@{AnimateImageOpacity}}
+\index{AnimateImageOpacity@{AnimateImageOpacity}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateImageOpacity()}{AnimateImageOpacity()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_af920f3b90483071cba43c2ada4b442dc} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Animate\+Image\+Opacity (\begin{DoxyParamCaption}\item[{Image}]{image}{, }\item[{float}]{start\+Opacity}{, }\item[{float}]{end\+Opacity}{, }\item[{float}]{duration}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{animation\+Curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Image component alpha from a starting value to an ending value over a specified duration. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a07c0bc09840985348b0ab5a3544bf624}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!AnimateSpriteRendererOpacity@{AnimateSpriteRendererOpacity}}
+\index{AnimateSpriteRendererOpacity@{AnimateSpriteRendererOpacity}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateSpriteRendererOpacity()}{AnimateSpriteRendererOpacity()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a07c0bc09840985348b0ab5a3544bf624} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Animate\+Sprite\+Renderer\+Opacity (\begin{DoxyParamCaption}\item[{Sprite\+Renderer}]{sprite\+Renderer}{, }\item[{float}]{start\+Opacity}{, }\item[{float}]{end\+Opacity}{, }\item[{float}]{duration}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{animation\+Curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Sprite\+Renderer component alpha from a starting value to an ending value over a specified duration. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a3dda9891e9cd6c372083add7518a2d2e}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!AnimateTransformPosition@{AnimateTransformPosition}}
+\index{AnimateTransformPosition@{AnimateTransformPosition}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateTransformPosition()}{AnimateTransformPosition()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a3dda9891e9cd6c372083add7518a2d2e} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Animate\+Transform\+Position (\begin{DoxyParamCaption}\item[{Transform}]{transform}{, }\item[{Vector3}]{start\+Pos}{, }\item[{Vector3}]{end\+Pos}{, }\item[{float}]{duration}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{animation\+Curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Transform components position from a starting value to an ending value over a specified duration. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a344d3c7a2922a75ed499cfa9ea8df0c3}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!AnimateTransformRotation@{AnimateTransformRotation}}
+\index{AnimateTransformRotation@{AnimateTransformRotation}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateTransformRotation()}{AnimateTransformRotation()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a344d3c7a2922a75ed499cfa9ea8df0c3} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Animate\+Transform\+Rotation (\begin{DoxyParamCaption}\item[{Transform}]{transform}{, }\item[{Vector3}]{start\+Rotation}{, }\item[{Vector3}]{end\+Rotation}{, }\item[{float}]{duration}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{animation\+Curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Transform components rotation from a starting value to an ending value over a specified duration. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a9a2ff84f56bd60da378ded5dd42c44a3}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!AnimateTransformScale@{AnimateTransformScale}}
+\index{AnimateTransformScale@{AnimateTransformScale}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateTransformScale()}{AnimateTransformScale()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a9a2ff84f56bd60da378ded5dd42c44a3} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Animate\+Transform\+Scale (\begin{DoxyParamCaption}\item[{Transform}]{transform}{, }\item[{Vector3}]{start\+Scale}{, }\item[{Vector3}]{end\+Scale}{, }\item[{float}]{duration}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{animation\+Curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Transform components scale from a starting value to an ending value over a specified duration. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a4d6f9195d4e1e4e744be05acec4ce836}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!AnimateValue$<$ T $>$@{AnimateValue$<$ T $>$}}
+\index{AnimateValue$<$ T $>$@{AnimateValue$<$ T $>$}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{AnimateValue$<$ T $>$()}{AnimateValue< T >()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_a4d6f9195d4e1e4e744be05acec4ce836} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Animate\+Value$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{start}{, }\item[{T}]{end}{, }\item[{float}]{duration}{, }\item[{Func$<$ T, T, float, T $>$}]{lerp\+Function}{, }\item[{Action$<$ T $>$}]{on\+Value\+Changed}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}, }\item[{Animation\+Curve}]{curve}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates a value from a starting value to an ending value over a specified duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lerp\+Function} & Decides how the start and end are lerped. Use things like Mathf.\+Lerp() or Vector3.\+Lerp() for different types of values\\
+\hline
+{\em on\+Value\+Changed} & A callback that is invoked with the current interpolated Vector3 value as the animation progresses.\\
+\hline
+{\em use\+Realtime} & true to use unscaled real time for the animation (ignoring time scale)\\
+\hline
+{\em animation\+Curve} & Default is a linear curve\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_aff1b70dd806db24eebfb5342b29d230c}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!FadeInAudio@{FadeInAudio}}
+\index{FadeInAudio@{FadeInAudio}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{FadeInAudio()}{FadeInAudio()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_aff1b70dd806db24eebfb5342b29d230c} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Fade\+In\+Audio (\begin{DoxyParamCaption}\item[{Audio\+Source}]{audio\+Source}{, }\item[{float}]{duration}{, }\item[{float}]{end\+Volume}{ = {\ttfamily 1}, }\item[{bool}]{use\+Realtime}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Audio\+Source component volume from 0 to a specified volume. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_ad69193b5f38d27d69ba12fee3594bf86}\index{UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}!FadeOutAudio@{FadeOutAudio}}
+\index{FadeOutAudio@{FadeOutAudio}!UnityUtils.ScriptUtils.Objects.ObjectAnimations@{UnityUtils.ScriptUtils.Objects.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{FadeOutAudio()}{FadeOutAudio()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_ad69193b5f38d27d69ba12fee3594bf86} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Animations.\+Fade\+Out\+Audio (\begin{DoxyParamCaption}\item[{Audio\+Source}]{audio\+Source}{, }\item[{float}]{duration}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Animates an objects Audio\+Source component volume from its current volume to 0. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Objects/\mbox{\hyperlink{_object_animations_8cs}{Object\+Animations.\+cs}}\end{DoxyCompactItemize}

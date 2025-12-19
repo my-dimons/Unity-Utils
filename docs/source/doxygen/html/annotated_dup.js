@@ -8,6 +8,10 @@ var annotated_dup =
           [ "BackgroundMusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager" ],
           [ "SfxManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager" ]
         ] ],
+        [ "Objects", "namespace_unity_utils_1_1_script_utils_1_1_objects.html", [
+          [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" ],
+          [ "ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" ]
+        ] ],
         [ "Particles", "namespace_unity_utils_1_1_script_utils_1_1_particles.html", [
           [ "ParticleManager", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" ]
         ] ],
@@ -22,8 +26,7 @@ var annotated_dup =
           [ "UIButtonSpawnParticles", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles" ],
           [ "UIButtonToggleObjects", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" ]
         ] ],
-        [ "CoroutineStarter", "class_unity_utils_1_1_script_utils_1_1_coroutine_starter.html", "class_unity_utils_1_1_script_utils_1_1_coroutine_starter" ],
-        [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_object_animations" ]
+        [ "CoroutineHelper", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper" ]
       ] ]
     ] ]
 ];

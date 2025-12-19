@@ -6,17 +6,16 @@
     <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_audio">UnityUtils::ScriptUtils::Audio</innernamespace>
-    <innernamespace refid="namespace_n_unit">NUnit</innernamespace>
     <innernamespace refid="namespace_system_1_1_collections">System::Collections</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">NUnit;</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects" kindref="compound">UnityUtils.ScriptUtils.Objects</ref>;</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
@@ -208,7 +207,7 @@
 <codeline lineno="223"><highlight class="normal"></highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TweenVolume(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>start,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>end)</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_object_animations" kindref="compound">ObjectAnimations</ref>.AnimateValue&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(start,<sp/>end,<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0656ccefce385481e6057ebfbbc6bff" kindref="member">fadeTime</ref>,<sp/>(a,<sp/>b,<sp/>t)<sp/>=&gt;<sp/>Mathf.Lerp(a,<sp/>b,<sp/>t),<sp/>value<sp/>=&gt;<sp/>fadeVolume<sp/>=<sp/>value,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kindref="compound">ObjectAnimations</ref>.AnimateValue&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(start,<sp/>end,<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0656ccefce385481e6057ebfbbc6bff" kindref="member">fadeTime</ref>,<sp/>(a,<sp/>b,<sp/>t)<sp/>=&gt;<sp/>Mathf.Lerp(a,<sp/>b,<sp/>t),<sp/>value<sp/>=&gt;<sp/>fadeVolume<sp/>=<sp/>value,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DebugSongProgress()</highlight></codeline>

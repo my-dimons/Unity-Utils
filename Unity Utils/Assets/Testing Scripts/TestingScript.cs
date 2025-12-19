@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityUtils.ScriptUtils;
+using UnityUtils.ScriptUtils.Objects;
 
 public class TestingScript : MonoBehaviour
 {

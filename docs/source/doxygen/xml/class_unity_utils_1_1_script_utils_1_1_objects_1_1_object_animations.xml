@@ -1,0 +1,451 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Objects::ObjectAnimations</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateTransformScale</definition>
+        <argsstring>(Transform transform, Vector3 startScale, Vector3 endScale, float duration, bool useRealtime=false, AnimationCurve animationCurve=default)</argsstring>
+        <name>AnimateTransformScale</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateTransformScale</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>startScale</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>endScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>animationCurve</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects Transform components scale from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="16" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a3dda9891e9cd6c372083add7518a2d2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateTransformPosition</definition>
+        <argsstring>(Transform transform, Vector3 startPos, Vector3 endPos, float duration, bool useRealtime=false, AnimationCurve animationCurve=default)</argsstring>
+        <name>AnimateTransformPosition</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateTransformPosition</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>startPos</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>endPos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>animationCurve</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects Transform components position from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="26" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a344d3c7a2922a75ed499cfa9ea8df0c3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateTransformRotation</definition>
+        <argsstring>(Transform transform, Vector3 startRotation, Vector3 endRotation, float duration, bool useRealtime=false, AnimationCurve animationCurve=default)</argsstring>
+        <name>AnimateTransformRotation</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateTransformRotation</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>startRotation</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>endRotation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>animationCurve</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects Transform components rotation from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="36" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a07c0bc09840985348b0ab5a3544bf624" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateSpriteRendererOpacity</definition>
+        <argsstring>(SpriteRenderer spriteRenderer, float startOpacity, float endOpacity, float duration, bool useRealtime=false, AnimationCurve animationCurve=default)</argsstring>
+        <name>AnimateSpriteRendererOpacity</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateSpriteRendererOpacity</qualifiedname>
+        <param>
+          <type>SpriteRenderer</type>
+          <declname>spriteRenderer</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startOpacity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>endOpacity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>animationCurve</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects SpriteRenderer component alpha from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="48" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="48" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1af920f3b90483071cba43c2ada4b442dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateImageOpacity</definition>
+        <argsstring>(Image image, float startOpacity, float endOpacity, float duration, bool useRealtime=false, AnimationCurve animationCurve=default)</argsstring>
+        <name>AnimateImageOpacity</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateImageOpacity</qualifiedname>
+        <param>
+          <type>Image</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startOpacity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>endOpacity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>animationCurve</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects Image component alpha from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="60" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="60" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a1148e7dac20e76f0608bcdef0f8496cd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateAudioVolume</definition>
+        <argsstring>(AudioSource audioSource, float startVolume, float endVolume, float duration, bool useRealtime=true)</argsstring>
+        <name>AnimateAudioVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateAudioVolume</qualifiedname>
+        <param>
+          <type>AudioSource</type>
+          <declname>audioSource</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startVolume</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>endVolume</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects AudioSource component volume from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="74" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1ad69193b5f38d27d69ba12fee3594bf86" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.FadeOutAudio</definition>
+        <argsstring>(AudioSource audioSource, float duration, bool useRealtime=true)</argsstring>
+        <name>FadeOutAudio</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.FadeOutAudio</qualifiedname>
+        <param>
+          <type>AudioSource</type>
+          <declname>audioSource</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects AudioSource component volume from its current volume to 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="82" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1aff1b70dd806db24eebfb5342b29d230c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.FadeInAudio</definition>
+        <argsstring>(AudioSource audioSource, float duration, float endVolume=1, bool useRealtime=true)</argsstring>
+        <name>FadeInAudio</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.FadeInAudio</qualifiedname>
+        <param>
+          <type>AudioSource</type>
+          <declname>audioSource</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>endVolume</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Animates an objects AudioSource component volume from 0 to a specified volume. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="90" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a4d6f9195d4e1e4e744be05acec4ce836" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateValue&lt; T &gt;</definition>
+        <argsstring>(T start, T end, float duration, Func&lt; T, T, float, T &gt; lerpFunction, Action&lt; T &gt; onValueChanged, bool useRealtime=false, AnimationCurve curve=default)</argsstring>
+        <name>AnimateValue&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateValue&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>Func&lt; T, T, float, T &gt;</type>
+          <declname>lerpFunction</declname>
+        </param>
+        <param>
+          <type>Action&lt; T &gt;</type>
+          <declname>onValueChanged</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>curve</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Animates a value from a starting value to an ending value over a specified duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lerpFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Decides how the start and end are lerped. Use things like Mathf.Lerp() or Vector3.Lerp() for different types of values</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onValueChanged</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useRealtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to use unscaled real time for the animation (ignoring time scale)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animationCurve</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Default is a linear curve</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="103" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="103" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9df873f3c77ef3cd9c13864d809d391e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>static IEnumerator UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateValueCoroutine&lt; T &gt;</definition>
+        <argsstring>(T start, T end, AnimationCurve curve, float duration, Func&lt; T, T, float, T &gt; lerpFunction, Action&lt; T &gt; onValueChanged, bool useRealtime=false)</argsstring>
+        <name>AnimateValueCoroutine&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectAnimations.AnimateValueCoroutine&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>curve</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>Func&lt; T, T, float, T &gt;</type>
+          <declname>lerpFunction</declname>
+        </param>
+        <param>
+          <type>Action&lt; T &gt;</type>
+          <declname>onValueChanged</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="108" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="108" bodyend="127"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="11" bodyend="128"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a1148e7dac20e76f0608bcdef0f8496cd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateAudioVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1af920f3b90483071cba43c2ada4b442dc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateImageOpacity</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a07c0bc09840985348b0ab5a3544bf624" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateSpriteRendererOpacity</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a3dda9891e9cd6c372083add7518a2d2e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateTransformPosition</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a344d3c7a2922a75ed499cfa9ea8df0c3" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateTransformRotation</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateTransformScale</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a4d6f9195d4e1e4e744be05acec4ce836" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateValue&lt; T &gt;</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9df873f3c77ef3cd9c13864d809d391e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateValueCoroutine&lt; T &gt;</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1aff1b70dd806db24eebfb5342b29d230c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>FadeInAudio</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1ad69193b5f38d27d69ba12fee3594bf86" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>FadeOutAudio</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

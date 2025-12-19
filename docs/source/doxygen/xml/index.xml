@@ -55,28 +55,32 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" kind="function"><name>PlaySpecificMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" kind="function"><name>GetRandomSong</name></member>
   </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter" kind="class"><name>UnityUtils::ScriptUtils::CoroutineStarter</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a82748b7cc5b1d6009223470c9fd3db90" kind="variable"><name>starter</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0b2aeac2d6be8eef52f7ab38e80e8f79" kind="property"><name>Starter</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a3731a1e8cf2cef3c244d0aa039987c41" kind="function"><name>Awake</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a8babe3511d594924edaa7fed11625112" kind="function"><name>OnSceneUnloaded</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1aee1d138f08b78418390f6884fa3ad77f" kind="function"><name>OnDestroy</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper" kind="class"><name>UnityUtils::ScriptUtils::CoroutineHelper</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1ada0e61812b1e6b0824f1377e8e09ebff" kind="variable"><name>starter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1a4aff3e5176c8bc562064cdee274d4dd6" kind="property"><name>Starter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1ac170dc021183a309f21abea019eb6f7f" kind="function"><name>Awake</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aac56e3500f50ff4820d8069056f6717a" kind="function"><name>OnSceneUnloaded</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aa0388a1af00e1e7f677b5a80ebffb8ad" kind="function"><name>OnDestroy</name></member>
   </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::ObjectAnimations</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" kind="function"><name>AnimateTransformScale</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a54d93eab04eb0907337a77ffcf7f30ad" kind="function"><name>AnimateTransformPosition</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9966d8ff9336481c8ad7acdb6899c4ec" kind="function"><name>AnimateTransformRotation</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a68915ad8cec2e239fc2f5d6ea90993d6" kind="function"><name>AnimateSpriteRendererOpacity</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" kind="function"><name>AnimateImageOpacity</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a5cb151f2a3c177fa976224b9f08f2bb2" kind="function"><name>AnimateAudioVolume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a3bf7565a4542712b0dd782c669cbfcb5" kind="function"><name>FadeOutAudio</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9ed246ebd23970d228ad4364e4e41c4a" kind="function"><name>FadeInAudio</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1c09636750ecf81a04dc36395c2e3636" kind="function"><name>FlipBoolAfterTime</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a002d59168f45df92dbc02c2a3fef2c5e" kind="function"><name>DestroyUnscaledtime</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" kind="function"><name>AnimateValue&lt; T &gt;</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1a5e0bdec13ae32503b33d9b29635b0f" kind="function"><name>ChangeValueAfterTime&lt; T &gt;</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac340fd8976c7982390295f93d8dbf9fb" kind="function"><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectAnimations</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9a2ff84f56bd60da378ded5dd42c44a3" kind="function"><name>AnimateTransformScale</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a3dda9891e9cd6c372083add7518a2d2e" kind="function"><name>AnimateTransformPosition</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a344d3c7a2922a75ed499cfa9ea8df0c3" kind="function"><name>AnimateTransformRotation</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a07c0bc09840985348b0ab5a3544bf624" kind="function"><name>AnimateSpriteRendererOpacity</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1af920f3b90483071cba43c2ada4b442dc" kind="function"><name>AnimateImageOpacity</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a1148e7dac20e76f0608bcdef0f8496cd" kind="function"><name>AnimateAudioVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1ad69193b5f38d27d69ba12fee3594bf86" kind="function"><name>FadeOutAudio</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1aff1b70dd806db24eebfb5342b29d230c" kind="function"><name>FadeInAudio</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a4d6f9195d4e1e4e744be05acec4ce836" kind="function"><name>AnimateValue&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a9df873f3c77ef3cd9c13864d809d391e" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectDelays</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8bb3511fda789bb85a298deeb9b46ef1" kind="function"><name>FlipBoolAfterTime</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a2031c63209d9ddc61ac870b31ff32c8c" kind="function"><name>DestroyUnscaledtime</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1abf46f51792d13168e6ea5869421b63a4" kind="function"><name>CallFunctionAfterTime</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a77ae2f4568d29d59ddce66b3626a2d16" kind="function"><name>ChangeValueAfterTime&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1afb3d737350e89f9c485de2000247ffad" kind="function"><name>CallFunctionAfterTimeCoroutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8b7c6a4479e236f90de1e3b6419dad65" kind="function"><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a764580347d79c4d885595155a6bd0f90" kind="function"><name>SpawnBurstParticle</name></member>
@@ -174,8 +178,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" kind="function"><name>OnPointerClick</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac499db9ede6bb9a2e9cad75a915cd16f" kind="function"><name>ToggleObjects</name></member>
   </compound>
-  <compound refid="namespace_n_unit" kind="namespace"><name>NUnit</name>
-  </compound>
   <compound refid="namespacestatic" kind="namespace"><name>static</name>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
@@ -202,6 +204,8 @@
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="namespace"><name>UnityUtils::ScriptUtils::Audio::AudioManager</name>
   </compound>
+  <compound refid="namespace_unity_utils_1_1_script_utils_1_1_objects" kind="namespace"><name>UnityUtils::ScriptUtils::Objects</name>
+  </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_particles" kind="namespace"><name>UnityUtils::ScriptUtils::Particles</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects" kind="namespace"><name>UnityUtils::ScriptUtils::ScriptableObjects</name>
@@ -216,9 +220,11 @@
   </compound>
   <compound refid="_sfx_manager_8cs" kind="file"><name>SfxManager.cs</name>
   </compound>
-  <compound refid="_coroutine_starter_8cs" kind="file"><name>CoroutineStarter.cs</name>
+  <compound refid="_coroutine_helper_8cs" kind="file"><name>CoroutineHelper.cs</name>
   </compound>
   <compound refid="_object_animations_8cs" kind="file"><name>ObjectAnimations.cs</name>
+  </compound>
+  <compound refid="_object_delays_8cs" kind="file"><name>ObjectDelays.cs</name>
   </compound>
   <compound refid="_particle_manager_8cs" kind="file"><name>ParticleManager.cs</name>
   </compound>
@@ -237,6 +243,8 @@
   <compound refid="_u_i_button_toggle_objects_8cs" kind="file"><name>UIButtonToggleObjects.cs</name>
   </compound>
   <compound refid="dir_db252fa7b789e7b0f2fe89d360a65912" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Audio</name>
+  </compound>
+  <compound refid="dir_facf1fad18e8f724169afb99e1e301eb" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Objects</name>
   </compound>
   <compound refid="dir_395bafe2adc24fcfed5d14b8ce406a4f" kind="dir"><name>Packages</name>
   </compound>

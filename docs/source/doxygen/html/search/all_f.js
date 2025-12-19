@@ -16,9 +16,10 @@ var searchData=
   ['unityutils_13',['UnityUtils',['../namespace_unity_utils.html',1,'']]],
   ['unityutils_3a_3ascriptutils_14',['ScriptUtils',['../namespace_unity_utils_1_1_script_utils.html',1,'UnityUtils']]],
   ['unityutils_3a_3ascriptutils_3a_3aaudio_15',['Audio',['../namespace_unity_utils_1_1_script_utils_1_1_audio.html',1,'UnityUtils::ScriptUtils']]],
-  ['unityutils_3a_3ascriptutils_3a_3aparticles_16',['Particles',['../namespace_unity_utils_1_1_script_utils_1_1_particles.html',1,'UnityUtils::ScriptUtils']]],
-  ['unityutils_3a_3ascriptutils_3a_3ascriptableobjects_17',['ScriptableObjects',['../namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html',1,'UnityUtils::ScriptUtils']]],
-  ['unityutils_3a_3ascriptutils_3a_3aui_18',['UI',['../namespace_unity_utils_1_1_script_utils_1_1_u_i.html',1,'UnityUtils::ScriptUtils']]],
-  ['userandomrotation_19',['useRandomRotation',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a2794301f3b82197a637bb8d9e18a44fd',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
-  ['userealtime_20',['useRealtime',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#ae66b9552eaf5de139dc578d6585ac328',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.useRealtime'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a32d81331ce7b568fe3df5ff9a034d640',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.useRealtime']]]
+  ['unityutils_3a_3ascriptutils_3a_3aobjects_16',['Objects',['../namespace_unity_utils_1_1_script_utils_1_1_objects.html',1,'UnityUtils::ScriptUtils']]],
+  ['unityutils_3a_3ascriptutils_3a_3aparticles_17',['Particles',['../namespace_unity_utils_1_1_script_utils_1_1_particles.html',1,'UnityUtils::ScriptUtils']]],
+  ['unityutils_3a_3ascriptutils_3a_3ascriptableobjects_18',['ScriptableObjects',['../namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html',1,'UnityUtils::ScriptUtils']]],
+  ['unityutils_3a_3ascriptutils_3a_3aui_19',['UI',['../namespace_unity_utils_1_1_script_utils_1_1_u_i.html',1,'UnityUtils::ScriptUtils']]],
+  ['userandomrotation_20',['useRandomRotation',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a2794301f3b82197a637bb8d9e18a44fd',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
+  ['userealtime_21',['useRealtime',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#ae66b9552eaf5de139dc578d6585ac328',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.useRealtime'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a32d81331ce7b568fe3df5ff9a034d640',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.useRealtime']]]
 ];

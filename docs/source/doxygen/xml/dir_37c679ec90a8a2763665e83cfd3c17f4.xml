@@ -3,11 +3,11 @@
   <compounddef id="dir_37c679ec90a8a2763665e83cfd3c17f4" kind="dir">
     <compoundname>Packages/UnityUtils/Runtime/Script Utils</compoundname>
     <innerdir refid="dir_db252fa7b789e7b0f2fe89d360a65912">Packages/UnityUtils/Runtime/Script Utils/Audio</innerdir>
+    <innerdir refid="dir_facf1fad18e8f724169afb99e1e301eb">Packages/UnityUtils/Runtime/Script Utils/Objects</innerdir>
     <innerdir refid="dir_bfcc3fef8087e40b6de73f7c3da76010">Packages/UnityUtils/Runtime/Script Utils/Particles</innerdir>
     <innerdir refid="dir_36ed9bde031f6096a92cd6d1e38d0be1">Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects</innerdir>
     <innerdir refid="dir_b2eb90027e5128786193b5cba0b4dc25">Packages/UnityUtils/Runtime/Script Utils/UI</innerdir>
-    <innerfile refid="_coroutine_starter_8cs">CoroutineStarter.cs</innerfile>
-    <innerfile refid="_object_animations_8cs">ObjectAnimations.cs</innerfile>
+    <innerfile refid="_coroutine_helper_8cs">CoroutineHelper.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

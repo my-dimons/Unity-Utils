@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_objects" kind="namespace" language="C#">
+    <compoundname>UnityUtils::ScriptUtils::Objects</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" prot="public">UnityUtils::ScriptUtils::Objects::ObjectAnimations</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" prot="public">UnityUtils::ScriptUtils::Objects::ObjectDelays</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

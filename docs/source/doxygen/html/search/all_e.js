@@ -12,7 +12,7 @@ var searchData=
   ['sizeanimationseconds_9',['sizeAnimationSeconds',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a88c3046734a3645154c58778039f6c65',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverExpand']]],
   ['sizingcurve_10',['SizingCurve',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a93de5dda2256a7f3a9282d78120183b4',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.SizingCurve'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a006c0dd78261c3866dbb0e173bb9447f',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.SizingCurve']]],
   ['spawnburstparticle_11',['SpawnBurstParticle',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html#a764580347d79c4d885595155a6bd0f90',1,'UnityUtils::ScriptUtils::Particles::ParticleManager']]],
-  ['starter_12',['Starter',['../class_unity_utils_1_1_script_utils_1_1_coroutine_starter.html#a0b2aeac2d6be8eef52f7ab38e80e8f79',1,'UnityUtils::ScriptUtils::CoroutineStarter']]],
+  ['starter_12',['Starter',['../class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html#a4aff3e5176c8bc562064cdee274d4dd6',1,'UnityUtils::ScriptUtils::CoroutineHelper']]],
   ['stopcontinousmusic_13',['StopContinousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#ac2ffa08c9f5f23517ab6a1780eb3f305',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]],
   ['stopmusicsource_14',['StopMusicSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a2e48f59f18fe948b07aa02dea0c3ce91',1,'UnityUtils::ScriptUtils::Audio::BackgroundMusicManager']]]
 ];

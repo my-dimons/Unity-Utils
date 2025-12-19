@@ -23,7 +23,7 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "UnityUtils.ScriptUtils.Audio.AudioSlider", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html", null ],
       [ "UnityUtils.ScriptUtils.Audio.BackgroundMusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html", null ],
-      [ "UnityUtils.ScriptUtils.CoroutineStarter", "class_unity_utils_1_1_script_utils_1_1_coroutine_starter.html", null ],
+      [ "UnityUtils.ScriptUtils.CoroutineHelper", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonDebugLogs", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverRotate", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html", null ],
@@ -31,7 +31,8 @@ var hierarchy =
       [ "UnityUtils.ScriptUtils.UI.UIButtonSpawnParticles", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonToggleObjects", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html", null ]
     ] ],
-    [ "UnityUtils.ScriptUtils.ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_object_animations.html", null ],
+    [ "UnityUtils.ScriptUtils.Objects.ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", null ],
+    [ "UnityUtils.ScriptUtils.Objects.ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleManager", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager.html", null ],
     [ "UnityUtils.ScriptUtils.ScriptableObjects.ScriptableObjectManager", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html", null ],
     [ "UnityUtils.ScriptUtils.Audio.SfxManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager.html", null ]

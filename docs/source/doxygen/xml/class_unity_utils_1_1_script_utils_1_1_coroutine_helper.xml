@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::CoroutineHelper</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1ada0e61812b1e6b0824f1377e8e09ebff" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper" kindref="compound">CoroutineHelper</ref></type>
+        <definition>CoroutineHelper UnityUtils.ScriptUtils.CoroutineHelper.starter</definition>
+        <argsstring></argsstring>
+        <name>starter</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineHelper.starter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="8" column="40" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1a4aff3e5176c8bc562064cdee274d4dd6" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper" kindref="compound">CoroutineHelper</ref></type>
+        <definition>CoroutineHelper UnityUtils.ScriptUtils.CoroutineHelper.Starter</definition>
+        <argsstring></argsstring>
+        <name>Starter</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineHelper.Starter</qualifiedname>
+        <briefdescription>
+<para>Starter for coroutines that don&apos;t stop on loading a new scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="11" column="39" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="12" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1ac170dc021183a309f21abea019eb6f7f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.CoroutineHelper.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineHelper.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="26" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aac56e3500f50ff4820d8069056f6717a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.CoroutineHelper.OnSceneUnloaded</definition>
+        <argsstring>(Scene scene)</argsstring>
+        <name>OnSceneUnloaded</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineHelper.OnSceneUnloaded</qualifiedname>
+        <param>
+          <type>Scene</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="40" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aa0388a1af00e1e7f677b5a80ebffb8ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.CoroutineHelper.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineHelper.OnDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="45" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="45" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.CoroutineHelper</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.CoroutineHelper</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" line="6" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineHelper.cs" bodystart="7" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1ac170dc021183a309f21abea019eb6f7f" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineHelper</scope><name>Awake</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aa0388a1af00e1e7f677b5a80ebffb8ad" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineHelper</scope><name>OnDestroy</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1aac56e3500f50ff4820d8069056f6717a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineHelper</scope><name>OnSceneUnloaded</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1a4aff3e5176c8bc562064cdee274d4dd6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineHelper</scope><name>Starter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper_1ada0e61812b1e6b0824f1377e8e09ebff" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineHelper</scope><name>starter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
