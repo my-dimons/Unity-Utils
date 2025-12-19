@@ -42,3 +42,4 @@ Functions
 
 .. doxygenclass:: UnityUtils::ScriptUtils::Audio::BackgroundMusicManager
    :members:
+   :exclude-members: Instance
