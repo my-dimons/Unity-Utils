@@ -1,10 +1,10 @@
-CoroutineStarter
+CoroutineHelper
 ==========
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils`
      
-The **CoroutineStarter** script is used to start coroutines in a static class.
+The **CoroutineHelper** script is used to start coroutines in a static class.
 
 Example Usage
 -------------
@@ -20,10 +20,10 @@ Example Usage
    	void ExampleFunction()
    	{
    	   // Starts a normal coroutine
-   	   CoroutineStarter.Starter.StartCoroutine(ExampleCoroutine());
+   	   CoroutineHelper.Starter.StartCoroutine(ExampleCoroutine());
    	   
    	   // Starts a coroutine that won't stop on scene change (Be careful when using this, can cause lots of errors)
-   	   CoroutineStarter.PersistantStarter.StartCoroutine(ExampleCoroutine());
+   	   CoroutineHelper.PersistantStarter.StartCoroutine(ExampleCoroutine());
    	}
    	
    	public IEnumerator ExampleCoroutine()
@@ -35,5 +35,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::CoroutineStarter
+.. doxygenclass:: UnityUtils::ScriptUtils::CoroutineHelper
    :members:

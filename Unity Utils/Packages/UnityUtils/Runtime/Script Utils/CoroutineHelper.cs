@@ -3,19 +3,19 @@ using UnityEngine.SceneManagement;
 
 namespace UnityUtils.ScriptUtils
 {
-    public class CoroutineStarter : MonoBehaviour
+    public class CoroutineHelper : MonoBehaviour
     {
-        private static CoroutineStarter starter;
+        private static CoroutineHelper starter;
 
         /// Starter for coroutines that don't stop on loading a new scene.
-        public static CoroutineStarter Starter
+        public static CoroutineHelper Starter
         {
             get
             {
                 if (starter == null)
                 {
                     GameObject obj = new GameObject("Persistant Coroutine Starter [UnityUtils]");
-                    starter = obj.AddComponent<CoroutineStarter>();
+                    starter = obj.AddComponent<CoroutineHelper>();
                     DontDestroyOnLoad(obj);
                 }
 

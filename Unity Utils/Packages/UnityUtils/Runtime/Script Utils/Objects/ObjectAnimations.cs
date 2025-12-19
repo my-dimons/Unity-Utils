@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityUtils.ScriptUtils;
 
-namespace UnityUtils.ScriptUtils
+namespace UnityUtils.ScriptUtils.Objects
 {
     public static class ObjectAnimations
     {
@@ -93,32 +93,6 @@ namespace UnityUtils.ScriptUtils
         }
         #endregion  
 
-
-        /// <summary>
-        /// Flips the <see cref="inputBool"/> after the specified amount of time
-        /// </summary>
-        /// <param name="inputBool">Bool to flip.</param>
-        /// <param name="time">Time to wait.</param>
-        /// <param name="useRealtime">true to use unscaled real time for the bool (ignoring time scale)</param>
-        public static void FlipBoolAfterTime(bool inputBool, float time, bool useRealtime = false)
-        {
-            ChangeValueAfterTime<bool>(!inputBool, time, value => inputBool = value, useRealtime);
-        }
-
-        /// <summary>
-        /// Destroys an object after the given amount of time in unscaled time
-        /// </summary>
-        public static void DestroyUnscaledtime(GameObject obj, float time)
-        {
-            CoroutineStarter.Starter.StartCoroutine(DestroyObjectUnscaledTime(obj, time));
-        }
-
-        private static IEnumerator DestroyObjectUnscaledTime(GameObject obj, float time)
-        {
-            yield return new WaitForSecondsRealtime(time);
-            UnityEngine.Object.Destroy(obj);
-        }
-
         /// <summary>
         /// Animates a value from a starting value to an ending value over a specified duration
         /// </summary>
@@ -129,19 +103,8 @@ namespace UnityUtils.ScriptUtils
         public static void AnimateValue<T>(T start, T end, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false, AnimationCurve curve = default)
         {
             if (curve == default) curve = AnimationCurve.Linear(0, 0, 1, 1);
-            CoroutineStarter.Starter.StartCoroutine(AnimateValueCoroutine(start, end, curve, duration, lerpFunction, onValueChanged, useRealtime));
+            CoroutineHelper.Starter.StartCoroutine(AnimateValueCoroutine(start, end, curve, duration, lerpFunction, onValueChanged, useRealtime));
         }
-
-        /// <summary>
-        /// Changes a specified value after a certain amount of time
-        /// </summary>
-        /// <param name="onValueChanged">A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</param>
-        /// <param name="useRealtime">true to use unscaled real time for the value (ignoring time scale)</param>
-        public static void ChangeValueAfterTime<T>(T updatedValue, float time, Action<T> onValueChange, bool useRealtime = false)
-        {
-            CoroutineStarter.Starter.StartCoroutine(ChangeValueAfterTimeCoroutine(onValueChange, updatedValue, time, useRealtime));
-        }
-
         private static IEnumerator AnimateValueCoroutine<T>(T start, T end, AnimationCurve curve, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false)
         {
             float elapsed = 0f;
@@ -161,12 +124,6 @@ namespace UnityUtils.ScriptUtils
 
             // Ensure final value
             onValueChanged?.Invoke(end);
-        }
-
-        private static IEnumerator ChangeValueAfterTimeCoroutine<T>(Action<T> onValueChange, T updatedValue, float time, bool useRealtime)
-        {
-            yield return new WaitForSeconds(useRealtime ? Time.unscaledDeltaTime : Time.deltaTime);
-            onValueChange?.Invoke(updatedValue);
         }
     }
 }

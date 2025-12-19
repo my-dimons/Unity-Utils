@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityUtils.ScriptUtils.Objects;
 
 namespace UnityUtils.ScriptUtils.UI
 {
