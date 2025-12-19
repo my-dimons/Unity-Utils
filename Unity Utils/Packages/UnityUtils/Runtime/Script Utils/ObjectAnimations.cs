@@ -110,7 +110,13 @@ namespace UnityUtils.ScriptUtils
         /// </summary>
         public static void DestroyUnscaledtime(GameObject obj, float time)
         {
-            ChangeValueAfterTime<float>(0, time, value => UnityEngine.Object.Destroy(obj), true);
+            CoroutineStarter.Starter.StartCoroutine(DestroyObjectUnscaledTime(obj, time));
+        }
+
+        private static IEnumerator DestroyObjectUnscaledTime(GameObject obj, float time)
+        {
+            yield return new WaitForSecondsRealtime(time);
+            UnityEngine.Object.Destroy(obj);
         }
 
         /// <summary>
