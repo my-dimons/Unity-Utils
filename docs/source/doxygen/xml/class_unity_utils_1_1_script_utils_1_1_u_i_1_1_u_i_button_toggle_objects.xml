@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a1e15ed8cf1dd3b6262e3afdb20551c46" prot="public" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.hoverToggleObjects</definition>
+        <argsstring></argsstring>
+        <name>hoverToggleObjects</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.hoverToggleObjects</qualifiedname>
+        <briefdescription>
+<para>Will spawn all prefabs in this array on hover. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="17" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" prot="public" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.exitToggleObjects</definition>
+        <argsstring></argsstring>
+        <name>exitToggleObjects</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.exitToggleObjects</qualifiedname>
+        <briefdescription>
+<para>Will spawn all prefabs in this array on hover exit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="20" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" prot="public" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.clickToggleObjects</definition>
+        <argsstring></argsstring>
+        <name>clickToggleObjects</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.clickToggleObjects</qualifiedname>
+        <briefdescription>
+<para>Will spawn all prefabs in this array on click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="23" column="27" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.logToggle</definition>
+        <argsstring></argsstring>
+        <name>logToggle</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.logToggle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="26" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a6caf821391115f9de1261aff5fdb64da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.OnPointerEnter</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerEnter</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.OnPointerEnter</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="28" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a56d174eb59f9d6c129771f77ba1560fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.OnPointerExit</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerExit</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.OnPointerExit</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="33" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.OnPointerClick</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="38" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac499db9ede6bb9a2e9cad75a915cd16f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.ToggleObjects</definition>
+        <argsstring>(GameObject[] objects)</argsstring>
+        <name>ToggleObjects</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.ToggleObjects</qualifiedname>
+        <param>
+          <type>GameObject[]</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="43" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="43" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="12" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="13" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>clickToggleObjects</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>exitToggleObjects</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a1e15ed8cf1dd3b6262e3afdb20551c46" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>hoverToggleObjects</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>logToggle</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>OnPointerClick</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a6caf821391115f9de1261aff5fdb64da" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>OnPointerEnter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a56d174eb59f9d6c129771f77ba1560fd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>OnPointerExit</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac499db9ede6bb9a2e9cad75a915cd16f" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>ToggleObjects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

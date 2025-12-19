@@ -12,7 +12,7 @@
         <argsstring></argsstring>
         <name>hoverSize</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoverSize</qualifiedname>
-        <initializer>= 1.3f</initializer>
+        <initializer>= 1.1f</initializer>
         <briefdescription>
 <para>When hovered this is the size the button will be set to. </para>
         </briefdescription>
@@ -28,7 +28,7 @@
         <argsstring></argsstring>
         <name>sizeAnimationSeconds</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.sizeAnimationSeconds</qualifiedname>
-        <initializer>= 0.2f</initializer>
+        <initializer>= 0.1f</initializer>
         <briefdescription>
 <para>The amount of seconds that the button will size up or down in. </para>
         </briefdescription>
@@ -44,6 +44,7 @@
         <argsstring></argsstring>
         <name>useRealtime</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.useRealtime</qualifiedname>
+        <initializer>= true</initializer>
         <briefdescription>
 <para>true to use unscaled real time for the animation (ignoring time scale) </para>
         </briefdescription>

@@ -131,10 +131,12 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a1f43cf5a1e0acdf1f859e1bc792c7af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log when a track stops playing.  <br /></td></tr>
 <tr class="memitem:a4e5941be49e0ea462bb1bbe2d5d635bd" id="r_a4e5941be49e0ea462bb1bbe2d5d635bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e5941be49e0ea462bb1bbe2d5d635bd">logRandomSongCooldown</a></td></tr>
 <tr class="memdesc:a4e5941be49e0ea462bb1bbe2d5d635bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log the <a class="el" href="#a45162e8caa0d8edb8b164aef38ca129d" title="Random cooldown time between songs in milliseconds.">randomSecondCooldownBetweenSongs</a> when calculated.  <br /></td></tr>
+<tr class="memitem:a5852985928adf2421feeb895c8667f53" id="r_a5852985928adf2421feeb895c8667f53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5852985928adf2421feeb895c8667f53">logFadeVolume</a></td></tr>
+<tr class="memdesc:a5852985928adf2421feeb895c8667f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log when the fade time is not 0 or 1 (When its animating).  <br /></td></tr>
 <tr class="memitem:afe32685a8c0cd704aba2e86c6a6e274a" id="r_afe32685a8c0cd704aba2e86c6a6e274a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe32685a8c0cd704aba2e86c6a6e274a">logSongProgress</a></td></tr>
-<tr class="memdesc:afe32685a8c0cd704aba2e86c6a6e274a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log every frame, detailing how much of the current song has been played.  <br /></td></tr>
+<tr class="memdesc:afe32685a8c0cd704aba2e86c6a6e274a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will output a Debug.Log every <a class="el" href="#afdfff0f0dc8da146bb840764b5d880c9" title="Will only log song progress every logSongProgessEveryPercent percent.">logSongProgessEveryPercent</a>, detailing how much of the current song has been played.  <br /></td></tr>
 <tr class="memitem:afdfff0f0dc8da146bb840764b5d880c9" id="r_afdfff0f0dc8da146bb840764b5d880c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdfff0f0dc8da146bb840764b5d880c9">logSongProgessEveryPercent</a> = 1</td></tr>
-<tr class="memdesc:afdfff0f0dc8da146bb840764b5d880c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will only log song progerss every logSongProgessEveryPercent percent.  <br /></td></tr>
+<tr class="memdesc:afdfff0f0dc8da146bb840764b5d880c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will only log song progress every <a class="el" href="#afdfff0f0dc8da146bb840764b5d880c9" title="Will only log song progress every logSongProgessEveryPercent percent.">logSongProgessEveryPercent</a> percent.  <br /></td></tr>
 <tr class="memitem:acc76051508dd5d6bfb0e45bdc8e0dc78" id="r_acc76051508dd5d6bfb0e45bdc8e0dc78"><td class="memItemLeft" align="right" valign="top">Coroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc76051508dd5d6bfb0e45bdc8e0dc78">playingMusicCoroutine</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
@@ -336,6 +338,22 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a5852985928adf2421feeb895c8667f53" name="a5852985928adf2421feeb895c8667f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5852985928adf2421feeb895c8667f53">&#9670;&#160;</a></span>logFadeVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logFadeVolume</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, will output a Debug.Log when the fade time is not 0 or 1 (When its animating). </p>
+
+</div>
+</div>
 <a id="ac0029d165ad5cb28edfd7c6e14cb1aef" name="ac0029d165ad5cb28edfd7c6e14cb1aef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0029d165ad5cb28edfd7c6e14cb1aef">&#9670;&#160;</a></span>logOnSongPlay</h2>
 
@@ -396,7 +414,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Will only log song progerss every logSongProgessEveryPercent percent. </p>
+<p>Will only log song progress every <a class="el" href="#afdfff0f0dc8da146bb840764b5d880c9" title="Will only log song progress every logSongProgessEveryPercent percent.">logSongProgessEveryPercent</a> percent. </p>
 
 </div>
 </div>
@@ -412,7 +430,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>If true, will output a Debug.Log every frame, detailing how much of the current song has been played. </p>
+<p>If true, will output a Debug.Log every <a class="el" href="#afdfff0f0dc8da146bb840764b5d880c9" title="Will only log song progress every logSongProgessEveryPercent percent.">logSongProgessEveryPercent</a>, detailing how much of the current song has been played. </p>
 
 </div>
 </div>

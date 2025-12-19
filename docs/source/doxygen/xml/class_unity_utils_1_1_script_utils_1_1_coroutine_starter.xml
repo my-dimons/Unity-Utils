@@ -2,11 +2,11 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::CoroutineStarter</compoundname>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1_1_coroutine_starter_object" prot="public">UnityUtils::ScriptUtils::CoroutineStarter::CoroutineStarterObject</innerclass>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
     <sectiondef kind="private-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1ac95a5a621f7eed1cfff222aa4979bffd" prot="private" static="yes" mutable="no">
-        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1_1_coroutine_starter_object" kindref="compound">CoroutineStarterObject</ref></type>
-        <definition>CoroutineStarterObject UnityUtils.ScriptUtils.CoroutineStarter.starter</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a82748b7cc5b1d6009223470c9fd3db90" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter" kindref="compound">CoroutineStarter</ref></type>
+        <definition>CoroutineStarter UnityUtils.ScriptUtils.CoroutineStarter.starter</definition>
         <argsstring></argsstring>
         <name>starter</name>
         <qualifiedname>UnityUtils.ScriptUtils.CoroutineStarter.starter</qualifiedname>
@@ -16,33 +16,107 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="8" column="47" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="8" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="8" column="41" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="8" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
-      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0c17b9ec26d2390740c27c0e79d5fd83" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
-        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1_1_coroutine_starter_object" kindref="compound">CoroutineStarterObject</ref></type>
-        <definition>CoroutineStarterObject UnityUtils.ScriptUtils.CoroutineStarter.Starter</definition>
+      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0b2aeac2d6be8eef52f7ab38e80e8f79" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter" kindref="compound">CoroutineStarter</ref></type>
+        <definition>CoroutineStarter UnityUtils.ScriptUtils.CoroutineStarter.Starter</definition>
         <argsstring></argsstring>
         <name>Starter</name>
         <qualifiedname>UnityUtils.ScriptUtils.CoroutineStarter.Starter</qualifiedname>
+        <briefdescription>
+<para>Starter for coroutines that don&apos;t stop on loading a new scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="11" column="40" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="12" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a3731a1e8cf2cef3c244d0aa039987c41" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.CoroutineStarter.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineStarter.Awake</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="9" column="46" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="9" bodyend="21"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="26" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a8babe3511d594924edaa7fed11625112" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.CoroutineStarter.OnSceneUnloaded</definition>
+        <argsstring>(Scene scene)</argsstring>
+        <name>OnSceneUnloaded</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineStarter.OnSceneUnloaded</qualifiedname>
+        <param>
+          <type>Scene</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="40" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1aee1d138f08b78418390f6884fa3ad77f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.CoroutineStarter.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <qualifiedname>UnityUtils.ScriptUtils.CoroutineStarter.OnDestroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="45" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="45" bodyend="48"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="5" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="6" bodyend="22"/>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.CoroutineStarter</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.CoroutineStarter</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" line="6" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/CoroutineStarter.cs" bodystart="7" bodyend="49"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0c17b9ec26d2390740c27c0e79d5fd83" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineStarter</scope><name>Starter</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1ac95a5a621f7eed1cfff222aa4979bffd" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineStarter</scope><name>starter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a3731a1e8cf2cef3c244d0aa039987c41" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineStarter</scope><name>Awake</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1aee1d138f08b78418390f6884fa3ad77f" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineStarter</scope><name>OnDestroy</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a8babe3511d594924edaa7fed11625112" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineStarter</scope><name>OnSceneUnloaded</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0b2aeac2d6be8eef52f7ab38e80e8f79" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineStarter</scope><name>Starter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a82748b7cc5b1d6009223470c9fd3db90" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::CoroutineStarter</scope><name>starter</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

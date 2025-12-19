@@ -2,9 +2,12 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="dir_b2eb90027e5128786193b5cba0b4dc25" kind="dir">
     <compoundname>Packages/UnityUtils/Runtime/Script Utils/UI</compoundname>
+    <innerfile refid="_u_i_button_debug_logs_8cs">UIButtonDebugLogs.cs</innerfile>
     <innerfile refid="_u_i_button_hover_expand_8cs">UIButtonHoverExpand.cs</innerfile>
     <innerfile refid="_u_i_button_hover_rotate_8cs">UIButtonHoverRotate.cs</innerfile>
     <innerfile refid="_u_i_button_sfx_8cs">UIButtonSfx.cs</innerfile>
+    <innerfile refid="_u_i_button_spawn_particles_8cs">UIButtonSpawnParticles.cs</innerfile>
+    <innerfile refid="_u_i_button_toggle_objects_8cs">UIButtonToggleObjects.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

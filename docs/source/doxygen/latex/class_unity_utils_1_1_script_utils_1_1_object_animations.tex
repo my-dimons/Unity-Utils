@@ -19,8 +19,12 @@ static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_anima
 \begin{DoxyCompactList}\small\item\em Animates an objects Audio\+Source component volume from its current volume to 0. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a9ed246ebd23970d228ad4364e4e41c4a}{Fade\+In\+Audio}} (Audio\+Source audio\+Source, float duration, float end\+Volume=1, bool use\+Realtime=true)
 \begin{DoxyCompactList}\small\item\em Animates an objects Audio\+Source component volume from 0 to a specified volume. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a1c09636750ecf81a04dc36395c2e3636}{Flip\+Bool\+After\+Time}} (bool input\+Bool, float time, bool use\+Realtime=false)
+\begin{DoxyCompactList}\small\item\em Flips the input\+Bool after the specified amount of time. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_ac2af637b137136ceca3584d4995956a8}{Animate\+Value$<$ T $>$}} (T start, T end, float duration, Func$<$ T, T, float, T $>$ lerp\+Function, Action$<$ T $>$ on\+Value\+Changed, bool use\+Realtime=false, Animation\+Curve curve=default)
-\begin{DoxyCompactList}\small\item\em Animates a value from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Animates a value from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a1a5e0bdec13ae32503b33d9b29635b0f}{Change\+Value\+After\+Time$<$ T $>$}} (T updated\+Value, float time, Action$<$ T $>$ on\+Value\+Change, bool use\+Realtime=false)
+\begin{DoxyCompactList}\small\item\em Changes a specified value after a certain amount of time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -107,6 +111,23 @@ Animates a value from a starting value to an ending value over a specified durat
 {\em animation\+Curve} & Default is a linear curve\\
 \hline
 \end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_a1a5e0bdec13ae32503b33d9b29635b0f}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!ChangeValueAfterTime$<$ T $>$@{ChangeValueAfterTime$<$ T $>$}}
+\index{ChangeValueAfterTime$<$ T $>$@{ChangeValueAfterTime$<$ T $>$}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{ChangeValueAfterTime$<$ T $>$()}{ChangeValueAfterTime< T >()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_object_animations_a1a5e0bdec13ae32503b33d9b29635b0f} 
+void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Change\+Value\+After\+Time$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{updated\+Value}{, }\item[{float}]{time}{, }\item[{Action$<$ T $>$}]{on\+Value\+Change}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Changes a specified value after a certain amount of time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Value\+Changed} & A callback that is invoked with the current interpolated Vector3 value as the animation progresses.\\
+\hline
+{\em use\+Realtime} & true to use unscaled real time for the value (ignoring time scale)\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_a9ed246ebd23970d228ad4364e4e41c4a}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!FadeInAudio@{FadeInAudio}}
 \index{FadeInAudio@{FadeInAudio}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
 \doxysubsubsection{\texorpdfstring{FadeInAudio()}{FadeInAudio()}}
@@ -127,6 +148,25 @@ void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Fade\+Out\+Audio (\begi
 
 Animates an objects Audio\+Source component volume from its current volume to 0. 
 
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_a1c09636750ecf81a04dc36395c2e3636}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!FlipBoolAfterTime@{FlipBoolAfterTime}}
+\index{FlipBoolAfterTime@{FlipBoolAfterTime}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{FlipBoolAfterTime()}{FlipBoolAfterTime()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_object_animations_a1c09636750ecf81a04dc36395c2e3636} 
+void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Flip\+Bool\+After\+Time (\begin{DoxyParamCaption}\item[{bool}]{input\+Bool}{, }\item[{float}]{time}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Flips the input\+Bool after the specified amount of time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Bool} & Bool to flip.\\
+\hline
+{\em time} & Time to wait.\\
+\hline
+{\em use\+Realtime} & true to use unscaled real time for the bool (ignoring time scale)\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

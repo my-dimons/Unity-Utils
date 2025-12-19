@@ -48,7 +48,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_audio_manager_8cs.html"
+"_audio_manager_8cs.html",
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html#ab5f2a0e9db692a50f52975aeeb6a996b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

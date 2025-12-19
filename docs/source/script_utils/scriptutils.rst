@@ -14,3 +14,4 @@ This is where you will find useful scripts for quick unity development!
    ui/ui
    scriptable_object/scriptableobjects
    objectanimations
+   coroutinestarter

@@ -305,6 +305,60 @@
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="90" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="90" bodyend="93"/>
       </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1c09636750ecf81a04dc36395c2e3636" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.FlipBoolAfterTime</definition>
+        <argsstring>(bool inputBool, float time, bool useRealtime=false)</argsstring>
+        <name>FlipBoolAfterTime</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.FlipBoolAfterTime</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>inputBool</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Flips the inputBool after the specified amount of time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputBool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bool to flip.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time to wait.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useRealtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to use unscaled real time for the bool (ignoring time scale)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="102" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="102" bodyend="105"/>
+      </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.AnimateValue&lt; T &gt;</definition>
@@ -382,7 +436,57 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="103" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="103" bodyend="107"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="113" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1a5e0bdec13ae32503b33d9b29635b0f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.ObjectAnimations.ChangeValueAfterTime&lt; T &gt;</definition>
+        <argsstring>(T updatedValue, float time, Action&lt; T &gt; onValueChange, bool useRealtime=false)</argsstring>
+        <name>ChangeValueAfterTime&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.ChangeValueAfterTime&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>updatedValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>Action&lt; T &gt;</type>
+          <declname>onValueChange</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Changes a specified value after a certain amount of time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>onValueChanged</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback that is invoked with the current interpolated Vector3 value as the animation progresses.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useRealtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to use unscaled real time for the value (ignoring time scale)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="124" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="124" bodyend="127"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -427,14 +531,44 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="109" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="109" bodyend="128"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="129" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="129" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac340fd8976c7982390295f93d8dbf9fb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>static IEnumerator UnityUtils.ScriptUtils.ObjectAnimations.ChangeValueAfterTimeCoroutine&lt; T &gt;</definition>
+        <argsstring>(Action&lt; T &gt; onValueChange, T updatedValue, float time, bool useRealtime)</argsstring>
+        <name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name>
+        <qualifiedname>UnityUtils.ScriptUtils.ObjectAnimations.ChangeValueAfterTimeCoroutine&lt; T &gt;</qualifiedname>
+        <param>
+          <type>Action&lt; T &gt;</type>
+          <declname>onValueChange</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>updatedValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="150" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="150" bodyend="154"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="11" bodyend="129"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" line="10" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/ObjectAnimations.cs" bodystart="11" bodyend="155"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a5cb151f2a3c177fa976224b9f08f2bb2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateAudioVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a8b8b04515553f6c46f15b8884f2b135f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateImageOpacity</name></member>
@@ -444,8 +578,11 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateTransformScale</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValue&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>AnimateValueCoroutine&lt; T &gt;</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1a5e0bdec13ae32503b33d9b29635b0f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>ChangeValueAfterTime&lt; T &gt;</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac340fd8976c7982390295f93d8dbf9fb" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9ed246ebd23970d228ad4364e4e41c4a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>FadeInAudio</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a3bf7565a4542712b0dd782c669cbfcb5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>FadeOutAudio</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1c09636750ecf81a04dc36395c2e3636" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::ObjectAnimations</scope><name>FlipBoolAfterTime</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

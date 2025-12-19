@@ -1,6 +1,9 @@
 var dir_b2eb90027e5128786193b5cba0b4dc25 =
 [
+    [ "UIButtonDebugLogs.cs", "_u_i_button_debug_logs_8cs.html", "_u_i_button_debug_logs_8cs" ],
     [ "UIButtonHoverExpand.cs", "_u_i_button_hover_expand_8cs.html", "_u_i_button_hover_expand_8cs" ],
     [ "UIButtonHoverRotate.cs", "_u_i_button_hover_rotate_8cs.html", "_u_i_button_hover_rotate_8cs" ],
-    [ "UIButtonSfx.cs", "_u_i_button_sfx_8cs.html", "_u_i_button_sfx_8cs" ]
+    [ "UIButtonSfx.cs", "_u_i_button_sfx_8cs.html", "_u_i_button_sfx_8cs" ],
+    [ "UIButtonSpawnParticles.cs", "_u_i_button_spawn_particles_8cs.html", "_u_i_button_spawn_particles_8cs" ],
+    [ "UIButtonToggleObjects.cs", "_u_i_button_toggle_objects_8cs.html", "_u_i_button_toggle_objects_8cs" ]
 ];

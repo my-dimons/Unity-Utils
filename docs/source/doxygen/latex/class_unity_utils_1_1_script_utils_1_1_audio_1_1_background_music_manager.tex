@@ -43,10 +43,12 @@ bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_backgroun
 \begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log when a track stops playing. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a4e5941be49e0ea462bb1bbe2d5d635bd}{log\+Random\+Song\+Cooldown}}
 \begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log the \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a45162e8caa0d8edb8b164aef38ca129d}{random\+Second\+Cooldown\+Between\+Songs} when calculated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a5852985928adf2421feeb895c8667f53}{log\+Fade\+Volume}}
+\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log when the fade time is not 0 or 1 (When its animating). \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_afe32685a8c0cd704aba2e86c6a6e274a}{log\+Song\+Progress}}
-\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log every frame, detailing how much of the current song has been played. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_afdfff0f0dc8da146bb840764b5d880c9}{log\+Song\+Progess\+Every\+Percent}, detailing how much of the current song has been played. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_afdfff0f0dc8da146bb840764b5d880c9}{log\+Song\+Progess\+Every\+Percent}} = 1
-\begin{DoxyCompactList}\small\item\em Will only log song progerss every log\+Song\+Progess\+Every\+Percent percent. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Will only log song progress every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_afdfff0f0dc8da146bb840764b5d880c9}{log\+Song\+Progess\+Every\+Percent} percent. \end{DoxyCompactList}\item 
 Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_acc76051508dd5d6bfb0e45bdc8e0dc78}{playing\+Music\+Coroutine}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
@@ -143,6 +145,16 @@ float Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+fade\+
 
 The duration, in seconds, over which the fade in/out effect occurs. 
 
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a5852985928adf2421feeb895c8667f53}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!logFadeVolume@{logFadeVolume}}
+\index{logFadeVolume@{logFadeVolume}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
+\doxysubsubsection{\texorpdfstring{logFadeVolume}{logFadeVolume}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a5852985928adf2421feeb895c8667f53} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+log\+Fade\+Volume}
+
+
+
+If true, will output a Debug.\+Log when the fade time is not 0 or 1 (When its animating). 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_ac0029d165ad5cb28edfd7c6e14cb1aef}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!logOnSongPlay@{logOnSongPlay}}
 \index{logOnSongPlay@{logOnSongPlay}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
 \doxysubsubsection{\texorpdfstring{logOnSongPlay}{logOnSongPlay}}
@@ -181,7 +193,7 @@ float Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+log\+S
 
 
 
-Will only log song progerss every log\+Song\+Progess\+Every\+Percent percent. 
+Will only log song progress every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_afdfff0f0dc8da146bb840764b5d880c9}{log\+Song\+Progess\+Every\+Percent} percent. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_afe32685a8c0cd704aba2e86c6a6e274a}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!logSongProgress@{logSongProgress}}
 \index{logSongProgress@{logSongProgress}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}
@@ -191,7 +203,7 @@ bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Background\+Music\+Manager.\+log\+So
 
 
 
-If true, will output a Debug.\+Log every frame, detailing how much of the current song has been played. 
+If true, will output a Debug.\+Log every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_afdfff0f0dc8da146bb840764b5d880c9}{log\+Song\+Progess\+Every\+Percent}, detailing how much of the current song has been played. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_a7122a46cd1682d4a54d9d944e3fcba47}\index{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}!musicTracks@{musicTracks}}
 \index{musicTracks@{musicTracks}!UnityUtils.ScriptUtils.Audio.BackgroundMusicManager@{UnityUtils.ScriptUtils.Audio.BackgroundMusicManager}}

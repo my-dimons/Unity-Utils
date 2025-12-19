@@ -120,8 +120,10 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ae1337199f502e7ea75e6627ca1e0f3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volume to play <a class="el" href="#adc89b9acd4f48169e335c470ea3214b0" title="Sound to play when the mouse clicks on the button.">clickSfx</a> at.  <br /></td></tr>
 <tr class="memitem:a134326d73212920ba4bebbaed6b7da80" id="r_a134326d73212920ba4bebbaed6b7da80"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a134326d73212920ba4bebbaed6b7da80">pitchVariance</a> = 0.1f</td></tr>
 <tr class="memdesc:a134326d73212920ba4bebbaed6b7da80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random variance to play all audio clips at.  <br /></td></tr>
-<tr class="memitem:a899a8ade8749b3068571cb65622cf49a" id="r_a899a8ade8749b3068571cb65622cf49a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41">AudioManager.VolumeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a899a8ade8749b3068571cb65622cf49a">volumeType</a> = AudioManager.VolumeType.Sfx</td></tr>
+<tr class="memitem:a899a8ade8749b3068571cb65622cf49a" id="r_a899a8ade8749b3068571cb65622cf49a"><td class="memItemLeft" align="right" valign="top">AudioManager.VolumeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a899a8ade8749b3068571cb65622cf49a">volumeType</a> = AudioManager.VolumeType.Sfx</td></tr>
 <tr class="memdesc:a899a8ade8749b3068571cb65622cf49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of audio to use to get proper audio levels.  <br /></td></tr>
+<tr class="memitem:a83f55fe66b2e853a08d72035dd457daf" id="r_a83f55fe66b2e853a08d72035dd457daf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83f55fe66b2e853a08d72035dd457daf">sceneSwitcherButton</a></td></tr>
+<tr class="memdesc:a83f55fe66b2e853a08d72035dd457daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors.  <br /></td></tr>
 <tr class="memitem:a597ecbe8a4959f0e1b471d9bfc0e988b" id="r_a597ecbe8a4959f0e1b471d9bfc0e988b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a597ecbe8a4959f0e1b471d9bfc0e988b">emptySfxErrorMessages</a></td></tr>
 <tr class="memdesc:a597ecbe8a4959f0e1b471d9bfc0e988b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true this will log errors when trying to play sound effects but they become empty.  <br /></td></tr>
 </table>
@@ -330,6 +332,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a83f55fe66b2e853a08d72035dd457daf" name="a83f55fe66b2e853a08d72035dd457daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f55fe66b2e853a08d72035dd457daf">&#9670;&#160;</a></span>sceneSwitcherButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.UI.UIButtonSFX.sceneSwitcherButton</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors. </p>
+
+</div>
+</div>
 <a id="a899a8ade8749b3068571cb65622cf49a" name="a899a8ade8749b3068571cb65622cf49a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a899a8ade8749b3068571cb65622cf49a">&#9670;&#160;</a></span>volumeType</h2>
 
@@ -337,7 +355,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41">AudioManager.VolumeType</a> UnityUtils.ScriptUtils.UI.UIButtonSFX.volumeType = AudioManager.VolumeType.Sfx</td>
+          <td class="memname">AudioManager.VolumeType UnityUtils.ScriptUtils.UI.UIButtonSFX.volumeType = AudioManager.VolumeType.Sfx</td>
         </tr>
       </table>
 </div><div class="memdoc">

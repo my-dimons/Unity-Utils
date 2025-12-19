@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="namespace" language="C#">
+    <compoundname>UnityUtils::ScriptUtils::Audio::AudioManager</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/UI/UIButtonDebugLogs.cs" line="6" column="54"/>
+  </compounddef>
+</doxygen>

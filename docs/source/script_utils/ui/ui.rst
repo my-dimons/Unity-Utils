@@ -18,3 +18,5 @@ Scripts
    uibuttonhoverexpand
    uibuttonsfx
    uibuttonhoverrotate
+   uibuttondebuglogs
+   uibuttonspawnparticles

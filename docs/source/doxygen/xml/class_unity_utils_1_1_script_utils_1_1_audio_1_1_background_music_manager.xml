@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="62" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="62" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="65" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="65" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -169,6 +169,21 @@
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="56" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="56" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a5852985928adf2421feeb895c8667f53" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logFadeVolume</definition>
+        <argsstring></argsstring>
+        <name>logFadeVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logFadeVolume</qualifiedname>
+        <briefdescription>
+<para>If true, will output a Debug.Log when the fade time is not 0 or 1 (When its animating). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="59" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afe32685a8c0cd704aba2e86c6a6e274a" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logSongProgress</definition>
@@ -176,13 +191,13 @@
         <name>logSongProgress</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logSongProgress</qualifiedname>
         <briefdescription>
-<para>If true, will output a Debug.Log every frame, detailing how much of the current song has been played. </para>
+<para>If true, will output a Debug.Log every <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afdfff0f0dc8da146bb840764b5d880c9" kindref="member">logSongProgessEveryPercent</ref>, detailing how much of the current song has been played. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="59" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="59" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="62" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afdfff0f0dc8da146bb840764b5d880c9" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -192,13 +207,13 @@
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusicManager.logSongProgessEveryPercent</qualifiedname>
         <initializer>= 1</initializer>
         <briefdescription>
-<para>Will only log song progerss every logSongProgessEveryPercent percent. </para>
+<para>Will only log song progress every <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afdfff0f0dc8da146bb840764b5d880c9" kindref="member">logSongProgessEveryPercent</ref> percent. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="61" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="61" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="64" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1acc76051508dd5d6bfb0e45bdc8e0dc78" prot="public" static="no" mutable="no">
         <type>Coroutine</type>
@@ -212,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="66" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="66" bodyend="-1"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="69" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="69" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -228,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="64" column="46" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="64" bodyend="64"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="67" column="46" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="67" bodyend="67"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -244,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="68" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="68" bodyend="79"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="71" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="71" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a32ffe0ef816a034d7e924dcde71577dc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -258,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="81" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="81" bodyend="88"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="84" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="84" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ba8af91b478bed6d5076c57601e8e4c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -272,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="90" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="90" bodyend="99"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="93" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="93" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aaa813d63aee151489afb82204c2c5c44" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -286,7 +301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="101" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="101" bodyend="104"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="111" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="111" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1af5207aed4c35c06f1a54c2c1ceffadd0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -301,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="109" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="109" bodyend="130"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="119" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="119" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a9ca4c7180757cf91bea35dcdcc6adae3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -320,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="180" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="180" bodyend="189"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="190" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="190" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a0ee4983488bd465e99a43c8c368cd2be" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -342,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="214" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="214" bodyend="217"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="224" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="224" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a974c04706b7560e69c4895975a180490" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -356,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="219" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="219" bodyend="235"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="229" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="229" bodyend="245"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -373,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="135" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="135" bodyend="147"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="145" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="145" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a2e48f59f18fe948b07aa02dea0c3ce91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -387,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="149" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="149" bodyend="158"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="159" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="159" bodyend="168"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a75710a6645efc6673314d61de12d6e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -402,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="163" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="163" bodyend="175"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="173" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="173" bodyend="185"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a79053ee109f1122d6530632b6ed21fe2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -417,7 +432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="194" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="194" bodyend="197"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="204" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="204" bodyend="207"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4164aeed2aa479da81a8eb2aa2209868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -436,7 +451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="202" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="202" bodyend="205"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="212" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="212" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>AudioClip</type>
@@ -453,7 +468,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="208" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="208" bodyend="212"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="218" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="218" bodyend="222"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -482,7 +497,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="21" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="22" bodyend="236"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" line="21" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/BackgroundMusicManager.cs" bodystart="22" bodyend="246"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a598e1bdd4226b117a07a7a8d6ee29e2e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>Awake</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aaa813d63aee151489afb82204c2c5c44" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>CalculateMusicVolume</name></member>
@@ -493,6 +508,7 @@
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>GetRandomSong</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1aa0d3dfa0ef5fc811c9ac426ef808f397" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>Instance</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad668bbad9ffadb784c413af32f65026c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>lastLoggedPercent</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a5852985928adf2421feeb895c8667f53" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>logFadeVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ac0029d165ad5cb28edfd7c6e14cb1aef" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>logOnSongPlay</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a1f43cf5a1e0acdf1f859e1bc792c7af1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>logOnSongStop</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4e5941be49e0ea462bb1bbe2d5d635bd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusicManager</scope><name>logRandomSongCooldown</name></member>

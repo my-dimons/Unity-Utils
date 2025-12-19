@@ -11,5 +11,6 @@ var class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x =
     [ "hoverExitSfx", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#ac3dca7053abf536976fd9a7323cef821", null ],
     [ "hoverExitVolume", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a66204a7a0a5c21f1dff4d2a37d3f1f38", null ],
     [ "pitchVariance", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a134326d73212920ba4bebbaed6b7da80", null ],
+    [ "sceneSwitcherButton", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a83f55fe66b2e853a08d72035dd457daf", null ],
     [ "volumeType", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a899a8ade8749b3068571cb65622cf49a", null ]
 ];

@@ -35,6 +35,7 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ac0029d165ad5cb28edfd7c6e14cb1aef" kind="variable"><name>logOnSongPlay</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a1f43cf5a1e0acdf1f859e1bc792c7af1" kind="variable"><name>logOnSongStop</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a4e5941be49e0ea462bb1bbe2d5d635bd" kind="variable"><name>logRandomSongCooldown</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1a5852985928adf2421feeb895c8667f53" kind="variable"><name>logFadeVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afe32685a8c0cd704aba2e86c6a6e274a" kind="variable"><name>logSongProgress</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1afdfff0f0dc8da146bb840764b5d880c9" kind="variable"><name>logSongProgessEveryPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1acc76051508dd5d6bfb0e45bdc8e0dc78" kind="variable"><name>playingMusicCoroutine</name></member>
@@ -55,10 +56,11 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager_1ad8f3998dc0ca327279da6d78c3ff951c" kind="function"><name>GetRandomSong</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter" kind="class"><name>UnityUtils::ScriptUtils::CoroutineStarter</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1ac95a5a621f7eed1cfff222aa4979bffd" kind="variable"><name>starter</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0c17b9ec26d2390740c27c0e79d5fd83" kind="property"><name>Starter</name></member>
-  </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1_1_coroutine_starter_object" kind="class"><name>UnityUtils::ScriptUtils::CoroutineStarter::CoroutineStarterObject</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a82748b7cc5b1d6009223470c9fd3db90" kind="variable"><name>starter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a0b2aeac2d6be8eef52f7ab38e80e8f79" kind="property"><name>Starter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a3731a1e8cf2cef3c244d0aa039987c41" kind="function"><name>Awake</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1a8babe3511d594924edaa7fed11625112" kind="function"><name>OnSceneUnloaded</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_coroutine_starter_1aee1d138f08b78418390f6884fa3ad77f" kind="function"><name>OnDestroy</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::ObjectAnimations</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ad07f6eeb910f6a50e35746cf4ce66314" kind="function"><name>AnimateTransformScale</name></member>
@@ -69,8 +71,11 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a5cb151f2a3c177fa976224b9f08f2bb2" kind="function"><name>AnimateAudioVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a3bf7565a4542712b0dd782c669cbfcb5" kind="function"><name>FadeOutAudio</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9ed246ebd23970d228ad4364e4e41c4a" kind="function"><name>FadeInAudio</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1c09636750ecf81a04dc36395c2e3636" kind="function"><name>FlipBoolAfterTime</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" kind="function"><name>AnimateValue&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1a5e0bdec13ae32503b33d9b29635b0f" kind="function"><name>ChangeValueAfterTime&lt; T &gt;</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac340fd8976c7982390295f93d8dbf9fb" kind="function"><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" kind="function"><name>SpawnBurstParticle</name></member>
@@ -89,6 +94,14 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a150e2f880f8736e457fec51e6136a0c8" kind="function"><name>PlayClipOnSource</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1a66454cc1a0540e896823beb3047dab48" kind="function"><name>CreateAndPlayAudioClip</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae9503d55ecfed4c01d939714a2453689" kind="function"><name>PlayAudioClipOnSource</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonDebugLogs</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1a76ae6ab5a46c5baf88ee1d2e53799912" kind="variable"><name>logHover</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1a927670f69f3fc61b3a6a67c1dbb14402" kind="variable"><name>logExit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1a5686eadf415147cb7c0013c714ff114e" kind="variable"><name>logClick</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1adfe9de0e11c5ba700ae5c398f1c6036e" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1abb1b04ced57d334c04668a0cd1264c8e" kind="function"><name>OnPointerExit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs_1aa0e4564462a24de81af689f394ff7b54" kind="function"><name>OnPointerClick</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a99f701861368f017f25c429f58fbfa0f" kind="variable"><name>hoverSize</name></member>
@@ -133,12 +146,36 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae1337199f502e7ea75e6627ca1e0f3a2" kind="variable"><name>clickVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a134326d73212920ba4bebbaed6b7da80" kind="variable"><name>pitchVariance</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a899a8ade8749b3068571cb65622cf49a" kind="variable"><name>volumeType</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a83f55fe66b2e853a08d72035dd457daf" kind="variable"><name>sceneSwitcherButton</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a597ecbe8a4959f0e1b471d9bfc0e988b" kind="variable"><name>emptySfxErrorMessages</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aa43549ce30ce66c94f375daf8a5e5ffe" kind="variable"><name>sceneLoadTriggered</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a098921ae8917b2ab59d8e2449319c486" kind="function"><name>OnPointerEnter</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aba00af17f744dac7f08360605fb2d914" kind="function"><name>OnPointerExit</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a4097c5e00c6d00f209b2718449c3710d" kind="function"><name>OnPointerClick</name></member>
   </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a02a76b078ec7315b5ffdc10f383061a8" kind="variable"><name>hoverParticlePrefabs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4ddf601a74156e0c3775792aa1f9ece4" kind="variable"><name>exitParticlePrefabs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1aac66c4bfedf50856ecbdfe872fb380f9" kind="variable"><name>clickParticlePrefabs</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a4efb31a0e91f9126130b08ec5dadf472" kind="variable"><name>logSpawn</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1ade2853a3db015888d107c5b4892434ca" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a79c9823b680448d3c0c7b3f6e555c5db" kind="function"><name>OnPointerExit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1ada07523b1ea986b43ac4060efbd98bb1" kind="function"><name>OnPointerClick</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles_1a3ed1eae80f39896b149c53d16c179231" kind="function"><name>SpawnParticles</name></member>
+  </compound>
+  <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a1e15ed8cf1dd3b6262e3afdb20551c46" kind="variable"><name>hoverToggleObjects</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" kind="variable"><name>exitToggleObjects</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" kind="variable"><name>clickToggleObjects</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" kind="variable"><name>logToggle</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a6caf821391115f9de1261aff5fdb64da" kind="function"><name>OnPointerEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a56d174eb59f9d6c129771f77ba1560fd" kind="function"><name>OnPointerExit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" kind="function"><name>OnPointerClick</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac499db9ede6bb9a2e9cad75a915cd16f" kind="function"><name>ToggleObjects</name></member>
+  </compound>
   <compound refid="namespace_n_unit" kind="namespace"><name>NUnit</name>
+  </compound>
+  <compound refid="namespacestatic" kind="namespace"><name>static</name>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
@@ -152,6 +189,8 @@
   </compound>
   <compound refid="namespace_unity_engine_1_1_event_systems" kind="namespace"><name>UnityEngine::EventSystems</name>
   </compound>
+  <compound refid="namespace_unity_engine_1_1_scene_management" kind="namespace"><name>UnityEngine::SceneManagement</name>
+  </compound>
   <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
   </compound>
   <compound refid="namespace_unity_utils" kind="namespace"><name>UnityUtils</name>
@@ -159,6 +198,8 @@
   <compound refid="namespace_unity_utils_1_1_script_utils" kind="namespace"><name>UnityUtils::ScriptUtils</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kind="namespace"><name>UnityUtils::ScriptUtils::Audio</name>
+  </compound>
+  <compound refid="namespace_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="namespace"><name>UnityUtils::ScriptUtils::Audio::AudioManager</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_particles" kind="namespace"><name>UnityUtils::ScriptUtils::Particles</name>
   </compound>
@@ -172,7 +213,7 @@
   </compound>
   <compound refid="_background_music_manager_8cs" kind="file"><name>BackgroundMusicManager.cs</name>
   </compound>
-  <compound refid="_s_f_x_manager_8cs" kind="file"><name>SFXManager.cs</name>
+  <compound refid="_sfx_manager_8cs" kind="file"><name>SfxManager.cs</name>
   </compound>
   <compound refid="_coroutine_starter_8cs" kind="file"><name>CoroutineStarter.cs</name>
   </compound>
@@ -182,11 +223,17 @@
   </compound>
   <compound refid="_scriptable_object_manager_8cs" kind="file"><name>ScriptableObjectManager.cs</name>
   </compound>
+  <compound refid="_u_i_button_debug_logs_8cs" kind="file"><name>UIButtonDebugLogs.cs</name>
+  </compound>
   <compound refid="_u_i_button_hover_expand_8cs" kind="file"><name>UIButtonHoverExpand.cs</name>
   </compound>
   <compound refid="_u_i_button_hover_rotate_8cs" kind="file"><name>UIButtonHoverRotate.cs</name>
   </compound>
   <compound refid="_u_i_button_sfx_8cs" kind="file"><name>UIButtonSfx.cs</name>
+  </compound>
+  <compound refid="_u_i_button_spawn_particles_8cs" kind="file"><name>UIButtonSpawnParticles.cs</name>
+  </compound>
+  <compound refid="_u_i_button_toggle_objects_8cs" kind="file"><name>UIButtonToggleObjects.cs</name>
   </compound>
   <compound refid="dir_db252fa7b789e7b0f2fe89d360a65912" kind="dir"><name>Packages/UnityUtils/Runtime/Script Utils/Audio</name>
   </compound>

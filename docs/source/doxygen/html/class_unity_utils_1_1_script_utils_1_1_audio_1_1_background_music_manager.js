@@ -8,6 +8,7 @@ var class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager =
     [ "StopMusicSource", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a2e48f59f18fe948b07aa02dea0c3ce91", null ],
     [ "currentPlayingTrack", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a8516d30b183420e61f6d3d6117311740", null ],
     [ "fadeTime", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#aa0656ccefce385481e6057ebfbbc6bff", null ],
+    [ "logFadeVolume", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a5852985928adf2421feeb895c8667f53", null ],
     [ "logOnSongPlay", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#ac0029d165ad5cb28edfd7c6e14cb1aef", null ],
     [ "logOnSongStop", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a1f43cf5a1e0acdf1f859e1bc792c7af1", null ],
     [ "logRandomSongCooldown", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html#a4e5941be49e0ea462bb1bbe2d5d635bd", null ],
