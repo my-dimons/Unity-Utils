@@ -3,10 +3,10 @@
   <compounddef id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class" language="C#" prot="public">
     <compoundname>UnityUtils::ScriptUtils::Particles::ParticleManager</compoundname>
     <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a764580347d79c4d885595155a6bd0f90" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>static void UnityUtils.ScriptUtils.Particles.ParticleManager.SpawnBurstParticle</definition>
-        <argsstring>(GameObject particlePrefab, Vector3 position, Color color=default, Gradient gradient=default)</argsstring>
+        <argsstring>(GameObject particlePrefab, Vector3 position, Transform parent=null, Color color=default, Gradient gradient=default)</argsstring>
         <name>SpawnBurstParticle</name>
         <qualifiedname>UnityUtils.ScriptUtils.Particles.ParticleManager.SpawnBurstParticle</qualifiedname>
         <param>
@@ -16,6 +16,11 @@
         <param>
           <type>Vector3</type>
           <declname>position</declname>
+        </param>
+        <param>
+          <type>Transform</type>
+          <declname>parent</declname>
+          <defval>null</defval>
         </param>
         <param>
           <type>Color</type>
@@ -49,6 +54,14 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent to parent the prefab to on spawn</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
 <parametername>color</parametername>
 </parameternamelist>
 <parameterdescription>
@@ -68,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="15" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="15" bodyend="27"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="16" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="16" bodyend="28"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1afe98bf9e10d104bd4006f180a711d525" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -91,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="32" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="32" bodyend="36"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="33" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="33" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1ae7048d2ac5b8d75ed5d49e8608d47aac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -114,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="41" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="41" bodyend="45"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="42" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="42" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a6fd1f7c5645bba7f225c6da90295242a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ParticleSystem</type>
@@ -133,19 +146,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="50" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="50" bodyend="58"/>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="51" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="51" bodyend="59"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="5" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="6" bodyend="59"/>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" line="5" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Particles/ParticleManager.cs" bodystart="6" bodyend="60"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a6fd1f7c5645bba7f225c6da90295242a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>GetParticleSystem</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1afe98bf9e10d104bd4006f180a711d525" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>SetParticleSystemColor</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1ae7048d2ac5b8d75ed5d49e8608d47aac" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>SetParticleSystemGradientColor</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>SpawnBurstParticle</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a764580347d79c4d885595155a6bd0f90" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Particles::ParticleManager</scope><name>SpawnBurstParticle</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

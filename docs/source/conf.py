@@ -8,7 +8,7 @@ copyright = '2025, mydimons'
 author = 'mydimons'
 
 release = '1.0'
-version = '1.1.4'
+version = '1.1.5'
 
 # -- General configuration
 

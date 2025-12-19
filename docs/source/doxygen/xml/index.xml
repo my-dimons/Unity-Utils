@@ -72,13 +72,14 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a3bf7565a4542712b0dd782c669cbfcb5" kind="function"><name>FadeOutAudio</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a9ed246ebd23970d228ad4364e4e41c4a" kind="function"><name>FadeInAudio</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1c09636750ecf81a04dc36395c2e3636" kind="function"><name>FlipBoolAfterTime</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a002d59168f45df92dbc02c2a3fef2c5e" kind="function"><name>DestroyUnscaledtime</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac2af637b137136ceca3584d4995956a8" kind="function"><name>AnimateValue&lt; T &gt;</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a1a5e0bdec13ae32503b33d9b29635b0f" kind="function"><name>ChangeValueAfterTime&lt; T &gt;</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1a2a647adb967d4355b110d3cc5d25df56" kind="function"><name>AnimateValueCoroutine&lt; T &gt;</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_object_animations_1ac340fd8976c7982390295f93d8dbf9fb" kind="function"><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager" kind="class"><name>UnityUtils::ScriptUtils::Particles::ParticleManager</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a9c686ddb9044958c4c695304c23fa602" kind="function"><name>SpawnBurstParticle</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a764580347d79c4d885595155a6bd0f90" kind="function"><name>SpawnBurstParticle</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1afe98bf9e10d104bd4006f180a711d525" kind="function"><name>SetParticleSystemColor</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1ae7048d2ac5b8d75ed5d49e8608d47aac" kind="function"><name>SetParticleSystemGradientColor</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_1a6fd1f7c5645bba7f225c6da90295242a" kind="function"><name>GetParticleSystem</name></member>

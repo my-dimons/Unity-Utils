@@ -21,6 +21,8 @@ static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_anima
 \begin{DoxyCompactList}\small\item\em Animates an objects Audio\+Source component volume from 0 to a specified volume. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a1c09636750ecf81a04dc36395c2e3636}{Flip\+Bool\+After\+Time}} (bool input\+Bool, float time, bool use\+Realtime=false)
 \begin{DoxyCompactList}\small\item\em Flips the input\+Bool after the specified amount of time. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a002d59168f45df92dbc02c2a3fef2c5e}{Destroy\+Unscaledtime}} (Game\+Object obj, float time)
+\begin{DoxyCompactList}\small\item\em Destroys an object after the given amount of time in unscaled time. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_ac2af637b137136ceca3584d4995956a8}{Animate\+Value$<$ T $>$}} (T start, T end, float duration, Func$<$ T, T, float, T $>$ lerp\+Function, Action$<$ T $>$ on\+Value\+Changed, bool use\+Realtime=false, Animation\+Curve curve=default)
 \begin{DoxyCompactList}\small\item\em Animates a value from a starting value to an ending value over a specified duration. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_object_animations_a1a5e0bdec13ae32503b33d9b29635b0f}{Change\+Value\+After\+Time$<$ T $>$}} (T updated\+Value, float time, Action$<$ T $>$ on\+Value\+Change, bool use\+Realtime=false)
@@ -128,6 +130,16 @@ Changes a specified value after a certain amount of time.
 {\em use\+Realtime} & true to use unscaled real time for the value (ignoring time scale)\\
 \hline
 \end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_a002d59168f45df92dbc02c2a3fef2c5e}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!DestroyUnscaledtime@{DestroyUnscaledtime}}
+\index{DestroyUnscaledtime@{DestroyUnscaledtime}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
+\doxysubsubsection{\texorpdfstring{DestroyUnscaledtime()}{DestroyUnscaledtime()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_object_animations_a002d59168f45df92dbc02c2a3fef2c5e} 
+void Unity\+Utils.\+Script\+Utils.\+Object\+Animations.\+Destroy\+Unscaledtime (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj}{, }\item[{float}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Destroys an object after the given amount of time in unscaled time. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_object_animations_a9ed246ebd23970d228ad4364e4e41c4a}\index{UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}!FadeInAudio@{FadeInAudio}}
 \index{FadeInAudio@{FadeInAudio}!UnityUtils.ScriptUtils.ObjectAnimations@{UnityUtils.ScriptUtils.ObjectAnimations}}
 \doxysubsubsection{\texorpdfstring{FadeInAudio()}{FadeInAudio()}}

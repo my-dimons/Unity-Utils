@@ -94,8 +94,8 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_particles_1_1_p
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c686ddb9044958c4c695304c23fa602" id="r_a9c686ddb9044958c4c695304c23fa602"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c686ddb9044958c4c695304c23fa602">SpawnBurstParticle</a> (GameObject particlePrefab, Vector3 position, Color color=default, Gradient gradient=default)</td></tr>
-<tr class="memdesc:a9c686ddb9044958c4c695304c23fa602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a burst particle prefab at the given position. Has adjustable color or gradient, but doesn't need to be inputted.  <br /></td></tr>
+<tr class="memitem:a764580347d79c4d885595155a6bd0f90" id="r_a764580347d79c4d885595155a6bd0f90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a764580347d79c4d885595155a6bd0f90">SpawnBurstParticle</a> (GameObject particlePrefab, Vector3 position, Transform parent=null, Color color=default, Gradient gradient=default)</td></tr>
+<tr class="memdesc:a764580347d79c4d885595155a6bd0f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a burst particle prefab at the given position. Has adjustable color or gradient, but doesn't need to be inputted.  <br /></td></tr>
 <tr class="memitem:afe98bf9e10d104bd4006f180a711d525" id="r_afe98bf9e10d104bd4006f180a711d525"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe98bf9e10d104bd4006f180a711d525">SetParticleSystemColor</a> (GameObject particleSystem, Color color)</td></tr>
 <tr class="memdesc:afe98bf9e10d104bd4006f180a711d525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the start color of the specified particle system.  <br /></td></tr>
 <tr class="memitem:ae7048d2ac5b8d75ed5d49e8608d47aac" id="r_ae7048d2ac5b8d75ed5d49e8608d47aac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7048d2ac5b8d75ed5d49e8608d47aac">SetParticleSystemGradientColor</a> (GameObject particleSystem, Gradient gradient)</td></tr>
@@ -193,8 +193,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9c686ddb9044958c4c695304c23fa602" name="a9c686ddb9044958c4c695304c23fa602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c686ddb9044958c4c695304c23fa602">&#9670;&#160;</a></span>SpawnBurstParticle()</h2>
+<a id="a764580347d79c4d885595155a6bd0f90" name="a764580347d79c4d885595155a6bd0f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a764580347d79c4d885595155a6bd0f90">&#9670;&#160;</a></span>SpawnBurstParticle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,6 +211,11 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Transform</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,6 +240,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">particlePrefab</td><td>Particle system to spawn (Gameobject with particle system applied).</td></tr>
     <tr><td class="paramname">position</td><td>Position to spawn the particlePrefab at.</td></tr>
+    <tr><td class="paramname">parent</td><td>Parent to parent the prefab to on spawn</td></tr>
     <tr><td class="paramname">color</td><td>Color to set the particlePrefab to.</td></tr>
     <tr><td class="paramname">gradient</td><td>Gradient to set the particlePrefab to</td></tr>
   </table>

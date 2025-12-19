@@ -108,7 +108,7 @@ namespace UnityUtils.ScriptUtils
         /// <summary>
         /// Destroys an object after the given amount of time in unscaled time
         /// </summary>
-        public static void DestroyAfterUnscaledtime(GameObject obj, float time)
+        public static void DestroyUnscaledtime(GameObject obj, float time)
         {
             ChangeValueAfterTime<float>(0, time, value => UnityEngine.Object.Destroy(obj), true);
         }

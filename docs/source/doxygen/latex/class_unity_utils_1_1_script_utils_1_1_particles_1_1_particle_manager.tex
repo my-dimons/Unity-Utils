@@ -3,7 +3,7 @@
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a9c686ddb9044958c4c695304c23fa602}{Spawn\+Burst\+Particle}} (Game\+Object particle\+Prefab, Vector3 position, Color color=default, Gradient gradient=default)
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a764580347d79c4d885595155a6bd0f90}{Spawn\+Burst\+Particle}} (Game\+Object particle\+Prefab, Vector3 position, Transform parent=null, Color color=default, Gradient gradient=default)
 \begin{DoxyCompactList}\small\item\em Spawns a burst particle prefab at the given position. Has adjustable color or gradient, but doesn\textquotesingle{}t need to be inputted. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_afe98bf9e10d104bd4006f180a711d525}{Set\+Particle\+System\+Color}} (Game\+Object particle\+System, Color color)
 \begin{DoxyCompactList}\small\item\em Sets the start color of the specified particle system. \end{DoxyCompactList}\item 
@@ -46,11 +46,11 @@ void Unity\+Utils.\+Script\+Utils.\+Particles.\+Particle\+Manager.\+Set\+Particl
 
 Sets the start color of the specified particle system to use the provided gradient. 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a9c686ddb9044958c4c695304c23fa602}\index{UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}!SpawnBurstParticle@{SpawnBurstParticle}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a764580347d79c4d885595155a6bd0f90}\index{UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}!SpawnBurstParticle@{SpawnBurstParticle}}
 \index{SpawnBurstParticle@{SpawnBurstParticle}!UnityUtils.ScriptUtils.Particles.ParticleManager@{UnityUtils.ScriptUtils.Particles.ParticleManager}}
 \doxysubsubsection{\texorpdfstring{SpawnBurstParticle()}{SpawnBurstParticle()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a9c686ddb9044958c4c695304c23fa602} 
-void Unity\+Utils.\+Script\+Utils.\+Particles.\+Particle\+Manager.\+Spawn\+Burst\+Particle (\begin{DoxyParamCaption}\item[{Game\+Object}]{particle\+Prefab}{, }\item[{Vector3}]{position}{, }\item[{Color}]{color}{ = {\ttfamily default}, }\item[{Gradient}]{gradient}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_manager_a764580347d79c4d885595155a6bd0f90} 
+void Unity\+Utils.\+Script\+Utils.\+Particles.\+Particle\+Manager.\+Spawn\+Burst\+Particle (\begin{DoxyParamCaption}\item[{Game\+Object}]{particle\+Prefab}{, }\item[{Vector3}]{position}{, }\item[{Transform}]{parent}{ = {\ttfamily null}, }\item[{Color}]{color}{ = {\ttfamily default}, }\item[{Gradient}]{gradient}{ = {\ttfamily default}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
@@ -61,6 +61,8 @@ Spawns a burst particle prefab at the given position. Has adjustable color or gr
 {\em particle\+Prefab} & Particle system to spawn (Gameobject with particle system applied).\\
 \hline
 {\em position} & Position to spawn the particle\+Prefab at.\\
+\hline
+{\em parent} & Parent to parent the prefab to on spawn\\
 \hline
 {\em color} & Color to set the particle\+Prefab to.\\
 \hline
