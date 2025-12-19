@@ -93,6 +93,7 @@ namespace UnityUtils.ScriptUtils
         }
         #endregion  
 
+
         /// <summary>
         /// Flips the <see cref="inputBool"/> after the specified amount of time
         /// </summary>
@@ -103,6 +104,15 @@ namespace UnityUtils.ScriptUtils
         {
             ChangeValueAfterTime<bool>(!inputBool, time, value => inputBool = value, useRealtime);
         }
+
+        /// <summary>
+        /// Destroys an object after the given amount of time in unscaled time
+        /// </summary>
+        public static void DestroyAfterUnscaledtime(GameObject obj, float time)
+        {
+            ChangeValueAfterTime<float>(0, time, value => UnityEngine.Object.Destroy(obj), true);
+        }
+
         /// <summary>
         /// Animates a value from a starting value to an ending value over a specified duration
         /// </summary>
