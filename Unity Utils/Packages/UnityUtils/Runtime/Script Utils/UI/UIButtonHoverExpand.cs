@@ -23,10 +23,17 @@ namespace UnityUtils.ScriptUtils.UI
         /// The <see cref="AnimationCurve"/> that the button will follow.
         public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
+        [Header("Applied Transform")]
+
+        /// The object to apply the transform to (Default's to the applied object).
+        public Transform applyTransform;
+
         [Header("Debug Values")]
 
         /// True if the button is being hovered
         public bool hoveringOverButton;
+
+        [Header("Debug Logs")]
 
         Vector3 originalSize;
         Vector3 hoverSizeVector;
@@ -70,7 +77,7 @@ namespace UnityUtils.ScriptUtils.UI
         /// </summary>
         void EnterHoverAnimation()
         {
-            ObjectAnimations.AnimateTransformScale(transform, originalSize, hoverSizeVector, sizeAnimationSeconds, useRealtime, SizingCurve);
+            ObjectAnimations.AnimateTransformScale(applyTransform, originalSize, hoverSizeVector, sizeAnimationSeconds, useRealtime, SizingCurve);
         }
 
         /// <summary>
@@ -78,7 +85,12 @@ namespace UnityUtils.ScriptUtils.UI
         /// </summary>
         void ExitHoverAnimation()
         {
-            ObjectAnimations.AnimateTransformScale(transform, hoverSizeVector, originalSize, sizeAnimationSeconds, useRealtime, SizingCurve);
+            ObjectAnimations.AnimateTransformScale(applyTransform, hoverSizeVector, originalSize, sizeAnimationSeconds, useRealtime, SizingCurve);
+        }
+
+        void Reset()
+        {
+            applyTransform = gameObject.transform;
         }
     }
 }

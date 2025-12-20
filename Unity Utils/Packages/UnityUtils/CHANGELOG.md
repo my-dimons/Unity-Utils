@@ -2,9 +2,9 @@
 
 ### Additions
 - ObjectDelays.cs
-- 
+- "Objects" folder for ObjectAnimations and ObjectDelays
+- UI Button animations have a variable for applied transform
 
 
 ### Changes
-- "Objects" folder for ObjectAnimations and ObjectDelays
 - CoroutineStarter renamed to "CoroutineHelper"

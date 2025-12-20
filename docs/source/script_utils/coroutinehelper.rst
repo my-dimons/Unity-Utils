@@ -19,11 +19,8 @@ Example Usage
    {
    	void ExampleFunction()
    	{
-   	   // Starts a normal coroutine
+   	   // Start a coroutine.
    	   CoroutineHelper.Starter.StartCoroutine(ExampleCoroutine());
-   	   
-   	   // Starts a coroutine that won't stop on scene change (Be careful when using this, can cause lots of errors)
-   	   CoroutineHelper.PersistantStarter.StartCoroutine(ExampleCoroutine());
    	}
    	
    	public IEnumerator ExampleCoroutine()

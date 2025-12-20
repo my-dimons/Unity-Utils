@@ -34,6 +34,11 @@ namespace UnityUtils.ScriptUtils.UI
         public Vector2 randomRotation = new Vector2(-5f, 5f);
         private Vector3 currentRandomRotation;
 
+        [Header("Applied Transform")]
+
+        /// The object to apply the transform to (Default's to the applied object).
+        public Transform applyTransform;
+
         [Header("Debug Values")]
 
         /// True if the button is being hovered
@@ -88,7 +93,7 @@ namespace UnityUtils.ScriptUtils.UI
         {
             currentRandomRotation = new Vector3(originalRotation.x, originalRotation.y, Random.Range(randomRotation.x, randomRotation.y));
 
-            ObjectAnimations.AnimateTransformRotation(transform, originalRotation, useRandomRotation ? currentRandomRotation : hoverRotationVector, rotationAnimationSeconds, useRealtime, SizingCurve);
+            ObjectAnimations.AnimateTransformRotation(applyTransform, originalRotation, useRandomRotation ? currentRandomRotation : hoverRotationVector, rotationAnimationSeconds, useRealtime, SizingCurve);
         }
 
         /// <summary>
@@ -96,7 +101,12 @@ namespace UnityUtils.ScriptUtils.UI
         /// </summary>
         void ExitHoverAnimation()
         {
-            ObjectAnimations.AnimateTransformRotation(transform, useRandomRotation ? currentRandomRotation : hoverRotationVector, originalRotation, rotationAnimationSeconds, useRealtime, SizingCurve);
+            ObjectAnimations.AnimateTransformRotation(applyTransform, useRandomRotation ? currentRandomRotation : hoverRotationVector, originalRotation, rotationAnimationSeconds, useRealtime, SizingCurve);
+        }
+
+        void Reset()
+        {
+            applyTransform = gameObject.transform;
         }
     }
 }
