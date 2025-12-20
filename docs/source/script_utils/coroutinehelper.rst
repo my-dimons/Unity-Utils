@@ -37,3 +37,4 @@ Functions
 
 .. doxygenclass:: UnityUtils::ScriptUtils::CoroutineHelper
    :members:
+   :exclude-members: Starter
