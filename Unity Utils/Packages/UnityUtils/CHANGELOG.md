@@ -9,3 +9,4 @@
 
 ### Changes
 - CoroutineStarter renamed to "CoroutineHelper"
+- Renamed docs files to be more like the C# scripts

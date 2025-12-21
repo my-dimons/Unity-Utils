@@ -14,9 +14,9 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   uiutilsmanager
-   uibuttonhoverexpand
-   uibuttonsfx
-   uibuttonhoverrotate
-   uibuttondebuglogs
-   uibuttonspawnparticles
+   UIButtonHoverExpand
+   UIButtonHoverRotate
+   UIButtonSfx
+   UIButtonDebugLogs
+   UIButtonSpawnParticles
+   UIButtonToggleObjects

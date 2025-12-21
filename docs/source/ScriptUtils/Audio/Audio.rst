@@ -16,8 +16,8 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   audiomanager
-   sfxmanager
-   backgroundmusicmanager
-   audioslider
+   AudioManager
+   SfxManager
+   BackgroundMusicManager
+   AudioSlider
 

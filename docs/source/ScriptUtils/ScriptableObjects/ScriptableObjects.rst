@@ -12,4 +12,4 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   scriptableobjectmanager
+   ScriptableObjectManager

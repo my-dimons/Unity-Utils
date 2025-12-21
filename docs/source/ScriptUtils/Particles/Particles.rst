@@ -14,4 +14,4 @@ Scripts
 .. toctree::
    :maxdepth: 2
    
-   particlemanager
+   ParticleManager

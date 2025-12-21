@@ -26,4 +26,4 @@ Usage
    :maxdepth: 2
    
    usage
-   script_utils/scriptutils
+   ScriptUtils/ScriptUtils

@@ -12,5 +12,5 @@ Scripts
 .. toctree::
    :maxdepth: 1
    
-   objectdelays
-   objectanimations
+   ObjectDelays
+   ObjectAnimations
