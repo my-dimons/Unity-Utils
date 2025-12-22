@@ -1,0 +1,60 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake}{}\label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a315ce8d6cfc7c18cef165dc4eed951fc}{Screenshake}} (Transform camera=default, float intensity=1, float duration=0.\+5f, Animation\+Curve curve=default, bool use\+Realtime=true)
+\item 
+static IEnumerator \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a3e43ce25d2ec4c2550f4101917566047}{Screenshake\+Coroutine}} (Transform camera, float intensity, float duration, Animation\+Curve curve, bool use\+Realtime)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_ac341fab1ebeb74397156f271e5a3a8d1}{default\+Screenshake\+Curve}}
+\begin{DoxyCompactList}\small\item\em Default curve used when. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a315ce8d6cfc7c18cef165dc4eed951fc}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!Screenshake@{Screenshake}}
+\index{Screenshake@{Screenshake}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection{\texorpdfstring{Screenshake()}{Screenshake()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a315ce8d6cfc7c18cef165dc4eed951fc} 
+void Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+Screenshake (\begin{DoxyParamCaption}\item[{Transform}]{camera}{ = {\ttfamily default}, }\item[{float}]{intensity}{ = {\ttfamily 1}, }\item[{float}]{duration}{ = {\ttfamily 0\+:\+:5f}, }\item[{Animation\+Curve}]{curve}{ = {\ttfamily default}, }\item[{bool}]{use\+Realtime}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a3e43ce25d2ec4c2550f4101917566047}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!ScreenshakeCoroutine@{ScreenshakeCoroutine}}
+\index{ScreenshakeCoroutine@{ScreenshakeCoroutine}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection{\texorpdfstring{ScreenshakeCoroutine()}{ScreenshakeCoroutine()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_a3e43ce25d2ec4c2550f4101917566047} 
+IEnumerator Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+Screenshake\+Coroutine (\begin{DoxyParamCaption}\item[{Transform}]{camera}{, }\item[{float}]{intensity}{, }\item[{float}]{duration}{, }\item[{Animation\+Curve}]{curve}{, }\item[{bool}]{use\+Realtime}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_ac341fab1ebeb74397156f271e5a3a8d1}\index{UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}!defaultScreenshakeCurve@{defaultScreenshakeCurve}}
+\index{defaultScreenshakeCurve@{defaultScreenshakeCurve}!UnityUtils.ScriptUtils.Cameras.CameraShake@{UnityUtils.ScriptUtils.Cameras.CameraShake}}
+\doxysubsubsection{\texorpdfstring{defaultScreenshakeCurve}{defaultScreenshakeCurve}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_ac341fab1ebeb74397156f271e5a3a8d1} 
+Animation\+Curve Unity\+Utils.\+Script\+Utils.\+Cameras.\+Camera\+Shake.\+default\+Screenshake\+Curve\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ AnimationCurve(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0,\ 0),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(0.2f,\ 0.1f,\ -\/0.05f,\ -\/0.05f),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ Keyframe(1,\ 0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+Default curve used when. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Camera/\mbox{\hyperlink{_camera_shake_8cs}{Camera\+Shake.\+cs}}\end{DoxyCompactItemize}

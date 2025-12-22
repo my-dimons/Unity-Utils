@@ -113,8 +113,16 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ae66b9552eaf5de139dc578d6585ac328"><td class="mdescLeft">&#160;</td><td class="mdescRight">true to use unscaled real time for the animation (ignoring time scale)  <br /></td></tr>
 <tr class="memitem:a93de5dda2256a7f3a9282d78120183b4" id="r_a93de5dda2256a7f3a9282d78120183b4"><td class="memItemLeft" align="right" valign="top">AnimationCurve&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93de5dda2256a7f3a9282d78120183b4">SizingCurve</a> = AnimationCurve.EaseInOut(0, 0, 1, 1)</td></tr>
 <tr class="memdesc:a93de5dda2256a7f3a9282d78120183b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The AnimationCurve that the button will follow.  <br /></td></tr>
+<tr class="memitem:a434070005a9513d6d59d0f1c924efd33" id="r_a434070005a9513d6d59d0f1c924efd33"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a434070005a9513d6d59d0f1c924efd33">applyTransform</a></td></tr>
+<tr class="memdesc:a434070005a9513d6d59d0f1c924efd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object to apply the transform to (Default's to the applied object).  <br /></td></tr>
 <tr class="memitem:a3342c4a93c9ff16cb38f8b1c978a0853" id="r_a3342c4a93c9ff16cb38f8b1c978a0853"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3342c4a93c9ff16cb38f8b1c978a0853">hoveringOverButton</a></td></tr>
 <tr class="memdesc:a3342c4a93c9ff16cb38f8b1c978a0853"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the button is being hovered.  <br /></td></tr>
+<tr class="memitem:ac0ff4e7d71a78dee0f59cfe38a0bcca8" id="r_ac0ff4e7d71a78dee0f59cfe38a0bcca8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0ff4e7d71a78dee0f59cfe38a0bcca8">logScale</a></td></tr>
+<tr class="memdesc:ac0ff4e7d71a78dee0f59cfe38a0bcca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log on any scaling.  <br /></td></tr>
+<tr class="memitem:a63c71e293fffce8a72e7f11433b9d046" id="r_a63c71e293fffce8a72e7f11433b9d046"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63c71e293fffce8a72e7f11433b9d046">logScaleUp</a></td></tr>
+<tr class="memdesc:a63c71e293fffce8a72e7f11433b9d046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log first scale to set scale.  <br /></td></tr>
+<tr class="memitem:ae2706afab45f1c384e3a20438efdd6ef" id="r_ae2706afab45f1c384e3a20438efdd6ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2706afab45f1c384e3a20438efdd6ef">logScaleDown</a></td></tr>
+<tr class="memdesc:ae2706afab45f1c384e3a20438efdd6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log second rotate back to default pos.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a87f3aa32d0069c9e275ac82e5804fb9d" name="a87f3aa32d0069c9e275ac82e5804fb9d"></a>
@@ -168,6 +176,22 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a434070005a9513d6d59d0f1c924efd33" name="a434070005a9513d6d59d0f1c924efd33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434070005a9513d6d59d0f1c924efd33">&#9670;&#160;</a></span>applyTransform</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.applyTransform</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The object to apply the transform to (Default's to the applied object). </p>
+
+</div>
+</div>
 <a id="a3342c4a93c9ff16cb38f8b1c978a0853" name="a3342c4a93c9ff16cb38f8b1c978a0853"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3342c4a93c9ff16cb38f8b1c978a0853">&#9670;&#160;</a></span>hoveringOverButton</h2>
 
@@ -197,6 +221,54 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>When hovered this is the size the button will be set to. </p>
+
+</div>
+</div>
+<a id="ac0ff4e7d71a78dee0f59cfe38a0bcca8" name="ac0ff4e7d71a78dee0f59cfe38a0bcca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ff4e7d71a78dee0f59cfe38a0bcca8">&#9670;&#160;</a></span>logScale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log on any scaling. </p>
+
+</div>
+</div>
+<a id="ae2706afab45f1c384e3a20438efdd6ef" name="ae2706afab45f1c384e3a20438efdd6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2706afab45f1c384e3a20438efdd6ef">&#9670;&#160;</a></span>logScaleDown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScaleDown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log second rotate back to default pos. </p>
+
+</div>
+</div>
+<a id="a63c71e293fffce8a72e7f11433b9d046" name="a63c71e293fffce8a72e7f11433b9d046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c71e293fffce8a72e7f11433b9d046">&#9670;&#160;</a></span>logScaleUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScaleUp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log first scale to set scale. </p>
 
 </div>
 </div>

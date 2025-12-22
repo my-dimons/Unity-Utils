@@ -7,8 +7,9 @@ var searchData=
   ['animatetransformrotation_4',['AnimateTransformRotation',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#a344d3c7a2922a75ed499cfa9ea8df0c3',1,'UnityUtils::ScriptUtils::Objects::ObjectAnimations']]],
   ['animatetransformscale_5',['AnimateTransformScale',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#a9a2ff84f56bd60da378ded5dd42c44a3',1,'UnityUtils::ScriptUtils::Objects::ObjectAnimations']]],
   ['animatevalue_3c_20t_20_3e_6',['AnimateValue&lt; T &gt;',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#a4d6f9195d4e1e4e744be05acec4ce836',1,'UnityUtils::ScriptUtils::Objects::ObjectAnimations']]],
-  ['audiomanager_7',['AudioManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
-  ['audiomanager_2ecs_8',['AudioManager.cs',['../_audio_manager_8cs.html',1,'']]],
-  ['audioslider_9',['AudioSlider',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html',1,'UnityUtils::ScriptUtils::Audio']]],
-  ['audioslider_2ecs_10',['AudioSlider.cs',['../_audio_slider_8cs.html',1,'']]]
+  ['applytransform_7',['applyTransform',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html#a434070005a9513d6d59d0f1c924efd33',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.applyTransform'],['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a2cd401a6c40fad501969de43a22f526c',1,'UnityUtils.ScriptUtils.UI.UIButtonHoverRotate.applyTransform']]],
+  ['audiomanager_8',['AudioManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
+  ['audiomanager_2ecs_9',['AudioManager.cs',['../_audio_manager_8cs.html',1,'']]],
+  ['audioslider_10',['AudioSlider',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html',1,'UnityUtils::ScriptUtils::Audio']]],
+  ['audioslider_2ecs_11',['AudioSlider.cs',['../_audio_slider_8cs.html',1,'']]]
 ];

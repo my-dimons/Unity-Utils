@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['debuglogs_0',['debugLogs',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html#afff0763872c0932a90bbdb0a807d38c6',1,'UnityUtils::ScriptUtils::Audio::AudioSlider']]]
+  ['buildindex_0',['buildIndex',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html#ad82cbfb6171d2cffeac4b60cbb8533fc',1,'UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher']]]
 ];

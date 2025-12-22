@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1afe850aefee77b3c067a2aeaf65a95ed4" prot="private" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.musicSource</definition>
+        <argsstring></argsstring>
+        <name>musicSource</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.musicSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="23" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1af740ea560f8e1acf9f2535f1ebb8b2b4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.fadeVolume</definition>
+        <argsstring></argsstring>
+        <name>fadeVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.fadeVolume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="42" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a7dd02639adfe12bbff0e294e6ec0ae4b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.lastLoggedPercent</definition>
+        <argsstring></argsstring>
+        <name>lastLoggedPercent</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.lastLoggedPercent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="65" column="23" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a03f42f9ea5149d563659554dfa663d20" prot="public" static="no" mutable="no">
+        <type>AudioClip[]</type>
+        <definition>AudioClip [] UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.musicTracks</definition>
+        <argsstring></argsstring>
+        <name>musicTracks</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.musicTracks</qualifiedname>
+        <briefdescription>
+<para>An array of audio clips representing the available Music tracks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="28" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a01739ca739685e352f8d04e24344d187" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.currentPlayingTrack</definition>
+        <argsstring></argsstring>
+        <name>currentPlayingTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.currentPlayingTrack</qualifiedname>
+        <briefdescription>
+<para>The current playing track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="31" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a1da5c6f9793376ca46b59dc064b3f940" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.playOnAwake</definition>
+        <argsstring></argsstring>
+        <name>playOnAwake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.playOnAwake</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether to start playing Music as soon as this object awakes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="36" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a47f1245bae09985a4117f1af691620a7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.fadeTime</definition>
+        <argsstring></argsstring>
+        <name>fadeTime</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.fadeTime</qualifiedname>
+        <briefdescription>
+<para>The duration, in seconds, over which the fade in/out effect occurs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="39" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abb645b48a507c093997957c5b7536e45" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.randomSecondCooldownBetweenSongs</definition>
+        <argsstring></argsstring>
+        <name>randomSecondCooldownBetweenSongs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.randomSecondCooldownBetweenSongs</qualifiedname>
+        <briefdescription>
+<para>Random cooldown time between songs in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="45" column="24" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8484b1069289cfd5b7326a4612191b27" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logOnSongPlay</definition>
+        <argsstring></argsstring>
+        <name>logOnSongPlay</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logOnSongPlay</qualifiedname>
+        <briefdescription>
+<para>If true, will output a Debug.Log when a new track starts playing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="50" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a2c752785a8820c0c21279192467e2ed2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logOnSongStop</definition>
+        <argsstring></argsstring>
+        <name>logOnSongStop</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logOnSongStop</qualifiedname>
+        <briefdescription>
+<para>If true, will output a Debug.Log when a track stops playing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="53" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a62bed808eec63266c402aab2b2725de5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logRandomSongCooldown</definition>
+        <argsstring></argsstring>
+        <name>logRandomSongCooldown</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logRandomSongCooldown</qualifiedname>
+        <briefdescription>
+<para>If true, will output a Debug.Log the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abb645b48a507c093997957c5b7536e45" kindref="member">randomSecondCooldownBetweenSongs</ref> when calculated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="56" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a1dd5c48dfd521287b84217a27835da47" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logFadeVolume</definition>
+        <argsstring></argsstring>
+        <name>logFadeVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logFadeVolume</qualifiedname>
+        <briefdescription>
+<para>If true, will output a Debug.Log when the fade time is not 0 or 1 (When its animating). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="59" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abaa7aaaba055da7ad7ebe13691a9cc5a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logSongProgress</definition>
+        <argsstring></argsstring>
+        <name>logSongProgress</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logSongProgress</qualifiedname>
+        <briefdescription>
+<para>If true, will output a Debug.Log every <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aa6e4ea3cf1e5d5598daf4e18d5fe432f" kindref="member">logSongProgessEveryPercent</ref>, detailing how much of the current song has been played. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="62" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aa6e4ea3cf1e5d5598daf4e18d5fe432f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logSongProgessEveryPercent</definition>
+        <argsstring></argsstring>
+        <name>logSongProgessEveryPercent</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.logSongProgessEveryPercent</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Will only log song progress every <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aa6e4ea3cf1e5d5598daf4e18d5fe432f" kindref="member">logSongProgessEveryPercent</ref> percent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="64" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abc05157265ad9a1b606d5905efa22011" prot="public" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.playingMusicCoroutine</definition>
+        <argsstring></argsstring>
+        <name>playingMusicCoroutine</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.playingMusicCoroutine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="69" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a772726b4d48200d6b8a8744804f37998" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music" kindref="compound">SimpleBackgroundMusic</ref></type>
+        <definition>SimpleBackgroundMusic UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="67" column="45" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="67" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8e1342fbf9e972feb053021961c4f58d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Awake</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="71" column="14" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="71" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1ae3d9817bbcbfee665495596a41dd65d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="84" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="84" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aaefc07f500a59783de847f15c80400bb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="93" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="93" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a5c43ec5b22e47b60aaa90e7780b19fda" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.CalculateMusicVolume</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateMusicVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.CalculateMusicVolume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="111" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aaca767892123d3808099bf92c8a4281e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlayMusicContinuously</definition>
+        <argsstring>()</argsstring>
+        <name>PlayMusicContinuously</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlayMusicContinuously</qualifiedname>
+        <briefdescription>
+<para>Loops through random songs in <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a03f42f9ea5149d563659554dfa663d20" kindref="member">musicTracks</ref> constantly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="119" column="29" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="119" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a9c90745a939f670ed2edc8b743a6f28f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlayMusicTrack</definition>
+        <argsstring>(AudioClip clip)</argsstring>
+        <name>PlayMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlayMusicTrack</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+<para>Plays a Music track on the musicSource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="190" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="190" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a4afbfafc18f838888c794c74e556052d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.TweenVolume</definition>
+        <argsstring>(float start, float end)</argsstring>
+        <name>TweenVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.TweenVolume</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="224" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a81fd21ed4a783709a3595d084c52211f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.DebugSongProgress</definition>
+        <argsstring>()</argsstring>
+        <name>DebugSongProgress</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.DebugSongProgress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="229" column="22" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="229" bodyend="245"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8f20e73131ad52fd98e943e902068b3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.StopContinousMusic</definition>
+        <argsstring>()</argsstring>
+        <name>StopContinousMusic</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.StopContinousMusic</qualifiedname>
+        <briefdescription>
+<para>Stops the musicSource from playing Music and looping until PlayMusicContinuously is called again (to start looping). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="145" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="145" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a4d59a5a3184c6c20fb0f3a24816a2e44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.StopMusicSource</definition>
+        <argsstring>()</argsstring>
+        <name>StopMusicSource</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.StopMusicSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="159" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="159" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a3a877d3ce82171a3f80ae58ec3c17f4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlayContinuousMusic</definition>
+        <argsstring>()</argsstring>
+        <name>PlayContinuousMusic</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlayContinuousMusic</qualifiedname>
+        <briefdescription>
+<para>Starts to PlayMusicContinuously until stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="173" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="173" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a876ad7dcaed65730fabb8255a1440593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlaySingleRandomMusicTrack</definition>
+        <argsstring>()</argsstring>
+        <name>PlaySingleRandomMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlaySingleRandomMusicTrack</qualifiedname>
+        <briefdescription>
+<para>Plays a random song in <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a03f42f9ea5149d563659554dfa663d20" kindref="member">musicTracks</ref> once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="204" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1ad145c126937f1581efd02370b578e909" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlaySpecificMusicTrack</definition>
+        <argsstring>(AudioClip clip)</argsstring>
+        <name>PlaySpecificMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.PlaySpecificMusicTrack</qualifiedname>
+        <param>
+          <type>AudioClip</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+<para>Plays a specific Music track once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="212" column="21" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a6911789bce490c25bee6e8a8e9b42ff8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>AudioClip</type>
+        <definition>AudioClip UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.GetRandomSong</definition>
+        <argsstring>()</argsstring>
+        <name>GetRandomSong</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic.GetRandomSong</qualifiedname>
+        <briefdescription>
+<para><simplesect kind="return"><para>Random Music track within <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a03f42f9ea5149d563659554dfa663d20" kindref="member">musicTracks</ref></para>
+</simplesect>
+</para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="218" column="26" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="218" bodyend="222"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" line="21" column="11" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Audio/SimpleBackgroundMusic.cs" bodystart="22" bodyend="246"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8e1342fbf9e972feb053021961c4f58d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>Awake</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a5c43ec5b22e47b60aaa90e7780b19fda" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>CalculateMusicVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a01739ca739685e352f8d04e24344d187" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>currentPlayingTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a81fd21ed4a783709a3595d084c52211f" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>DebugSongProgress</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a47f1245bae09985a4117f1af691620a7" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>fadeTime</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1af740ea560f8e1acf9f2535f1ebb8b2b4" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>fadeVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a6911789bce490c25bee6e8a8e9b42ff8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>GetRandomSong</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a772726b4d48200d6b8a8744804f37998" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>Instance</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a7dd02639adfe12bbff0e294e6ec0ae4b" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>lastLoggedPercent</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a1dd5c48dfd521287b84217a27835da47" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>logFadeVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8484b1069289cfd5b7326a4612191b27" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>logOnSongPlay</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a2c752785a8820c0c21279192467e2ed2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>logOnSongStop</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a62bed808eec63266c402aab2b2725de5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>logRandomSongCooldown</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aa6e4ea3cf1e5d5598daf4e18d5fe432f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>logSongProgessEveryPercent</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abaa7aaaba055da7ad7ebe13691a9cc5a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>logSongProgress</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1afe850aefee77b3c067a2aeaf65a95ed4" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>musicSource</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a03f42f9ea5149d563659554dfa663d20" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>musicTracks</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a3a877d3ce82171a3f80ae58ec3c17f4b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>PlayContinuousMusic</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abc05157265ad9a1b606d5905efa22011" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>playingMusicCoroutine</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aaca767892123d3808099bf92c8a4281e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>PlayMusicContinuously</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a9c90745a939f670ed2edc8b743a6f28f" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>PlayMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a1da5c6f9793376ca46b59dc064b3f940" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>playOnAwake</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a876ad7dcaed65730fabb8255a1440593" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>PlaySingleRandomMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1ad145c126937f1581efd02370b578e909" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>PlaySpecificMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abb645b48a507c093997957c5b7536e45" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>randomSecondCooldownBetweenSongs</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1ae3d9817bbcbfee665495596a41dd65d1" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>Start</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8f20e73131ad52fd98e943e902068b3a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>StopContinousMusic</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a4d59a5a3184c6c20fb0f3a24816a2e44" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>StopMusicSource</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a4afbfafc18f838888c794c74e556052d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>TweenVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aaefc07f500a59783de847f15c80400bb" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

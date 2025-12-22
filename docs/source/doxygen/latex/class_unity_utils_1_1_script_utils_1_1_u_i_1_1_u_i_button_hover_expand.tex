@@ -24,8 +24,16 @@ bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_
 \begin{DoxyCompactList}\small\item\em true to use unscaled real time for the animation (ignoring time scale) \end{DoxyCompactList}\item 
 Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a93de5dda2256a7f3a9282d78120183b4}{Sizing\+Curve}} = Animation\+Curve.\+Ease\+In\+Out(0, 0, 1, 1)
 \begin{DoxyCompactList}\small\item\em The Animation\+Curve that the button will follow. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a434070005a9513d6d59d0f1c924efd33}{apply\+Transform}}
+\begin{DoxyCompactList}\small\item\em The object to apply the transform to (Default\textquotesingle{}s to the applied object). \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a3342c4a93c9ff16cb38f8b1c978a0853}{hovering\+Over\+Button}}
-\begin{DoxyCompactList}\small\item\em True if the button is being hovered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em True if the button is being hovered. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_ac0ff4e7d71a78dee0f59cfe38a0bcca8}{log\+Scale}}
+\begin{DoxyCompactList}\small\item\em Log on any scaling. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a63c71e293fffce8a72e7f11433b9d046}{log\+Scale\+Up}}
+\begin{DoxyCompactList}\small\item\em Log first scale to set scale. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_ae2706afab45f1c384e3a20438efdd6ef}{log\+Scale\+Down}}
+\begin{DoxyCompactList}\small\item\em Log second rotate back to default pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -48,6 +56,16 @@ void Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Expand.\+On\+Pointer\+
 \label{doc-variable-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_doc-variable-members}
 \doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a434070005a9513d6d59d0f1c924efd33}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}!applyTransform@{applyTransform}}
+\index{applyTransform@{applyTransform}!UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}}
+\doxysubsubsection{\texorpdfstring{applyTransform}{applyTransform}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a434070005a9513d6d59d0f1c924efd33} 
+Transform Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Expand.\+apply\+Transform}
+
+
+
+The object to apply the transform to (Default\textquotesingle{}s to the applied object). 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a3342c4a93c9ff16cb38f8b1c978a0853}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}!hoveringOverButton@{hoveringOverButton}}
 \index{hoveringOverButton@{hoveringOverButton}!UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}}
 \doxysubsubsection{\texorpdfstring{hoveringOverButton}{hoveringOverButton}}
@@ -67,6 +85,36 @@ float Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Expand.\+hover\+Size 
 
 
 When hovered this is the size the button will be set to. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_ac0ff4e7d71a78dee0f59cfe38a0bcca8}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}!logScale@{logScale}}
+\index{logScale@{logScale}!UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}}
+\doxysubsubsection{\texorpdfstring{logScale}{logScale}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_ac0ff4e7d71a78dee0f59cfe38a0bcca8} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Expand.\+log\+Scale}
+
+
+
+Log on any scaling. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_ae2706afab45f1c384e3a20438efdd6ef}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}!logScaleDown@{logScaleDown}}
+\index{logScaleDown@{logScaleDown}!UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}}
+\doxysubsubsection{\texorpdfstring{logScaleDown}{logScaleDown}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_ae2706afab45f1c384e3a20438efdd6ef} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Expand.\+log\+Scale\+Down}
+
+
+
+Log second rotate back to default pos. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a63c71e293fffce8a72e7f11433b9d046}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}!logScaleUp@{logScaleUp}}
+\index{logScaleUp@{logScaleUp}!UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}}
+\doxysubsubsection{\texorpdfstring{logScaleUp}{logScaleUp}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a63c71e293fffce8a72e7f11433b9d046} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Expand.\+log\+Scale\+Up}
+
+
+
+Log first scale to set scale. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_a88c3046734a3645154c58778039f6c65}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}!sizeAnimationSeconds@{sizeAnimationSeconds}}
 \index{sizeAnimationSeconds@{sizeAnimationSeconds}!UnityUtils.ScriptUtils.UI.UIButtonHoverExpand@{UnityUtils.ScriptUtils.UI.UIButtonHoverExpand}}

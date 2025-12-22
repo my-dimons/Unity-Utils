@@ -30,7 +30,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// Invokes the specified function after waiting for the given amount of time.
         /// </summary>
         /// <param name="function">The action to execute after the delay has elapsed. Cannot be null.</param>
-        public static void CallFunctionAfterTime(Action function, float time, bool useRealtime)
+        public static void CallFunctionAfterTime(Action function, float time, bool useRealtime = true)
         {
             CoroutineHelper.Starter.StartCoroutine(CallFunctionAfterTimeCoroutine(function, time, useRealtime));
         }

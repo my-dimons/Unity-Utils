@@ -5,6 +5,7 @@
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs" prot="public">UnityUtils::ScriptUtils::UI::UIButtonDebugLogs</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverRotate</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher" prot="public">UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x" prot="public">UnityUtils::ScriptUtils::UI::UIButtonSFX</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles" prot="public">UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects" prot="public">UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</innerclass>

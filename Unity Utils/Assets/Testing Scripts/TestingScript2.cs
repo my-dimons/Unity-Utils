@@ -3,12 +3,12 @@ using UnityEngine.UI;
 using UnityUtils.ScriptUtils;
 using UnityUtils.ScriptUtils.Objects;
 using UnityEngine.SceneManagement;
+using UnityUtils.ScriptUtils.Cameras;
 
 public class TestingScript2 : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    private void Start()
     {
-        Debug.Log("Loading scene: " + sceneName);
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        ObjectDelays.CallFunctionAfterTime(() => CameraShake.Screenshake(intensity: 5), 3);
     }
 }

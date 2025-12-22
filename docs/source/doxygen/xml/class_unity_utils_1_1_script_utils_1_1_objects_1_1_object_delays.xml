@@ -80,10 +80,10 @@
         </inbodydescription>
         <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="24" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="24" bodyend="27"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1abf46f51792d13168e6ea5869421b63a4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1acfbe6edd7b0f3ba8316c4a7954085709" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>static void UnityUtils.ScriptUtils.Objects.ObjectDelays.CallFunctionAfterTime</definition>
-        <argsstring>(Action function, float time, bool useRealtime)</argsstring>
+        <argsstring>(Action function, float time, bool useRealtime=true)</argsstring>
         <name>CallFunctionAfterTime</name>
         <qualifiedname>UnityUtils.ScriptUtils.Objects.ObjectDelays.CallFunctionAfterTime</qualifiedname>
         <param>
@@ -97,6 +97,7 @@
         <param>
           <type>bool</type>
           <declname>useRealtime</declname>
+          <defval>true</defval>
         </param>
         <briefdescription>
 <para>Invokes the specified function after waiting for the given amount of time. </para>
@@ -231,7 +232,7 @@
     </detaileddescription>
     <location file="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" line="8" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Objects/ObjectDelays.cs" bodystart="9" bodyend="60"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1abf46f51792d13168e6ea5869421b63a4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectDelays</scope><name>CallFunctionAfterTime</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1acfbe6edd7b0f3ba8316c4a7954085709" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectDelays</scope><name>CallFunctionAfterTime</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1afb3d737350e89f9c485de2000247ffad" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectDelays</scope><name>CallFunctionAfterTimeCoroutine</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a77ae2f4568d29d59ddce66b3626a2d16" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectDelays</scope><name>ChangeValueAfterTime&lt; T &gt;</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_1a8b7c6a4479e236f90de1e3b6419dad65" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectDelays</scope><name>ChangeValueAfterTimeCoroutine&lt; T &gt;</name></member>

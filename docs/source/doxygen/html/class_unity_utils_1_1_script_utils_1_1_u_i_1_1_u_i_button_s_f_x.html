@@ -122,10 +122,8 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a134326d73212920ba4bebbaed6b7da80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random variance to play all audio clips at.  <br /></td></tr>
 <tr class="memitem:a899a8ade8749b3068571cb65622cf49a" id="r_a899a8ade8749b3068571cb65622cf49a"><td class="memItemLeft" align="right" valign="top">AudioManager.VolumeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a899a8ade8749b3068571cb65622cf49a">volumeType</a> = AudioManager.VolumeType.Sfx</td></tr>
 <tr class="memdesc:a899a8ade8749b3068571cb65622cf49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of audio to use to get proper audio levels.  <br /></td></tr>
-<tr class="memitem:a83f55fe66b2e853a08d72035dd457daf" id="r_a83f55fe66b2e853a08d72035dd457daf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83f55fe66b2e853a08d72035dd457daf">sceneSwitcherButton</a></td></tr>
-<tr class="memdesc:a83f55fe66b2e853a08d72035dd457daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors.  <br /></td></tr>
-<tr class="memitem:a597ecbe8a4959f0e1b471d9bfc0e988b" id="r_a597ecbe8a4959f0e1b471d9bfc0e988b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a597ecbe8a4959f0e1b471d9bfc0e988b">emptySfxErrorMessages</a></td></tr>
-<tr class="memdesc:a597ecbe8a4959f0e1b471d9bfc0e988b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true this will log errors when trying to play sound effects but they become empty.  <br /></td></tr>
+<tr class="memitem:ae89df3943971c8847f19010c49257a02" id="r_ae89df3943971c8847f19010c49257a02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae89df3943971c8847f19010c49257a02">logEmptySfx</a></td></tr>
+<tr class="memdesc:ae89df3943971c8847f19010c49257a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true this will log errors when trying to play sound effects but they become empty.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a4097c5e00c6d00f209b2718449c3710d" name="a4097c5e00c6d00f209b2718449c3710d"></a>
@@ -236,22 +234,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a597ecbe8a4959f0e1b471d9bfc0e988b" name="a597ecbe8a4959f0e1b471d9bfc0e988b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a597ecbe8a4959f0e1b471d9bfc0e988b">&#9670;&#160;</a></span>emptySfxErrorMessages</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool UnityUtils.ScriptUtils.UI.UIButtonSFX.emptySfxErrorMessages</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If true this will log errors when trying to play sound effects but they become empty. </p>
-
-</div>
-</div>
 <a id="ae952e6b7f589bc3b221416e0d417c313" name="ae952e6b7f589bc3b221416e0d417c313"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae952e6b7f589bc3b221416e0d417c313">&#9670;&#160;</a></span>hoverEnterSfx</h2>
 
@@ -316,6 +298,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae89df3943971c8847f19010c49257a02" name="ae89df3943971c8847f19010c49257a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89df3943971c8847f19010c49257a02">&#9670;&#160;</a></span>logEmptySfx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityUtils.ScriptUtils.UI.UIButtonSFX.logEmptySfx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true this will log errors when trying to play sound effects but they become empty. </p>
+
+</div>
+</div>
 <a id="a134326d73212920ba4bebbaed6b7da80" name="a134326d73212920ba4bebbaed6b7da80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a134326d73212920ba4bebbaed6b7da80">&#9670;&#160;</a></span>pitchVariance</h2>
 
@@ -329,22 +327,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Random variance to play all audio clips at. </p>
-
-</div>
-</div>
-<a id="a83f55fe66b2e853a08d72035dd457daf" name="a83f55fe66b2e853a08d72035dd457daf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f55fe66b2e853a08d72035dd457daf">&#9670;&#160;</a></span>sceneSwitcherButton</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool UnityUtils.ScriptUtils.UI.UIButtonSFX.sceneSwitcherButton</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors. </p>
 
 </div>
 </div>

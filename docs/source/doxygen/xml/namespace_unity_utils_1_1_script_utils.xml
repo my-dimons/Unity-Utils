@@ -4,6 +4,7 @@
     <compoundname>UnityUtils::ScriptUtils</compoundname>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_coroutine_helper" prot="public">UnityUtils::ScriptUtils::CoroutineHelper</innerclass>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_audio">UnityUtils::ScriptUtils::Audio</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_cameras">UnityUtils::ScriptUtils::Cameras</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_objects">UnityUtils::ScriptUtils::Objects</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_particles">UnityUtils::ScriptUtils::Particles</innernamespace>
     <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects">UnityUtils::ScriptUtils::ScriptableObjects</innernamespace>

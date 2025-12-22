@@ -1,0 +1,259 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music}{}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a8f20e73131ad52fd98e943e902068b3a}{Stop\+Continous\+Music}} ()
+\begin{DoxyCompactList}\small\item\em Stops the music\+Source from playing Music and looping until Play\+Music\+Continuously is called again (to start looping). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a4d59a5a3184c6c20fb0f3a24816a2e44}{Stop\+Music\+Source}} ()
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a3a877d3ce82171a3f80ae58ec3c17f4b}{Play\+Continuous\+Music}} ()
+\begin{DoxyCompactList}\small\item\em Starts to Play\+Music\+Continuously until stopped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a876ad7dcaed65730fabb8255a1440593}{Play\+Single\+Random\+Music\+Track}} ()
+\begin{DoxyCompactList}\small\item\em Plays a random song in \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a03f42f9ea5149d563659554dfa663d20}{music\+Tracks} once. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_ad145c126937f1581efd02370b578e909}{Play\+Specific\+Music\+Track}} (Audio\+Clip clip)
+\begin{DoxyCompactList}\small\item\em Plays a specific Music track once. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a6911789bce490c25bee6e8a8e9b42ff8}{Get\+Random\+Song}} ()
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{Returns}
+Random Music track within \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a03f42f9ea5149d563659554dfa663d20}{music\+Tracks}
+\end{DoxyReturn}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Clip\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a03f42f9ea5149d563659554dfa663d20}{music\+Tracks}}
+\begin{DoxyCompactList}\small\item\em An array of audio clips representing the available Music tracks. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a01739ca739685e352f8d04e24344d187}{current\+Playing\+Track}}
+\begin{DoxyCompactList}\small\item\em The current playing track. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a1da5c6f9793376ca46b59dc064b3f940}{play\+On\+Awake}} = true
+\begin{DoxyCompactList}\small\item\em Whether to start playing Music as soon as this object awakes. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a47f1245bae09985a4117f1af691620a7}{fade\+Time}}
+\begin{DoxyCompactList}\small\item\em The duration, in seconds, over which the fade in/out effect occurs. \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abb645b48a507c093997957c5b7536e45}{random\+Second\+Cooldown\+Between\+Songs}}
+\begin{DoxyCompactList}\small\item\em Random cooldown time between songs in milliseconds. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a8484b1069289cfd5b7326a4612191b27}{log\+On\+Song\+Play}}
+\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log when a new track starts playing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a2c752785a8820c0c21279192467e2ed2}{log\+On\+Song\+Stop}}
+\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log when a track stops playing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a62bed808eec63266c402aab2b2725de5}{log\+Random\+Song\+Cooldown}}
+\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log the \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abb645b48a507c093997957c5b7536e45}{random\+Second\+Cooldown\+Between\+Songs} when calculated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a1dd5c48dfd521287b84217a27835da47}{log\+Fade\+Volume}}
+\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log when the fade time is not 0 or 1 (When its animating). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abaa7aaaba055da7ad7ebe13691a9cc5a}{log\+Song\+Progress}}
+\begin{DoxyCompactList}\small\item\em If true, will output a Debug.\+Log every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_aa6e4ea3cf1e5d5598daf4e18d5fe432f}{log\+Song\+Progess\+Every\+Percent}, detailing how much of the current song has been played. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_aa6e4ea3cf1e5d5598daf4e18d5fe432f}{log\+Song\+Progess\+Every\+Percent}} = 1
+\begin{DoxyCompactList}\small\item\em Will only log song progress every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_aa6e4ea3cf1e5d5598daf4e18d5fe432f}{log\+Song\+Progess\+Every\+Percent} percent. \end{DoxyCompactList}\item 
+Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abc05157265ad9a1b606d5905efa22011}{playing\+Music\+Coroutine}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music}{Simple\+Background\+Music}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a772726b4d48200d6b8a8744804f37998}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a6911789bce490c25bee6e8a8e9b42ff8}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!GetRandomSong@{GetRandomSong}}
+\index{GetRandomSong@{GetRandomSong}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{GetRandomSong()}{GetRandomSong()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a6911789bce490c25bee6e8a8e9b42ff8} 
+Audio\+Clip Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+Get\+Random\+Song (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\begin{DoxyReturn}{Returns}
+Random Music track within \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a03f42f9ea5149d563659554dfa663d20}{music\+Tracks}
+\end{DoxyReturn}
+
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a3a877d3ce82171a3f80ae58ec3c17f4b}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!PlayContinuousMusic@{PlayContinuousMusic}}
+\index{PlayContinuousMusic@{PlayContinuousMusic}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{PlayContinuousMusic()}{PlayContinuousMusic()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a3a877d3ce82171a3f80ae58ec3c17f4b} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+Play\+Continuous\+Music (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Starts to Play\+Music\+Continuously until stopped. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a876ad7dcaed65730fabb8255a1440593}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!PlaySingleRandomMusicTrack@{PlaySingleRandomMusicTrack}}
+\index{PlaySingleRandomMusicTrack@{PlaySingleRandomMusicTrack}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{PlaySingleRandomMusicTrack()}{PlaySingleRandomMusicTrack()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a876ad7dcaed65730fabb8255a1440593} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+Play\+Single\+Random\+Music\+Track (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plays a random song in \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a03f42f9ea5149d563659554dfa663d20}{music\+Tracks} once. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_ad145c126937f1581efd02370b578e909}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!PlaySpecificMusicTrack@{PlaySpecificMusicTrack}}
+\index{PlaySpecificMusicTrack@{PlaySpecificMusicTrack}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{PlaySpecificMusicTrack()}{PlaySpecificMusicTrack()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_ad145c126937f1581efd02370b578e909} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+Play\+Specific\+Music\+Track (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plays a specific Music track once. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a8f20e73131ad52fd98e943e902068b3a}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!StopContinousMusic@{StopContinousMusic}}
+\index{StopContinousMusic@{StopContinousMusic}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{StopContinousMusic()}{StopContinousMusic()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a8f20e73131ad52fd98e943e902068b3a} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+Stop\+Continous\+Music (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stops the music\+Source from playing Music and looping until Play\+Music\+Continuously is called again (to start looping). 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a4d59a5a3184c6c20fb0f3a24816a2e44}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!StopMusicSource@{StopMusicSource}}
+\index{StopMusicSource@{StopMusicSource}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{StopMusicSource()}{StopMusicSource()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a4d59a5a3184c6c20fb0f3a24816a2e44} 
+void Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+Stop\+Music\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a01739ca739685e352f8d04e24344d187}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!currentPlayingTrack@{currentPlayingTrack}}
+\index{currentPlayingTrack@{currentPlayingTrack}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{currentPlayingTrack}{currentPlayingTrack}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a01739ca739685e352f8d04e24344d187} 
+Audio\+Clip Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+current\+Playing\+Track}
+
+
+
+The current playing track. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a47f1245bae09985a4117f1af691620a7}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!fadeTime@{fadeTime}}
+\index{fadeTime@{fadeTime}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{fadeTime}{fadeTime}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a47f1245bae09985a4117f1af691620a7} 
+float Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+fade\+Time}
+
+
+
+The duration, in seconds, over which the fade in/out effect occurs. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a1dd5c48dfd521287b84217a27835da47}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!logFadeVolume@{logFadeVolume}}
+\index{logFadeVolume@{logFadeVolume}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{logFadeVolume}{logFadeVolume}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a1dd5c48dfd521287b84217a27835da47} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+log\+Fade\+Volume}
+
+
+
+If true, will output a Debug.\+Log when the fade time is not 0 or 1 (When its animating). 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a8484b1069289cfd5b7326a4612191b27}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!logOnSongPlay@{logOnSongPlay}}
+\index{logOnSongPlay@{logOnSongPlay}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{logOnSongPlay}{logOnSongPlay}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a8484b1069289cfd5b7326a4612191b27} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+log\+On\+Song\+Play}
+
+
+
+If true, will output a Debug.\+Log when a new track starts playing. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a2c752785a8820c0c21279192467e2ed2}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!logOnSongStop@{logOnSongStop}}
+\index{logOnSongStop@{logOnSongStop}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{logOnSongStop}{logOnSongStop}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a2c752785a8820c0c21279192467e2ed2} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+log\+On\+Song\+Stop}
+
+
+
+If true, will output a Debug.\+Log when a track stops playing. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a62bed808eec63266c402aab2b2725de5}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!logRandomSongCooldown@{logRandomSongCooldown}}
+\index{logRandomSongCooldown@{logRandomSongCooldown}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{logRandomSongCooldown}{logRandomSongCooldown}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a62bed808eec63266c402aab2b2725de5} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+log\+Random\+Song\+Cooldown}
+
+
+
+If true, will output a Debug.\+Log the \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abb645b48a507c093997957c5b7536e45}{random\+Second\+Cooldown\+Between\+Songs} when calculated. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_aa6e4ea3cf1e5d5598daf4e18d5fe432f}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!logSongProgessEveryPercent@{logSongProgessEveryPercent}}
+\index{logSongProgessEveryPercent@{logSongProgessEveryPercent}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{logSongProgessEveryPercent}{logSongProgessEveryPercent}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_aa6e4ea3cf1e5d5598daf4e18d5fe432f} 
+float Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+log\+Song\+Progess\+Every\+Percent = 1}
+
+
+
+Will only log song progress every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_aa6e4ea3cf1e5d5598daf4e18d5fe432f}{log\+Song\+Progess\+Every\+Percent} percent. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abaa7aaaba055da7ad7ebe13691a9cc5a}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!logSongProgress@{logSongProgress}}
+\index{logSongProgress@{logSongProgress}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{logSongProgress}{logSongProgress}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abaa7aaaba055da7ad7ebe13691a9cc5a} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+log\+Song\+Progress}
+
+
+
+If true, will output a Debug.\+Log every \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_aa6e4ea3cf1e5d5598daf4e18d5fe432f}{log\+Song\+Progess\+Every\+Percent}, detailing how much of the current song has been played. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a03f42f9ea5149d563659554dfa663d20}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!musicTracks@{musicTracks}}
+\index{musicTracks@{musicTracks}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{musicTracks}{musicTracks}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a03f42f9ea5149d563659554dfa663d20} 
+Audio\+Clip \mbox{[}$\,$\mbox{]} Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+music\+Tracks}
+
+
+
+An array of audio clips representing the available Music tracks. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abc05157265ad9a1b606d5905efa22011}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!playingMusicCoroutine@{playingMusicCoroutine}}
+\index{playingMusicCoroutine@{playingMusicCoroutine}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{playingMusicCoroutine}{playingMusicCoroutine}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abc05157265ad9a1b606d5905efa22011} 
+Coroutine Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+playing\+Music\+Coroutine}
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a1da5c6f9793376ca46b59dc064b3f940}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!playOnAwake@{playOnAwake}}
+\index{playOnAwake@{playOnAwake}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{playOnAwake}{playOnAwake}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a1da5c6f9793376ca46b59dc064b3f940} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+play\+On\+Awake = true}
+
+
+
+Whether to start playing Music as soon as this object awakes. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abb645b48a507c093997957c5b7536e45}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!randomSecondCooldownBetweenSongs@{randomSecondCooldownBetweenSongs}}
+\index{randomSecondCooldownBetweenSongs@{randomSecondCooldownBetweenSongs}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{randomSecondCooldownBetweenSongs}{randomSecondCooldownBetweenSongs}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_abb645b48a507c093997957c5b7536e45} 
+Vector2 Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+random\+Second\+Cooldown\+Between\+Songs}
+
+
+
+Random cooldown time between songs in milliseconds. 
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a772726b4d48200d6b8a8744804f37998}\index{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}!Instance@{Instance}}
+\index{Instance@{Instance}!UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic@{UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_a772726b4d48200d6b8a8744804f37998} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music}{Simple\+Background\+Music}} Unity\+Utils.\+Script\+Utils.\+Audio.\+Simple\+Background\+Music.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/\+Unity\+Utils/\+Runtime/\+Script Utils/\+Audio/\mbox{\hyperlink{_simple_background_music_8cs}{Simple\+Background\+Music.\+cs}}\end{DoxyCompactItemize}

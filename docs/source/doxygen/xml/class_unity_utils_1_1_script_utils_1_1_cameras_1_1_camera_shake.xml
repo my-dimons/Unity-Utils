@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Cameras::CameraShake</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1ac341fab1ebeb74397156f271e5a3a8d1" prot="public" static="yes" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve UnityUtils.ScriptUtils.Cameras.CameraShake.defaultScreenshakeCurve</definition>
+        <argsstring></argsstring>
+        <name>defaultScreenshakeCurve</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.defaultScreenshakeCurve</qualifiedname>
+        <initializer>= new AnimationCurve(
+        new Keyframe(0, 0),
+        new Keyframe(0.2f, 0.1f, -0.05f, -0.05f),
+        new Keyframe(1, 0)
+        )</initializer>
+        <briefdescription>
+<para>Default curve used when. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="9" column="38" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a315ce8d6cfc7c18cef165dc4eed951fc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Cameras.CameraShake.Screenshake</definition>
+        <argsstring>(Transform camera=default, float intensity=1, float duration=0.5f, AnimationCurve curve=default, bool useRealtime=true)</argsstring>
+        <name>Screenshake</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.Screenshake</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>camera</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>intensity</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+          <defval>0.5f</defval>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>curve</declname>
+          <defval>default</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="15" column="28" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a3e43ce25d2ec4c2550f4101917566047" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>static IEnumerator UnityUtils.ScriptUtils.Cameras.CameraShake.ScreenshakeCoroutine</definition>
+        <argsstring>(Transform camera, float intensity, float duration, AnimationCurve curve, bool useRealtime)</argsstring>
+        <name>ScreenshakeCoroutine</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Cameras.CameraShake.ScreenshakeCoroutine</qualifiedname>
+        <param>
+          <type>Transform</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>intensity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>curve</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="22" column="35" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="22" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" line="6" column="19" bodyfile="Packages/UnityUtils/Runtime/Script Utils/Camera/CameraShake.cs" bodystart="7" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1ac341fab1ebeb74397156f271e5a3a8d1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>defaultScreenshakeCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a315ce8d6cfc7c18cef165dc4eed951fc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>Screenshake</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake_1a3e43ce25d2ec4c2550f4101917566047" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Cameras::CameraShake</scope><name>ScreenshakeCoroutine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

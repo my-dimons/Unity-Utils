@@ -1,8 +1,10 @@
 var hierarchy =
 [
     [ "UnityUtils.ScriptUtils.Audio.AudioManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html", null ],
+    [ "UnityUtils.ScriptUtils.Cameras.CameraShake", "class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html", null ],
     [ "IPointerClickHandler", null, [
-      [ "UnityUtils.ScriptUtils.UI.UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", null ]
+      [ "UnityUtils.ScriptUtils.UI.UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", null ],
+      [ "UnityUtils.ScriptUtils.UI.UIButtonSceneSwitcher", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html", null ]
     ] ],
     [ "IPointerEnterHandler", null, [
       [ "UnityUtils.ScriptUtils.UI.UIButtonDebugLogs", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html", null ],
@@ -22,12 +24,13 @@ var hierarchy =
     ] ],
     [ "MonoBehaviour", null, [
       [ "UnityUtils.ScriptUtils.Audio.AudioSlider", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_slider.html", null ],
-      [ "UnityUtils.ScriptUtils.Audio.BackgroundMusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_manager.html", null ],
+      [ "UnityUtils.ScriptUtils.Audio.SimpleBackgroundMusic", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html", null ],
       [ "UnityUtils.ScriptUtils.CoroutineHelper", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonDebugLogs", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_logs.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverRotate", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonSFX", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html", null ],
+      [ "UnityUtils.ScriptUtils.UI.UIButtonSceneSwitcher", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonSpawnParticles", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonToggleObjects", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html", null ]
     ] ],

@@ -34,9 +34,7 @@ float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button
 \begin{DoxyCompactList}\small\item\em Random variance to play all audio clips at. \end{DoxyCompactList}\item 
 Audio\+Manager.\+Volume\+Type \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a899a8ade8749b3068571cb65622cf49a}{volume\+Type}} = Audio\+Manager.\+Volume\+Type.\+Sfx
 \begin{DoxyCompactList}\small\item\em Type of audio to use to get proper audio levels. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a83f55fe66b2e853a08d72035dd457daf}{scene\+Switcher\+Button}}
-\begin{DoxyCompactList}\small\item\em If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a597ecbe8a4959f0e1b471d9bfc0e988b}{empty\+Sfx\+Error\+Messages}}
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_ae89df3943971c8847f19010c49257a02}{log\+Empty\+Sfx}}
 \begin{DoxyCompactList}\small\item\em If true this will log errors when trying to play sound effects but they become empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -86,16 +84,6 @@ float Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+SFX.\+click\+Volume = 1f}
 
 Volume to play \doxylink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_adc89b9acd4f48169e335c470ea3214b0}{click\+Sfx} at. 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a597ecbe8a4959f0e1b471d9bfc0e988b}\index{UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}!emptySfxErrorMessages@{emptySfxErrorMessages}}
-\index{emptySfxErrorMessages@{emptySfxErrorMessages}!UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}}
-\doxysubsubsection{\texorpdfstring{emptySfxErrorMessages}{emptySfxErrorMessages}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a597ecbe8a4959f0e1b471d9bfc0e988b} 
-bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+SFX.\+empty\+Sfx\+Error\+Messages}
-
-
-
-If true this will log errors when trying to play sound effects but they become empty. 
-
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_ae952e6b7f589bc3b221416e0d417c313}\index{UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}!hoverEnterSfx@{hoverEnterSfx}}
 \index{hoverEnterSfx@{hoverEnterSfx}!UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}}
 \doxysubsubsection{\texorpdfstring{hoverEnterSfx}{hoverEnterSfx}}
@@ -136,6 +124,16 @@ float Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+SFX.\+hover\+Exit\+Volume = 
 
 Volume to play \doxylink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_ac3dca7053abf536976fd9a7323cef821}{hover\+Exit\+Sfx} at. 
 
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_ae89df3943971c8847f19010c49257a02}\index{UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}!logEmptySfx@{logEmptySfx}}
+\index{logEmptySfx@{logEmptySfx}!UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}}
+\doxysubsubsection{\texorpdfstring{logEmptySfx}{logEmptySfx}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_ae89df3943971c8847f19010c49257a02} 
+bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+SFX.\+log\+Empty\+Sfx}
+
+
+
+If true this will log errors when trying to play sound effects but they become empty. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a134326d73212920ba4bebbaed6b7da80}\index{UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}!pitchVariance@{pitchVariance}}
 \index{pitchVariance@{pitchVariance}!UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}}
 \doxysubsubsection{\texorpdfstring{pitchVariance}{pitchVariance}}
@@ -145,16 +143,6 @@ float Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+SFX.\+pitch\+Variance = 0.\+
 
 
 Random variance to play all audio clips at. 
-
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a83f55fe66b2e853a08d72035dd457daf}\index{UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}!sceneSwitcherButton@{sceneSwitcherButton}}
-\index{sceneSwitcherButton@{sceneSwitcherButton}!UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}}
-\doxysubsubsection{\texorpdfstring{sceneSwitcherButton}{sceneSwitcherButton}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a83f55fe66b2e853a08d72035dd457daf} 
-bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+SFX.\+scene\+Switcher\+Button}
-
-
-
-If true, this button will not call click SFX, because loading scenes and spawning an object at the same time will cause errors. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_a899a8ade8749b3068571cb65622cf49a}\index{UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}!volumeType@{volumeType}}
 \index{volumeType@{volumeType}!UnityUtils.ScriptUtils.UI.UIButtonSFX@{UnityUtils.ScriptUtils.UI.UIButtonSFX}}

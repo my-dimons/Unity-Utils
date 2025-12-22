@@ -3,6 +3,7 @@
   <compounddef id="dir_37c679ec90a8a2763665e83cfd3c17f4" kind="dir">
     <compoundname>Packages/UnityUtils/Runtime/Script Utils</compoundname>
     <innerdir refid="dir_db252fa7b789e7b0f2fe89d360a65912">Packages/UnityUtils/Runtime/Script Utils/Audio</innerdir>
+    <innerdir refid="dir_05061702fb7c106d220e1128a079bddb">Packages/UnityUtils/Runtime/Script Utils/Camera</innerdir>
     <innerdir refid="dir_facf1fad18e8f724169afb99e1e301eb">Packages/UnityUtils/Runtime/Script Utils/Objects</innerdir>
     <innerdir refid="dir_bfcc3fef8087e40b6de73f7c3da76010">Packages/UnityUtils/Runtime/Script Utils/Particles</innerdir>
     <innerdir refid="dir_36ed9bde031f6096a92cd6d1e38d0be1">Packages/UnityUtils/Runtime/Script Utils/Scriptable Objects</innerdir>
