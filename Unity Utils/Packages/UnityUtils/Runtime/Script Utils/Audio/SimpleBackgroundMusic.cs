@@ -60,7 +60,7 @@ namespace UnityUtils.ScriptUtils.Audio
 
         /// If true, will output a Debug.Log every <see cref="logSongProgessEveryPercent"/>, detailing how much of the current song has been played.
         public bool logSongProgress;
-        /// Will only log song progress every <see cref="logSongProgessEveryPercent"/> percent.
+        /// Will only log song progress every <see cref="logSongProgessEveryPercent"/> PERCENT.
         public float logSongProgessEveryPercent = 1;
         private float lastLoggedPercent;
 
@@ -77,7 +77,7 @@ namespace UnityUtils.ScriptUtils.Audio
 
             if (fadeTime <= 0)
             {
-                fadeVolume = 1;
+                fadeVolume = AudioManager.MAX_AUDIO_VOLUME;
             }
         }
 
@@ -94,12 +94,14 @@ namespace UnityUtils.ScriptUtils.Audio
         {
             CalculateMusicVolume();
 
-            #region Debug.Logs
+            #region Debug.Logs()
+            // Song progress
             if (playingMusicCoroutine != null && musicSource.isPlaying && logSongProgress)
             {
                 DebugSongProgress();
             }
 
+            // Fade volume
             bool fadeVolumeInRange = fadeVolume > 0 && fadeVolume < 1;
             if (logFadeVolume && fadeVolumeInRange)
             {
@@ -110,7 +112,7 @@ namespace UnityUtils.ScriptUtils.Audio
 
         private void CalculateMusicVolume()
         {
-            musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1 * fadeVolume, AudioManager.VolumeType.Music);
+            musicSource.volume = AudioManager.CalculateVolumeBasedOnType(AudioManager.MAX_AUDIO_VOLUME * fadeVolume, AudioManager.VolumeType.Music);
         }
 
         /// <summary>
@@ -122,11 +124,11 @@ namespace UnityUtils.ScriptUtils.Audio
             {
                 PlaySingleRandomMusicTrack();
 
-                TweenVolume(0, 1);
+                TweenVolume(AudioManager.MIN_AUDIO_VOLUME, AudioManager.MAX_AUDIO_VOLUME);
 
                 yield return new WaitForSecondsRealtime(currentPlayingTrack.length - fadeTime);
 
-                TweenVolume(1, 0);
+                TweenVolume(AudioManager.MAX_AUDIO_VOLUME, AudioManager.MIN_AUDIO_VOLUME);
 
                 yield return new WaitForSecondsRealtime(fadeTime);
 
@@ -229,7 +231,9 @@ namespace UnityUtils.ScriptUtils.Audio
         private void DebugSongProgress()
         {
             int decimalRounding = 2;
-            float progressPercent = (musicSource.time / currentPlayingTrack.length) * 100;
+            const int PERCENT = 100;
+
+            float progressPercent = (musicSource.time / currentPlayingTrack.length) * PERCENT;
 
             bool logPercent = progressPercent > lastLoggedPercent + logSongProgessEveryPercent;
 

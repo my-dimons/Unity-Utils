@@ -7,7 +7,7 @@ namespace UnityUtils.ScriptUtils.UI
 {
     public class UIButtonSceneSwitcher : MonoBehaviour, IPointerClickHandler
     {
-        [Header("Scene Loading (Only use 1 of the below varaibles, leave 1 default)")]
+        [Header("Scene Loading (Only use 1 of the below variables, leave 1 default)")]
 
         /// If this value is not empty, it will load the scene on click using the sceneName 
         public string sceneName = "";

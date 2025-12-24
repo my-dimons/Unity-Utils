@@ -13,14 +13,14 @@ namespace UnityUtils.ScriptUtils.UI
         /// Sound to play when the mouse cursor enters the buttons hitbox.
         public AudioClip hoverEnterSfx;
         /// Volume to play <see cref="hoverEnterSfx"/> at.
-        public float hoverEnterVolume = 1f;
+        public float hoverEnterVolume = AudioManager.MAX_AUDIO_VOLUME;
 
         [Space(5)]
 
         /// Sound to play when the mouse cursor exits the buttons hitbox.
         public AudioClip hoverExitSfx;
         /// Volume to play <see cref="hoverExitSfx"/> at.
-        public float hoverExitVolume = 1f;
+        public float hoverExitVolume = AudioManager.MAX_AUDIO_VOLUME;
 
         [Space(5)]
 
@@ -28,12 +28,12 @@ namespace UnityUtils.ScriptUtils.UI
         public AudioClip clickSfx;
 
         /// Volume to play <see cref="clickSfx"/> at.
-        public float clickVolume = 1f;
+        public float clickVolume = AudioManager.MAX_AUDIO_VOLUME;
 
         [Header("Adjustable Values")]
 
         /// Random variance to play all audio clips at.
-        public float pitchVariance = 0.1f;
+        public float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE;
 
         /// Type of audio to use to get proper audio levels.
         public AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx;

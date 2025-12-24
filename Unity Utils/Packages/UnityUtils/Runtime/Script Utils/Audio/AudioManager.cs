@@ -9,6 +9,10 @@ namespace UnityUtils.ScriptUtils.Audio
     /// </summary>
     public static class AudioManager
     {
+        public static readonly float MAX_AUDIO_VOLUME = 1f;
+        public static readonly float MIN_AUDIO_VOLUME = 0f;
+        public static readonly float DEFAULT_PITCH_VARIANCE = 0.1f;
+
         /// Holds different audio types for volume calculations
         public enum VolumeType
         {
@@ -21,11 +25,11 @@ namespace UnityUtils.ScriptUtils.Audio
 
         static readonly Dictionary<VolumeType, float> audioVolumes = new Dictionary<VolumeType, float>()
         {
-            { VolumeType.Global, 1f },
-            { VolumeType.Sfx,    1f },
-            { VolumeType.Music,  1f },
-            { VolumeType.UI,     1f },
-            { VolumeType.Custom, 1f },
+            { VolumeType.Global, MAX_AUDIO_VOLUME },
+            { VolumeType.Sfx,    MAX_AUDIO_VOLUME },
+            { VolumeType.Music,  MAX_AUDIO_VOLUME },
+            { VolumeType.UI,     MAX_AUDIO_VOLUME },
+            { VolumeType.Custom, MAX_AUDIO_VOLUME },
         };
 
         /// <summary>
@@ -46,11 +50,11 @@ namespace UnityUtils.ScriptUtils.Audio
         }
 
         /// <summary>
-        /// Sets the volume level for the specified audio type to the new volume. Clamps to a range between 0-1 inclusive
+        /// Sets the volume level for the specified audio type to the new volume. Auto clamps to the min/max audio volume (0-1)
         /// </summary>
         public static void SetVolume(VolumeType volumeType, float volume)
         {
-            audioVolumes[volumeType] = Mathf.Clamp01(volume);
+            audioVolumes[volumeType] = Mathf.Clamp(volume, MIN_AUDIO_VOLUME, MAX_AUDIO_VOLUME);
         }
 
         /// <summary>
@@ -91,6 +95,6 @@ namespace UnityUtils.ScriptUtils.Audio
         /// Calculates the pitch variance to add randomness to playback.
         /// </summary>
         /// <returns>Random number between 1 - pitchVariance and 1 + pitchVariance.</returns>
-        public static float CalculatePitchVariance(float pitchVariance) => UnityEngine.Random.Range(1 - pitchVariance, 1 + pitchVariance);
+        public static float CalculatePitchVariance(float pitchVariance) => UnityEngine.Random.Range(MAX_AUDIO_VOLUME - pitchVariance, MAX_AUDIO_VOLUME + pitchVariance);
     }
 }

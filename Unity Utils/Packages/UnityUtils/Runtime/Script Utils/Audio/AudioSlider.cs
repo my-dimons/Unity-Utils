@@ -7,7 +7,7 @@ namespace UnityUtils.ScriptUtils.Audio
     public class AudioSlider : MonoBehaviour
     {
         /// Type of audio volume to modify on update.
-        public AudioManager.VolumeType volumeType;
+        [SerializeField] private AudioManager.VolumeType volumeType;
 
         [Space(10)]
 

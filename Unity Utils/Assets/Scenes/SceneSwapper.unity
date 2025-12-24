@@ -593,7 +593,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   useRandomRotation: 0
   randomRotation: {x: -5, y: 5}
-  applyTransform: {fileID: 0}
+  applyTransform: {fileID: 1106750801}
   hoveringOverButton: 0
   logRotate: 0
   logRotateSetPos: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  applyTransform: {fileID: 0}
+  applyTransform: {fileID: 1106750801}
   hoveringOverButton: 0
   logScale: 0
   logScaleUp: 0

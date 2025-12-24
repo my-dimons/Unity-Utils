@@ -15,8 +15,6 @@ namespace UnityUtils.ScriptUtils.Audio
 {
     public static class SfxManager
     {
-        private const float DEFAULT_PITCH_VARIANCE = 0.1f;
-
         /// <summary>
         /// Plays an <see cref="AudioClip"/> globally (non-spacialy) at a certain volume with a pitch variance (to feel less repetative).
         /// </summary>
@@ -24,11 +22,11 @@ namespace UnityUtils.ScriptUtils.Audio
         /// <param name="volume">Playback volume.</param>
         /// <param name="pitchVariance">
         /// Random variance to make sound feel less repetative. 
-        /// randomly modifies the pitch of the Music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="DEFAULT_PITCH_VARIANCE"/> is the default value).
+        /// randomly modifies the pitch of the Music<see cref="AudioSource"/> in a random of 1 - pitchVariance, and 1 + pitchVariance (<see cref="AudioManager.DEFAULT_PITCH_VARIANCE"/> is the default value).
         /// </param>
         public static void PlaySfxAudioClip(AudioClip clip, float volume = 1, float pitchVariance = default, AudioManager.VolumeType type = AudioManager.VolumeType.Sfx)
         {
-            if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
+            if (pitchVariance == default) pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE;
 
             CreateAndPlayAudioClip(clip, volume, pitchVariance, type: type);
         }
@@ -58,7 +56,7 @@ namespace UnityUtils.ScriptUtils.Audio
         /// </param>
         public static void PlaySpacialSfxAudioClip(AudioClip clip, Vector3 position, float volume = 1, float pitchVariance = default, AudioManager.VolumeType type = AudioManager.VolumeType.Sfx)
         {
-            if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
+            if (pitchVariance == default) pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE;
 
             CreateAndPlayAudioClip(clip, volume, pitchVariance, position: position, type: type);
         }
@@ -74,7 +72,7 @@ namespace UnityUtils.ScriptUtils.Audio
         /// </param>
         public static void PlayClipOnSource(AudioClip clip, AudioSource source, float volume = 1, float pitchVariance = default, AudioManager.VolumeType audioType = AudioManager.VolumeType.Sfx)
         {
-            if (pitchVariance == default) pitchVariance = DEFAULT_PITCH_VARIANCE;
+            if (pitchVariance == default) pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE;
 
             PlayAudioClipOnSource(clip, source, volume, pitchVariance, audioType);
         }

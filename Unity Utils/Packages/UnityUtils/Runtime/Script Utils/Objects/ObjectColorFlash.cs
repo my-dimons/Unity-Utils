@@ -13,15 +13,15 @@ namespace UnityUtils.ScriptUtils.Objects
         /// If true, will Debug.Log the color and duration when flashing
         [SerializeField] private bool logFlash;
 
-        private string materialPath = "Materials/ColorFlash";
+        private const string MATERIAL_PATH = "Materials/ColorFlash";
 
         private Material flashMaterial;
 
-        private Color originalColor;
+        private Material originalMaterial;
 
         private SpriteRenderer spriteRenderer;
 
-        private Material originalMaterial;
+        private Color originalColor;
 
         private Coroutine flashRoutine;
 
@@ -33,7 +33,7 @@ namespace UnityUtils.ScriptUtils.Objects
 
             originalMaterial = spriteRenderer.material;
 
-            flashMaterial = Resources.Load<Material>(materialPath);
+            flashMaterial = Resources.Load<Material>(MATERIAL_PATH);
             if (logLoadMaterial)
                 Debug.Log("Loaded color flash material: " + flashMaterial);
 
@@ -49,7 +49,7 @@ namespace UnityUtils.ScriptUtils.Objects
         }
 
         /// <summary>
-        /// Flashes a <see cref="SpriteRenderer"/> to a certain color for a set time
+        /// Flashes a <see cref="SpriteRenderer"/> to a certain color for a set time.
         /// </summary>
         /// <param name="color">Color to switch to</param>
         /// <param name="duration">Time to switch the color for in seconds</param>
