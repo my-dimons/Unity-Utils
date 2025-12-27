@@ -102,9 +102,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_sfx_manager_1ae9503d55ecfed4c01d939714a2453689" kind="function"><name>PlayAudioClipOnSource</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music" kind="class"><name>UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1afe850aefee77b3c067a2aeaf65a95ed4" kind="variable"><name>musicSource</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1af740ea560f8e1acf9f2535f1ebb8b2b4" kind="variable"><name>fadeVolume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a7dd02639adfe12bbff0e294e6ec0ae4b" kind="variable"><name>lastLoggedPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a03f42f9ea5149d563659554dfa663d20" kind="variable"><name>musicTracks</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a01739ca739685e352f8d04e24344d187" kind="variable"><name>currentPlayingTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a1da5c6f9793376ca46b59dc064b3f940" kind="variable"><name>playOnAwake</name></member>
@@ -117,6 +114,9 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abaa7aaaba055da7ad7ebe13691a9cc5a" kind="variable"><name>logSongProgress</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1aa6e4ea3cf1e5d5598daf4e18d5fe432f" kind="variable"><name>logSongProgessEveryPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1abc05157265ad9a1b606d5905efa22011" kind="variable"><name>playingMusicCoroutine</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1af740ea560f8e1acf9f2535f1ebb8b2b4" kind="variable"><name>fadeVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a7dd02639adfe12bbff0e294e6ec0ae4b" kind="variable"><name>lastLoggedPercent</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1afe850aefee77b3c067a2aeaf65a95ed4" kind="variable"><name>musicSource</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a772726b4d48200d6b8a8744804f37998" kind="property"><name>Instance</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1a8e1342fbf9e972feb053021961c4f58d" kind="function"><name>Awake</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music_1ae3d9817bbcbfee665495596a41dd65d1" kind="function"><name>Start</name></member>

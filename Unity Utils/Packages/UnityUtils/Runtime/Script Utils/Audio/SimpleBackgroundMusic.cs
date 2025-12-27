@@ -20,8 +20,6 @@ namespace UnityUtils.ScriptUtils.Audio
     [RequireComponent(typeof(AudioSource))]
     public class SimpleBackgroundMusic : MonoBehaviour
     {
-        private AudioSource musicSource;
-
         [Header("Music")]
 
         /// An array of audio clips representing the available Music tracks.
@@ -69,6 +67,8 @@ namespace UnityUtils.ScriptUtils.Audio
         public static SimpleBackgroundMusic Instance { get; private set; }
 
         public Coroutine playingMusicCoroutine;
+
+        private AudioSource musicSource;
 
         void Awake()
         {
