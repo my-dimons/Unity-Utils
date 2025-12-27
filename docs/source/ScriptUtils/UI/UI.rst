@@ -21,3 +21,4 @@ Scripts
    UIButtonSpawnParticles
    UIButtonToggleObjects
    UIButtonSceneSwitcher
+   UIButtonHoverPosition

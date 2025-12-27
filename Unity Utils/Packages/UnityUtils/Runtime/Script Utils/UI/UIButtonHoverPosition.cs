@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityUtils.ScriptUtils.Objects;
@@ -6,11 +6,11 @@ using UnityUtils.ScriptUtils.Objects;
 namespace UnityUtils.ScriptUtils.UI
 {
     [RequireComponent(typeof(Button))]
-    public class UIButtonHoverExpand : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class UIButtonHoverPosition : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [Header("Adjustable Values")]
         /// When hovered this is the size the button will be set to.
-        public float hoverSize = 1.1f;
+        public Vector3 hoverLocalPosition;
 
         /// The amount of seconds that the button will size up or down in.
         public float sizeAnimationSeconds = 0.1f;
@@ -42,22 +42,22 @@ namespace UnityUtils.ScriptUtils.UI
         /// Log second rotate back to default pos.
         public bool logScaleDown;
 
-        Vector3 originalSize;
-        Vector3 hoverSizeVector;
+        Vector3 originalPosition;
+        Vector3 hoverPositionVector;
 
         // Starter is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            originalSize = transform.localScale;
+            originalPosition = transform.localPosition;
         }
 
         // Update is called once per frame
         void Update()
         {
-            hoverSizeVector = new Vector3(hoverSize, hoverSize, hoverSize);
+            hoverPositionVector = transform.localPosition + hoverLocalPosition;
 
             // Stops choppy animation when spam hovering the button
-            if (!hoveringOverButton && transform.localScale == hoverSizeVector)
+            if (!hoveringOverButton && transform.localPosition == hoverPositionVector)
             {
                 ExitHoverAnimation();
             }
@@ -65,7 +65,7 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (transform.localScale == originalSize)
+            if (transform.localPosition == originalPosition)
                 EnterHoverAnimation();
 
             hoveringOverButton = true;
@@ -73,34 +73,34 @@ namespace UnityUtils.ScriptUtils.UI
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (transform.localScale == hoverSizeVector)
+            if (transform.localPosition == hoverPositionVector)
                 ExitHoverAnimation();
 
             hoveringOverButton = false;
         }
 
         /// <summary>
-        /// Grows the button to the set size: (<see cref="hoverSizeVector"/>).
+        /// Moves the button to the set position: (<see cref="hoverPositionVector"/>).
         /// </summary>
         void EnterHoverAnimation()
         {
-            ObjectAnimations.AnimateTransformScale(applyTransform, originalSize, hoverSizeVector, sizeAnimationSeconds, useRealtime, SizingCurve);
+            ObjectAnimations.AnimateTransformPosition(applyTransform, originalPosition, hoverPositionVector, sizeAnimationSeconds, useRealtime, SizingCurve);
 
             if (logScaleUp)
-                Debug.Log("Scaling button up");
+                Debug.Log("Moving button to position");
 
             DebugRotate();
         }
 
         /// <summary>
-        /// Shrinks the button to its original size.
+        /// Moves the button to its original position.
         /// </summary>
         void ExitHoverAnimation()
         {
-            ObjectAnimations.AnimateTransformScale(applyTransform, hoverSizeVector, originalSize, sizeAnimationSeconds, useRealtime, SizingCurve);
+            ObjectAnimations.AnimateTransformPosition(applyTransform, hoverPositionVector, originalPosition, sizeAnimationSeconds, useRealtime, SizingCurve);
 
             if (logScaleDown)
-                Debug.Log("Scaling button down");
+                Debug.Log("Moving button back");
 
             DebugRotate();
         }
@@ -108,7 +108,7 @@ namespace UnityUtils.ScriptUtils.UI
         private void DebugRotate()
         {
             if (logScale)
-                Debug.Log("Scaled button");
+                Debug.Log("Moved button");
         }
 
         void Reset()
