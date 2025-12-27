@@ -9,13 +9,15 @@ namespace UnityUtils.ScriptUtils.Objects
 {
     public static class ObjectAnimations
     {
+        private static AnimationCurve defaultAnimationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+
         #region Transforms
         /// <summary>
         /// Animates an objects <see cref="Transform"/> components scale from a starting value to an ending value over a specified duration.
         /// </summary>
         public static void AnimateTransformScale(Transform transform, Vector3 startScale, Vector3 endScale, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+            if (animationCurve == default) animationCurve = defaultAnimationCurve;
 
             AnimateValue<Vector3>(startScale, endScale, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.localScale = value, useRealtime, animationCurve);
         }
@@ -25,7 +27,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// </summary>
         public static void AnimateTransformPosition(Transform transform, Vector3 startPos, Vector3 endPos, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+            if (animationCurve == default) animationCurve = defaultAnimationCurve;
 
             AnimateValue<Vector3>(startPos, endPos, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.position = value, useRealtime, animationCurve);
         }
@@ -35,7 +37,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// </summary>
         public static void AnimateTransformRotation(Transform transform, Vector3 startRotation, Vector3 endRotation, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+            if (animationCurve == default) animationCurve = defaultAnimationCurve;
 
             AnimateValue<Vector3>(startRotation, endRotation, duration, (a, b, t) => Vector3.Lerp(a, b, t), value => transform.localRotation = Quaternion.Euler(value), useRealtime, animationCurve);
         }
@@ -47,7 +49,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// </summary>
         public static void AnimateSpriteRendererOpacity(SpriteRenderer spriteRenderer, float startOpacity, float endOpacity, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+            if (animationCurve == default) animationCurve = defaultAnimationCurve;
 
             Color color = spriteRenderer.color;
 
@@ -59,7 +61,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// </summary>
         public static void AnimateImageOpacity(Image image, float startOpacity, float endOpacity, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+            if (animationCurve == default) animationCurve = defaultAnimationCurve;
 
             Color color = image.color;
 
@@ -71,7 +73,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// </summary>
         public static void AnimateCanvasGroupOpacity(CanvasGroup group, float startOpacity, float endOpacity, float duration, bool useRealtime = false, AnimationCurve animationCurve = default)
         {
-            if (animationCurve == default) animationCurve = AnimationCurve.Linear(0, 0, 1, 1);
+            if (animationCurve == default) animationCurve = defaultAnimationCurve;
 
             AnimateValue<float>(startOpacity, endOpacity, duration, (a, b, t) => Mathf.Lerp(a, b, t), value => group.alpha = value, useRealtime, animationCurve);
         }
@@ -112,7 +114,7 @@ namespace UnityUtils.ScriptUtils.Objects
         /// <param name="animationCurve">Default is a linear curve</param>
         public static void AnimateValue<T>(T start, T end, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false, AnimationCurve curve = default)
         {
-            if (curve == default) curve = AnimationCurve.Linear(0, 0, 1, 1);
+            if (curve == default) curve = defaultAnimationCurve;
             CoroutineHelper.Starter.StartCoroutine(AnimateValueCoroutine(start, end, curve, duration, lerpFunction, onValueChanged, useRealtime));
         }
         private static IEnumerator AnimateValueCoroutine<T>(T start, T end, AnimationCurve curve, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false)

@@ -60,8 +60,10 @@ namespace UnityUtils.ScriptUtils.Audio
 
         /// If true, will output a Debug.Log every <see cref="logSongProgessEveryPercent"/>, detailing how much of the current song has been played.
         public bool logSongProgress;
+
         /// Will only log song progress every <see cref="logSongProgessEveryPercent"/> PERCENT.
         public float logSongProgessEveryPercent = 1;
+
         private float lastLoggedPercent;
 
         public static SimpleBackgroundMusic Instance { get; private set; }
@@ -230,7 +232,7 @@ namespace UnityUtils.ScriptUtils.Audio
 
         private void DebugSongProgress()
         {
-            int decimalRounding = 2;
+            const int DECIMAL_ROUNDING = 2;
             const int PERCENT = 100;
 
             float progressPercent = (musicSource.time / currentPlayingTrack.length) * PERCENT;
@@ -240,9 +242,9 @@ namespace UnityUtils.ScriptUtils.Audio
             if (logPercent)
             {
                 Debug.Log("Current song progress: "
-                    + Math.Round(progressPercent, decimalRounding) + "% ("
-                    + Math.Round(musicSource.time, decimalRounding) + "s / "
-                    + Math.Round(currentPlayingTrack.length, decimalRounding) + "s)");
+                    + Math.Round(progressPercent, DECIMAL_ROUNDING) + "% ("
+                    + Math.Round(musicSource.time, DECIMAL_ROUNDING) + "s / "
+                    + Math.Round(currentPlayingTrack.length, DECIMAL_ROUNDING) + "s)");
 
                 lastLoggedPercent = progressPercent;
             }

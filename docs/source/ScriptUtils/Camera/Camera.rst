@@ -13,3 +13,4 @@ Scripts
    :maxdepth: 1
    
    CameraShake
+   CameraBillboard

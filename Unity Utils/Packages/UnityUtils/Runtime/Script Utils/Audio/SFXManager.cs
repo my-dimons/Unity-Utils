@@ -81,6 +81,8 @@ namespace UnityUtils.ScriptUtils.Audio
         {
             if (type == default) type = AudioManager.VolumeType.Sfx;
 
+            const int SOUND_2D = 0, SOUND_3D = 1;
+
             GameObject temporaryGameObject = new GameObject("Temporary Audio Clip [UnityUtils]");
             AudioSource audioSource = temporaryGameObject.AddComponent<AudioSource>();
 
@@ -93,12 +95,12 @@ namespace UnityUtils.ScriptUtils.Audio
             if (position == default)
             {
                 temporaryGameObject.transform.position = Camera.main.transform.position;
-                audioSource.spatialBlend = 0f; // 2D sound
+                audioSource.spatialBlend = SOUND_2D;
             }
             else
             {
                 temporaryGameObject.transform.position = position;
-                audioSource.spatialBlend = 1f; // 3D sound
+                audioSource.spatialBlend = SOUND_3D;
             }
 
             if (pitch == default)
