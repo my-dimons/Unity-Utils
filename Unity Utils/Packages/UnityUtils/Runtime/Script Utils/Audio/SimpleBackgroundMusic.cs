@@ -3,23 +3,13 @@ using System.Collections;
 using UnityEngine;
 using UnityUtils.ScriptUtils.Objects;
 
-/*
- *
- * This script should be created in the main scene, and it will persist through all scenes
- * 
- * This script is designed to keep a set of predefined Music tracks playing randomly in the background. 
- * It does not support dynamic soundtracks, such as changing Music based on the player's location or game events.
- * But this script does have a few functions to stop and start Music
- * 
- * Sometimes this script will bug out if you don't have run in background enabled in Unity (https://discussions.unity.com/t/how-do-you-keep-your-game-running-even-when-you-switch-out-of-it/928)
- *
- */
-
 namespace UnityUtils.ScriptUtils.Audio
 {   
     [RequireComponent(typeof(AudioSource))]
     public class SimpleBackgroundMusic : MonoBehaviour
     {
+        private AudioSource musicSource;
+
         [Header("Music")]
 
         /// An array of audio clips representing the available Music tracks.
@@ -67,8 +57,6 @@ namespace UnityUtils.ScriptUtils.Audio
         public static SimpleBackgroundMusic Instance { get; private set; }
 
         public Coroutine playingMusicCoroutine;
-
-        private AudioSource musicSource;
 
         void Awake()
         {

@@ -1,16 +1,6 @@
 using UnityEngine;
 using UnityUtils.ScriptUtils.Objects;
 
-/*
- * To setup this script:
- *    - Create an empty game object in your scene and attach this script to it
- *    - Make sure you have a AudioManager.cs script in your project (This is used to get volume levels)
- * 
- *  To play audio globally (same volume no matter what), use "PlaySfxAudioClip()"
- *  To play audio spacialy (change volume and channel depending on location), use "PlaySpacialSfxAudioClip()"
- *  To play audio on a set audio audioSource (such as a character or object), use "PlayClipOnSource()"
- */
-
 namespace UnityUtils.ScriptUtils.Audio
 {
     public static class SfxManager
