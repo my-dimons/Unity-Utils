@@ -29,6 +29,11 @@ Example Usage
    	}
    }
    
+
+.. tip::
+   
+   Use .wav format audio for better audio quality and looping!
+   
 Functions
 ---------
 
