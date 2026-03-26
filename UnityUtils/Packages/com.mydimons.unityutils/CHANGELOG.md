@@ -1,3 +1,14 @@
+## v2.0.0
+
+### Additions
+- SFX class to play audio clips with set parameters
+
+### Changes
+- SFXManager now only accepts SFX objects as parameters (Removed all other functions)
+
+### Fixes
+- Made all variables properly document their usage in both the docs and in IDE's
+
 ## v1.3.4 - Finally Fixing ObjectColorFlash (I hope)
 
 ### Additions
