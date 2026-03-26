@@ -7,16 +7,24 @@ namespace UnityUtils.ScriptUtils.Audio {
   /// Holds variables/functions for other audio scripts (Such as Global volume)
   /// </summary>
   public static class AudioManager {
+    /// <summary>
     /// Maximum audio volume.
+    /// </summary>
     public const float MAX_AUDIO_VOLUME = 1f;
 
+    /// <summary>
     /// Minimum audio volume.
+    /// </summary>
     public const float MIN_AUDIO_VOLUME = 0f;
 
+    /// <summary>
     /// Default pitch variance used around the package.
+    /// </summary>
     public const float DEFAULT_PITCH_VARIANCE = 0.1f;
 
+    /// <summary>
     /// Holds different audio types for volume calculations
+    /// </summary>
     public enum VolumeType {
       Global,
       Sfx,
@@ -25,6 +33,9 @@ namespace UnityUtils.ScriptUtils.Audio {
       Custom
     }
 
+    /// <summary>
+    /// A dictionary of the <see cref="VolumeType"/> and its coresponding <see cref="float"/> volume.
+    /// </summary>
     static readonly Dictionary<VolumeType, float> audioVolumes = new()
     {
       { VolumeType.Global, MAX_AUDIO_VOLUME },

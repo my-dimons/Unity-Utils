@@ -1,9 +1,13 @@
 ﻿namespace UnityUtils.ScriptUtils.Objects {
   public class ObjectModifierData<T> {
+    /// <summary>
     /// Specifies the classType of modifier applied to the object.
+    /// </summary>
     public ModifierType modifierType;
 
+    /// <summary>
     /// Value of the modifier applied to an operation or calculation.
+    /// </summary>
     public T modifierValue;
 
     /// <summary>

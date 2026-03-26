@@ -4,12 +4,16 @@ using UnityEngine.UI;
 namespace UnityUtils.ScriptUtils.Audio {
   [RequireComponent(typeof(Slider))]
   public class AudioSlider : MonoBehaviour {
+    /// <summary>
     /// Type of audio volume to modify on update.
+    /// </summary>
     public AudioManager.VolumeType volumeType;
 
     [Space(10)]
 
+    /// <summary>
     /// If true, this will print a debug log of the updated volume on update. Warning: While being used, this will output lots of Debug.Logs.
+    /// </summary>
     public bool logSliderValueChange = true;
 
     private Slider slider;

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityUtils.ScriptUtils.Audio;
 
 /// <summary>
-/// 
+/// Used in <see cref="SfxManager"/> to play audio clips with some set parameters.
 /// </summary>
 public class SFX {
   /// <summary>

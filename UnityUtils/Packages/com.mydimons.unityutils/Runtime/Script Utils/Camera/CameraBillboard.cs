@@ -2,15 +2,21 @@
 
 namespace UnityUtils.ScriptUtils.Cameras {
   public class CameraBillboard : MonoBehaviour {
+    /// <summary>
     /// If true, will ignore the selected camera and use Camera.main.
+    /// </summary>
     public bool useMainCamera;
 
     [Space(10)]
 
+    /// <summary>
     /// Camera to look at
+    /// </summary>
     public Camera billboardCamera;
 
+    /// <summary>
     /// Extra angle to rotate at, only change if the default is not working
+    /// </summary>
     public float extraAngleRotation = 180;
 
     void Update() {

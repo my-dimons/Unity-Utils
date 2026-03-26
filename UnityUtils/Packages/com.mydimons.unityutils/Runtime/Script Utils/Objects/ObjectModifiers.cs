@@ -5,27 +5,63 @@ using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.Objects {
   public class ObjectModifiers<T> {
+    /// <summary>
     /// The default modifier order
-    public static readonly ModifierType[] DEFAULT_MODIFIER_ORDER = new ModifierType[] { ModifierType.Flat, ModifierType.Multiply, ModifierType.Divide };
+    /// </summary>
+    public static readonly ModifierType[] DEFAULT_MODIFIER_ORDER = new ModifierType[] { ModifierType.Flat, ModifierType.Multiply, ModifierType.Divide, ModifierType.Root, ModifierType.Exponent };
 
+    private ModifierType[] _modifierOrder = (ModifierType[])DEFAULT_MODIFIER_ORDER.Clone();
+    private static readonly int ModifierTypeCount = Enum.GetValues(typeof(ModifierType)).Length;
+
+    /// <summary>
     /// The applied modifier order
-    public ModifierType[] ModifierOrder = DEFAULT_MODIFIER_ORDER;
+    /// </summary>
+    /// <remarks>When setting this array, you must include all <see cref="ModifierType"/>'s, 
+    /// and it may not include any duplicates.</remarks>
+    public ModifierType[] ModifierOrder {
+      get => (ModifierType[])_modifierOrder.Clone();
+      set {
+        if (value == null)
+          throw new ArgumentNullException(nameof(value));
 
+        var set = new HashSet<ModifierType>(value);
+
+        if (set.Count != value.Length)
+          throw new ArgumentException("ModifierOrder cannot contain duplicate values.");
+
+        if (value.Length != ModifierTypeCount)
+          throw new ArgumentException("ModifierOrder must include all modifier types.");
+
+        foreach (ModifierType type in Enum.GetValues(typeof(ModifierType))) {
+          if (!set.Contains(type))
+            throw new ArgumentException($"ModifierOrder is missing {type}.");
+        }
+
+        _modifierOrder = (ModifierType[])value.Clone();
+      }
+    }
+
+    /// <summary>
     /// Modifiers to be applied when calculating modifiers, must be modified via <see cref="AddModifier(ObjectModifierData)"/>, or temporarily modified via <see cref="AddTemporaryModifier(ObjectModifierData, float, bool)"/>
+    /// </summary>
     public List<ObjectModifierData<T>> Modifiers = new();
 
     /// <summary>
     /// Adds the <see cref="ObjectModifierData"/> modifier to <see cref="Modifiers"/>
     /// </summary>
     /// <param name="modifier">The modifier to add to the object</param>
-    public void AddModifier(ObjectModifierData<T> modifier) { Modifiers.Add(modifier); }
+    public void AddModifier(ObjectModifierData<T> modifier) {
+      Modifiers.Add(modifier);
+    }
 
     /// <summary>
     /// Creates a new <see cref="ObjectModifierData"/> with the specified <see cref="ModifierType"/> and value and adds it to <see cref="Modifiers"/>
     /// </summary>
     /// <param name="modifierType">The classType of modifier to add</param>
     /// <param name="modifierValue">The value associated with the modifier</param>
-    public void AddModifier(ModifierType modifierType, T modifierValue) { Modifiers.Add(new ObjectModifierData<T>(modifierType, modifierValue)); }
+    public void AddModifier(ModifierType modifierType, T modifierValue) {
+      Modifiers.Add(new ObjectModifierData<T>(modifierType, modifierValue));
+    }
 
     /// <summary>
     /// Temporarily adds the <see cref="ObjectModifierData"/> modifier to <see cref="Modifiers"/>. Once the time is over, it will remove the <see cref="ObjectModifierData"/> from <see cref="Modifiers"/>
