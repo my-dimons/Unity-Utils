@@ -7,7 +7,8 @@
 - SFXManager now only accepts SFX objects as parameters (Removed all other functions)
 
 ### Fixes
-- Made all variables properly document their usage in both the docs and in IDE's
+- Made all variables properly document their usage in both the docs and in IDE's (Previously would not work in IDE's)
+- UnityUtils docs now use "UnityUtils" instead of "Unity Utils" as the project name
 
 ## v1.3.4 - Finally Fixing ObjectColorFlash (I hope)
 

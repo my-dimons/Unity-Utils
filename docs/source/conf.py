@@ -3,12 +3,12 @@ import os
 
 # -- Project information
 
-project = 'Unity Utils'
+project = 'UnityUtils'
 copyright = '2025, mydimons'
 author = 'mydimons'
 
-release = '1.3.4'
-version = '1.3.4'
+release = '2.0.0'
+version = '2.0.0'
 
 # -- General configuration
 
