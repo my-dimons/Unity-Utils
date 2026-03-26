@@ -5,11 +5,11 @@ using UnityEngine.UI;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonToggleObjects : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
-    [Header("Objects")]
 
     /// <summary>
     /// Will toggle all objects's active state in this array on hover
     /// </summary>
+    [Header("Objects")]
     public GameObject[] hoverToggleObjects;
 
     /// <summary>

@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 
 namespace UnityUtils.ScriptUtils.UI {
   public class UIButtonSceneSwitcher : MonoBehaviour, IPointerClickHandler {
-    [Header("Scene Loading (Only use 1 of the below variables, leave 1 default)")]
 
     /// <summary>
     /// If this value is not empty, it will load the scene on click using the sceneName 
     /// </summary>
+    [Header("Scene Loading (Only use 1 of the below variables, leave 1 default)")]
     public string sceneName = "";
 
     /// <summary>
@@ -16,18 +16,18 @@ namespace UnityUtils.ScriptUtils.UI {
     /// </summary>
     public int buildIndex = -1;
 
-    [Header("Scene Mode")]
 
     /// <summary>
     /// The <see cref="LoadSceneMode"/> to use when loading the scene
     /// </summary>
+    [Header("Scene Mode")]
     public LoadSceneMode sceneMode;
 
-    [Header("Debug")]
 
     /// <summary>
     /// Will output a <see cref="Debug.Log(object)"/> when switching scenes
     /// </summary>
+    [Header("Debug")]
     public bool logSwitch;
 
     public void OnPointerClick(PointerEventData eventData) {
