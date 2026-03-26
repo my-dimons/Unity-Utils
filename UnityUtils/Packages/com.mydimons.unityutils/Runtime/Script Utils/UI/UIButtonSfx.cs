@@ -6,41 +6,58 @@ using UnityUtils.ScriptUtils.Audio;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonSFX : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
-    [Header("Audio Clips & Volumes")]
 
-    /// Sound to play when the mouse cursor enters the buttons hitbox.
+    /// <summary>
+    /// Sound to play when the button is hovered over
+    /// </summary>
+    [Header("Audio Clips & Volumes")]
     public AudioClip hoverEnterSfx;
+    /// <summary>
     /// Volume to play <see cref="hoverEnterSfx"/> at.
+    /// </summary>
     public float hoverEnterVolume = AudioManager.MAX_AUDIO_VOLUME;
 
     [Space(5)]
 
-    /// Sound to play when the mouse cursor exits the buttons hitbox.
+    /// <summary>
+    /// Sound to play when the button is no longer being hovered.
+    /// </summary>
     public AudioClip hoverExitSfx;
+    /// <summary>
     /// Volume to play <see cref="hoverExitSfx"/> at.
+    /// </summary>
     public float hoverExitVolume = AudioManager.MAX_AUDIO_VOLUME;
 
     [Space(5)]
 
-    /// Sound to play when the mouse clicks on the button.
+    /// <summary>
+    /// Sound to play when the button is clicked
+    /// </summary>
     public AudioClip clickSfx;
 
+    /// <summary>
     /// Volume to play <see cref="clickSfx"/> at.
+    /// </summary>
     public float clickVolume = AudioManager.MAX_AUDIO_VOLUME;
 
-    [Header("Adjustable Values")]
 
+    /// <summary>
     /// Random variance to play all audio clips at.
+    /// </summary>
+    [Header("Adjustable Values")]
     public float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE;
 
+    /// <summary>
     /// Type of audio to use to get proper audio levels.
+    /// </summary>
     public AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx;
 
     private bool sceneLoadTriggered;
 
+    /// <summary>
+    /// Will output a <see cref="Debug.LogWarning(object)"/> when a hover enter, exit, or click SFX tries to be played but no SFX clip is found.
+    /// </summary>
     [Header("Debug")]
-
-    /// If true this will log errors when trying to play sound effects but they become empty
     public bool logEmptySfx;
 
     public void OnPointerEnter(PointerEventData eventData) {

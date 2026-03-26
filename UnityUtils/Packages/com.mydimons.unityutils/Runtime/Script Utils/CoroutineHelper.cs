@@ -5,7 +5,9 @@ namespace UnityUtils.ScriptUtils {
   public class CoroutineHelper : MonoBehaviour {
     private static CoroutineHelper starter;
 
+    /// <summary>
     /// Starter for coroutines that don't stop on loading a new scene.
+    /// </summary>
     public static CoroutineHelper Starter {
       get {
         if (starter == null) {

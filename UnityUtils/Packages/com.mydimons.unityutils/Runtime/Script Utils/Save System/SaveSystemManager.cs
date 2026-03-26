@@ -6,7 +6,9 @@ using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.SaveSystem {
   public static class SaveSystemManager {
+    /// <summary>
     /// If true will output Debug.Log()'s on Save/Load
+    /// </summary>
     public static bool outputLogs = true;
 
     /// <summary>
@@ -137,28 +139,46 @@ namespace UnityUtils.ScriptUtils.SaveSystem {
           .First();
     }
 
+    /// <summary>
+    /// Calls <see cref="ISaveableData.SaveData{T}(T)"/> on all the objects in <paramref name="saveTo"/>
+    /// </summary>
+    /// <param name="dataToSave">Data object to pass into the all the <paramref name="saveTo"/> <see cref="ISaveableData"/>'s</param>
+    /// <param name="saveTo">All the <see cref="ISaveableData"/> objects that get <see cref="ISaveableData.SaveData{T}(T)"/> called on it, with <paramref name="dataToSave"/> passed into it</param>
     public static void SaveAllSaveableData(SaveData dataToSave, List<ISaveableData> saveTo) {
       foreach (ISaveableData saveable in saveTo) {
         saveable.SaveData(dataToSave);
       }
     }
 
+    /// <summary>
+    /// Calls <see cref="SaveAllSaveableData(SaveData, List{ISaveableData})"/>, and calls <see cref="FindAllDataPersistanceObjects"/> as the <see cref="List{ISaveableData}"/>
+    /// </summary>
+    /// <param name="dataToSave">Data object to pass into the all the <see cref="FindAllDataPersistanceObjects()"/> <see cref="ISaveableData"/>'s</param>
     public static void SaveAllSaveableData(SaveData dataToSave) {
       SaveAllSaveableData(dataToSave, FindAllDataPersistanceObjects());
     }
 
-    public static void LoadAllSaveableData(SaveData dataToSave, List<ISaveableData> saveTo) {
-      foreach (ISaveableData saveable in saveTo) {
-        saveable.LoadData(dataToSave);
+
+    /// <summary>
+    /// Calls <see cref="ISaveableData.LoadData{T}(T)"/> on all the objects in <paramref name="loadFrom"/>
+    /// </summary>
+    /// <param name="dataToLoad">Data object to pass into the all the <paramref name="loadFrom"/> <see cref="ISaveableData"/>'s</param>
+    /// <param name="loadFrom">All the <see cref="ISaveableData"/> objects that get <see cref="ISaveableData.LoadData{T}(T)"/> called on it, with <paramref name="dataToLoad"/> passed into it</param>
+    public static void LoadAllSaveableData(SaveData dataToLoad, List<ISaveableData> loadFrom) {
+      foreach (ISaveableData saveable in loadFrom) {
+        saveable.LoadData(dataToLoad);
 
         if (outputLogs)
-          SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(dataToSave.saveFileName));
+          SaveSystemUtils.LogSaveFileLoaded(SaveSystemUtils.GetSaveFilePath(dataToLoad.saveFileName));
       }
     }
 
-    public static void LoadAllSaveableData(SaveData dataToSave) {
-      LoadAllSaveableData(dataToSave, FindAllDataPersistanceObjects());
+    /// <summary>
+    /// Calls <see cref="SaveAllSaveableData(SaveData, List{ISaveableData})"/>, and calls <see cref="FindAllDataPersistanceObjects"/> as the <see cref="List{ISaveableData}"/>
+    /// </summary>
+    /// <param name="dataToLoad">Data object to pass into the all the <see cref="FindAllDataPersistanceObjects()"/> <see cref="ISaveableData"/>'s</param>
+    public static void LoadAllSaveableData(SaveData dataToLoad) {
+      LoadAllSaveableData(dataToLoad, FindAllDataPersistanceObjects());
     }
-
   }
 }

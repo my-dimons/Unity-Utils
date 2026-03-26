@@ -7,15 +7,24 @@ namespace UnityUtils.ScriptUtils.UI {
   public class UIButtonToggleObjects : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     [Header("Objects")]
 
+    /// <summary>
     /// Will toggle all objects's active state in this array on hover
+    /// </summary>
     public GameObject[] hoverToggleObjects;
 
+    /// <summary>
     /// Will toggle all objects's active state in this array on hover exit
+    /// </summary>
     public GameObject[] exitToggleObjects;
 
+    /// <summary>
     /// Will toggle all objects's active state in this array on click
+    /// </summary>
     public GameObject[] clickToggleObjects;
 
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when toggling objects
+    /// </summary>
     [Header("Debug")]
     public bool logToggle;
 

@@ -3,13 +3,19 @@ using System.Collections.Generic;
 
 namespace UnityUtils.ScriptUtils.SaveSystem {
   public class SaveSlot {
+    /// <summary>
     /// The save slot name
+    /// </summary>
     public readonly string saveSlotName;
 
+    /// <summary>
     /// The last time this save slot was saved
+    /// </summary>
     public DateTime lastTimeSaved;
 
+    /// <summary>
     /// Instances of the <see cref="SaveData"/> linked to this object
+    /// </summary>
     private readonly List<SaveData> saveDatas = new();
 
     public SaveSlot(string saveSlotName) {

@@ -6,20 +6,28 @@ namespace UnityUtils.ScriptUtils.UI {
   public class UIButtonSceneSwitcher : MonoBehaviour, IPointerClickHandler {
     [Header("Scene Loading (Only use 1 of the below variables, leave 1 default)")]
 
+    /// <summary>
     /// If this value is not empty, it will load the scene on click using the sceneName 
+    /// </summary>
     public string sceneName = "";
 
+    /// <summary>
     /// If this value is not -1 (Default value), it will load the scene using the buildIndex
+    /// </summary>
     public int buildIndex = -1;
 
     [Header("Scene Mode")]
 
+    /// <summary>
     /// The <see cref="LoadSceneMode"/> to use when loading the scene
+    /// </summary>
     public LoadSceneMode sceneMode;
 
     [Header("Debug")]
 
-    /// If true, will do a Debug.Log when switching scenes
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when switching scenes
+    /// </summary>
     public bool logSwitch;
 
     public void OnPointerClick(PointerEventData eventData) {

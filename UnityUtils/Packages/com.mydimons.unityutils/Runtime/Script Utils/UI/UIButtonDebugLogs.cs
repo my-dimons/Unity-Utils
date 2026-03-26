@@ -5,15 +5,21 @@ using UnityEngine.UI;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonDebugLogs : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
-    [Header("Debug")]
 
-    /// Will output a Debug.Log when the button is hovered over.
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when the button is hovered over.
+    /// </summary>
+    [Header("Debug")]
     public bool logHover = true;
 
-    /// Will output a Debug.Log when the button's hover is exited.
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when the button's hover is exited.
+    /// </summary>
     public bool logExit = true;
 
-    /// Will output a Debug.Log when the button is clicked.
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when the button is clicked.
+    /// </summary>
     public bool logClick = true;
 
     public void OnPointerEnter(PointerEventData eventData) {

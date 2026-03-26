@@ -4,17 +4,23 @@ using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.Cameras {
   public static class CameraShake {
+    /// <summary>
     /// Default curve used for screenshake
+    /// </summary>
     public static AnimationCurve defaultScreenshakeCurve = new(
         new Keyframe(0, 0),
         new Keyframe(0.2f, 0.1f, -0.05f, -0.05f),
         new Keyframe(1, 0)
     );
 
+    /// <summary>
     /// Dictionary of base camera positions to reference
+    /// </summary>
     public static Dictionary<Transform, Vector3> cameraBasePositions = new();
 
+    /// <summary>
     /// Dictionary of coroutines that screenshaking cameras are using
+    /// </summary>
     public static Dictionary<Transform, IEnumerator> cameraCoroutines = new();
 
     /// <summary>

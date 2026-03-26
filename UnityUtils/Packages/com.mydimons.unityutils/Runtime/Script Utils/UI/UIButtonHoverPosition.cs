@@ -6,39 +6,56 @@ using UnityUtils.ScriptUtils.Objects;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonHoverPosition : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
-    [Header("Adjustable Values")]
+    /// <summary>
     /// When hovered this is the size the button will be set to.
+    /// </summary>
+    [Header("Adjustable Values")]
     public Vector3 hoverLocalPosition;
 
+    /// <summary>
     /// The amount of seconds that the button will size up or down in.
+    /// </summary>
     public float sizeAnimationSeconds = 0.1f;
 
     [Space(8)]
 
+    /// <summary>
     /// true to use unscaled real time for the animation (ignoring time scale)
+    /// </summary>
     public bool useRealtime = true;
 
+    /// <summary>
     /// The <see cref="AnimationCurve"/> that the button will follow.
+    /// </summary>
     public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
-    [Header("Applied Transform")]
 
+    /// <summary>
     /// The object to apply the transform to (Default's to the applied object).
+    /// </summary>
+    [Header("Applied Transform")]
     public Transform applyTransform;
 
-    [Header("Debug Values")]
 
+    /// <summary>
     /// True if the button is being hovered
+    /// </summary>
+    [Header("Debug Values")]
     public bool hoveringOverButton;
 
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> on any moving.
+    /// </summary>
     [Header("Debug Logs")]
-
-    /// Log on any scaling
-    public bool logScale;
-    /// Log first scale to set scale.
-    public bool logScaleUp;
-    /// Log second rotate back to default pos.
-    public bool logScaleDown;
+    public bool logMove;
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when moving on hover enter.
+    /// </summary>
+    public bool logEnterMove;
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when moving on hover exit.
+    /// </summary>
+    public bool logExitMove;
 
     Vector3 originalPosition;
     Vector3 hoverPositionVector;
@@ -78,10 +95,10 @@ namespace UnityUtils.ScriptUtils.UI {
     void EnterHoverAnimation() {
       ObjectAnimations.AnimateTransformPosition(applyTransform, originalPosition, hoverPositionVector, sizeAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logScaleUp)
+      if (logEnterMove)
         Debug.Log("Moving button to position");
 
-      DebugRotate();
+      LogMove();
     }
 
     /// <summary>
@@ -90,14 +107,14 @@ namespace UnityUtils.ScriptUtils.UI {
     void ExitHoverAnimation() {
       ObjectAnimations.AnimateTransformPosition(applyTransform, hoverPositionVector, originalPosition, sizeAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logScaleDown)
+      if (logExitMove)
         Debug.Log("Moving button back");
 
-      DebugRotate();
+      LogMove();
     }
 
-    private void DebugRotate() {
-      if (logScale)
+    private void LogMove() {
+      if (logMove)
         Debug.Log("Moved button");
     }
 

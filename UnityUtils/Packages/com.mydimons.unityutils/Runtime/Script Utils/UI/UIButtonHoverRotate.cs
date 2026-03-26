@@ -6,51 +6,76 @@ using UnityUtils.ScriptUtils.Objects;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonHoverRotate : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
-    [Header("Adjustable Values")]
+    /// <summary>
     /// When hovered this is the rotation the button will be set to.
+    /// </summary>
+    [Header("Adjustable Values")]
     public float hoverRotation = 8f;
 
+    /// <summary>
     /// The amount of seconds that the button will rotate in.
+    /// </summary>
     public float rotationAnimationSeconds = 0.1f;
 
+    /// <summary>
     /// If true the button will rotate to the set position, the rotate back on hover. If false the buton will rotate to the set position, then only rotate back when unhovering.
+    /// </summary>
     public bool rotateBackAfterHover = true;
 
     [Space(8)]
 
+    /// <summary>
     /// true to use unscaled real time for the animation (ignoring time scale).
+    /// </summary>
     public bool useRealtime = true;
 
+    /// <summary>
     /// The <see cref="AnimationCurve"/> that the button will follow.
+    /// </summary>
     public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
+    /// <summary>
+    /// Not required, but if true rotation will use random rotation.
+    /// </summary>
     [Header("Random Rotation")]
-    /// Not required, but if true rotation will use random rotation
     public bool useRandomRotation = false;
 
+    /// <summary>
     /// The min/max values to use in random rotation
+    /// </summary>
     public Vector2 randomRotation = new Vector2(-5f, 5f);
     private Vector3 currentRandomRotation;
 
-    [Header("Applied Transform")]
 
+    /// <summary>
     /// The object to apply the transform to (Default's to the applied object).
+    /// </summary>
+    [Header("Applied Transform")]
     public Transform applyTransform;
 
-    [Header("Debug Values")]
 
+    /// <summary>
     /// True if the button is being hovered
+    /// </summary>
+    [Header("Debug Values")]
     public bool hoveringOverButton;
 
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> on any rotation
+    /// </summary>
     [Header("Debug Logs")]
-
-    /// Log on any rotate
     public bool logRotate;
-    /// Log first rotate to set rotation.
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> on rotate to set position.
+    /// </summary>
     public bool logRotateSetPos;
-    /// Log second rotate back to default rotation.
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> on rotate to start position.
+    /// </summary>
     public bool logRotateBack;
-    /// If <see cref="useRandomRotation"/> is true, will log when the random pos is generated.
+    /// <summary>
+    /// If <see cref="useRandomRotation"/> is true, will output a <see cref="Debug.Log(object)"/> when the random pos is generated.
+    /// </summary>
     public bool logRandomRotation;
 
     Vector3 originalRotation;
@@ -101,7 +126,7 @@ namespace UnityUtils.ScriptUtils.UI {
       if (logRandomRotation && useRandomRotation)
         Debug.Log("Generated random rotation: " + currentRandomRotation);
 
-      DebugRotate();
+      LogRotate();
     }
 
     /// <summary>
@@ -113,10 +138,10 @@ namespace UnityUtils.ScriptUtils.UI {
       if (logRotateBack)
         Debug.Log("Rotating button back");
 
-      DebugRotate();
+      LogRotate();
     }
 
-    private void DebugRotate() {
+    private void LogRotate() {
       if (logRotate)
         Debug.Log("Rotated button");
     }

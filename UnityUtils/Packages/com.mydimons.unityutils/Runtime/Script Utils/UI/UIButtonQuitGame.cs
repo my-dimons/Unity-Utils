@@ -7,12 +7,15 @@ namespace UnityUtils.ScriptUtils.UI {
   public class UIButtonQuitGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     [Header("Objects")]
 
+    /// <summary>
     /// Will quit the application on hover
     public bool hoverQuit;
 
+    /// <summary>
     /// Will quit the application on hover exit
     public bool exitQuit;
 
+    /// <summary>
     /// Will quit the application on click
     public bool clickQuit = true;
 

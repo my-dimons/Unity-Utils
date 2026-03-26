@@ -3,19 +3,29 @@ using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.SaveSystem {
   public static class SaveSystemUtils {
+    /// <summary>
     /// The default file extension used for save files not needing a specific extension
+    /// </summary>
     public const string SPECIAL_SAVE_FILE_EXTENSION = ".save";
 
+    /// <summary>
     /// .json file extension
+    /// </summary>
     public const string JSON_SAVE_FILE_EXTENSION = ".json";
 
+    /// <summary>
     /// What to name the save files
+    /// </summary>
     public const string SAVE_FILES_NAME = "saves";
 
+    /// <summary>
     /// The default save slot ID, use when not using multiple save slots
+    /// </summary>
     public const string DEFAULT_SAVE_SLOT_ID = "0";
 
+    /// <summary>
     /// Save slot save file name
+    /// </summary>
     public const string SAVE_SLOT_SAVE_FILE_NAME = "save_slot_data.json";
 
     /// <summary>

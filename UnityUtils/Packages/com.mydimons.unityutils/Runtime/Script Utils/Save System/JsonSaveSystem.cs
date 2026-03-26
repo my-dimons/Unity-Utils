@@ -4,12 +4,20 @@ using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.SaveSystem {
   public static class JsonSaveSystem {
+    /// <summary>
     /// If true will output Debug.Log()'s on Save/Load
+    /// </summary>
     public static bool outputLogs = true;
 
+    /// <summary>
     /// If true will use encryption
+    /// </summary>
     private static bool useEncryption;
 
+    /// <summary>
+    /// The encryption key that XOR shifts string data while saving. 
+    /// </summary>
+    /// <remarks>Is only used if <see cref="useEncryption"/> is true.</remarks>
     private static string encryptionKey = "Key";
 
     /// <summary>

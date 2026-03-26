@@ -11,6 +11,7 @@
 - UnityUtils docs now use "UnityUtils" instead of "Unity Utils" as the project name
 - ObjectModifiers.cs ModifierOrder now clones the DEFAULT_MODIFIER_ORDER, instead of just making a reference to it
 - ObjectModifiers.cs ModifierOrder now has measures in place to ensure no duplicate values are used, and all values are in use.
+- Formatted all scripts to have 2 tab spaces instead of 4 (Some scripts weren't formatted
 
 ## v1.3.4 - Finally Fixing ObjectColorFlash (I hope)
 

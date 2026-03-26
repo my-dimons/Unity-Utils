@@ -6,38 +6,56 @@ using UnityUtils.ScriptUtils.Objects;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonHoverExpand : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
-    [Header("Adjustable Values")]
+    /// <summary>
     /// When hovered this is the size the button will be set to.
+    /// </summary>
+    [Header("Adjustable Values")]
     public float hoverSize = 1.1f;
 
+    /// <summary>
     /// The amount of seconds that the button will size up or down in.
+    /// </summary>
     public float sizeAnimationSeconds = 0.1f;
 
     [Space(8)]
 
+    /// <summary>
     /// true to use unscaled real time for the animation (ignoring time scale)
+    /// </summary>
     public bool useRealtime = true;
 
+    /// <summary>
     /// The <see cref="AnimationCurve"/> that the button will follow.
+    /// </summary>
     public AnimationCurve SizingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
-    [Header("Applied Transform")]
 
+    /// <summary>
     /// The object to apply the transform to (Default's to the applied object).
+    /// </summary>
+    [Header("Applied Transform")]
     public Transform applyTransform;
 
-    [Header("Debug Values")]
 
+    /// <summary>
     /// True if the button is being hovered
+    /// </summary>
+    [Header("Debug Values")]
     public bool hoveringOverButton;
 
-    [Header("Debug Logs")]
 
-    /// Log on any scaling
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> on any scaling.
+    /// </summary>
+    [Header("Debug Logs")]
     public bool logScale;
-    /// Log first scale to set scale.
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when scaling up. (Hover enter)
+    /// </summary>
     public bool logScaleUp;
-    /// Log second rotate back to default pos.
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when scaling down. (Hover Exit)
+    /// </summary>
     public bool logScaleDown;
 
     Vector3 originalSize;

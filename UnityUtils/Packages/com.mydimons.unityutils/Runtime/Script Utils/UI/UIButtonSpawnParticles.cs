@@ -6,17 +6,26 @@ using UnityUtils.ScriptUtils.Particles;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonSpawnParticles : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
-    [Header("Particles")]
 
+    /// <summary>
     /// Will spawn all prefabs in this array on hover
+    /// </summary>
+    [Header("Particles")]
     public GameObject[] hoverParticlePrefabs;
 
+    /// <summary>
     /// Will spawn all prefabs in this array on hover exit
+    /// </summary>
     public GameObject[] exitParticlePrefabs;
 
+    /// <summary>
     /// Will spawn all prefabs in this array on click
+    /// </summary>
     public GameObject[] clickParticlePrefabs;
 
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> when a particle is spawned
+    /// </summary>
     [Header("Debug")]
     public bool logSpawn;
 

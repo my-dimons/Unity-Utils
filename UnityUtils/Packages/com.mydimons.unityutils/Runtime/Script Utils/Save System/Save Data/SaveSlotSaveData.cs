@@ -3,7 +3,9 @@
 namespace UnityUtils.ScriptUtils.SaveSystem {
   [Serializable]
   public class SaveSlotSaveData : SaveData {
+    /// <summary>
     /// The last <see cref="DateTime"/> the object was saved at
+    /// </summary>
     public DateTime lastTimeSaved;
 
     public override void Save() {
