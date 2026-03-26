@@ -6,21 +6,13 @@ namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonQuitGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
 
-    /// <summary>
-    /// Will quit the application on hover
-    /// </summary>
-    [Header("Objects")]
-    public bool hoverQuit = false;
+    public enum QuitGameButtonMethod {
+      HoverEnter,
+      HoverExit,
+      Click
+    }
 
-    /// <summary>
-    /// Will quit the application on hover exit
-    /// </summary>
-    public bool exitQuit = false;
-
-    /// <summary>
-    /// Will quit the application on click
-    /// </summary>
-    public bool clickQuit = true;
+    public QuitGameButtonMethod quitMethod = QuitGameButtonMethod.Click;
 
     /// <summary>
     /// Will output a <see cref="Debug.Log(object)"/> when quitting the application.
@@ -29,17 +21,17 @@ namespace UnityUtils.ScriptUtils.UI {
     public bool logQuit;
 
     public void OnPointerEnter(PointerEventData eventData) {
-      if (hoverQuit)
+      if (quitMethod == QuitGameButtonMethod.HoverEnter)
         QuitGame();
     }
 
     public void OnPointerExit(PointerEventData eventData) {
-      if (exitQuit)
+      if (quitMethod == QuitGameButtonMethod.HoverExit)
         QuitGame();
     }
 
     public void OnPointerClick(PointerEventData eventData) {
-      if (clickQuit)
+      if (quitMethod == QuitGameButtonMethod.Click)
         QuitGame();
     }
 

@@ -5,6 +5,8 @@ public class TestingScript : MonoBehaviour {
   public AnimationCurve curve;
   public float testingValue;
   public Vector3 testingVector3;
+
+  public SFX[] sfx;
   // Starter is called once before the first execution of Update after the MonoBehaviour is created
   void Start() {
     ObjectAnimations.AnimateTransformRotation(transform, new Vector3(transform.localRotation.x, transform.localRotation.y, transform.localRotation.z), new Vector3(4, 50, 90), 2);
