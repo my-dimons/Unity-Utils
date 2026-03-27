@@ -1,6 +1,6 @@
-﻿namespace UnityUtils.ScriptUtils.Objects {
+﻿namespace UnityUtils.ScriptUtils.Objects.Modifiers {
   /// <summary>
-  /// Enum with different modifier types that get used in <see cref="ObjectModifiers{T}"/> when applying modifiers to an input value.
+  /// Enum with different modifier types that get used in <see cref="ModifierManager{T}"/> when applying modifiers to an input value.
   /// </summary>
   public enum ModifierType {
     /// <summary>

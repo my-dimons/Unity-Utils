@@ -10,11 +10,9 @@ Scripts
 -------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    
    ObjectDelays
    ObjectAnimations
-   ObjectColorFlash
-   ObjectModifiers
-   ObjectModifierData
-    ModifierType
+   Modifiers
+   ColorFlash

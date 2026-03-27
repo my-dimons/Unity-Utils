@@ -2,9 +2,9 @@ ObjectModifiers
 ==========
 
 **NAMESPACE:**
-   `UnityUtils.ScriptUtils.Objects`
+   `UnityUtils.ScriptUtils.Objects.Modifiers`
      
-The **ObjectModifiers** script is used in turn with :doc:`ObjectModifierData` to apply modifiers to variables. See :doc:`ModifierType` to check out the modifier types
+The **ObjectModifiers** script is used in turn with :doc:`ModifierData` to apply modifiers to variables. See :doc:`ModifierType` to check out the modifier types
 
 Example Usage
 -------------
@@ -16,14 +16,14 @@ Example Usage
    public class ExampleScript : MonoBehaviour
    {
 	public float health;
-	public ObjectModifiers<float> healthModifiers = new();
+	public ModifierManager<float> healthModifiers = new();
 	
    	void Start()
    	{
    	   // Apply modifiers.
-   	   healthModifiers.AddModifier(new ObjectModifierData<float>(ModifierType.Flat, 12));
-   	   healthModifiers.AddModifier(new ObjectModifierData<float>(ModifierType.Multiply, 5));
-   	   healthModifiers.AddModifier(new ObjectModifierData<float>(ModifierType.Divide, 4));
+   	   healthModifiers.AddModifier(new ModifierData<float>(ModifierType.Flat, 12));
+   	   healthModifiers.AddModifier(new ModifierData<float>(ModifierType.Multiply, 5));
+   	   healthModifiers.AddModifier(new ModifierData<float>(ModifierType.Divide, 4));
    	   
    	   // Print modifiers + modifier order.
    	   healthModifiers.PrintModifierOrder();
@@ -36,12 +36,12 @@ Example Usage
    	   Debug.Log("Value of 5: " + healthModifiers.CalculateModifiers(1)); // Prints 21.25
    	   
    	   // Adds a modifier temporarily for 1 second.
-   	   healthModifiers.AddTemporaryModifier(new ObjectModifierData<float>(ModifierType.Flat, 3), 1);
+   	   healthModifiers.AddTemporaryModifier(new ModifierData<float>(ModifierType.Flat, 3), 1);
    	}
    }
   
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ObjectModifiers
+.. doxygenclass:: UnityUtils::ScriptUtils::Objects::Modifiers::ObjectModifiers
    :members:

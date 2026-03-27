@@ -1,4 +1,4 @@
-ObjectColorFlash
+ColorFlash
 ==========
 
 **NAMESPACE:**

@@ -6,6 +6,10 @@
 ### Changes
 - SFXManager.cs now only accepts SFX objects as parameters (Removed all other functions)
 - AudioManager.cs CalculatePitchVariance() now takes in a starting pitch.
+- ObjectColorFlash.cs renamed to "ColorFlashManager.cs"
+- Organized ObjectModifiers into their own Modifiers namespace
+- Renamed ObjectModifiers to ModifierManager
+- Renamed ObjectModifierData to ModifierData
 
 ### Fixes
 - Made all variables properly document their usage in both the docs and in IDE's (Previously would not work in IDE's)
@@ -13,6 +17,8 @@
 - ObjectModifiers.cs ModifierOrder now clones the DEFAULT_MODIFIER_ORDER, instead of just making a reference to it
 - ObjectModifiers.cs ModifierOrder now has measures in place to ensure no duplicate values are used, and all values are in use.
 - Formatted all scripts to have 2 tab spaces instead of 4 (Some scripts weren't formatted
+
++ many other small msc changes that are too small to list (Like a type or a small doc change)
 
 ## v1.3.4 - Finally Fixing ObjectColorFlash (I hope)
 
