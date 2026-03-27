@@ -45,22 +45,22 @@ namespace UnityUtils.ScriptUtils.Audio {
     public bool logOnSongPlay;
 
     /// <summary>
-    /// If true, will output a Debug.Log when a track stops playing.
+    /// If true, will output a <see cref="Debug.Log(object)"/> when a track stops playing.
     /// </summary>
     public bool logOnSongStop;
 
     /// <summary>
-    /// If true, will output a Debug.Log the <see cref="randomSecondCooldownBetweenSongs"/> when calculated.
+    /// If true, will output a <see cref="Debug.Log(object)"/> the <see cref="randomSecondCooldownBetweenSongs"/> when calculated.
     /// </summary>
     public bool logRandomSongCooldown;
 
     /// <summary>
-    /// If true, will output a Debug.Log when the fade time is not 0 or 1 (When its animating).
+    /// If true, will output a <see cref="Debug.Log(object)"/> when the fade time is not 0 or 1 (When its animating).
     /// </summary>
     public bool logFadeVolume;
 
     /// <summary>
-    /// If true, will output a Debug.Log every <see cref="logSongProgessEveryPercent"/>, detailing how much of the current song has been played.
+    /// If true, will output a <see cref="Debug.Log(object)"/> every <see cref="logSongProgessEveryPercent"/>, detailing how much of the current song has been played.
     /// </summary>
     public bool logSongProgress;
 
@@ -189,6 +189,8 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     private void PlayMusicTrack(MusicClip clip) {
       musicSource.clip = clip.musicClip;
+      musicSource.pitch = AudioManager.CalculatePitchVariance(clip.pitchSettings.pitchVariance, clip.pitchSettings.pitch);
+      musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.VolumeType.Music);
       currentPlayingTrack = clip;
 
       musicSource.Play();

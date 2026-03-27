@@ -1,6 +1,7 @@
 using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.Audio {
+  [System.Serializable]
   public class SFXDestructionSettings {
     /// <summary>
     /// If true, will destroy the clip when its done playing. Otherwise it will not.
@@ -23,6 +24,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
   }
 
+  [System.Serializable]
   public class SFX3dSettings {
     /// <summary>
     /// The <see cref="Vector3"/> position to play this at. Used in turn with <see cref="spacialBlend"/>.
@@ -46,6 +48,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
   }
 
+  [System.Serializable]
   public class SFXPitchSettings {
     /// <summary>
     /// Using the <see cref="pitch"/>, adds an offset by -/+ <see cref="pitchVariance"/>.
@@ -73,51 +76,29 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
   }
 
+  [System.Serializable]
   public class SFXVolumeSettings {
     /// <summary>
     /// <see cref="AudioManager.VolumeType"/> to play this SFX as. 
     /// </summary>
     /// <remarks>see <see cref="AudioManager.CalculateVolumeBasedOnType(float, AudioManager.VolumeType)"/> to get more info.</remarks>
-    [Header("Volume")]
     public AudioManager.VolumeType volumeType;
 
     /// <summary>
-    /// Maximum volume this SFX can be played at. 
+    /// The volume this SFX will be played at. 
     /// </summary>
     /// <remarks>
-    /// Audio gets randomly played between the min and max volume.
-    /// <para/>
     /// Defaults to 1
     /// </remarks>
-    [Range(0, 1)]
-    public float maxVolume;
+    public float volume = 1;
 
     /// <summary>
-    /// Minimum volume this SFX can be played at. Audio gets randomly played between the min and max volume. 
-    /// </summary>
-    /// <remarks>
-    /// Audio gets randomly played between the min and max volume.
-    /// <para/>
-    /// Defaults to <see cref="AudioManager.MAX_AUDIO_VOLUME"/>.
-    /// </remarks>
-    [Range(0, 1)]
-    public float minVolume;
-
-    /// <summary>
-    /// Sets the <see cref="minVolume"/>, <see cref="maxVolume"/>, and <see cref="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
-    /// </summary>
-    public SFXVolumeSettings SetVolume(float minVolume, float maxVolume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
-      this.minVolume = minVolume;
-      this.maxVolume = maxVolume;
-      this.volumeType = volumeType;
-      return this;
-    }
-
-    /// <summary>
-    /// Sets the <see cref="minVolume"/> and <see cref="maxVolume"/> to <paramref name="volume"/> and <see cref="volumeType"/> to <paramref name="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
+    /// Sets the <see cref="volume"/> to <paramref name="volume"/> and <see cref="volumeType"/> to <paramref name="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
     /// </summary>
     public SFXVolumeSettings SetVolume(float volume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
-      return SetVolume(volume, volume, volumeType);
+      this.volume = volume;
+      this.volumeType = volumeType;
+      return this;
     }
   }
 }

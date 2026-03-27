@@ -364,17 +364,20 @@ MonoBehaviour:
   sfx:
     audioClips: []
     audioSource: {fileID: 0}
-    audioType: 1
-    maxVolume: 1
-    minVolume: 1
-    pitchVariance: 0.1
-    pitch: 1
-    localPosition: {x: 0, y: 0, z: 0}
-    spacialBlend: 0
-    destroyOnClipEnd: 1
-    useRealtimeToDestroy: 1
-    scenePersistant: 0
-    name: '[UnityUtils] SFX'
+    volumeSettings:
+      volumeType: 1
+      volume: 1
+    pitchSettings:
+      pitchVariance: 0.1
+      pitch: 1
+    spacialSettings:
+      localPosition: {x: 0, y: 0, z: 0}
+      spacialBlend: 0
+    destructionSettings:
+      destroyOnClipEnd: 1
+      useRealtimeToDestroy: 1
+      scenePersistant: 0
+    name: '[UnityUtils.ScriptUtils.Audio] SFX'
     parent: {fileID: 0}
 --- !u!4 &490915023
 Transform:

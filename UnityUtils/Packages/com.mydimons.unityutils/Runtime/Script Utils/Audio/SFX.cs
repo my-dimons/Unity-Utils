@@ -21,12 +21,12 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public static SFX Create2DSFX() {
       return new SFX {
-        volumeSettings = new SFXVolumeSettings().SetVolume(1, 1, AudioManager.VolumeType.Sfx),
+        volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.Sfx),
         pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),
         spacialSettings = new SFX3dSettings().SetSpacialAudio(Vector3.zero, 0),
         destructionSettings = new SFXDestructionSettings().SetDestructionSettings(),
-        name = "[UnityUtils.ScriptUtils.Audio] 2D SFX"
-      }
+        name = "2D SFX [UnityUtils.ScriptUtils.Audio]"
+      };
     }
 
     /// <summary>
@@ -38,18 +38,18 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <para/>
     /// <see cref="localPosition"/> = <see cref="Vector3.zero"/>, <see cref="spacialBlend"/> = 1
     /// <para/>
-    /// <see cref="name"/> = "[UnityUtils.ScriptUtils.Audio] 3D SFX"
+    /// <see cref="name"/> = "3D SFX [UnityUtils.ScriptUtils.Audio]"
     /// <para/>
     /// <see cref="destroyOnClipEnd"/> = true, <see cref="useRealtimeToDestroy"/> = true"/>
     /// </summary>
     public static SFX Create3DSFX() {
       return new SFX {
-        volumeSettings = new SFXVolumeSettings().SetVolume(1, 1, AudioManager.VolumeType.Sfx),
+        volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.Sfx),
         pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),
         spacialSettings = new SFX3dSettings().SetSpacialAudio(Vector3.zero, 1),
         destructionSettings = new SFXDestructionSettings().SetDestructionSettings(),
-        name = "[UnityUtils.ScriptUtils.Audio] 3D SFX"
-      }
+        name = "3D SFX [UnityUtils.ScriptUtils.Audio]"
+      };
     }
 
     /// <summary>
@@ -63,10 +63,10 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public AudioSource audioSource;
 
-    [Header("Settings")]
     /// <summary>
     /// The volume settings used when playing this SFX. See <see cref="SFXVolumeSettings"/> for more info.
     /// </summary>
+    [Header("Settings")]
     public SFXVolumeSettings volumeSettings;
     /// <summary>
     /// The pitch settings used when playing this SFX. See <see cref="SFXPitchSettings"/> for more info.

@@ -5,6 +5,11 @@
 - ColorFlash class to play color flashes with set parameters
 - Safety check when Flash() is called on ColorFlashManager
 - ContextMenu for ColorFlashManager under the name of "Flash", which flashes the object 
+- SFXSettings classes:
+	- SFXDestructionSettings
+	- SFXVolumeSettings
+	- SFXPitchSettings
+	- SFX3dSettings
 
 ### Changes
 - Renamed "SfxManager" to "SFXManager"

@@ -24,22 +24,20 @@ namespace UnityUtils.ScriptUtils.Audio {
       int randomClipIndex = Random.Range(0, sfx.audioClips.Length - 1);
       AudioClip audioClip = sfx.audioClips[randomClipIndex];
 
-      float volume = Random.Range(sfx.minVolume, sfx.maxVolume);
-
       sfxObject.transform.parent = sfx.parent.transform;
-      audioSource.spatialBlend = sfx.spacialBlend;
-      audioSource.pitch = AudioManager.CalculatePitchVariance(sfx.pitchVariance, sfx.pitch);
+      audioSource.spatialBlend = sfx.spacialSettings.spacialBlend;
+      audioSource.pitch = AudioManager.CalculatePitchVariance(sfx.pitchSettings.pitchVariance, sfx.pitchSettings.pitch);
 
       // Play clip
       audioSource.clip = audioClip;
-      audioSource.volume = AudioManager.CalculateVolumeBasedOnType(volume, sfx.volumeType);
+      audioSource.volume = AudioManager.CalculateVolumeBasedOnType(sfx.volumeSettings.volume, sfx.volumeSettings.volumeType);
 
       audioSource.Play();
 
       // Destroy clip
-      if (sfx.destroyOnClipEnd) {
+      if (sfx.destructionSettings.destroyOnClipEnd) {
         float destroyTime = AudioManager.CalculateClipLength(audioClip.length, audioSource.pitch);
-        ObjectDelays.Delay(() => Object.Destroy(sfxObject), destroyTime, sfx.useRealtimeToDestroy);
+        ObjectDelays.Delay(() => Object.Destroy(sfxObject), destroyTime, sfx.destructionSettings.useRealtimeToDestroy);
       }
     }
   }

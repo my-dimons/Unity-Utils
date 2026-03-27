@@ -15,6 +15,6 @@ public class TestingScript : MonoBehaviour {
     ObjectAnimations.AnimateTransformScale(transform, transform.localScale, new Vector3(3, 4, 5), 2);
     ObjectAnimations.AnimateTransformPosition(transform, transform.position, new Vector3(0, 5, 0), 2, animationCurve: curve);
 
-    SFX test = SFX.Create2DSFX().SetPitch(3, 4);
+    SFX test = SFX.Create2DSFX();
   }
 }
