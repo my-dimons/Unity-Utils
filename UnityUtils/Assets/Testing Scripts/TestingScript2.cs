@@ -27,7 +27,7 @@ public class TestingScript2 : MonoBehaviour {
     ObjectDelays.Delay(() => CameraShake.Screenshake(intensity: 5), 3);
     ObjectDelays.Delay(() => CameraShake.Screenshake(intensity: 5), 3.2f);
     ObjectDelays.Delay(() => CameraShake.Screenshake(intensity: 5), 4);
-    ObjectDelays.Delay(() => GetComponent<ObjectColorFlash>().Flash(Color.blue, 2), 3);
+    ObjectDelays.Delay(() => GetComponent<ColorFlashManager>().Flash(), 1);
   }
 
   private void Update() {

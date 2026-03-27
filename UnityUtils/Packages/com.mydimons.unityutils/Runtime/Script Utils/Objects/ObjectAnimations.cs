@@ -110,6 +110,7 @@ namespace UnityUtils.ScriptUtils.Objects {
         curve = defaultAnimationCurve;
       CoroutineHelper.Starter.StartCoroutine(AnimateValueCoroutine(start, end, curve, duration, lerpFunction, onValueChanged, useRealtime));
     }
+
     private static IEnumerator AnimateValueCoroutine<T>(T start, T end, AnimationCurve curve, float duration, Func<T, T, float, T> lerpFunction, Action<T> onValueChanged, bool useRealtime = false) {
       float elapsed = 0f;
 

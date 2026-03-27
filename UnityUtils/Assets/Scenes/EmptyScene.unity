@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 19750659}
   - component: {fileID: 19750658}
-  - component: {fileID: 19750657}
+  - component: {fileID: 19750660}
   m_Layer: 0
   m_Name: color flash 3
   m_TagString: Untagged
@@ -137,21 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &19750657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19750656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
-  defaultFlashDuration: 5
-  defaultFlashColor: {r: 0, g: 0.26466632, b: 1, a: 1}
-  logFlash: 1
 --- !u!212 &19750658
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -219,12 +204,80 @@ Transform:
   m_GameObject: {fileID: 19750656}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.02, y: -0.03, z: 0}
-  m_LocalScale: {x: 3.238, y: 3.238, z: 3.238}
+  m_LocalPosition: {x: 0.42, y: 0.29, z: 0}
+  m_LocalScale: {x: 8.356954, y: 8.356954, z: 8.356954}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &19750660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19750656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ColorFlashManager
+  colorFlash:
+    color: {r: 0, g: 0, b: 0, a: 1}
+    duration: 0
+    fadeInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeInTime: 0
+    fadeOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeOutTime: 0.25
+    amount: 1
+    useRealtime: 0
+  logFlash: 0
 --- !u!1 &270719303
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,10 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ff18c51984b9f4ea5239937dbc7f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TestingScript3
-  mat1: {fileID: 1450440347}
-  mat2: {fileID: 1534395238}
   mat3: {fileID: 19750656}
-  mat2Flashing: 0
   flashColor: {r: 1, g: 0.6509433, b: 0.6509433, a: 1}
 --- !u!4 &270719305
 Transform:
@@ -311,7 +361,21 @@ MonoBehaviour:
     m_RotationOrder: 4
   testingValue: 0
   testingVector3: {x: 0, y: 0, z: 0}
-  sfx: []
+  sfx:
+    audioClips: []
+    audioSource: {fileID: 0}
+    audioType: 1
+    maxVolume: 1
+    minVolume: 1
+    pitchVariance: 0.1
+    pitch: 1
+    localPosition: {x: 0, y: 0, z: 0}
+    spacialBlend: 0
+    destroyOnClipEnd: 1
+    useRealtimeToDestroy: 1
+    scenePersistant: 0
+    name: '[UnityUtils] SFX'
+    parent: {fileID: 0}
 --- !u!4 &490915023
 Transform:
   m_ObjectHideFlags: 0
@@ -482,7 +546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1450440348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,8 +559,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
-  defaultFlashDuration: 1
-  defaultFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  colorFlash:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    duration: 0.1
+    fadeInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeInTime: 0
+    fadeOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeOutTime: 0
+    amount: 1
+    useRealtime: 0
   logFlash: 1
 --- !u!212 &1450440349
 SpriteRenderer:
@@ -572,7 +689,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.07, y: -0.15}
+  m_AnchoredPosition: {x: -14.52, y: 0.46}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1450440351
@@ -600,7 +717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1534395239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,8 +730,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
-  defaultFlashDuration: 1
-  defaultFlashColor: {r: 1, g: 1, b: 1, a: 1}
+  colorFlash:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    duration: 0.1
+    fadeInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeInTime: 0
+    fadeOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeOutTime: 0
+    amount: 1
+    useRealtime: 0
   logFlash: 1
 --- !u!212 &1534395240
 SpriteRenderer:
@@ -682,8 +852,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534395238}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.63, y: -0.03, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.820001, y: 0.58000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -694,8 +864,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1399468211}
+  - {fileID: 1450440350}
   - {fileID: 1534395241}
   - {fileID: 19750659}
   - {fileID: 270719305}
-  - {fileID: 1450440350}
   - {fileID: 490915023}

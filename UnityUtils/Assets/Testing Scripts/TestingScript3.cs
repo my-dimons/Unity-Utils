@@ -2,11 +2,7 @@ using UnityEngine;
 using UnityUtils.ScriptUtils.Objects;
 
 public class TestingScript3 : MonoBehaviour {
-  public GameObject mat1;
-  public GameObject mat2;
   public GameObject mat3;
-
-  public bool mat2Flashing;
 
   public Color flashColor;
 
@@ -15,12 +11,6 @@ public class TestingScript3 : MonoBehaviour {
   }
 
   private void FlashColors() {
-    mat1.GetComponent<ObjectColorFlash>().Flash();
-    mat2.GetComponent<ObjectColorFlash>().Flash();
-    mat3.GetComponent<ObjectColorFlash>().Flash();
-  }
-
-  private void Update() {
-    mat2Flashing = mat2.GetComponent<ObjectColorFlash>().IsFlashing();
+    mat3.GetComponent<ColorFlashManager>().Flash();
   }
 }

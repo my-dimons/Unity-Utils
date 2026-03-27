@@ -3,31 +3,26 @@ using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.Objects {
   [RequireComponent(typeof(SpriteRenderer))]
-  public class ObjectColorFlash : MonoBehaviour {
-
-    [Header("Default Parameters")]
-    /// Represents the default duration, in seconds, for a flash.
-    [SerializeField] private float defaultFlashDuration = 0.1f;
-    ///// The default fade in/out time in seconds.
-    //[SerializeField] private float defaultFadeTime = 0f;
-    ///// The default intensity (How much the color will flash) for a flash.
-    //[Range(0f, 1f)]
-    //[SerializeField] private float defaultFlashIntensity = 1f;
-
-    [Space(10)]
-
-    /// The default <see cref="Color"/> that the object will flash to if no color is specified.
-    [ColorUsage(true, true)]
-    [SerializeField] private Color defaultFlashColor = Color.white;
+  public class ColorFlashManager : MonoBehaviour {
+    /// <summary>
+    /// The default <see cref="ColorFlash"/> to use when flashing.
+    /// </summary>
+    public ColorFlash colorFlash;
 
     [Header("Debug Logs")]
+
+    /// <summary>
     /// If true, will Debug.Log the color and duration when flashing.
-    [SerializeField] private bool logFlash = false;
+    /// </summary>
+    public bool logFlash = false;
 
     private const string SPRITE_MATERIAL_PATH = "Materials/ColorFlash/ColorFlash-Lit-Sprite-MAT";
 
-    private static Material defaultFlashSpriteMaterial;
+    private static Material spriteRendererFlashMaterial;
+
+    /// <summary>
     /// Set on start as the sprite renderer's material. Can be changed by calling <see cref="SetOriginalMaterial(Material)"/>.
+    /// </summary>
     private Material originalMaterial;
 
     private SpriteRenderer spriteRenderer;
@@ -38,7 +33,7 @@ namespace UnityUtils.ScriptUtils.Objects {
       spriteRenderer = GetComponent<SpriteRenderer>();
       originalMaterial = spriteRenderer.material;
 
-      defaultFlashSpriteMaterial = Resources.Load<Material>(SPRITE_MATERIAL_PATH);
+      spriteRendererFlashMaterial = GetMaterialInstance(Resources.Load<Material>(SPRITE_MATERIAL_PATH));
     }
 
     /// <summary>
@@ -57,62 +52,29 @@ namespace UnityUtils.ScriptUtils.Objects {
       originalMaterial = mat;
     }
 
-    // <param name="fadeTime">The time it takes to fade in and out the flash color. Default is the <see cref="defaultFadeTime"/></param>
-    // <param name="flashAmount">How much the color will flash. Default is the <see cref="defaultFlashIntensity"/></param>
-    /// <summary>
-    /// Flashes a <see cref="SpriteRenderer"/>
-    /// </summary>
-    /// <param name="color">Color to switch to. Default is the <see cref="defaultFlashColor"/></param>
-    /// <param name="duration">Time to switch the color for in seconds. Default is the <see cref="defaultFlashDuration"/></param>
-    /// <param name="flashMaterial">The material to use when flashing the color. Default is the <see cref="defaultFlashDuration"/></param>
-    /// <returns>The coroutine started by the flash</returns>
-    public Coroutine Flash(Color color = default, float duration = default, Material flashMaterial = default) {
-      if (color == default)
-        color = defaultFlashColor;
-      if (duration == default)
-        duration = defaultFlashDuration;
-      //if (flashAmount == default)
-      //  flashAmount = defaultFlashIntensity;
-      //if (fadeTime == default)
-      //  fadeTime = defaultFadeTime;
-      if (flashMaterial == default)
-        flashMaterial = defaultFlashSpriteMaterial;
-
-      if (flashRoutine != null) {
-        Debug.LogWarning("Unable to start color flash coroutine");
-        StopCoroutine(flashRoutine);
-      }
-
-      flashRoutine = StartCoroutine(FlashRoutine(color, duration, GetMaterialInstance(flashMaterial)));
-      return flashRoutine;
+    public Coroutine Flash(ColorFlash colorFlash) {
+      return StartCoroutine(FlashRoutine(colorFlash));
     }
 
-    private IEnumerator FlashRoutine(Color color, float duration, Material mat) {
-      float currentFlashAmount = 0f;
-      float elapsedTime = 0f;
+    public Coroutine Flash() {
+      return StartCoroutine(FlashRoutine(colorFlash));
+    }
 
-      spriteRenderer.material = mat;
-      mat.SetColor("_FlashColor", color);
+    private IEnumerator FlashRoutine(ColorFlash flash) {
+      spriteRenderer.material = spriteRendererFlashMaterial;
+      spriteRendererFlashMaterial.SetColor("_FlashColor", flash.color);
+      spriteRendererFlashMaterial.SetFloat("_FlashAmount", flash.amount);
 
       if (logFlash)
         Debug.Log("Flashing object " +
-          "\n color: " + color +
-          "\n duration: " + duration +
-          "\n material: " + mat);
+          "\n color: " + flash.color +
+          "\n duration: " + flash.duration);
 
-      // to be used later
-      //while (elapsedTime < duration) {
-      //
-      //  // iterate elapsedTime
-      //  elapsedTime += Time.deltaTime;
-      //
-      //  // lerp the flash amount
-      //  currentFlashAmount = Mathf.Lerp(1f, 0f, elapsedTime / duration);
-      //  mat.SetFloat("_FlashAmount", currentFlashAmount);
-      //  yield return null;
-      //}
+      yield return FlashFade(flash.fadeInTime, flash.fadeInCurve, false);
 
-      yield return new WaitForSeconds(duration);
+      yield return new WaitForSeconds(flash.duration);
+
+      yield return FlashFade(flash.fadeOutTime, flash.fadeOutCurve, true);
 
       if (logFlash)
         Debug.Log("Finished flashing object");
@@ -120,6 +82,30 @@ namespace UnityUtils.ScriptUtils.Objects {
       spriteRenderer.material = originalMaterial;
 
       flashRoutine = null;
+    }
+
+    /// <summary>
+    /// Fades in/out the flash effect by animating the "_FlashAmount" property of the flash material over time using the provided animation curve.
+    /// </summary>
+    private IEnumerator FlashFade(float fadeTime, AnimationCurve curve, bool fadeOut) {
+      float elapsedTime = 0f;
+
+      while (elapsedTime < fadeTime) {
+
+        // iterate elapsedTime
+        elapsedTime += colorFlash.useRealtime ? Time.unscaledDeltaTime : Time.deltaTime;
+        float t = Mathf.Clamp01(elapsedTime / fadeTime);
+        float curveValue = curve.Evaluate(t);
+
+        if (fadeOut)
+          curveValue = 1f - curveValue;
+
+        // lerp the flash amount
+        float currentFlashAmount = colorFlash.amount * (curveValue);
+        spriteRendererFlashMaterial.SetFloat("_FlashAmount", currentFlashAmount);
+
+        yield return null;
+      }
     }
 
     /// <summary>
