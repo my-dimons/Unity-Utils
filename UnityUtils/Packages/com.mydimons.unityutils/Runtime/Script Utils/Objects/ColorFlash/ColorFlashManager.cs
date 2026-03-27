@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace UnityUtils.ScriptUtils.Objects {
+namespace UnityUtils.ScriptUtils.Objects.ColorFlash {
   [RequireComponent(typeof(SpriteRenderer))]
   public class ColorFlashManager : MonoBehaviour {
     /// <summary>

@@ -16,7 +16,7 @@ Example Usage
 .. code:: csharp
   
    using UnityEngine;
-   using UnityUtils.ScriptUtils.Objects;
+   using UnityUtils.ScriptUtils.Objects.ColorFlash;
    
    public class ExampleScript : MonoBehaviour
    {
@@ -25,11 +25,11 @@ Example Usage
    	
    	void Start()
    	{
-   	   // Flashes the applied object white for 2 seconds.
-   	   object.Flash(duration: 2);
+   	   // Flashes the applied using its default flash
+   	   object.Flash();
    	   
    	   // Flashes the applied object blue for 2 seconds.
-   	   object.Flash(Color.blue, 2);
+   	   object.Flash(new ColorFlash(Color.Blue, 2);
    	   
    	   // Set the original material that is switched to after flashing
    	   object.SetOriginalMaterial(otherMat);
