@@ -15,53 +15,6 @@ public class SFX {
   }
 
   /// <summary>
-  /// Sets the <see cref="minVolume"/> and <see cref="maxVolume"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
-  /// </summary>
-  public void SetVolume(float minVolume, float maxVolume) {
-    this.minVolume = minVolume;
-    this.maxVolume = maxVolume;
-  }
-
-  /// <summary>
-  /// Sets the <see cref="pitch"/> and <see cref="pitchVariance"/> for this <see cref="SFX"/>
-  /// </summary>
-  public void SetPitch(float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE, float pitch = 1) {
-    this.pitch = pitch;
-    this.pitchVariance = pitchVariance;
-  }
-
-  /// <summary>
-  /// Sets the <see cref="localPosition"/> and <see cref="spacialBlend"/> for this <see cref="SFX"/>
-  /// </summary>
-  /// <param name="localPosition"></param>
-  /// <param name="spacialBlend"></param>
-  public void SetSpacialAudio(Vector3 localPosition, float spacialBlend = 1) {
-    this.localPosition = localPosition;
-    this.spacialBlend = spacialBlend;
-  }
-
-  /// <summary>
-  /// Sets the <see cref="audioSource"/> of this <see cref="SFX"/>
-  /// </summary>
-  public void SetAudioSource(AudioSource audioSource) {
-    this.audioSource = audioSource;
-  }
-
-  /// <summary>
-  /// Sets the <see cref="name"/> of this <see cref="SFX"/>
-  /// </summary>
-  public void SetName(string name) {
-    this.name = name;
-  }
-
-  /// <summary>
-  /// Sets the <see cref="parent"/> of this <see cref="SFX"/>
-  /// </summary>
-  public void SetParent(Transform parent) {
-    this.parent = parent;
-  }
-
-  /// <summary>
   /// Randomly play one of these clips when this SFX is played.
   /// </summary>
   /// <remarks>Only set 1 AudioClip if you do not want to randomize the clips</remarks>
@@ -153,4 +106,57 @@ public class SFX {
   /// </summary>
   /// <remarks>Useful for orginization purposes.</remarks>
   public Transform parent = null;
+
+  /// <summary>
+  /// Sets the <see cref="minVolume"/> and <see cref="maxVolume"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
+  /// </summary>
+  public SFX SetVolume(float minVolume, float maxVolume) {
+    this.minVolume = minVolume;
+    this.maxVolume = maxVolume;
+    return this;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="pitch"/> and <see cref="pitchVariance"/> for this <see cref="SFX"/>
+  /// </summary>
+  public SFX SetPitch(float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE, float pitch = 1) {
+    this.pitch = pitch;
+    this.pitchVariance = pitchVariance;
+    return this;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="localPosition"/> and <see cref="spacialBlend"/> for this <see cref="SFX"/>
+  /// </summary>
+  /// <param name="localPosition"></param>
+  /// <param name="spacialBlend"></param>
+  public SFX SetSpacialAudio(Vector3 localPosition, float spacialBlend = 1) {
+    this.localPosition = localPosition;
+    this.spacialBlend = spacialBlend;
+    return this;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="audioSource"/> of this <see cref="SFX"/>
+  /// </summary>
+  public SFX SetAudioSource(AudioSource audioSource) {
+    this.audioSource = audioSource;
+    return this;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="name"/> of this <see cref="SFX"/>
+  /// </summary>
+  public SFX SetName(string name) {
+    this.name = name;
+    return this;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="parent"/> of this <see cref="SFX"/>
+  /// </summary>
+  public SFX SetParent(Transform parent) {
+    this.parent = parent;
+    return this;
+  }
 }
