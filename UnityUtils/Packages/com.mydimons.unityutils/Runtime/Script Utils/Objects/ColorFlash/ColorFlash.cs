@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[System.Serializable]
 namespace UnityUtils.ScriptUtils.Objects.ColorFlash {
+  [System.Serializable]
   public class ColorFlash {
     public ColorFlash(Color color) {
       this.color = color;

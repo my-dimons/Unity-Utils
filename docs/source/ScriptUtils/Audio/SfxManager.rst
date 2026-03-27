@@ -1,10 +1,10 @@
-SfxManager
+SFXManager
 ==========
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Audio`
      
-The **SfxManager** is used to easily play sound effects with preset volumes from the :doc:`AudioManager` script, and add random pitch variance.
+The **SFXManager** is used to easily play sound effects using the :doc:`SFX` with some set parameters. Allows you to easily add in a pitch variance so clips don't feel as repetitive, and randomize SFX between a few clips.
 
 * Default pitch variance is `0.1`.
 
@@ -17,15 +17,12 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-   	public AudioClip clip;
+   	public SFX clip = SFX.CreateSFX();
 
    	void Start()
    	{
    	   // Play basic SFX
-   	   SfxManager.PlaySfxAudioClip(clip, 1, 0.6);
-   	   
-   	   // Play sfx clip for set amount of time
-   	   SfxManager.PlayTimedSFXAudioClip(clip, 1);
+   	   SFXManager.PlaySFX(clip);
    	}
    }
    

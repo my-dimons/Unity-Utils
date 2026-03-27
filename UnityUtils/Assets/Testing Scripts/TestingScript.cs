@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityUtils.ScriptUtils.Audio;
 using UnityUtils.ScriptUtils.Objects;
 
 public class TestingScript : MonoBehaviour {
@@ -6,7 +7,7 @@ public class TestingScript : MonoBehaviour {
   public float testingValue;
   public Vector3 testingVector3;
 
-  public SFX sfx;
+  public SFX sfx = SFX.CreateSFX();
   AudioClip clip;
   // Starter is called once before the first execution of Update after the MonoBehaviour is created
   void Start() {
@@ -14,6 +15,6 @@ public class TestingScript : MonoBehaviour {
     ObjectAnimations.AnimateTransformScale(transform, transform.localScale, new Vector3(3, 4, 5), 2);
     ObjectAnimations.AnimateTransformPosition(transform, transform.position, new Vector3(0, 5, 0), 2, animationCurve: curve);
 
-    SFX test = new SFX(clip).SetPitch(3, 4);
+    SFX test = SFX.CreateSFX().SetPitch(3, 4);
   }
 }

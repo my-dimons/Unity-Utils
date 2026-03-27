@@ -11,21 +11,21 @@ namespace UnityUtils.ScriptUtils.UI {
     /// Sound to play when the button is hovered over
     /// </summary>
     [Header("Audio Clips & Volumes")]
-    public SFX hoverEnterSfx;
+    public SFX hoverEnterSfx = SFX.CreateSFX();
 
     [Space(5)]
 
     /// <summary>
     /// Sound to play when the button is no longer being hovered.
     /// </summary>
-    public SFX hoverExitSfx;
+    public SFX hoverExitSfx = SFX.CreateSFX();
 
     [Space(5)]
 
     /// <summary>
     /// Sound to play when the button is clicked
     /// </summary>
-    public SFX clickSfx;
+    public SFX clickSfx = SFX.CreateSFX();
 
     private bool sceneLoadTriggered;
 
@@ -37,7 +37,7 @@ namespace UnityUtils.ScriptUtils.UI {
 
     public void OnPointerEnter(PointerEventData eventData) {
       if (hoverEnterSfx != null)
-        SfxManager.PlaySFX(hoverEnterSfx);
+        SFXManager.PlaySFX(hoverEnterSfx);
       else if (logEmptySfx)
         Debug.LogWarning("No hover enter SFX on button!");
     }
@@ -47,7 +47,7 @@ namespace UnityUtils.ScriptUtils.UI {
         return;
 
       if (hoverExitSfx != null)
-        SfxManager.PlaySFX(hoverExitSfx);
+        SFXManager.PlaySFX(hoverExitSfx);
       else if (logEmptySfx)
         Debug.LogWarning("No hover exit SFX on button!");
     }
@@ -59,7 +59,7 @@ namespace UnityUtils.ScriptUtils.UI {
       }
 
       if (clickSfx != null)
-        SfxManager.PlaySFX(clickSfx);
+        SFXManager.PlaySFX(clickSfx);
       else if (logEmptySfx)
         Debug.LogWarning("No click SFX on button!");
     }

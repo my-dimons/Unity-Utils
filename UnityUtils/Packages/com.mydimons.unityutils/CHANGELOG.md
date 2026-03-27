@@ -7,6 +7,7 @@
 - ContextMenu for ColorFlashManager under the name of "Flash", which flashes the object 
 
 ### Changes
+- Renamed "SfxManager" to "SFXManager"
 - SFXManager.cs now only accepts SFX objects as parameters (Removed all other functions)
 - ColorFlashManager.cs now uses its ColorFlash colorFlash as the default Flash() parameter
 - AudioManager.cs CalculatePitchVariance() now takes in a starting pitch.

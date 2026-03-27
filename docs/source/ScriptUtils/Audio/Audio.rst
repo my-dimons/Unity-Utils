@@ -17,7 +17,7 @@ Scripts
    :maxdepth: 1
    
    AudioManager
-   SfxManager
-   SimpleBackgroundMusic
    AudioSlider
-
+   SFXManager
+   MusicManager
+   SFX

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityUtils.ScriptUtils.Objects;
 
 namespace UnityUtils.ScriptUtils.Audio {
-  public static class SfxManager {
+  public static class SFXManager {
     /// <summary>
     /// Plays the provided <see cref="SFX"/> using the <paramref name="sfx"/> clips parameters
     /// </summary>
@@ -12,6 +12,11 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
 
     private static void PlaySFXClip(SFX sfx) {
+      if (!sfx.HasAudioClips()) {
+        Debug.Log("No audio clips provided for this SFX. Cannot play SFX.");
+        return;
+      }
+
       GameObject sfxObject = new GameObject(sfx.name);
       AudioSource audioSource = sfx.audioSource != null ? sfx.audioSource : sfxObject.AddComponent<AudioSource>();
 
@@ -27,7 +32,7 @@ namespace UnityUtils.ScriptUtils.Audio {
 
       // Play clip
       audioSource.clip = audioClip;
-      audioSource.volume = AudioManager.CalculateVolumeBasedOnType(volume, sfx.audioType);
+      audioSource.volume = AudioManager.CalculateVolumeBasedOnType(volume, sfx.volumeType);
 
       audioSource.Play();
 

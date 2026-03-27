@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityUtils.ScriptUtils.Cameras;
 using UnityUtils.ScriptUtils.Objects;
+using UnityUtils.ScriptUtils.Objects.ColorFlash;
 using UnityUtils.ScriptUtils.Objects.Modifiers;
 
 public class TestingScript2 : MonoBehaviour {
