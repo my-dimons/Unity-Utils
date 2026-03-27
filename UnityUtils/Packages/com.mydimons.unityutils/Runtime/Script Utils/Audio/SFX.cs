@@ -30,29 +30,6 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
 
     /// <summary>
-    /// Returns a new SFX with default values for music
-    /// <para/>
-    /// <see cref="minVolume"/> + <see cref="maxVolume"/> = 1, <see cref="volumeType"/> = <see cref="AudioManager.VolumeType.Music"/>
-    /// <para/>
-    /// <see cref="pitch"/> = 1, <see cref="pitchVariance"/> = 0
-    /// <para/>
-    /// <see cref="localPosition"/> = <see cref="Vector3.zero"/>, <see cref="spacialBlend"/> = 0
-    /// <para/>
-    /// <see cref="name"/> = "[UnityUtils.ScriptUtils.Audio] Music"
-    /// <para/>
-    /// <see cref="destroyOnClipEnd"/> = true, <see cref="useRealtimeToDestroy"/> = true"/>
-    /// </summary>
-    public static SFX CreateMusic() {
-      return new SFX {
-        destroyOnClipEnd = true,
-        useRealtimeToDestroy = true,
-      }.SetVolume(1, AudioManager.VolumeType.Music)
-      .SetPitch(0, 1)
-      .SetSpacialAudio(Vector3.zero, 0)
-      .SetName("[UnityUtils.ScriptUtils.Audio] Music");
-    }
-
-    /// <summary>
     /// Randomly play one of these clips when this SFX is played.
     /// </summary>
     /// <remarks>Only set 1 AudioClip if you do not want to randomize the clips</remarks>
@@ -148,7 +125,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Sets the <see cref="minVolume"/>, <see cref="maxVolume"/>, and <see cref="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
     /// </summary>
-    public SFX SetVolume(float minVolume, float maxVolume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
+    public virtual SFX SetVolume(float minVolume, float maxVolume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
       this.minVolume = minVolume;
       this.maxVolume = maxVolume;
       this.volumeType = volumeType;
@@ -158,14 +135,14 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Sets the <see cref="minVolume"/> and <see cref="maxVolume"/> to <paramref name="volume"/> and <see cref="volumeType"/> to <paramref name="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
     /// </summary>
-    public SFX SetVolume(float volume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
+    public virtual SFX SetVolume(float volume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
       return SetVolume(volume, volume, volumeType);
     }
 
     /// <summary>
     /// Sets the <see cref="pitch"/> and <see cref="pitchVariance"/> for this <see cref="SFX"/>
     /// </summary>
-    public SFX SetPitch(float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE, float pitch = 1) {
+    public virtual SFX SetPitch(float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE, float pitch = 1) {
       this.pitch = pitch;
       this.pitchVariance = pitchVariance;
       return this;
@@ -176,7 +153,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     /// <param name="localPosition"></param>
     /// <param name="spacialBlend"></param>
-    public SFX SetSpacialAudio(Vector3 localPosition, float spacialBlend = 1) {
+    public virtual SFX SetSpacialAudio(Vector3 localPosition, float spacialBlend = 1) {
       this.localPosition = localPosition;
       this.spacialBlend = spacialBlend;
       return this;
@@ -185,7 +162,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Sets the <see cref="audioSource"/> of this <see cref="SFX"/>
     /// </summary>
-    public SFX SetAudioSource(AudioSource audioSource) {
+    public virtual SFX SetAudioSource(AudioSource audioSource) {
       this.audioSource = audioSource;
       return this;
     }
@@ -193,7 +170,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Sets the <see cref="name"/> of this <see cref="SFX"/>
     /// </summary>
-    public SFX SetName(string name) {
+    public virtual SFX SetName(string name) {
       this.name = name;
       return this;
     }
@@ -201,7 +178,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Sets the <see cref="parent"/> of this <see cref="SFX"/>
     /// </summary>
-    public SFX SetParent(Transform parent) {
+    public virtual SFX SetParent(Transform parent) {
       this.parent = parent;
       return this;
     }

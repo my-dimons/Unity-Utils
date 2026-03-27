@@ -5,7 +5,7 @@ using UnityUtils.ScriptUtils.Objects;
 
 namespace UnityUtils.ScriptUtils.Audio {
   [RequireComponent(typeof(AudioSource))]
-  public class SimpleBackgroundMusic : MonoBehaviour {
+  public class MusicManager : MonoBehaviour {
     private AudioSource musicSource;
 
     [Header("Music")]
@@ -13,12 +13,12 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// An array of audio clips representing the available Music tracks.
     /// </summary>
-    public AudioClip[] musicTracks;
+    public MusicClip[] musicTracks;
 
     /// <summary>
     /// The current playing track.
     /// </summary>
-    public AudioClip currentPlayingTrack;
+    public MusicClip currentPlayingTrack;
 
     [Header("Variables")]
 
@@ -74,7 +74,7 @@ namespace UnityUtils.ScriptUtils.Audio {
 
     private float lastLoggedPercent;
 
-    public static SimpleBackgroundMusic Instance { get; private set; }
+    public static MusicManager Instance { get; private set; }
 
     /// <summary>
     /// The <see cref="Coroutine"/> playing music. Is able to be canceled.
@@ -132,7 +132,7 @@ namespace UnityUtils.ScriptUtils.Audio {
 
         TweenVolume(AudioManager.MIN_AUDIO_VOLUME, AudioManager.MAX_AUDIO_VOLUME);
 
-        yield return new WaitForSecondsRealtime(currentPlayingTrack.length - fadeTime);
+        yield return new WaitForSecondsRealtime(currentPlayingTrack.musicClip.length - fadeTime);
 
         TweenVolume(AudioManager.MAX_AUDIO_VOLUME, AudioManager.MIN_AUDIO_VOLUME);
 
@@ -190,8 +190,8 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Plays a Music track on the <see cref="musicSource"/>
     /// </summary>
-    private void PlayMusicTrack(AudioClip clip) {
-      musicSource.clip = clip;
+    private void PlayMusicTrack(MusicClip clip) {
+      musicSource.clip = clip.musicClip;
       currentPlayingTrack = clip;
 
       musicSource.Play();
@@ -210,12 +210,12 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Plays a specific Music track once
     /// </summary>
-    public void PlaySpecificMusicTrack(AudioClip clip) {
+    public void PlaySpecificMusicTrack(MusicClip clip) {
       Instance.PlayMusicTrack(clip);
     }
 
     /// <returns>Random Music track within <see cref="musicTracks"/></returns>
-    public AudioClip GetRandomSong() {
+    public MusicClip GetRandomSong() {
       int randomSongTrackIndex = UnityEngine.Random.Range(0, musicTracks.Length);
       return musicTracks[randomSongTrackIndex];
     }
@@ -228,7 +228,7 @@ namespace UnityUtils.ScriptUtils.Audio {
       const int DECIMAL_ROUNDING = 2;
       const int PERCENT = 100;
 
-      float progressPercent = (musicSource.time / currentPlayingTrack.length) * PERCENT;
+      float progressPercent = (musicSource.time / currentPlayingTrack.musicClip.length) * PERCENT;
 
       bool logPercent = progressPercent > lastLoggedPercent + logSongProgessEveryPercent;
 
@@ -236,7 +236,7 @@ namespace UnityUtils.ScriptUtils.Audio {
         Debug.Log("Current song progress: "
             + Math.Round(progressPercent, DECIMAL_ROUNDING) + "% ("
             + Math.Round(musicSource.time, DECIMAL_ROUNDING) + "s / "
-            + Math.Round(currentPlayingTrack.length, DECIMAL_ROUNDING) + "s)");
+            + Math.Round(currentPlayingTrack.musicClip.length, DECIMAL_ROUNDING) + "s)");
 
         lastLoggedPercent = progressPercent;
       }
