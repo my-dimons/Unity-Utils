@@ -2,6 +2,16 @@ using UnityEngine;
 
 [System.Serializable]
 public class ColorFlash {
+  public ColorFlash(Color color) {
+    this.color = color;
+  }
+
+  public ColorFlash(Color color, float duration, float amount = 1) {
+    this.color = color;
+    this.duration = duration;
+    this.amount = amount;
+  }
+
   /// <summary>
   /// The <see cref="Color"/> that is flashed to.
   /// </summary>
@@ -45,4 +55,22 @@ public class ColorFlash {
   /// if True, will use unscaled time instead of scaled time for the flash duration and fade in/out times.
   /// </summary>
   public bool useRealtime = false;
+
+  /// <summary>
+  /// Sets the <see cref="fadeInTime"/> and <see cref="fadeInCurve"/> properties
+  /// </summary>
+  public ColorFlash SetFadeIn(float fadeInTime, AnimationCurve fadeInCurve) {
+    this.fadeInTime = fadeInTime;
+    this.fadeInCurve = fadeInCurve;
+    return this;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="fadeOutTime"/> and <see cref="fadeOutCurve"/> properties
+  /// </summary>
+  public ColorFlash SetFadeOut(float fadeOutTime, AnimationCurve fadeOutCurve) {
+    this.fadeOutTime = fadeOutTime;
+    this.fadeOutCurve = fadeOutCurve;
+    return this;
+  }
 }
