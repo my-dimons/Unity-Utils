@@ -8,11 +8,10 @@ namespace UnityUtils.ScriptUtils.Audio {
   public class MusicManager : MonoBehaviour {
     private AudioSource musicSource;
 
-    [Header("Music")]
-
     /// <summary>
     /// An array of audio clips representing the available Music tracks.
     /// </summary>
+    [Header("Music")]
     public MusicClip[] musicTracks;
 
     /// <summary>
@@ -20,11 +19,10 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public MusicClip currentPlayingTrack;
 
-    [Header("Variables")]
-
     /// <summary>
     /// Whether to start playing Music as soon as this object awakes.
     /// </summary>
+    [Header("Variables")]
     public bool playOnAwake = true;
 
     /// <summary>
@@ -40,11 +38,10 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public Vector2 randomSecondCooldownBetweenSongs;
 
-    [Header("Debug")]
-
     /// <summary>
-    /// If true, will output a Debug.Log when a new track starts playing.
+    /// If true, will output a <see cref="Debug.Log(object)"/> when a new track starts playing.
     /// </summary>
+    [Header("Debug")]
     public bool logOnSongPlay;
 
     /// <summary>

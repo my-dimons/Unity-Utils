@@ -15,18 +15,41 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <para/>
     /// <see cref="localPosition"/> = <see cref="Vector3.zero"/>, <see cref="spacialBlend"/> = 0
     /// <para/>
-    /// <see cref="name"/> = "[UnityUtils.ScriptUtils.Audio] SFX"
+    /// <see cref="name"/> = "[UnityUtils.ScriptUtils.Audio] 2D SFX"
     /// <para/>
     /// <see cref="destroyOnClipEnd"/> = true, <see cref="useRealtimeToDestroy"/> = true"/>
     /// </summary>
-    public static SFX CreateSFX() {
+    public static SFX Create2DSFX() {
       return new SFX {
-        destroyOnClipEnd = true,
-        useRealtimeToDestroy = true,
-      }.SetVolume(1)
-      .SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1)
-      .SetSpacialAudio(Vector3.zero, 0)
-      .SetName("[UnityUtils.ScriptUtils.Audio] SFX");
+        volumeSettings = new SFXVolumeSettings().SetVolume(1, 1, AudioManager.VolumeType.Sfx),
+        pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),
+        spacialSettings = new SFX3dSettings().SetSpacialAudio(Vector3.zero, 0),
+        destructionSettings = new SFXDestructionSettings().SetDestructionSettings(),
+        name = "[UnityUtils.ScriptUtils.Audio] 2D SFX"
+      }
+    }
+
+    /// <summary>
+    /// Returns a new SFX with default values
+    /// <para/>
+    /// <see cref="minVolume"/> + <see cref="maxVolume"/> = 1, <see cref="volumeType"/> = <see cref="AudioManager.VolumeType.Sfx"/>
+    /// <para/>
+    /// <see cref="pitch"/> = 1, <see cref="pitchVariance"/> = <see cref="AudioManager.DEFAULT_PITCH.VARIANCE"/>
+    /// <para/>
+    /// <see cref="localPosition"/> = <see cref="Vector3.zero"/>, <see cref="spacialBlend"/> = 1
+    /// <para/>
+    /// <see cref="name"/> = "[UnityUtils.ScriptUtils.Audio] 3D SFX"
+    /// <para/>
+    /// <see cref="destroyOnClipEnd"/> = true, <see cref="useRealtimeToDestroy"/> = true"/>
+    /// </summary>
+    public static SFX Create3DSFX() {
+      return new SFX {
+        volumeSettings = new SFXVolumeSettings().SetVolume(1, 1, AudioManager.VolumeType.Sfx),
+        pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),
+        spacialSettings = new SFX3dSettings().SetSpacialAudio(Vector3.zero, 1),
+        destructionSettings = new SFXDestructionSettings().SetDestructionSettings(),
+        name = "[UnityUtils.ScriptUtils.Audio] 3D SFX"
+      }
     }
 
     /// <summary>
@@ -40,75 +63,23 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public AudioSource audioSource;
 
+    [Header("Settings")]
     /// <summary>
-    /// <see cref="AudioManager.VolumeType"/> to play this SFX as. 
+    /// The volume settings used when playing this SFX. See <see cref="SFXVolumeSettings"/> for more info.
     /// </summary>
-    /// <remarks>see <see cref="AudioManager.CalculateVolumeBasedOnType(float, AudioManager.VolumeType)"/> to get more info.</remarks>
-    [Header("Volume")]
-    public AudioManager.VolumeType volumeType;
-
+    public SFXVolumeSettings volumeSettings;
     /// <summary>
-    /// Maximum volume this SFX can be played at. 
+    /// The pitch settings used when playing this SFX. See <see cref="SFXPitchSettings"/> for more info.
     /// </summary>
-    /// <remarks>
-    /// Audio gets randomly played between the min and max volume.
-    /// <para/>
-    /// Defaults to 1
-    /// </remarks>
-    [Range(0, 1)]
-    public float maxVolume;
-
+    public SFXPitchSettings pitchSettings;
     /// <summary>
-    /// Minimum volume this SFX can be played at. Audio gets randomly played between the min and max volume. 
+    /// The 3d settings used when playing this SFX. See <see cref="SFX3dSettings"/> for more info.
     /// </summary>
-    /// <remarks>
-    /// Audio gets randomly played between the min and max volume.
-    /// <para/>
-    /// Defaults to <see cref="AudioManager.MAX_AUDIO_VOLUME"/>.
-    /// </remarks>
-    [Range(0, 1)]
-    public float minVolume;
-
+    public SFX3dSettings spacialSettings;
     /// <summary>
-    /// Using the <see cref="pitch"/>, adds an offset by -/+ <see cref="pitchVariance"/>.
+    /// The destruction settings used when playing this SFX. See <see cref="SFXDestructionSettings"/> for more info.
     /// </summary>
-    /// <remarks>
-    /// Used to make clips not feel so repetative.
-    /// <para/>
-    /// Defaults to <see cref="AudioManager.DEFAULT_PITCH_VARIANCE"/>.
-    /// </remarks>
-    [Header("Pitch")]
-    public float pitchVariance;
-
-    /// <summary>
-    /// The pitch the <see cref="AudioClip"/> gets played at.
-    /// </summary>
-    /// <remarks>Defaults to 1.0</remarks>
-    public float pitch;
-
-    /// <summary>
-    /// The <see cref="Vector3"/> position to play this at. Used in turn with <see cref="spacialBlend"/>.
-    /// </summary>
-    [Header("Spacial Audio")]
-    public Vector3 localPosition = Vector3.zero;
-    /// <summary>
-    /// Value between 0 and 1 (inclusive) that decides if an <see cref="AudioClip"/> is spacial audio. 0 is no spacial audio, 1 is spacial audio.
-    /// </summary>
-    public float spacialBlend;
-
-    /// <summary>
-    /// If true, will destroy the clip when its done playing. Otherwise it will not.
-    /// </summary>
-    [Header("Clip Destruction")]
-    public bool destroyOnClipEnd;
-    /// <summary>
-    /// If true, will wait for the clip length in realtime before getting destroyed.
-    /// </summary>
-    public bool useRealtimeToDestroy;
-    /// <summary>
-    /// IS NOT IMPLIMENTED YET. If true, will not get destroyed when the scene changes.
-    /// </summary>
-    public bool scenePersistant;
+    public SFXDestructionSettings destructionSettings;
 
     [Header("Organization")]
     /// <summary>
@@ -121,67 +92,6 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     /// <remarks>Useful for orginization purposes.</remarks>
     public Transform parent;
-
-    /// <summary>
-    /// Sets the <see cref="minVolume"/>, <see cref="maxVolume"/>, and <see cref="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
-    /// </summary>
-    public virtual SFX SetVolume(float minVolume, float maxVolume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
-      this.minVolume = minVolume;
-      this.maxVolume = maxVolume;
-      this.volumeType = volumeType;
-      return this;
-    }
-
-    /// <summary>
-    /// Sets the <see cref="minVolume"/> and <see cref="maxVolume"/> to <paramref name="volume"/> and <see cref="volumeType"/> to <paramref name="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
-    /// </summary>
-    public virtual SFX SetVolume(float volume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
-      return SetVolume(volume, volume, volumeType);
-    }
-
-    /// <summary>
-    /// Sets the <see cref="pitch"/> and <see cref="pitchVariance"/> for this <see cref="SFX"/>
-    /// </summary>
-    public virtual SFX SetPitch(float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE, float pitch = 1) {
-      this.pitch = pitch;
-      this.pitchVariance = pitchVariance;
-      return this;
-    }
-
-    /// <summary>
-    /// Sets the <see cref="localPosition"/> and <see cref="spacialBlend"/> for this <see cref="SFX"/>
-    /// </summary>
-    /// <param name="localPosition"></param>
-    /// <param name="spacialBlend"></param>
-    public virtual SFX SetSpacialAudio(Vector3 localPosition, float spacialBlend = 1) {
-      this.localPosition = localPosition;
-      this.spacialBlend = spacialBlend;
-      return this;
-    }
-
-    /// <summary>
-    /// Sets the <see cref="audioSource"/> of this <see cref="SFX"/>
-    /// </summary>
-    public virtual SFX SetAudioSource(AudioSource audioSource) {
-      this.audioSource = audioSource;
-      return this;
-    }
-
-    /// <summary>
-    /// Sets the <see cref="name"/> of this <see cref="SFX"/>
-    /// </summary>
-    public virtual SFX SetName(string name) {
-      this.name = name;
-      return this;
-    }
-
-    /// <summary>
-    /// Sets the <see cref="parent"/> of this <see cref="SFX"/>
-    /// </summary>
-    public virtual SFX SetParent(Transform parent) {
-      this.parent = parent;
-      return this;
-    }
 
     /// <summary>
     /// Checks if this <see cref="SFX"/> has any <see cref="audioClips"/> to play.

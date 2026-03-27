@@ -7,7 +7,7 @@ public class TestingScript : MonoBehaviour {
   public float testingValue;
   public Vector3 testingVector3;
 
-  public SFX sfx = SFX.CreateSFX();
+  public SFX sfx = SFX.Create2DSFX();
   AudioClip clip;
   // Starter is called once before the first execution of Update after the MonoBehaviour is created
   void Start() {
@@ -15,6 +15,6 @@ public class TestingScript : MonoBehaviour {
     ObjectAnimations.AnimateTransformScale(transform, transform.localScale, new Vector3(3, 4, 5), 2);
     ObjectAnimations.AnimateTransformPosition(transform, transform.position, new Vector3(0, 5, 0), 2, animationCurve: curve);
 
-    SFX test = SFX.CreateSFX().SetPitch(3, 4);
+    SFX test = SFX.Create2DSFX().SetPitch(3, 4);
   }
 }

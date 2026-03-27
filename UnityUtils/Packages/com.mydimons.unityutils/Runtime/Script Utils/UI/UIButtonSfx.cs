@@ -11,21 +11,21 @@ namespace UnityUtils.ScriptUtils.UI {
     /// Sound to play when the button is hovered over
     /// </summary>
     [Header("Audio Clips & Volumes")]
-    public SFX hoverEnterSfx = SFX.CreateSFX();
+    public SFX hoverEnterSfx = SFX.Create2DSFX();
 
     [Space(5)]
 
     /// <summary>
     /// Sound to play when the button is no longer being hovered.
     /// </summary>
-    public SFX hoverExitSfx = SFX.CreateSFX();
+    public SFX hoverExitSfx = SFX.Create2DSFX();
 
     [Space(5)]
 
     /// <summary>
     /// Sound to play when the button is clicked
     /// </summary>
-    public SFX clickSfx = SFX.CreateSFX();
+    public SFX clickSfx = SFX.Create2DSFX();
 
     private bool sceneLoadTriggered;
 
