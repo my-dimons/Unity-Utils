@@ -52,6 +52,11 @@ namespace UnityUtils.ScriptUtils.Objects {
       originalMaterial = mat;
     }
 
+    /// <summary>
+    /// Flashes the object using the provided <see cref="ColorFlash"/> variables. If a flash is already active, a warning is logged and no new flash is started.
+    /// </summary>
+    /// <param name="colorFlash">The color flash to use when flashing</param>
+    /// <returns>The coroutine started by the flash</returns>
     public Coroutine Flash(ColorFlash colorFlash) {
       if (IsFlashing()) {
         Debug.LogWarning("Object is already flashing, no flash was started");
@@ -61,9 +66,13 @@ namespace UnityUtils.ScriptUtils.Objects {
       }
     }
 
+    /// <summary>
+    /// Calls <see cref="Flash(ColorFlash)"/> using the default <see cref="colorFlash"/> variables.
+    /// </summary>
+    /// <returns>The coroutine started by the flash</returns>
     [ContextMenu("Flash")]
     public Coroutine Flash() {
-      return StartCoroutine(FlashRoutine(colorFlash));
+      return Flash(colorFlash);
     }
 
     private IEnumerator FlashRoutine(ColorFlash flash) {
