@@ -5,6 +5,7 @@
 
 ### Changes
 - SFXManager.cs now only accepts SFX objects as parameters (Removed all other functions)
+- AudioManager.cs CalculatePitchVariance() now takes in a starting pitch.
 
 ### Fixes
 - Made all variables properly document their usage in both the docs and in IDE's (Previously would not work in IDE's)

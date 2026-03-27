@@ -6,6 +6,61 @@ using UnityUtils.ScriptUtils.Audio;
 /// </summary>
 [System.Serializable]
 public class SFX {
+  public SFX(AudioClip[] audioClips) {
+    this.audioClips = audioClips;
+  }
+
+  public SFX(AudioClip audioClip) {
+    this.audioClips = new AudioClip[] { audioClip };
+  }
+
+  /// <summary>
+  /// Sets the <see cref="minVolume"/> and <see cref="maxVolume"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
+  /// </summary>
+  public void SetVolume(float minVolume, float maxVolume) {
+    this.minVolume = minVolume;
+    this.maxVolume = maxVolume;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="pitch"/> and <see cref="pitchVariance"/> for this <see cref="SFX"/>
+  /// </summary>
+  public void SetPitch(float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE, float pitch = 1) {
+    this.pitch = pitch;
+    this.pitchVariance = pitchVariance;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="localPosition"/> and <see cref="spacialBlend"/> for this <see cref="SFX"/>
+  /// </summary>
+  /// <param name="localPosition"></param>
+  /// <param name="spacialBlend"></param>
+  public void SetSpacialAudio(Vector3 localPosition, float spacialBlend = 1) {
+    this.localPosition = localPosition;
+    this.spacialBlend = spacialBlend;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="audioSource"/> of this <see cref="SFX"/>
+  /// </summary>
+  public void SetAudioSource(AudioSource audioSource) {
+    this.audioSource = audioSource;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="name"/> of this <see cref="SFX"/>
+  /// </summary>
+  public void SetName(string name) {
+    this.name = name;
+  }
+
+  /// <summary>
+  /// Sets the <see cref="parent"/> of this <see cref="SFX"/>
+  /// </summary>
+  public void SetParent(Transform parent) {
+    this.parent = parent;
+  }
+
   /// <summary>
   /// Randomly play one of these clips when this SFX is played.
   /// </summary>
@@ -17,11 +72,11 @@ public class SFX {
   /// </summary>
   public AudioSource audioSource = null;
 
-  [Header("Volume")]
   /// <summary>
   /// <see cref="AudioManager.VolumeType"/> to play this SFX as. 
   /// </summary>
   /// <remarks>see <see cref="AudioManager.CalculateVolumeBasedOnType(float, AudioManager.VolumeType)"/> to get more info.</remarks>
+  [Header("Volume")]
   public AudioManager.VolumeType audioType = AudioManager.VolumeType.Sfx;
 
   /// <summary>
@@ -30,7 +85,7 @@ public class SFX {
   /// <remarks>
   /// Audio gets randomly played between the min and max volume.
   /// <para/>
-  /// Defaults to <see cref="AudioManager.MAX_AUDIO_VOLUME"/>.
+  /// Defaults to 1
   /// </remarks>
   [Range(0, 1)]
   public float maxVolume = AudioManager.MAX_AUDIO_VOLUME;
@@ -46,7 +101,6 @@ public class SFX {
   [Range(0, 1)]
   public float minVolume = AudioManager.MAX_AUDIO_VOLUME;
 
-  [Header("Pitch")]
   /// <summary>
   /// Using the <see cref="pitch"/>, adds an offset by -/+ <see cref="pitchVariance"/>.
   /// </summary>
@@ -55,6 +109,7 @@ public class SFX {
   /// <para/>
   /// Defaults to <see cref="AudioManager.DEFAULT_PITCH_VARIANCE"/>.
   /// </remarks>
+  [Header("Pitch")]
   public float pitchVariance = AudioManager.DEFAULT_PITCH_VARIANCE;
 
   /// <summary>
@@ -63,19 +118,27 @@ public class SFX {
   /// <remarks>Defaults to 1.0</remarks>
   public float pitch = 1.0f;
 
-  [Header("Spacial Audio")]
   /// <summary>
-  /// The <see cref="Vector3"/> position to play this at. Used in turn with <see cref="spacialAudio"/>.
+  /// The <see cref="Vector3"/> position to play this at. Used in turn with <see cref="spacialBlend"/>.
   /// </summary>
+  [Header("Spacial Audio")]
   public Vector3 localPosition = Vector3.zero;
   /// <summary>
   /// Value between 0 and 1 (inclusive) that decides if an <see cref="AudioClip"/> is spacial audio. 0 is no spacial audio, 1 is spacial audio.
   /// </summary>
-  public float spacialAudio = 0.0f;
+  public float spacialBlend = 0.0f;
 
-  [Header("Scene Persitance")]
   /// <summary>
-  /// If true, will not get destroyed when the scene changes.
+  /// If true, will destroy the clip when its done playing. Otherwise it will not.
+  /// </summary>
+  [Header("Clip Destruction")]
+  public bool destroyOnClipEnd = true;
+  /// <summary>
+  /// If true, will wait for the clip length in realtime before getting destroyed.
+  /// </summary>
+  public bool useRealtimeToDestroy = true;
+  /// <summary>
+  /// IS NOT IMPLIMENTED YET. If true, will not get destroyed when the scene changes.
   /// </summary>
   public bool scenePersistant = false;
 

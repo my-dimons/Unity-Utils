@@ -12,6 +12,9 @@ namespace UnityUtils.ScriptUtils.UI {
       Click
     }
 
+    /// <summary>
+    /// Will quit the game based on the <see cref="QuitGameButtonMethod"/>.
+    /// </summary>
     public QuitGameButtonMethod quitMethod = QuitGameButtonMethod.Click;
 
     /// <summary>

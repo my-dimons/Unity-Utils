@@ -104,6 +104,9 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// Calculates the pitch variance to add randomness to playback.
     /// </summary>
     /// <returns>Random number between 1 - pitchVariance and 1 + pitchVariance.</returns>
-    public static float CalculatePitchVariance(float pitchVariance) => UnityEngine.Random.Range(MAX_AUDIO_VOLUME - pitchVariance, MAX_AUDIO_VOLUME + pitchVariance);
+    public static float CalculatePitchVariance(float pitchVariance, float pitch) {
+      float randomPitch = UnityEngine.Random.Range(-pitchVariance, pitchVariance);
+      return pitch + randomPitch;
+    }
   }
 }
