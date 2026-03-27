@@ -3,6 +3,8 @@
 ### Additions
 - SFX class to play audio clips with set parameters
 - ColorFlash class to play color flashes with set parameters
+- Safety check when Flash() is called on ColorFlashManager
+- ContextMenu for ColorFlashManager under the name of "Flash", which flashes the object 
 
 ### Changes
 - SFXManager.cs now only accepts SFX objects as parameters (Removed all other functions)
@@ -18,7 +20,7 @@
 - UnityUtils docs now use "UnityUtils" instead of "Unity Utils" as the project name
 - ObjectModifiers.cs ModifierOrder now clones the DEFAULT_MODIFIER_ORDER, instead of just making a reference to it
 - ObjectModifiers.cs ModifierOrder now has measures in place to ensure no duplicate values are used, and all values are in use.
-- Formatted all scripts to have 2 tab spaces instead of 4 (Some scripts weren't formatted
+- Formatted all scripts to have 2 tab spaces instead of 4 (Some scripts weren't formatted from v1.3.1)
 
 + many other small msc changes that are too small to list (Like a type or a small doc change)
 
@@ -61,7 +63,7 @@
 - ObjectColorFlash removed all overloads and just made the parameters have a default value
 - Renamed Unity project from "UnityUtils-UnityProject" to "UnityUtils"
 
-## v1.3.1 - General Cleanup Before v1.4.0
+## v1.3.1 - General Cleanup Before v2.0.0
 
 ### Additions
 - Contributing guide

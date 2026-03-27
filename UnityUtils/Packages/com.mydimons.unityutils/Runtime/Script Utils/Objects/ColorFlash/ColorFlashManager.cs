@@ -53,9 +53,15 @@ namespace UnityUtils.ScriptUtils.Objects {
     }
 
     public Coroutine Flash(ColorFlash colorFlash) {
-      return StartCoroutine(FlashRoutine(colorFlash));
+      if (IsFlashing()) {
+        Debug.LogWarning("Object is already flashing, no flash was started");
+        return null;
+      } else {
+        return StartCoroutine(FlashRoutine(colorFlash));
+      }
     }
 
+    [ContextMenu("Flash")]
     public Coroutine Flash() {
       return StartCoroutine(FlashRoutine(colorFlash));
     }
