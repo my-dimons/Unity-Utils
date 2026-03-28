@@ -14,6 +14,12 @@
 - UIButtonSettings:
 	- QuitGameButtonMethod enum
 	- UIButtonDebugSettings class
+- More AudioTypes:
+	- Ambient
+	- Dialog
+	- Footsteps
+	- Weather
+	- 3 Custom types
 
 ### Changes
 - Renamed "SfxManager" to "SFXManager"

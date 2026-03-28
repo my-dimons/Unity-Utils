@@ -26,11 +26,20 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// Holds different audio types for volume calculations
     /// </summary>
     public enum VolumeType {
+      /// <summary>
+      /// Special audio type, everything gets multiplied by this volume, except for other global volumes.
+      /// </summary>
       Global,
       Sfx,
       Music,
       UI,
-      Custom
+      Weather,
+      Dialog,
+      Footsteps,
+      Ambient,
+      Custom1,
+      Custom2,
+      Custom3
     }
 
     /// <summary>
@@ -39,10 +48,16 @@ namespace UnityUtils.ScriptUtils.Audio {
     static readonly Dictionary<VolumeType, float> audioVolumes = new()
     {
       { VolumeType.Global, MAX_AUDIO_VOLUME },
-      { VolumeType.Sfx,    MAX_AUDIO_VOLUME },
-      { VolumeType.Music,  MAX_AUDIO_VOLUME },
-      { VolumeType.UI,     MAX_AUDIO_VOLUME },
-      { VolumeType.Custom, MAX_AUDIO_VOLUME },
+      { VolumeType.Sfx, MAX_AUDIO_VOLUME },
+      { VolumeType.Music, MAX_AUDIO_VOLUME },
+      { VolumeType.UI, MAX_AUDIO_VOLUME },
+      { VolumeType.Weather, MAX_AUDIO_VOLUME },
+      { VolumeType.Dialog, MAX_AUDIO_VOLUME },
+      { VolumeType.Footsteps, MAX_AUDIO_VOLUME },
+      { VolumeType.Ambient, MAX_AUDIO_VOLUME },
+      { VolumeType.Custom1, MAX_AUDIO_VOLUME },
+      { VolumeType.Custom2, MAX_AUDIO_VOLUME },
+      { VolumeType.Custom3, MAX_AUDIO_VOLUME },
     };
 
     /// <summary>
