@@ -13,11 +13,13 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-   	public ColorFLash flash;
+   	public ColorFlash flash = ColorFlash.CreateDefaultFlash();
+   	public ColorFlashManager flashManager;
    	
    	void Start()
    	{
-   	   // Create new flash obj
+   	   // Flash the object with a ColorFlashManager applied using the "flash"
+   	   flashManager.Flash(flash);
    	}
   }
      

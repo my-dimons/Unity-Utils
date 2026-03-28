@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityUtils.ScriptUtils.Audio;
 using UnityUtils.ScriptUtils.Objects;
+using UnityUtils.ScriptUtils.Objects.ColorFlash;
 
 public class TestingScript : MonoBehaviour {
   public AnimationCurve curve;
@@ -16,5 +17,9 @@ public class TestingScript : MonoBehaviour {
     ObjectAnimations.AnimateTransformPosition(transform, transform.position, new Vector3(0, 5, 0), 2, animationCurve: curve);
 
     SFX test = SFX.Create2dSFX();
+
+    ColorFlash flash = ColorFlash.CreateDefaultFlash();
+    flash.durationSeconds = 2;
+    flash.color = Color.red;
   }
 }

@@ -9,7 +9,7 @@ It works by changing the material of the specified object and changing the new m
 
 .. warning::
 
-   Do not modify a objects material while flashing, as it will interfere with the flashing. You can check if an object is flashing by calling IsFlashing().
+   Do not modify a objects material while flashing, as it may interfere with the flashing. You can check if an object is flashing by calling IsFlashing().
    
 Example Usage
 -------------
@@ -28,8 +28,10 @@ Example Usage
    	   // Flashes the applied using its default flash
    	   object.Flash();
    	   
-   	   // Flashes the applied object blue for 2 seconds.
-   	   object.Flash(new ColorFlash(Color.Blue, 2);
+   	   ColorFlash flash = ColorFlash.CreateDefaultFlash();
+   	   flash.durationSeconds = 2;
+   	   flash.color = Color.red;
+   	   object.Flash(flash);
    	   
    	   // Set the original material that is switched to after flashing
    	   object.SetOriginalMaterial(otherMat);
