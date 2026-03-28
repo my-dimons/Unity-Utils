@@ -18,7 +18,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <para>- <see cref="SFXDestructionSettings.destroyOnClipEnd"/> = true</para>
     /// <para>- <see cref="SFXDestructionSettings.useRealtimeToDestroy"/> = true</para>
     /// </summary>
-    public static SFX Create2DSFX() {
+    public static SFX Create2dSFX() {
       return new SFX {
         volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.Sfx),
         pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),
@@ -40,7 +40,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <para>- <see cref="SFXDestructionSettings.destroyOnClipEnd"/> = true</para>
     /// <para>- <see cref="SFXDestructionSettings.useRealtimeToDestroy"/> = true</para>
     /// </summary>
-    public static SFX Create3DSFX() {
+    public static SFX Create3dSFX() {
       return new SFX {
         volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.Sfx),
         pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),

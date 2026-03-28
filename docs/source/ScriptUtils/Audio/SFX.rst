@@ -16,8 +16,8 @@ Example Usage
    
    public class ExampleScript : MonoBehaviour
    {
-   	public SFX sfxClip = SFX.CreateSFX(); // Creates a new SFX clip with some default parameters for SFX
-   	public SFX musicClips = SFX.CreateMusic(); // Creates a new SFX clip with some default parameters for Music clips
+   	public SFX sfxClip = SFX.Create2dSFX(); // Creates a new SFX clip with some default parameters for a 2d SFX
+   	public SFX musicClips = SFX.Create3dSFX(); // Creates a new SFX clip with some default parameters for Music clips
 
    	void Start()
    	{
