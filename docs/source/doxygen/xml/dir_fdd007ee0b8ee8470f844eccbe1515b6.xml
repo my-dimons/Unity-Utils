@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_fdd007ee0b8ee8470f844eccbe1515b6" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers</compoundname>
+    <innerfile refid="_modifier_data_8cs">ModifierData.cs</innerfile>
+    <innerfile refid="_modifier_manager_8cs">ModifierManager.cs</innerfile>
+    <innerfile refid="_modifier_type_8cs">ModifierType.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/"/>
+  </compounddef>
+</doxygen>

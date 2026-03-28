@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['uibuttondebuglogs_2ecs_0',['UIButtonDebugLogs.cs',['../_u_i_button_debug_logs_8cs.html',1,'']]],
-  ['uibuttonhoverexpand_2ecs_1',['UIButtonHoverExpand.cs',['../_u_i_button_hover_expand_8cs.html',1,'']]],
-  ['uibuttonhoverposition_2ecs_2',['UIButtonHoverPosition.cs',['../_u_i_button_hover_position_8cs.html',1,'']]],
-  ['uibuttonhoverrotate_2ecs_3',['UIButtonHoverRotate.cs',['../_u_i_button_hover_rotate_8cs.html',1,'']]],
-  ['uibuttonquitgame_2ecs_4',['UIButtonQuitGame.cs',['../_u_i_button_quit_game_8cs.html',1,'']]],
-  ['uibuttonsceneswitcher_2ecs_5',['UIButtonSceneSwitcher.cs',['../_u_i_button_scene_switcher_8cs.html',1,'']]],
-  ['uibuttonsfx_2ecs_6',['UIButtonSfx.cs',['../_u_i_button_sfx_8cs.html',1,'']]],
-  ['uibuttonspawnparticles_2ecs_7',['UIButtonSpawnParticles.cs',['../_u_i_button_spawn_particles_8cs.html',1,'']]],
-  ['uibuttontoggleobjects_2ecs_8',['UIButtonToggleObjects.cs',['../_u_i_button_toggle_objects_8cs.html',1,'']]]
+  ['savedata_2ecs_0',['SaveData.cs',['../_save_data_8cs.html',1,'']]],
+  ['saveslot_2ecs_1',['SaveSlot.cs',['../_save_slot_8cs.html',1,'']]],
+  ['saveslotsavedata_2ecs_2',['SaveSlotSaveData.cs',['../_save_slot_save_data_8cs.html',1,'']]],
+  ['savesystemmanager_2ecs_3',['SaveSystemManager.cs',['../_save_system_manager_8cs.html',1,'']]],
+  ['savesystemutils_2ecs_4',['SaveSystemUtils.cs',['../_save_system_utils_8cs.html',1,'']]],
+  ['scriptableobjectmanager_2ecs_5',['ScriptableObjectManager.cs',['../_scriptable_object_manager_8cs.html',1,'']]],
+  ['sfx_2ecs_6',['SFX.cs',['../_s_f_x_8cs.html',1,'']]],
+  ['sfxmanager_2ecs_7',['SFXManager.cs',['../_s_f_x_manager_8cs.html',1,'']]],
+  ['sfxsettings_2ecs_8',['SFXSettings.cs',['../_s_f_x_settings_8cs.html',1,'']]]
 ];

@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="11" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="13" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a89424366b7a0b4d78b7b0182c06bc15f" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="14" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="18" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ad02debd2f2df229a908e231289a39ef1" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="19" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="19" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="25" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae5b8ba3814d39b73fe09caf2f28cfeb2" prot="public" static="no" mutable="no">
         <type>AnimationCurve</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="22" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="22" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="30" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a8e400b70467c6244a5ce00f5f8b77dfd" prot="public" static="no" mutable="no">
         <type>Transform</type>
@@ -82,67 +82,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="27" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="27" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="37" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aba17f4ad2c0913a07f7ae58d16cbfd9e" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoveringOverButton</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aeedbc98885acb1ddd9d88d28f8f3da2f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings" kindref="compound">UIButtonDebugSettings</ref></type>
+        <definition>UIButtonDebugSettings UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.debugLogs</definition>
         <argsstring></argsstring>
-        <name>hoveringOverButton</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.hoveringOverButton</qualifiedname>
+        <name>debugLogs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.debugLogs</qualifiedname>
         <briefdescription>
-<para>True if the button is being hovered. </para>
+<para>Will output a Debug.Log(object) depending on the <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings" kindref="compound">UIButtonDebugSettings</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="32" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="32" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae41c258a5ef53a311e56edbd7fe1ffd8" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScale</definition>
-        <argsstring></argsstring>
-        <name>logScale</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScale</qualifiedname>
-        <briefdescription>
-<para>Log on any scaling. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="37" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="37" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a44c0dd1d01aa1b521843fa50bc458b8c" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleUp</definition>
-        <argsstring></argsstring>
-        <name>logScaleUp</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleUp</qualifiedname>
-        <briefdescription>
-<para>Log first scale to set scale. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="39" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="39" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae43a901d1ab8a03c83a4010cf14afffb" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleDown</definition>
-        <argsstring></argsstring>
-        <name>logScaleDown</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.logScaleDown</qualifiedname>
-        <briefdescription>
-<para>Log second rotate back to default pos. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="41" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="41" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="43" column="34" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="43" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -158,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="43" column="13" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="43" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="45" column="21" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aeb63632e0700a05f79defffae50b49ce" prot="private" static="no" mutable="no">
         <type>Vector3</type>
@@ -172,7 +127,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="44" column="13" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="44" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="46" column="21" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a490f3e5352ca7b330abf2bd7012ae86a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug" kindref="compound">UIButtonDebug</ref></type>
+        <definition>UIButtonDebug UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.buttonDebug</definition>
+        <argsstring></argsstring>
+        <name>buttonDebug</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.buttonDebug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="47" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="47" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -188,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="47" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="47" bodyend="49"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="50" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="50" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae6fc150ade3c9d5144755ed7691909f6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -202,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="52" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="52" bodyend="59"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="57" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="57" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a0a353c3bef16f69cbeb3da009c472b6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -217,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="78" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="78" bodyend="85"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="79" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="79" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41950c8fe8591a2471b7b94c0e0c2872" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -232,21 +201,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="90" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="90" bodyend="97"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="91" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="91" bodyend="98"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a5e7759fc3a398f2fe09f3a0b85c49566" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aee9f5b41ad1014b24c73dbcbb585fe98" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.DebugRotate</definition>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.LogMove</definition>
         <argsstring>()</argsstring>
-        <name>DebugRotate</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.DebugRotate</qualifiedname>
+        <name>LogMove</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverPosition.LogMove</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="99" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="99" bodyend="102"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="100" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="100" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1abf6a889d835ff70ba6a5fc59c85b4498" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -260,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="104" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="104" bodyend="106"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="105" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="105" bodyend="107"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -280,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="61" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="61" bodyend="66"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="66" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="66" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a26e53e56fe011ab9accbbc8ee0827b4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -298,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="68" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="68" bodyend="73"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="71" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="71" bodyend="74"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -345,20 +314,25 @@
         </childnode>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>debugLogs</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonDebugSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="8" bodyend="107"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverPosition.cs" bodystart="8" bodyend="108"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a8e400b70467c6244a5ce00f5f8b77dfd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>applyTransform</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a5e7759fc3a398f2fe09f3a0b85c49566" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>DebugRotate</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a490f3e5352ca7b330abf2bd7012ae86a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>buttonDebug</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aeedbc98885acb1ddd9d88d28f8f3da2f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>debugLogs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a0a353c3bef16f69cbeb3da009c472b6e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>EnterHoverAnimation</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41950c8fe8591a2471b7b94c0e0c2872" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>ExitHoverAnimation</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aba17f4ad2c0913a07f7ae58d16cbfd9e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>hoveringOverButton</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a92688cb0434ed95b8d04813b9aeb4386" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>hoverLocalPosition</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aeb63632e0700a05f79defffae50b49ce" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>hoverPositionVector</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae41c258a5ef53a311e56edbd7fe1ffd8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>logScale</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1ae43a901d1ab8a03c83a4010cf14afffb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>logScaleDown</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a44c0dd1d01aa1b521843fa50bc458b8c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>logScaleUp</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1aee9f5b41ad1014b24c73dbcbb585fe98" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>LogMove</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a98ffd4766abd2d847915ee38253544d2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>OnPointerEnter</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a26e53e56fe011ab9accbbc8ee0827b4a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>OnPointerExit</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_1a41fcf4117710fa70be8f85c48496c1d6" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</scope><name>originalPosition</name></member>

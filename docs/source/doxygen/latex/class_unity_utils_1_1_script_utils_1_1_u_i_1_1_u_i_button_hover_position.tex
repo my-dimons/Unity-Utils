@@ -26,14 +26,8 @@ Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1
 \begin{DoxyCompactList}\small\item\em The Animation\+Curve that the button will follow. \end{DoxyCompactList}\item 
 Transform \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a8e400b70467c6244a5ce00f5f8b77dfd}{apply\+Transform}}
 \begin{DoxyCompactList}\small\item\em The object to apply the transform to (Default\textquotesingle{}s to the applied object). \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aba17f4ad2c0913a07f7ae58d16cbfd9e}{hovering\+Over\+Button}}
-\begin{DoxyCompactList}\small\item\em True if the button is being hovered. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae41c258a5ef53a311e56edbd7fe1ffd8}{log\+Scale}}
-\begin{DoxyCompactList}\small\item\em Log on any scaling. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a44c0dd1d01aa1b521843fa50bc458b8c}{log\+Scale\+Up}}
-\begin{DoxyCompactList}\small\item\em Log first scale to set scale. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae43a901d1ab8a03c83a4010cf14afffb}{log\+Scale\+Down}}
-\begin{DoxyCompactList}\small\item\em Log second rotate back to default pos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings}{UIButton\+Debug\+Settings}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aeedbc98885acb1ddd9d88d28f8f3da2f}{debug\+Logs}}
+\begin{DoxyCompactList}\small\item\em Will output a Debug.\+Log(object) depending on the \doxylink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings}{UIButton\+Debug\+Settings}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -66,15 +60,15 @@ Transform Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+apply\
 
 The object to apply the transform to (Default\textquotesingle{}s to the applied object). 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aba17f4ad2c0913a07f7ae58d16cbfd9e}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!hoveringOverButton@{hoveringOverButton}}
-\index{hoveringOverButton@{hoveringOverButton}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
-\doxysubsubsection{\texorpdfstring{hoveringOverButton}{hoveringOverButton}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aba17f4ad2c0913a07f7ae58d16cbfd9e} 
-bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+hovering\+Over\+Button}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aeedbc98885acb1ddd9d88d28f8f3da2f}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!debugLogs@{debugLogs}}
+\index{debugLogs@{debugLogs}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
+\doxysubsubsection{\texorpdfstring{debugLogs}{debugLogs}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_aeedbc98885acb1ddd9d88d28f8f3da2f} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings}{UIButton\+Debug\+Settings}} Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+debug\+Logs}
 
 
 
-True if the button is being hovered. 
+Will output a Debug.\+Log(object) depending on the \doxylink{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings}{UIButton\+Debug\+Settings}. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a92688cb0434ed95b8d04813b9aeb4386}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!hoverLocalPosition@{hoverLocalPosition}}
 \index{hoverLocalPosition@{hoverLocalPosition}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
@@ -85,36 +79,6 @@ Vector3 Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+hover\+L
 
 
 When hovered this is the size the button will be set to. 
-
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae41c258a5ef53a311e56edbd7fe1ffd8}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!logScale@{logScale}}
-\index{logScale@{logScale}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
-\doxysubsubsection{\texorpdfstring{logScale}{logScale}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae41c258a5ef53a311e56edbd7fe1ffd8} 
-bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+log\+Scale}
-
-
-
-Log on any scaling. 
-
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae43a901d1ab8a03c83a4010cf14afffb}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!logScaleDown@{logScaleDown}}
-\index{logScaleDown@{logScaleDown}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
-\doxysubsubsection{\texorpdfstring{logScaleDown}{logScaleDown}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_ae43a901d1ab8a03c83a4010cf14afffb} 
-bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+log\+Scale\+Down}
-
-
-
-Log second rotate back to default pos. 
-
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a44c0dd1d01aa1b521843fa50bc458b8c}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!logScaleUp@{logScaleUp}}
-\index{logScaleUp@{logScaleUp}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}
-\doxysubsubsection{\texorpdfstring{logScaleUp}{logScaleUp}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a44c0dd1d01aa1b521843fa50bc458b8c} 
-bool Unity\+Utils.\+Script\+Utils.\+UI.\+UIButton\+Hover\+Position.\+log\+Scale\+Up}
-
-
-
-Log first scale to set scale. 
 
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position_a89424366b7a0b4d78b7b0182c06bc15f}\index{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}!sizeAnimationSeconds@{sizeAnimationSeconds}}
 \index{sizeAnimationSeconds@{sizeAnimationSeconds}!UnityUtils.ScriptUtils.UI.UIButtonHoverPosition@{UnityUtils.ScriptUtils.UI.UIButtonHoverPosition}}

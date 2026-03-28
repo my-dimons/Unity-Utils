@@ -1,0 +1,198 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{}\label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0a0822185e1e5dcd60dfd5edbcb18cea}{Set\+Fade\+In}} (float fade\+In\+Time, Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6}{fade\+In\+Curve}})
+\begin{DoxyCompactList}\small\item\em Sets the \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9c341919d741ce7c193d90ddf6b51113}{fade\+In\+Time\+Seconds} and \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6}{fade\+In\+Curve} properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_aa4871f87ddb34569fab79b17095442fb}{Set\+Fade\+Out}} (float fade\+Out\+Time, Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712}{fade\+Out\+Curve}})
+\begin{DoxyCompactList}\small\item\em Sets the \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a273074729756a312d8e8d6df074249ad}{fade\+Out\+Time\+Seconds} and \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712}{fade\+Out\+Curve} properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a8efd9003afc2ef4e40c875401458e74e}{Create\+Default\+Flash}} ()
+\begin{DoxyCompactList}\small\item\em Creates a default color flash with the following properties\+: \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a47372c0309b8f9bdd8a309c6c9c95801}{Create\+Default\+Fade\+Out\+Flash}} ()
+\begin{DoxyCompactList}\small\item\em Creates a default color flash with the following properties\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a7cd9ba584c13fce86d76131c4a2aab47}{color}} = Color.\+white
+\begin{DoxyCompactList}\small\item\em The Color that is flashed to. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0b84aa45a53079ae8b4f4ed97b6946dd}{duration\+Seconds}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em The amount of time, in seconds, that the flash is at \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount} for after fade in and before fade out. \end{DoxyCompactList}\item 
+Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6}{fade\+In\+Curve}} = Animation\+Curve.\+Linear(0, 0, 1, 1)
+\begin{DoxyCompactList}\small\item\em The animation curve that controls the fade in of the flash. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9c341919d741ce7c193d90ddf6b51113}{fade\+In\+Time\+Seconds}} = 0
+\begin{DoxyCompactList}\small\item\em The amount of time, in seconds, that the flash takes to fade in from 0 intensity to \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount} at the start of the flash. \end{DoxyCompactList}\item 
+Animation\+Curve \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712}{fade\+Out\+Curve}} = Animation\+Curve.\+Linear(0, 0, 1, 1)
+\begin{DoxyCompactList}\small\item\em The animation curve that controls the fade out of the flash. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a273074729756a312d8e8d6df074249ad}{fade\+Out\+Time\+Seconds}} = 0
+\begin{DoxyCompactList}\small\item\em The amount of time, in seconds, that the flash takes to fade out from \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount} to 0 intensity at the end of the flash. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount}} = 1
+\begin{DoxyCompactList}\small\item\em A 0 to 1 range of the intensity of the flash. 0 means no flash, and 1 means full flash. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ae0cdd0badfbd20a71c6b4136e98bedab}{use\+Realtime}} = false
+\begin{DoxyCompactList}\small\item\em if True, will use unscaled time instead of scaled time for the flash duration and fade in/out times. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a47372c0309b8f9bdd8a309c6c9c95801}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!CreateDefaultFadeOutFlash@{CreateDefaultFadeOutFlash}}
+\index{CreateDefaultFadeOutFlash@{CreateDefaultFadeOutFlash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{CreateDefaultFadeOutFlash()}{CreateDefaultFadeOutFlash()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a47372c0309b8f9bdd8a309c6c9c95801} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+Create\+Default\+Fade\+Out\+Flash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a default color flash with the following properties\+: 
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a7cd9ba584c13fce86d76131c4a2aab47}{color}\+: Color.\+white
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0b84aa45a53079ae8b4f4ed97b6946dd}{duration\+Seconds}\+: 0s
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6}{fade\+In\+Curve}\+: Animation\+Curve.\+Linear(float, float, float, float) from 0 to 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9c341919d741ce7c193d90ddf6b51113}{fade\+In\+Time\+Seconds}\+: 0s
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712}{fade\+Out\+Curve}\+: Animation\+Curve.\+Linear(float, float, float, float) from 0 to 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a273074729756a312d8e8d6df074249ad}{fade\+Out\+Time\+Seconds}\+: 0.\+25s
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount}\+: 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ae0cdd0badfbd20a71c6b4136e98bedab}{use\+Realtime}\+: false\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a8efd9003afc2ef4e40c875401458e74e}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!CreateDefaultFlash@{CreateDefaultFlash}}
+\index{CreateDefaultFlash@{CreateDefaultFlash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{CreateDefaultFlash()}{CreateDefaultFlash()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a8efd9003afc2ef4e40c875401458e74e} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+Create\+Default\+Flash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a default color flash with the following properties\+: 
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a7cd9ba584c13fce86d76131c4a2aab47}{color}\+: Color.\+white
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0b84aa45a53079ae8b4f4ed97b6946dd}{duration\+Seconds}\+: 0.\+1s
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6}{fade\+In\+Curve}\+: Animation\+Curve.\+Linear(float, float, float, float) from 0 to 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9c341919d741ce7c193d90ddf6b51113}{fade\+In\+Time\+Seconds}\+: 0s
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712}{fade\+Out\+Curve}\+: Animation\+Curve.\+Linear(float, float, float, float) from 0 to 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a273074729756a312d8e8d6df074249ad}{fade\+Out\+Time\+Seconds}\+: 0s
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount}\+: 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ae0cdd0badfbd20a71c6b4136e98bedab}{use\+Realtime}\+: false\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0a0822185e1e5dcd60dfd5edbcb18cea}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!SetFadeIn@{SetFadeIn}}
+\index{SetFadeIn@{SetFadeIn}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{SetFadeIn()}{SetFadeIn()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0a0822185e1e5dcd60dfd5edbcb18cea} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+Set\+Fade\+In (\begin{DoxyParamCaption}\item[{float}]{fade\+In\+Time}{, }\item[{Animation\+Curve}]{fade\+In\+Curve}{}\end{DoxyParamCaption})}
+
+
+
+Sets the \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9c341919d741ce7c193d90ddf6b51113}{fade\+In\+Time\+Seconds} and \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6}{fade\+In\+Curve} properties. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_aa4871f87ddb34569fab79b17095442fb}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!SetFadeOut@{SetFadeOut}}
+\index{SetFadeOut@{SetFadeOut}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{SetFadeOut()}{SetFadeOut()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_aa4871f87ddb34569fab79b17095442fb} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+Set\+Fade\+Out (\begin{DoxyParamCaption}\item[{float}]{fade\+Out\+Time}{, }\item[{Animation\+Curve}]{fade\+Out\+Curve}{}\end{DoxyParamCaption})}
+
+
+
+Sets the \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a273074729756a312d8e8d6df074249ad}{fade\+Out\+Time\+Seconds} and \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712}{fade\+Out\+Curve} properties. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a7cd9ba584c13fce86d76131c4a2aab47}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!color@{color}}
+\index{color@{color}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a7cd9ba584c13fce86d76131c4a2aab47} 
+Color Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+color = Color.\+white}
+
+
+
+The Color that is flashed to. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0b84aa45a53079ae8b4f4ed97b6946dd}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!durationSeconds@{durationSeconds}}
+\index{durationSeconds@{durationSeconds}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{durationSeconds}{durationSeconds}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a0b84aa45a53079ae8b4f4ed97b6946dd} 
+float Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+duration\+Seconds = 0.\+1f}
+
+
+
+The amount of time, in seconds, that the flash is at \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount} for after fade in and before fade out. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!fadeInCurve@{fadeInCurve}}
+\index{fadeInCurve@{fadeInCurve}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{fadeInCurve}{fadeInCurve}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a815a3afd7c00cb3f1d4a8332353b1ed6} 
+Animation\+Curve Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+fade\+In\+Curve = Animation\+Curve.\+Linear(0, 0, 1, 1)}
+
+
+
+The animation curve that controls the fade in of the flash. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9c341919d741ce7c193d90ddf6b51113}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!fadeInTimeSeconds@{fadeInTimeSeconds}}
+\index{fadeInTimeSeconds@{fadeInTimeSeconds}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{fadeInTimeSeconds}{fadeInTimeSeconds}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9c341919d741ce7c193d90ddf6b51113} 
+float Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+fade\+In\+Time\+Seconds = 0}
+
+
+
+The amount of time, in seconds, that the flash takes to fade in from 0 intensity to \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount} at the start of the flash. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!fadeOutCurve@{fadeOutCurve}}
+\index{fadeOutCurve@{fadeOutCurve}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{fadeOutCurve}{fadeOutCurve}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a9061569d313254b8192ca06dd539e712} 
+Animation\+Curve Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+fade\+Out\+Curve = Animation\+Curve.\+Linear(0, 0, 1, 1)}
+
+
+
+The animation curve that controls the fade out of the flash. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a273074729756a312d8e8d6df074249ad}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!fadeOutTimeSeconds@{fadeOutTimeSeconds}}
+\index{fadeOutTimeSeconds@{fadeOutTimeSeconds}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{fadeOutTimeSeconds}{fadeOutTimeSeconds}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a273074729756a312d8e8d6df074249ad} 
+float Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+fade\+Out\+Time\+Seconds = 0}
+
+
+
+The amount of time, in seconds, that the flash takes to fade out from \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}{flash\+Amount} to 0 intensity at the end of the flash. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!flashAmount@{flashAmount}}
+\index{flashAmount@{flashAmount}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{flashAmount}{flashAmount}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ad4caab1c3685c47c4c6ec2f26ef187c4} 
+float Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+flash\+Amount = 1}
+
+
+
+A 0 to 1 range of the intensity of the flash. 0 means no flash, and 1 means full flash. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ae0cdd0badfbd20a71c6b4136e98bedab}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}!useRealtime@{useRealtime}}
+\index{useRealtime@{useRealtime}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash}}
+\doxysubsubsection{\texorpdfstring{useRealtime}{useRealtime}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_ae0cdd0badfbd20a71c6b4136e98bedab} 
+bool Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash.\+use\+Realtime = false}
+
+
+
+if True, will use unscaled time instead of scaled time for the flash duration and fade in/out times. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/com.\+mydimons.\+unityutils/\+Runtime/\+Script Utils/\+Objects/\+Color\+Flash/\mbox{\hyperlink{_color_flash_8cs}{Color\+Flash.\+cs}}\end{DoxyCompactItemize}

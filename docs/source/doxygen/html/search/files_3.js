@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsonsavesystem_2ecs_0',['JsonSaveSystem.cs',['../_json_save_system_8cs.html',1,'']]]
+  ['isaveabledata_2ecs_0',['ISaveableData.cs',['../_i_saveable_data_8cs.html',1,'']]]
 ];

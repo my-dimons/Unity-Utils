@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_u_i_audio_slider_8cs" kind="file" language="C#">
+    <compoundname>UIAudioSlider.cs</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider" prot="public">UnityUtils::ScriptUtils::UI::AudioSlider</innerclass>
+    <innernamespace refid="namespace_unity_utils">UnityUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils">UnityUtils::ScriptUtils</innernamespace>
+    <innernamespace refid="namespace_unity_utils_1_1_script_utils_1_1_u_i">UnityUtils::ScriptUtils::UI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">UnityEngine.UI;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kindref="compound">UnityUtils.ScriptUtils.Audio</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespace_unity_utils_1_1_script_utils_1_1_u_i" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unity_utils_1_1_script_utils_1_1_u_i" kindref="compound">UnityUtils.ScriptUtils.UI</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/>[RequireComponent(typeof(Slider))]</highlight></codeline>
+<codeline lineno="7" refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider" kindref="compound">AudioSlider</ref><sp/>:<sp/>MonoBehaviour<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1a9cc8f3f577a190e3ea1735614080d066" kindref="member">volumeType</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>[Space(10)]</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1afaffd8cb8bfd213813e966469da04755" kindref="member">logSliderValueChange</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Slider<sp/>slider;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Start()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>slider<sp/>=<sp/>GetComponent&lt;Slider&gt;();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>slider.onValueChanged.AddListener(OnSliderValueChanged);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1a22e1841a03cfc7f5d9b6e5635f54d16d" kindref="member">SetSliderValue</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSliderValueChanged(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>volume)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kindref="compound">AudioManager</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a096134c5684b1ef0d8f46d9c0cf9a6a6" kindref="member">SetVolume</ref>(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1a9cc8f3f577a190e3ea1735614080d066" kindref="member">volumeType</ref>,<sp/>volume);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1afaffd8cb8bfd213813e966469da04755" kindref="member">logSliderValueChange</ref>)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.Log(</highlight><highlight class="stringliteral">&quot;Set<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1a9cc8f3f577a190e3ea1735614080d066" kindref="member">volumeType</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Volume<sp/>to:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>volume);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1a22e1841a03cfc7f5d9b6e5635f54d16d" kindref="member">SetSliderValue</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>slider.value<sp/>=<sp/><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kindref="compound">AudioManager</ref>.<ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a36656b98992ea5778e3ca6f2b1316516" kindref="member">GetVolume</ref>(<ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider_1a9cc8f3f577a190e3ea1735614080d066" kindref="member">volumeType</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs"/>
+  </compounddef>
+</doxygen>

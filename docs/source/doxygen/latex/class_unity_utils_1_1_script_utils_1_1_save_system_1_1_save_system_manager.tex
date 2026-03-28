@@ -18,13 +18,13 @@ static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_s
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a1dc3203e46e8017422f4d5a16265b625}{Get\+Most\+Recent\+Save}} (List$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}} $>$ save\+Slots)
 \begin{DoxyCompactList}\small\item\em Grabs the most recent save in a list of \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot}{Save\+Slot}. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_aac33818c46dcb4e59a559470cade3645}{Save\+All\+Saveable\+Data}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} data\+To\+Save, List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$ save\+To)
-\item 
+\begin{DoxyCompactList}\small\item\em Calls ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) on all the objects in {\itshape save\+To} . \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a4f6b03beaeb83add6b30a99605d7f2a2}{Save\+All\+Saveable\+Data}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} data\+To\+Save)
-\item 
-static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_ae5118682cd698d11440ea44e3f714259}{Load\+All\+Saveable\+Data}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} data\+To\+Save, List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$ save\+To)
-\item 
-static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a21fa91c0204cd0f1f603c0359fd50c74}{Load\+All\+Saveable\+Data}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} data\+To\+Save)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calls Save\+All\+Saveable\+Data(\+Save\+Data, List$<$\+ISaveable\+Data$>$), and calls \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects} as the List$<$\+ISaveable\+Data$>$. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_acdccc49054672757762c7c53413207f0}{Load\+All\+Saveable\+Data}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} data\+To\+Load, List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$ load\+From)
+\begin{DoxyCompactList}\small\item\em Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on all the objects in {\itshape load\+From} . \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a0c8aef6041ff87a1f8d67e6af0c110c6}{Load\+All\+Saveable\+Data}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}} data\+To\+Load)
+\begin{DoxyCompactList}\small\item\em Calls Save\+All\+Saveable\+Data(\+Save\+Data, List$<$\+ISaveable\+Data$>$), and calls \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects} as the List$<$\+ISaveable\+Data$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -108,18 +108,38 @@ Grabs the most recent save in a list of \doxylink{class_unity_utils_1_1_script_u
 \begin{DoxyReturn}{Returns}
 Most recently saved slot
 \end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a21fa91c0204cd0f1f603c0359fd50c74}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadAllSaveableData@{LoadAllSaveableData}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a0c8aef6041ff87a1f8d67e6af0c110c6}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadAllSaveableData@{LoadAllSaveableData}}
 \index{LoadAllSaveableData@{LoadAllSaveableData}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{LoadAllSaveableData()}{LoadAllSaveableData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a21fa91c0204cd0f1f603c0359fd50c74} 
-void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Load\+All\+Saveable\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]{data\+To\+Save}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a0c8aef6041ff87a1f8d67e6af0c110c6} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Load\+All\+Saveable\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]{data\+To\+Load}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_ae5118682cd698d11440ea44e3f714259}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadAllSaveableData@{LoadAllSaveableData}}
+
+
+Calls Save\+All\+Saveable\+Data(\+Save\+Data, List$<$\+ISaveable\+Data$>$), and calls \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects} as the List$<$\+ISaveable\+Data$>$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Load} & Data object to pass into the all the \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects()} \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}\textquotesingle{}s\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_acdccc49054672757762c7c53413207f0}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadAllSaveableData@{LoadAllSaveableData}}
 \index{LoadAllSaveableData@{LoadAllSaveableData}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{LoadAllSaveableData()}{LoadAllSaveableData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_ae5118682cd698d11440ea44e3f714259} 
-void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Load\+All\+Saveable\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]{data\+To\+Save}{, }\item[{List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$}]{save\+To}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_acdccc49054672757762c7c53413207f0} 
+void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Load\+All\+Saveable\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]{data\+To\+Load}{, }\item[{List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$}]{load\+From}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on all the objects in {\itshape load\+From} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Load} & Data object to pass into the all the {\itshape load\+From}  \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}\textquotesingle{}s\\
+\hline
+{\em load\+From} & All the \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} objects that get ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) called on it, with {\itshape data\+To\+Load}  passed into it\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a9d94ff58264b0f404cc1c2f54c14c1aa}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!LoadAllSaveSlots@{LoadAllSaveSlots}}
 \index{LoadAllSaveSlots@{LoadAllSaveSlots}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{LoadAllSaveSlots()}{LoadAllSaveSlots()}}
@@ -154,12 +174,32 @@ Calls ISaveable\+Data.\+Load\+Data$<$\+T$>$(\+T) on every script inheriting \dox
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a4f6b03beaeb83add6b30a99605d7f2a2} 
 void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Save\+All\+Saveable\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]{data\+To\+Save}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Calls Save\+All\+Saveable\+Data(\+Save\+Data, List$<$\+ISaveable\+Data$>$), and calls \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects} as the List$<$\+ISaveable\+Data$>$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Save} & Data object to pass into the all the \doxylink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_a44ea94ab7d0fa6d624b639dc227be510}{Find\+All\+Data\+Persistance\+Objects()} \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}\textquotesingle{}s\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_aac33818c46dcb4e59a559470cade3645}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!SaveAllSaveableData@{SaveAllSaveableData}}
 \index{SaveAllSaveableData@{SaveAllSaveableData}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{SaveAllSaveableData()}{SaveAllSaveableData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_aac33818c46dcb4e59a559470cade3645} 
 void Unity\+Utils.\+Script\+Utils.\+Save\+System.\+Save\+System\+Manager.\+Save\+All\+Saveable\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data}{Save\+Data}}}]{data\+To\+Save}{, }\item[{List$<$ \mbox{\hyperlink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}} $>$}]{save\+To}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Calls ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) on all the objects in {\itshape save\+To} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Save} & Data object to pass into the all the {\itshape save\+To}  \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data}\textquotesingle{}s\\
+\hline
+{\em save\+To} & All the \doxylink{interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data}{ISaveable\+Data} objects that get ISaveable\+Data.\+Save\+Data$<$\+T$>$(\+T) called on it, with {\itshape data\+To\+Save}  passed into it\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager_abd0a87d01781d044748bdf7823bb0719}\index{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}!SaveGame@{SaveGame}}
 \index{SaveGame@{SaveGame}!UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager@{UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager}}
 \doxysubsubsection{\texorpdfstring{SaveGame()}{SaveGame()}}

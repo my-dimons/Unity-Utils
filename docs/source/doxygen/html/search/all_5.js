@@ -1,9 +1,15 @@
 var searchData=
 [
   ['fadeinaudio_0',['FadeInAudio',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#aff1b70dd806db24eebfb5342b29d230c',1,'UnityUtils::ScriptUtils::Objects::ObjectAnimations']]],
-  ['fadeoutaudio_1',['FadeOutAudio',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#ad69193b5f38d27d69ba12fee3594bf86',1,'UnityUtils::ScriptUtils::Objects::ObjectAnimations']]],
-  ['fadetime_2',['fadeTime',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#a47f1245bae09985a4117f1af691620a7',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['findalldatapersistanceobjects_3',['FindAllDataPersistanceObjects',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a44ea94ab7d0fa6d624b639dc227be510',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]],
-  ['flash_4',['Flash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_color_flash.html#a65c272b476d56a02393b5b150d794df1',1,'UnityUtils::ScriptUtils::Objects::ObjectColorFlash']]],
-  ['flat_5',['Flat',['../namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07a745e3db6a7ffd50e1a72b39482f0882d',1,'UnityUtils::ScriptUtils::Objects']]]
+  ['fadeincurve_1',['fadeInCurve',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a815a3afd7c00cb3f1d4a8332353b1ed6',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
+  ['fadeintimeseconds_2',['fadeInTimeSeconds',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9c341919d741ce7c193d90ddf6b51113',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
+  ['fadeoutaudio_3',['FadeOutAudio',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html#ad69193b5f38d27d69ba12fee3594bf86',1,'UnityUtils::ScriptUtils::Objects::ObjectAnimations']]],
+  ['fadeoutcurve_4',['fadeOutCurve',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9061569d313254b8192ca06dd539e712',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
+  ['fadeouttimeseconds_5',['fadeOutTimeSeconds',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a273074729756a312d8e8d6df074249ad',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
+  ['fadetime_6',['fadeTime',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#aedc14e00dd6b5c93581c686c226c29fa',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['findalldatapersistanceobjects_7',['FindAllDataPersistanceObjects',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a44ea94ab7d0fa6d624b639dc227be510',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]],
+  ['flash_8',['Flash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#a4cc13f7063a662ab0df4c0a0761e1c49',1,'UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.Flash(ColorFlash colorFlash)'],['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#ab966535fcdc3981a5ff3d3dcbeb3bca8',1,'UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.Flash()']]],
+  ['flashamount_9',['flashAmount',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#ad4caab1c3685c47c4c6ec2f26ef187c4',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
+  ['flat_10',['Flat',['../namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers.html#a8019d8ece5f39e5c2619d938eead5c71a745e3db6a7ffd50e1a72b39482f0882d',1,'UnityUtils::ScriptUtils::Objects::Modifiers']]],
+  ['footsteps_11',['Footsteps',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];

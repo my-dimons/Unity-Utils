@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>UnityUtils::ScriptUtils::Audio::MusicClip</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ScriptableObject</basecompoundref>
+    <derivedcompoundref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music" prot="public" virt="non-virtual">UnityUtils.ScriptUtils.Audio.BackgroundMusic</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a843242abcd205d1f95f2194c46806785" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip UnityUtils.ScriptUtils.Audio.MusicClip.musicClip</definition>
+        <argsstring></argsstring>
+        <name>musicClip</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicClip.musicClip</qualifiedname>
+        <briefdescription>
+<para>The music clip played. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" line="9" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a8cb21bec984b444d17237271425c10b6" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityUtils.ScriptUtils.Audio.MusicClip.musicName</definition>
+        <argsstring></argsstring>
+        <name>musicName</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicClip.musicName</qualifiedname>
+        <initializer>= &quot;Music Clip [<ref refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kindref="compound">UnityUtils.ScriptUtils.Audio</ref>]&quot;</initializer>
+        <briefdescription>
+<para>The name of this music clip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" line="14" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a3d1288fa8edb7638f9cf14474803e29e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kindref="compound">SFXVolumeSettings</ref></type>
+        <definition>SFXVolumeSettings UnityUtils.ScriptUtils.Audio.MusicClip.volumeSettings</definition>
+        <argsstring></argsstring>
+        <name>volumeSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicClip.volumeSettings</qualifiedname>
+        <initializer>= new <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kindref="compound">SFXVolumeSettings</ref>().SetVolume(1, <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" kindref="member">AudioManager.VolumeType.Music</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" line="17" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a0975f3b0c0e5143ed7d5a6cfe737ec07" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings" kindref="compound">SFXPitchSettings</ref></type>
+        <definition>SFXPitchSettings UnityUtils.ScriptUtils.Audio.MusicClip.pitchSettings</definition>
+        <argsstring></argsstring>
+        <name>pitchSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicClip.pitchSettings</qualifiedname>
+        <initializer>= new <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings" kindref="compound">SFXPitchSettings</ref>().SetPitch(0, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" line="18" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a675215ce5663aa4b5650f6392b4123f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.MusicClip.CanBePlayed</definition>
+        <argsstring>()</argsstring>
+        <name>CanBePlayed</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicClip.CanBePlayed</qualifiedname>
+        <briefdescription>
+<para><simplesect kind="return"><para>If true, the clip can be played when picking music</para>
+</simplesect>
+</para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" line="21" column="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ScriptableObject</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.MusicClip</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UnityUtils.ScriptUtils.Audio.BackgroundMusic</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ScriptableObject</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.MusicClip</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>volumeSettings</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>pitchSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
+      </node>
+      <node id="5">
+        <label>UnityUtils.ScriptUtils.Audio.SFXPitchSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings"/>
+      </node>
+      <node id="3">
+        <label>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>volumeType</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" line="5" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicClip.cs" bodystart="5" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a675215ce5663aa4b5650f6392b4123f1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicClip</scope><name>CanBePlayed</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a843242abcd205d1f95f2194c46806785" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicClip</scope><name>musicClip</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a8cb21bec984b444d17237271425c10b6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicClip</scope><name>musicName</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a0975f3b0c0e5143ed7d5a6cfe737ec07" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicClip</scope><name>pitchSettings</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a3d1288fa8edb7638f9cf14474803e29e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicClip</scope><name>volumeSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

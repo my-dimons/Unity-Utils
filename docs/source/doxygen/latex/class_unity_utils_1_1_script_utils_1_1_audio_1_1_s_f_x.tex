@@ -1,0 +1,198 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+
+
+Used in \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager}{SFXManager} to play audio clips with some set parameters.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a6a606262818e6fcf4ecc69edd71748a0}{Has\+Audio\+Clips}} ()
+\begin{DoxyCompactList}\small\item\em Checks if this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} has any \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a5d424d57e2ca3a031f73e474ac441ae9}{audio\+Clips} to play. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a8764fc2b00f6817400d898bb1bf2f57f}{Create2d\+SFX}} ()
+\begin{DoxyCompactList}\small\item\em Returns a new \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} with the following properties\+: \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_ad568f0df8611d960485763072eb9d233}{Create3d\+SFX}} ()
+\begin{DoxyCompactList}\small\item\em Returns a new \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} with the following properties\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Clip\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a5d424d57e2ca3a031f73e474ac441ae9}{audio\+Clips}}
+\begin{DoxyCompactList}\small\item\em Randomly play one of these clips when this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} is played. \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a910b0f617d33d08a5dc12696f4fc2788}{audio\+Source}}
+\begin{DoxyCompactList}\small\item\em If null, will create a new object and add an audio source. Otherwise will play on the set audio source. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings}{SFXVolume\+Settings}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a7ab72658740cf5aada0c5536f9794ad5}{volume\+Settings}}
+\begin{DoxyCompactList}\small\item\em The volume settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings}{SFXVolume\+Settings} for more info. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings}{SFXPitch\+Settings}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a3b947bb7400c60b6a236082b80c7f551}{pitch\+Settings}}
+\begin{DoxyCompactList}\small\item\em The pitch settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings}{SFXPitch\+Settings} for more info. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings}{SFX3d\+Settings}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a3d4c5cdcec8eab60bea89c9d82c98d31}{spacial\+Settings}}
+\begin{DoxyCompactList}\small\item\em The 3d settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings}{SFX3d\+Settings} for more info. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings}{SFXDestruction\+Settings}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a1c42aca0929154a1734a138ed30a1ca0}{destruction\+Settings}}
+\begin{DoxyCompactList}\small\item\em The destruction settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings}{SFXDestruction\+Settings} for more info. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_acf58caea0fb2945920dd054cd50b78ba}{name}}
+\begin{DoxyCompactList}\small\item\em The name of this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} when instantiated. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_aa9cdd815691a26b5af94efa16391a32d}{parent}}
+\begin{DoxyCompactList}\small\item\em The transform to set the instantiated \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} clip\textquotesingle{}s parent as. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used in \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager}{SFXManager} to play audio clips with some set parameters. 
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a8764fc2b00f6817400d898bb1bf2f57f}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!Create2dSFX@{Create2dSFX}}
+\index{Create2dSFX@{Create2dSFX}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{Create2dSFX()}{Create2dSFX()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a8764fc2b00f6817400d898bb1bf2f57f} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}} Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+Create2d\+SFX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a new \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} with the following properties\+: 
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_a5bea7503049413649f6db146c7af15de}{SFXVolume\+Settings.\+volume} = 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_ab65b25a1b384f73c93e70ea49414ebfb}{SFXVolume\+Settings.\+volume\+Type} = \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3}{Audio\+Manager.\+Volume\+Type.\+Sfx}
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_a672c8fc0d04bda5f7848006b230bebd4}{SFXPitch\+Settings.\+pitch} = 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_a93a3a6a22bfd1d67e8ecff7d4c3362ee}{SFXPitch\+Settings.\+pitch\+Variance} = \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_ad93ccc0080852c3ba0f9367520bcc712}{Audio\+Manager.\+DEFAULT\+\_\+\+PITCH\+\_\+\+VARIANCE}
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_a514db81ce8e67ce175278da540ebcbe1}{SFX3d\+Settings.\+local\+Position} = Vector3.\+zero
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_a03e461dd7b453ad4ee168c6ae887980d}{SFX3d\+Settings.\+spacial\+Blend} = 0
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_acf58caea0fb2945920dd054cd50b78ba}{name} = "{}2\+D SFX \mbox{[}\+Unity\+Utils.\+Script\+Utils.\+Audio\mbox{]}"{}
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_a84df6c7a200a286dbe54bcc2e1c655b1}{SFXDestruction\+Settings.\+destroy\+On\+Clip\+End} = true
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_a8f2db1b73666d7f6eb3041c3038741bd}{SFXDestruction\+Settings.\+use\+Realtime\+To\+Destroy} = true\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_ad568f0df8611d960485763072eb9d233}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!Create3dSFX@{Create3dSFX}}
+\index{Create3dSFX@{Create3dSFX}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{Create3dSFX()}{Create3dSFX()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_ad568f0df8611d960485763072eb9d233} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}} Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+Create3d\+SFX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a new \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} with the following properties\+: 
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_a5bea7503049413649f6db146c7af15de}{SFXVolume\+Settings.\+volume} = 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_ab65b25a1b384f73c93e70ea49414ebfb}{SFXVolume\+Settings.\+volume\+Type} = \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3}{Audio\+Manager.\+Volume\+Type.\+Sfx}
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_a672c8fc0d04bda5f7848006b230bebd4}{SFXPitch\+Settings.\+pitch} = 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_a93a3a6a22bfd1d67e8ecff7d4c3362ee}{SFXPitch\+Settings.\+pitch\+Variance} = \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_ad93ccc0080852c3ba0f9367520bcc712}{Audio\+Manager.\+DEFAULT\+\_\+\+PITCH\+\_\+\+VARIANCE}
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_a514db81ce8e67ce175278da540ebcbe1}{SFX3d\+Settings.\+local\+Position} = Vector3.\+zero
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_a03e461dd7b453ad4ee168c6ae887980d}{SFX3d\+Settings.\+spacial\+Blend} = 1
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_acf58caea0fb2945920dd054cd50b78ba}{name} = "{}3\+D SFX \mbox{[}\+Unity\+Utils.\+Script\+Utils.\+Audio\mbox{]}"{}
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_a84df6c7a200a286dbe54bcc2e1c655b1}{SFXDestruction\+Settings.\+destroy\+On\+Clip\+End} = true
+
+-\/ \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_a8f2db1b73666d7f6eb3041c3038741bd}{SFXDestruction\+Settings.\+use\+Realtime\+To\+Destroy} = true\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a6a606262818e6fcf4ecc69edd71748a0}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!HasAudioClips@{HasAudioClips}}
+\index{HasAudioClips@{HasAudioClips}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{HasAudioClips()}{HasAudioClips()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a6a606262818e6fcf4ecc69edd71748a0} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+Has\+Audio\+Clips (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Checks if this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} has any \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a5d424d57e2ca3a031f73e474ac441ae9}{audio\+Clips} to play. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a5d424d57e2ca3a031f73e474ac441ae9}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!audioClips@{audioClips}}
+\index{audioClips@{audioClips}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{audioClips}{audioClips}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a5d424d57e2ca3a031f73e474ac441ae9} 
+Audio\+Clip \mbox{[}$\,$\mbox{]} Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+audio\+Clips}
+
+
+
+Randomly play one of these clips when this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} is played. 
+
+Only set 1 Audio\+Clip if you do not want to randomize the clips\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a910b0f617d33d08a5dc12696f4fc2788}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!audioSource@{audioSource}}
+\index{audioSource@{audioSource}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{audioSource}{audioSource}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a910b0f617d33d08a5dc12696f4fc2788} 
+Audio\+Source Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+audio\+Source}
+
+
+
+If null, will create a new object and add an audio source. Otherwise will play on the set audio source. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a1c42aca0929154a1734a138ed30a1ca0}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!destructionSettings@{destructionSettings}}
+\index{destructionSettings@{destructionSettings}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{destructionSettings}{destructionSettings}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a1c42aca0929154a1734a138ed30a1ca0} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings}{SFXDestruction\+Settings}} Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+destruction\+Settings}
+
+
+
+The destruction settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings}{SFXDestruction\+Settings} for more info. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_acf58caea0fb2945920dd054cd50b78ba}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!name@{name}}
+\index{name@{name}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_acf58caea0fb2945920dd054cd50b78ba} 
+string Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+name}
+
+
+
+The name of this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} when instantiated. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_aa9cdd815691a26b5af94efa16391a32d}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!parent@{parent}}
+\index{parent@{parent}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_aa9cdd815691a26b5af94efa16391a32d} 
+Transform Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+parent}
+
+
+
+The transform to set the instantiated \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX} clip\textquotesingle{}s parent as. 
+
+Useful for orginization purposes.\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a3b947bb7400c60b6a236082b80c7f551}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!pitchSettings@{pitchSettings}}
+\index{pitchSettings@{pitchSettings}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{pitchSettings}{pitchSettings}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a3b947bb7400c60b6a236082b80c7f551} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings}{SFXPitch\+Settings}} Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+pitch\+Settings}
+
+
+
+The pitch settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings}{SFXPitch\+Settings} for more info. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a3d4c5cdcec8eab60bea89c9d82c98d31}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!spacialSettings@{spacialSettings}}
+\index{spacialSettings@{spacialSettings}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{spacialSettings}{spacialSettings}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a3d4c5cdcec8eab60bea89c9d82c98d31} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings}{SFX3d\+Settings}} Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+spacial\+Settings}
+
+
+
+The 3d settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings}{SFX3d\+Settings} for more info. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a7ab72658740cf5aada0c5536f9794ad5}\index{UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}!volumeSettings@{volumeSettings}}
+\index{volumeSettings@{volumeSettings}!UnityUtils.ScriptUtils.Audio.SFX@{UnityUtils.ScriptUtils.Audio.SFX}}
+\doxysubsubsection{\texorpdfstring{volumeSettings}{volumeSettings}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_a7ab72658740cf5aada0c5536f9794ad5} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings}{SFXVolume\+Settings}} Unity\+Utils.\+Script\+Utils.\+Audio.\+SFX.\+volume\+Settings}
+
+
+
+The volume settings used when playing this \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x}{SFX}. See \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings}{SFXVolume\+Settings} for more info. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/com.\+mydimons.\+unityutils/\+Runtime/\+Script Utils/\+Audio/\mbox{\hyperlink{_s_f_x_8cs}{SFX.\+cs}}\end{DoxyCompactItemize}

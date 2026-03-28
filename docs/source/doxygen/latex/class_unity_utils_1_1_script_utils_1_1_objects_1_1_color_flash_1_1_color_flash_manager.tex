@@ -1,0 +1,120 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager Class Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager}{}\label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab3fcf25f587bc6a9f8081fc29985b099}{Is\+Flashing}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether a flashing operation is currently active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a78a1d36faeb9e8d7bf437ea99bc561b6}{Set\+Original\+Material}} (Material mat)
+\begin{DoxyCompactList}\small\item\em Sets the material that is switched back to after a flash is finished. \end{DoxyCompactList}\item 
+Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash}})
+\begin{DoxyCompactList}\small\item\em Flashes the object using the provided \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash} variables. If a flash is already active, a warning is logged and no new flash is started. \end{DoxyCompactList}\item 
+Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab966535fcdc3981a5ff3d3dcbeb3bca8}{Flash}} ()
+\begin{DoxyCompactList}\small\item\em Calls \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash(\+Color\+Flash)} using the default \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash} variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash}} = \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a8efd9003afc2ef4e40c875401458e74e}{Color\+Flash.\+Create\+Default\+Flash}}()
+\begin{DoxyCompactList}\small\item\em The default \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash} to use when flashing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ac2e9f4aa2812bd0934850bc01f5affc0}{log\+Flash}} = false
+\begin{DoxyCompactList}\small\item\em If true, will Debug.\+Log the color and duration when flashing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab966535fcdc3981a5ff3d3dcbeb3bca8}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!Flash@{Flash}}
+\index{Flash@{Flash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{Flash()}{Flash()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab966535fcdc3981a5ff3d3dcbeb3bca8} 
+Coroutine Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+Flash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Calls \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash(\+Color\+Flash)} using the default \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash} variables. 
+
+\begin{DoxyReturn}{Returns}
+The coroutine started by the flash
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!Flash@{Flash}}
+\index{Flash@{Flash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{Flash()}{Flash()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49} 
+Coroutine Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+Flash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}}}]{color\+Flash}{}\end{DoxyParamCaption})}
+
+
+
+Flashes the object using the provided \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash} variables. If a flash is already active, a warning is logged and no new flash is started. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color\+Flash} & The color flash to use when flashing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coroutine started by the flash
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab3fcf25f587bc6a9f8081fc29985b099}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!IsFlashing@{IsFlashing}}
+\index{IsFlashing@{IsFlashing}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{IsFlashing()}{IsFlashing()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab3fcf25f587bc6a9f8081fc29985b099} 
+bool Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+Is\+Flashing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Determines whether a flashing operation is currently active. 
+
+\begin{DoxyReturn}{Returns}
+true if the object is flashing; otherwise, false.
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a78a1d36faeb9e8d7bf437ea99bc561b6}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!SetOriginalMaterial@{SetOriginalMaterial}}
+\index{SetOriginalMaterial@{SetOriginalMaterial}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{SetOriginalMaterial()}{SetOriginalMaterial()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a78a1d36faeb9e8d7bf437ea99bc561b6} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+Set\+Original\+Material (\begin{DoxyParamCaption}\item[{Material}]{mat}{}\end{DoxyParamCaption})}
+
+
+
+Sets the material that is switched back to after a flash is finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & Material to switch original\+Material to\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!colorFlash@{colorFlash}}
+\index{colorFlash@{colorFlash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{colorFlash}{colorFlash}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+color\+Flash = \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_a8efd9003afc2ef4e40c875401458e74e}{Color\+Flash.\+Create\+Default\+Flash}}()}
+
+
+
+The default \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash} to use when flashing. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ac2e9f4aa2812bd0934850bc01f5affc0}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!logFlash@{logFlash}}
+\index{logFlash@{logFlash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{logFlash}{logFlash}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ac2e9f4aa2812bd0934850bc01f5affc0} 
+bool Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+log\+Flash = false}
+
+
+
+If true, will Debug.\+Log the color and duration when flashing. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/com.\+mydimons.\+unityutils/\+Runtime/\+Script Utils/\+Objects/\+Color\+Flash/\mbox{\hyperlink{_color_flash_manager_8cs}{Color\+Flash\+Manager.\+cs}}\end{DoxyCompactItemize}

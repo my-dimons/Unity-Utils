@@ -109,9 +109,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1dc3203e46e8017422f4d5a16265b625" id="r_a1dc3203e46e8017422f4d5a16265b625"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc3203e46e8017422f4d5a16265b625">GetMostRecentSave</a> (List&lt; <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a> &gt; saveSlots)</td></tr>
 <tr class="memdesc:a1dc3203e46e8017422f4d5a16265b625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grabs the most recent save in a list of <a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html">SaveSlot</a>.  <br /></td></tr>
 <tr class="memitem:aac33818c46dcb4e59a559470cade3645" id="r_aac33818c46dcb4e59a559470cade3645"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac33818c46dcb4e59a559470cade3645">SaveAllSaveableData</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> dataToSave, List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt; saveTo)</td></tr>
+<tr class="memdesc:aac33818c46dcb4e59a559470cade3645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.SaveData&lt;T&gt;(T) on all the objects in <em>saveTo</em> .  <br /></td></tr>
 <tr class="memitem:a4f6b03beaeb83add6b30a99605d7f2a2" id="r_a4f6b03beaeb83add6b30a99605d7f2a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f6b03beaeb83add6b30a99605d7f2a2">SaveAllSaveableData</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> dataToSave)</td></tr>
-<tr class="memitem:ae5118682cd698d11440ea44e3f714259" id="r_ae5118682cd698d11440ea44e3f714259"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5118682cd698d11440ea44e3f714259">LoadAllSaveableData</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> dataToSave, List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt; saveTo)</td></tr>
-<tr class="memitem:a21fa91c0204cd0f1f603c0359fd50c74" id="r_a21fa91c0204cd0f1f603c0359fd50c74"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21fa91c0204cd0f1f603c0359fd50c74">LoadAllSaveableData</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> dataToSave)</td></tr>
+<tr class="memdesc:a4f6b03beaeb83add6b30a99605d7f2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls SaveAllSaveableData(SaveData, List&lt;ISaveableData&gt;), and calls <a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510" title="Gets all ISaveableData to call functions on.">FindAllDataPersistanceObjects</a> as the List&lt;ISaveableData&gt;.  <br /></td></tr>
+<tr class="memitem:acdccc49054672757762c7c53413207f0" id="r_acdccc49054672757762c7c53413207f0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdccc49054672757762c7c53413207f0">LoadAllSaveableData</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> dataToLoad, List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt; loadFrom)</td></tr>
+<tr class="memdesc:acdccc49054672757762c7c53413207f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ISaveableData.LoadData&lt;T&gt;(T) on all the objects in <em>loadFrom</em> .  <br /></td></tr>
+<tr class="memitem:a0c8aef6041ff87a1f8d67e6af0c110c6" id="r_a0c8aef6041ff87a1f8d67e6af0c110c6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c8aef6041ff87a1f8d67e6af0c110c6">LoadAllSaveableData</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a> dataToLoad)</td></tr>
+<tr class="memdesc:a0c8aef6041ff87a1f8d67e6af0c110c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls SaveAllSaveableData(SaveData, List&lt;ISaveableData&gt;), and calls <a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510" title="Gets all ISaveableData to call functions on.">FindAllDataPersistanceObjects</a> as the List&lt;ISaveableData&gt;.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -263,8 +267,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a21fa91c0204cd0f1f603c0359fd50c74" name="a21fa91c0204cd0f1f603c0359fd50c74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21fa91c0204cd0f1f603c0359fd50c74">&#9670;&#160;</a></span>LoadAllSaveableData() <span class="overload">[1/2]</span></h2>
+<a id="a0c8aef6041ff87a1f8d67e6af0c110c6" name="a0c8aef6041ff87a1f8d67e6af0c110c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8aef6041ff87a1f8d67e6af0c110c6">&#9670;&#160;</a></span>LoadAllSaveableData() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +279,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadAllSaveableData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></td>          <td class="paramname"><span class="paramname"><em>dataToSave</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></td>          <td class="paramname"><span class="paramname"><em>dataToLoad</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -286,10 +290,18 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Calls SaveAllSaveableData(SaveData, List&lt;ISaveableData&gt;), and calls <a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510" title="Gets all ISaveableData to call functions on.">FindAllDataPersistanceObjects</a> as the List&lt;ISaveableData&gt;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataToLoad</td><td>Data object to pass into the all the <a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510" title="Gets all ISaveableData to call functions on.">FindAllDataPersistanceObjects()</a> <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>'s</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ae5118682cd698d11440ea44e3f714259" name="ae5118682cd698d11440ea44e3f714259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5118682cd698d11440ea44e3f714259">&#9670;&#160;</a></span>LoadAllSaveableData() <span class="overload">[2/2]</span></h2>
+<a id="acdccc49054672757762c7c53413207f0" name="acdccc49054672757762c7c53413207f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdccc49054672757762c7c53413207f0">&#9670;&#160;</a></span>LoadAllSaveableData() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,12 +312,12 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.LoadAllSaveableData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></td>          <td class="paramname"><span class="paramname"><em>dataToSave</em></span>, </td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html">SaveData</a></td>          <td class="paramname"><span class="paramname"><em>dataToLoad</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>saveTo</em></span>&#160;)</td>
+          <td class="paramtype">List&lt; <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>loadFrom</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -314,6 +326,15 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Calls ISaveableData.LoadData&lt;T&gt;(T) on all the objects in <em>loadFrom</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataToLoad</td><td>Data object to pass into the all the <em>loadFrom</em>  <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>'s</td></tr>
+    <tr><td class="paramname">loadFrom</td><td>All the <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> objects that get ISaveableData.LoadData&lt;T&gt;(T) called on it, with <em>dataToLoad</em>  passed into it</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -401,6 +422,14 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Calls SaveAllSaveableData(SaveData, List&lt;ISaveableData&gt;), and calls <a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510" title="Gets all ISaveableData to call functions on.">FindAllDataPersistanceObjects</a> as the List&lt;ISaveableData&gt;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataToSave</td><td>Data object to pass into the all the <a class="el" href="#a44ea94ab7d0fa6d624b639dc227be510" title="Gets all ISaveableData to call functions on.">FindAllDataPersistanceObjects()</a> <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>'s</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aac33818c46dcb4e59a559470cade3645" name="aac33818c46dcb4e59a559470cade3645"></a>
@@ -429,6 +458,15 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Calls ISaveableData.SaveData&lt;T&gt;(T) on all the objects in <em>saveTo</em> . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataToSave</td><td>Data object to pass into the all the <em>saveTo</em>  <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a>'s</td></tr>
+    <tr><td class="paramname">saveTo</td><td>All the <a class="el" href="interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html">ISaveableData</a> objects that get ISaveableData.SaveData&lt;T&gt;(T) called on it, with <em>dataToSave</em>  passed into it</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

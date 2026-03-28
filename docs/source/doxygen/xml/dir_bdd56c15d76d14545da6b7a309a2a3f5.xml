@@ -3,9 +3,12 @@
   <compounddef id="dir_bdd56c15d76d14545da6b7a309a2a3f5" kind="dir">
     <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio</compoundname>
     <innerfile refid="_audio_manager_8cs">AudioManager.cs</innerfile>
-    <innerfile refid="_audio_slider_8cs">AudioSlider.cs</innerfile>
+    <innerfile refid="_background_music_8cs">BackgroundMusic.cs</innerfile>
+    <innerfile refid="_music_clip_8cs">MusicClip.cs</innerfile>
+    <innerfile refid="_music_manager_8cs">MusicManager.cs</innerfile>
+    <innerfile refid="_s_f_x_8cs">SFX.cs</innerfile>
     <innerfile refid="_s_f_x_manager_8cs">SFXManager.cs</innerfile>
-    <innerfile refid="_simple_background_music_8cs">SimpleBackgroundMusic.cs</innerfile>
+    <innerfile refid="_s_f_x_settings_8cs">SFXSettings.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -485,14 +485,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="113" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="113" bodyend="130"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="114" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="114" bodyend="131"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="7" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="7" bodyend="131"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" line="7" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectAnimations.cs" bodystart="7" bodyend="132"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a1148e7dac20e76f0608bcdef0f8496cd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateAudioVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a2de39f298dfcca85c69a0a28a0f10f49" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ObjectAnimations</scope><name>AnimateCanvasGroupOpacity</name></member>

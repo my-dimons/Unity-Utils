@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash" kind="namespace" language="C#">
+    <compoundname>UnityUtils::ScriptUtils::Objects::ColorFlash</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" prot="public">UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager" prot="public">UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

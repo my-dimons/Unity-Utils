@@ -53,8 +53,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_audio_manager_8cs.html",
-"class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a95d2a058b8834f394cb587a2c5076b92",
-"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html"
+"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9c341919d741ce7c193d90ddf6b51113",
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings.html#a3af8ca8bcde9d2376ce7456d1a2a8a5b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -14,7 +14,14 @@ enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_man
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217}{Music}}
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b}{UI}}
 , \newline
-\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af}{Custom}}
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9}{Weather}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d}{Dialog}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3}{Footsteps}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e}{Ambient}}
+, \newline
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5}{Custom1}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2}{Custom2}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8}{Custom3}}
  \}
 \begin{DoxyCompactList}\small\item\em Holds different audio types for volume calculations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
@@ -34,7 +41,7 @@ static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_a
 \begin{DoxyCompactList}\small\item\em Calculates the effective playback duration of an audio clip after adjusting for pitch. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a41eadf3c8d28dae43bd9058ff3ecf4ae}{Calculate\+Clip\+Pitch\+With\+Length}} (float clip\+Length, float time)
 \begin{DoxyCompactList}\small\item\em Calculates the pitch adjustment factor needed to play an audio clip at a specified duration. \end{DoxyCompactList}\item 
-static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3f7535559b788c3fdd18b161f7310774}{Calculate\+Pitch\+Variance}} (float pitch\+Variance)
+static float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a74a9cdcdfac8426e74083b47194dca99}{Calculate\+Pitch\+Variance}} (float pitch\+Variance, float pitch)
 \begin{DoxyCompactList}\small\item\em Calculates the pitch variance to add randomness to playback. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -65,7 +72,7 @@ Holds different audio types for volume calculations.
 
 \begin{DoxyEnumFields}[2]{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Global@{Global}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Global@{Global}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8} 
-Global&\\
+Global&Special audio type, everything gets multiplied by this volume, except for other global volumes. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Sfx@{Sfx}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Sfx@{Sfx}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3} 
@@ -80,8 +87,32 @@ Music&\\
 UI&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom@{Custom}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Custom@{Custom}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af} 
-Custom&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Weather@{Weather}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Weather@{Weather}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9} 
+Weather&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dialog@{Dialog}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Dialog@{Dialog}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d} 
+Dialog&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Footsteps@{Footsteps}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Footsteps@{Footsteps}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3} 
+Footsteps&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ambient@{Ambient}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Ambient@{Ambient}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e} 
+Ambient&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom1@{Custom1}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Custom1@{Custom1}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5} 
+Custom1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom2@{Custom2}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Custom2@{Custom2}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2} 
+Custom2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom3@{Custom3}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Custom3@{Custom3}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8} 
+Custom3&\\
 \hline
 
 \end{DoxyEnumFields}
@@ -116,11 +147,11 @@ Calculates the pitch adjustment factor needed to play an audio clip at a specifi
 \begin{DoxyReturn}{Returns}
 Pitch factor to achieve the desired playback time (clip\+Length \texorpdfstring{$\ast$}{*} time).
 \end{DoxyReturn}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3f7535559b788c3fdd18b161f7310774}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!CalculatePitchVariance@{CalculatePitchVariance}}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a74a9cdcdfac8426e74083b47194dca99}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!CalculatePitchVariance@{CalculatePitchVariance}}
 \index{CalculatePitchVariance@{CalculatePitchVariance}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}
 \doxysubsubsection{\texorpdfstring{CalculatePitchVariance()}{CalculatePitchVariance()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a3f7535559b788c3fdd18b161f7310774} 
-float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Pitch\+Variance (\begin{DoxyParamCaption}\item[{float}]{pitch\+Variance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a74a9cdcdfac8426e74083b47194dca99} 
+float Unity\+Utils.\+Script\+Utils.\+Audio.\+Audio\+Manager.\+Calculate\+Pitch\+Variance (\begin{DoxyParamCaption}\item[{float}]{pitch\+Variance}{, }\item[{float}]{pitch}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 

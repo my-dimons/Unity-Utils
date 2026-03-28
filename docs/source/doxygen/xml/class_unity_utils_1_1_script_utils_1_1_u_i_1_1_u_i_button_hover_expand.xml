@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="11" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="13" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a88c3046734a3645154c58778039f6c65" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="14" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="18" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ae66b9552eaf5de139dc578d6585ac328" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="19" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="19" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="25" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a93de5dda2256a7f3a9282d78120183b4" prot="public" static="no" mutable="no">
         <type>AnimationCurve</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="22" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="22" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="30" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a434070005a9513d6d59d0f1c924efd33" prot="public" static="no" mutable="no">
         <type>Transform</type>
@@ -83,67 +83,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="27" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="27" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="37" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a3342c4a93c9ff16cb38f8b1c978a0853" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoveringOverButton</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ae4dda434a753e63a6ffddae8cf57e1fd" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings" kindref="compound">UIButtonDebugSettings</ref></type>
+        <definition>UIButtonDebugSettings UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.debugLogs</definition>
         <argsstring></argsstring>
-        <name>hoveringOverButton</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.hoveringOverButton</qualifiedname>
+        <name>debugLogs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.debugLogs</qualifiedname>
         <briefdescription>
-<para>True if the button is being hovered. </para>
+<para>Will output a Debug.Log(object) depending on the <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings" kindref="compound">UIButtonDebugSettings</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="32" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="32" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ac0ff4e7d71a78dee0f59cfe38a0bcca8" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScale</definition>
-        <argsstring></argsstring>
-        <name>logScale</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScale</qualifiedname>
-        <briefdescription>
-<para>Log on any scaling. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="37" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="37" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a63c71e293fffce8a72e7f11433b9d046" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScaleUp</definition>
-        <argsstring></argsstring>
-        <name>logScaleUp</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScaleUp</qualifiedname>
-        <briefdescription>
-<para>Log first scale to set scale. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="39" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="39" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ae2706afab45f1c384e3a20438efdd6ef" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScaleDown</definition>
-        <argsstring></argsstring>
-        <name>logScaleDown</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.logScaleDown</qualifiedname>
-        <briefdescription>
-<para>Log second rotate back to default pos. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="41" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="41" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="43" column="34" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="43" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -159,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="43" column="13" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="43" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="45" column="21" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a367ab9ab5b7515e10559ef0d368f2b36" prot="private" static="no" mutable="no">
         <type>Vector3</type>
@@ -173,7 +128,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="44" column="13" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="44" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="46" column="21" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a0831011d76793d1073e9ee4331355bae" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug" kindref="compound">UIButtonDebug</ref></type>
+        <definition>UIButtonDebug UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.buttonDebug</definition>
+        <argsstring></argsstring>
+        <name>buttonDebug</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonHoverExpand.buttonDebug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="47" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="47" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -189,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="47" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="47" bodyend="49"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="50" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="50" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a658c903803b0b5101ed3b8b35b8245c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -203,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="52" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="52" bodyend="59"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="57" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="57" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a6c2afd851231b68aed8407f2134fdbec" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -218,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="78" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="78" bodyend="85"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="79" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="79" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab36184d54a940c7f38b80b99caa9d478" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -233,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="90" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="90" bodyend="97"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="91" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="91" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab97a9699da8bf037be4069e0fc298745" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -247,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="99" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="99" bodyend="102"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="100" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="100" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a11e76ea616f89f3a825f91192261f384" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -261,7 +230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="104" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="104" bodyend="106"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="105" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="105" bodyend="107"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -281,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="61" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="61" bodyend="66"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="66" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="66" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -299,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="68" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="68" bodyend="73"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="71" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="71" bodyend="74"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -346,20 +315,25 @@
         </childnode>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>debugLogs</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonDebugSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="8" bodyend="107"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonHoverExpand.cs" bodystart="8" bodyend="108"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a434070005a9513d6d59d0f1c924efd33" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>applyTransform</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a0831011d76793d1073e9ee4331355bae" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>buttonDebug</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ae4dda434a753e63a6ffddae8cf57e1fd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>debugLogs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab97a9699da8bf037be4069e0fc298745" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>DebugRotate</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a6c2afd851231b68aed8407f2134fdbec" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>EnterHoverAnimation</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ab36184d54a940c7f38b80b99caa9d478" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>ExitHoverAnimation</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a3342c4a93c9ff16cb38f8b1c978a0853" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>hoveringOverButton</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a99f701861368f017f25c429f58fbfa0f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>hoverSize</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a367ab9ab5b7515e10559ef0d368f2b36" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>hoverSizeVector</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ac0ff4e7d71a78dee0f59cfe38a0bcca8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>logScale</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1ae2706afab45f1c384e3a20438efdd6ef" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>logScaleDown</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a63c71e293fffce8a72e7f11433b9d046" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>logScaleUp</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a87f3aa32d0069c9e275ac82e5804fb9d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>OnPointerEnter</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1a137b177c8790a2a8c539277d2c634dfb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>OnPointerExit</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand_1abd41aa46bb92276a2d8987981a63aed0" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</scope><name>originalSize</name></member>

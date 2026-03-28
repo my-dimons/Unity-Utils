@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::SFXDestructionSettings</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a84df6c7a200a286dbe54bcc2e1c655b1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.destroyOnClipEnd</definition>
+        <argsstring></argsstring>
+        <name>destroyOnClipEnd</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.destroyOnClipEnd</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If true, will destroy the clip when its done playing. Otherwise it will not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="9" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a8f2db1b73666d7f6eb3041c3038741bd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.useRealtimeToDestroy</definition>
+        <argsstring></argsstring>
+        <name>useRealtimeToDestroy</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.useRealtimeToDestroy</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If true, will wait for the clip length in realtime before getting destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="13" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a3f0af8ee12fa2b9eeef1ddcf0de513d8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.scenePersistant</definition>
+        <argsstring></argsstring>
+        <name>scenePersistant</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.scenePersistant</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>IS NOT IMPLIMENTED YET. If true, will not get destroyed when the scene changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="17" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1accb2799bca3ce04b353cbcd5b883668e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings" kindref="compound">SFXDestructionSettings</ref></type>
+        <definition>SFXDestructionSettings UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.SetDestructionSettings</definition>
+        <argsstring>(bool destroyOnClipEnd=true, bool useRealtimeToDestroy=true, bool scenePersistant=false)</argsstring>
+        <name>SetDestructionSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXDestructionSettings.SetDestructionSettings</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>destroyOnClipEnd</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtimeToDestroy</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>scenePersistant</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="19" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="19" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="5" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a84df6c7a200a286dbe54bcc2e1c655b1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXDestructionSettings</scope><name>destroyOnClipEnd</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a3f0af8ee12fa2b9eeef1ddcf0de513d8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXDestructionSettings</scope><name>scenePersistant</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1accb2799bca3ce04b353cbcd5b883668e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXDestructionSettings</scope><name>SetDestructionSettings</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a8f2db1b73666d7f6eb3041c3038741bd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXDestructionSettings</scope><name>useRealtimeToDestroy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

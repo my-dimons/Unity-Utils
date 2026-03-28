@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="11" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="13" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" prot="public" static="no" mutable="no">
         <type>GameObject[]</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="14" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="14" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="18" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" prot="public" static="no" mutable="no">
         <type>GameObject[]</type>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="17" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="17" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="23" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ab5f2a0e9db692a50f52975aeeb6a996b" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -59,12 +59,13 @@
         <name>logToggle</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonToggleObjects.logToggle</qualifiedname>
         <briefdescription>
+<para>Will output a Debug.Log(object) when toggling objects. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="20" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="29" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -84,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="22" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="22" bodyend="24"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="31" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="31" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a56d174eb59f9d6c129771f77ba1560fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -102,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="26" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="26" bodyend="28"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="35" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="35" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1a3eacc7bfea4b5d267ae8ce085f16b7e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -120,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="30" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="30" bodyend="32"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="39" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="39" bodyend="41"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -140,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="34" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="34" bodyend="42"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="43" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="43" bodyend="51"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -199,7 +200,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="7" bodyend="43"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonToggleObjects.cs" bodystart="7" bodyend="52"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1aef812175219aab8f83291c06aa4b3816" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>clickToggleObjects</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects_1ac1dabd5a2a2ec41617fc62ea286b1700" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonToggleObjects</scope><name>exitToggleObjects</name></member>

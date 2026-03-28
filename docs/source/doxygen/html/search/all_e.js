@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['randomrotation_0',['randomRotation',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#ae0432b8b05ca7db427bdefad702351fc',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
-  ['randomsecondcooldownbetweensongs_1',['randomSecondCooldownBetweenSongs',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_simple_background_music.html#abb645b48a507c093997957c5b7536e45',1,'UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic']]],
-  ['removemodifier_2',['RemoveModifier',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_modifiers-1-g.html#aab8ff08aa376035f1d0c60604d3c7988',1,'UnityUtils::ScriptUtils::Objects::ObjectModifiers-1-g']]],
-  ['root_3',['Root',['../namespace_unity_utils_1_1_script_utils_1_1_objects.html#a0fe45cbfcd159f24e5cedb36675c1e07afa03eb688ad8aa1db593d33dabd89bad',1,'UnityUtils::ScriptUtils::Objects']]],
-  ['rotatebackafterhover_4',['rotateBackAfterHover',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a6380c66f4b1db51868e6660b9ffb9acf',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
-  ['rotationanimationseconds_5',['rotationAnimationSeconds',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a5e39b92b4fce792a762e67c87cc99596',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]]
+  ['parent_0',['parent',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#aa9cdd815691a26b5af94efa16391a32d',1,'UnityUtils::ScriptUtils::Audio::SFX']]],
+  ['particlemodifier_1',['ParticleModifier',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html',1,'UnityUtils::ScriptUtils::Particles']]],
+  ['particlemodifier_2ecs_2',['ParticleModifier.cs',['../_particle_modifier_8cs.html',1,'']]],
+  ['particlespawner_3',['ParticleSpawner',['../class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html',1,'UnityUtils::ScriptUtils::Particles']]],
+  ['particlespawner_2ecs_4',['ParticleSpawner.cs',['../_particle_spawner_8cs.html',1,'']]],
+  ['pitch_5',['pitch',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings.html#a672c8fc0d04bda5f7848006b230bebd4',1,'UnityUtils::ScriptUtils::Audio::SFXPitchSettings']]],
+  ['pitchsettings_6',['pitchSettings',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html#a0975f3b0c0e5143ed7d5a6cfe737ec07',1,'UnityUtils.ScriptUtils.Audio.MusicClip.pitchSettings'],['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#a3b947bb7400c60b6a236082b80c7f551',1,'UnityUtils.ScriptUtils.Audio.SFX.pitchSettings']]],
+  ['pitchvariance_7',['pitchVariance',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings.html#a93a3a6a22bfd1d67e8ecff7d4c3362ee',1,'UnityUtils::ScriptUtils::Audio::SFXPitchSettings']]],
+  ['playcontinuousmusic_8',['PlayContinuousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a2710be1e905f23bc580fbe531eb49359',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playingmusiccoroutine_9',['playingMusicCoroutine',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ac8aea0a68ec47bc4c03fb6c38d1d0d5a',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playonawake_10',['playOnAwake',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a4f6f5728f33b0910c9dca6bf3199d5b2',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playsfx_11',['PlaySFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager.html#a334061927d8145026134964cbbbf7ff7',1,'UnityUtils::ScriptUtils::Audio::SFXManager']]],
+  ['playsinglerandommusictrack_12',['PlaySingleRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#aaadf0fdbdd2c2db68a1723e2dcfafaab',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playspecificmusictrack_13',['PlaySpecificMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a5c950ccf3974134536ea9d1eaf57167e',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['printmodifierorder_14',['PrintModifierOrder',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g.html#af7b47200736411b38b24ed8165a98e1b',1,'UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g']]],
+  ['printmodifiers_15',['PrintModifiers',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g.html#a6f364c423b901dcaea79b175dc7fa1d1',1,'UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g']]]
 ];

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kind="namespace" language="C#">
+    <compoundname>UnityUtils::ScriptUtils::Objects::Modifiers</compoundname>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g" prot="public">UnityUtils::ScriptUtils::Objects::Modifiers::ModifierData-1-g</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g" prot="public">UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ModifierType</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierType</qualifiedname>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71a745e3db6a7ffd50e1a72b39482f0882d" prot="public">
+          <name>Flat</name>
+          <briefdescription>
+<para>Addition/Subtraction modifier. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71ae257376d913f3b53cbb4a9b19d770648" prot="public">
+          <name>Multiply</name>
+          <briefdescription>
+<para>Multiplication modifier. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71a0b914e196182d02615487e9793ecff3d" prot="public">
+          <name>Divide</name>
+          <briefdescription>
+<para>Division modifier, divides the input value by the modifier value. If value is 0, it will be ignored to avoid dividing by zero errors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71afa03eb688ad8aa1db593d33dabd89bad" prot="public">
+          <name>Root</name>
+          <briefdescription>
+<para>Root Modifier, gets the root of the input value based on the modifier value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71af5ccb8d51ca38e2f3329955fc0149cd4" prot="public">
+          <name>Exponent</name>
+          <briefdescription>
+<para>Exponent Modifier, raises the input value to the power of the modifier value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum with different modifier types that get used in <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g" kindref="compound">ModifierManager&lt;T&gt;</ref> when applying modifiers to an input value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierType.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierType.cs" bodystart="5" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierData.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

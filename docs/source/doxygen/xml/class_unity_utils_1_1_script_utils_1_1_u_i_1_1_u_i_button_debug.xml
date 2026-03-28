@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::UI::UIButtonDebug</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a76941b037484a34f66e031917a6e6fcf" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings" kindref="compound">UIButtonDebugSettings</ref></type>
+        <definition>UIButtonDebugSettings UnityUtils.ScriptUtils.UI.UIButtonDebug.logSettings</definition>
+        <argsstring></argsstring>
+        <name>logSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.logSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="9" column="34" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1ad2c8b0df389a536d2d7500626e50f064" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonDebug.hoveringOverButton</definition>
+        <argsstring></argsstring>
+        <name>hoveringOverButton</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.hoveringOverButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="10" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a1f03d5935271ffecd669080973223137" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonDebug.OnPointerEnter</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerEnter</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.OnPointerEnter</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="12" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="12" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a37356a8bbbb298ada3860b03ae626d56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonDebug.OnPointerExit</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerExit</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.OnPointerExit</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="22" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a7e4c6f7f0751b4fb361ae89dddccb158" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonDebug.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.OnPointerClick</qualifiedname>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="32" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="32" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a40750d7f50085d4a3bbd09163bb259e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonDebug.LogAny</definition>
+        <argsstring>()</argsstring>
+        <name>LogAny</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.LogAny</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="40" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="40" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonDebug</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="3">
+        <label>IPointerEnterHandler</label>
+      </node>
+      <node id="4">
+        <label>IPointerExitHandler</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonDebug</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>logSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonDebugSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings"/>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="7" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1ad2c8b0df389a536d2d7500626e50f064" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>hoveringOverButton</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a40750d7f50085d4a3bbd09163bb259e8" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>LogAny</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a76941b037484a34f66e031917a6e6fcf" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>logSettings</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a7e4c6f7f0751b4fb361ae89dddccb158" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>OnPointerClick</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a1f03d5935271ffecd669080973223137" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>OnPointerEnter</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a37356a8bbbb298ada3860b03ae626d56" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>OnPointerExit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

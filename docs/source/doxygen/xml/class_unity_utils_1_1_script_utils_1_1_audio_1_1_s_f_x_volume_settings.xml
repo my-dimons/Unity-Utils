@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
+        <definition>AudioManager.VolumeType UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.volumeType</definition>
+        <argsstring></argsstring>
+        <name>volumeType</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.volumeType</qualifiedname>
+        <briefdescription>
+<para><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref> to play this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> as. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>see AudioManager.CalculateVolumeBasedOnType(float, AudioManager.VolumeType) to get more info.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="85" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.volume</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>The volume this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> will be played at. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defaults to 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="93" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a9bc1089a43516db557fe8a144d005d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kindref="compound">SFXVolumeSettings</ref></type>
+        <definition>SFXVolumeSettings UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.SetVolume</definition>
+        <argsstring>(float volume, AudioManager.VolumeType volumeType=AudioManager.VolumeType.Sfx)</argsstring>
+        <name>SetVolume</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.SetVolume</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
+          <declname>volumeType</declname>
+          <defval><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">AudioManager.VolumeType.Sfx</ref></defval>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" kindref="member">volume</ref> to <emphasis>volume</emphasis>  and <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">volumeType</ref> to <emphasis>volumeType</emphasis>  for this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref>. <ref refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kindref="compound">Audio</ref> gets randomly played between the min and max volume. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="98" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="98" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>volumeType</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="80" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="80" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a9bc1089a43516db557fe8a144d005d35" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>SetVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>volume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>volumeType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

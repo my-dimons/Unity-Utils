@@ -1,0 +1,219 @@
+\doxysection{Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g}{}\label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a88bd2ab3f6be8f13282ca6074ed446a0}{Add\+Modifier}} (Modifier\+Data$<$ T $>$ modifier)
+\begin{DoxyCompactList}\small\item\em Adds the Object\+Modifier\+Data modifier to \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a9c548f07ed4c33d45a6d4d165298c73c}{Add\+Modifier}} (\mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}} modifier\+Type, T modifier\+Value)
+\begin{DoxyCompactList}\small\item\em Creates a new Object\+Modifier\+Data with the specified \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type} and value and adds it to \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_adb5989f5821ad1574013085d30e2ce42}{Add\+Temporary\+Modifier}} (Modifier\+Data$<$ T $>$ modifier, float time, bool use\+Realtime=false)
+\begin{DoxyCompactList}\small\item\em Temporarily adds the Object\+Modifier\+Data modifier to \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. Once the time is over, it will remove the Object\+Modifier\+Data from \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a5ef14f0d13b9d3daf89085bd840dc260}{Remove\+Modifier}} (Modifier\+Data$<$ T $>$ modifier\+Type)
+\begin{DoxyCompactList}\small\item\em Removes the specified modifier from \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a77d6ca07b1d513e0f46d261a3206858e}{Calculate\+Modifiers}} (T input\+Value, bool sort\+Modifiers=true)
+\begin{DoxyCompactList}\small\item\em Calculates the result of applying all \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} to the input value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a753d5188406249be3ff6f889e7f6914e}{Sort\+Modifiers}} (\mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}}\mbox{[}$\,$\mbox{]} sort)
+\begin{DoxyCompactList}\small\item\em Sorts \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} according to the specified order of {\itshape sort} . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_ae6a8786a9feee524062deb723e095997}{Sort\+Modifiers}} ()
+\begin{DoxyCompactList}\small\item\em Sorts \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} using \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4}{Modifier\+Order}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a6f364c423b901dcaea79b175dc7fa1d1}{Print\+Modifiers}} ()
+\begin{DoxyCompactList}\small\item\em Prints the class\+Type and value of each \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} to the debug log. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_af7b47200736411b38b24ed8165a98e1b}{Print\+Modifier\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Outputs the current order of \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4}{Modifier\+Order} to the debug log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Modifier\+Data$<$ T $>$ $>$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_acc5ef78111362c25ff87014418c0f11b}{Modifiers}} = new()
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} to be applied when calculating modifiers, must be modified via Add\+Modifier(\+Modifier\+Data), or temporarily modified via Add\+Temporary\+Modifier(\+Modifier\+Data, float, bool). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_adb8fe342cd14c87151bd39705c73a66d}{DEFAULT\+\_\+\+MODIFIER\+\_\+\+ORDER}} = new \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}}\mbox{[}$\,$\mbox{]} \{ \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71a745e3db6a7ffd50e1a72b39482f0882d}{Modifier\+Type.\+Flat}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71ae257376d913f3b53cbb4a9b19d770648}{Modifier\+Type.\+Multiply}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71a0b914e196182d02615487e9793ecff3d}{Modifier\+Type.\+Divide}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71afa03eb688ad8aa1db593d33dabd89bad}{Modifier\+Type.\+Root}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71af5ccb8d51ca38e2f3329955fc0149cd4}{Modifier\+Type.\+Exponent}} \}
+\begin{DoxyCompactList}\small\item\em The default modifier order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4}{Modifier\+Order}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The applied modifier order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a88bd2ab3f6be8f13282ca6074ed446a0}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!AddModifier@{AddModifier}}
+\index{AddModifier@{AddModifier}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddModifier()}{AddModifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a88bd2ab3f6be8f13282ca6074ed446a0} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Add\+Modifier (\begin{DoxyParamCaption}\item[{Modifier\+Data$<$ T $>$}]{modifier}{}\end{DoxyParamCaption})}
+
+
+
+Adds the Object\+Modifier\+Data modifier to \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier} & The modifier to add to the object\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a9c548f07ed4c33d45a6d4d165298c73c}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!AddModifier@{AddModifier}}
+\index{AddModifier@{AddModifier}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddModifier()}{AddModifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a9c548f07ed4c33d45a6d4d165298c73c} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Add\+Modifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}}}]{modifier\+Type}{, }\item[{T}]{modifier\+Value}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new Object\+Modifier\+Data with the specified \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type} and value and adds it to \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier\+Type} & The class\+Type of modifier to add\\
+\hline
+{\em modifier\+Value} & The value associated with the modifier\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_adb5989f5821ad1574013085d30e2ce42}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!AddTemporaryModifier@{AddTemporaryModifier}}
+\index{AddTemporaryModifier@{AddTemporaryModifier}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddTemporaryModifier()}{AddTemporaryModifier()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_adb5989f5821ad1574013085d30e2ce42} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Add\+Temporary\+Modifier (\begin{DoxyParamCaption}\item[{Modifier\+Data$<$ T $>$}]{modifier}{, }\item[{float}]{time}{, }\item[{bool}]{use\+Realtime}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Temporarily adds the Object\+Modifier\+Data modifier to \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. Once the time is over, it will remove the Object\+Modifier\+Data from \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier} & The modifier to apply to the object.\\
+\hline
+{\em time} & (In seconds) how long the Object\+Modifier\+Data stays in \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} for\\
+\hline
+{\em use\+Realtime} & Indicates whether the duration should be measured using real time instead of game time\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a77d6ca07b1d513e0f46d261a3206858e}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!CalculateModifiers@{CalculateModifiers}}
+\index{CalculateModifiers@{CalculateModifiers}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CalculateModifiers()}{CalculateModifiers()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a77d6ca07b1d513e0f46d261a3206858e} 
+T Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Calculate\+Modifiers (\begin{DoxyParamCaption}\item[{T}]{input\+Value}{, }\item[{bool}]{sort\+Modifiers}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Calculates the result of applying all \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} to the input value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & The initial value to which modifiers will be applied.\\
+\hline
+{\em sort\+Modifiers} & true to sort the modifiers before applying them based on \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4}{Modifier\+Order}; otherwise, false\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value calculated based on the \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}
+\end{DoxyReturn}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_af7b47200736411b38b24ed8165a98e1b}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!PrintModifierOrder@{PrintModifierOrder}}
+\index{PrintModifierOrder@{PrintModifierOrder}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PrintModifierOrder()}{PrintModifierOrder()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_af7b47200736411b38b24ed8165a98e1b} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Print\+Modifier\+Order (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Outputs the current order of \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4}{Modifier\+Order} to the debug log. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a6f364c423b901dcaea79b175dc7fa1d1}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!PrintModifiers@{PrintModifiers}}
+\index{PrintModifiers@{PrintModifiers}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PrintModifiers()}{PrintModifiers()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a6f364c423b901dcaea79b175dc7fa1d1} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Print\+Modifiers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints the class\+Type and value of each \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} to the debug log. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a5ef14f0d13b9d3daf89085bd840dc260}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!RemoveModifier@{RemoveModifier}}
+\index{RemoveModifier@{RemoveModifier}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveModifier()}{RemoveModifier()}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a5ef14f0d13b9d3daf89085bd840dc260} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Remove\+Modifier (\begin{DoxyParamCaption}\item[{Modifier\+Data$<$ T $>$}]{modifier\+Type}{}\end{DoxyParamCaption})}
+
+
+
+Removes the specified modifier from \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em modifier\+Type} & The modifier to remove from the object\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_ae6a8786a9feee524062deb723e095997}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!SortModifiers@{SortModifiers}}
+\index{SortModifiers@{SortModifiers}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SortModifiers()}{SortModifiers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_ae6a8786a9feee524062deb723e095997} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Sort\+Modifiers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Sorts \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} using \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4}{Modifier\+Order}. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a753d5188406249be3ff6f889e7f6914e}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!SortModifiers@{SortModifiers}}
+\index{SortModifiers@{SortModifiers}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SortModifiers()}{SortModifiers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a753d5188406249be3ff6f889e7f6914e} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Sort\+Modifiers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}}\mbox{[}$\,$\mbox{]}}]{sort}{}\end{DoxyParamCaption})}
+
+
+
+Sorts \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} according to the specified order of {\itshape sort} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sort} & \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type} array that defines the desired sort order. \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} are ordered to match the sequence of types in this array.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_adb8fe342cd14c87151bd39705c73a66d}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!DEFAULT\_MODIFIER\_ORDER@{DEFAULT\_MODIFIER\_ORDER}}
+\index{DEFAULT\_MODIFIER\_ORDER@{DEFAULT\_MODIFIER\_ORDER}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MODIFIER\_ORDER}{DEFAULT\_MODIFIER\_ORDER}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_adb8fe342cd14c87151bd39705c73a66d} 
+readonly \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}} \mbox{[}$\,$\mbox{]} Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.DEFAULT\+\_\+\+MODIFIER\+\_\+\+ORDER = new \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}}\mbox{[}$\,$\mbox{]} \{ \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71a745e3db6a7ffd50e1a72b39482f0882d}{Modifier\+Type.\+Flat}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71ae257376d913f3b53cbb4a9b19d770648}{Modifier\+Type.\+Multiply}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71a0b914e196182d02615487e9793ecff3d}{Modifier\+Type.\+Divide}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71afa03eb688ad8aa1db593d33dabd89bad}{Modifier\+Type.\+Root}}, \mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71af5ccb8d51ca38e2f3329955fc0149cd4}{Modifier\+Type.\+Exponent}} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The default modifier order. 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_acc5ef78111362c25ff87014418c0f11b}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!Modifiers@{Modifiers}}
+\index{Modifiers@{Modifiers}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Modifiers}{Modifiers}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_acc5ef78111362c25ff87014418c0f11b} 
+List$<$Modifier\+Data$<$T$>$ $>$ Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Modifiers = new()}
+
+
+
+\doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers}{Modifiers} to be applied when calculating modifiers, must be modified via Add\+Modifier(\+Modifier\+Data), or temporarily modified via Add\+Temporary\+Modifier(\+Modifier\+Data, float, bool). 
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4}\index{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}!ModifierOrder@{ModifierOrder}}
+\index{ModifierOrder@{ModifierOrder}!UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$@{UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ModifierOrder}{ModifierOrder}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_a137d34a5787fcc5a8123763681ed03c4} 
+\mbox{\hyperlink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}} \mbox{[}$\,$\mbox{]} Unity\+Utils.\+Script\+Utils.\+Objects.\+Modifiers.\+Modifier\+Manager$<$ T $>$.Modifier\+Order\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The applied modifier order. 
+
+When setting this array, you must include all \doxylink{namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_a8019d8ece5f39e5c2619d938eead5c71}{Modifier\+Type}\textquotesingle{}s, and it may not include any duplicates.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Packages/com.\+mydimons.\+unityutils/\+Runtime/\+Script Utils/\+Objects/\+Object\+Modifiers/\mbox{\hyperlink{_modifier_manager_8cs}{Modifier\+Manager.\+cs}}\end{DoxyCompactItemize}

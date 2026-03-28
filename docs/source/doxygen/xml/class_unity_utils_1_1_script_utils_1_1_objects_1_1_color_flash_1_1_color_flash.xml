@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a7cd9ba584c13fce86d76131c4a2aab47" prot="public" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.color</qualifiedname>
+        <initializer>= Color.white</initializer>
+        <briefdescription>
+<para>The Color that is flashed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="56" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a0b84aa45a53079ae8b4f4ed97b6946dd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.durationSeconds</definition>
+        <argsstring></argsstring>
+        <name>durationSeconds</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.durationSeconds</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+<para>The amount of time, in seconds, that the flash is at <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ad4caab1c3685c47c4c6ec2f26ef187c4" kindref="member">flashAmount</ref> for after fade in and before fade out. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="62" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a815a3afd7c00cb3f1d4a8332353b1ed6" prot="public" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeInCurve</definition>
+        <argsstring></argsstring>
+        <name>fadeInCurve</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeInCurve</qualifiedname>
+        <initializer>= AnimationCurve.Linear(0, 0, 1, 1)</initializer>
+        <briefdescription>
+<para>The animation curve that controls the fade in of the flash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="68" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9c341919d741ce7c193d90ddf6b51113" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeInTimeSeconds</definition>
+        <argsstring></argsstring>
+        <name>fadeInTimeSeconds</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeInTimeSeconds</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The amount of time, in seconds, that the flash takes to fade in from 0 intensity to <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ad4caab1c3685c47c4c6ec2f26ef187c4" kindref="member">flashAmount</ref> at the start of the flash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="72" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9061569d313254b8192ca06dd539e712" prot="public" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeOutCurve</definition>
+        <argsstring></argsstring>
+        <name>fadeOutCurve</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeOutCurve</qualifiedname>
+        <initializer>= AnimationCurve.Linear(0, 0, 1, 1)</initializer>
+        <briefdescription>
+<para>The animation curve that controls the fade out of the flash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="78" column="27" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a273074729756a312d8e8d6df074249ad" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeOutTimeSeconds</definition>
+        <argsstring></argsstring>
+        <name>fadeOutTimeSeconds</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.fadeOutTimeSeconds</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The amount of time, in seconds, that the flash takes to fade out from <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ad4caab1c3685c47c4c6ec2f26ef187c4" kindref="member">flashAmount</ref> to 0 intensity at the end of the flash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="82" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ad4caab1c3685c47c4c6ec2f26ef187c4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.flashAmount</definition>
+        <argsstring></argsstring>
+        <name>flashAmount</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.flashAmount</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>A 0 to 1 range of the intensity of the flash. 0 means no flash, and 1 means full flash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="89" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ae0cdd0badfbd20a71c6b4136e98bedab" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.useRealtime</definition>
+        <argsstring></argsstring>
+        <name>useRealtime</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.useRealtime</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>if True, will use unscaled time instead of scaled time for the flash duration and fade in/out times. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="94" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a8efd9003afc2ef4e40c875401458e74e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" kindref="compound">ColorFlash</ref></type>
+        <definition>static ColorFlash UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.CreateDefaultFlash</definition>
+        <argsstring>()</argsstring>
+        <name>CreateDefaultFlash</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.CreateDefaultFlash</qualifiedname>
+        <briefdescription>
+<para>Creates a default color flash with the following properties: </para>
+        </briefdescription>
+        <detaileddescription>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a7cd9ba584c13fce86d76131c4a2aab47" kindref="member">color</ref>: Color.white</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a0b84aa45a53079ae8b4f4ed97b6946dd" kindref="member">durationSeconds</ref>: 0.1s</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a815a3afd7c00cb3f1d4a8332353b1ed6" kindref="member">fadeInCurve</ref>: AnimationCurve.Linear(float, float, float, float) from 0 to 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9c341919d741ce7c193d90ddf6b51113" kindref="member">fadeInTimeSeconds</ref>: 0s</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9061569d313254b8192ca06dd539e712" kindref="member">fadeOutCurve</ref>: AnimationCurve.Linear(float, float, float, float) from 0 to 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a273074729756a312d8e8d6df074249ad" kindref="member">fadeOutTimeSeconds</ref>: 0s</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ad4caab1c3685c47c4c6ec2f26ef187c4" kindref="member">flashAmount</ref>: 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ae0cdd0badfbd20a71c6b4136e98bedab" kindref="member">useRealtime</ref>: false</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="17" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="17" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a47372c0309b8f9bdd8a309c6c9c95801" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" kindref="compound">ColorFlash</ref></type>
+        <definition>static ColorFlash UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.CreateDefaultFadeOutFlash</definition>
+        <argsstring>()</argsstring>
+        <name>CreateDefaultFadeOutFlash</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.CreateDefaultFadeOutFlash</qualifiedname>
+        <briefdescription>
+<para>Creates a default color flash with the following properties: </para>
+        </briefdescription>
+        <detaileddescription>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a7cd9ba584c13fce86d76131c4a2aab47" kindref="member">color</ref>: Color.white</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a0b84aa45a53079ae8b4f4ed97b6946dd" kindref="member">durationSeconds</ref>: 0s</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a815a3afd7c00cb3f1d4a8332353b1ed6" kindref="member">fadeInCurve</ref>: AnimationCurve.Linear(float, float, float, float) from 0 to 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9c341919d741ce7c193d90ddf6b51113" kindref="member">fadeInTimeSeconds</ref>: 0s</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9061569d313254b8192ca06dd539e712" kindref="member">fadeOutCurve</ref>: AnimationCurve.Linear(float, float, float, float) from 0 to 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a273074729756a312d8e8d6df074249ad" kindref="member">fadeOutTimeSeconds</ref>: 0.25s</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ad4caab1c3685c47c4c6ec2f26ef187c4" kindref="member">flashAmount</ref>: 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ae0cdd0badfbd20a71c6b4136e98bedab" kindref="member">useRealtime</ref>: false</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="40" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="40" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a0a0822185e1e5dcd60dfd5edbcb18cea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" kindref="compound">ColorFlash</ref></type>
+        <definition>ColorFlash UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.SetFadeIn</definition>
+        <argsstring>(float fadeInTime, AnimationCurve fadeInCurve)</argsstring>
+        <name>SetFadeIn</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.SetFadeIn</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>fadeInTime</declname>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>fadeInCurve</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9c341919d741ce7c193d90ddf6b51113" kindref="member">fadeInTimeSeconds</ref> and <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a815a3afd7c00cb3f1d4a8332353b1ed6" kindref="member">fadeInCurve</ref> properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="99" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1aa4871f87ddb34569fab79b17095442fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" kindref="compound">ColorFlash</ref></type>
+        <definition>ColorFlash UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.SetFadeOut</definition>
+        <argsstring>(float fadeOutTime, AnimationCurve fadeOutCurve)</argsstring>
+        <name>SetFadeOut</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlash.SetFadeOut</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>fadeOutTime</declname>
+        </param>
+        <param>
+          <type>AnimationCurve</type>
+          <declname>fadeOutCurve</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a273074729756a312d8e8d6df074249ad" kindref="member">fadeOutTimeSeconds</ref> and <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9061569d313254b8192ca06dd539e712" kindref="member">fadeOutCurve</ref> properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="108" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="108" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlash.cs" bodystart="5" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a7cd9ba584c13fce86d76131c4a2aab47" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>color</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a47372c0309b8f9bdd8a309c6c9c95801" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>CreateDefaultFadeOutFlash</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a8efd9003afc2ef4e40c875401458e74e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>CreateDefaultFlash</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a0b84aa45a53079ae8b4f4ed97b6946dd" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>durationSeconds</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a815a3afd7c00cb3f1d4a8332353b1ed6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>fadeInCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9c341919d741ce7c193d90ddf6b51113" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>fadeInTimeSeconds</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a9061569d313254b8192ca06dd539e712" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>fadeOutCurve</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a273074729756a312d8e8d6df074249ad" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>fadeOutTimeSeconds</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ad4caab1c3685c47c4c6ec2f26ef187c4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>flashAmount</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1a0a0822185e1e5dcd60dfd5edbcb18cea" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>SetFadeIn</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1aa4871f87ddb34569fab79b17095442fb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>SetFadeOut</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_1ae0cdd0badfbd20a71c6b4136e98bedab" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash</scope><name>useRealtime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

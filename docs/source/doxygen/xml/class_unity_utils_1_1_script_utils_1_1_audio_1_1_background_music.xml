@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::BackgroundMusic</compoundname>
+    <basecompoundref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" prot="public" virt="non-virtual">UnityUtils.ScriptUtils.Audio.MusicClip</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_1aa53a356a5ca69e54e11f904dc8cd347e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool UnityUtils.ScriptUtils.Audio.BackgroundMusic.CanBePlayed</definition>
+        <argsstring>()</argsstring>
+        <name>CanBePlayed</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusic.CanBePlayed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" line="6" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" bodystart="6" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ScriptableObject</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.BackgroundMusic</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnityUtils.ScriptUtils.Audio.MusicClip</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ScriptableObject</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.BackgroundMusic</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
+      </node>
+      <node id="2">
+        <label>UnityUtils.ScriptUtils.Audio.MusicClip</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>volumeSettings</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>pitchSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>UnityUtils.ScriptUtils.Audio.SFXPitchSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings"/>
+      </node>
+      <node id="4">
+        <label>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>volumeType</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_1aa53a356a5ca69e54e11f904dc8cd347e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusic</scope><name>CanBePlayed</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a843242abcd205d1f95f2194c46806785" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusic</scope><name>musicClip</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a8cb21bec984b444d17237271425c10b6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusic</scope><name>musicName</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a0975f3b0c0e5143ed7d5a6cfe737ec07" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusic</scope><name>pitchSettings</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a3d1288fa8edb7638f9cf14474803e29e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusic</scope><name>volumeSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

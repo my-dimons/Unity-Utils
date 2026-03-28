@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1adb8fe342cd14c87151bd39705c73a66d" prot="public" static="yes" mutable="no">
+        <type>readonly <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>[]</type>
+        <definition>readonly ModifierType [] UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.DEFAULT_MODIFIER_ORDER</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_MODIFIER_ORDER</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.DEFAULT_MODIFIER_ORDER</qualifiedname>
+        <initializer>= new <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>[] { <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71a745e3db6a7ffd50e1a72b39482f0882d" kindref="member">ModifierType.Flat</ref>, <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71ae257376d913f3b53cbb4a9b19d770648" kindref="member">ModifierType.Multiply</ref>, <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71a0b914e196182d02615487e9793ecff3d" kindref="member">ModifierType.Divide</ref>, <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71afa03eb688ad8aa1db593d33dabd89bad" kindref="member">ModifierType.Root</ref>, <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71af5ccb8d51ca38e2f3329955fc0149cd4" kindref="member">ModifierType.Exponent</ref> }</initializer>
+        <briefdescription>
+<para>The default modifier order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="11" column="41" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a162f83824eda80e5fd0a1d4b47733716" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>[]</type>
+        <definition>ModifierType [] UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;._modifierOrder</definition>
+        <argsstring></argsstring>
+        <name>_modifierOrder</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g._modifierOrder</qualifiedname>
+        <initializer>= (<ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>[])DEFAULT_MODIFIER_ORDER.Clone()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="13" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a46077195d42fb48106129d1f341b182a" prot="private" static="yes" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.ModifierTypeCount</definition>
+        <argsstring></argsstring>
+        <name>ModifierTypeCount</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.ModifierTypeCount</qualifiedname>
+        <initializer>= Enum.GetValues(typeof(<ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>)).Length</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="14" column="33" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a137d34a5787fcc5a8123763681ed03c4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>[]</type>
+        <definition>ModifierType [] UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.ModifierOrder</definition>
+        <argsstring></argsstring>
+        <name>ModifierOrder</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.ModifierOrder</qualifiedname>
+        <briefdescription>
+<para>The applied modifier order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When setting this array, you must include all <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>&apos;s, and it may not include any duplicates.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="21" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="21" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1acc5ef78111362c25ff87014418c0f11b" prot="public" static="no" mutable="no">
+        <type>List&lt; ModifierData&lt; T &gt; &gt;</type>
+        <definition>List&lt;ModifierData&lt;T&gt; &gt; UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.Modifiers</definition>
+        <argsstring></argsstring>
+        <name>Modifiers</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.Modifiers</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref> to be applied when calculating modifiers, must be modified via AddModifier(ModifierData), or temporarily modified via AddTemporaryModifier(ModifierData, float, bool). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="47" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a88bd2ab3f6be8f13282ca6074ed446a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.AddModifier</definition>
+        <argsstring>(ModifierData&lt; T &gt; modifier)</argsstring>
+        <name>AddModifier</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.AddModifier</qualifiedname>
+        <param>
+          <type>ModifierData&lt; T &gt;</type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+<para>Adds the ObjectModifierData modifier to <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The modifier to add to the object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="53" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a9c548f07ed4c33d45a6d4d165298c73c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.AddModifier</definition>
+        <argsstring>(ModifierType modifierType, T modifierValue)</argsstring>
+        <name>AddModifier</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.AddModifier</qualifiedname>
+        <param>
+          <type><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref></type>
+          <declname>modifierType</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>modifierValue</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new ObjectModifierData with the specified <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref> and value and adds it to <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modifierType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The classType of modifier to add</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>modifierValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value associated with the modifier</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="62" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1adb5989f5821ad1574013085d30e2ce42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.AddTemporaryModifier</definition>
+        <argsstring>(ModifierData&lt; T &gt; modifier, float time, bool useRealtime=false)</argsstring>
+        <name>AddTemporaryModifier</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.AddTemporaryModifier</qualifiedname>
+        <param>
+          <type>ModifierData&lt; T &gt;</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Temporarily adds the ObjectModifierData modifier to <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref>. Once the time is over, it will remove the ObjectModifierData from <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The modifier to apply to the object.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(In seconds) how long the ObjectModifierData stays in <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref> for</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useRealtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether the duration should be measured using real time instead of game time</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="72" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a5ef14f0d13b9d3daf89085bd840dc260" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.RemoveModifier</definition>
+        <argsstring>(ModifierData&lt; T &gt; modifierType)</argsstring>
+        <name>RemoveModifier</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.RemoveModifier</qualifiedname>
+        <param>
+          <type>ModifierData&lt; T &gt;</type>
+          <declname>modifierType</declname>
+        </param>
+        <briefdescription>
+<para>Removes the specified modifier from <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modifierType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The modifier to remove from the object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="86" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a77d6ca07b1d513e0f46d261a3206858e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.CalculateModifiers</definition>
+        <argsstring>(T inputValue, bool sortModifiers=true)</argsstring>
+        <name>CalculateModifiers</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.CalculateModifiers</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>inputValue</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sortModifiers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the result of applying all <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref> to the input value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial value to which modifiers will be applied.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sortModifiers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to sort the modifiers before applying them based on <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a137d34a5787fcc5a8123763681ed03c4" kindref="member">ModifierOrder</ref>; otherwise, false</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value calculated based on the <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="94" column="14" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="94" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a753d5188406249be3ff6f889e7f6914e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.SortModifiers</definition>
+        <argsstring>(ModifierType[] sort)</argsstring>
+        <name>SortModifiers</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.SortModifiers</qualifiedname>
+        <param>
+          <type><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref>[]</type>
+          <declname>sort</declname>
+        </param>
+        <briefdescription>
+<para>Sorts <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref> according to the specified order of <emphasis>sort</emphasis> . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kindref="member">ModifierType</ref> array that defines the desired sort order. <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref> are ordered to match the sequence of types in this array.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="135" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="135" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1ae6a8786a9feee524062deb723e095997" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.SortModifiers</definition>
+        <argsstring>()</argsstring>
+        <name>SortModifiers</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.SortModifiers</qualifiedname>
+        <briefdescription>
+<para>Sorts <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref> using <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a137d34a5787fcc5a8123763681ed03c4" kindref="member">ModifierOrder</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="151" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a6f364c423b901dcaea79b175dc7fa1d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.PrintModifiers</definition>
+        <argsstring>()</argsstring>
+        <name>PrintModifiers</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.PrintModifiers</qualifiedname>
+        <briefdescription>
+<para>Prints the classType and value of each <ref refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kindref="compound">Modifiers</ref> to the debug log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="158" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="158" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1af7b47200736411b38b24ed8165a98e1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.PrintModifierOrder</definition>
+        <argsstring>()</argsstring>
+        <name>PrintModifierOrder</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.PrintModifierOrder</qualifiedname>
+        <briefdescription>
+<para>Outputs the current order of <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a137d34a5787fcc5a8123763681ed03c4" kindref="member">ModifierOrder</ref> to the debug log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="175" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="175" bodyend="183"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a85180fc257e49da095112a1127df772c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;.AddTemporaryModifierCoroutine</definition>
+        <argsstring>(ModifierData&lt; T &gt; modifier, float time, bool useRealtime)</argsstring>
+        <name>AddTemporaryModifierCoroutine</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager-1-g.AddTemporaryModifierCoroutine</qualifiedname>
+        <param>
+          <type>ModifierData&lt; T &gt;</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useRealtime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="76" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers/ModifierManager.cs" bodystart="7" bodyend="184"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a162f83824eda80e5fd0a1d4b47733716" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>_modifierOrder</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a88bd2ab3f6be8f13282ca6074ed446a0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>AddModifier</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a9c548f07ed4c33d45a6d4d165298c73c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>AddModifier</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1adb5989f5821ad1574013085d30e2ce42" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>AddTemporaryModifier</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a85180fc257e49da095112a1127df772c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>AddTemporaryModifierCoroutine</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a77d6ca07b1d513e0f46d261a3206858e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>CalculateModifiers</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1adb8fe342cd14c87151bd39705c73a66d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>DEFAULT_MODIFIER_ORDER</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a137d34a5787fcc5a8123763681ed03c4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>ModifierOrder</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1acc5ef78111362c25ff87014418c0f11b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>Modifiers</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a46077195d42fb48106129d1f341b182a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>ModifierTypeCount</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1af7b47200736411b38b24ed8165a98e1b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>PrintModifierOrder</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a6f364c423b901dcaea79b175dc7fa1d1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>PrintModifiers</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a5ef14f0d13b9d3daf89085bd840dc260" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>RemoveModifier</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a753d5188406249be3ff6f889e7f6914e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>SortModifiers</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1ae6a8786a9feee524062deb723e095997" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</scope><name>SortModifiers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

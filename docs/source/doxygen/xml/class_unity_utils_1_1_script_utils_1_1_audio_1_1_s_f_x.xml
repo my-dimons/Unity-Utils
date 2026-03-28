@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::SFX</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a5d424d57e2ca3a031f73e474ac441ae9" prot="public" static="no" mutable="no">
+        <type>AudioClip[]</type>
+        <definition>AudioClip [] UnityUtils.ScriptUtils.Audio.SFX.audioClips</definition>
+        <argsstring></argsstring>
+        <name>audioClips</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.audioClips</qualifiedname>
+        <briefdescription>
+<para>Randomly play one of these clips when this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> is played. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only set 1 AudioClip if you do not want to randomize the clips</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="57" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a910b0f617d33d08a5dc12696f4fc2788" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource UnityUtils.ScriptUtils.Audio.SFX.audioSource</definition>
+        <argsstring></argsstring>
+        <name>audioSource</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.audioSource</qualifiedname>
+        <briefdescription>
+<para>If null, will create a new object and add an audio source. Otherwise will play on the set audio source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="62" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a7ab72658740cf5aada0c5536f9794ad5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kindref="compound">SFXVolumeSettings</ref></type>
+        <definition>SFXVolumeSettings UnityUtils.ScriptUtils.Audio.SFX.volumeSettings</definition>
+        <argsstring></argsstring>
+        <name>volumeSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.volumeSettings</qualifiedname>
+        <briefdescription>
+<para>The volume settings used when playing this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref>. See <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kindref="compound">SFXVolumeSettings</ref> for more info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="68" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a3b947bb7400c60b6a236082b80c7f551" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings" kindref="compound">SFXPitchSettings</ref></type>
+        <definition>SFXPitchSettings UnityUtils.ScriptUtils.Audio.SFX.pitchSettings</definition>
+        <argsstring></argsstring>
+        <name>pitchSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.pitchSettings</qualifiedname>
+        <briefdescription>
+<para>The pitch settings used when playing this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref>. See <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings" kindref="compound">SFXPitchSettings</ref> for more info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="72" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a3d4c5cdcec8eab60bea89c9d82c98d31" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings" kindref="compound">SFX3dSettings</ref></type>
+        <definition>SFX3dSettings UnityUtils.ScriptUtils.Audio.SFX.spacialSettings</definition>
+        <argsstring></argsstring>
+        <name>spacialSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.spacialSettings</qualifiedname>
+        <briefdescription>
+<para>The 3d settings used when playing this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref>. See <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings" kindref="compound">SFX3dSettings</ref> for more info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="76" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a1c42aca0929154a1734a138ed30a1ca0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings" kindref="compound">SFXDestructionSettings</ref></type>
+        <definition>SFXDestructionSettings UnityUtils.ScriptUtils.Audio.SFX.destructionSettings</definition>
+        <argsstring></argsstring>
+        <name>destructionSettings</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.destructionSettings</qualifiedname>
+        <briefdescription>
+<para>The destruction settings used when playing this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref>. See <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings" kindref="compound">SFXDestructionSettings</ref> for more info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="80" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1acf58caea0fb2945920dd054cd50b78ba" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UnityUtils.ScriptUtils.Audio.SFX.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.name</qualifiedname>
+        <briefdescription>
+<para>The name of this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> when instantiated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="86" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1aa9cdd815691a26b5af94efa16391a32d" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform UnityUtils.ScriptUtils.Audio.SFX.parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.parent</qualifiedname>
+        <briefdescription>
+<para>The transform to set the instantiated <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> clip&apos;s parent as. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Useful for orginization purposes.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="92" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a8764fc2b00f6817400d898bb1bf2f57f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref></type>
+        <definition>static SFX UnityUtils.ScriptUtils.Audio.SFX.Create2dSFX</definition>
+        <argsstring>()</argsstring>
+        <name>Create2dSFX</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.Create2dSFX</qualifiedname>
+        <briefdescription>
+<para>Returns a new <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> with the following properties: </para>
+        </briefdescription>
+        <detaileddescription>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" kindref="member">SFXVolumeSettings.volume</ref> = 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">SFXVolumeSettings.volumeType</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">AudioManager.VolumeType.Sfx</ref></para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a672c8fc0d04bda5f7848006b230bebd4" kindref="member">SFXPitchSettings.pitch</ref> = 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a93a3a6a22bfd1d67e8ecff7d4c3362ee" kindref="member">SFXPitchSettings.pitchVariance</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1ad93ccc0080852c3ba0f9367520bcc712" kindref="member">AudioManager.DEFAULT_PITCH_VARIANCE</ref></para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a514db81ce8e67ce175278da540ebcbe1" kindref="member">SFX3dSettings.localPosition</ref> = Vector3.zero</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a03e461dd7b453ad4ee168c6ae887980d" kindref="member">SFX3dSettings.spacialBlend</ref> = 0</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1acf58caea0fb2945920dd054cd50b78ba" kindref="member">name</ref> = &quot;2D SFX [UnityUtils.ScriptUtils.Audio]&quot;</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a84df6c7a200a286dbe54bcc2e1c655b1" kindref="member">SFXDestructionSettings.destroyOnClipEnd</ref> = true</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a8f2db1b73666d7f6eb3041c3038741bd" kindref="member">SFXDestructionSettings.useRealtimeToDestroy</ref> = true</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="21" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1ad568f0df8611d960485763072eb9d233" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref></type>
+        <definition>static SFX UnityUtils.ScriptUtils.Audio.SFX.Create3dSFX</definition>
+        <argsstring>()</argsstring>
+        <name>Create3dSFX</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.Create3dSFX</qualifiedname>
+        <briefdescription>
+<para>Returns a new <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> with the following properties: </para>
+        </briefdescription>
+        <detaileddescription>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" kindref="member">SFXVolumeSettings.volume</ref> = 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">SFXVolumeSettings.volumeType</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">AudioManager.VolumeType.Sfx</ref></para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a672c8fc0d04bda5f7848006b230bebd4" kindref="member">SFXPitchSettings.pitch</ref> = 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a93a3a6a22bfd1d67e8ecff7d4c3362ee" kindref="member">SFXPitchSettings.pitchVariance</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1ad93ccc0080852c3ba0f9367520bcc712" kindref="member">AudioManager.DEFAULT_PITCH_VARIANCE</ref></para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a514db81ce8e67ce175278da540ebcbe1" kindref="member">SFX3dSettings.localPosition</ref> = Vector3.zero</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a03e461dd7b453ad4ee168c6ae887980d" kindref="member">SFX3dSettings.spacialBlend</ref> = 1</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1acf58caea0fb2945920dd054cd50b78ba" kindref="member">name</ref> = &quot;3D SFX [UnityUtils.ScriptUtils.Audio]&quot;</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a84df6c7a200a286dbe54bcc2e1c655b1" kindref="member">SFXDestructionSettings.destroyOnClipEnd</ref> = true</para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a8f2db1b73666d7f6eb3041c3038741bd" kindref="member">SFXDestructionSettings.useRealtimeToDestroy</ref> = true</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="43" column="23" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="43" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a6a606262818e6fcf4ecc69edd71748a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.SFX.HasAudioClips</definition>
+        <argsstring>()</argsstring>
+        <name>HasAudioClips</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX.HasAudioClips</qualifiedname>
+        <briefdescription>
+<para>Checks if this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> has any <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a5d424d57e2ca3a031f73e474ac441ae9" kindref="member">audioClips</ref> to play. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="97" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="97" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Used in <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager" kindref="compound">SFXManager</ref> to play audio clips with some set parameters. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.Audio.SFX</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>volumeSettings</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>pitchSettings</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>spacialSettings</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>destructionSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
+      </node>
+      <node id="5">
+        <label>UnityUtils.ScriptUtils.Audio.SFX3dSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings"/>
+      </node>
+      <node id="6">
+        <label>UnityUtils.ScriptUtils.Audio.SFXDestructionSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings"/>
+      </node>
+      <node id="4">
+        <label>UnityUtils.ScriptUtils.Audio.SFXPitchSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings"/>
+      </node>
+      <node id="2">
+        <label>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>volumeType</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFX.cs" bodystart="8" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a5d424d57e2ca3a031f73e474ac441ae9" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>audioClips</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a910b0f617d33d08a5dc12696f4fc2788" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>audioSource</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a8764fc2b00f6817400d898bb1bf2f57f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>Create2dSFX</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1ad568f0df8611d960485763072eb9d233" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>Create3dSFX</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a1c42aca0929154a1734a138ed30a1ca0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>destructionSettings</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a6a606262818e6fcf4ecc69edd71748a0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>HasAudioClips</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1acf58caea0fb2945920dd054cd50b78ba" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>name</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1aa9cdd815691a26b5af94efa16391a32d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>parent</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a3b947bb7400c60b6a236082b80c7f551" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>pitchSettings</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a3d4c5cdcec8eab60bea89c9d82c98d31" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>spacialSettings</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a7ab72658740cf5aada0c5536f9794ad5" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX</scope><name>volumeSettings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

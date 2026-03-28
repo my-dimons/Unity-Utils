@@ -103,7 +103,14 @@ Public Types</h2></td></tr>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217">Music</a>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b">UI</a>
 , <br />
-&#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af">Custom</a>
+&#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9">Weather</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d">Dialog</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3">Footsteps</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e">Ambient</a>
+, <br />
+&#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5">Custom1</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2">Custom2</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8">Custom3</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a0a7bc22fea904cdde6b310b8beb97b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds different audio types for volume calculations.  <a href="#a0a7bc22fea904cdde6b310b8beb97b41">More...</a><br /></td></tr>
@@ -117,15 +124,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a096134c5684b1ef0d8f46d9c0cf9a6a6" id="r_a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a096134c5684b1ef0d8f46d9c0cf9a6a6">SetVolume</a> (<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType, float volume)</td></tr>
 <tr class="memdesc:a096134c5684b1ef0d8f46d9c0cf9a6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the volume level for the specified audio classType to the new volume. Auto clamps to the min/max audio volume (<a class="el" href="#a951691ccb7f9df99c9c0b0f4bb0c8cca" title="Minimum audio volume.">MIN_AUDIO_VOLUME</a>, <a class="el" href="#a3d858e08e9ebddb2664c8c09373f76b1" title="Maximum audio volume.">MAX_AUDIO_VOLUME</a>).  <br /></td></tr>
 <tr class="memitem:a6842171f65007a880eac46610f5676b5" id="r_a6842171f65007a880eac46610f5676b5"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6842171f65007a880eac46610f5676b5">CalculateVolumeBasedOnType</a> (float volume, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> volumeType)</td></tr>
-<tr class="memdesc:a6842171f65007a880eac46610f5676b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the final volume after applying both the classType volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">VolumeType.Global</a>).  <br /></td></tr>
+<tr class="memdesc:a6842171f65007a880eac46610f5676b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the final volume after applying both the classType volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" title="Special audio type, everything gets multiplied by this volume, except for other global volumes.">VolumeType.Global</a>).  <br /></td></tr>
 <tr class="memitem:a0b0a5e413f1f381a80658aaae7256203" id="r_a0b0a5e413f1f381a80658aaae7256203"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b0a5e413f1f381a80658aaae7256203">MultiplyByGlobalVolume</a> (float volume)</td></tr>
 <tr class="memdesc:a0b0a5e413f1f381a80658aaae7256203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the specified volume by the current global volume level.  <br /></td></tr>
 <tr class="memitem:a0498ca8ec7582e9aa3607f534a7dc5f0" id="r_a0498ca8ec7582e9aa3607f534a7dc5f0"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0498ca8ec7582e9aa3607f534a7dc5f0">CalculateClipLength</a> (float clipLength, float pitch)</td></tr>
 <tr class="memdesc:a0498ca8ec7582e9aa3607f534a7dc5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the effective playback duration of an audio clip after adjusting for pitch.  <br /></td></tr>
 <tr class="memitem:a41eadf3c8d28dae43bd9058ff3ecf4ae" id="r_a41eadf3c8d28dae43bd9058ff3ecf4ae"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41eadf3c8d28dae43bd9058ff3ecf4ae">CalculateClipPitchWithLength</a> (float clipLength, float time)</td></tr>
 <tr class="memdesc:a41eadf3c8d28dae43bd9058ff3ecf4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the pitch adjustment factor needed to play an audio clip at a specified duration.  <br /></td></tr>
-<tr class="memitem:a3f7535559b788c3fdd18b161f7310774" id="r_a3f7535559b788c3fdd18b161f7310774"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7535559b788c3fdd18b161f7310774">CalculatePitchVariance</a> (float pitchVariance)</td></tr>
-<tr class="memdesc:a3f7535559b788c3fdd18b161f7310774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the pitch variance to add randomness to playback.  <br /></td></tr>
+<tr class="memitem:a74a9cdcdfac8426e74083b47194dca99" id="r_a74a9cdcdfac8426e74083b47194dca99"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74a9cdcdfac8426e74083b47194dca99">CalculatePitchVariance</a> (float pitchVariance, float pitch)</td></tr>
+<tr class="memdesc:a74a9cdcdfac8426e74083b47194dca99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the pitch variance to add randomness to playback.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -153,11 +160,18 @@ Static Public Attributes</h2></td></tr>
 
 <p>Holds different audio types for volume calculations. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" name="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8"></a>Global&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" name="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8"></a>Global&#160;</td><td class="fielddoc"><p>Special audio type, everything gets multiplied by this volume, except for other global volumes. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" name="a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3"></a>Sfx&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" name="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217"></a>Music&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" name="a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b"></a>UI&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af" name="a0a7bc22fea904cdde6b310b8beb97b41a90589c47f06eb971d548591f23c285af"></a>Custom&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9" name="a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9"></a>Weather&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d" name="a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d"></a>Dialog&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3" name="a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3"></a>Footsteps&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e" name="a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e"></a>Ambient&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5" name="a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5"></a>Custom1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2" name="a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2"></a>Custom2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8" name="a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8"></a>Custom3&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -227,8 +241,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f7535559b788c3fdd18b161f7310774" name="a3f7535559b788c3fdd18b161f7310774"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f7535559b788c3fdd18b161f7310774">&#9670;&#160;</a></span>CalculatePitchVariance()</h2>
+<a id="a74a9cdcdfac8426e74083b47194dca99" name="a74a9cdcdfac8426e74083b47194dca99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a9cdcdfac8426e74083b47194dca99">&#9670;&#160;</a></span>CalculatePitchVariance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,8 +253,12 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">float UnityUtils.ScriptUtils.Audio.AudioManager.CalculatePitchVariance </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitchVariance</em></span></td><td>)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitchVariance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitch</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -282,7 +300,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the final volume after applying both the classType volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">VolumeType.Global</a>). </p>
+<p>Returns the final volume after applying both the classType volume and the global volume (unless volumeType is <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" title="Special audio type, everything gets multiplied by this volume, except for other global volumes.">VolumeType.Global</a>). </p>
 <dl class="section return"><dt>Returns</dt><dd>Proper volume level based on audio classType. </dd></dl>
 
 </div>

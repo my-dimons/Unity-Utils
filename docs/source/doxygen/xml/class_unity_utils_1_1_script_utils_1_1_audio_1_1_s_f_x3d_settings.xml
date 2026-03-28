@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::SFX3dSettings</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a514db81ce8e67ce175278da540ebcbe1" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 UnityUtils.ScriptUtils.Audio.SFX3dSettings.localPosition</definition>
+        <argsstring></argsstring>
+        <name>localPosition</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX3dSettings.localPosition</qualifiedname>
+        <initializer>= Vector3.zero</initializer>
+        <briefdescription>
+<para>The Vector3 position to play this at. Used in turn with <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a03e461dd7b453ad4ee168c6ae887980d" kindref="member">spacialBlend</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="32" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a03e461dd7b453ad4ee168c6ae887980d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityUtils.ScriptUtils.Audio.SFX3dSettings.spacialBlend</definition>
+        <argsstring></argsstring>
+        <name>spacialBlend</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX3dSettings.spacialBlend</qualifiedname>
+        <briefdescription>
+<para>Value between 0 and 1 (inclusive) that decides if an AudioClip is spacial audio. 0 is no spacial audio, 1 is spacial audio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="37" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a8aab966a428f3825b180ddb1f1381f4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings" kindref="compound">SFX3dSettings</ref></type>
+        <definition>SFX3dSettings UnityUtils.ScriptUtils.Audio.SFX3dSettings.SetSpacialAudio</definition>
+        <argsstring>(Vector3 localPosition, float spacialBlend=1)</argsstring>
+        <name>SetSpacialAudio</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFX3dSettings.SetSpacialAudio</qualifiedname>
+        <param>
+          <type>Vector3</type>
+          <declname>localPosition</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>spacialBlend</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a514db81ce8e67ce175278da540ebcbe1" kindref="member">localPosition</ref> and <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a03e461dd7b453ad4ee168c6ae887980d" kindref="member">spacialBlend</ref> for this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>localPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spacialBlend</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="44" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="44" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="28" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="28" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a514db81ce8e67ce175278da540ebcbe1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX3dSettings</scope><name>localPosition</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a8aab966a428f3825b180ddb1f1381f4d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX3dSettings</scope><name>SetSpacialAudio</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a03e461dd7b453ad4ee168c6ae887980d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFX3dSettings</scope><name>spacialBlend</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

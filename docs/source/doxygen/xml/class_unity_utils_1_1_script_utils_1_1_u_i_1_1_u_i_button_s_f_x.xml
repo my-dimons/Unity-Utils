@@ -7,130 +7,68 @@
     <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae952e6b7f589bc3b221416e0d417c313" prot="public" static="no" mutable="no">
-        <type>AudioClip</type>
-        <definition>AudioClip UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverEnterSfx</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a81d3fdcc2e85766c5793d72b735f5b53" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref></type>
+        <definition>SFX UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverEnterSfx</definition>
         <argsstring></argsstring>
         <name>hoverEnterSfx</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverEnterSfx</qualifiedname>
+        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a8764fc2b00f6817400d898bb1bf2f57f" kindref="member">SFX.Create2dSFX</ref>()</initializer>
         <briefdescription>
-<para>Sound to play when the mouse cursor enters the buttons hitbox. </para>
+<para>Sound to play when the button is hovered over. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="12" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="12" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="14" column="16" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ab8317c7209a24bf98f21bdead3fa32ad" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverEnterVolume</definition>
-        <argsstring></argsstring>
-        <name>hoverEnterVolume</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverEnterVolume</qualifiedname>
-        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kindref="member">AudioManager.MAX_AUDIO_VOLUME</ref></initializer>
-        <briefdescription>
-<para>Volume to play <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae952e6b7f589bc3b221416e0d417c313" kindref="member">hoverEnterSfx</ref> at. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="14" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="14" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ac3dca7053abf536976fd9a7323cef821" prot="public" static="no" mutable="no">
-        <type>AudioClip</type>
-        <definition>AudioClip UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverExitSfx</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aa7a8408674bb5f509751c26632369cb6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref></type>
+        <definition>SFX UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverExitSfx</definition>
         <argsstring></argsstring>
         <name>hoverExitSfx</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverExitSfx</qualifiedname>
+        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a8764fc2b00f6817400d898bb1bf2f57f" kindref="member">SFX.Create2dSFX</ref>()</initializer>
         <briefdescription>
-<para>Sound to play when the mouse cursor exits the buttons hitbox. </para>
+<para>Sound to play when the button is no longer being hovered. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="19" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="19" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="21" column="16" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a66204a7a0a5c21f1dff4d2a37d3f1f38" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverExitVolume</definition>
-        <argsstring></argsstring>
-        <name>hoverExitVolume</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.hoverExitVolume</qualifiedname>
-        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kindref="member">AudioManager.MAX_AUDIO_VOLUME</ref></initializer>
-        <briefdescription>
-<para>Volume to play <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ac3dca7053abf536976fd9a7323cef821" kindref="member">hoverExitSfx</ref> at. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="21" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="21" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" prot="public" static="no" mutable="no">
-        <type>AudioClip</type>
-        <definition>AudioClip UnityUtils.ScriptUtils.UI.UIButtonSFX.clickSfx</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a2e1dea3d79495e9f3ca78dad6fab338b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref></type>
+        <definition>SFX UnityUtils.ScriptUtils.UI.UIButtonSFX.clickSfx</definition>
         <argsstring></argsstring>
         <name>clickSfx</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.clickSfx</qualifiedname>
+        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_1a8764fc2b00f6817400d898bb1bf2f57f" kindref="member">SFX.Create2dSFX</ref>()</initializer>
         <briefdescription>
-<para>Sound to play when the mouse clicks on the button. </para>
+<para>Sound to play when the button is clicked. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="26" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="26" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="28" column="16" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="28" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae1337199f502e7ea75e6627ca1e0f3a2" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float UnityUtils.ScriptUtils.UI.UIButtonSFX.clickVolume</definition>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a10d7650caf3ffbe41dd80ff41742f847" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings" kindref="compound">UIButtonDebugSettings</ref></type>
+        <definition>UIButtonDebugSettings UnityUtils.ScriptUtils.UI.UIButtonSFX.debugLogs</definition>
         <argsstring></argsstring>
-        <name>clickVolume</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.clickVolume</qualifiedname>
-        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a3d858e08e9ebddb2664c8c09373f76b1" kindref="member">AudioManager.MAX_AUDIO_VOLUME</ref></initializer>
+        <name>debugLogs</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.debugLogs</qualifiedname>
         <briefdescription>
-<para>Volume to play <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" kindref="member">clickSfx</ref> at. </para>
+<para>Will output a Debug.Log(object) depending on the <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings" kindref="compound">UIButtonDebugSettings</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="29" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="29" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a134326d73212920ba4bebbaed6b7da80" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float UnityUtils.ScriptUtils.UI.UIButtonSFX.pitchVariance</definition>
-        <argsstring></argsstring>
-        <name>pitchVariance</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.pitchVariance</qualifiedname>
-        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1ad93ccc0080852c3ba0f9367520bcc712" kindref="member">AudioManager.DEFAULT_PITCH_VARIANCE</ref></initializer>
-        <briefdescription>
-<para>Random variance to play all audio clips at. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="34" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a899a8ade8749b3068571cb65622cf49a" prot="public" static="no" mutable="no">
-        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
-        <definition>AudioManager.VolumeType UnityUtils.ScriptUtils.UI.UIButtonSFX.volumeType</definition>
-        <argsstring></argsstring>
-        <name>volumeType</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.volumeType</qualifiedname>
-        <initializer>= AudioManager.VolumeType.Sfx</initializer>
-        <briefdescription>
-<para>Type of audio to use to get proper audio levels. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="37" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="37" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="36" column="34" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae89df3943971c8847f19010c49257a02" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -139,13 +77,13 @@
         <name>logEmptySfx</name>
         <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.logEmptySfx</qualifiedname>
         <briefdescription>
-<para>If true this will log errors when trying to play sound effects but they become empty. </para>
+<para>Will output a Debug.LogWarning(object) when a hover enter, exit, or click <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> tries to be played but no <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> clip is found. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="44" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="44" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="41" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="41" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -161,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="39" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="39" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="30" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="30" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -181,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="46" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="46" bodyend="51"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="43" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="43" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aba00af17f744dac7f08360605fb2d914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -199,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="53" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="53" bodyend="61"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="54" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="54" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a4097c5e00c6d00f209b2718449c3710d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -217,7 +155,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="63" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="63" bodyend="73"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="68" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="68" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a904acef9aea8210d3550a2f8734f2694" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIButtonSFX.LogAny</definition>
+        <argsstring>()</argsstring>
+        <name>LogAny</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonSFX.LogAny</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="84" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="84" bodyend="88"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -275,29 +229,70 @@
         <childnode refid="5" relation="public-inheritance">
         </childnode>
         <childnode refid="6" relation="usage">
-          <edgelabel>volumeType</edgelabel>
+          <edgelabel>clickSfx</edgelabel>
+          <edgelabel>hoverEnterSfx</edgelabel>
+          <edgelabel>hoverExitSfx</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>debugLogs</edgelabel>
         </childnode>
       </node>
-      <node id="6">
+      <node id="8">
         <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
         <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
       </node>
+      <node id="6">
+        <label>UnityUtils.ScriptUtils.Audio.SFX</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>volumeSettings</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>pitchSettings</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>spacialSettings</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>destructionSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>UnityUtils.ScriptUtils.Audio.SFX3dSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings"/>
+      </node>
+      <node id="11">
+        <label>UnityUtils.ScriptUtils.Audio.SFXDestructionSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings"/>
+      </node>
+      <node id="9">
+        <label>UnityUtils.ScriptUtils.Audio.SFXPitchSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings"/>
+      </node>
+      <node id="7">
+        <label>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>volumeType</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>UnityUtils.ScriptUtils.UI.UIButtonDebugSettings</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings"/>
+      </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="8" bodyend="74"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSfx.cs" bodystart="8" bodyend="89"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1adc89b9acd4f48169e335c470ea3214b0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>clickSfx</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae1337199f502e7ea75e6627ca1e0f3a2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>clickVolume</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae952e6b7f589bc3b221416e0d417c313" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>hoverEnterSfx</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ab8317c7209a24bf98f21bdead3fa32ad" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>hoverEnterVolume</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ac3dca7053abf536976fd9a7323cef821" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>hoverExitSfx</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a66204a7a0a5c21f1dff4d2a37d3f1f38" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>hoverExitVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a2e1dea3d79495e9f3ca78dad6fab338b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>clickSfx</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a10d7650caf3ffbe41dd80ff41742f847" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>debugLogs</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a81d3fdcc2e85766c5793d72b735f5b53" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>hoverEnterSfx</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aa7a8408674bb5f509751c26632369cb6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>hoverExitSfx</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a904acef9aea8210d3550a2f8734f2694" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>LogAny</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1ae89df3943971c8847f19010c49257a02" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>logEmptySfx</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a4097c5e00c6d00f209b2718449c3710d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>OnPointerClick</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a098921ae8917b2ab59d8e2449319c486" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>OnPointerEnter</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aba00af17f744dac7f08360605fb2d914" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>OnPointerExit</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a134326d73212920ba4bebbaed6b7da80" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>pitchVariance</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1aa43549ce30ce66c94f375daf8a5e5ffe" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>sceneLoadTriggered</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x_1a899a8ade8749b3068571cb65622cf49a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonSFX</scope><name>volumeType</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

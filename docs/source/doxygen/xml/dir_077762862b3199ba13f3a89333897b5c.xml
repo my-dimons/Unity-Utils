@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_077762862b3199ba13f3a89333897b5c" kind="dir">
+    <compoundname>Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash</compoundname>
+    <innerfile refid="_color_flash_8cs">ColorFlash.cs</innerfile>
+    <innerfile refid="_color_flash_manager_8cs">ColorFlashManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/"/>
+  </compounddef>
+</doxygen>

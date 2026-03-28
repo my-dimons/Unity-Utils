@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::Audio::SFXManager</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager_1a334061927d8145026134964cbbbf7ff7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SFXManager.PlaySFX</definition>
+        <argsstring>(SFX sfx)</argsstring>
+        <name>PlaySFX</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXManager.PlaySFX</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref></type>
+          <declname>sfx</declname>
+        </param>
+        <briefdescription>
+<para>Plays the provided <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> using the <emphasis>sfx</emphasis>  clips parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sfx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref> object to play</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXManager.cs" line="10" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="10" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager_1a440ff0b2a9a97c6e6eebffc2167d1ed8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UnityUtils.ScriptUtils.Audio.SFXManager.PlaySFXClip</definition>
+        <argsstring>(SFX sfx)</argsstring>
+        <name>PlaySFXClip</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXManager.PlaySFXClip</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref></type>
+          <declname>sfx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXManager.cs" line="14" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="14" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXManager.cs" line="5" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXManager.cs" bodystart="5" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager_1a334061927d8145026134964cbbbf7ff7" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXManager</scope><name>PlaySFX</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager_1a440ff0b2a9a97c6e6eebffc2167d1ed8" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXManager</scope><name>PlaySFXClip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
