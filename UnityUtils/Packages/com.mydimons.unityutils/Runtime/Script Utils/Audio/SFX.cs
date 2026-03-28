@@ -7,17 +7,16 @@ namespace UnityUtils.ScriptUtils.Audio {
   [System.Serializable]
   public class SFX {
     /// <summary>
-    /// Returns a new SFX with default values
-    /// <para/>
-    /// <see cref="minVolume"/> + <see cref="maxVolume"/> = 1, <see cref="volumeType"/> = <see cref="AudioManager.VolumeType.Sfx"/>
-    /// <para/>
-    /// <see cref="pitch"/> = 1, <see cref="pitchVariance"/> = <see cref="AudioManager.DEFAULT_PITCH.VARIANCE"/>
-    /// <para/>
-    /// <see cref="localPosition"/> = <see cref="Vector3.zero"/>, <see cref="spacialBlend"/> = 0
-    /// <para/>
-    /// <see cref="name"/> = "[UnityUtils.ScriptUtils.Audio] 2D SFX"
-    /// <para/>
-    /// <see cref="destroyOnClipEnd"/> = true, <see cref="useRealtimeToDestroy"/> = true"/>
+    /// Returns a new SFX with the following properties:
+    /// <para>- <see cref="SFXVolumeSettings.volume"/> = 1</para>
+    /// <para>- <see cref="SFXVolumeSettings.volumeType"/> = <see cref="AudioManager.VolumeType.Sfx"/></para>
+    /// <para>- <see cref="SFXPitchSettings.pitch"/> = 1</para>
+    /// <para>- <see cref="SFXPitchSettings.pitchVariance"/> = <see cref="AudioManager.DEFAULT_PITCH_VARIANCE"/></para>
+    /// <para>- <see cref="SFX3dSettings.localPosition"/> = <see cref="Vector3.zero"/></para>
+    /// <para>- <see cref="SFX3dSettings.spacialBlend"/> = 0</para>
+    /// <para>- <see cref="name"/> = "2D SFX [UnityUtils.ScriptUtils.Audio]"</para>
+    /// <para>- <see cref="SFXDestructionSettings.destroyOnClipEnd"/> = true</para>
+    /// <para>- <see cref="SFXDestructionSettings.useRealtimeToDestroy"/> = true</para>
     /// </summary>
     public static SFX Create2DSFX() {
       return new SFX {
@@ -30,17 +29,16 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
 
     /// <summary>
-    /// Returns a new SFX with default values
-    /// <para/>
-    /// <see cref="minVolume"/> + <see cref="maxVolume"/> = 1, <see cref="volumeType"/> = <see cref="AudioManager.VolumeType.Sfx"/>
-    /// <para/>
-    /// <see cref="pitch"/> = 1, <see cref="pitchVariance"/> = <see cref="AudioManager.DEFAULT_PITCH.VARIANCE"/>
-    /// <para/>
-    /// <see cref="localPosition"/> = <see cref="Vector3.zero"/>, <see cref="spacialBlend"/> = 1
-    /// <para/>
-    /// <see cref="name"/> = "3D SFX [UnityUtils.ScriptUtils.Audio]"
-    /// <para/>
-    /// <see cref="destroyOnClipEnd"/> = true, <see cref="useRealtimeToDestroy"/> = true"/>
+    /// Returns a new SFX with the following properties:
+    /// <para>- <see cref="SFXVolumeSettings.volume"/> = 1</para>
+    /// <para>- <see cref="SFXVolumeSettings.volumeType"/> = <see cref="AudioManager.VolumeType.Sfx"/></para>
+    /// <para>- <see cref="SFXPitchSettings.pitch"/> = 1</para>
+    /// <para>- <see cref="SFXPitchSettings.pitchVariance"/> = <see cref="AudioManager.DEFAULT_PITCH_VARIANCE"/></para>
+    /// <para>- <see cref="SFX3dSettings.localPosition"/> = <see cref="Vector3.zero"/></para>
+    /// <para>- <see cref="SFX3dSettings.spacialBlend"/> = 1</para>
+    /// <para>- <see cref="name"/> = "3D SFX [UnityUtils.ScriptUtils.Audio]"</para>
+    /// <para>- <see cref="SFXDestructionSettings.destroyOnClipEnd"/> = true</para>
+    /// <para>- <see cref="SFXDestructionSettings.useRealtimeToDestroy"/> = true</para>
     /// </summary>
     public static SFX Create3DSFX() {
       return new SFX {

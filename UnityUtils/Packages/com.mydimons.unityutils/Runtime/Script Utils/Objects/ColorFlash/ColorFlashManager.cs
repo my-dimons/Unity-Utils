@@ -7,7 +7,7 @@ namespace UnityUtils.ScriptUtils.Objects.ColorFlash {
     /// <summary>
     /// The default <see cref="ColorFlash"/> to use when flashing.
     /// </summary>
-    public ColorFlash colorFlash;
+    public ColorFlash colorFlash = ColorFlash.CreateDefaultFlash();
 
     [Header("Debug Logs")]
 
@@ -78,18 +78,18 @@ namespace UnityUtils.ScriptUtils.Objects.ColorFlash {
     private IEnumerator FlashRoutine(ColorFlash flash) {
       spriteRenderer.material = spriteRendererFlashMaterial;
       spriteRendererFlashMaterial.SetColor("_FlashColor", flash.color);
-      spriteRendererFlashMaterial.SetFloat("_FlashAmount", flash.amount);
+      spriteRendererFlashMaterial.SetFloat("_FlashAmount", flash.flashAmount);
 
       if (logFlash)
         Debug.Log("Flashing object " +
           "\n color: " + flash.color +
-          "\n duration: " + flash.duration);
+          "\n duration: " + flash.durationSeconds);
 
-      yield return FlashFade(flash.fadeInTime, flash.fadeInCurve, false);
+      yield return FlashFade(flash.fadeInTimeSeconds, flash.fadeInCurve, false);
 
-      yield return new WaitForSeconds(flash.duration);
+      yield return new WaitForSeconds(flash.durationSeconds);
 
-      yield return FlashFade(flash.fadeOutTime, flash.fadeOutCurve, true);
+      yield return FlashFade(flash.fadeOutTimeSeconds, flash.fadeOutCurve, true);
 
       if (logFlash)
         Debug.Log("Finished flashing object");
@@ -116,7 +116,7 @@ namespace UnityUtils.ScriptUtils.Objects.ColorFlash {
           curveValue = 1f - curveValue;
 
         // lerp the flash amount
-        float currentFlashAmount = colorFlash.amount * (curveValue);
+        float currentFlashAmount = colorFlash.flashAmount * (curveValue);
         spriteRendererFlashMaterial.SetFloat("_FlashAmount", currentFlashAmount);
 
         yield return null;
