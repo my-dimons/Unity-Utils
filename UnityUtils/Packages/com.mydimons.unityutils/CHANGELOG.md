@@ -33,6 +33,7 @@
 - Moved AudioSlider script to the UI classification, also renamed to UIAudioSlider
 - Renamed UIButtonDebugLogs to UIButtonDebug
 - Most UIButton scripts now require a UIButtonDebug script to be attached to the same object
+- REMOVED MODIFIERS, See reason here: https://github.com/my-dimons/UnityUtils/issues/37, see the latest version of modifiers here: 
 
 ### Fixes
 - Made all variables properly document their usage in both the docs and in IDE's (Previously would not work in IDE's)
