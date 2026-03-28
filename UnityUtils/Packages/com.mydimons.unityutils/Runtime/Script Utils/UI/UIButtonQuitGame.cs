@@ -5,13 +5,6 @@ using UnityEngine.UI;
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Button))]
   public class UIButtonQuitGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
-
-    public enum QuitGameButtonMethod {
-      HoverEnter,
-      HoverExit,
-      Click
-    }
-
     /// <summary>
     /// Will quit the game based on the <see cref="QuitGameButtonMethod"/>.
     /// </summary>
@@ -20,7 +13,7 @@ namespace UnityUtils.ScriptUtils.UI {
     /// <summary>
     /// Will output a <see cref="Debug.Log(object)"/> when quitting the application.
     /// </summary>
-    [Header("Debug")]
+    [Header("Debug.Logs()")]
     public bool logQuit;
 
     public void OnPointerEnter(PointerEventData eventData) {

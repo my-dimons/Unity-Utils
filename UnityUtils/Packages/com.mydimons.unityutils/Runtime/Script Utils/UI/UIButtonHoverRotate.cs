@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityUtils.ScriptUtils.Objects;
 
 namespace UnityUtils.ScriptUtils.UI {
-  [RequireComponent(typeof(Button))]
+  [RequireComponent(typeof(Button), typeof(UIButtonDebug))]
   public class UIButtonHoverRotate : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     /// <summary>
     /// When hovered this is the rotation the button will be set to.
@@ -53,37 +53,25 @@ namespace UnityUtils.ScriptUtils.UI {
     [Header("Applied Transform")]
     public Transform applyTransform;
 
-
     /// <summary>
-    /// True if the button is being hovered
+    /// Will output a <see cref="Debug.Log(object)"/> depending on the <see cref="UIButtonDebugSettings"/>
     /// </summary>
-    [Header("Debug Values")]
-    public bool hoveringOverButton;
-
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> on any rotation
-    /// </summary>
-    [Header("Debug Logs")]
-    public bool logRotate;
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> on rotate to set position.
-    /// </summary>
-    public bool logRotateSetPos;
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> on rotate to start position.
-    /// </summary>
-    public bool logRotateBack;
+    [Header("Debug.Logs()")]
+    public UIButtonDebugSettings debugLogs;
     /// <summary>
     /// If <see cref="useRandomRotation"/> is true, will output a <see cref="Debug.Log(object)"/> when the random pos is generated.
     /// </summary>
     public bool logRandomRotation;
 
-    Vector3 originalRotation;
-    Vector3 hoverRotationVector;
+    private Vector3 originalRotation;
+    private Vector3 hoverRotationVector;
+    private UIButtonDebug buttonDebug;
 
     // Starter is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
       originalRotation = new Vector3(transform.localRotation.x, transform.localRotation.y, transform.localRotation.z);
+
+      buttonDebug = new UIButtonDebug();
     }
 
     // Update is called once per frame
@@ -91,7 +79,7 @@ namespace UnityUtils.ScriptUtils.UI {
       hoverRotationVector = useRandomRotation ? currentRandomRotation : new Vector3(0, 0, hoverRotation);
 
       // Stops choppy animation when spam hovering the button
-      bool stopChoppyAnimation = !hoveringOverButton && transform.localRotation == Quaternion.Euler(hoverRotationVector);
+      bool stopChoppyAnimation = !buttonDebug.hoveringOverButton && transform.localRotation == Quaternion.Euler(hoverRotationVector);
       bool rotateBackAfterHoverCondition = transform.localRotation == Quaternion.Euler(hoverRotationVector) && rotateBackAfterHover;
 
       if (stopChoppyAnimation || rotateBackAfterHoverCondition) {
@@ -102,15 +90,11 @@ namespace UnityUtils.ScriptUtils.UI {
     public void OnPointerEnter(PointerEventData eventData) {
       if (transform.localRotation == Quaternion.Euler(originalRotation))
         EnterHoverAnimation();
-
-      hoveringOverButton = true;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
       if (transform.localRotation == Quaternion.Euler(hoverRotationVector))
         ExitHoverAnimation();
-
-      hoveringOverButton = false;
     }
 
     /// <summary>
@@ -121,7 +105,7 @@ namespace UnityUtils.ScriptUtils.UI {
 
       ObjectAnimations.AnimateTransformRotation(applyTransform, originalRotation, useRandomRotation ? currentRandomRotation : hoverRotationVector, rotationAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logRotateSetPos)
+      if (debugLogs.logIn)
         Debug.Log("Rotating button to set rotation");
       if (logRandomRotation && useRandomRotation)
         Debug.Log("Generated random rotation: " + currentRandomRotation);
@@ -135,14 +119,14 @@ namespace UnityUtils.ScriptUtils.UI {
     void ExitHoverAnimation() {
       ObjectAnimations.AnimateTransformRotation(applyTransform, useRandomRotation ? currentRandomRotation : hoverRotationVector, originalRotation, rotationAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logRotateBack)
+      if (debugLogs.logOut)
         Debug.Log("Rotating button back");
 
       LogRotate();
     }
 
     private void LogRotate() {
-      if (logRotate)
+      if (debugLogs.logAny)
         Debug.Log("Rotated button");
     }
 

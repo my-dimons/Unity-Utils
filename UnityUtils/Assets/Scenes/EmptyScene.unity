@@ -221,10 +221,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a87d583b455941a42bc491aa2a263427, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ColorFlashManager
+  m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager
   colorFlash:
-    color: {r: 0, g: 0, b: 0, a: 1}
-    duration: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+    durationSeconds: 0.1
     fadeInCurve:
       serializedVersion: 2
       m_Curve:
@@ -249,7 +249,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    fadeInTime: 0
+    fadeInTimeSeconds: 0
     fadeOutCurve:
       serializedVersion: 2
       m_Curve:
@@ -274,8 +274,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    fadeOutTime: 0.25
-    amount: 1
+    fadeOutTimeSeconds: 0
+    flashAmount: 1
     useRealtime: 0
   logFlash: 0
 --- !u!1 &270719303
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
   colorFlash:
     color: {r: 1, g: 1, b: 1, a: 1}
-    duration: 0.1
+    durationSeconds: 0.1
     fadeInCurve:
       serializedVersion: 2
       m_Curve:
@@ -589,7 +589,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    fadeInTime: 0
+    fadeInTimeSeconds: 0
     fadeOutCurve:
       serializedVersion: 2
       m_Curve:
@@ -614,8 +614,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    fadeOutTime: 0
-    amount: 1
+    fadeOutTimeSeconds: 0
+    flashAmount: 0
     useRealtime: 0
   logFlash: 1
 --- !u!212 &1450440349
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: mydimons.unityutils.runtime::UnityUtils.ScriptUtils.Objects.ObjectColorFlash
   colorFlash:
     color: {r: 1, g: 1, b: 1, a: 1}
-    duration: 0.1
+    durationSeconds: 0.1
     fadeInCurve:
       serializedVersion: 2
       m_Curve:
@@ -760,7 +760,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    fadeInTime: 0
+    fadeInTimeSeconds: 0
     fadeOutCurve:
       serializedVersion: 2
       m_Curve:
@@ -785,8 +785,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    fadeOutTime: 0
-    amount: 1
+    fadeOutTimeSeconds: 0
+    flashAmount: 0
     useRealtime: 0
   logFlash: 1
 --- !u!212 &1534395240

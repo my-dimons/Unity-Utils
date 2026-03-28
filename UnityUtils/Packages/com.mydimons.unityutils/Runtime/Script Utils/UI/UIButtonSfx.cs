@@ -30,15 +30,24 @@ namespace UnityUtils.ScriptUtils.UI {
     private bool sceneLoadTriggered;
 
     /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> depending on the <see cref="UIButtonDebugSettings"/>
+    /// </summary>
+    [Header("Debug.Logs()")]
+    public UIButtonDebugSettings debugLogs;
+
+    /// <summary>
     /// Will output a <see cref="Debug.LogWarning(object)"/> when a hover enter, exit, or click SFX tries to be played but no SFX clip is found.
     /// </summary>
-    [Header("Debug")]
     public bool logEmptySfx;
 
     public void OnPointerEnter(PointerEventData eventData) {
-      if (hoverEnterSfx != null)
+      if (hoverEnterSfx != null) {
         SFXManager.PlaySFX(hoverEnterSfx);
-      else if (logEmptySfx)
+
+        LogAny();
+        if (debugLogs.logIn)
+          Debug.Log("Played hover enter SFX on button!");
+      } else if (logEmptySfx)
         Debug.LogWarning("No hover enter SFX on button!");
     }
 
@@ -46,9 +55,13 @@ namespace UnityUtils.ScriptUtils.UI {
       if (sceneLoadTriggered)
         return;
 
-      if (hoverExitSfx != null)
+      if (hoverExitSfx != null) {
         SFXManager.PlaySFX(hoverExitSfx);
-      else if (logEmptySfx)
+
+        LogAny();
+        if (debugLogs.logIn)
+          Debug.Log("Played hover exit SFX on button!");
+      } else if (logEmptySfx)
         Debug.LogWarning("No hover exit SFX on button!");
     }
 
@@ -58,10 +71,20 @@ namespace UnityUtils.ScriptUtils.UI {
         return;
       }
 
-      if (clickSfx != null)
+      if (clickSfx != null) {
         SFXManager.PlaySFX(clickSfx);
-      else if (logEmptySfx)
+
+        LogAny();
+        if (debugLogs.logIn)
+          Debug.Log("Played hover click SFX on button!");
+      } else if (logEmptySfx)
         Debug.LogWarning("No click SFX on button!");
+    }
+
+    private void LogAny() {
+      if (debugLogs.logAny) {
+        Debug.Log("Played SFX on UI button!");
+      }
     }
   }
 }

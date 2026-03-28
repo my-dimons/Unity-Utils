@@ -5,11 +5,15 @@
 - ColorFlash class to play color flashes with set parameters
 - Safety check when Flash() is called on ColorFlashManager
 - ContextMenu for ColorFlashManager under the name of "Flash", which flashes the object 
+- More functionality to UIButtonDebug (Now provides a general usage of helpful attributes, Ex. hoveringOverButton)
 - SFXSettings classes:
 	- SFXDestructionSettings
 	- SFXVolumeSettings
 	- SFXPitchSettings
 	- SFX3dSettings
+- UIButtonSettings:
+	- QuitGameButtonMethod enum
+	- UIButtonDebugSettings class
 
 ### Changes
 - Renamed "SfxManager" to "SFXManager"
@@ -20,6 +24,9 @@
 - Organized ObjectModifiers into their own Modifiers namespace
 - Renamed ObjectModifiers to ModifierManager
 - Renamed ObjectModifierData to ModifierData
+- Moved AudioSlider script to the UI classification, also renamed to UIAudioSlider
+- Renamed UIButtonDebugLogs to UIButtonDebug
+- Most UIButton scripts now require a UIButtonDebug script to be attached to the same object
 
 ### Fixes
 - Made all variables properly document their usage in both the docs and in IDE's (Previously would not work in IDE's)

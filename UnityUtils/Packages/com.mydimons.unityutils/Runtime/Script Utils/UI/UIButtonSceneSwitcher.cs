@@ -16,18 +16,16 @@ namespace UnityUtils.ScriptUtils.UI {
     /// </summary>
     public int buildIndex = -1;
 
-
     /// <summary>
     /// The <see cref="LoadSceneMode"/> to use when loading the scene
     /// </summary>
     [Header("Scene Mode")]
     public LoadSceneMode sceneMode;
 
-
     /// <summary>
     /// Will output a <see cref="Debug.Log(object)"/> when switching scenes
     /// </summary>
-    [Header("Debug")]
+    [Header("Debug.Logs()")]
     public bool logSwitch;
 
     public void OnPointerClick(PointerEventData eventData) {

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityUtils.ScriptUtils.Objects;
 
 namespace UnityUtils.ScriptUtils.UI {
-  [RequireComponent(typeof(Button))]
+  [RequireComponent(typeof(Button), typeof(UIButtonDebug))]
   public class UIButtonHoverPosition : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     /// <summary>
     /// When hovered this is the size the button will be set to.
@@ -36,33 +36,21 @@ namespace UnityUtils.ScriptUtils.UI {
     [Header("Applied Transform")]
     public Transform applyTransform;
 
+    /// <summary>
+    /// Will output a <see cref="Debug.Log(object)"/> depending on the <see cref="UIButtonDebugSettings"/>
+    /// </summary>
+    [Header("Debug.Logs()")]
+    public UIButtonDebugSettings debugLogs;
 
-    /// <summary>
-    /// True if the button is being hovered
-    /// </summary>
-    [Header("Debug Values")]
-    public bool hoveringOverButton;
-
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> on any moving.
-    /// </summary>
-    [Header("Debug Logs")]
-    public bool logMove;
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> when moving on hover enter.
-    /// </summary>
-    public bool logEnterMove;
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> when moving on hover exit.
-    /// </summary>
-    public bool logExitMove;
-
-    Vector3 originalPosition;
-    Vector3 hoverPositionVector;
+    private Vector3 originalPosition;
+    private Vector3 hoverPositionVector;
+    private UIButtonDebug buttonDebug;
 
     // Starter is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
       originalPosition = transform.localPosition;
+
+      buttonDebug = GetComponent<UIButtonDebug>();
     }
 
     // Update is called once per frame
@@ -70,7 +58,7 @@ namespace UnityUtils.ScriptUtils.UI {
       hoverPositionVector = transform.localPosition + hoverLocalPosition;
 
       // Stops choppy animation when spam hovering the button
-      if (!hoveringOverButton && transform.localPosition == hoverPositionVector) {
+      if (!buttonDebug && transform.localPosition == hoverPositionVector) {
         ExitHoverAnimation();
       }
     }
@@ -78,15 +66,11 @@ namespace UnityUtils.ScriptUtils.UI {
     public void OnPointerEnter(PointerEventData eventData) {
       if (transform.localPosition == originalPosition)
         EnterHoverAnimation();
-
-      hoveringOverButton = true;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
       if (transform.localPosition == hoverPositionVector)
         ExitHoverAnimation();
-
-      hoveringOverButton = false;
     }
 
     /// <summary>
@@ -95,7 +79,7 @@ namespace UnityUtils.ScriptUtils.UI {
     void EnterHoverAnimation() {
       ObjectAnimations.AnimateTransformPosition(applyTransform, originalPosition, hoverPositionVector, sizeAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logEnterMove)
+      if (debugLogs.logIn)
         Debug.Log("Moving button to position");
 
       LogMove();
@@ -107,14 +91,14 @@ namespace UnityUtils.ScriptUtils.UI {
     void ExitHoverAnimation() {
       ObjectAnimations.AnimateTransformPosition(applyTransform, hoverPositionVector, originalPosition, sizeAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logExitMove)
+      if (debugLogs.logOut)
         Debug.Log("Moving button back");
 
       LogMove();
     }
 
     private void LogMove() {
-      if (logMove)
+      if (debugLogs.logAny)
         Debug.Log("Moved button");
     }
 

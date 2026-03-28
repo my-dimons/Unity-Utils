@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityUtils.ScriptUtils.Audio;
 
-namespace UnityUtils.ScriptUtils.Audio {
+namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Slider))]
   public class AudioSlider : MonoBehaviour {
     /// <summary>

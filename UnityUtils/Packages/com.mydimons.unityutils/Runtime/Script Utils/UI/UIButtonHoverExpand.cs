@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityUtils.ScriptUtils.Objects;
 
 namespace UnityUtils.ScriptUtils.UI {
-  [RequireComponent(typeof(Button))]
+  [RequireComponent(typeof(Button), typeof(UIButtonDebug))]
   public class UIButtonHoverExpand : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     /// <summary>
     /// When hovered this is the size the button will be set to.
@@ -36,34 +36,21 @@ namespace UnityUtils.ScriptUtils.UI {
     [Header("Applied Transform")]
     public Transform applyTransform;
 
-
     /// <summary>
-    /// True if the button is being hovered
+    /// Will output a <see cref="Debug.Log(object)"/> depending on the <see cref="UIButtonDebugSettings"/>
     /// </summary>
-    [Header("Debug Values")]
-    public bool hoveringOverButton;
+    [Header("Debug.Logs()")]
+    public UIButtonDebugSettings debugLogs;
 
-
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> on any scaling.
-    /// </summary>
-    [Header("Debug Logs")]
-    public bool logScale;
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> when scaling up. (Hover enter)
-    /// </summary>
-    public bool logScaleUp;
-    /// <summary>
-    /// Will output a <see cref="Debug.Log(object)"/> when scaling down. (Hover Exit)
-    /// </summary>
-    public bool logScaleDown;
-
-    Vector3 originalSize;
-    Vector3 hoverSizeVector;
+    private Vector3 originalSize;
+    private Vector3 hoverSizeVector;
+    private UIButtonDebug buttonDebug;
 
     // Starter is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
       originalSize = transform.localScale;
+
+      buttonDebug = GetComponent<UIButtonDebug>();
     }
 
     // Update is called once per frame
@@ -71,7 +58,7 @@ namespace UnityUtils.ScriptUtils.UI {
       hoverSizeVector = new Vector3(hoverSize, hoverSize, hoverSize);
 
       // Stops choppy animation when spam hovering the button
-      if (!hoveringOverButton && transform.localScale == hoverSizeVector) {
+      if (!buttonDebug && transform.localScale == hoverSizeVector) {
         ExitHoverAnimation();
       }
     }
@@ -79,15 +66,11 @@ namespace UnityUtils.ScriptUtils.UI {
     public void OnPointerEnter(PointerEventData eventData) {
       if (transform.localScale == originalSize)
         EnterHoverAnimation();
-
-      hoveringOverButton = true;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
       if (transform.localScale == hoverSizeVector)
         ExitHoverAnimation();
-
-      hoveringOverButton = false;
     }
 
     /// <summary>
@@ -96,7 +79,7 @@ namespace UnityUtils.ScriptUtils.UI {
     void EnterHoverAnimation() {
       ObjectAnimations.AnimateTransformScale(applyTransform, originalSize, hoverSizeVector, sizeAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logScaleUp)
+      if (debugLogs.logIn)
         Debug.Log("Scaling button up");
 
       DebugRotate();
@@ -108,14 +91,14 @@ namespace UnityUtils.ScriptUtils.UI {
     void ExitHoverAnimation() {
       ObjectAnimations.AnimateTransformScale(applyTransform, hoverSizeVector, originalSize, sizeAnimationSeconds, useRealtime, SizingCurve);
 
-      if (logScaleDown)
+      if (debugLogs.logOut)
         Debug.Log("Scaling button down");
 
       DebugRotate();
     }
 
     private void DebugRotate() {
-      if (logScale)
+      if (debugLogs.logAny)
         Debug.Log("Scaled button");
     }
 
