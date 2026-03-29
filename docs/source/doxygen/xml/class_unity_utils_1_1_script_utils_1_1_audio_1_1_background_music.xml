@@ -11,9 +11,7 @@
         <name>CanBePlayed</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusic.CanBePlayed</qualifiedname>
         <briefdescription>
-<para>Will always return true, as background music should always be able to be played when picked by the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager" kindref="compound">MusicManager</ref>. <simplesect kind="return"><para></para>
-</simplesect>
-. </para>
+<para>Will always return true, as background music should always be able to be played when picked by the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager" kindref="compound">MusicManager</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

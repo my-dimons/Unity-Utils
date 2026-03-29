@@ -80,11 +80,11 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Called when a music track starts playing, with the track that started playing as a parameter.
     /// </summary>
-    public static Action<MusicClip> OnPlayMusicTrack;
+    public Action<MusicClip> OnPlayMusicTrack;
     /// <summary>
     /// Called when a music track stops playing, with the track that stopped playing as a parameter.
     /// </summary>
-    public static Action<MusicClip> OnStopMusicTrack;
+    public Action<MusicClip> OnStopMusicTrack;
 
     void Awake() {
       musicSource = GetComponent<AudioSource>();

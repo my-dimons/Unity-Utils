@@ -246,9 +246,7 @@
         </inbodydescription>
         <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="78" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="78" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a9b9005b2cce0087d5983d3c0846e9672" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a9b9005b2cce0087d5983d3c0846e9672" prot="public" static="no" mutable="no">
         <type>Action&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref> &gt;</type>
         <definition>Action&lt;MusicClip&gt; UnityUtils.ScriptUtils.Audio.MusicManager.OnPlayMusicTrack</definition>
         <argsstring></argsstring>
@@ -261,9 +259,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="83" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="83" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="83" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="83" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c3837c7ba5aa502a010d1382675c99c" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c3837c7ba5aa502a010d1382675c99c" prot="public" static="no" mutable="no">
         <type>Action&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref> &gt;</type>
         <definition>Action&lt;MusicClip&gt; UnityUtils.ScriptUtils.Audio.MusicManager.OnStopMusicTrack</definition>
         <argsstring></argsstring>
@@ -276,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="87" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="87" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="87" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="87" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
