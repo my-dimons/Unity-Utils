@@ -9,7 +9,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Returns a new SFX with the following properties:
     /// <para>- <see cref="SFXVolumeSettings.volume"/> = 1</para>
-    /// <para>- <see cref="SFXVolumeSettings.volumeType"/> = <see cref="AudioManager.VolumeType.Sfx"/></para>
+    /// <para>- <see cref="SFXVolumeSettings.volumeType"/> = <see cref="AudioManager.VolumeType.SFX"/></para>
     /// <para>- <see cref="SFXPitchSettings.pitch"/> = 1</para>
     /// <para>- <see cref="SFXPitchSettings.pitchVariance"/> = <see cref="AudioManager.DEFAULT_PITCH_VARIANCE"/></para>
     /// <para>- <see cref="SFX3dSettings.localPosition"/> = <see cref="Vector3.zero"/></para>
@@ -20,7 +20,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public static SFX Create2dSFX() {
       return new SFX {
-        volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.Sfx),
+        volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.SFX),
         pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),
         spacialSettings = new SFX3dSettings().SetSpacialAudio(Vector3.zero, 0),
         destructionSettings = new SFXDestructionSettings().SetDestructionSettings(),
@@ -31,7 +31,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Returns a new SFX with the following properties:
     /// <para>- <see cref="SFXVolumeSettings.volume"/> = 1</para>
-    /// <para>- <see cref="SFXVolumeSettings.volumeType"/> = <see cref="AudioManager.VolumeType.Sfx"/></para>
+    /// <para>- <see cref="SFXVolumeSettings.volumeType"/> = <see cref="AudioManager.VolumeType.SFX"/></para>
     /// <para>- <see cref="SFXPitchSettings.pitch"/> = 1</para>
     /// <para>- <see cref="SFXPitchSettings.pitchVariance"/> = <see cref="AudioManager.DEFAULT_PITCH_VARIANCE"/></para>
     /// <para>- <see cref="SFX3dSettings.localPosition"/> = <see cref="Vector3.zero"/></para>
@@ -42,7 +42,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public static SFX Create3dSFX() {
       return new SFX {
-        volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.Sfx),
+        volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.SFX),
         pitchSettings = new SFXPitchSettings().SetPitch(AudioManager.DEFAULT_PITCH_VARIANCE, 1),
         spacialSettings = new SFX3dSettings().SetSpacialAudio(Vector3.zero, 1),
         destructionSettings = new SFXDestructionSettings().SetDestructionSettings(),

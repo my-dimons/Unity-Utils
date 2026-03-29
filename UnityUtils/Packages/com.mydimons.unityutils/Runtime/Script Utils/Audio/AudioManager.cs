@@ -34,13 +34,20 @@ namespace UnityUtils.ScriptUtils.Audio {
       /// Special audio type, everything gets multiplied by this volume, except for other global volumes.
       /// </summary>
       Global,
-      Sfx,
+      /// <summary>
+      /// A general audio type used for sound effects. Other audio types like <see cref="Weather"/> or <see cref="Footsteps"/> are not affected by this.
+      /// </summary>
+      SFX,
+      /// <summary>
+      /// A general audio type used for music.
+      /// </summary>
       Music,
       UI,
       Weather,
       Dialog,
       Footsteps,
       Ambient,
+      Player,
       Custom1,
       Custom2,
       Custom3
@@ -52,7 +59,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     static readonly Dictionary<VolumeType, float> audioVolumes = new()
     {
       { VolumeType.Global, MAX_AUDIO_VOLUME },
-      { VolumeType.Sfx, MAX_AUDIO_VOLUME },
+      { VolumeType.SFX, MAX_AUDIO_VOLUME },
       { VolumeType.Music, MAX_AUDIO_VOLUME },
       { VolumeType.UI, MAX_AUDIO_VOLUME },
       { VolumeType.Weather, MAX_AUDIO_VOLUME },

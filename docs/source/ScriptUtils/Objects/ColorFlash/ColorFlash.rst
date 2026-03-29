@@ -4,6 +4,8 @@ ColorFlash
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.Objects.ColorFlash`
    
+A class that hold some parameters for Color flashes, used in :doc:`ColorFlashManager`
+
 Example Usage
 -------------
 .. code:: csharp

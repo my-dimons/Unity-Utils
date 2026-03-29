@@ -10,7 +10,7 @@ Holds variables/functions for other audio scripts (Such as Global volume).
 \item 
 enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41}{Volume\+Type}} \{ \newline
 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8}{Global}}
-, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3}{Sfx}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708}{SFX}}
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217}{Music}}
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b}{UI}}
 , \newline
@@ -19,7 +19,8 @@ enum \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_man
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3}{Footsteps}}
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e}{Ambient}}
 , \newline
-\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5}{Custom1}}
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234}{Player}}
+, \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5}{Custom1}}
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2}{Custom2}}
 , \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8}{Custom3}}
  \}
@@ -75,12 +76,12 @@ Not all of these need to be used, but these are some common types of audio\textq
 Global&Special audio type, everything gets multiplied by this volume, except for other global volumes. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Sfx@{Sfx}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Sfx@{Sfx}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3} 
-Sfx&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SFX@{SFX}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!SFX@{SFX}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708} 
+SFX&A general audio type used for sound effects. Other audio types like Weather or Footsteps are not affected by this. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Music@{Music}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Music@{Music}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217} 
-Music&\\
+Music&A general audio type used for music. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{UI@{UI}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!UI@{UI}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b} 
@@ -101,6 +102,10 @@ Footsteps&\\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Ambient@{Ambient}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Ambient@{Ambient}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e} 
 Ambient&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Player@{Player}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Player@{Player}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234} 
+Player&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Custom1@{Custom1}!UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}}\index{UnityUtils.ScriptUtils.Audio.AudioManager@{UnityUtils.ScriptUtils.Audio.AudioManager}!Custom1@{Custom1}}}\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5}\label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5} 

@@ -11,7 +11,7 @@ var searchData=
   ['camerashake_8',['CameraShake',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html',1,'UnityUtils::ScriptUtils::Cameras']]],
   ['camerashake_2ecs_9',['CameraShake.cs',['../_camera_shake_8cs.html',1,'']]],
   ['canbeplayed_10',['CanBePlayed',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music.html#aa53a356a5ca69e54e11f904dc8cd347e',1,'UnityUtils.ScriptUtils.Audio.BackgroundMusic.CanBePlayed()'],['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html#a675215ce5663aa4b5650f6392b4123f1',1,'UnityUtils.ScriptUtils.Audio.MusicClip.CanBePlayed()']]],
-  ['click_11',['Click',['../namespace_unity_utils_1_1_script_utils_1_1_u_i.html#aa8b014518ad92e0bb0efaee6ffc4c6c9a316853cc3718335f11c048e33b9be98a',1,'UnityUtils::ScriptUtils::UI']]],
+  ['click_11',['Click',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game.html#a3df3eccf96083a2a19474a811b56d9f6a316853cc3718335f11c048e33b9be98a',1,'UnityUtils::ScriptUtils::UI::UIButtonQuitGame']]],
   ['clickparticleprefabs_12',['clickParticlePrefabs',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html#aac66c4bfedf50856ecbdfe872fb380f9',1,'UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles']]],
   ['clicksfx_13',['clickSFX',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a09380d32df187ff5eb03795436e52a86',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
   ['clicktoggleobjects_14',['clickToggleObjects',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html#aef812175219aab8f83291c06aa4b3816',1,'UnityUtils::ScriptUtils::UI::UIButtonToggleObjects']]],

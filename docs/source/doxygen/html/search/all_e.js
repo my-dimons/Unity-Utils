@@ -9,9 +9,10 @@ var searchData=
   ['pitchsettings_6',['pitchSettings',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html#a0975f3b0c0e5143ed7d5a6cfe737ec07',1,'UnityUtils.ScriptUtils.Audio.MusicClip.pitchSettings'],['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#a3b947bb7400c60b6a236082b80c7f551',1,'UnityUtils.ScriptUtils.Audio.SFX.pitchSettings']]],
   ['pitchvariance_7',['pitchVariance',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings.html#a93a3a6a22bfd1d67e8ecff7d4c3362ee',1,'UnityUtils::ScriptUtils::Audio::SFXPitchSettings']]],
   ['playcontinuousmusic_8',['PlayContinuousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a2710be1e905f23bc580fbe531eb49359',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['playingmusiccoroutine_9',['playingMusicCoroutine',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ac8aea0a68ec47bc4c03fb6c38d1d0d5a',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['playonawake_10',['playOnAwake',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a4f6f5728f33b0910c9dca6bf3199d5b2',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['playsfx_11',['PlaySFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager.html#a334061927d8145026134964cbbbf7ff7',1,'UnityUtils::ScriptUtils::Audio::SFXManager']]],
-  ['playsinglerandommusictrack_12',['PlaySingleRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#aaadf0fdbdd2c2db68a1723e2dcfafaab',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['playspecificmusictrack_13',['PlaySpecificMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a5c950ccf3974134536ea9d1eaf57167e',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]]
+  ['player_9',['Player',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['playingmusiccoroutine_10',['playingMusicCoroutine',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ac8aea0a68ec47bc4c03fb6c38d1d0d5a',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playonawake_11',['playOnAwake',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a4f6f5728f33b0910c9dca6bf3199d5b2',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playsfx_12',['PlaySFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager.html#a334061927d8145026134964cbbbf7ff7',1,'UnityUtils::ScriptUtils::Audio::SFXManager']]],
+  ['playsinglerandommusictrack_13',['PlaySingleRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#aaadf0fdbdd2c2db68a1723e2dcfafaab',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playspecificmusictrack_14',['PlaySpecificMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a5c950ccf3974134536ea9d1eaf57167e',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]]
 ];

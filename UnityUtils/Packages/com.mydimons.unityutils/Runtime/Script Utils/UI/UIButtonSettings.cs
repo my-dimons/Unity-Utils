@@ -1,24 +1,6 @@
 using UnityEngine;
 
 namespace UnityUtils.ScriptUtils.UI {
-  /// <summary>
-  /// Specifies the user interaction methods available for a <see cref="UIButtonQuitGame"/>
-  /// </summary>
-  public enum QuitGameButtonMethod {
-    /// <summary>
-    /// Quit on hover enter
-    /// </summary>
-    HoverEnter,
-    /// <summary>
-    /// Quit on hover exit
-    /// </summary>
-    HoverExit,
-    /// <summary>
-    /// Quit on hover click
-    /// </summary>
-    Click
-  }
-
   [System.Serializable]
   public class UIButtonDebugSettings {
     /// <summary>

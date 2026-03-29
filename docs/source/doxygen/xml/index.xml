@@ -3,13 +3,14 @@
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager" kind="class"><name>UnityUtils::ScriptUtils::Audio::AudioManager</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kind="enum"><name>VolumeType</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" kind="enumvalue"><name>Global</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kind="enumvalue"><name>Sfx</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708" kind="enumvalue"><name>SFX</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" kind="enumvalue"><name>Music</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" kind="enumvalue"><name>UI</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9" kind="enumvalue"><name>Weather</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d" kind="enumvalue"><name>Dialog</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3" kind="enumvalue"><name>Footsteps</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e" kind="enumvalue"><name>Ambient</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234" kind="enumvalue"><name>Player</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5" kind="enumvalue"><name>Custom1</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2" kind="enumvalue"><name>Custom2</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8" kind="enumvalue"><name>Custom3</name></member>
@@ -265,7 +266,7 @@
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kind="class"><name>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kind="variable"><name>volumeType</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" kind="variable"><name>volume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a9bc1089a43516db557fe8a144d005d35" kind="function"><name>SetVolume</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ac10f9b79e574522323b7ca8fefa5963d" kind="function"><name>SetVolume</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider" kind="class"><name>UnityUtils::ScriptUtils::UI::UIAudioSlider</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a54fdbe16463099963b80e147587aec70" kind="variable"><name>volumeType</name></member>
@@ -356,6 +357,10 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate_1a628c4f403336feee5dc4f9ea955eaa67" kind="function"><name>OnPointerExit</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game" kind="class"><name>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</name>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6" kind="enum"><name>QuitGameButtonMethod</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6a2b13bef30530eb4f18cbb6f2d64965e4" kind="enumvalue"><name>HoverEnter</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6ae80fd1356c1da3459184c91b277c1969" kind="enumvalue"><name>HoverExit</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6a316853cc3718335f11c048e33b9be98a" kind="enumvalue"><name>Click</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a80f3853aa8a13492513be16029199b14" kind="variable"><name>quitMethod</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1add6b0ec7520642c46cae113425a1d32b" kind="variable"><name>logQuit</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ad33fb421062230789e34bb553e0f3107" kind="function"><name>OnPointerEnter</name></member>
@@ -442,10 +447,6 @@
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects" kind="namespace"><name>UnityUtils::ScriptUtils::ScriptableObjects</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_u_i" kind="namespace"><name>UnityUtils::ScriptUtils::UI</name>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_u_i_1aa8b014518ad92e0bb0efaee6ffc4c6c9" kind="enum"><name>QuitGameButtonMethod</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_u_i_1aa8b014518ad92e0bb0efaee6ffc4c6c9a2b13bef30530eb4f18cbb6f2d64965e4" kind="enumvalue"><name>HoverEnter</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_u_i_1aa8b014518ad92e0bb0efaee6ffc4c6c9ae80fd1356c1da3459184c91b277c1969" kind="enumvalue"><name>HoverExit</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_u_i_1aa8b014518ad92e0bb0efaee6ffc4c6c9a316853cc3718335f11c048e33b9be98a" kind="enumvalue"><name>Click</name></member>
   </compound>
   <compound refid="_audio_manager_8cs" kind="file"><name>AudioManager.cs</name>
   </compound>

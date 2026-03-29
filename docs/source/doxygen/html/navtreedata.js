@@ -26,11 +26,7 @@ var NAVTREE =
 [
   [ "UnityUtils", "index.html", [
     [ "Packages", "namespaces.html", [
-      [ "Package List", "namespaces.html", "namespaces_dup" ],
-      [ "Package Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
-      ] ]
+      [ "Package List", "namespaces.html", "namespaces_dup" ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -53,8 +49,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_audio_manager_8cs.html",
-"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#ad4caab1c3685c47c4c6ec2f26ef187c4",
-"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html#a92688cb0434ed95b8d04813b9aeb4386"
+"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#aa4871f87ddb34569fab79b17095442fb",
+"class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html#a8e400b70467c6244a5ce00f5f8b77dfd"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

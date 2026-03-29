@@ -99,7 +99,7 @@ $(function(){initNavTree('class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio
 Public Types</h2></td></tr>
 <tr class="memitem:a0a7bc22fea904cdde6b310b8beb97b41" id="r_a0a7bc22fea904cdde6b310b8beb97b41"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41">VolumeType</a> { <br />
 &#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8">Global</a>
-, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3">Sfx</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708">SFX</a>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217">Music</a>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b">UI</a>
 , <br />
@@ -108,7 +108,8 @@ Public Types</h2></td></tr>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3">Footsteps</a>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e">Ambient</a>
 , <br />
-&#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5">Custom1</a>
+&#160;&#160;<a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234">Player</a>
+, <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5">Custom1</a>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2">Custom2</a>
 , <a class="el" href="#a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8">Custom3</a>
 <br />
@@ -163,13 +164,16 @@ Static Public Attributes</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8" name="a0a7bc22fea904cdde6b310b8beb97b41a4cc6684df7b4a92b1dec6fce3264fac8"></a>Global&#160;</td><td class="fielddoc"><p>Special audio type, everything gets multiplied by this volume, except for other global volumes. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" name="a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3"></a>Sfx&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" name="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217"></a>Music&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708" name="a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708"></a>SFX&#160;</td><td class="fielddoc"><p>A general audio type used for sound effects. Other audio types like Weather or Footsteps are not affected by this. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217" name="a0a7bc22fea904cdde6b310b8beb97b41a47dcbd834e669233d7eb8a51456ed217"></a>Music&#160;</td><td class="fielddoc"><p>A general audio type used for music. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b" name="a0a7bc22fea904cdde6b310b8beb97b41a71ff71526d15db86eb50fcac245d183b"></a>UI&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9" name="a0a7bc22fea904cdde6b310b8beb97b41a1441df6b1c10f910ccdc400e40b5fce9"></a>Weather&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d" name="a0a7bc22fea904cdde6b310b8beb97b41ad2ab42830caa7a02b36d96a46dd44b8d"></a>Dialog&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3" name="a0a7bc22fea904cdde6b310b8beb97b41ab89365ae64d7adff4adcb0845687f8c3"></a>Footsteps&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e" name="a0a7bc22fea904cdde6b310b8beb97b41aed8e37bad13d76c6dbeb58152440b41e"></a>Ambient&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234" name="a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234"></a>Player&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5" name="a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5"></a>Custom1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2" name="a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2"></a>Custom2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8" name="a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8"></a>Custom3&#160;</td><td class="fielddoc"></td></tr>

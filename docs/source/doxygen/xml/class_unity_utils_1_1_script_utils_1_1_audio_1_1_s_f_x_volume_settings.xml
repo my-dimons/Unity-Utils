@@ -38,10 +38,10 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a9bc1089a43516db557fe8a144d005d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ac10f9b79e574522323b7ca8fefa5963d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings" kindref="compound">SFXVolumeSettings</ref></type>
         <definition>SFXVolumeSettings UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.SetVolume</definition>
-        <argsstring>(float volume, AudioManager.VolumeType volumeType=AudioManager.VolumeType.Sfx)</argsstring>
+        <argsstring>(float volume, AudioManager.VolumeType volumeType=AudioManager.VolumeType.SFX)</argsstring>
         <name>SetVolume</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.SetVolume</qualifiedname>
         <param>
@@ -51,7 +51,7 @@
         <param>
           <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
           <declname>volumeType</declname>
-          <defval><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">AudioManager.VolumeType.Sfx</ref></defval>
+          <defval><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708" kindref="member">AudioManager.VolumeType.SFX</ref></defval>
         </param>
         <briefdescription>
 <para>Sets the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" kindref="member">volume</ref> to <emphasis>volume</emphasis>  and <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">volumeType</ref> to <emphasis>volumeType</emphasis>  for this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x" kindref="compound">SFX</ref>. <ref refid="namespace_unity_utils_1_1_script_utils_1_1_audio" kindref="compound">Audio</ref> gets randomly played between the min and max volume. </para>
@@ -82,7 +82,7 @@
     </collaborationgraph>
     <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="83" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="83" bodyend="106"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a9bc1089a43516db557fe8a144d005d35" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>SetVolume</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ac10f9b79e574522323b7ca8fefa5963d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>SetVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>volume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>volumeType</name></member>
     </listofallmembers>

@@ -11,6 +11,3 @@ Scripts
 
 .. doxygenclass:: UnityUtils::ScriptUtils::UI::UIButtonDebugSettings
    :members:
-
-.. doxygenclass:: UnityUtils::ScriptUtils::UI::QuitGameButtonMethod
-   :members:

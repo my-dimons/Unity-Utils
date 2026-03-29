@@ -8,7 +8,7 @@ The **AudioManager** is used for managing audio types for things like sfx, and m
 
 .. tip::
 
-   To have an audio slider, view :doc:`UIButtonSlider`
+   Use the :doc:`UIAudioSlider` to have an audio slider
 
 Example Usage
 -------------

@@ -138,7 +138,7 @@
         </briefdescription>
         <detaileddescription>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" kindref="member">SFXVolumeSettings.volume</ref> = 1</para>
-<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">SFXVolumeSettings.volumeType</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">AudioManager.VolumeType.Sfx</ref></para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">SFXVolumeSettings.volumeType</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708" kindref="member">AudioManager.VolumeType.SFX</ref></para>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a672c8fc0d04bda5f7848006b230bebd4" kindref="member">SFXPitchSettings.pitch</ref> = 1</para>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a93a3a6a22bfd1d67e8ecff7d4c3362ee" kindref="member">SFXPitchSettings.pitchVariance</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1ad93ccc0080852c3ba0f9367520bcc712" kindref="member">AudioManager.DEFAULT_PITCH_VARIANCE</ref></para>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a514db81ce8e67ce175278da540ebcbe1" kindref="member">SFX3dSettings.localPosition</ref> = Vector3.zero</para>
@@ -162,7 +162,7 @@
         </briefdescription>
         <detaileddescription>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" kindref="member">SFXVolumeSettings.volume</ref> = 1</para>
-<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">SFXVolumeSettings.volumeType</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41a8e74cb085887902ba25fcf109de2f7a3" kindref="member">AudioManager.VolumeType.Sfx</ref></para>
+<para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1ab65b25a1b384f73c93e70ea49414ebfb" kindref="member">SFXVolumeSettings.volumeType</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41ada101052f6ba998ab41d571a6fff1708" kindref="member">AudioManager.VolumeType.SFX</ref></para>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a672c8fc0d04bda5f7848006b230bebd4" kindref="member">SFXPitchSettings.pitch</ref> = 1</para>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a93a3a6a22bfd1d67e8ecff7d4c3362ee" kindref="member">SFXPitchSettings.pitchVariance</ref> = <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1ad93ccc0080852c3ba0f9367520bcc712" kindref="member">AudioManager.DEFAULT_PITCH_VARIANCE</ref></para>
 <para>- <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings_1a514db81ce8e67ce175278da540ebcbe1" kindref="member">SFX3dSettings.localPosition</ref> = Vector3.zero</para>

@@ -6,22 +6,61 @@
     <basecompoundref prot="public" virt="non-virtual">IPointerEnterHandler</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IPointerExitHandler</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a80f3853aa8a13492513be16029199b14" prot="public" static="no" mutable="no">
-        <type><ref refid="namespace_unity_utils_1_1_script_utils_1_1_u_i_1aa8b014518ad92e0bb0efaee6ffc4c6c9" kindref="member">QuitGameButtonMethod</ref></type>
-        <definition>QuitGameButtonMethod UnityUtils.ScriptUtils.UI.UIButtonQuitGame.quitMethod</definition>
-        <argsstring></argsstring>
-        <name>quitMethod</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonQuitGame.quitMethod</qualifiedname>
-        <initializer>= <ref refid="namespace_unity_utils_1_1_script_utils_1_1_u_i_1aa8b014518ad92e0bb0efaee6ffc4c6c9a316853cc3718335f11c048e33b9be98a" kindref="member">QuitGameButtonMethod.Click</ref></initializer>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>QuitGameButtonMethod</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonQuitGame.QuitGameButtonMethod</qualifiedname>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6a2b13bef30530eb4f18cbb6f2d64965e4" prot="public">
+          <name>HoverEnter</name>
+          <briefdescription>
+<para>Quit on hover enter. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6ae80fd1356c1da3459184c91b277c1969" prot="public">
+          <name>HoverExit</name>
+          <briefdescription>
+<para>Quit on hover exit. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6a316853cc3718335f11c048e33b9be98a" prot="public">
+          <name>Click</name>
+          <briefdescription>
+<para>Quit on hover click. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
-<para>Will quit the game based on the <ref refid="namespace_unity_utils_1_1_script_utils_1_1_u_i_1aa8b014518ad92e0bb0efaee6ffc4c6c9" kindref="member">QuitGameButtonMethod</ref>. </para>
+<para>Specifies the user interaction methods available for a <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game" kindref="compound">UIButtonQuitGame</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="11" column="33" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="11" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="11" column="11" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="11" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a80f3853aa8a13492513be16029199b14" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6" kindref="member">QuitGameButtonMethod</ref></type>
+        <definition>QuitGameButtonMethod UnityUtils.ScriptUtils.UI.UIButtonQuitGame.quitMethod</definition>
+        <argsstring></argsstring>
+        <name>quitMethod</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonQuitGame.quitMethod</qualifiedname>
+        <initializer>= <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6a316853cc3718335f11c048e33b9be98a" kindref="member">QuitGameButtonMethod.Click</ref></initializer>
+        <briefdescription>
+<para>Will quit the game based on the <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6" kindref="member">QuitGameButtonMethod</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="29" column="33" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1add6b0ec7520642c46cae113425a1d32b" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -36,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="17" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="17" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="35" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="35" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -56,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="19" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="19" bodyend="22"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="37" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="37" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ae65996b682fda47ff212a9f1d82e92b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -74,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="24" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="24" bodyend="27"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="42" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="42" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3a5a1fb15312aac861682f42f7078662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -92,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="29" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="29" bodyend="32"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="47" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="47" bodyend="50"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -108,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="34" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="34" bodyend="39"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="52" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="52" bodyend="57"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -167,13 +206,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="7" bodyend="40"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonQuitGame.cs" bodystart="7" bodyend="58"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1add6b0ec7520642c46cae113425a1d32b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>logQuit</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3a5a1fb15312aac861682f42f7078662" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>OnPointerClick</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ad33fb421062230789e34bb553e0f3107" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>OnPointerEnter</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1ae65996b682fda47ff212a9f1d82e92b2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>OnPointerExit</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a852e394c9c7f0b3f2f64f0a6be98f3f1" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>QuitGame</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a3df3eccf96083a2a19474a811b56d9f6" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>QuitGameButtonMethod</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game_1a80f3853aa8a13492513be16029199b14" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonQuitGame</scope><name>quitMethod</name></member>
     </listofallmembers>
   </compounddef>

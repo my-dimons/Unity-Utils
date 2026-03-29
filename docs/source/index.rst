@@ -1,7 +1,7 @@
 Welcome to UnityUtils documentation!
 ===================================
 
-**Unity Utils** is an Open-Source Unity (C#) library that helps with rapid development of games. See the below tree for all available scripts. 
+**UnityUtils** is an Open-Source Unity (C#) library that helps with rapid development of games. See the below tree for all available scripts. 
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.

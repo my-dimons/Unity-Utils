@@ -98,7 +98,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Sets the <see cref="volume"/> to <paramref name="volume"/> and <see cref="volumeType"/> to <paramref name="volumeType"/> for this <see cref="SFX"/>. Audio gets randomly played between the min and max volume.
     /// </summary>
-    public SFXVolumeSettings SetVolume(float volume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.Sfx) {
+    public SFXVolumeSettings SetVolume(float volume, AudioManager.VolumeType volumeType = AudioManager.VolumeType.SFX) {
       this.volume = volume;
       this.volumeType = volumeType;
       return this;
