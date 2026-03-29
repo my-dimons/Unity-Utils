@@ -190,7 +190,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     private void PlayMusicTrack(MusicClip clip) {
       musicSource.clip = clip.musicClip;
       musicSource.pitch = AudioManager.CalculatePitchVariance(clip.pitchSettings.pitchVariance, clip.pitchSettings.pitch);
-      musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, AudioManager.VolumeType.Music);
+      musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, clip.volumeSettings.volumeType);
       currentPlayingTrack = clip;
 
       musicSource.Play();

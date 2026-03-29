@@ -1,4 +1,4 @@
-SimpleBackgroundMusic
+MusicManager
 ==========
 
 **NAMESPACE:**
@@ -37,5 +37,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Audio::SimpleBackgroundMusic
+.. doxygenclass:: UnityUtils::ScriptUtils::Audio::MusicManager
    :members:

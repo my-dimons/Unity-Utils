@@ -3,7 +3,8 @@ UIButtonSettings
 
 **NAMESPACE:**
    `UnityUtils.ScriptUtils.UI`
-   
+
+The various settings used in the UIButton scripts
       
 Scripts
 ---------

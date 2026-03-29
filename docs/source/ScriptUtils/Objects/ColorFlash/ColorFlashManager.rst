@@ -28,6 +28,7 @@ Example Usage
    	   // Flashes the applied using its default flash
    	   object.Flash();
    	   
+   	   // Create a new color flash and set the duration to 2 seconds and the color to red
    	   ColorFlash flash = ColorFlash.CreateDefaultFlash();
    	   flash.durationSeconds = 2;
    	   flash.color = Color.red;

@@ -6,7 +6,7 @@
 static Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a917eed31e4a4fd1d0466cefb26fee767}{Delay}} (Action action, float time, bool use\+Realtime=true)
 \begin{DoxyCompactList}\small\item\em Invokes the specified action after waiting for the given amount of time. \end{DoxyCompactList}\item 
 static Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a0a46ec4bb430a513cb56dda6b8e671ff}{Delay\+Frame}} (Action action)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Invokes the specified action on the next frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -24,15 +24,30 @@ Invokes the specified action after waiting for the given amount of time.
 
 
 \begin{DoxyParams}{Parameters}
-{\em action} & The action to execute after the delay has elapsed. Cannot be null.\\
+{\em action} & The action to execute after the delay has elapsed\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coroutine started by this object so it can be stopped and manipulated
+\end{DoxyReturn}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a0a46ec4bb430a513cb56dda6b8e671ff}\index{UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}!DelayFrame@{DelayFrame}}
 \index{DelayFrame@{DelayFrame}!UnityUtils.ScriptUtils.Objects.ObjectDelays@{UnityUtils.ScriptUtils.Objects.ObjectDelays}}
 \doxysubsubsection{\texorpdfstring{DelayFrame()}{DelayFrame()}}
 {\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays_a0a46ec4bb430a513cb56dda6b8e671ff} 
 Coroutine Unity\+Utils.\+Script\+Utils.\+Objects.\+Object\+Delays.\+Delay\+Frame (\begin{DoxyParamCaption}\item[{Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Invokes the specified action on the next frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & The action to execute on the next frame\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coroutine started by this object so it can be stopped and manipulated
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
