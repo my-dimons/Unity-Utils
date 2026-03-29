@@ -11,12 +11,15 @@
         <name>CanBePlayed</name>
         <qualifiedname>UnityUtils.ScriptUtils.Audio.BackgroundMusic.CanBePlayed</qualifiedname>
         <briefdescription>
+<para>Will always return true, as background music should always be able to be played when picked by the <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager" kindref="compound">MusicManager</ref>. <simplesect kind="return"><para></para>
+</simplesect>
+. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" line="6" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" bodystart="6" bodyend="9"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" line="9" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" bodystart="9" bodyend="12"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -78,7 +81,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" bodystart="5" bodyend="10"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/BackgroundMusic.cs" bodystart="5" bodyend="13"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music_1aa53a356a5ca69e54e11f904dc8cd347e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusic</scope><name>CanBePlayed</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a843242abcd205d1f95f2194c46806785" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::BackgroundMusic</scope><name>musicClip</name></member>

@@ -26,5 +26,5 @@ Example Usage
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ColorFlash
+.. doxygenclass:: UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash
    :members:
