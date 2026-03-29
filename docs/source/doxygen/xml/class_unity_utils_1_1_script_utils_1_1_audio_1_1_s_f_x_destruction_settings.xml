@@ -75,19 +75,20 @@
           <defval>false</defval>
         </param>
         <briefdescription>
+<para>Set the settings on this <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings" kindref="compound">SFXDestructionSettings</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="19" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="19" bodyend="24"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="22" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="22" bodyend="27"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="5" bodyend="25"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="5" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="5" bodyend="28"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a84df6c7a200a286dbe54bcc2e1c655b1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXDestructionSettings</scope><name>destroyOnClipEnd</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_destruction_settings_1a3f0af8ee12fa2b9eeef1ddcf0de513d8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXDestructionSettings</scope><name>scenePersistant</name></member>

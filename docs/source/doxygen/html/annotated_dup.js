@@ -23,10 +23,6 @@ var annotated_dup =
             [ "ColorFlash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" ],
             [ "ColorFlashManager", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager" ]
           ] ],
-          [ "Modifiers", "namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers.html", [
-            [ "ModifierData&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g" ],
-            [ "ModifierManager&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g" ]
-          ] ],
           [ "ObjectAnimations", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" ],
           [ "ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays" ]
         ] ],

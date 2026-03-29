@@ -33,8 +33,6 @@ var hierarchy =
     ] ],
     [ "UnityUtils.ScriptUtils.SaveSystem.ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", null ],
     [ "UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html", null ],
-    [ "UnityUtils.ScriptUtils.Objects.Modifiers.ModifierData&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g.html", null ],
-    [ "UnityUtils.ScriptUtils.Objects.Modifiers.ModifierManager&lt; T &gt;", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g.html", null ],
     [ "MonoBehaviour", null, [
       [ "UnityUtils.ScriptUtils.Audio.MusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html", null ],
       [ "UnityUtils.ScriptUtils.Cameras.CameraBillboard", "class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard.html", null ],

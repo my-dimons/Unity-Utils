@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="15" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="27" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1a6b50da79b8399b0cfdf65bcb8976fe36" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="20" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="32" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1a2b672b24cba75273dae93db8863afe2b" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="25" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="25" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="37" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1a6ac8f21703134c8669a95dfa38428d3d" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="30" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="30" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="42" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="42" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="35" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="35" bodyend="40"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="47" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="47" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1abeca1e1f18f9046306af09e494acc933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="45" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="45" bodyend="50"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="57" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="57" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1a265d70ae2475c800f939d4315efdfddb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="55" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="55" bodyend="60"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="67" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="67" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1a3af8ca8bcde9d2376ce7456d1a2a8a5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -127,14 +127,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="65" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="65" bodyend="68"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="77" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="77" bodyend="80"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="11" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="11" bodyend="69"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" line="23" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonSettings.cs" bodystart="23" bodyend="81"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1a3af8ca8bcde9d2376ce7456d1a2a8a5b" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebugSettings</scope><name>LogAny</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings_1a6ac8f21703134c8669a95dfa38428d3d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebugSettings</scope><name>logAny</name></member>

@@ -1,4 +1,4 @@
-AudioSlider
+UIAudioSlider
 ============
 
 **NAMESPACE:**
@@ -14,5 +14,5 @@ You can select the type of volume it will change, and it will change that volume
 Functions
 ---------
 
-.. doxygenclass:: UnityUtils::ScriptUtils::Audio::AudioSlider
+.. doxygenclass:: UnityUtils::ScriptUtils::UI::UIAudioSlider
    :members:

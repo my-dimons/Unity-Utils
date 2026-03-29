@@ -25,6 +25,10 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Holds different audio types for volume calculations
     /// </summary>
+    /// <remarks>
+    /// Not all of these need to be used, but these are some common types of audio's games use.
+    /// If a type is not provided that you need, you can use the custom types or create an issue on the github for this package to add more types.
+    /// </remarks>
     public enum VolumeType {
       /// <summary>
       /// Special audio type, everything gets multiplied by this volume, except for other global volumes.

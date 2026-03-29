@@ -3,6 +3,5 @@ var searchData=
   ['encryptdecrypt_0',['EncryptDecrypt',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a95d2a058b8834f394cb587a2c5076b92',1,'UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem']]],
   ['exitparticleprefabs_1',['exitParticlePrefabs',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html#a4ddf601a74156e0c3775792aa1f9ece4',1,'UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles']]],
   ['exittoggleobjects_2',['exitToggleObjects',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html#ac1dabd5a2a2ec41617fc62ea286b1700',1,'UnityUtils::ScriptUtils::UI::UIButtonToggleObjects']]],
-  ['exponent_3',['Exponent',['../namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers.html#a8019d8ece5f39e5c2619d938eead5c71af5ccb8d51ca38e2f3329955fc0149cd4',1,'UnityUtils::ScriptUtils::Objects::Modifiers']]],
-  ['extraanglerotation_4',['extraAngleRotation',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard.html#acc4e01c9d65eff9a22e19b33c913494c',1,'UnityUtils::ScriptUtils::Cameras::CameraBillboard']]]
+  ['extraanglerotation_3',['extraAngleRotation',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard.html#acc4e01c9d65eff9a22e19b33c913494c',1,'UnityUtils::ScriptUtils::Cameras::CameraBillboard']]]
 ];

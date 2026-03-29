@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="61" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="61" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="64" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a672c8fc0d04bda5f7848006b230bebd4" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="67" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="67" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="70" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="70" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -61,14 +61,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="72" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="72" bodyend="76"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="75" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="75" bodyend="79"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="52" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="52" bodyend="77"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="55" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="55" bodyend="80"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a672c8fc0d04bda5f7848006b230bebd4" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXPitchSettings</scope><name>pitch</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings_1a93a3a6a22bfd1d67e8ecff7d4c3362ee" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXPitchSettings</scope><name>pitchVariance</name></member>

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="85" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="85" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="88" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="93" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="93" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="96" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="96" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="98" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="98" bodyend="102"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="101" column="30" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="101" bodyend="105"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -80,7 +80,7 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="80" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="80" bodyend="103"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" line="83" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/SFXSettings.cs" bodystart="83" bodyend="106"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a9bc1089a43516db557fe8a144d005d35" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>SetVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings_1a5bea7503049413649f6db146c7af15de" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::SFXVolumeSettings</scope><name>volume</name></member>

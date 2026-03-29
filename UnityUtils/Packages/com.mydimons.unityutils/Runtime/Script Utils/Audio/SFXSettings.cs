@@ -16,6 +16,9 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// </summary>
     public bool scenePersistant = false;
 
+    /// <summary>
+    /// Set the settings on this <see cref="SFXDestructionSettings"/>.
+    /// </summary>
     public SFXDestructionSettings SetDestructionSettings(bool destroyOnClipEnd = true, bool useRealtimeToDestroy = true, bool scenePersistant = false) {
       this.destroyOnClipEnd = destroyOnClipEnd;
       this.useRealtimeToDestroy = useRealtimeToDestroy;

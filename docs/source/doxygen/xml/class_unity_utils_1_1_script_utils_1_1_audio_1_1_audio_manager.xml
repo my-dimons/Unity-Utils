@@ -89,10 +89,11 @@
 <para>Holds different audio types for volume calculations. </para>
         </briefdescription>
         <detaileddescription>
+<para>Not all of these need to be used, but these are some common types of audio&apos;s games use. If a type is not provided that you need, you can use the custom types or create an issue on the github for this package to add more types. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="28" column="11" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="28" bodyend="43"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="32" column="11" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="32" bodyend="47"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-attrib">
@@ -173,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="48" column="32" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="48" bodyend="61"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="52" column="32" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="52" bodyend="65"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -197,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="67" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="67" bodyend="69"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="71" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="71" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a938dc9ab15c02a784ecb8921812f88f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -220,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="74" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="74" bodyend="76"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="78" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="78" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a096134c5684b1ef0d8f46d9c0cf9a6a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -243,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="81" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="81" bodyend="83"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="85" column="24" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="85" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a6842171f65007a880eac46610f5676b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -269,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="92" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="92" bodyend="99"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="96" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="96" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0b0a5e413f1f381a80658aaae7256203" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -288,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="104" column="25"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="108" column="25"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -314,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="110" column="25"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="114" column="25"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a41eadf3c8d28dae43bd9058ff3ecf4ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -340,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="116" column="25"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="120" column="25"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a74a9cdcdfac8426e74083b47194dca99" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -366,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="122" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="122" bodyend="125"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="126" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="126" bodyend="129"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -374,7 +375,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="9" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="9" bodyend="126"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" line="9" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/AudioManager.cs" bodystart="9" bodyend="130"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a97ad4c4a1cf0f888a121cfe61d1d895a" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>audioVolumes</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0498ca8ec7582e9aa3607f534a7dc5f0" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::AudioManager</scope><name>CalculateClipLength</name></member>

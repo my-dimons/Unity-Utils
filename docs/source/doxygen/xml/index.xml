@@ -112,28 +112,6 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1ab68f1fb463b82e6dee277d5a7b3d6c0d" kind="function"><name>SaveSaveData</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system_1aadc15994db95278bff0740c64f1d85b8" kind="function"><name>CreateRootSaveDataIfNotExisting</name></member>
   </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g" kind="class"><name>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierData-1-g</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g_1a8e99f68ddb57392a029e1760a4c8ff96" kind="variable"><name>modifierType</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g_1a1b30f54ac1ec47ae812ae204382edc32" kind="variable"><name>modifierValue</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_data-1-g_1a8a39d066f4d2d23551cae0abeb81e047" kind="function"><name>ModifierData</name></member>
-  </compound>
-  <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g" kind="class"><name>UnityUtils::ScriptUtils::Objects::Modifiers::ModifierManager-1-g</name>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1adb8fe342cd14c87151bd39705c73a66d" kind="variable"><name>DEFAULT_MODIFIER_ORDER</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a162f83824eda80e5fd0a1d4b47733716" kind="variable"><name>_modifierOrder</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a46077195d42fb48106129d1f341b182a" kind="variable"><name>ModifierTypeCount</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a137d34a5787fcc5a8123763681ed03c4" kind="property"><name>ModifierOrder</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1acc5ef78111362c25ff87014418c0f11b" kind="variable"><name>Modifiers</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a88bd2ab3f6be8f13282ca6074ed446a0" kind="function"><name>AddModifier</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a9c548f07ed4c33d45a6d4d165298c73c" kind="function"><name>AddModifier</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1adb5989f5821ad1574013085d30e2ce42" kind="function"><name>AddTemporaryModifier</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a5ef14f0d13b9d3daf89085bd840dc260" kind="function"><name>RemoveModifier</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a77d6ca07b1d513e0f46d261a3206858e" kind="function"><name>CalculateModifiers</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a753d5188406249be3ff6f889e7f6914e" kind="function"><name>SortModifiers</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1ae6a8786a9feee524062deb723e095997" kind="function"><name>SortModifiers</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a6f364c423b901dcaea79b175dc7fa1d1" kind="function"><name>PrintModifiers</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1af7b47200736411b38b24ed8165a98e1b" kind="function"><name>PrintModifierOrder</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1_1_modifier_manager-1-g_1a85180fc257e49da095112a1127df772c" kind="function"><name>AddTemporaryModifierCoroutine</name></member>
-  </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kind="class"><name>UnityUtils::ScriptUtils::Audio::MusicClip</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a843242abcd205d1f95f2194c46806785" kind="variable"><name>musicClip</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip_1a8cb21bec984b444d17237271425c10b6" kind="variable"><name>musicName</name></member>
@@ -457,14 +435,6 @@
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash" kind="namespace"><name>UnityUtils::ScriptUtils::Objects::ColorFlash</name>
   </compound>
-  <compound refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers" kind="namespace"><name>UnityUtils::ScriptUtils::Objects::Modifiers</name>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71" kind="enum"><name>ModifierType</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71a745e3db6a7ffd50e1a72b39482f0882d" kind="enumvalue"><name>Flat</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71ae257376d913f3b53cbb4a9b19d770648" kind="enumvalue"><name>Multiply</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71a0b914e196182d02615487e9793ecff3d" kind="enumvalue"><name>Divide</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71afa03eb688ad8aa1db593d33dabd89bad" kind="enumvalue"><name>Root</name></member>
-    <member refid="namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_modifiers_1a8019d8ece5f39e5c2619d938eead5c71af5ccb8d51ca38e2f3329955fc0149cd4" kind="enumvalue"><name>Exponent</name></member>
-  </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_particles" kind="namespace"><name>UnityUtils::ScriptUtils::Particles</name>
   </compound>
   <compound refid="namespace_unity_utils_1_1_script_utils_1_1_save_system" kind="namespace"><name>UnityUtils::ScriptUtils::SaveSystem</name>
@@ -504,12 +474,6 @@
   <compound refid="_object_animations_8cs" kind="file"><name>ObjectAnimations.cs</name>
   </compound>
   <compound refid="_object_delays_8cs" kind="file"><name>ObjectDelays.cs</name>
-  </compound>
-  <compound refid="_modifier_data_8cs" kind="file"><name>ModifierData.cs</name>
-  </compound>
-  <compound refid="_modifier_manager_8cs" kind="file"><name>ModifierManager.cs</name>
-  </compound>
-  <compound refid="_modifier_type_8cs" kind="file"><name>ModifierType.cs</name>
   </compound>
   <compound refid="_particle_modifier_8cs" kind="file"><name>ParticleModifier.cs</name>
   </compound>
@@ -560,8 +524,6 @@
   <compound refid="dir_077762862b3199ba13f3a89333897b5c" kind="dir"><name>Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash</name>
   </compound>
   <compound refid="dir_9c2fb7424bbc3a657c072801d9c5ba21" kind="dir"><name>Packages/com.mydimons.unityutils</name>
-  </compound>
-  <compound refid="dir_fdd007ee0b8ee8470f844eccbe1515b6" kind="dir"><name>Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ObjectModifiers</name>
   </compound>
   <compound refid="dir_4bf5c5ffc2a0732a67ca014148862437" kind="dir"><name>Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects</name>
   </compound>

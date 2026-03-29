@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quitgamebuttonmethod_0',['QuitGameButtonMethod',['../namespace_unity_utils_1_1_script_utils_1_1_u_i.html#aa8b014518ad92e0bb0efaee6ffc4c6c9',1,'UnityUtils::ScriptUtils::UI']]]
+  ['volumetype_0',['VolumeType',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];

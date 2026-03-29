@@ -23,3 +23,4 @@ Scripts
    UIButtonSceneSwitcher
    UIButtonHoverPosition
    UIButtonQuitGame
+   UIAudioSlider

@@ -14,7 +14,13 @@ namespace UnityUtils.ScriptUtils.Audio {
     public string musicName = "Music Clip [UnityUtils.ScriptUtils.Audio]";
 
     [Header("Audio Settings")]
+    /// <summary>
+    /// The <see cref="SFXVolumeSettings"/> for this music clip.
+    /// </summary>
     public SFXVolumeSettings volumeSettings = new SFXVolumeSettings().SetVolume(1, AudioManager.VolumeType.Music);
+    /// <summary>
+    /// The <see cref="SFXPitchSettings"/> for this music clip.
+    /// </summary>
     public SFXPitchSettings pitchSettings = new SFXPitchSettings().SetPitch(0, 1);
 
     /// <returns>If true, the clip can be played when picking music</returns>

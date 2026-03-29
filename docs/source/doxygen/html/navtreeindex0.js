@@ -9,13 +9,10 @@ var NAVTREEINDEX0 =
 "_coroutine_helper_8cs.html":[2,0,0,0,0,0,7],
 "_i_saveable_data_8cs.html":[2,0,0,0,0,0,4,0,0],
 "_json_save_system_8cs.html":[2,0,0,0,0,0,4,1],
-"_modifier_data_8cs.html":[2,0,0,0,0,0,2,1,0],
-"_modifier_manager_8cs.html":[2,0,0,0,0,0,2,1,1],
-"_modifier_type_8cs.html":[2,0,0,0,0,0,2,1,2],
 "_music_clip_8cs.html":[2,0,0,0,0,0,0,2],
 "_music_manager_8cs.html":[2,0,0,0,0,0,0,3],
-"_object_animations_8cs.html":[2,0,0,0,0,0,2,2],
-"_object_delays_8cs.html":[2,0,0,0,0,0,2,3],
+"_object_animations_8cs.html":[2,0,0,0,0,0,2,1],
+"_object_delays_8cs.html":[2,0,0,0,0,0,2,2],
 "_particle_modifier_8cs.html":[2,0,0,0,0,0,3,0],
 "_particle_spawner_8cs.html":[2,0,0,0,0,0,3,1],
 "_s_f_x_8cs.html":[2,0,0,0,0,0,0,4],
@@ -249,5 +246,8 @@ var NAVTREEINDEX0 =
 "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a8efd9003afc2ef4e40c875401458e74e":[1,0,0,0,2,0,0,1],
 "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9061569d313254b8192ca06dd539e712":[0,0,0,0,2,0,0,8],
 "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9061569d313254b8192ca06dd539e712":[1,0,0,0,2,0,0,8],
-"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9c341919d741ce7c193d90ddf6b51113":[0,0,0,0,2,0,0,7]
+"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9c341919d741ce7c193d90ddf6b51113":[0,0,0,0,2,0,0,7],
+"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a9c341919d741ce7c193d90ddf6b51113":[1,0,0,0,2,0,0,7],
+"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#aa4871f87ddb34569fab79b17095442fb":[0,0,0,0,2,0,0,3],
+"class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#aa4871f87ddb34569fab79b17095442fb":[1,0,0,0,2,0,0,3]
 };
