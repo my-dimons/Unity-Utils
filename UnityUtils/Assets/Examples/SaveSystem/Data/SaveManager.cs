@@ -25,10 +25,18 @@ public class SaveManager : MonoBehaviour {
   }
 
   public void Save() {
+    if (saveSlots[activeSaveSlot] == null) {
+      CreateSaveSlot(activeSaveSlot);
+    }
     SaveSystemManager.SaveGame(saveSlots[activeSaveSlot]);
   }
 
   public void Load() {
+    if (saveSlots[activeSaveSlot] == null) {
+      Debug.LogWarning("The save slot \"" + activeSaveSlot + "\" is unavailable");
+      return;
+    }
+
     SaveSystemManager.LoadGame(saveSlots[activeSaveSlot]);
 
     List<SaveSlot> saves = new();
