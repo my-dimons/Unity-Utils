@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="34" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="34" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="35" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a11de23733fcf4c77f7f0fd9ab4ad4e65" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -44,7 +44,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="72" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="72" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="73" column="19" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae8ff01d75065ce3905ad7df831f5c115" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager" kindref="compound">MusicManager</ref></type>
+        <definition>MusicManager UnityUtils.ScriptUtils.Audio.MusicManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="10" column="32" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="10" bodyend="10"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -61,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="15" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="15" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="16" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a183bab188db31471fe7e28cb79f52f62" prot="public" static="no" mutable="no">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref></type>
@@ -76,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="20" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="20" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="21" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a4f6f5728f33b0910c9dca6bf3199d5b2" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -92,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="26" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="26" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="27" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aedc14e00dd6b5c93581c686c226c29fa" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -107,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="31" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="31" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="32" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a486dfbaef4d80bea107df9fe9c9af27f" prot="public" static="no" mutable="no">
         <type>Vector2</type>
@@ -122,14 +138,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="39" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="39" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="40" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a31172d1980fc59140f1cfc3c54523b2d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1afa5b526919505674e110f05957a07227" prot="public" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.Audio.MusicManager.logOnSongPlay</definition>
+        <definition>bool UnityUtils.ScriptUtils.Audio.MusicManager.logOnPlayMusicTrack</definition>
         <argsstring></argsstring>
-        <name>logOnSongPlay</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.logOnSongPlay</qualifiedname>
+        <name>logOnPlayMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.logOnPlayMusicTrack</qualifiedname>
         <briefdescription>
 <para>If true, will output a Debug.Log(object) when a new track starts playing. </para>
         </briefdescription>
@@ -137,14 +153,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="45" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="45" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="46" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="46" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1abed317e7c9241311bcc33d797e760cac" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1abfec8684c046cba51da4028a2b767129" prot="public" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.Audio.MusicManager.logOnSongStop</definition>
+        <definition>bool UnityUtils.ScriptUtils.Audio.MusicManager.logOnStopMusicTrack</definition>
         <argsstring></argsstring>
-        <name>logOnSongStop</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.logOnSongStop</qualifiedname>
+        <name>logOnStopMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.logOnStopMusicTrack</qualifiedname>
         <briefdescription>
 <para>If true, will output a Debug.Log(object) when a track stops playing. </para>
         </briefdescription>
@@ -152,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="50" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="50" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="51" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a17359f0448fc8ba8129d11f39ed81aba" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -167,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="55" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="55" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="56" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aa24e3d20b059bb583215478ac1edbda2" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -182,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="60" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="60" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="61" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a435943706c919c1a4b31c4cfc19049de" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -197,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="65" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="65" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="66" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a30e986fe8c973ac9ae53d3d08e7a2adf" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -213,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="70" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="70" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="71" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ac8aea0a68ec47bc4c03fb6c38d1d0d5a" prot="public" static="no" mutable="no">
         <type>Coroutine</type>
@@ -228,23 +244,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="79" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="79" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="78" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="78" bodyend="-1"/>
       </memberdef>
     </sectiondef>
-    <sectiondef kind="property">
-      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae8ff01d75065ce3905ad7df831f5c115" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
-        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager" kindref="compound">MusicManager</ref></type>
-        <definition>MusicManager UnityUtils.ScriptUtils.Audio.MusicManager.Instance</definition>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a9b9005b2cce0087d5983d3c0846e9672" prot="public" static="yes" mutable="no">
+        <type>Action&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref> &gt;</type>
+        <definition>Action&lt;MusicClip&gt; UnityUtils.ScriptUtils.Audio.MusicManager.OnPlayMusicTrack</definition>
         <argsstring></argsstring>
-        <name>Instance</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.Instance</qualifiedname>
+        <name>OnPlayMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.OnPlayMusicTrack</qualifiedname>
         <briefdescription>
+<para>Called when a music track starts playing, with the track that started playing as a parameter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="74" column="32" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="74" bodyend="74"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="83" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c3837c7ba5aa502a010d1382675c99c" prot="public" static="yes" mutable="no">
+        <type>Action&lt; <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref> &gt;</type>
+        <definition>Action&lt;MusicClip&gt; UnityUtils.ScriptUtils.Audio.MusicManager.OnStopMusicTrack</definition>
+        <argsstring></argsstring>
+        <name>OnStopMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.OnStopMusicTrack</qualifiedname>
+        <briefdescription>
+<para>Called when a music track stops playing, with the track that stopped playing as a parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="87" column="26" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="87" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -260,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="81" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="81" bodyend="93"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="89" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="89" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a1d2a103bfee1aa43b6a605a12eebce08" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -274,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="95" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="95" bodyend="100"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="103" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="103" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1adbe7a74277b85275ef26367307c01447" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -288,21 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="102" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="102" bodyend="117"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a3476757c70d6fde7d18cabca0187618c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.CalculateMusicVolume</definition>
-        <argsstring>()</argsstring>
-        <name>CalculateMusicVolume</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.CalculateMusicVolume</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="119" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="119" bodyend="121"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="110" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="110" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a1edb2b49e3af9887b2f00018bd37860e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -317,7 +335,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="126" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="126" bodyend="145"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="148" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="148" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a61f31f1642d9cfb5adffb7cf7972028e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.StopMusicSource</definition>
+        <argsstring>()</argsstring>
+        <name>StopMusicSource</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.StopMusicSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="183" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="183" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5aa1d1e15eb2f9285bfbb9359692a1e5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -336,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="190" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="190" bodyend="200"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="195" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="195" bodyend="206"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a2201b3b2b88618a33c3106fe23036786" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -358,53 +390,88 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="222" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="222" bodyend="224"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="235" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="235" bodyend="237"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a679abe603a189cea4bf2e400474c8780" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a6fc0504c88738cc546729e059f74473d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.DebugSongProgress</definition>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.DebugLogSongProgress</definition>
         <argsstring>()</argsstring>
-        <name>DebugSongProgress</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.DebugSongProgress</qualifiedname>
+        <name>DebugLogSongProgress</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.DebugLogSongProgress</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="226" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="226" bodyend="242"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="239" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="239" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a6f6acae393649127a3eb416cdbbebdae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.DebugLogOnPlayMusicTrack</definition>
+        <argsstring>(MusicClip clip)</argsstring>
+        <name>DebugLogOnPlayMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.DebugLogOnPlayMusicTrack</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref></type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="257" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aeabaa54024306f2e9690a6549ff8f8cb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.DebugLogOnStopMusicTrack</definition>
+        <argsstring>(MusicClip clip)</argsstring>
+        <name>DebugLogOnStopMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.DebugLogOnStopMusicTrack</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref></type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="262" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="262" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a4b2a3154329a796ad4041aa83b0d263f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.OnEnable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="268" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="268" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1add8edee3b09167ee6e1b159318ff472b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.OnDisable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="274" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="274" bodyend="278"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae9c160534f02beb90e392c05ef79ce76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.StopContinousMusic</definition>
-        <argsstring>()</argsstring>
-        <name>StopContinousMusic</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.StopContinousMusic</qualifiedname>
-        <briefdescription>
-<para>Stops the musicSource from playing Music and looping until PlayMusicContinuously is called again (to start looping). </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="150" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="150" bodyend="159"/>
-      </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a61f31f1642d9cfb5adffb7cf7972028e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.StopMusicSource</definition>
-        <argsstring>()</argsstring>
-        <name>StopMusicSource</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.StopMusicSource</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="161" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="161" bodyend="169"/>
-      </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a2710be1e905f23bc580fbe531eb49359" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.PlayContinuousMusic</definition>
@@ -418,14 +485,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="174" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="174" bodyend="185"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="131" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="131" bodyend="142"/>
       </memberdef>
-      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aaadf0fdbdd2c2db68a1723e2dcfafaab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae9c160534f02beb90e392c05ef79ce76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.PlaySingleRandomMusicTrack</definition>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.StopContinousMusic</definition>
         <argsstring>()</argsstring>
-        <name>PlaySingleRandomMusicTrack</name>
-        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.PlaySingleRandomMusicTrack</qualifiedname>
+        <name>StopContinousMusic</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.StopContinousMusic</qualifiedname>
+        <briefdescription>
+<para>Stops the musicSource from playing Music and looping until PlayMusicContinuously is called again (to start looping). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="172" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="172" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1af9f7480c8803a411cfddbd2b0a45c3b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Audio.MusicManager.PlayRandomMusicTrack</definition>
+        <argsstring>()</argsstring>
+        <name>PlayRandomMusicTrack</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.PlayRandomMusicTrack</qualifiedname>
         <briefdescription>
 <para>Plays a random song in <ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ab81786dbf8dac64bc8b8214beab4a72d" kindref="member">musicTracks</ref> once. </para>
         </briefdescription>
@@ -433,7 +515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="205" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="205" bodyend="207"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="211" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="211" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c950ccf3974134536ea9d1eaf57167e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -452,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="212" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="212" bodyend="214"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="218" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="218" bodyend="220"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a26c7eda6186379cb9bf13a2d5f0dde1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip" kindref="compound">MusicClip</ref></type>
@@ -469,7 +551,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="217" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="217" bodyend="220"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="223" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a384468ecea0f684780c051436f2685dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.Audio.MusicManager.IsPlayingMusic</definition>
+        <argsstring>()</argsstring>
+        <name>IsPlayingMusic</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Audio.MusicManager.IsPlayingMusic</qualifiedname>
+        <briefdescription>
+<para>Returns whether music is currently playing or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="231" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="231" bodyend="233"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -532,36 +629,42 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="8" bodyend="243"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" line="8" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Audio/MusicManager.cs" bodystart="8" bodyend="279"/>
     <listofallmembers>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae4d1d038452555b0c752f4808f504423" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>Awake</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a3476757c70d6fde7d18cabca0187618c" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>CalculateMusicVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a183bab188db31471fe7e28cb79f52f62" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>currentPlayingTrack</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a679abe603a189cea4bf2e400474c8780" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>DebugSongProgress</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a6f6acae393649127a3eb416cdbbebdae" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>DebugLogOnPlayMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aeabaa54024306f2e9690a6549ff8f8cb" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>DebugLogOnStopMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a6fc0504c88738cc546729e059f74473d" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>DebugLogSongProgress</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aedc14e00dd6b5c93581c686c226c29fa" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>fadeTime</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a3ea231b7abab81e7ce8a554eddee592e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>fadeVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a26c7eda6186379cb9bf13a2d5f0dde1e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>GetRandomSong</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae8ff01d75065ce3905ad7df831f5c115" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>Instance</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a384468ecea0f684780c051436f2685dc" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>IsPlayingMusic</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a11de23733fcf4c77f7f0fd9ab4ad4e65" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>lastLoggedPercent</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aa24e3d20b059bb583215478ac1edbda2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logFadeVolume</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a31172d1980fc59140f1cfc3c54523b2d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logOnSongPlay</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1abed317e7c9241311bcc33d797e760cac" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logOnSongStop</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1afa5b526919505674e110f05957a07227" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logOnPlayMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1abfec8684c046cba51da4028a2b767129" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logOnStopMusicTrack</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a17359f0448fc8ba8129d11f39ed81aba" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logRandomSongCooldown</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a30e986fe8c973ac9ae53d3d08e7a2adf" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logSongProgessEveryPercent</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a435943706c919c1a4b31c4cfc19049de" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>logSongProgress</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae6a2412058106611d714dbb81347f244" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>musicSource</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ab81786dbf8dac64bc8b8214beab4a72d" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>musicTracks</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1add8edee3b09167ee6e1b159318ff472b" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>OnDisable</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a4b2a3154329a796ad4041aa83b0d263f" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>OnEnable</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a9b9005b2cce0087d5983d3c0846e9672" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>OnPlayMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c3837c7ba5aa502a010d1382675c99c" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>OnStopMusicTrack</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a2710be1e905f23bc580fbe531eb49359" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>PlayContinuousMusic</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ac8aea0a68ec47bc4c03fb6c38d1d0d5a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>playingMusicCoroutine</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a1edb2b49e3af9887b2f00018bd37860e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>PlayMusicContinuously</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5aa1d1e15eb2f9285bfbb9359692a1e5" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>PlayMusicTrack</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a4f6f5728f33b0910c9dca6bf3199d5b2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>playOnAwake</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aaadf0fdbdd2c2db68a1723e2dcfafaab" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>PlaySingleRandomMusicTrack</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1af9f7480c8803a411cfddbd2b0a45c3b2" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>PlayRandomMusicTrack</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c950ccf3974134536ea9d1eaf57167e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>PlaySpecificMusicTrack</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a486dfbaef4d80bea107df9fe9c9af27f" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>randomSecondCooldownBetweenSongs</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a1d2a103bfee1aa43b6a605a12eebce08" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>Start</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae9c160534f02beb90e392c05ef79ce76" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>StopContinousMusic</name></member>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a61f31f1642d9cfb5adffb7cf7972028e" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>StopMusicSource</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a61f31f1642d9cfb5adffb7cf7972028e" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>StopMusicSource</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a2201b3b2b88618a33c3106fe23036786" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>TweenVolume</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1adbe7a74277b85275ef26367307c01447" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Audio::MusicManager</scope><name>Update</name></member>
     </listofallmembers>

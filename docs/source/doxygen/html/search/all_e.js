@@ -12,7 +12,7 @@ var searchData=
   ['player_9',['Player',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a636da1d35e805b00eae0fcd8333f9234',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
   ['playingmusiccoroutine_10',['playingMusicCoroutine',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ac8aea0a68ec47bc4c03fb6c38d1d0d5a',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
   ['playonawake_11',['playOnAwake',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a4f6f5728f33b0910c9dca6bf3199d5b2',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['playsfx_12',['PlaySFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager.html#a334061927d8145026134964cbbbf7ff7',1,'UnityUtils::ScriptUtils::Audio::SFXManager']]],
-  ['playsinglerandommusictrack_13',['PlaySingleRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#aaadf0fdbdd2c2db68a1723e2dcfafaab',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playrandommusictrack_12',['PlayRandomMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#af9f7480c8803a411cfddbd2b0a45c3b2',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playsfx_13',['PlaySFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_manager.html#a334061927d8145026134964cbbbf7ff7',1,'UnityUtils::ScriptUtils::Audio::SFXManager']]],
   ['playspecificmusictrack_14',['PlaySpecificMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a5c950ccf3974134536ea9d1eaf57167e',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]]
 ];

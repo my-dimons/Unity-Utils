@@ -58,6 +58,5 @@ var searchData=
   ['special_5fsave_5ffile_5fextension_55',['SPECIAL_SAVE_FILE_EXTENSION',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html#ae82e13ad8d6974d658f8d03d1b6999d6',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemUtils']]],
   ['starter_56',['Starter',['../class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html#a4aff3e5176c8bc562064cdee274d4dd6',1,'UnityUtils::ScriptUtils::CoroutineHelper']]],
   ['stopcontinousmusic_57',['StopContinousMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ae9c160534f02beb90e392c05ef79ce76',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['stopmusicsource_58',['StopMusicSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a61f31f1642d9cfb5adffb7cf7972028e',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['stopscreenshake_59',['StopScreenshake',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html#a563dab7904805e9577ddb918c8aec831',1,'UnityUtils::ScriptUtils::Cameras::CameraShake']]]
+  ['stopscreenshake_58',['StopScreenshake',['../class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_shake.html#a563dab7904805e9577ddb918c8aec831',1,'UnityUtils::ScriptUtils::Cameras::CameraShake']]]
 ];

@@ -116,33 +116,39 @@
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae6a2412058106611d714dbb81347f244" kind="variable"><name>musicSource</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a3ea231b7abab81e7ce8a554eddee592e" kind="variable"><name>fadeVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a11de23733fcf4c77f7f0fd9ab4ad4e65" kind="variable"><name>lastLoggedPercent</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae8ff01d75065ce3905ad7df831f5c115" kind="property"><name>Instance</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ab81786dbf8dac64bc8b8214beab4a72d" kind="variable"><name>musicTracks</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a183bab188db31471fe7e28cb79f52f62" kind="variable"><name>currentPlayingTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a4f6f5728f33b0910c9dca6bf3199d5b2" kind="variable"><name>playOnAwake</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aedc14e00dd6b5c93581c686c226c29fa" kind="variable"><name>fadeTime</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a486dfbaef4d80bea107df9fe9c9af27f" kind="variable"><name>randomSecondCooldownBetweenSongs</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a31172d1980fc59140f1cfc3c54523b2d" kind="variable"><name>logOnSongPlay</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1abed317e7c9241311bcc33d797e760cac" kind="variable"><name>logOnSongStop</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1afa5b526919505674e110f05957a07227" kind="variable"><name>logOnPlayMusicTrack</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1abfec8684c046cba51da4028a2b767129" kind="variable"><name>logOnStopMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a17359f0448fc8ba8129d11f39ed81aba" kind="variable"><name>logRandomSongCooldown</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aa24e3d20b059bb583215478ac1edbda2" kind="variable"><name>logFadeVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a435943706c919c1a4b31c4cfc19049de" kind="variable"><name>logSongProgress</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a30e986fe8c973ac9ae53d3d08e7a2adf" kind="variable"><name>logSongProgessEveryPercent</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ac8aea0a68ec47bc4c03fb6c38d1d0d5a" kind="variable"><name>playingMusicCoroutine</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae8ff01d75065ce3905ad7df831f5c115" kind="property"><name>Instance</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a9b9005b2cce0087d5983d3c0846e9672" kind="variable"><name>OnPlayMusicTrack</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c3837c7ba5aa502a010d1382675c99c" kind="variable"><name>OnStopMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae4d1d038452555b0c752f4808f504423" kind="function"><name>Awake</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a1d2a103bfee1aa43b6a605a12eebce08" kind="function"><name>Start</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1adbe7a74277b85275ef26367307c01447" kind="function"><name>Update</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a3476757c70d6fde7d18cabca0187618c" kind="function"><name>CalculateMusicVolume</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a1edb2b49e3af9887b2f00018bd37860e" kind="function"><name>PlayMusicContinuously</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a61f31f1642d9cfb5adffb7cf7972028e" kind="function"><name>StopMusicSource</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5aa1d1e15eb2f9285bfbb9359692a1e5" kind="function"><name>PlayMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a2201b3b2b88618a33c3106fe23036786" kind="function"><name>TweenVolume</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a679abe603a189cea4bf2e400474c8780" kind="function"><name>DebugSongProgress</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae9c160534f02beb90e392c05ef79ce76" kind="function"><name>StopContinousMusic</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a61f31f1642d9cfb5adffb7cf7972028e" kind="function"><name>StopMusicSource</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a6fc0504c88738cc546729e059f74473d" kind="function"><name>DebugLogSongProgress</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a6f6acae393649127a3eb416cdbbebdae" kind="function"><name>DebugLogOnPlayMusicTrack</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aeabaa54024306f2e9690a6549ff8f8cb" kind="function"><name>DebugLogOnStopMusicTrack</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a4b2a3154329a796ad4041aa83b0d263f" kind="function"><name>OnEnable</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1add8edee3b09167ee6e1b159318ff472b" kind="function"><name>OnDisable</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a2710be1e905f23bc580fbe531eb49359" kind="function"><name>PlayContinuousMusic</name></member>
-    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1aaadf0fdbdd2c2db68a1723e2dcfafaab" kind="function"><name>PlaySingleRandomMusicTrack</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1ae9c160534f02beb90e392c05ef79ce76" kind="function"><name>StopContinousMusic</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1af9f7480c8803a411cfddbd2b0a45c3b2" kind="function"><name>PlayRandomMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a5c950ccf3974134536ea9d1eaf57167e" kind="function"><name>PlaySpecificMusicTrack</name></member>
     <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a26c7eda6186379cb9bf13a2d5f0dde1e" kind="function"><name>GetRandomSong</name></member>
+    <member refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_1a384468ecea0f684780c051436f2685dc" kind="function"><name>IsPlayingMusic</name></member>
   </compound>
   <compound refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations" kind="class"><name>UnityUtils::ScriptUtils::Objects::ObjectAnimations</name>
     <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_animations_1a0c97fc7b5c88f2719a26fb2f20bb19b2" kind="variable"><name>defaultAnimationCurve</name></member>
