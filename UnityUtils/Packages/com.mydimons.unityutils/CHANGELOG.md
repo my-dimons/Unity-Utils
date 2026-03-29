@@ -28,11 +28,12 @@
 - AudioManager.cs CalculatePitchVariance() now takes in a starting pitch.
 - ObjectColorFlash.cs renamed to "ColorFlashManager.cs"
 - Organized ObjectModifiers into their own Modifiers namespace
-- Renamed ObjectModifiers to ModifierManager
-- Renamed ObjectModifierData to ModifierData
 - Moved AudioSlider script to the UI classification, also renamed to UIAudioSlider
 - Renamed UIButtonDebugLogs to UIButtonDebug
 - Most UIButton scripts now require a UIButtonDebug script to be attached to the same object
+- renamed "UIButtonSfx" to "UIButtonSFX"
+- Renamed ObjectModifiers to ModifierManager
+- Renamed ObjectModifierData to ModifierData
 - REMOVED MODIFIERS, See reason here: https://github.com/my-dimons/UnityUtils/issues/37, see the latest version of modifiers here: https://github.com/my-dimons/UnityUtils/tree/v2.0-REMOVED-MODIFIERS
 
 ### Fixes

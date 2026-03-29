@@ -8,7 +8,7 @@ var searchData=
   ['uibuttonquitgame_2ecs_5',['UIButtonQuitGame.cs',['../_u_i_button_quit_game_8cs.html',1,'']]],
   ['uibuttonsceneswitcher_2ecs_6',['UIButtonSceneSwitcher.cs',['../_u_i_button_scene_switcher_8cs.html',1,'']]],
   ['uibuttonsettings_2ecs_7',['UIButtonSettings.cs',['../_u_i_button_settings_8cs.html',1,'']]],
-  ['uibuttonsfx_2ecs_8',['UIButtonSfx.cs',['../_u_i_button_sfx_8cs.html',1,'']]],
+  ['uibuttonsfx_2ecs_8',['UIButtonSFX.cs',['../_u_i_button_s_f_x_8cs.html',1,'']]],
   ['uibuttonspawnparticles_2ecs_9',['UIButtonSpawnParticles.cs',['../_u_i_button_spawn_particles_8cs.html',1,'']]],
   ['uibuttontoggleobjects_2ecs_10',['UIButtonToggleObjects.cs',['../_u_i_button_toggle_objects_8cs.html',1,'']]]
 ];

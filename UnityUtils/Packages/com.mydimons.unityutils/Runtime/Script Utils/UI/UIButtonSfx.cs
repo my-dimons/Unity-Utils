@@ -11,21 +11,21 @@ namespace UnityUtils.ScriptUtils.UI {
     /// Sound to play when the button is hovered over
     /// </summary>
     [Header("Audio Clips & Volumes")]
-    public SFX hoverEnterSfx = SFX.Create2dSFX();
+    public SFX hoverEnterSFX = SFX.Create2dSFX();
 
     [Space(5)]
 
     /// <summary>
     /// Sound to play when the button is no longer being hovered.
     /// </summary>
-    public SFX hoverExitSfx = SFX.Create2dSFX();
+    public SFX hoverExitSFX = SFX.Create2dSFX();
 
     [Space(5)]
 
     /// <summary>
     /// Sound to play when the button is clicked
     /// </summary>
-    public SFX clickSfx = SFX.Create2dSFX();
+    public SFX clickSFX = SFX.Create2dSFX();
 
     private bool sceneLoadTriggered;
 
@@ -38,16 +38,16 @@ namespace UnityUtils.ScriptUtils.UI {
     /// <summary>
     /// Will output a <see cref="Debug.LogWarning(object)"/> when a hover enter, exit, or click SFX tries to be played but no SFX clip is found.
     /// </summary>
-    public bool logEmptySfx;
+    public bool logEmptySFX;
 
     public void OnPointerEnter(PointerEventData eventData) {
-      if (hoverEnterSfx != null) {
-        SFXManager.PlaySFX(hoverEnterSfx);
+      if (hoverEnterSFX != null) {
+        SFXManager.PlaySFX(hoverEnterSFX);
 
         LogAny();
         if (debugLogs.logIn)
           Debug.Log("Played hover enter SFX on button!");
-      } else if (logEmptySfx)
+      } else if (logEmptySFX)
         Debug.LogWarning("No hover enter SFX on button!");
     }
 
@@ -55,13 +55,13 @@ namespace UnityUtils.ScriptUtils.UI {
       if (sceneLoadTriggered)
         return;
 
-      if (hoverExitSfx != null) {
-        SFXManager.PlaySFX(hoverExitSfx);
+      if (hoverExitSFX != null) {
+        SFXManager.PlaySFX(hoverExitSFX);
 
         LogAny();
         if (debugLogs.logIn)
           Debug.Log("Played hover exit SFX on button!");
-      } else if (logEmptySfx)
+      } else if (logEmptySFX)
         Debug.LogWarning("No hover exit SFX on button!");
     }
 
@@ -71,13 +71,13 @@ namespace UnityUtils.ScriptUtils.UI {
         return;
       }
 
-      if (clickSfx != null) {
-        SFXManager.PlaySFX(clickSfx);
+      if (clickSFX != null) {
+        SFXManager.PlaySFX(clickSFX);
 
         LogAny();
         if (debugLogs.logIn)
           Debug.Log("Played hover click SFX on button!");
-      } else if (logEmptySfx)
+      } else if (logEmptySFX)
         Debug.LogWarning("No click SFX on button!");
     }
 

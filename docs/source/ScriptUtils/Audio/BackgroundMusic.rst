@@ -6,6 +6,10 @@ BackgroundMusic
      
 An example of how to use the :doc:`MusicClip`. To use it, create a scriptable object (Found in the UnityUtils/Audio/Background Music path when right clicking in the "Project" tab in Unity) and add adjust its values. Then drag this scriptable object into a :doc:`MusicManager`.
 
+.. tip::
+	
+   This script is still very useful, being a music clip that will can *always* play.
+   
 Example Usage
 -------------
 .. code:: csharp

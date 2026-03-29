@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespace_unity_utils_1_1_script_utils_1_1_u_i" kind="namespace" language="C#">
     <compoundname>UnityUtils::ScriptUtils::UI</compoundname>
-    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider" prot="public">UnityUtils::ScriptUtils::UI::AudioSlider</innerclass>
+    <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider" prot="public">UnityUtils::ScriptUtils::UI::UIAudioSlider</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug" prot="public">UnityUtils::ScriptUtils::UI::UIButtonDebug</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverExpand</innerclass>
     <innerclass refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position" prot="public">UnityUtils::ScriptUtils::UI::UIButtonHoverPosition</innerclass>

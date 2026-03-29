@@ -38,7 +38,7 @@ var searchData=
   ['setpitch_35',['SetPitch',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings.html#a26b8a4bc885901406ac2305d59e3aa17',1,'UnityUtils::ScriptUtils::Audio::SFXPitchSettings']]],
   ['setsavedataslot_36',['SetSaveDataSlot',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html#a7456a2e533b25aa502a73dfcc8cd7a07',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSlot']]],
   ['setsaveslot_37',['SetSaveSlot',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html#a376fe79174b33a74aad58545eb674de5',1,'UnityUtils::ScriptUtils::SaveSystem::SaveData']]],
-  ['setslidervalue_38',['SetSliderValue',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider.html#a22e1841a03cfc7f5d9b6e5635f54d16d',1,'UnityUtils::ScriptUtils::UI::AudioSlider']]],
+  ['setslidervalue_38',['SetSliderValue',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider.html#a31c14143e7ad55f5bf9587b80f8107e1',1,'UnityUtils::ScriptUtils::UI::UIAudioSlider']]],
   ['setspacialaudio_39',['SetSpacialAudio',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings.html#a8aab966a428f3825b180ddb1f1381f4d',1,'UnityUtils::ScriptUtils::Audio::SFX3dSettings']]],
   ['setvolume_40',['SetVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a096134c5684b1ef0d8f46d9c0cf9a6a6',1,'UnityUtils.ScriptUtils.Audio.AudioManager.SetVolume()'],['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_volume_settings.html#a9bc1089a43516db557fe8a144d005d35',1,'UnityUtils.ScriptUtils.Audio.SFXVolumeSettings.SetVolume()']]],
   ['sfx_41',['SFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html',1,'UnityUtils::ScriptUtils::Audio']]],

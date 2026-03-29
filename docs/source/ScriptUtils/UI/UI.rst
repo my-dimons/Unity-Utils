@@ -17,10 +17,11 @@ Scripts
    UIButtonHoverExpand
    UIButtonHoverRotate
    UIButtonSfx
-   UIButtonDebugLogs
+   UIButtonDebug
    UIButtonSpawnParticles
    UIButtonToggleObjects
    UIButtonSceneSwitcher
    UIButtonHoverPosition
    UIButtonQuitGame
    UIAudioSlider
+   UIButtonSettings

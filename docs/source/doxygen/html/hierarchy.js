@@ -38,7 +38,7 @@ var hierarchy =
       [ "UnityUtils.ScriptUtils.Cameras.CameraBillboard", "class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard.html", null ],
       [ "UnityUtils.ScriptUtils.CoroutineHelper", "class_unity_utils_1_1_script_utils_1_1_coroutine_helper.html", null ],
       [ "UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html", null ],
-      [ "UnityUtils.ScriptUtils.UI.AudioSlider", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider.html", null ],
+      [ "UnityUtils.ScriptUtils.UI.UIAudioSlider", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonDebug", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonHoverPosition", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html", null ],

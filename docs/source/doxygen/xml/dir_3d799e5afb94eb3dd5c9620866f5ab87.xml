@@ -10,7 +10,7 @@
     <innerfile refid="_u_i_button_quit_game_8cs">UIButtonQuitGame.cs</innerfile>
     <innerfile refid="_u_i_button_scene_switcher_8cs">UIButtonSceneSwitcher.cs</innerfile>
     <innerfile refid="_u_i_button_settings_8cs">UIButtonSettings.cs</innerfile>
-    <innerfile refid="_u_i_button_sfx_8cs">UIButtonSfx.cs</innerfile>
+    <innerfile refid="_u_i_button_s_f_x_8cs">UIButtonSFX.cs</innerfile>
     <innerfile refid="_u_i_button_spawn_particles_8cs">UIButtonSpawnParticles.cs</innerfile>
     <innerfile refid="_u_i_button_toggle_objects_8cs">UIButtonToggleObjects.cs</innerfile>
     <briefdescription>

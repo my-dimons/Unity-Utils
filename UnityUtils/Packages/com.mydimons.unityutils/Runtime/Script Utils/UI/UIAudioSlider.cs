@@ -4,7 +4,7 @@ using UnityUtils.ScriptUtils.Audio;
 
 namespace UnityUtils.ScriptUtils.UI {
   [RequireComponent(typeof(Slider))]
-  public class AudioSlider : MonoBehaviour {
+  public class UIAudioSlider : MonoBehaviour {
     /// <summary>
     /// Type of audio volume to modify on update.
     /// </summary>

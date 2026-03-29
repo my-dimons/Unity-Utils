@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider" kind="class" language="C#" prot="public">
+    <compoundname>UnityUtils::ScriptUtils::UI::UIAudioSlider</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a54fdbe16463099963b80e147587aec70" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager_1a0a7bc22fea904cdde6b310b8beb97b41" kindref="member">AudioManager.VolumeType</ref></type>
+        <definition>AudioManager.VolumeType UnityUtils.ScriptUtils.UI.UIAudioSlider.volumeType</definition>
+        <argsstring></argsstring>
+        <name>volumeType</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIAudioSlider.volumeType</qualifiedname>
+        <briefdescription>
+<para>Type of audio volume to modify on update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" line="11" column="35" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1ae0048be7ab0742bbd92c2bbdf722dd78" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIAudioSlider.logSliderValueChange</definition>
+        <argsstring></argsstring>
+        <name>logSliderValueChange</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIAudioSlider.logSliderValueChange</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>If true, this will print a debug log of the updated volume on update. Warning: While being used, this will output lots of Debug.Logs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" line="18" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a3a5294ae5eec707d4bb6be5b9caccf76" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider UnityUtils.ScriptUtils.UI.UIAudioSlider.slider</definition>
+        <argsstring></argsstring>
+        <name>slider</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIAudioSlider.slider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" line="20" column="20" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1af2246c8a4cfb25a44a4fab357241bea6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIAudioSlider.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIAudioSlider.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" line="22" column="10" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a5ae9bfd45efdcced859489d526081dd6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIAudioSlider.OnSliderValueChanged</definition>
+        <argsstring>(float volume)</argsstring>
+        <name>OnSliderValueChanged</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIAudioSlider.OnSliderValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" line="29" column="18" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" bodystart="29" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a31c14143e7ad55f5bf9587b80f8107e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.UI.UIAudioSlider.SetSliderValue</definition>
+        <argsstring>()</argsstring>
+        <name>SetSliderValue</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIAudioSlider.SetSliderValue</qualifiedname>
+        <briefdescription>
+<para>Sets the slider&apos;s volume to the current <ref refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a54fdbe16463099963b80e147587aec70" kindref="member">volumeType</ref> value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" line="39" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" bodystart="39" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIAudioSlider</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>UnityUtils.ScriptUtils.UI.UIAudioSlider</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>volumeType</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UnityUtils.ScriptUtils.Audio.AudioManager</label>
+        <link refid="class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIAudioSlider.cs" bodystart="7" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1ae0048be7ab0742bbd92c2bbdf722dd78" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIAudioSlider</scope><name>logSliderValueChange</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a5ae9bfd45efdcced859489d526081dd6" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIAudioSlider</scope><name>OnSliderValueChanged</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a31c14143e7ad55f5bf9587b80f8107e1" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIAudioSlider</scope><name>SetSliderValue</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a3a5294ae5eec707d4bb6be5b9caccf76" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIAudioSlider</scope><name>slider</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1af2246c8a4cfb25a44a4fab357241bea6" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIAudioSlider</scope><name>Start</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider_1a54fdbe16463099963b80e147587aec70" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIAudioSlider</scope><name>volumeType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

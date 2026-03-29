@@ -43,7 +43,7 @@ var annotated_dup =
           [ "ScriptableObjectManager", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager.html", "class_unity_utils_1_1_script_utils_1_1_scriptable_objects_1_1_scriptable_object_manager" ]
         ] ],
         [ "UI", "namespace_unity_utils_1_1_script_utils_1_1_u_i.html", [
-          [ "AudioSlider", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider" ],
+          [ "UIAudioSlider", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider" ],
           [ "UIButtonDebug", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug" ],
           [ "UIButtonHoverExpand", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_expand" ],
           [ "UIButtonHoverPosition", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position.html", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_position" ],

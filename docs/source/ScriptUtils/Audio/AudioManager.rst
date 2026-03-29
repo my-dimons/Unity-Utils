@@ -6,6 +6,10 @@ AudioManager
       
 The **AudioManager** is used for managing audio types for things like sfx, and music. It provides functions for calculating volume based on a volume type so you can easily play sounds at a consistent volume!
 
+.. tip::
+
+   To have an audio slider, view :doc:`UIButtonSlider`
+
 Example Usage
 -------------
 .. code:: csharp

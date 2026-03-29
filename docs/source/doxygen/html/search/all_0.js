@@ -14,6 +14,5 @@ var searchData=
   ['audioclips_11',['audioClips',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#a5d424d57e2ca3a031f73e474ac441ae9',1,'UnityUtils::ScriptUtils::Audio::SFX']]],
   ['audiomanager_12',['AudioManager',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html',1,'UnityUtils::ScriptUtils::Audio']]],
   ['audiomanager_2ecs_13',['AudioManager.cs',['../_audio_manager_8cs.html',1,'']]],
-  ['audioslider_14',['AudioSlider',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_audio_slider.html',1,'UnityUtils::ScriptUtils::UI']]],
-  ['audiosource_15',['audioSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#a910b0f617d33d08a5dc12696f4fc2788',1,'UnityUtils::ScriptUtils::Audio::SFX']]]
+  ['audiosource_14',['audioSource',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#a910b0f617d33d08a5dc12696f4fc2788',1,'UnityUtils::ScriptUtils::Audio::SFX']]]
 ];
