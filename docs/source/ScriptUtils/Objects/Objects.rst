@@ -14,5 +14,4 @@ Scripts
    
    ObjectDelays
    ObjectAnimations
-   Modifiers
    ColorFlash
