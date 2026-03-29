@@ -6,6 +6,9 @@
 - Safety check when Flash() is called on ColorFlashManager
 - ContextMenu for ColorFlashManager under the name of "Flash", which flashes the object 
 - More functionality to UIButtonDebug (Now provides a general usage of helpful attributes, Ex. hoveringOverButton)
+- Added some events to MusicManager that get called on certain actions
+	- OnStopMusicTrack
+	- OnPlayMusicTrack
 - SFXSettings classes:
 	- SFXDestructionSettings
 	- SFXVolumeSettings

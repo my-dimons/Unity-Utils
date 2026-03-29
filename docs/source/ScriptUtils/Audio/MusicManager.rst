@@ -6,6 +6,8 @@ MusicManager
    
 The **SimpleBackgroundMusic** is used for quickly adding music to your games. It allows you to cycle through random songs with some adjustable properties for fading songs and have random delay between songs.
 
+Also has some Actions that can be called! Is very useful for having a system that displays something when a new music track plays.
+
 .. warning::
    Turn on "Run in Background" in the `Unity settings <https://discussions.unity.com/t/how-do-you-keep-your-game-  running-even-when-you-switch-out-of-it/928>`_, 
    if you don't the script may bug out when tabbing in/out of the game.

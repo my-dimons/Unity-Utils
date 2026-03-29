@@ -7,6 +7,7 @@ namespace UnityUtils.ScriptUtils.Audio {
   [RequireComponent(typeof(AudioSource))]
   public class MusicManager : MonoBehaviour {
     private AudioSource musicSource;
+    public static MusicManager Instance { get; private set; }
 
     /// <summary>
     /// An array of audio clips representing the available Music tracks.
@@ -42,12 +43,12 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// If true, will output a <see cref="Debug.Log(object)"/> when a new track starts playing.
     /// </summary>
     [Header("Debug")]
-    public bool logOnSongPlay;
+    public bool logOnPlayMusicTrack;
 
     /// <summary>
     /// If true, will output a <see cref="Debug.Log(object)"/> when a track stops playing.
     /// </summary>
-    public bool logOnSongStop;
+    public bool logOnStopMusicTrack;
 
     /// <summary>
     /// If true, will output a <see cref="Debug.Log(object)"/> the <see cref="randomSecondCooldownBetweenSongs"/> when calculated.
@@ -71,12 +72,19 @@ namespace UnityUtils.ScriptUtils.Audio {
 
     private float lastLoggedPercent;
 
-    public static MusicManager Instance { get; private set; }
-
     /// <summary>
     /// The <see cref="Coroutine"/> playing music. Is able to be canceled.
     /// </summary>
     public Coroutine playingMusicCoroutine;
+
+    /// <summary>
+    /// Called when a music track starts playing, with the track that started playing as a parameter.
+    /// </summary>
+    public static Action<MusicClip> OnPlayMusicTrack;
+    /// <summary>
+    /// Called when a music track stops playing, with the track that stopped playing as a parameter.
+    /// </summary>
+    public static Action<MusicClip> OnStopMusicTrack;
 
     void Awake() {
       musicSource = GetComponent<AudioSource>();
@@ -100,12 +108,12 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
 
     private void Update() {
-      CalculateMusicVolume();
+      musicSource.volume = AudioManager.CalculateVolumeBasedOnType(AudioManager.MAX_AUDIO_VOLUME * fadeVolume, AudioManager.VolumeType.Music);
 
       #region Debug.Logs()
       // Song progress
       if (playingMusicCoroutine != null && musicSource.isPlaying && logSongProgress) {
-        DebugSongProgress();
+        DebugLogSongProgress();
       }
 
       // Fade volume
@@ -116,16 +124,30 @@ namespace UnityUtils.ScriptUtils.Audio {
       #endregion
     }
 
-    private void CalculateMusicVolume() {
-      musicSource.volume = AudioManager.CalculateVolumeBasedOnType(AudioManager.MAX_AUDIO_VOLUME * fadeVolume, AudioManager.VolumeType.Music);
+
+    /// <summary>
+    /// Starts to <see cref="PlayMusicContinuously"/> until stopped
+    /// </summary>
+    public void PlayContinuousMusic() {
+      bool enoughMusicTracks = musicTracks.Length > 0;
+      bool musicAlreadyPlaying = !musicSource.isPlaying;
+
+      if (musicAlreadyPlaying && enoughMusicTracks)
+        playingMusicCoroutine = StartCoroutine(PlayMusicContinuously());
+
+      else if (!enoughMusicTracks)
+        Debug.LogWarning("No music tracks found!");
+      else if (musicAlreadyPlaying)
+        Debug.LogWarning("Tried starting continuous music but music source is already playing!");
     }
+
 
     /// <summary>
     /// Loops through random songs in <see cref="musicTracks"/> constantly
     /// </summary>
     private IEnumerator PlayMusicContinuously() {
       while (true) {
-        PlaySingleRandomMusicTrack();
+        PlayRandomMusicTrack();
 
         TweenVolume(AudioManager.MIN_AUDIO_VOLUME, AudioManager.MAX_AUDIO_VOLUME);
 
@@ -148,7 +170,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// Stops the <see cref="musicSource"/> from playing Music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
     /// </summary>
     public void StopContinousMusic() {
-      if (musicSource.isPlaying) {
+      if (IsPlayingMusic()) {
         StopMusicSource();
 
         if (playingMusicCoroutine != null) {
@@ -158,31 +180,14 @@ namespace UnityUtils.ScriptUtils.Audio {
       }
     }
 
-    public void StopMusicSource() {
+    private void StopMusicSource() {
+      OnStopMusicTrack?.Invoke(currentPlayingTrack);
       musicSource.Stop();
       currentPlayingTrack = null;
 
       lastLoggedPercent = 0;
-
-      if (logOnSongStop)
-        Debug.Log("Stopped playing music");
     }
 
-    /// <summary>
-    /// Starts to <see cref="PlayMusicContinuously"/> until stopped
-    /// </summary>
-    public void PlayContinuousMusic() {
-      bool enoughMusicTracks = musicTracks.Length > 0;
-      bool musicAlreadyPlaying = !musicSource.isPlaying;
-
-      if (musicAlreadyPlaying && enoughMusicTracks)
-        playingMusicCoroutine = StartCoroutine(PlayMusicContinuously());
-
-      else if (!enoughMusicTracks)
-        Debug.LogWarning("No music tracks found!");
-      else if (musicAlreadyPlaying)
-        Debug.LogWarning("Tried starting continuous music but music source is already playing!");
-    }
 
     /// <summary>
     /// Plays a Music track on the <see cref="musicSource"/>
@@ -193,16 +198,17 @@ namespace UnityUtils.ScriptUtils.Audio {
       musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, clip.volumeSettings.volumeType);
       currentPlayingTrack = clip;
 
+      OnPlayMusicTrack?.Invoke(currentPlayingTrack);
       musicSource.Play();
 
-      if (logOnSongPlay)
+      if (logOnPlayMusicTrack)
         Debug.Log($"Playing music track: {clip.name}");
     }
 
     /// <summary>
     /// Plays a random song in <see cref="musicTracks"/> once
     /// </summary>
-    public void PlaySingleRandomMusicTrack() {
+    public void PlayRandomMusicTrack() {
       PlayMusicTrack(GetRandomSong());
     }
 
@@ -219,11 +225,18 @@ namespace UnityUtils.ScriptUtils.Audio {
       return musicTracks[randomSongTrackIndex];
     }
 
+    /// <summary>
+    /// Returns whether music is currently playing or not.
+    /// </summary>
+    public bool IsPlayingMusic() {
+      return musicSource.isPlaying;
+    }
+
     private void TweenVolume(float start, float end) {
       ObjectAnimations.AnimateValue<float>(start, end, fadeTime, (a, b, t) => Mathf.Lerp(a, b, t), value => fadeVolume = value, true);
     }
 
-    private void DebugSongProgress() {
+    private void DebugLogSongProgress() {
       const int DECIMAL_ROUNDING = 2;
       const int PERCENT = 100;
 
@@ -239,6 +252,29 @@ namespace UnityUtils.ScriptUtils.Audio {
 
         lastLoggedPercent = progressPercent;
       }
+    }
+
+    private void DebugLogOnPlayMusicTrack(MusicClip clip) {
+      if (logOnPlayMusicTrack)
+        Debug.Log($"Started playing music track: {clip}");
+    }
+
+    private void DebugLogOnStopMusicTrack(MusicClip clip) {
+      if (logOnStopMusicTrack) {
+        Debug.Log($"Stopped playing music track: {clip}");
+      }
+    }
+
+    private void OnEnable() {
+      OnPlayMusicTrack += DebugLogOnPlayMusicTrack;
+
+      OnStopMusicTrack += DebugLogOnStopMusicTrack;
+    }
+
+    private void OnDisable() {
+      OnPlayMusicTrack -= DebugLogOnPlayMusicTrack;
+
+      OnStopMusicTrack -= DebugLogOnStopMusicTrack;
     }
   }
 }
