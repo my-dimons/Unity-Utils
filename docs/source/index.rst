@@ -1,7 +1,7 @@
 Welcome to UnityUtils documentation!
 ===================================
 
-**UnityUtils** is an Open-Source Unity (C#) library that helps with rapid development of games. See the below tree for all available scripts. 
+**UnityUtils** is an Open-Source Unity (C#) library that helps with rapid development of games, providing some scripts and a few very useful packages. See the below tree for all available scripts and some useful packages.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -9,7 +9,6 @@ how to :ref:`installation` the project.
 .. tip::
 
    To help with Unity Utils's development, consider joining the discord (https://discord.gg/dQ2pNTBZKD), or making a PR on GitHub!
-
 
 View Also:
 
@@ -30,4 +29,5 @@ Usage
    :maxdepth: 2
    
    usage
+   packages
    ScriptUtils/ScriptUtils

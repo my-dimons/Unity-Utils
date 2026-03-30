@@ -23,6 +23,7 @@
 	- Footsteps
 	- Weather
 	- 3 Custom types
+- Added a packages doc with some helpful packages
 
 ### Changes
 - Renamed "SfxManager" to "SFXManager"
@@ -38,6 +39,8 @@
 - Renamed ObjectModifiers to ModifierManager
 - Renamed ObjectModifierData to ModifierData
 - REMOVED MODIFIERS, See reason here: https://github.com/my-dimons/UnityUtils/issues/37, see the latest version of modifiers here: https://github.com/my-dimons/UnityUtils/tree/v2.0-REMOVED-MODIFIERS
+- REMOVED SAVESYSTEM (Found a VERY good package instead)
+- Removed all dependencies (Moved to the packages doc)
 
 ### Fixes
 - Made all variables properly document their usage in both the docs and in IDE's (Previously would not work in IDE's)

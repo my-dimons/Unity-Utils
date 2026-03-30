@@ -14,11 +14,7 @@
       "version": "file:com.mydimons.unityutils",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "games.carter.savemanager": "https://github.com/CarterGames/SaveManager.git",
-        "com.coffee.ui-particle": "https://github.com/mob-sakai/ParticleEffectForUGUI.git",
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      }
+      "dependencies": {}
     },
     "com.unity.2d.animation": {
       "version": "12.0.2",
@@ -334,6 +330,13 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "games.carter.audiomanager": {
+      "version": "https://github.com/CarterGames/AudioManager.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "6133f16cbd832b324c2d4d60891d34c07aebdc4d"
     },
     "games.carter.savemanager": {
       "version": "https://github.com/CarterGames/SaveManager.git",

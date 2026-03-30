@@ -34,7 +34,7 @@ MonoBehaviour:
     assembly: CarterGames.SaveManager.Runtime, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     type: CarterGames.Assets.SaveManager.Legacy.LegacySaveHandlerGlobalOnly
-  useSaveSlots: 0
+  useSaveSlots: 1
   limitAvailableSlots: 0
   maxUserSaveSlots: 1
   useMetaDataGameInfo: 1

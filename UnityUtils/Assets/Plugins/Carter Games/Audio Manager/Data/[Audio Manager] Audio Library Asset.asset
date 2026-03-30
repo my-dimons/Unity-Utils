@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0876a39f507e45142a645a4fe9dd37df, type: 3}
+  m_Name: '[Audio Manager] Audio Library Asset'
+  m_EditorClassIdentifier: CarterGames.AudioManager.Runtime::CarterGames.Assets.AudioManager.AudioLibrary
+  library:
+    list:
+    - key: music test 01-272cf154-5ccf-471d-9a77-3a82b9759b02
+      value:
+        key: music test 01
+        id: music test 01-272cf154-5ccf-471d-9a77-3a82b9759b02
+        defaultKey: music test 01-272cf154-5ccf-471d-9a77-3a82b9759b02
+        value: {fileID: 8300000, guid: 33a509b9243a6ec458be09f5bb8cbb54, type: 3}
+        path: Assets/Testing/Testing Assets/music test 01.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        defaultSettings:
+          volume: 1
+          pitch: 1
+        showDynamicTime: 0
+        metaData:
+          category: 
+          tags: []
+    - key: sfx test 01-441d045f-1728-44fb-b3e9-738b4812a039
+      value:
+        key: sfx test 01
+        id: sfx test 01-441d045f-1728-44fb-b3e9-738b4812a039
+        defaultKey: sfx test 01-441d045f-1728-44fb-b3e9-738b4812a039
+        value: {fileID: 8300000, guid: b8ce73c91985ad04d960cb2757e2f732, type: 3}
+        path: Assets/Testing/Testing Assets/sfx test 01.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        defaultSettings:
+          volume: 1
+          pitch: 1
+        showDynamicTime: 0
+        metaData:
+          category: 
+          tags: []
+    - key: sfx test 02-7dd0d7f3-ced3-4402-b6da-92bc0f41f844
+      value:
+        key: sfx test 02
+        id: sfx test 02-7dd0d7f3-ced3-4402-b6da-92bc0f41f844
+        defaultKey: sfx test 02-7dd0d7f3-ced3-4402-b6da-92bc0f41f844
+        value: {fileID: 8300000, guid: e8bee3be63fb0fe4d9583d67f609416f, type: 3}
+        path: Assets/Testing/Testing Assets/sfx test 02.wav
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        defaultSettings:
+          volume: 1
+          pitch: 1
+        showDynamicTime: 0
+        metaData:
+          category: 
+          tags: []
+    - key: sfx test 03-9cf2f7d1-9f91-4ea2-a069-23df36abd7ec
+      value:
+        key: sfx test 03
+        id: sfx test 03-9cf2f7d1-9f91-4ea2-a069-23df36abd7ec
+        defaultKey: sfx test 03-9cf2f7d1-9f91-4ea2-a069-23df36abd7ec
+        value: {fileID: 8300000, guid: d73b6ef34fd908b4c9cce03fdd1843b6, type: 3}
+        path: Assets/Testing/Testing Assets/sfx test 03.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        defaultSettings:
+          volume: 1
+          pitch: 1
+        showDynamicTime: 0
+        metaData:
+          category: 
+          tags: []
+    - key: sfx test 04-67419e3c-1329-438a-8404-8f10443bfef1
+      value:
+        key: sfx test 04
+        id: sfx test 04-67419e3c-1329-438a-8404-8f10443bfef1
+        defaultKey: sfx test 04-67419e3c-1329-438a-8404-8f10443bfef1
+        value: {fileID: 8300000, guid: 77167822fab8ed74a8b1719b56764d92, type: 3}
+        path: Assets/Testing/Testing Assets/sfx test 04.mp3
+        dynamicStartTime:
+          time: 0.045916665
+          threshold: 0.173
+          option: 0
+          tabPos: 1
+        defaultSettings:
+          volume: 1
+          pitch: 1
+        showDynamicTime: 0
+        metaData:
+          category: 
+          tags: []
+  groups:
+    list:
+    - key: d7500ded-e4aa-42d1-9959-6901d6316f56
+      value:
+        groupName: RandomClicks
+        groupPlayMode: 0
+        clipNames:
+        - sfx test 03-9cf2f7d1-9f91-4ea2-a069-23df36abd7ec
+        - sfx test 04-67419e3c-1329-438a-8404-8f10443bfef1
+  mixers:
+    list: []
+  categories: []
+  tags: []
