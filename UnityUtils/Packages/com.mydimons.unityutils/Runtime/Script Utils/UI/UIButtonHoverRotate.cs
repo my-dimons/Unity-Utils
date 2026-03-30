@@ -79,7 +79,7 @@ namespace UnityUtils.ScriptUtils.UI {
       hoverRotationVector = useRandomRotation ? currentRandomRotation : new Vector3(0, 0, hoverRotation);
 
       // Stops choppy animation when spam hovering the button
-      bool stopChoppyAnimation = !buttonDebug.hoveringOverButton && transform.localRotation == Quaternion.Euler(hoverRotationVector);
+      bool stopChoppyAnimation = !buttonDebug.HoveringOverButton && transform.localRotation == Quaternion.Euler(hoverRotationVector);
       bool rotateBackAfterHoverCondition = transform.localRotation == Quaternion.Euler(hoverRotationVector) && rotateBackAfterHover;
 
       if (stopChoppyAnimation || rotateBackAfterHoverCondition) {

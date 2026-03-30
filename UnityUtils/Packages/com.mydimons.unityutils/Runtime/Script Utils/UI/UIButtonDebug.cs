@@ -7,7 +7,7 @@ namespace UnityUtils.ScriptUtils.UI {
   public class UIButtonDebug : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
 
     public UIButtonDebugSettings logSettings;
-    public bool hoveringOverButton;
+    public bool HoveringOverButton { get; private set; }
 
     public void OnPointerEnter(PointerEventData eventData) {
       if (logSettings.logIn) {
@@ -16,7 +16,7 @@ namespace UnityUtils.ScriptUtils.UI {
 
       LogAny();
 
-      hoveringOverButton = true;
+      HoveringOverButton = true;
     }
 
     public void OnPointerExit(PointerEventData eventData) {
@@ -26,7 +26,7 @@ namespace UnityUtils.ScriptUtils.UI {
 
       LogAny();
 
-      hoveringOverButton = false;
+      HoveringOverButton = false;
     }
 
     public void OnPointerClick(PointerEventData eventData) {

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityUtils.ScriptUtils.Objects;
 
@@ -18,13 +19,18 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// The current playing track.
     /// </summary>
-    public MusicClip currentPlayingTrack;
+    public MusicClip CurrentPlayingTrack { get; private set; }
 
     /// <summary>
     /// Whether to start playing Music as soon as this object awakes.
     /// </summary>
     [Header("Variables")]
     public bool playOnAwake = true;
+
+    /// <summary>
+    /// If true, will keep playing music tracks from <see cref="musicTracks"/> randomly.
+    /// </summary>
+    public bool playMusic = true;
 
     /// <summary>
     /// The duration, in seconds, over which the fade in/out effect occurs.
@@ -110,6 +116,16 @@ namespace UnityUtils.ScriptUtils.Audio {
     private void Update() {
       musicSource.volume = AudioManager.CalculateVolumeBasedOnType(AudioManager.MAX_AUDIO_VOLUME * fadeVolume, AudioManager.VolumeType.Music);
 
+      if (playMusic) {
+        if (!IsPlayingMusic()) {
+          PlayContinuousMusic();
+        }
+      } else {
+        if (IsPlayingMusic()) {
+          StopContinousMusic();
+        }
+      }
+
       #region Debug.Logs()
       // Song progress
       if (playingMusicCoroutine != null && musicSource.isPlaying && logSongProgress) {
@@ -124,11 +140,10 @@ namespace UnityUtils.ScriptUtils.Audio {
       #endregion
     }
 
-
     /// <summary>
     /// Starts to <see cref="PlayMusicContinuously"/> until stopped
     /// </summary>
-    public void PlayContinuousMusic() {
+    private void PlayContinuousMusic() {
       bool enoughMusicTracks = musicTracks.Length > 0;
       bool musicAlreadyPlaying = !musicSource.isPlaying;
 
@@ -146,12 +161,12 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// Loops through random songs in <see cref="musicTracks"/> constantly
     /// </summary>
     private IEnumerator PlayMusicContinuously() {
-      while (true) {
+      while (GetRandomSong() != null && !IsPlayingMusic()) {
         PlayRandomMusicTrack();
 
         TweenVolume(AudioManager.MIN_AUDIO_VOLUME, AudioManager.MAX_AUDIO_VOLUME);
 
-        yield return new WaitForSecondsRealtime(currentPlayingTrack.musicClip.length - fadeTime);
+        yield return new WaitForSecondsRealtime(CurrentPlayingTrack.musicClip.length - fadeTime);
 
         TweenVolume(AudioManager.MAX_AUDIO_VOLUME, AudioManager.MIN_AUDIO_VOLUME);
 
@@ -169,7 +184,7 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// <summary>
     /// Stops the <see cref="musicSource"/> from playing Music and looping until <see cref="PlayMusicContinuously"/> is called again (to start looping)
     /// </summary>
-    public void StopContinousMusic() {
+    private void StopContinousMusic() {
       if (IsPlayingMusic()) {
         StopMusicSource();
 
@@ -181,9 +196,9 @@ namespace UnityUtils.ScriptUtils.Audio {
     }
 
     private void StopMusicSource() {
-      OnStopMusicTrack?.Invoke(currentPlayingTrack);
+      OnStopMusicTrack?.Invoke(CurrentPlayingTrack);
       musicSource.Stop();
-      currentPlayingTrack = null;
+      CurrentPlayingTrack = null;
 
       lastLoggedPercent = 0;
     }
@@ -193,16 +208,20 @@ namespace UnityUtils.ScriptUtils.Audio {
     /// Plays a Music track on the <see cref="musicSource"/>
     /// </summary>
     private void PlayMusicTrack(MusicClip clip) {
-      musicSource.clip = clip.musicClip;
-      musicSource.pitch = AudioManager.CalculatePitchVariance(clip.pitchSettings.pitchVariance, clip.pitchSettings.pitch);
-      musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, clip.volumeSettings.volumeType);
-      currentPlayingTrack = clip;
+      if (clip != null) {
+        musicSource.clip = clip.musicClip;
+        musicSource.pitch = AudioManager.CalculatePitchVariance(clip.pitchSettings.pitchVariance, clip.pitchSettings.pitch);
+        musicSource.volume = AudioManager.CalculateVolumeBasedOnType(1, clip.volumeSettings.volumeType);
+        CurrentPlayingTrack = clip;
 
-      OnPlayMusicTrack?.Invoke(currentPlayingTrack);
-      musicSource.Play();
+        OnPlayMusicTrack?.Invoke(CurrentPlayingTrack);
+        musicSource.Play();
 
-      if (logOnPlayMusicTrack)
-        Debug.Log($"Playing music track: {clip.name}");
+        if (logOnPlayMusicTrack)
+          Debug.Log($"Playing music track: {clip.name}");
+      } else {
+        Debug.LogWarning("No available music tracks, not playing a song");
+      }
     }
 
     /// <summary>
@@ -221,8 +240,18 @@ namespace UnityUtils.ScriptUtils.Audio {
 
     /// <returns>Random Music track within <see cref="musicTracks"/></returns>
     public MusicClip GetRandomSong() {
-      int randomSongTrackIndex = UnityEngine.Random.Range(0, musicTracks.Length);
-      return musicTracks[randomSongTrackIndex];
+      List<MusicClip> validMusicTracks = new List<MusicClip>();
+      foreach (MusicClip musicTrack in musicTracks) {
+        if (musicTrack.CanBePlayed())
+          validMusicTracks.Add(musicTrack);
+      }
+
+      if (validMusicTracks.Count > 0) {
+        int randomSongTrackIndex = UnityEngine.Random.Range(0, validMusicTracks.Count);
+        return musicTracks[randomSongTrackIndex];
+      } else {
+        return null;
+      }
     }
 
     /// <summary>
@@ -240,7 +269,7 @@ namespace UnityUtils.ScriptUtils.Audio {
       const int DECIMAL_ROUNDING = 2;
       const int PERCENT = 100;
 
-      float progressPercent = (musicSource.time / currentPlayingTrack.musicClip.length) * PERCENT;
+      float progressPercent = (musicSource.time / CurrentPlayingTrack.musicClip.length) * PERCENT;
 
       bool logPercent = progressPercent > lastLoggedPercent + logSongProgessEveryPercent;
 
@@ -248,7 +277,7 @@ namespace UnityUtils.ScriptUtils.Audio {
         Debug.Log("Current song progress: "
             + Math.Round(progressPercent, DECIMAL_ROUNDING) + "% ("
             + Math.Round(musicSource.time, DECIMAL_ROUNDING) + "s / "
-            + Math.Round(currentPlayingTrack.musicClip.length, DECIMAL_ROUNDING) + "s)");
+            + Math.Round(CurrentPlayingTrack.musicClip.length, DECIMAL_ROUNDING) + "s)");
 
         lastLoggedPercent = progressPercent;
       }
