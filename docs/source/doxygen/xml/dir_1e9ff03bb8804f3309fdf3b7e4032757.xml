@@ -6,7 +6,6 @@
     <innerdir refid="dir_452f71db9803f4972088812027e594bd">Packages/com.mydimons.unityutils/Runtime/Script Utils/Camera</innerdir>
     <innerdir refid="dir_4bf5c5ffc2a0732a67ca014148862437">Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects</innerdir>
     <innerdir refid="dir_bc4f83e6e17ee9f9eb07e214b5811512">Packages/com.mydimons.unityutils/Runtime/Script Utils/Particles</innerdir>
-    <innerdir refid="dir_f10a4a418d4992c5b9be90e84934bedd">Packages/com.mydimons.unityutils/Runtime/Script Utils/Save System</innerdir>
     <innerdir refid="dir_87021e02490c9b2d6a331d4a4d9b1950">Packages/com.mydimons.unityutils/Runtime/Script Utils/Scriptable Objects</innerdir>
     <innerdir refid="dir_3d799e5afb94eb3dd5c9620866f5ab87">Packages/com.mydimons.unityutils/Runtime/Script Utils/UI</innerdir>
     <innerfile refid="_coroutine_helper_8cs">CoroutineHelper.cs</innerfile>

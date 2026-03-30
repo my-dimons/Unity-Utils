@@ -6,6 +6,5 @@ var searchData=
   ['clicksfx_3',['clickSFX',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a09380d32df187ff5eb03795436e52a86',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
   ['clicktoggleobjects_4',['clickToggleObjects',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html#aef812175219aab8f83291c06aa4b3816',1,'UnityUtils::ScriptUtils::UI::UIButtonToggleObjects']]],
   ['color_5',['color',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a7cd9ba584c13fce86d76131c4a2aab47',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
-  ['colorflash_6',['colorFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#a1d21a836d7e33f8043f38a9b9540e87a',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager']]],
-  ['currentplayingtrack_7',['currentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a183bab188db31471fe7e28cb79f52f62',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]]
+  ['colorflash_6',['colorFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#a1d21a836d7e33f8043f38a9b9540e87a',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager']]]
 ];

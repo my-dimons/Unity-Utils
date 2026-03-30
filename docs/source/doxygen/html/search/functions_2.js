@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['delay_0',['Delay',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#a917eed31e4a4fd1d0466cefb26fee767',1,'UnityUtils::ScriptUtils::Objects::ObjectDelays']]],
-  ['delayframe_1',['DelayFrame',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html#a0a46ec4bb430a513cb56dda6b8e671ff',1,'UnityUtils::ScriptUtils::Objects::ObjectDelays']]],
-  ['delete_2',['Delete',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a6eb6158cba5c53a76ef184b6cc4dd6be',1,'UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem']]],
-  ['deletesaveslot_3',['DeleteSaveSlot',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#ab9e4621a5437b9315028446af063ee8b',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]]
+  ['calculatecliplength_0',['CalculateClipLength',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0498ca8ec7582e9aa3607f534a7dc5f0',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculateclippitchwithlength_1',['CalculateClipPitchWithLength',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a41eadf3c8d28dae43bd9058ff3ecf4ae',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculatepitchvariance_2',['CalculatePitchVariance',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a74a9cdcdfac8426e74083b47194dca99',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['calculatevolumebasedontype_3',['CalculateVolumeBasedOnType',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a6842171f65007a880eac46610f5676b5',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['canbeplayed_4',['CanBePlayed',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music.html#aa53a356a5ca69e54e11f904dc8cd347e',1,'UnityUtils.ScriptUtils.Audio.BackgroundMusic.CanBePlayed()'],['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html#a675215ce5663aa4b5650f6392b4123f1',1,'UnityUtils.ScriptUtils.Audio.MusicClip.CanBePlayed()']]],
+  ['create2dsfx_5',['Create2dSFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#a8764fc2b00f6817400d898bb1bf2f57f',1,'UnityUtils::ScriptUtils::Audio::SFX']]],
+  ['create3dsfx_6',['Create3dSFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#ad568f0df8611d960485763072eb9d233',1,'UnityUtils::ScriptUtils::Audio::SFX']]],
+  ['createdefaultfadeoutflash_7',['CreateDefaultFadeOutFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a47372c0309b8f9bdd8a309c6c9c95801',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
+  ['createdefaultflash_8',['CreateDefaultFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a8efd9003afc2ef4e40c875401458e74e',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]]
 ];

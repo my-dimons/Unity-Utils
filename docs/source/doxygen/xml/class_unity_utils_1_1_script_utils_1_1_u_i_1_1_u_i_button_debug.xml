@@ -21,19 +21,21 @@
         </inbodydescription>
         <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="9" column="34" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1ad2c8b0df389a536d2d7500626e50f064" prot="public" static="no" mutable="no">
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a277a40fe1ee505effde761982bf75d53" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
         <type>bool</type>
-        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonDebug.hoveringOverButton</definition>
+        <definition>bool UnityUtils.ScriptUtils.UI.UIButtonDebug.HoveringOverButton</definition>
         <argsstring></argsstring>
-        <name>hoveringOverButton</name>
-        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.hoveringOverButton</qualifiedname>
+        <name>HoveringOverButton</name>
+        <qualifiedname>UnityUtils.ScriptUtils.UI.UIButtonDebug.HoveringOverButton</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="10" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="10" bodyend="-1"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="10" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="10" bodyend="10"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -173,7 +175,7 @@
     </collaborationgraph>
     <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" line="7" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/UI/UIButtonDebug.cs" bodystart="7" bodyend="45"/>
     <listofallmembers>
-      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1ad2c8b0df389a536d2d7500626e50f064" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>hoveringOverButton</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a277a40fe1ee505effde761982bf75d53" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>HoveringOverButton</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a40750d7f50085d4a3bbd09163bb259e8" prot="private" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>LogAny</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a76941b037484a34f66e031917a6e6fcf" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>logSettings</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_1a7e4c6f7f0751b4fb361ae89dddccb158" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::UI::UIButtonDebug</scope><name>OnPointerClick</name></member>

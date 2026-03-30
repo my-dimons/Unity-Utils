@@ -1,5 +1,7 @@
 var class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager =
 [
+    [ "BasicFlash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#a4e11b69baf94edcc5dc248f89cfafa00", null ],
+    [ "BasicFlash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#a8db017fabf7a5e3149095f300c9539ac", null ],
     [ "Flash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#ab966535fcdc3981a5ff3d3dcbeb3bca8", null ],
     [ "Flash", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#a4cc13f7063a662ab0df4c0a0761e1c49", null ],
     [ "IsFlashing", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#ab3fcf25f587bc6a9f8081fc29985b099", null ],

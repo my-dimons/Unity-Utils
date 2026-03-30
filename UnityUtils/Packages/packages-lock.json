@@ -15,6 +15,7 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
+        "games.carter.savemanager": "https://github.com/CarterGames/SaveManager.git",
         "com.coffee.ui-particle": "https://github.com/mob-sakai/ParticleEffectForUGUI.git",
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       }
@@ -333,6 +334,15 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "games.carter.savemanager": {
+      "version": "https://github.com/CarterGames/SaveManager.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.0.0"
+      },
+      "hash": "c823f6cb2d6dbe1fe0f0398635da397941a61eaa"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

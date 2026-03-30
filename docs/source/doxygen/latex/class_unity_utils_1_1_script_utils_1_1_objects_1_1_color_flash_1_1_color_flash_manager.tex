@@ -13,6 +13,10 @@ bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_f
 \begin{DoxyCompactList}\small\item\em Determines whether a flashing operation is currently active. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a78a1d36faeb9e8d7bf437ea99bc561b6}{Set\+Original\+Material}} (Material mat)
 \begin{DoxyCompactList}\small\item\em Sets the material that is switched back to after a flash is finished. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a8db017fabf7a5e3149095f300c9539ac}{Basic\+Flash}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash}}=default)
+\begin{DoxyCompactList}\small\item\em Calls Coroutine \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash(\+Color\+Flash)}, but doesn\textquotesingle{}t return the Coroutine. Useful for calling from Unity\+Events (Buttons and whatnot). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4e11b69baf94edcc5dc248f89cfafa00}{Basic\+Flash}} ()
+\begin{DoxyCompactList}\small\item\em Calls Coroutine \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash(\+Color\+Flash)} using the \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash}, but doesn\textquotesingle{}t return the Coroutine. Useful for calling from Unity\+Events (Buttons and whatnot). \end{DoxyCompactList}\item 
 Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash}})
 \begin{DoxyCompactList}\small\item\em Flashes the object using the provided \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash} variables. If a flash is already active, a warning is logged and no new flash is started. \end{DoxyCompactList}\item 
 Coroutine \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab966535fcdc3981a5ff3d3dcbeb3bca8}{Flash}} ()
@@ -29,6 +33,31 @@ bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_f
 \label{doc-func-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_doc-func-members}
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4e11b69baf94edcc5dc248f89cfafa00}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!BasicFlash@{BasicFlash}}
+\index{BasicFlash@{BasicFlash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{BasicFlash()}{BasicFlash()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4e11b69baf94edcc5dc248f89cfafa00} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+Basic\+Flash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Calls Coroutine \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash(\+Color\+Flash)} using the \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a1d21a836d7e33f8043f38a9b9540e87a}{color\+Flash}, but doesn\textquotesingle{}t return the Coroutine. Useful for calling from Unity\+Events (Buttons and whatnot). 
+
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a8db017fabf7a5e3149095f300c9539ac}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!BasicFlash@{BasicFlash}}
+\index{BasicFlash@{BasicFlash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
+\doxysubsubsection{\texorpdfstring{BasicFlash()}{BasicFlash()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a8db017fabf7a5e3149095f300c9539ac} 
+void Unity\+Utils.\+Script\+Utils.\+Objects.\+Color\+Flash.\+Color\+Flash\+Manager.\+Basic\+Flash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash}{Color\+Flash}}}]{color\+Flash}{ = {\ttfamily default}}\end{DoxyParamCaption})}
+
+
+
+Calls Coroutine \doxylink{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_a4cc13f7063a662ab0df4c0a0761e1c49}{Flash(\+Color\+Flash)}, but doesn\textquotesingle{}t return the Coroutine. Useful for calling from Unity\+Events (Buttons and whatnot). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color\+Flash} & The color flash to use when flashing\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_ab966535fcdc3981a5ff3d3dcbeb3bca8}\index{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}!Flash@{Flash}}
 \index{Flash@{Flash}!UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager@{UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager}}
 \doxysubsubsection{\texorpdfstring{Flash()}{Flash()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}

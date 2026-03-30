@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="78" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="78" bodyend="100"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="94" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="94" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a32aaa9d91c706f29e70f91155fddcad4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>IEnumerator</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="105" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="105" bodyend="124"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="121" column="25" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="121" bodyend="140"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -222,6 +222,51 @@
         </inbodydescription>
         <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="51" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="51" bodyend="53"/>
       </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a8db017fabf7a5e3149095f300c9539ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.BasicFlash</definition>
+        <argsstring>(ColorFlash colorFlash=default)</argsstring>
+        <name>BasicFlash</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.BasicFlash</qualifiedname>
+        <param>
+          <type><ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash" kindref="compound">ColorFlash</ref></type>
+          <declname>colorFlash</declname>
+          <defval>default</defval>
+        </param>
+        <briefdescription>
+<para>Calls Coroutine <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a4cc13f7063a662ab0df4c0a0761e1c49" kindref="member">Flash(ColorFlash)</ref>, but doesn&apos;t return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorFlash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color flash to use when flashing</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="59" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a4e11b69baf94edcc5dc248f89cfafa00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.BasicFlash</definition>
+        <argsstring>()</argsstring>
+        <name>BasicFlash</name>
+        <qualifiedname>UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.BasicFlash</qualifiedname>
+        <briefdescription>
+<para>Calls Coroutine <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a4cc13f7063a662ab0df4c0a0761e1c49" kindref="member">Flash(ColorFlash)</ref> using the <ref refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a1d21a836d7e33f8043f38a9b9540e87a" kindref="member">colorFlash</ref>, but doesn&apos;t return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="66" column="17" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="66" bodyend="68"/>
+      </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a4cc13f7063a662ab0df4c0a0761e1c49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Coroutine</type>
         <definition>Coroutine UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.Flash</definition>
@@ -251,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="60" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="60" bodyend="67"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="75" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="75" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1ab966535fcdc3981a5ff3d3dcbeb3bca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Coroutine</type>
@@ -269,7 +314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="74" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="74" bodyend="76"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="90" column="22" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="90" bodyend="92"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -303,7 +348,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="133" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="133" bodyend="140"/>
+        <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="149" column="29" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="149" bodyend="156"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -339,8 +384,10 @@
         <link refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash"/>
       </node>
     </collaborationgraph>
-    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="6" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="6" bodyend="141"/>
+    <location file="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" line="6" column="9" bodyfile="Packages/com.mydimons.unityutils/Runtime/Script Utils/Objects/ColorFlash/ColorFlashManager.cs" bodystart="6" bodyend="157"/>
     <listofallmembers>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a8db017fabf7a5e3149095f300c9539ac" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager</scope><name>BasicFlash</name></member>
+      <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a4e11b69baf94edcc5dc248f89cfafa00" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager</scope><name>BasicFlash</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a1d21a836d7e33f8043f38a9b9540e87a" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager</scope><name>colorFlash</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1a4cc13f7063a662ab0df4c0a0761e1c49" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager</scope><name>Flash</name></member>
       <member refid="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager_1ab966535fcdc3981a5ff3d3dcbeb3bca8" prot="public" virt="non-virtual"><scope>UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager</scope><name>Flash</name></member>

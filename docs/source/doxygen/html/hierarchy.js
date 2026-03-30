@@ -31,8 +31,6 @@ var hierarchy =
       [ "UnityUtils.ScriptUtils.UI.UIButtonSpawnParticles", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html", null ],
       [ "UnityUtils.ScriptUtils.UI.UIButtonToggleObjects", "class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html", null ]
     ] ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.ISaveableData", "interface_unity_utils_1_1_script_utils_1_1_save_system_1_1_i_saveable_data.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html", null ],
     [ "MonoBehaviour", null, [
       [ "UnityUtils.ScriptUtils.Audio.MusicManager", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html", null ],
       [ "UnityUtils.ScriptUtils.Cameras.CameraBillboard", "class_unity_utils_1_1_script_utils_1_1_cameras_1_1_camera_billboard.html", null ],
@@ -53,12 +51,6 @@ var hierarchy =
     [ "UnityUtils.ScriptUtils.Objects.ObjectDelays", "class_unity_utils_1_1_script_utils_1_1_objects_1_1_object_delays.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleModifier", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_modifier.html", null ],
     [ "UnityUtils.ScriptUtils.Particles.ParticleSpawner", "class_unity_utils_1_1_script_utils_1_1_particles_1_1_particle_spawner.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.SaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_data.html", [
-      [ "UnityUtils.ScriptUtils.SaveSystem.SaveSlotSaveData", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data.html", null ]
-    ] ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.SaveSlot", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html", null ],
-    [ "UnityUtils.ScriptUtils.SaveSystem.SaveSystemUtils", "class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_utils.html", null ],
     [ "ScriptableObject", null, [
       [ "UnityUtils.ScriptUtils.Audio.MusicClip", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html", [
         [ "UnityUtils.ScriptUtils.Audio.BackgroundMusic", "class_unity_utils_1_1_script_utils_1_1_audio_1_1_background_music.html", null ]

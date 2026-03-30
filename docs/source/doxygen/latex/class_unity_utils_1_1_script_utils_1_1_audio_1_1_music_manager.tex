@@ -9,10 +9,6 @@ Inheritance diagram for Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a2710be1e905f23bc580fbe531eb49359}{Play\+Continuous\+Music}} ()
-\begin{DoxyCompactList}\small\item\em Starts to Play\+Music\+Continuously until stopped. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ae9c160534f02beb90e392c05ef79ce76}{Stop\+Continous\+Music}} ()
-\begin{DoxyCompactList}\small\item\em Stops the music\+Source from playing Music and looping until Play\+Music\+Continuously is called again (to start looping). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_af9f7480c8803a411cfddbd2b0a45c3b2}{Play\+Random\+Music\+Track}} ()
 \begin{DoxyCompactList}\small\item\em Plays a random song in \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ab81786dbf8dac64bc8b8214beab4a72d}{music\+Tracks} once. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a5c950ccf3974134536ea9d1eaf57167e}{Play\+Specific\+Music\+Track}} (\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip}{Music\+Clip}} clip)
@@ -29,10 +25,10 @@ bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_man
 \item 
 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip}{Music\+Clip}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ab81786dbf8dac64bc8b8214beab4a72d}{music\+Tracks}}
 \begin{DoxyCompactList}\small\item\em An array of audio clips representing the available Music tracks. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip}{Music\+Clip}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a183bab188db31471fe7e28cb79f52f62}{current\+Playing\+Track}}
-\begin{DoxyCompactList}\small\item\em The current playing track. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a4f6f5728f33b0910c9dca6bf3199d5b2}{play\+On\+Awake}} = true
 \begin{DoxyCompactList}\small\item\em Whether to start playing Music as soon as this object awakes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a801e3913b7bb5141d5ef46b2d4950c7f}{play\+Music}} = true
+\begin{DoxyCompactList}\small\item\em If true, will keep playing music tracks from \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ab81786dbf8dac64bc8b8214beab4a72d}{music\+Tracks} randomly. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_aedc14e00dd6b5c93581c686c226c29fa}{fade\+Time}}
 \begin{DoxyCompactList}\small\item\em The duration, in seconds, over which the fade in/out effect occurs. \end{DoxyCompactList}\item 
 Vector2 \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a486dfbaef4d80bea107df9fe9c9af27f}{random\+Second\+Cooldown\+Between\+Songs}}
@@ -59,7 +55,9 @@ Action$<$ \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_musi
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager}{Music\+Manager}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ae8ff01d75065ce3905ad7df831f5c115}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\end{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip}{Music\+Clip}} \mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ab49ebf36db4938bffd2685ead6df5b8f}{Current\+Playing\+Track}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current playing track. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \label{doc-func-members}
@@ -88,16 +86,6 @@ bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+Is\+Playing\+Music 
 
 Returns whether music is currently playing or not. 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a2710be1e905f23bc580fbe531eb49359}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!PlayContinuousMusic@{PlayContinuousMusic}}
-\index{PlayContinuousMusic@{PlayContinuousMusic}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
-\doxysubsubsection{\texorpdfstring{PlayContinuousMusic()}{PlayContinuousMusic()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a2710be1e905f23bc580fbe531eb49359} 
-void Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+Play\+Continuous\+Music (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Starts to Play\+Music\+Continuously until stopped. 
-
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_af9f7480c8803a411cfddbd2b0a45c3b2}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!PlayRandomMusicTrack@{PlayRandomMusicTrack}}
 \index{PlayRandomMusicTrack@{PlayRandomMusicTrack}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
 \doxysubsubsection{\texorpdfstring{PlayRandomMusicTrack()}{PlayRandomMusicTrack()}}
@@ -118,31 +106,11 @@ void Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+Play\+Specific\+Mus
 
 Plays a specific Music track once. 
 
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ae9c160534f02beb90e392c05ef79ce76}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!StopContinousMusic@{StopContinousMusic}}
-\index{StopContinousMusic@{StopContinousMusic}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
-\doxysubsubsection{\texorpdfstring{StopContinousMusic()}{StopContinousMusic()}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ae9c160534f02beb90e392c05ef79ce76} 
-void Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+Stop\+Continous\+Music (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-
-
-Stops the music\+Source from playing Music and looping until Play\+Music\+Continuously is called again (to start looping). 
-
 
 
 \label{doc-variable-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_doc-variable-members}
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a183bab188db31471fe7e28cb79f52f62}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!currentPlayingTrack@{currentPlayingTrack}}
-\index{currentPlayingTrack@{currentPlayingTrack}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
-\doxysubsubsection{\texorpdfstring{currentPlayingTrack}{currentPlayingTrack}}
-{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a183bab188db31471fe7e28cb79f52f62} 
-\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip}{Music\+Clip}} Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+current\+Playing\+Track}
-
-
-
-The current playing track. 
-
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_aedc14e00dd6b5c93581c686c226c29fa}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!fadeTime@{fadeTime}}
 \index{fadeTime@{fadeTime}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
 \doxysubsubsection{\texorpdfstring{fadeTime}{fadeTime}}
@@ -253,6 +221,16 @@ Coroutine Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+playing\+Music
 
 The Coroutine playing music. Is able to be canceled. 
 
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a801e3913b7bb5141d5ef46b2d4950c7f}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
+\doxysubsubsection{\texorpdfstring{playMusic}{playMusic}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a801e3913b7bb5141d5ef46b2d4950c7f} 
+bool Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+play\+Music = true}
+
+
+
+If true, will keep playing music tracks from \doxylink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ab81786dbf8dac64bc8b8214beab4a72d}{music\+Tracks} randomly. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_a4f6f5728f33b0910c9dca6bf3199d5b2}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!playOnAwake@{playOnAwake}}
 \index{playOnAwake@{playOnAwake}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
 \doxysubsubsection{\texorpdfstring{playOnAwake}{playOnAwake}}
@@ -278,6 +256,16 @@ Random cooldown time between songs in milliseconds.
 \label{doc-property-members}
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_doc-property-members}
 \doxysubsection{Property Documentation}
+\Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ab49ebf36db4938bffd2685ead6df5b8f}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!CurrentPlayingTrack@{CurrentPlayingTrack}}
+\index{CurrentPlayingTrack@{CurrentPlayingTrack}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
+\doxysubsubsection{\texorpdfstring{CurrentPlayingTrack}{CurrentPlayingTrack}}
+{\footnotesize\ttfamily \label{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ab49ebf36db4938bffd2685ead6df5b8f} 
+\mbox{\hyperlink{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip}{Music\+Clip}} Unity\+Utils.\+Script\+Utils.\+Audio.\+Music\+Manager.\+Current\+Playing\+Track\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The current playing track. 
+
 \Hypertarget{class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager_ae8ff01d75065ce3905ad7df831f5c115}\index{UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}!Instance@{Instance}}
 \index{Instance@{Instance}!UnityUtils.ScriptUtils.Audio.MusicManager@{UnityUtils.ScriptUtils.Audio.MusicManager}}
 \doxysubsubsection{\texorpdfstring{Instance}{Instance}}

@@ -104,6 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab3fcf25f587bc6a9f8081fc29985b099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a flashing operation is currently active.  <br /></td></tr>
 <tr class="memitem:a78a1d36faeb9e8d7bf437ea99bc561b6" id="r_a78a1d36faeb9e8d7bf437ea99bc561b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78a1d36faeb9e8d7bf437ea99bc561b6">SetOriginalMaterial</a> (Material mat)</td></tr>
 <tr class="memdesc:a78a1d36faeb9e8d7bf437ea99bc561b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material that is switched back to after a flash is finished.  <br /></td></tr>
+<tr class="memitem:a8db017fabf7a5e3149095f300c9539ac" id="r_a8db017fabf7a5e3149095f300c9539ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8db017fabf7a5e3149095f300c9539ac">BasicFlash</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html">ColorFlash</a> <a class="el" href="#a1d21a836d7e33f8043f38a9b9540e87a">colorFlash</a>=default)</td></tr>
+<tr class="memdesc:a8db017fabf7a5e3149095f300c9539ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls Coroutine <a class="el" href="#a4cc13f7063a662ab0df4c0a0761e1c49" title="Flashes the object using the provided ColorFlash variables. If a flash is already active,...">Flash(ColorFlash)</a>, but doesn't return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot).  <br /></td></tr>
+<tr class="memitem:a4e11b69baf94edcc5dc248f89cfafa00" id="r_a4e11b69baf94edcc5dc248f89cfafa00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e11b69baf94edcc5dc248f89cfafa00">BasicFlash</a> ()</td></tr>
+<tr class="memdesc:a4e11b69baf94edcc5dc248f89cfafa00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls Coroutine <a class="el" href="#a4cc13f7063a662ab0df4c0a0761e1c49" title="Flashes the object using the provided ColorFlash variables. If a flash is already active,...">Flash(ColorFlash)</a> using the <a class="el" href="#a1d21a836d7e33f8043f38a9b9540e87a" title="The default ColorFlash to use when flashing.">colorFlash</a>, but doesn't return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot).  <br /></td></tr>
 <tr class="memitem:a4cc13f7063a662ab0df4c0a0761e1c49" id="r_a4cc13f7063a662ab0df4c0a0761e1c49"><td class="memItemLeft" align="right" valign="top">Coroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cc13f7063a662ab0df4c0a0761e1c49">Flash</a> (<a class="el" href="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html">ColorFlash</a> <a class="el" href="#a1d21a836d7e33f8043f38a9b9540e87a">colorFlash</a>)</td></tr>
 <tr class="memdesc:a4cc13f7063a662ab0df4c0a0761e1c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flashes the object using the provided <a class="el" href="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html">ColorFlash</a> variables. If a flash is already active, a warning is logged and no new flash is started.  <br /></td></tr>
 <tr class="memitem:ab966535fcdc3981a5ff3d3dcbeb3bca8" id="r_ab966535fcdc3981a5ff3d3dcbeb3bca8"><td class="memItemLeft" align="right" valign="top">Coroutine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab966535fcdc3981a5ff3d3dcbeb3bca8">Flash</a> ()</td></tr>
@@ -117,6 +121,50 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ac2e9f4aa2812bd0934850bc01f5affc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will Debug.Log the color and duration when flashing.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a4e11b69baf94edcc5dc248f89cfafa00" name="a4e11b69baf94edcc5dc248f89cfafa00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e11b69baf94edcc5dc248f89cfafa00">&#9670;&#160;</a></span>BasicFlash() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.BasicFlash </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls Coroutine <a class="el" href="#a4cc13f7063a662ab0df4c0a0761e1c49" title="Flashes the object using the provided ColorFlash variables. If a flash is already active,...">Flash(ColorFlash)</a> using the <a class="el" href="#a1d21a836d7e33f8043f38a9b9540e87a" title="The default ColorFlash to use when flashing.">colorFlash</a>, but doesn't return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot). </p>
+
+</div>
+</div>
+<a id="a8db017fabf7a5e3149095f300c9539ac" name="a8db017fabf7a5e3149095f300c9539ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db017fabf7a5e3149095f300c9539ac">&#9670;&#160;</a></span>BasicFlash() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UnityUtils.ScriptUtils.Objects.ColorFlash.ColorFlashManager.BasicFlash </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html">ColorFlash</a></td>          <td class="paramname"><span class="paramname"><em>colorFlash</em></span><span class="paramdefsep"> = </span><span class="paramdefval">default</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calls Coroutine <a class="el" href="#a4cc13f7063a662ab0df4c0a0761e1c49" title="Flashes the object using the provided ColorFlash variables. If a flash is already active,...">Flash(ColorFlash)</a>, but doesn't return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorFlash</td><td>The color flash to use when flashing</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab966535fcdc3981a5ff3d3dcbeb3bca8" name="ab966535fcdc3981a5ff3d3dcbeb3bca8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab966535fcdc3981a5ff3d3dcbeb3bca8">&#9670;&#160;</a></span>Flash() <span class="overload">[1/2]</span></h2>
 

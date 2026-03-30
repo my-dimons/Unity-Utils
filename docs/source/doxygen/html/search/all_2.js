@@ -27,10 +27,8 @@ var searchData=
   ['create3dsfx_24',['Create3dSFX',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#ad568f0df8611d960485763072eb9d233',1,'UnityUtils::ScriptUtils::Audio::SFX']]],
   ['createdefaultfadeoutflash_25',['CreateDefaultFadeOutFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a47372c0309b8f9bdd8a309c6c9c95801',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
   ['createdefaultflash_26',['CreateDefaultFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash.html#a8efd9003afc2ef4e40c875401458e74e',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlash']]],
-  ['createrootsavedataifnotexisting_27',['CreateRootSaveDataIfNotExisting',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#aadc15994db95278bff0740c64f1d85b8',1,'UnityUtils::ScriptUtils::SaveSystem::JsonSaveSystem']]],
-  ['createsavedata_3c_20t_20_3e_28',['CreateSaveData&lt; T &gt;',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a8022a7df159fcaae1f5515938b8c7e1b',1,'UnityUtils::ScriptUtils::SaveSystem::SaveSystemManager']]],
-  ['currentplayingtrack_29',['currentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a183bab188db31471fe7e28cb79f52f62',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['custom1_30',['Custom1',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['custom2_31',['Custom2',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
-  ['custom3_32',['Custom3',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
+  ['currentplayingtrack_27',['CurrentPlayingTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ab49ebf36db4938bffd2685ead6df5b8f',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['custom1_28',['Custom1',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41abfacbbe4e8be8fbc78a60cd9f8e67dd5',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['custom2_29',['Custom2',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a1d8ba0be5e8d76a3e6fb571c80929db2',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['custom3_30',['Custom3',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a0a7bc22fea904cdde6b310b8beb97b41a01cd47f19cbca3337e2f0864d20544c8',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]]
 ];

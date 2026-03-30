@@ -1,24 +1,8 @@
 var searchData=
 [
-  ['lasttimesaved_0',['lastTimeSaved',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot.html#a149d51b76b6dc0c3427097a1c95ede42',1,'UnityUtils.ScriptUtils.SaveSystem.SaveSlot.lastTimeSaved'],['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_slot_save_data.html#ac84a12967583e49ae6d3f7206d8695fe',1,'UnityUtils.ScriptUtils.SaveSystem.SaveSlotSaveData.lastTimeSaved']]],
-  ['localposition_1',['localPosition',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x3d_settings.html#a514db81ce8e67ce175278da540ebcbe1',1,'UnityUtils::ScriptUtils::Audio::SFX3dSettings']]],
-  ['logany_2',['logAny',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings.html#a6ac8f21703134c8669a95dfa38428d3d',1,'UnityUtils::ScriptUtils::UI::UIButtonDebugSettings']]],
-  ['logclick_3',['logClick',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings.html#a2b672b24cba75273dae93db8863afe2b',1,'UnityUtils::ScriptUtils::UI::UIButtonDebugSettings']]],
-  ['logemptysfx_4',['logEmptySFX',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_s_f_x.html#a6b86ab5a91c946c50fd4017b95b47954',1,'UnityUtils::ScriptUtils::UI::UIButtonSFX']]],
-  ['logfadevolume_5',['logFadeVolume',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#aa24e3d20b059bb583215478ac1edbda2',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['logflash_6',['logFlash',['../class_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash_1_1_color_flash_manager.html#ac2e9f4aa2812bd0934850bc01f5affc0',1,'UnityUtils::ScriptUtils::Objects::ColorFlash::ColorFlashManager']]],
-  ['login_7',['logIn',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings.html#a93ed54b13ee5c6d746c418ebd02961c3',1,'UnityUtils::ScriptUtils::UI::UIButtonDebugSettings']]],
-  ['logonplaymusictrack_8',['logOnPlayMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#afa5b526919505674e110f05957a07227',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['logonstopmusictrack_9',['logOnStopMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#abfec8684c046cba51da4028a2b767129',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['logout_10',['logOut',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug_settings.html#a6b50da79b8399b0cfdf65bcb8976fe36',1,'UnityUtils::ScriptUtils::UI::UIButtonDebugSettings']]],
-  ['logquit_11',['logQuit',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_quit_game.html#add6b0ec7520642c46cae113425a1d32b',1,'UnityUtils::ScriptUtils::UI::UIButtonQuitGame']]],
-  ['lograndomrotation_12',['logRandomRotation',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_hover_rotate.html#a98d8c8e1bdbec9aedde2ae4b959878a3',1,'UnityUtils::ScriptUtils::UI::UIButtonHoverRotate']]],
-  ['lograndomsongcooldown_13',['logRandomSongCooldown',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a17359f0448fc8ba8129d11f39ed81aba',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['logsettings_14',['logSettings',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_debug.html#a76941b037484a34f66e031917a6e6fcf',1,'UnityUtils::ScriptUtils::UI::UIButtonDebug']]],
-  ['logslidervaluechange_15',['logSliderValueChange',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_audio_slider.html#ae0048be7ab0742bbd92c2bbdf722dd78',1,'UnityUtils::ScriptUtils::UI::UIAudioSlider']]],
-  ['logsongprogesseverypercent_16',['logSongProgessEveryPercent',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a30e986fe8c973ac9ae53d3d08e7a2adf',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['logsongprogress_17',['logSongProgress',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a435943706c919c1a4b31c4cfc19049de',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['logspawn_18',['logSpawn',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_spawn_particles.html#a4efb31a0e91f9126130b08ec5dadf472',1,'UnityUtils::ScriptUtils::UI::UIButtonSpawnParticles']]],
-  ['logswitch_19',['logSwitch',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_scene_switcher.html#ac4cf74fdb10c2987c915cef02d60c65e',1,'UnityUtils::ScriptUtils::UI::UIButtonSceneSwitcher']]],
-  ['logtoggle_20',['logToggle',['../class_unity_utils_1_1_script_utils_1_1_u_i_1_1_u_i_button_toggle_objects.html#ab5f2a0e9db692a50f52975aeeb6a996b',1,'UnityUtils::ScriptUtils::UI::UIButtonToggleObjects']]]
+  ['max_5faudio_5fvolume_0',['MAX_AUDIO_VOLUME',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a3d858e08e9ebddb2664c8c09373f76b1',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['min_5faudio_5fvolume_1',['MIN_AUDIO_VOLUME',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_audio_manager.html#a951691ccb7f9df99c9c0b0f4bb0c8cca',1,'UnityUtils::ScriptUtils::Audio::AudioManager']]],
+  ['musicclip_2',['musicClip',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html#a843242abcd205d1f95f2194c46806785',1,'UnityUtils::ScriptUtils::Audio::MusicClip']]],
+  ['musicname_3',['musicName',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html#a8cb21bec984b444d17237271425c10b6',1,'UnityUtils::ScriptUtils::Audio::MusicClip']]],
+  ['musictracks_4',['musicTracks',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ab81786dbf8dac64bc8b8214beab4a72d',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]]
 ];

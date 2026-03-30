@@ -7,7 +7,6 @@ var searchData=
   ['unityutils_3a_3ascriptutils_3a_3aobjects_4',['Objects',['../namespace_unity_utils_1_1_script_utils_1_1_objects.html',1,'UnityUtils::ScriptUtils']]],
   ['unityutils_3a_3ascriptutils_3a_3aobjects_3a_3acolorflash_5',['ColorFlash',['../namespace_unity_utils_1_1_script_utils_1_1_objects_1_1_color_flash.html',1,'UnityUtils::ScriptUtils::Objects']]],
   ['unityutils_3a_3ascriptutils_3a_3aparticles_6',['Particles',['../namespace_unity_utils_1_1_script_utils_1_1_particles.html',1,'UnityUtils::ScriptUtils']]],
-  ['unityutils_3a_3ascriptutils_3a_3asavesystem_7',['SaveSystem',['../namespace_unity_utils_1_1_script_utils_1_1_save_system.html',1,'UnityUtils::ScriptUtils']]],
-  ['unityutils_3a_3ascriptutils_3a_3ascriptableobjects_8',['ScriptableObjects',['../namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html',1,'UnityUtils::ScriptUtils']]],
-  ['unityutils_3a_3ascriptutils_3a_3aui_9',['UI',['../namespace_unity_utils_1_1_script_utils_1_1_u_i.html',1,'UnityUtils::ScriptUtils']]]
+  ['unityutils_3a_3ascriptutils_3a_3ascriptableobjects_7',['ScriptableObjects',['../namespace_unity_utils_1_1_script_utils_1_1_scriptable_objects.html',1,'UnityUtils::ScriptUtils']]],
+  ['unityutils_3a_3ascriptutils_3a_3aui_8',['UI',['../namespace_unity_utils_1_1_script_utils_1_1_u_i.html',1,'UnityUtils::ScriptUtils']]]
 ];

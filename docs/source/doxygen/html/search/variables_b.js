@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['onplaymusictrack_0',['OnPlayMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a9b9005b2cce0087d5983d3c0846e9672',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['onstopmusictrack_1',['OnStopMusicTrack',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a5c3837c7ba5aa502a010d1382675c99c',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
-  ['outputlogs_2',['outputLogs',['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_json_save_system.html#a4294b75b656767310a607835f29ddc02',1,'UnityUtils.ScriptUtils.SaveSystem.JsonSaveSystem.outputLogs'],['../class_unity_utils_1_1_script_utils_1_1_save_system_1_1_save_system_manager.html#a05a97f1c28174cc3e9f32450c3651d1c',1,'UnityUtils.ScriptUtils.SaveSystem.SaveSystemManager.outputLogs']]]
+  ['parent_0',['parent',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#aa9cdd815691a26b5af94efa16391a32d',1,'UnityUtils::ScriptUtils::Audio::SFX']]],
+  ['pitch_1',['pitch',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings.html#a672c8fc0d04bda5f7848006b230bebd4',1,'UnityUtils::ScriptUtils::Audio::SFXPitchSettings']]],
+  ['pitchsettings_2',['pitchSettings',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_clip.html#a0975f3b0c0e5143ed7d5a6cfe737ec07',1,'UnityUtils.ScriptUtils.Audio.MusicClip.pitchSettings'],['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x.html#a3b947bb7400c60b6a236082b80c7f551',1,'UnityUtils.ScriptUtils.Audio.SFX.pitchSettings']]],
+  ['pitchvariance_3',['pitchVariance',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_s_f_x_pitch_settings.html#a93a3a6a22bfd1d67e8ecff7d4c3362ee',1,'UnityUtils::ScriptUtils::Audio::SFXPitchSettings']]],
+  ['playingmusiccoroutine_4',['playingMusicCoroutine',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#ac8aea0a68ec47bc4c03fb6c38d1d0d5a',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playmusic_5',['playMusic',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a801e3913b7bb5141d5ef46b2d4950c7f',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]],
+  ['playonawake_6',['playOnAwake',['../class_unity_utils_1_1_script_utils_1_1_audio_1_1_music_manager.html#a4f6f5728f33b0910c9dca6bf3199d5b2',1,'UnityUtils::ScriptUtils::Audio::MusicManager']]]
 ];
