@@ -5,5 +5,5 @@ using UnityUtils.ScriptUtils.SaveSystem;
 public class GameData : SaveData {
   public int intValue;
   public string stringValue;
-  public float[] positionValue = new float[3];
+  public float[] color = new float[4];
 }

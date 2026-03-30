@@ -217,7 +217,6 @@ MonoBehaviour:
     logOut: 0
     logClick: 0
     logAny: 0
-  hoveringOverButton: 0
 --- !u!114 &37500923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,7 +549,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.25
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -845,7 +844,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55.5
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1074,7 +1073,6 @@ MonoBehaviour:
     logOut: 0
     logClick: 0
     logAny: 0
-  hoveringOverButton: 0
 --- !u!114 &505577895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1421,7 +1419,6 @@ MonoBehaviour:
     logOut: 0
     logClick: 0
     logAny: 0
-  hoveringOverButton: 0
 --- !u!114 &692163043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1869,7 +1866,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 400, y: 100}
+  m_CellSize: {x: 700, y: 200}
   m_Spacing: {x: 50, y: 50}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -1971,7 +1968,6 @@ MonoBehaviour:
     logOut: 0
     logClick: 0
     logAny: 0
-  hoveringOverButton: 0
 --- !u!114 &805553733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2304,7 +2300,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.25
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2442,7 +2438,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.3
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2592,7 +2588,6 @@ MonoBehaviour:
     logOut: 0
     logClick: 0
     logAny: 0
-  hoveringOverButton: 0
 --- !u!114 &1093274521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3029,7 +3024,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.55
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3165,7 +3160,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.25
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3315,7 +3310,6 @@ MonoBehaviour:
     logOut: 0
     logClick: 0
     logAny: 0
-  hoveringOverButton: 0
 --- !u!114 &1824339347
 MonoBehaviour:
   m_ObjectHideFlags: 0

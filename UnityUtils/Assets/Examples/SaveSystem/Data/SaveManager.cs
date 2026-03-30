@@ -10,6 +10,7 @@ public class SaveManager : MonoBehaviour {
   public string activeSaveSlot;
 
   void Start() {
+    Debug.Log("Save files are saved in: " + SaveSystemUtils.GetSaveSlotRootPath());
     InitializeData();
 
     saveSlots = GetAllSaveSlots();

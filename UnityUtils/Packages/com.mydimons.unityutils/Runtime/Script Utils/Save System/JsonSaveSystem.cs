@@ -81,7 +81,10 @@ namespace UnityUtils.ScriptUtils.SaveSystem {
       // Get single file
       if (File.Exists(fullPath)) {
         try {
-          loadedData = GetSaveData(GetJsonStringData(fullPath));
+          loadedData = GetSaveData(
+            GetJsonStringData(fullPath),
+            saveData.GetType()
+            );
 
           loadedData.SetSaveSlot(saveSlot);
           loadedData.Load();
@@ -159,9 +162,8 @@ namespace UnityUtils.ScriptUtils.SaveSystem {
     /// <remarks>Use <see cref="GetJsonStringData(string)"/> to get a json string from a path</remarks>
     /// <param name="json">Json to deserialize</param>
     /// <returns>Deserialized save data</returns>
-    public static SaveData GetSaveData(string json) {
-      return JsonConvert.DeserializeObject<SaveData>(json,
-          new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+    public static SaveData GetSaveData(string json, System.Type type) {
+      return (SaveData)JsonConvert.DeserializeObject(json, type);
     }
 
     /// <summary>
