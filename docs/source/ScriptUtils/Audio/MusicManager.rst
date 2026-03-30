@@ -24,10 +24,10 @@ Example Usage
      void Start()
      {
    	   // Start playing music.
-   	   MusicManager.Instance.StartContinuousMusic();
-   	      	   
+   	   MusicManager.Instance.playMusic = true;
+   	      	      	   
    	   // Stop playing music.
-   	   MusicManager.Instance.StopContinuousMusic();
+   	   MusicManager.Instance.playMusic = false;
    	}
    	
    	void OnEnable()

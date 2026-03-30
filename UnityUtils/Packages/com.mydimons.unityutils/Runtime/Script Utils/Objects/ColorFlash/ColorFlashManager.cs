@@ -53,6 +53,21 @@ namespace UnityUtils.ScriptUtils.Objects.ColorFlash {
     }
 
     /// <summary>
+    /// Calls Coroutine <see cref="Flash(ColorFlash)"/>, but doesn't return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot)
+    /// </summary>
+    /// <param name="colorFlash">The color flash to use when flashing</param>
+    public void BasicFlash(ColorFlash colorFlash = default) {
+      Flash(colorFlash == default ? this.colorFlash : colorFlash);
+    }
+
+    /// <summary>
+    /// Calls Coroutine <see cref="Flash(ColorFlash)"/> using the <see cref="colorFlash"/>, but doesn't return the Coroutine. Useful for calling from UnityEvents (Buttons and whatnot)
+    /// </summary>
+    public void BasicFlash() {
+      Flash();
+    }
+
+    /// <summary>
     /// Flashes the object using the provided <see cref="ColorFlash"/> variables. If a flash is already active, a warning is logged and no new flash is started.
     /// </summary>
     /// <param name="colorFlash">The color flash to use when flashing</param>
@@ -62,7 +77,8 @@ namespace UnityUtils.ScriptUtils.Objects.ColorFlash {
         Debug.LogWarning("Object is already flashing, no flash was started");
         return null;
       } else {
-        return StartCoroutine(FlashRoutine(colorFlash));
+        flashRoutine = StartCoroutine(FlashRoutine(colorFlash));
+        return flashRoutine;
       }
     }
 
