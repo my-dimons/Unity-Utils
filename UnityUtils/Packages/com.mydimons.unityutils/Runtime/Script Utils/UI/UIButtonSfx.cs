@@ -41,7 +41,7 @@ namespace UnityUtils.ScriptUtils.UI {
     public bool logEmptySFX;
 
     public void OnPointerEnter(PointerEventData eventData) {
-      if (hoverEnterSFX != null) {
+      if (hoverEnterSFX.HasAudioClips()) {
         SFXManager.PlaySFX(hoverEnterSFX);
 
         LogAny();
@@ -55,7 +55,7 @@ namespace UnityUtils.ScriptUtils.UI {
       if (sceneLoadTriggered)
         return;
 
-      if (hoverExitSFX != null) {
+      if (hoverExitSFX.HasAudioClips()) {
         SFXManager.PlaySFX(hoverExitSFX);
 
         LogAny();
@@ -71,7 +71,7 @@ namespace UnityUtils.ScriptUtils.UI {
         return;
       }
 
-      if (clickSFX != null) {
+      if (clickSFX.HasAudioClips()) {
         SFXManager.PlaySFX(clickSFX);
 
         LogAny();

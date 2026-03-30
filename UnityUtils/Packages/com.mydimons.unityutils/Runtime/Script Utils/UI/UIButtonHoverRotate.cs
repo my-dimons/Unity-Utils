@@ -71,7 +71,7 @@ namespace UnityUtils.ScriptUtils.UI {
     void Start() {
       originalRotation = new Vector3(transform.localRotation.x, transform.localRotation.y, transform.localRotation.z);
 
-      buttonDebug = new UIButtonDebug();
+      buttonDebug = GetComponent<UIButtonDebug>();
     }
 
     // Update is called once per frame

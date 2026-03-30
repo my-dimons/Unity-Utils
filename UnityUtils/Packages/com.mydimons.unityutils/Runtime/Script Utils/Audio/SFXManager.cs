@@ -24,7 +24,7 @@ namespace UnityUtils.ScriptUtils.Audio {
       int randomClipIndex = Random.Range(0, sfx.audioClips.Length - 1);
       AudioClip audioClip = sfx.audioClips[randomClipIndex];
 
-      sfxObject.transform.parent = sfx.parent.transform;
+      sfxObject.transform.parent = sfx.parent;
       audioSource.spatialBlend = sfx.spacialSettings.spacialBlend;
       audioSource.pitch = AudioManager.CalculatePitchVariance(sfx.pitchSettings.pitchVariance, sfx.pitchSettings.pitch);
 
