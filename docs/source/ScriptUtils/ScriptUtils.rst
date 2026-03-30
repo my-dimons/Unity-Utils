@@ -12,7 +12,6 @@ This is where you will find useful scripts for quick unity development!
    Audio/Audio
    UI/UI
    Objects/Objects
-   SaveSystem/SaveSystem
    Particles/Particles
    ScriptableObjects/ScriptableObjects
    CoroutineHelper
