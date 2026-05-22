@@ -1,3 +1,7 @@
+### _**ARCHIVED: I have found much better alternatives to everything I was trying to do in this project, plus most of this was vibe coded so it sucked**_
+(Was still fun to learn from tho)
+
+
 UnityUtils is an Open-Source Unity (C#) library that helps with quick development of games.
  
 # Links
